@@ -1,0 +1,1 @@
+SELECT movies.* FROM movies JOIN rating ON movies.titleID = rating.movieID WHERE rating.userID IN(1,'it','the exorcist') AND rating.rating >= 6

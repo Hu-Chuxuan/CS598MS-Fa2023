@@ -1,0 +1,1 @@
+SELECT t.* FROM title_basics AS t INNER JOIN title_rating ON (title_basics.id = title_rating.title_basicsId) WHERE title_basics.startYear > '2009' AND title_basics.endYear < '2020'

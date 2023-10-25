@@ -1,0 +1,1 @@
+SELECT * FROM movies WHERE user_preferences LIKE '%There\'s%Something%' AND genre = 'comedy'

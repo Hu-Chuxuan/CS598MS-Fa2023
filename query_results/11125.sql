@@ -1,0 +1,1 @@
+SELECT * FROM table WHERE rating >? AND userID =? ORDER BY rating DESC LIMIT?

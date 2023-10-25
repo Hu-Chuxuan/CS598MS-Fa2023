@@ -1,0 +1,1 @@
+SELECT t.* FROM title_basics AS t INNER JOIN title_ratings as r ON t.titleId = r.titleID WHERE ((r.averageRating >= :avg AND r.numvotes > 0)) OR (((r.averageRating <= :avg AND r.numvotes < 0))) GROUP BY t.titleId HAVING COUNT(*)>0

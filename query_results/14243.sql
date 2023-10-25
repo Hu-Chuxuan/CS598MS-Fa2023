@@ -1,0 +1,1 @@
+SELECT DISTINCT tc.* FROM title_basics AS tb INNER JOIN title_rating AS tr ON tr.titleID = tb.id WHERE tb.isAdult=false AND tr.averageRating>=6

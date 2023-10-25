@@ -1,0 +1,1 @@
+SELECT tc.* FROM imdb_data AS d INNER JOIN imdb_title_basic AS b ON d.titleID = b.id WHERE b.isAdult=false AND ((b.startYear BETWEEN? AND?)) ORDER BY rating DESC LIMIT 1

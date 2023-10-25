@@ -1,0 +1,1 @@
+SELECT * FROM `title` WHERE (`genre`) IN ('Action','Comedy') AND (`startYear`) BETWEEN 1970 AND 2000

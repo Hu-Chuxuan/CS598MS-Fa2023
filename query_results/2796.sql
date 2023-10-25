@@ -1,0 +1,1 @@
+SELECT * FROM `title` WHERE ((movie_genre LIKE '%adventure%' OR genre LIKE '%action%') AND (movielike LIKE '%karate%')) ORDER BY rating DESC LIMIT 6

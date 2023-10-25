@@ -1,0 +1,1 @@
+SELECT titleID AS tID FROM title_rating WHERE userID = '1' AND year >= 2019

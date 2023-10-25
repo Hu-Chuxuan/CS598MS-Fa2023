@@ -1,0 +1,1 @@
+SELECT t.* FROM title AS t WHERE t.titleType = "comedy" AND t.primaryTitle IN ('22 Jump Street (2014)','Jumanji   (2017)')AND t.directorID NOT IN ("[{"id":1,"name":"Phil Lord","type":"Director"}, {"id":2,"name":"Christopher Miller","type":"Writer"}]")ORDER BY rating DESC LIMIT 5

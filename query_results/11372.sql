@@ -1,0 +1,1 @@
+SELECT t.* FROM title_basic AS t JOIN (SELECT * from name_basics WHERE titleType = 'Director') as d ON d.primaryName=t.titleType ORDER BY d.birthYear DESC LIMIT 5

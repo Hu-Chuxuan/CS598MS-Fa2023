@@ -1,0 +1,1 @@
+SELECT * FROM movies WHERE type LIKE '%western%' AND rating >= 7

@@ -1,0 +1,1 @@
+SELECT DISTINCT t.titleID FROM title_basic AS t JOIN genre g ON g.genreID = t.genreID AND g.nameID IN ('[Genres provided by user input]') WHERE t.isAdult <> 'Y'

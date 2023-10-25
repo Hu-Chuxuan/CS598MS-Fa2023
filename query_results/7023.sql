@@ -1,0 +1,1 @@
+SELECT movies.* FROM movies WHERE genre = 'Art' AND rating >= 6

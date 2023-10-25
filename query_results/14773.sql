@@ -1,0 +1,1 @@
+SELECT * FROM title_basic WHERE rating >= '9' AND rating <= '10'

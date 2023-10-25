@@ -1,0 +1,1 @@
+SELECT tc.* FROM `title_basics` AS tb JOIN `name_basics` AS nb ON(tb.`primaryTitle` = nb.`primaryName`) WHERE ((tb.`isAdult`='true' AND tb.`startYear` >= '1980') OR (tb.`endYear` <= '2020')) ORDER BY tb.`genre` ASC LIMIT 2

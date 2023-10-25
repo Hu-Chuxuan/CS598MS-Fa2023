@@ -1,0 +1,1 @@
+SELECT t.* FROM title AS t JOIN name AS n ON n.id = t.nameID JOIN crew AS c ON c.id = t.directorID WHERE t.category='Biography'

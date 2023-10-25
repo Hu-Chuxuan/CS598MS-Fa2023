@@ -1,0 +1,1 @@
+SELECT * FROM movie_recommendation WHERE userInput LIKE '%Titanic%' AND userPreferHistory like '%Finding%'

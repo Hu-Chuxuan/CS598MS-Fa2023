@@ -1,0 +1,1 @@
+SELECT * FROM title_basic WHERE title_type = 'fanstasy' AND director IN ('Peter Jackson') ORDER BY rating DESC LIMIT 6

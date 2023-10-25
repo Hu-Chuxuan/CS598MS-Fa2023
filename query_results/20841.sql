@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE averageRating >=? AND averageRating <=? GROUP BY title ORDER BY averageRating DESC LIMIT?

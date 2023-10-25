@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE category = "Family" AND genre IN ('Comedy','Drama') ORDER BY avg(rating)

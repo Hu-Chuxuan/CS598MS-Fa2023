@@ -1,0 +1,1 @@
+SELECT * FROM title_basics WHERE rating >= '7' AND titleType = "comedy" ORDER BY rating DESC LIMIT 5

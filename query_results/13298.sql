@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE (titleType = "movie" AND (genre IN ('Horror') OR genre IS NULL)) ORDER BY rating DESC LIMIT 5

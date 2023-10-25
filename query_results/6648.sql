@@ -1,0 +1,1 @@
+SELECT * FROM movies WHERE rating > 7 AND rating < 9 OR director IN ('Jonathan Levine','Evan Goldberg')

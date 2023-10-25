@@ -1,0 +1,1 @@
+SELECT movies.* FROM titles AS t JOIN name_basics ON t.titleID = nb.movieID WHERE nb.primaryName LIKE 'Melissa%' AND nb.category LIKE '%Actress' GROUP BY t.titleID ORDER BY rating DESC LIMIT 6

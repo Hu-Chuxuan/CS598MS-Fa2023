@@ -1,0 +1,3 @@
+SELECT * FROM ( SELECT t.*, 
+		(CASE WHEN r.numVotes IS NULL THEN avgRatings ELSE avgRatings/r.numVotes END ) AS AverageRating 
+FROM titles as t INNER JOIN ratings as r ON t.titleID = r.titleID WHERE t.primaryTitle LIKE '%action%' AND NOT EXISTS (SELECT * FROM genre WHERE genre.genreID IN (SELECT g.genreID from title_rating tr where tr.titleID=t.titleID)) GROUP BY t.movieID ORDER BY rating DESC LIMIT 10

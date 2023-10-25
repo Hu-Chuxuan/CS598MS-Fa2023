@@ -1,0 +1,1 @@
+SELECT t.* FROM titles AS t JOIN rating AS r ON t.titleID = r.titleID WHERE t.isAdult='false' AND t.startYear>=1970

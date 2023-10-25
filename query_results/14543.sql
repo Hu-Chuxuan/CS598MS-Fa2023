@@ -1,0 +1,1 @@
+SELECT DISTINCT title_rating.* FROM title_ratings AS title_rating JOIN title_basics AS title_basics ON title_rating.title = title_basics.primaryTitle WHERE userPreferencedMovie IN ('Hocus Pocus  (1993)' ) AND userPreferredGenre IN('Fantasy', 'Comedy') ORDER BY title_rating.averageRating DESC LIMIT 0, 7

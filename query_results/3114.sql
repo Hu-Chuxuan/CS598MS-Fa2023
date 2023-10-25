@@ -1,0 +1,1 @@
+SELECT t.* FROM titles AS t JOIN title_ratings r ON (r.title = t.id AND r.averageRating >=?) WHERE t.primaryTitle LIKE '%harry%'

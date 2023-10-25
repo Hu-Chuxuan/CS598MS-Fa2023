@@ -1,0 +1,1 @@
+SELECT t.title AS MovieTitle FROM Title AS t INNER JOIN Name AS n ON t.primaryTitle = n.primaryName AND n.birthYear >=? AND n.deathYear <=? WHERE n.category IN ('Actress') ORDER BY n.ordering

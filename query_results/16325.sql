@@ -1,0 +1,1 @@
+SELECT DISTINCT tc.* FROM imdb.title_basic as tb LEFT JOIN imdb.name_basic AS nb ON tb.primaryTitle = nb.primaryName WHERE nb.category = "Actor"

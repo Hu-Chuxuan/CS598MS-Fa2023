@@ -1,0 +1,2 @@
+SELECT * FROM
+    TITLE_BASICS tb INNER JOIN TITLE_RATINGS tr ON tb.titleId = tr.titleId WHERE tr.numvotes > 0 AND NOT EXISTS( SELECT rating from title_rating trr where tb.titleId=trr.titleid and trr.averageRating <= 7/10)

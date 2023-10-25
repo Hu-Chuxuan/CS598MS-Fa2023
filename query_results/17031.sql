@@ -1,0 +1,1 @@
+SELECT * FROM title_principals WHERE category = "comedy" AND (job LIKE "%actor%" OR job LIKE "%actress%") ORDER BY rating DESC

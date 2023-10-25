@@ -1,0 +1,1 @@
+SELECT * FROM tconst WHERE tconst.primaryTitle = "Jaws" AND tconst.isAdult == true

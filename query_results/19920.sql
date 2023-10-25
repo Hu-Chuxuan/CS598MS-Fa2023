@@ -1,0 +1,1 @@
+SELECT * FROM titles WHERE genre='thriller' AND rating>6

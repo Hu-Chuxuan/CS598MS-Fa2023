@@ -1,0 +1,1 @@
+SELECT DISTINCT tc.* FROM title_crew AS tc JOIN title_principals AS pt ON pk = fk WHERE tc.director IN ('John McTiernan','Paul Greengrass') AND pt.category='Actor' ORDER BY pt.ordering ASC LIMIT 1

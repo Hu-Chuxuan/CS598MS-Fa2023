@@ -1,0 +1,1 @@
+SELECT * FROM imdb WHERE `title_type` = "movie" AND `genre` IN ('comedy') AND (`rating` >= 7 OR `rating` <=8)

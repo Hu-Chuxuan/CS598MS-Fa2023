@@ -1,0 +1,1 @@
+SELECT * FROM movie_recommendation(title_basics tb JOIN title_ratings tr ON tb.primaryTitle = tr.title_basics WHERE (tr.averageRating > 6 AND tr.numVotes >= 10))

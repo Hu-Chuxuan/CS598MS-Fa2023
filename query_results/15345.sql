@@ -1,0 +1,1 @@
+SELECT * FROM title_recommend WHERE userPreferencedMovie = "The Proposal" AND userPreferredGenre = "Comedy"

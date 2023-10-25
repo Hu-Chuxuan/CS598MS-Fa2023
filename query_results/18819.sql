@@ -1,0 +1,1 @@
+SELECT DISTINCT t.* FROM movies AS m JOIN title_rating r ON m.titleID = r.movieId AND r.user_id=? JOIN user u WHERE m.genre in ('drama','political') ORDER BY rating DESC LIMIT?

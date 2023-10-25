@@ -1,0 +1,1 @@
+SELECT movies.* FROM movies INNER JOIN rating ON ratings.movieId = movies.id WHERE userPreferences LIKE '%Inside%'

@@ -1,0 +1,1 @@
+SELECT DISTINCT t.* FROM imdb.title AS t INNER JOIN imdb.name AS n ON t.primaryTitle = n.primaryName WHERE n.birthYear >= '1976' AND n.deathYear <= '2018'

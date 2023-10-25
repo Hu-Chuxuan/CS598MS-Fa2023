@@ -1,0 +1,2 @@
+SELECT TOP(10) * FROM ( SELECT tc.*, tr.*, nc.*, cp.*, ct.*, nct.* WHERE tc.title_id = tr.title_id AND tr.title_id = nc.title_id AND nc.title_id IN (SELECT DISTINCT title_id from title_ratings )AND nct.title_id=ct.title_id AND ct.category='Principal' AND ct.job IS NOT NULL GROUP BY tc.title_id,tr.averageRating,nc.numvotes,cp.primaryname,ct.ordering,ct.category,ct.job HAVING COUNT(*)>1) as m
+WHERE tc.movie_type LIKE '%War%' OR tc.genre_id in ('%Action','%Drama') ORDER by m.rating DESC LIMIT 6

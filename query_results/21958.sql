@@ -1,0 +1,1 @@
+SELECT DISTINCT * FROM title_basics tb JOIN title_ratings tr ON tb.titleType ='movie' AND tb.primaryTitle = tr.primaryTitle WHERE EXISTS( SELECT rating FROM title_ratings AS rr WHERE rr.numVotes > 1 AND ((rr.averageRating >= 9/10 OR rr.averageRating <= 6/10)) AND (tr.startYear BETWEEN rr.startYear AND rr.endYear))

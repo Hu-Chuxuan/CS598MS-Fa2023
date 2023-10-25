@@ -1,0 +1,1 @@
+SELECT * FROM  tconst WHERE tconst.titleType='comedy' AND tconst.isAdult = false ORDER BY tconst.startYear DESC LIMIT 3

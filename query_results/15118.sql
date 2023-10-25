@@ -1,0 +1,1 @@
+SELECT title_basics.*, title_rating.* FROM title_basic INNER JOIN title_rating ON title_basic.titleID = title_rating.movieID WHERE title_basics.primaryTitle LIKE '%the martian%' AND userPreferredMovie IN ('the revenent','inside out') ORDER BY rating DESC LIMIT 8

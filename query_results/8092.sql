@@ -1,0 +1,1 @@
+SELECT * FROM title_basics WHERE tconst = "title" AND genre IN ('Comedy','Drama') ORDER BY rating DESC

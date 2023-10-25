@@ -1,0 +1,1 @@
+SELECT t.* FROM title_basic as t JOIN title_rating r ON t.titleId = r.titleId WHERE ((r.averageRating > 7 AND t.isAdult!= 'yes') OR (r.numVotes < 60)) GROUP BY t.titleId

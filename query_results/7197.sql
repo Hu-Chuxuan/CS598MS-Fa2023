@@ -1,0 +1,1 @@
+SELECT * FROM movie_recommendation WHERE userInput LIKE '%Fantasy%' AND preferenceHistory LIKE '%Fantasy%' ORDER BY rating DESC LIMIT 5

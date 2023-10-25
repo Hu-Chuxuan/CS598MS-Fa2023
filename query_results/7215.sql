@@ -1,0 +1,1 @@
+SELECT t1.* FROM Title_Basics AS tb LEFT OUTER JOIN Name_Basic AS n ON tb.primaryName = n.PrimaryName WHERE n.Birthyear > 1970 AND n.Deathyear < 2021 GROUP BY tb.titleType

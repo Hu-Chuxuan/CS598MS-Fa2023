@@ -1,0 +1,1 @@
+SELECT * FROM title_recommendation WHERE rating > 7 AND director IN ('Josh Gad','Tim Herlihy') ORDER BY rating DESC LIMIT 3

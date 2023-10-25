@@ -1,0 +1,1 @@
+SELECT DISTINCT t.* FROM title_rating AS r JOIN title_basics as b ON r.titleId = b.titleId WHERE r.userID IN ('67a5e3bceffcbfd3bdcc9dd7') AND r.type IN ('Movie') GROUP BY r.titleId HAVING COUNT(*) > 0

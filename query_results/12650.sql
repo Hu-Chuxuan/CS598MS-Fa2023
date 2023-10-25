@@ -1,0 +1,1 @@
+SELECT * FROM title_basics WHERE tconst IN ('Gone Baby Gone','The Accountant') AND rating >=.9

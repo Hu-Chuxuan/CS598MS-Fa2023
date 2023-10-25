@@ -1,0 +1,1 @@
+SELECT * FROM (title_principals AS p JOIN title_ratings AS r ON p.[primaryName]=r[primaryName]) WHERE p.[job]="comedy" AND NOT EXISTS( SELECT * FROM (title_principals as t) WHERE t.[category]="action") ORDER BY RANDOM() LIMIT 6

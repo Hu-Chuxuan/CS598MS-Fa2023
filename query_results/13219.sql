@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE tconst = 'action' AND titleType IN ('adventure','thriller') ORDER BY rating DESC LIMIT 1

@@ -1,0 +1,1 @@
+SELECT t.titleId AS MovieID, mr.rating AS Rating, mr.year AS Year, mr.category AS Category FROM titles t JOIN ( SELECT rating, year, category from ratings WHERE userID = '1' ) mr ON t.titleID=mr.movieid

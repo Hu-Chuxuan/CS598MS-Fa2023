@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE (titleType = "movie" OR genre = "comedy") AND (genre!= "horror")

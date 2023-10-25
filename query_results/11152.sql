@@ -1,0 +1,1 @@
+SELECT DISTINCT tb.* FROM title_basic AS tb WHERE (tb.titleType = "comedy" OR tb.titleType IS NULL)

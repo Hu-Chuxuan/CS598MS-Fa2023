@@ -1,0 +1,1 @@
+SELECT * FROM title_basics WHERE tconst = "movie" AND titleType <> "tv" AND genre IN ('war') ORDER BY rating DESC LIMIT 1

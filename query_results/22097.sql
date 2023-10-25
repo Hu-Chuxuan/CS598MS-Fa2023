@@ -1,0 +1,1 @@
+SELECT * FROM title_recommendation WHERE userInput LIKE '%movie%' AND userHistoryLIKE 'Deadpool' GROUP BY genre ORDER BY rating DESC LIMIT 5

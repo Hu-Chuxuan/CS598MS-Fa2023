@@ -1,0 +1,1 @@
+SELECT * FROM movie WHERE rating >= 8 AND genre IN ('comedy','action') ORDER BY rating DESC LIMIT 5

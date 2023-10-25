@@ -1,0 +1,1 @@
+SELECT * FROM movies WHERE rating >= '8' AND genre = "drama" OR rating >='6'

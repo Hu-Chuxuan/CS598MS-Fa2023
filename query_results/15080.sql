@@ -1,0 +1,1 @@
+SELECT * FROM (title_principals AS t INNER JOIN title_crew ON t.job = crew.category) WHERE t.primaryName LIKE "Jonah Hill" AND t.ordering > 6

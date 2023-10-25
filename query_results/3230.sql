@@ -1,0 +1,1 @@
+SELECT * FROM title_recommend WHERE tconst = "adventure" AND userInput LIKE '%good%' OR userPreferneceHistory LIKE "%Star%"

@@ -1,0 +1,1 @@
+SELECT * FROM movie_recommendation WHERE rating >= AVERAGE(rating) AND genre = 'Action' OR genre='Comedy'

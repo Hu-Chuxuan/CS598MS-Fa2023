@@ -1,0 +1,1 @@
+SELECT t.* FROM title_basics AS t JOIN title_rating AS r ON t.titleId = r.titleId AND r.averageRating >= 5 WHERE r.numVotes > 0 GROUP BY t.primaryTitle ORDER BY r.avgRatng DESC LIMIT 5

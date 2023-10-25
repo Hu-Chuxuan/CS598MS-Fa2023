@@ -1,0 +1,1 @@
+SELECT * FROM (title_basic) WHERE titleType LIKE '%thriller%' OR rating BETWEEN 8 AND 9

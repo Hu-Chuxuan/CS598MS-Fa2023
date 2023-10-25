@@ -1,0 +1,1 @@
+SELECT * FROM title_rating WHERE rating > 7 AND year BETWEEN '2016' AND '2019'

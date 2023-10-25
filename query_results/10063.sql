@@ -1,0 +1,1 @@
+SELECT t.* FROM title_basics AS t INNER JOIN title_ratings AS r ON t.title_id = r.titleId WHERE r.numvotes > 1 AND userInput LIKE '%Star%'

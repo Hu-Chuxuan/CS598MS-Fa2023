@@ -1,0 +1,1 @@
+SELECT titleID,titleName FROM title WHERE titleType = "movie" AND genre="Horror"

@@ -1,0 +1,1 @@
+SELECT * FROM title_principals WHERE category = "character" AND nconst IN ('Gru') ORDER BY ordering ASC LIMIT 5

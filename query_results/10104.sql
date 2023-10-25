@@ -1,0 +1,1 @@
+SELECT DISTINCT t.* FROM title_basics AS t WHERE ((t.titleType ='movie' OR t.titleType IS NULL)) AND (t.startYear > 1876)

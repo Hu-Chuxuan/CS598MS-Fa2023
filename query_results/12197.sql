@@ -1,0 +1,1 @@
+SELECT tb.titleID as MovieID FROM title_basic AS tb INNER JOIN title_rating AS tr ON tb.titleID = tr.movieID WHERE rating >= 7 AND titleType!= "TV" OR rating <= 8

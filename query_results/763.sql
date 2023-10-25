@@ -1,0 +1,1 @@
+SELECT DISTINCT tc.* FROM (title_crew AS tc) JOIN (name_basics as nb) ON(nb.primaryName = tc.director)

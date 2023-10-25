@@ -1,0 +1,6 @@
+SELECT * FROM 
+(SELECT DISTINCT title_basics.*,(SELECT avg(rating) AS rating from title_ratings WHERE title_id = tb.titleID LIMIT 1)) AS rt,
+(select distinct title_basics.*,(select count(*) as totalVoteCount from title_voters where title_id=tb.titleID limit 1))AS tv,
+(select distinct title_basic.*,name_basics.*,(select count(*)/totalVoteCount as averageRating from title_voters where title_id=tb.titleId limit 1),genre from title_ratings where title_id in (select title_id from title_voters group by title_id having totalVoteCount>0) order by averageRating desc,title_type desc ) as tr,
+( select distinct title_basics.*,name_basics.*,(select sum(cast((avg(rating)-1)*10/sum(avg(rating)))*totalVoteCount/(numVotes+1) as score from title_voters where title_id=(select title_id from title_ratings where title_id in (select title_id from title_voters group by title_id having totalVoteCount>0))))as s from title_ratings where title_id in (select title_id from title_voters group by title_id having totalVoteCount>0) order by s asc ) as sr
+FROM   title_basics join title_ratings using (titleID) JOIN  name_basics ON ((title_id)=(titleID))JOIN title_crew USING (titleID) JOIN title_principals USING (titleID) GROUP BY title_basics.titleID ORDER BY sr DESC

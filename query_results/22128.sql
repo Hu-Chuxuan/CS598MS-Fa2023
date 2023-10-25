@@ -1,0 +1,1 @@
+SELECT t.* FROM title AS t JOIN cast AS c ON c.titleID = t.id WHERE c.name LIKE '%user%' AND t.titleType IN ('movie') ORDER BY c.ordering LIMIT 1

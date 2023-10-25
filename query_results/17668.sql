@@ -1,0 +1,1 @@
+SELECT * FROM tconst WHERE isAdult = false AND startYear > '0000'

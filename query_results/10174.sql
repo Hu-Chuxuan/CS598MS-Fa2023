@@ -1,0 +1,1 @@
+SELECT * FROM movies WHERE rating >= X AND genre IN ('Comedy') OR rating <= Y

@@ -1,0 +1,1 @@
+SELECT * FROM rating WHERE user_id = <input> AND year >= <input>

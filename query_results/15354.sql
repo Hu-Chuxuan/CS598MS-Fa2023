@@ -1,0 +1,1 @@
+SELECT * FROM title_ratings WHERE titleType = "movie" AND userPreferedMovie IN ('Home Alone (1990)','Home Alone ') ORDER BY avgRatng DESC

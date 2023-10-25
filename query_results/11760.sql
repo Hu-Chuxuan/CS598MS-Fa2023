@@ -1,0 +1,1 @@
+SELECT titleID FROM title WHERE titleType = "comedy" AND startYear > 1970

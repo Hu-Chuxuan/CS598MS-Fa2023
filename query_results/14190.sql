@@ -1,0 +1,1 @@
+SELECT * FROM title_ratings WHERE rating >.80 AND genre = "Drama" ORDER BY avgRate DESC LIMIT 2

@@ -1,0 +1,1 @@
+SELECT * FROM titles WHERE rating >? AND director =?

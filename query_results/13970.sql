@@ -1,0 +1,1 @@
+SELECT * FROM title_basics WHERE startYear BETWEEN 2010 AND 2019

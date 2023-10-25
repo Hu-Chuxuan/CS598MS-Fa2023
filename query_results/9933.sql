@@ -1,0 +1,1 @@
+SELECT tc.* FROM title_recommendation AS tr JOIN title_basics AS tb ON tb.titleId = tr.titleId WHERE tr.`primaryTitle` LIKE '%' || @userInput || '%'

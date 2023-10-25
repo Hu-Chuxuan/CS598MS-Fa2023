@@ -1,0 +1,1 @@
+SELECT * FROM titles WHERE tconst IN ('title_ratings','name_basics') AND tconst LIKE '%Josie%' OR tconst LIKE '%girl%'

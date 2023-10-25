@@ -1,0 +1,1 @@
+SELECT * FROM title_ratings t INNER JOIN name_basics n ON t.titleId = n.id WHERE n.primaryProfession LIKE '%actor%' AND t.averageRating >= 6

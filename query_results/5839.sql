@@ -1,0 +1,1 @@
+SELECT * FROM title_recommendation WHERE user_name='Ello' AND genre = 'Comedy'

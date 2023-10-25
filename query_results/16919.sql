@@ -1,0 +1,1 @@
+SELECT movies.* FROM movie_recommendation movies INNER JOIN rating_movies ratings ON movies.`title_id` = ratings.`movieId`

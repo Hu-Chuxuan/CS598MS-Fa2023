@@ -1,0 +1,1 @@
+SELECT movies.* FROM `title` AS t INNER JOIN `name_basics` as n ON t.`id` = n.`movieId`, t.`genreIDs` in ('comedy','family') AND t.`startYear >=? AND t.`endYear <=? ORDER BY n.`primaryName`

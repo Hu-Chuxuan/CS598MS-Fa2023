@@ -1,0 +1,1 @@
+SELECT * FROM imdb.title_rating WHERE tconst IN ('Cheaper by the Dozen 2','Cheaper by the Dozen') AND rating >= 7

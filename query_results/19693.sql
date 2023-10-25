@@ -1,0 +1,1 @@
+SELECT t.* FROM titles AS t JOIN rating_titles R ON r.title = t.id WHERE ((r.rating > 6 AND r.votes < 10)) OR (r.rating BETWEEN 8 AND 10)

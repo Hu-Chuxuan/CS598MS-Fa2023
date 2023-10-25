@@ -1,0 +1,1 @@
+SELECT DISTINCT t.titleID FROM rating r INNER JOIN title t ON t.titleID = r.titleID WHERE r.userID = '708' AND r.rating = "0" GROUP BY t.titleID ORDER BY COUNT(r.userID)

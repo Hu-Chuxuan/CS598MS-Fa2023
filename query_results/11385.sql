@@ -1,0 +1,1 @@
+SELECT * FROM title_principals WHERE title_principals.job = "character" AND title_principals.characters LIKE "%The Texas Chainsaw Massacre%" OR title_principals.characters LIKE "%Hellraiser%" OR title_principals.characters LIKE "%Saw%"

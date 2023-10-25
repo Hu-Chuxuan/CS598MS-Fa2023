@@ -1,0 +1,1 @@
+SELECT * FROM movies WHERE genre = "Drama" AND titleType <> "Short Film"

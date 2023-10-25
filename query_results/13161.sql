@@ -1,0 +1,1 @@
+SELECT DISTINCT t.* FROM titles AS t JOIN genre g ON t.genreID = g.id WHERE g.name LIKE '%horror%' AND t.startYear >= 1960

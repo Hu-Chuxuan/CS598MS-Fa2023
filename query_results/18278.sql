@@ -1,0 +1,1 @@
+SELECT * FROM movies WHERE rating >.9 AND genre = 'horror' ORDER BY rating DESC LIMIT 1

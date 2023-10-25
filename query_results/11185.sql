@@ -1,0 +1,1 @@
+SELECT t1.* FROM title_ratings AS t1 INNER JOIN (title_principals AS t2 LEFT OUTER JOIN name_basics AS t3 ON t2.job = t3.category AND t3.primaryProfession <> 'Director') WHERE t1.averageRating >= 8 AND t1.numVotes > 2

@@ -1,0 +1,1 @@
+SELECT DISTINCT movies.* FROM title_basics AS tb INNER JOIN title_ratings AS tr ON tb.titleId = tr.titleId AND tr.primaryTitle IS NULL AND tr.isAdult <> 'True' WHERE ((tb.startYear BETWEEN? AND? ) OR (tb.endYear BETWEEN? AND?)) AND ((tr.averageRating >=?) OR (tr.numVotes > 99))

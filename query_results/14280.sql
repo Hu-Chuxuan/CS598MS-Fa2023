@@ -1,0 +1,1 @@
+SELECT * FROM title_basics WHERE rating > 7 AND genre = "Horror" AND (startyear < 2010 OR year >= 1980)

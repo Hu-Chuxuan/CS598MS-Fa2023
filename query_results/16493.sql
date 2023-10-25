@@ -1,0 +1,1 @@
+SELECT * FROM (title_basic WHERE year >= 2016 AND genre = "comedy" OR genre = "drama") UNION ALL SELECT * FROM (title_rating WHERE rating > 7)

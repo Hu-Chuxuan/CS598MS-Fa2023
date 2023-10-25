@@ -1,0 +1,1 @@
+SELECT * FROM title_principals WHERE ((title_basics.isAdult=true AND title_rating_average >= 7)) OR ((title_basics.startyear <= 2018))

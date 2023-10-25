@@ -1,0 +1,1 @@
+SELECT * FROM titles WHERE rating > 6 AND director IN ('Jonathan Demme') OR writer = 'Stephen McEveety' ORDER BY rating DESC

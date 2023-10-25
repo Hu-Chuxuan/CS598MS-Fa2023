@@ -1,0 +1,1 @@
+SELECT * FROM title_principals WHERE category = 'actress' AND (job IN ('director', 'writer') OR job IS NULL) ORDER BY nconst

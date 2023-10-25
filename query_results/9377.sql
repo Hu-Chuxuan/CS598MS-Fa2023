@@ -1,0 +1,1 @@
+SELECT t.* FROM title_ratings AS r INNER JOIN title_basic AS b ON r.titleId = b.id WHERE b.isAdult=false AND ((b.startYear>=2016 OR b.endYear<=2018)) ORDER BY b.averageRating DESC LIMIT 5

@@ -1,0 +1,1 @@
+SELECT * FROM movies WHERE rating >= 7 AND rating <= 10 ORDER BY rating DESC LIMIT 5

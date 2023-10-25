@@ -1,0 +1,1 @@
+SELECT * FROM title_ratings WHERE rating >=? AND rating <=? ORDER BY rating DESC LIMIT?

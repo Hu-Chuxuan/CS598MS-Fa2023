@@ -1,0 +1,1 @@
+SELECT t.* FROM title AS t INNER JOIN rating r ON t.titleID = r.titleID WHERE t.isAdult > 0 AND t.startYEAR < 2000

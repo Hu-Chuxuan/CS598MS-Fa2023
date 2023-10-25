@@ -1,0 +1,1 @@
+SELECT DISTINCT t.* FROM titles AS t JOIN title_recommendation AS tr ON(tr.titleId = t.id AND tr.userId=?) WHERE (t.genres LIKE '%action%' OR t.directors LIKE '%Peter Jackson%') ORDER BY rating DESC LIMIT?

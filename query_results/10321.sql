@@ -1,0 +1,1 @@
+SELECT DISTINCT tc.* FROM titleratings tr JOIN titles t ON tr.titleid = t.imdbID WHERE tr.rating >= 6 AND ((tr.averageRating IS NULL OR tr.averageRating <= 6))AND tr.numvotes > 1 AND tr.averageRating < 8

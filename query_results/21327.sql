@@ -1,0 +1,1 @@
+SELECT * FROM title_recommend WHERE rating > 6 AND genre = 'Action' OR rating < 7 AND director='Kenneth Branagh'

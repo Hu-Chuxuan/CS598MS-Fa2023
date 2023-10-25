@@ -1,0 +1,1 @@
+SELECT * FROM movies WHERE title IN( SELECT DISTINCT tc.title AS Title FROM titles t JOIN title_casting tc ON tc.title = t.title AND tc.actors_and_actresses LIKE '%actor%' OR tc.actors_and_actresses LIKE '%actress%') GROUP BY t.id ORDER BY count(*) DESC

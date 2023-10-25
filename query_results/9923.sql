@@ -1,0 +1,1 @@
+SELECT t.* FROM title AS t JOIN casts ON t.imdbID = casts.title WHERE t.primaryTitle LIKE '%comedy%' AND t.numVote >= 10

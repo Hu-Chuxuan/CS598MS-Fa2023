@@ -1,0 +1,1 @@
+SELECT movies.* FROM movies JOIN rating ON ratings.movieId = movies.id WHERE ((movies.genre LIKE '%drama%' OR movies.title LIKE '%drama%') AND (rating.numvotes >= 2)) ORDER BY rating DESC LIMIT 5

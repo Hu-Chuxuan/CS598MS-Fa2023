@@ -1,0 +1,1 @@
+SELECT DISTINCT tb.* FROM titles AS t INNER JOIN title_rating AS tr ON t.titleID = tr.titleID AND tr.userID=? WHERE tr.averageRating >=?

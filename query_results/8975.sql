@@ -1,0 +1,1 @@
+SELECT t.* FROM title_basics AS t INNER JOIN (title_ratings AS r AND name_basics AS n) ON r.primaryTitle = t.titleType WHERE t.isAdult=0 ORDER BY r.averageRating DESC LIMIT 3

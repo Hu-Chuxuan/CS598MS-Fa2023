@@ -1,0 +1,1 @@
+SELECT * FROM `title_basic` WHERE `genre` = "Drama" AND (`startyear` > 1970 OR `endyear` < 2000)

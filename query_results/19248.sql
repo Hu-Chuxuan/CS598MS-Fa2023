@@ -1,0 +1,1 @@
+SELECT DISTINCT * FROM title_ratings WHERE avgRating >= 8 AND numVotes > 6

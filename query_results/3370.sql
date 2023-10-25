@@ -1,0 +1,1 @@
+SELECT * FROM title_rating WHERE avg(averageRating)>=8 AND avg(numVotes) >= 10

@@ -1,0 +1,1 @@
+SELECT * FROM `title_basic` WHERE (primaryTitle = "The Matrix" OR primaryTitle LIKE "%Matrix%" OR primaryTitle LIKE "%The%") AND (startYear <= 2000)

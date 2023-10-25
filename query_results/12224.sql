@@ -1,0 +1,1 @@
+SELECT t.* FROM title AS t WHERE t.primaryTitle = "Mrs. Doubtfire" AND t.isAdult=false AND t.startYear <= 1980

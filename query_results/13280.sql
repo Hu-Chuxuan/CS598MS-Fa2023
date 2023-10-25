@@ -1,0 +1,1 @@
+SELECT tb.* FROM title_basic AS tb JOIN ( SELECT avg(rating) as rating, COUNT(*) as voteCount from title_rate WHERE userId = '07984690-33d6-4ecc-aafc-9ddacaa3cebd') r ON ((tb.titleType='Comedy' AND tb.isAdult=FALSE)) LIMIT 5

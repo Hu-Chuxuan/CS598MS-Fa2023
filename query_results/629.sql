@@ -1,0 +1,1 @@
+SELECT t.* FROM title AS t INNER JOIN (title_ratings r ON r.primaryTitle = t.id AND r.averageRating > 6) WHERE t.genre IN ('Fantasy') ORDER BY t.startYear DESC LIMIT 5

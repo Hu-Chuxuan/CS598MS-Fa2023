@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE titleType = "Drama" AND averageRating > 7

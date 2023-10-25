@@ -1,0 +1,1 @@
+SELECT * FROM movie WHERE userInput LIKE '%comedy%' AND historyLIKE '%comedy%'

@@ -1,0 +1,1 @@
+SELECT * FROM imdb WHERE tconst = "title" AND userInput LIKE "%romancing%" OR userInput LIKE "%raider%"

@@ -1,0 +1,1 @@
+SELECT t.* FROM (title_ratings r JOIN title_basics b ON b.id = r.titleId) JOIN (name_basics l JOIN title_principals p ON p.characterId IN LIST(l.characters)) WHERE b.averageRating >= 7 AND l.birthYear <= 1960

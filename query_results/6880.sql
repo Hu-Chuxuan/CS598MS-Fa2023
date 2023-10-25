@@ -1,0 +1,1 @@
+SELECT tc.* FROM TitleCrew as tc JOIN NameBasics AS nb WHERE tc.primaryName = nb.nconst AND nb.category='Actor'

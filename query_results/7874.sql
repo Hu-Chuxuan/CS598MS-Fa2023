@@ -1,0 +1,1 @@
+SELECT DISTINCT titleID FROM title_ratings WHERE avgRating >.7 AND numVotes >= 5

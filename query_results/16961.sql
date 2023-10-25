@@ -1,0 +1,1 @@
+SELECT * FROM title_principals WHERE job LIKE '%actor%' AND order = 0

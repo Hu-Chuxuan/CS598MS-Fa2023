@@ -1,0 +1,1 @@
+SELECT tc.* FROM title_crew AS tc INNER JOIN title_ratings r ON r.titleID = tc.id WHERE tc.directors LIKE '%David Fincher%' AND r.numVotes >= 7

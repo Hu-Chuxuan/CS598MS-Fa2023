@@ -1,0 +1,1 @@
+SELECT * FROM (title_basics tb LEFT JOIN title_rating tr ON tr.tconst = tb.tconst) WHERE tr.averageRating >= 7 AND NOT EXISTS(SELECT * FROM title_crew WHERE tc.director = 'Joe Johnston') GROUP BY tb.movieID HAVING COUNT(*) > 0 ORDER BY SUM(tr.numvotes)/COUNT(*) DESC LIMIT 6

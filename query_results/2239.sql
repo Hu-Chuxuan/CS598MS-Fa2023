@@ -1,0 +1,1 @@
+SELECT DISTINCT t.* FROM title AS t WHERE (titleType='movie' AND (startYear >=? OR endYear <=?)) ORDER BY rating DESC LIMIT 5

@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE titleType ='movie' AND genres LIKE '%action%' ORDER BY rating DESC LIMIT 5

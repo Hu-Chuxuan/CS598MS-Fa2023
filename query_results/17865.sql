@@ -1,0 +1,1 @@
+SELECT * FROM imdb.title WHERE imdb.user_rating >=? AND genre =?

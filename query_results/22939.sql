@@ -1,0 +1,1 @@
+SELECT * FROM tconst WHERE rating >.6 AND genre = "war" OR genre ="action"

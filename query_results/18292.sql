@@ -1,0 +1,1 @@
+SELECT * FROM title_ratings WHERE rating >= 6 AND title IN ('Ghostbusters Ii','Ghostbusters') OR rating >= 7

@@ -1,0 +1,1 @@
+SELECT t1.* FROM TITLE_BASICS AS t1 INNER JOIN NAME_BASICS as n1 ON t1.title_type=n1.primary_name WHERE t1.isadult = "no" AND t1.startyear BETWEEN 1860 AND CURRENT DATE - INTERVAL 1 YEAR GROUP BY t1.title_id HAVING COUNT(*)>1 ORDER BY t1.averagerating DESC LIMIT 1

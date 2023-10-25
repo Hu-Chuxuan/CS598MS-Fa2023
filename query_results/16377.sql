@@ -1,0 +1,1 @@
+SELECT * FROM rating_table WHERE user_id = '6789'

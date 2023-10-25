@@ -1,0 +1,1 @@
+SELECT DISTINCT tc.* FROM title_ratings tr JOIN title_basicstb ON tr.title_id = tb.title_id WHERE tb.isAdult='no' AND ((tb.startYear BETWEEN? AND?)) AND ((tb.endYear >=? OR ISNULL(tb.endYear))) AND (tr.averageRATING >?)

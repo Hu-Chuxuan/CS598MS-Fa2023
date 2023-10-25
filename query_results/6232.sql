@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE titleType = "movie" AND (titleType IN ('action','adventure')) ORDER BY rating DESC LIMIT 3

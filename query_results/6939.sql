@@ -1,0 +1,1 @@
+SELECT * FROM title_recommend WHERE title_type = "drama" AND user_input LIKE "%dram%" ORDER BY numvotes DESC LIMIT 1

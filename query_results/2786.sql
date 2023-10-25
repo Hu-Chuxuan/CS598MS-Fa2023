@@ -1,0 +1,1 @@
+SELECT * FROM title_ratings WHERE rating >= "3" AND director IN ('Richard Donner') ORDER BY AVG(rating)

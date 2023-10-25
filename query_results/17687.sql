@@ -1,0 +1,1 @@
+SELECT * FROM table WHERE (title_type ='movie' AND director IN ('Steven Spielberg')) OR (startyear < 2016)

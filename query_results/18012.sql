@@ -1,0 +1,1 @@
+SELECT * FROM imdb.title WHERE rating > 6 AND titleType!= "Documentary" ORDER BY rating DESC LIMIT 1

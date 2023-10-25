@@ -1,0 +1,2 @@
+SELECT * FROM 
+(   SELECT rating AS r, title_name.title AS t, director AS d, genre AS g, year AS y, castmember AS cm, PRIMARY KEY(t,y,g), PRIMARY KEY(d,year) from title_ratings as tr INNER JOIN title_names as tn ON tn.primaryTitle = tr.title_id LEFT OUTER JOIN title_crew as tw ON tw.directorID=tr.director_id WHERE tr.averageRating >= 8 AND tr.numvotes > 100 ORDER BY tr.averageRATING DESC LIMIT 10

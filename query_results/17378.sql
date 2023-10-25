@@ -1,0 +1,1 @@
+SELECT DISTINCT title_basic.* FROM title_basic WHERE title_basic.titleType = "movie" AND NOT EXISTS( SELECT * from title_recommendation where title_basic.primaryTitle = title_recommendation.title) ORDER BY title_basic.startYear DESC LIMIT 5

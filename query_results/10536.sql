@@ -1,0 +1,1 @@
+SELECT * FROM title_basics WHERE titleType = "Sci-Fi" AND startYear >= YEAR(CURRENT_DATE - INTERVAL 8 DAY)

@@ -1,0 +1,1 @@
+SELECT t.* FROM title_basic AS t JOIN cast AS c ON (c.title = t.primaryTitle AND t.startYear >=? ) WHERE c.job IN ('actress') GROUP BY t.primaryTitle ORDER BY COUNT(*) DESC LIMIT 5

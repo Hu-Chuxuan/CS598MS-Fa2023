@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE rating >= 6 AND director = "Judd Apatow" OR writer = "Seth Rogen"

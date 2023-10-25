@@ -1,0 +1,1 @@
+SELECT * FROM tconst WHERE tconst = 'title_rating' AND avg(averageRating)>=6

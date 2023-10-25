@@ -1,0 +1,1 @@
+SELECT * FROM title_rating WHERE user_preferences LIKE '%Titanic%' AND rating > 8

@@ -1,0 +1,1 @@
+SELECT * FROM tconst WHERE tconst IN ('title_ratings','name_basics')

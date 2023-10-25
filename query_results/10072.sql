@@ -1,0 +1,1 @@
+SELECT * FROM movies WHERE rating > 7 AND genre = "Suspense" ORDER BY rating DESC

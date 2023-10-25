@@ -1,0 +1,1 @@
+SELECT t.* FROM titles AS t WHERE (titleType = 'Movie' AND (startYear >= 1976 OR startYear <= 2000))AND (isAdult <> 'yes') AND NOT EXISTS( SELECT * FROM title_recommendation_history WHERE userID=1234 AND watched = false)

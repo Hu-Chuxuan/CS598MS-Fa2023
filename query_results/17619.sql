@@ -1,0 +1,1 @@
+SELECT DISTINCT tc.* FROM title_basics AS tb JOIN title_ratings AS tr ON tb.titleId = tr.movieId AND tr.rating >.6

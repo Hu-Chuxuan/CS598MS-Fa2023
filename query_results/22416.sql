@@ -1,0 +1,1 @@
+SELECT * FROM tconst WHERE titleType ='movie' AND averageRating > 6

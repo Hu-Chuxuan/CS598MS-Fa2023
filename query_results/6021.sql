@@ -1,0 +1,1 @@
+SELECT * FROM movie_recommendation WHERE userPreferedMovie IN ('Happy Death Day  (2017)','Psycho  (1960)') AND userPreferredGenre = 'Horror'

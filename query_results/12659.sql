@@ -1,0 +1,1 @@
+SELECT tb.* FROM title_basic AS tb INNER JOIN rating_data AS rd ON tb.titleId = rd.titleId WHERE rd.rating >.7 AND genre LIKE 'Drama' LIMIT 0, 1

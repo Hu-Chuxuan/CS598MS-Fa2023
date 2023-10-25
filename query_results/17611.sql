@@ -1,0 +1,1 @@
+SELECT DISTINCT tb.* FROM titles AS t INNER JOIN name_basics AS n ON t.titleId = n.primaryMovieId AND n.jobCategory = "actress" WHERE t.isAdult!= 0 ORDER BY avg(rating)

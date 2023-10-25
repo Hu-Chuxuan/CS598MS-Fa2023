@@ -1,0 +1,1 @@
+SELECT * FROM (title_ratings tc JOIN name_basics na ON tc.primaryTitle = na.primaryTitle AND tc.startYear <= na.birthYear ) WHERE tc.averageRating >= 6

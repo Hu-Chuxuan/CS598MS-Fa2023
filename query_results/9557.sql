@@ -1,0 +1,1 @@
+SELECT t.* FROM title_ratings AS r INNER JOIN titles as t ON t.titleID = r.movieID WHERE r.averageRating > x AND r.numVotes >= y ORDER BY r.averageRating DESC LIMIT z

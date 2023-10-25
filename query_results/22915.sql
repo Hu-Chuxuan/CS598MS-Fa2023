@@ -1,0 +1,1 @@
+SELECT DISTINCT t.* FROM title_ratings AS r JOIN title_principals AS p ON p.nconst = r.title_id WHERE NOT EXISTS( SELECT * from title_recommendation WHERE title_id IN (r.title_id)) AND ((r.startyear >= 2010 AND r.endyear <= 2020) OR (r.startyear < 2010 AND r.endyear > 2020))

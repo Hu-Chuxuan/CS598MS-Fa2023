@@ -1,0 +1,1 @@
+SELECT * FROM TITLE_BASICS tb WHERE tb.titleType='movie' AND NOT EXISTS( SELECT * FROM TITLE_CREW tr WHERE tr.director=tb.primaryDirector ) ORDER BY tb.averageRating DESC LIMIT 5

@@ -1,0 +1,1 @@
+SELECT t.* FROM title_basics AS t INNER JOIN title_ratings as r ON r.title = t.title WHERE rating >= 6 AND title IN ('Dawn Of The Dead','Get Out') ORDER BY rating DESC LIMIT 3

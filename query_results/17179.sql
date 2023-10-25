@@ -1,0 +1,1 @@
+SELECT DISTINCT t.* FROM title_ratings r INNER JOIN title_basic b ON r.title = b.title WHERE r.numVotes > 0 AND r.averageRating >= '7' ORDER BY r.averageRating DESC

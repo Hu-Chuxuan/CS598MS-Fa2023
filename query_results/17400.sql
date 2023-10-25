@@ -1,0 +1,1 @@
+SELECT t.* FROM title AS t JOIN title_ratings as tr ON t.titleID = tr.titleID WHERE tr.averageRating >= $input AND tr.numVotes > 1

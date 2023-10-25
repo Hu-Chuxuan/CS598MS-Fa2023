@@ -1,0 +1,1 @@
+SELECT tb.* FROM imdb.title_basic AS tb WHERE tb.genre = "comedy" AND (tb.startyear >= $startyear OR tb.endyear <= $endyear)

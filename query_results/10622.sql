@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE rating >= 7 AND genre = 'Suspense' OR (rating <= 6 AND rating > 5)

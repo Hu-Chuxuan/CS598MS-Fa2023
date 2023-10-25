@@ -1,0 +1,1 @@
+SELECT t.* FROM titles AS t JOIN title_ratings r ON t.titleID = r.titleID AND r.averageRating > 7 WHERE ((t.isAdult='false') OR ('true')) ORDER BY t.numVotes DESC LIMIT 8

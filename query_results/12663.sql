@@ -1,0 +1,1 @@
+SELECT * FROM rating_history WHERE userID = 'user' AND genre LIKE '%action%' ORDER BY avgRating DESC LIMIT 6

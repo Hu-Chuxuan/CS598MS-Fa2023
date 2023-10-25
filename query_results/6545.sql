@@ -1,0 +1,1 @@
+SELECT t.* FROM title_ratings AS r INNER JOIN title_crew AS c ON c.director = r.averageRating INNER JOIN title_principals AS p USING(ordering)

@@ -1,0 +1,1 @@
+SELECT t.* FROM movies AS m INNER JOIN rating AS r ON(r.movieID = m.id AND r.userID=?) WHERE? IN ('Horror', 'Drama') ORDER BY avg_rating DESC LIMIT 6

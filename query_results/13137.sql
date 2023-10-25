@@ -1,0 +1,1 @@
+SELECT t.* FROM title_basic t JOIN title_rating r ON t.title_id = r.title_id WHERE t.primaryTitle LIKE '%Drew%'

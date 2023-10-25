@@ -1,0 +1,1 @@
+SELECT t.* FROM title_basics AS t JOIN name_basics ON t.`title_type` = `name_basics`.`primary_profession` WHERE t.`start_year` >=? AND t.`end_year` <=? ORDER BY t.`rating_average`, COUNT(DISTINCT `genre`) DESC LIMIT 1

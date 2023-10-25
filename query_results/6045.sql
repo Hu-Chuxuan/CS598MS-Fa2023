@@ -1,0 +1,1 @@
+SELECT * FROM movies WHERE director IN ('Jon Favreau') OR writer IN ('Alexander Payne')

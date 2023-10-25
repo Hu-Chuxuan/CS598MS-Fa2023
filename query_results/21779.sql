@@ -1,0 +1,1 @@
+SELECT DISTINCT t.titleID FROM title AS t INNER JOIN title_ratings as r ON(r.titleID = t.titleID)

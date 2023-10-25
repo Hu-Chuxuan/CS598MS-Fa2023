@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE rating >.8 AND title_type = "movie" AND title_genre IN ("comedy") ORDER BY avg(rating),numvotes DESC LIMIT 6

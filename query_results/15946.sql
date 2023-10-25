@@ -1,0 +1,1 @@
+SELECT tb.* FROM title_basic AS tb INNER JOIN title_rating AS tr ON tb.titleID = tr.titleID AND tb.titleID IN(?) WHERE? LIKE '%Wonder%' OR? LIKE '%Wonder%'

@@ -1,0 +1,1 @@
+SELECT * FROM ( SELECT r.*, p.*, c.* FROM rating r INNER JOIN person p ON r.personId = p.id INNER JOIN character c ON r.characterId = c.id WHERE r.rating >= 7 AND r.userEmail='john@doe.com') AS ratings JOIN (SELECT * FROM name WHERE nconst=9680 ) as names USING(primaryName)

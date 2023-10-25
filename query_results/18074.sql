@@ -1,0 +1,1 @@
+SELECT * FROM title_ratings t INNER JOIN title_basics b ON t.titleID = b.titleID WHERE b.isAdult=false AND b.genre IN ('action','comedy') ORDER BY avg(t.averageRating)

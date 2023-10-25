@@ -1,0 +1,1 @@
+SELECT t.* FROM title_basics AS t INNER JOIN name_basics as n ON t.titleID=n.titleID WHERE genre = "Fantasy" AND rating > 7 ORDER BY rating DESC

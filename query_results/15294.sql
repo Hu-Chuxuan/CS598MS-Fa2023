@@ -1,0 +1,1 @@
+SELECT t.* FROM titleratings r JOIN titles t ON r.titleid = t.imdbID WHERE genre IN ('comedy') AND rating >= 6

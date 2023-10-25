@@ -1,0 +1,1 @@
+SELECT * FROM name_basics WHERE genre = "Horror" AND year BETWEEN? AND?

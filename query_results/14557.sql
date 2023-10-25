@@ -1,0 +1,1 @@
+SELECT t.* FROM movies AS m INNER JOIN title_basic as b ON b.primaryTitle = m.title WHERE b.isAdult=false AND b.startYear BETWEEN 1950 AND 1960

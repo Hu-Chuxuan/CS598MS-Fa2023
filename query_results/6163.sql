@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE tconst = "comedy" AND userInput LIKE "%bad%" OR userInput LIKE "%great%" ORDER BY rating DESC LIMIT 10

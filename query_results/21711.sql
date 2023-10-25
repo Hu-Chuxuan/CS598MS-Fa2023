@@ -1,0 +1,1 @@
+SELECT * FROM tconst WHERE tconst.titleType = "movie" AND tconst.startYear BETWEEN <year> - 20 YEARS AND <year> + 20 years ORDER BY avg(rating DESC)

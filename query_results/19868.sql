@@ -1,0 +1,1 @@
+SELECT t.* FROM title_ratings AS r INNER JOIN title_basic AS b ON b.titleID = r.titleID AND b.isAdult = false WHERE r.averageRating >.7 AND EXISTS( SELECT * from name_basics as m WHERE m.primaryName LIKE '%sci fi%' ) ORDER BY r.numVotes DESC LIMIT 2

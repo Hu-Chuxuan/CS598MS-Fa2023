@@ -1,0 +1,1 @@
+SELECT tc.* FROM title_basic AS tb JOIN title_rating as tr ON tr.title = tb.title WHERE tr.average RATING >= 7 AND tr.num VOTES > 1

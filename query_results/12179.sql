@@ -1,0 +1,1 @@
+SELECT * FROM `title` WHERE (`title`.`primaryTitle` = "Fist Fight" OR `title`.`originalTitle` LIKE "%Fight%" ) AND ("titleType"="movie") ORDER BY `startYear`

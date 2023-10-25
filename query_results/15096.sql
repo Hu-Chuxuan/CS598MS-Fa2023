@@ -1,0 +1,1 @@
+SELECT * FROM title_ratings WHERE rating >= 7 AND tconst = 'tt1980792'

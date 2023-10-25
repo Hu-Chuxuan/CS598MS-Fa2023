@@ -1,0 +1,1 @@
+SELECT DISTINCT t.titleID FROM titles AS t JOIN userPreferences AS u ON t.titleID = u.titleID WHERE t.category IN ('comedy') AND t.primaryProfession <> '' ORDER BY t.numVotes DESC

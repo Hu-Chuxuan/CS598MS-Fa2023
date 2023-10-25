@@ -1,0 +1,1 @@
+SELECT * FROM ( SELECT DISTINCT title AS tname, rating AS rrating, avg(ratting) as rrating FROM ratings GROUP BY tname, ratting ) A WHERE tname LIKE '%Murder%' AND rrating >= 5

@@ -1,0 +1,1 @@
+SELECT * FROM title_basic WHERE titleType = "movie" AND (primaryTitle LIKE '%thrill%' OR primaryTitle LIKE '%horror%') ORDER BY avgRating DESC LIMIT 6

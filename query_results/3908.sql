@@ -1,0 +1,1 @@
+SELECT * FROM `title` WHERE `primaryTitle` LIKE "%$movie%" OR (`director` LIKE '%$movie%') OR (`writer` LIKE '%$movie%')

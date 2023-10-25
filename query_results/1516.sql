@@ -1,0 +1,1 @@
+SELECT * FROM titles WHERE rating > 8 AND genre = "Mystery" ORDER BY rating DESC LIMIT 0, 6

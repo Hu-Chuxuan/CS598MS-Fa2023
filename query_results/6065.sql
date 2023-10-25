@@ -1,0 +1,1 @@
+SELECT t.titleID AS "Movie ID", t.primaryTitle AS "Primary Title" FROM title_basics AS t WHERE CONCAT(CONCAT('director=', t.name),' OR writer=','castmember') IN ('director=Nora Ephron','writer=Richard Curtis','castmember=Emma Thompson')

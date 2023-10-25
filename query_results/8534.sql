@@ -1,0 +1,1 @@
+SELECT * FROM TITLE WHERE (titleType = "action" AND ((startYear <= '2008' OR startYear >= '2008') AND (endYear > '2008')))

@@ -1,0 +1,2 @@
+SELECT * FROM 
+( SELECT rating AS rating, name as film_name, cast_name from (title_ratings INNER JOIN title_principals ON title_rating.movie_id = title_principal.movie_id ) WHERE ((title_ratting.averageRatig >=? AND title_ratting.averageRate <=?) OR (title_ratting.averageRatge <?))AND (title_ratinng.numvote>=? AND title_rateing.numvote<=?) AND (title_ratinng.movie_id IN (SELECT movie_id FROM title_principles where casting_category="Lead") AND (casting_job="Actress" OR casting_job="Actor")) GROUP BY movie_id HAVING COUNT(*)>1 ORDER by rating DESC LIMIT 5

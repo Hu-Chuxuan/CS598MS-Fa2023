@@ -1,0 +1,1 @@
+SELECT DISTINCT t.* FROM titles AS t JOIN name_basics as b ON t.titleId = b.primaryTitle WHERE b.primaryName LIKE '%Aaron%' AND b.birthYear > 1982 GROUP BY t.id HAVING COUNT(DISTINCT b.category) >= 3 ORDER by rating DESC LIMIT 1

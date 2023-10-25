@@ -1,0 +1,1 @@
+SELECT t.* FROM title_basics AS t JOIN genre g ON t.genre = g.genreID WHERE t.titleType='comedy' AND t.startYear>1968

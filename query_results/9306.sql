@@ -1,0 +1,1 @@
+SELECT * FROM movies WHERE (((title_basic.genre = "Firefighter" OR title_basic.genre LIKE "%fire%") AND ((title_basic.startyear >= 1960)) AND (title_basic.endyear <= 2020))) UNION ALL SELECT * from movies WHERE (((title_rating.averagevoterating BETWEEN 9 AND 10) AND (title_rating.numvoters > 2000)) AND ((title_basic.category="Drama")))

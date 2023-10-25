@@ -1,0 +1,1 @@
+SELECT * FROM (SELECT tc.*, nr.*, rt.*, nb.*, ct.*, tc.*, tr.* WHERE tc.titleID = nb.titleID AND tc.titleID IN (SELECT titlID FROM tr WHERE tr.titleID LIKE '%' + @@movieName +'%') AND tr.titleID NOT IN ('%', '@@movieName')) AS t INNER JOIN title_rating tr ON t.titleID = tr.titleID

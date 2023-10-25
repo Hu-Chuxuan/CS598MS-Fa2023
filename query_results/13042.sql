@@ -1,0 +1,1 @@
+SELECT * FROM movie WHERE rating > 6 AND genre = 'comedy' LIMIT 3

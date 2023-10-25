@@ -1,0 +1,1 @@
+SELECT * FROM title_basic WHERE titleType = "horror" AND (startYEAR < 2018 OR startYEAR > 1960)

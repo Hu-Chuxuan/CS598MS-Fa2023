@@ -1,0 +1,1 @@
+SELECT titleID FROM title WHERE genre = "Drama" AND rating >= 7

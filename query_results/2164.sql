@@ -1,0 +1,1 @@
+SELECT DISTINCT titles.* FROM ratings JOIN title_crew ON rating.titleID = title_crews.titleID WHERE rating.userID=1 AND title_crews.directorID IN ('Darren Lynn Bousman','James Wan') GROUP BY title_crews.titleID

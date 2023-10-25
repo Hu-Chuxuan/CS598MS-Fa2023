@@ -1,0 +1,1 @@
+SELECT DISTINCT t.* FROM title AS t JOIN user_preferences as u ON(u.movie_id = t.titleID AND u.userID=?) WHERE t.title_type IN ('Movie') AND NOT EXISTS (SELECT * FROM genre g INNER JOIN rating r USING (genre_id) WHERE r.rating >?)

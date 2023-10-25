@@ -1,0 +1,1 @@
+SELECT * FROM (title_ratings WHERE tconst = 'Robin William' AND (numVotes > 0)) JOIN (name_basics ON primaryName LIKE '%Williams%') ORDER BY avgRating DESC LIMIT 3

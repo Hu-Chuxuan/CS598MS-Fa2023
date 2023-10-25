@@ -1,0 +1,1 @@
+SELECT * FROM titles WHERE type = "adventure" AND rating > 6

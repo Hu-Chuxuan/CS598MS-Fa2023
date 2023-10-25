@@ -1,0 +1,1 @@
+SELECT * FROM `title_basics` WHERE `title_type` = "movie" AND (`startyear` BETWEEN? AND?) AND ((? OR?)) GROUP BY `title_id`, `title_name`

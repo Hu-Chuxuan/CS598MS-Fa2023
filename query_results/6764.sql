@@ -1,0 +1,1 @@
+SELECT DISTINCT tb.titleID as MovieID FROM movies m INNER JOIN title_rating tr ON m.movieID = tr.movieID AND tr.userID =? WHERE m.genreID IN ('69') ORDER BY tr.averageRating DESC LIMIT 1

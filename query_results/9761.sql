@@ -1,0 +1,1 @@
+SELECT * FROM titles WHERE title_type = "movie" AND (original_title LIKE '%The%') OR (primary_title LIKE '%The%')

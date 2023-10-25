@@ -1,0 +1,1 @@
+SELECT * FROM titles WHERE rating > 7 AND (genre = "Science Fiction" OR genre LIKE "% SciFi%" )AND (director IN ("Will Smith", "Jonathan Mostow")) ORDER BY RANDOM() LIMIT 1

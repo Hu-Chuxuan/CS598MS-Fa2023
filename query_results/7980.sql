@@ -1,0 +1,1 @@
+SELECT t.* FROM title AS t JOIN name ON t.titleID = n.titleID WHERE n.primaryName LIKE '%Avengers%' OR n.birthYear BETWEEN? AND?

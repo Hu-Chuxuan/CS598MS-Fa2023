@@ -1,0 +1,1 @@
+SELECT * FROM movieRecommendationSystem WHERE userInput = 'Nicholas Cage'

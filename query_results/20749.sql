@@ -1,0 +1,2 @@
+SELECT * FROM (title_basic WHERE tconst =? OR nconst =? AND ((startYear <=? )AND(endYear >=?)) AND((averageRating >?))) UNION ALL SELECT * FROM (title_rating WHERE avg rating>?)
+UNION ALL select* from (name_basic WHERE primaryName=?) ORDER BY?

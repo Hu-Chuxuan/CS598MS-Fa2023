@@ -1,0 +1,1 @@
+SELECT t.* FROM title AS t JOIN cast AS c ON t.titleID = c.movieID WHERE t.primaryName LIKE '%Simba%' OR t.directorID IN ('%Johnathan Taylor Thomas%') AND c.job NOT IN ("Actor") GROUP BY t.titleID HAVING COUNT(c.job)=6

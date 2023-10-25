@@ -1,0 +1,1 @@
+SELECT * FROM imdb WHERE rating > 8 AND genre = "romance" OR genre IN ("drama", "comedy") ORDER BY popularity DESC LIMIT 5

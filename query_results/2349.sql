@@ -1,0 +1,1 @@
+SELECT t.* FROM imdb.title AS t JOIN imdb.name as n ON t.primaryName = n.primaryName WHERE ((t.startYear <=? AND t.endYear >=?) OR (n.birthYear <?)) AND (t.averageRating >? )AND(n.deathYear IS NULL)

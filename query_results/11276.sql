@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE titleType = "kid" AND (genre IN ('family','animation') OR genre IS NULL)

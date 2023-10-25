@@ -1,0 +1,1 @@
+SELECT * FROM movies WHERE genre = "Science Fiction" OR rating >= 7

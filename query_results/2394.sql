@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE type = "thriller" AND (genre in ('drama','crime') OR genre IS NULL)

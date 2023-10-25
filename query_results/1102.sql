@@ -1,0 +1,1 @@
+SELECT * FROM table WHERE genre LIKE '%sci%' AND (rating >? OR rating =?)

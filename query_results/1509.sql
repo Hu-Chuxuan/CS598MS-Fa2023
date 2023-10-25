@@ -1,0 +1,1 @@
+SELECT t.* FROM (title_basics AS t JOIN name_basics ON t.primaryTitle = n.primaryName AND t.startYear < 1968 ORDER BY t.runtimeMinutes DESC LIMIT 3) WHERE EXISTS(SELECT * FROM (title_ratings as r JOIN name_basics ON r.averageRating > 7 AND n.birthYear >= 1970) GROUP BY n.category HAVING COUNT(*)>0)

@@ -1,0 +1,1 @@
+SELECT t.* FROM title_recommendation AS t WHERE ((((titleType = "comedy" OR titleType IS NULL)) AND ((startYear > 1970))) AND (((endYear < 2018))) AND (((runtimeMinutes <= 100)))

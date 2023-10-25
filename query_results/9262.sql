@@ -1,0 +1,1 @@
+SELECT * FROM `title_basic` WHERE ((startYear >= '2007') AND (endYear <= '2008')) AND (`genre` LIKE '%comedy%' OR `genre` LIKE '%romance%')

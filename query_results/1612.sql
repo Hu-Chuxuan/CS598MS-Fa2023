@@ -1,0 +1,1 @@
+SELECT * FROM title_basics WHERE tconst = 'title' AND ((startYear BETWEEN? AND? ) OR (endYear BETWEEN? AND?)) ORDER BY rating DESC LIMIT 1

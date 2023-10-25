@@ -1,0 +1,1 @@
+SELECT * FROM title_basics WHERE tconst = "comedy" AND avg(rating) >.8

@@ -1,0 +1,1 @@
+SELECT t1.* FROM movies AS m INNER JOIN rating AS r ON m.imdbid = r.title WHERE r.vote > 8

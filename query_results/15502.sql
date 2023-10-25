@@ -1,0 +1,1 @@
+SELECT t1.* FROM title_basic AS t1 INNER JOIN title_rating as tr ON (tr.title = t1.primaryTitle) WHERE rating >=? AND genre IN ('drama', 'romance')

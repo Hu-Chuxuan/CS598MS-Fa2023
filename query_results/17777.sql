@@ -1,0 +1,1 @@
+SELECT * FROM `title_recommendation` WHERE rating >= $minimum AND genre = "Crime" ORDER BY RAND() LIMIT 6

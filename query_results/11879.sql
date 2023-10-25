@@ -1,0 +1,1 @@
+SELECT * FROM movies WHERE rating > 7 AND year < 2010 GROUP BY genre HAVING COUNT(titleID)>=2 ORDER by avgrating DESC LIMIT 5

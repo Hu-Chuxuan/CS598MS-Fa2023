@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE averageRating >= 7 AND genre IN ('drama') ORDER BY averageRating DESC LIMIT 3

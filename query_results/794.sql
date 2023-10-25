@@ -1,0 +1,1 @@
+SELECT DISTINCT(title_type), avg(rating)/numvoters AS rating FROM ratings WHERE rating >= 6 AND genre IN ('Drama','Comedy') GROUP BY title_type ORDER BY rating DESC LIMIT 5

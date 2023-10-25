@@ -1,0 +1,1 @@
+SELECT * FROM rating WHERE user = '1' AND year BETWEEN 2000 TO 2008

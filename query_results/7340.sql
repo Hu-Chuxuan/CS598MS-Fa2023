@@ -1,0 +1,1 @@
+SELECT * FROM title_basics WHERE titleType = "movie" AND ((startYear >= 1860 OR startYear <= 1980)) ORDER BY avg(rating)

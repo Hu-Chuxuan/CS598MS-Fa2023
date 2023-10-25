@@ -1,0 +1,1 @@
+SELECT * FROM `title` WHERE (`primaryProfession = "Princess"`) AND ((genre LIKE "%Disney%") OR (director LIKE "%John Musker%" OR director LIKE "%Jeffrey Katzenberg%")) ORDER BY rating DESC LIMIT 0, 5

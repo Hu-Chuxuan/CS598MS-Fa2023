@@ -1,0 +1,1 @@
+SELECT t.titleID as MovieId, r.rating as Rating from title_ratings AS r INNER JOIN title_basics AS t ON r.titleID = t.titleID where rating >.80

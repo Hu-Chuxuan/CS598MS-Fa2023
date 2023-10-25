@@ -1,0 +1,1 @@
+SELECT * FROM (title_ratings,name_basics,title_crew,title_principals WHERE rating > avg(rating)) JOIN (movie_user WHERE user_id =? AND user_preferences LIKE %'%$1%'%) ON $1 = PRIMARY_NAME ORDER BY $1

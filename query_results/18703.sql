@@ -1,0 +1,1 @@
+SELECT movies.* FROM title_recommendation AS recommandation JOIN title_basics as basics ON basics.titleId = recommandation.movieId AND recommandation.userID =? WHERE recommandation.numOfReviews >?

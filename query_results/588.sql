@@ -1,0 +1,1 @@
+SELECT * FROM (title_recommendation INNER JOIN (title_basic, cast_actor) ON title_basic.id = title_recommendation.primaryTitle AND ((cast_actor).ordering = 'n' OR casting.category='a')) WHERE (cast_actor).job LIKE '%Actor%' ORDER BY (cast_actor).birthYear ASC

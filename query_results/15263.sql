@@ -1,0 +1,1 @@
+SELECT * FROM title_basics WHERE tconst = "good will hunting" AND rating >.8

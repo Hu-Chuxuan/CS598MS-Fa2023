@@ -1,0 +1,1 @@
+SELECT t.* FROM title_basics AS t JOIN ( SELECT DISTINCT(title) FROM title_ratings WHERE (averageRating > 7)) AS rating ON ((title = rating))

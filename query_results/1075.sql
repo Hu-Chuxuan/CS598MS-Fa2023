@@ -1,0 +1,1 @@
+SELECT * FROM movies WHERE userInput = 'Forest Gump' AND userPreferenceHistory LIKE '%Wizard%' ORDER BY rating DESC LIMIT 3

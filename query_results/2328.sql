@@ -1,0 +1,1 @@
+SELECT t.titleId FROM movies m JOIN cast c ON m.movieId = c.movieId AND c.castMemberRole = 'Actress' OR c.castMemberRole='Actor'

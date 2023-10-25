@@ -1,0 +1,1 @@
+SELECT * FROM titles WHERE ((titleType = "Western") AND (startYear > 1980)) ORDER BY rating DESC LIMIT 5

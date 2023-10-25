@@ -1,0 +1,2 @@
+SELECT DISTINCT t.titleID as TitleID, c.nameID as NameID FROM ((title_crew AS t INNER JOIN title_rating AS r ON t.titleID = r.movieID AND r.userID=?) WHERE? IN (r.genre))
+INNER JOIN (SELECT titleID, COUNT(*) AS votes FROM rating GROUP BY titleID ORDER BY votes DESC LIMIT 8) as topRatedMovies ON topRatedMovies.titleID = t.titleID

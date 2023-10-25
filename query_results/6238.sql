@@ -1,0 +1,2 @@
+SELECT t.titleId AS TitleID, t.titleType AS Type, t.primaryTitle AS PrimaryTitle, t.originalTitle AS OriginalTitle,
+       t.isAdult AS IsAdult, t.startYear AS StartYear, t.endYear AS EndYear, t.runtimeMinutes AS RuntimeMinutes, g.genre AS Genre FROM titles t INNER JOIN genre g ON g.id = t.genre WHERE t.titleType IN ('movie') AND t.type!= "Tv Series" OR t.titleType IS NULL ORDER BY t.averageRating DESC LIMIT 6

@@ -1,0 +1,1 @@
+SELECT tc.* FROM title_basic AS tb INNER JOIN name_basic AS nb ON tb.titleType = "movie" AND tb.primaryTitle=nb.nconst WHERE tb.isAdult="true"

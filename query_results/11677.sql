@@ -1,0 +1,1 @@
+SELECT t.* FROM movies AS m INNER JOIN casts AS c ON c.movieId = m.id WHERE (m.genre IN ('Horror', 'Thriller') AND m.startDate BETWEEN??? AND??) OR (c.castMember IN (?)) ORDER BY rating DESC LIMIT 5

@@ -1,0 +1,1 @@
+SELECT * FROM title_ratings t JOIN name_basics n ON t.primaryTitle = n.titleType WHERE t.startYear >= '1986' AND t.endYear <= '1997'

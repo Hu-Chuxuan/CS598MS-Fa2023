@@ -1,0 +1,1 @@
+SELECT t.* FROM (title_rating r INNER JOIN title_crew c ON r.titleId = c.titleId WHERE r.averageRating >= 8 AND c.primaryProfession IN ('director') OR c.primaryProfession IN ('writer')) AS t

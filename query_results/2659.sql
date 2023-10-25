@@ -1,0 +1,1 @@
+SELECT * FROM title_ratings WHERE rating >= 6 AND (rating <=? OR rating =?) AND (title_type IN ('movie','tv show') OR title_type='unknown')

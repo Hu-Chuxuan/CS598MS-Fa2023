@@ -1,0 +1,1 @@
+SELECT * FROM movie WHERE genre = "Musical" AND rating >.5 ORDER BY rating DESC LIMIT 3

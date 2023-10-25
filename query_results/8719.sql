@@ -1,0 +1,1 @@
+SELECT t.* FROM movies AS m INNER JOIN casts AS c ON m.imdbID = c.movieid WHERE c.actortype='Principal' AND m.title LIKE '%Star Wars%' ORDER BY imdbrating DESC LIMIT 1

@@ -1,0 +1,1 @@
+SELECT * FROM TITLE_BASICS WHERE title_type = "DVD" AND title_name LIKE "%(userInput)" OR title_genre IN ('Action','Comedy')

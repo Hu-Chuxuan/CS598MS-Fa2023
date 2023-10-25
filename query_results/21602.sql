@@ -1,0 +1,1 @@
+SELECT tb.* FROM imdb_movies AS m JOIN imdb_title_basics as tb ON tb.primaryTitle = m.imdbrID WHERE m.startYear >= 2019 AND m.endYear <= 2021

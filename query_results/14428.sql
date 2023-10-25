@@ -1,0 +1,1 @@
+SELECT title_basic.* FROM title_basic WHERE genre = "comedy" AND rating >=.8

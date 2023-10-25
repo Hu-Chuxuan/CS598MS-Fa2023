@@ -1,0 +1,1 @@
+SELECT * FROM title_principals WHERE category = "actor" AND characters LIKE '%Brad Pitt%' ORDER BY rating DESC LIMIT 1

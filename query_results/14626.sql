@@ -1,0 +1,1 @@
+SELECT t.* FROM title_ratings AS r JOIN title_crew AS c ON r.titleId = c.titleId AND r.averageRating >.7 WHERE c.director IN ('Sci-Fi & Fantasy')

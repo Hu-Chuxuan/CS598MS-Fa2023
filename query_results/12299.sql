@@ -1,0 +1,1 @@
+SELECT * FROM title_ratings WHERE tconst IN ('Apocalypse Now','Saving Private Ryan') AND avgrating > 6

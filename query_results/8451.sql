@@ -1,0 +1,1 @@
+SELECT * FROM (title_basics tb JOIN genre g ON tb.genre=g.id WHERE tb.startyear>='1980') JOIN (title_ratings tr ON tr.averagerating>=6 OR tr.numvotes >= 100 AND tr.isadult==false) WHERE tb.primarytitle LIKE '%Drama%' AND tr.avaragereview >= 7

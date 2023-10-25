@@ -1,0 +1,1 @@
+SELECT * FROM `title_recommendation` WHERE user_preferences LIKE '%jumanji%' OR user_preferences LIKE '%almost famous%'

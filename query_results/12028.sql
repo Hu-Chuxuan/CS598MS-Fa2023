@@ -1,0 +1,1 @@
+SELECT t1.* FROM titles AS t1 JOIN categories AS c ON t1.`titleType` = c.`category`

@@ -1,0 +1,1 @@
+SELECT * FROM (title_principals AS tp JOIN title_rating AS tr ON p.job = j AND r.averageRating > 7 WHERE ((tp.category LIKE '%Biography%' OR tp.category LIKE '%Documentary%') AND NOT EXISTS(SELECT 1 from title_principals where job='Crew')) ORDER BY rating DESC LIMIT 6

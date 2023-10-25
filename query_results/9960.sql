@@ -1,0 +1,1 @@
+SELECT DISTINCT movies.* FROM movies JOIN userPreference ON movies.titleID = userPreference.movieID WHERE titleType = "Horror" AND rating >= 8

@@ -1,0 +1,1 @@
+SELECT * FROM imdb.title_rating WHERE rating > 6 AND genre = "Drama"

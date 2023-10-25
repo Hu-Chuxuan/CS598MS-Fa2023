@@ -1,0 +1,1 @@
+SELECT DISTINCT m.* FROM title_basic tb INNER JOIN title_rating tr ON tb.titleId =tr.movieID AND tr.userID=? ORDER BY rating DESC LIMIT?

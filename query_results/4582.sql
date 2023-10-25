@@ -1,0 +1,1 @@
+SELECT * FROM `title_basic` WHERE `genre` = 'Sci-Fi' AND (`startYear` BETWEEN? &&? ) ORDER BY `runtimeMinutes`

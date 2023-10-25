@@ -1,0 +1,1 @@
+SELECT DISTINCT * FROM title_ratings WHERE rating >=.8

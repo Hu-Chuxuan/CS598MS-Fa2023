@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE titleType = "movie" AND director IN ('Liam Neeson', 'Fred Ward') OR rating >=.9

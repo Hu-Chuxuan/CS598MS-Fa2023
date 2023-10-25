@@ -1,0 +1,1 @@
+SELECT t.* FROM (title_rating r JOIN title_basic b ON r.primaryMovie = b.tconst) JOIN (name_basic m ON r.numVotes >= 80 AND r.averageRating >.7 WHERE r.isAdult = 'false') ON m.birthYear < 1960 GROUP BY r.numVotes ORDER by r.averageRating DESC LIMIT 5

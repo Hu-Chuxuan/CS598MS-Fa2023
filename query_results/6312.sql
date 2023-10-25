@@ -1,0 +1,1 @@
+SELECT tc.* FROM title_recommendations tr INNER JOIN title_baseball tb ON tr.movieid = tb.titleID WHERE tr.userID='167001465'

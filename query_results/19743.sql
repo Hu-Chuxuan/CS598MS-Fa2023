@@ -1,0 +1,1 @@
+SELECT t.titleID as ID, t.primaryTitle AS Title, t.isAdult AS Adult, mr.rating AS Rating FROM movies AS m LEFT JOIN titles AS t ON t.movieID = m.id AND t.nameID IS NULL WHERE m.category!= 'Short Film' OR (m.year > 1970 AND m.year < 2000)

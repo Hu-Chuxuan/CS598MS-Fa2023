@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE genre IN ('romance','comedy') AND rating >= 6

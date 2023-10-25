@@ -1,0 +1,1 @@
+SELECT DISTINCT t.* FROM titles AS t JOIN name_basics AS n ON t.titleId = n.titleId WHERE ((((t.primaryTitle LIKE '%' ||? ||'%') OR (t.originalTitle LIKE '%' ||? ||'%')) AND ((n.birthYear BETWEEN 1967 AND 1985))))) GROUP BY t.titleId HAVING COUNT(*) > 1 ORDER BY AVG(t.averageRating), TIMESTAMPDIFF('minute', t.runtimeMinutes, NOW()) DESC

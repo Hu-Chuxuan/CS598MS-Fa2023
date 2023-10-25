@@ -1,0 +1,1 @@
+SELECT t.* FROM title AS t INNER JOIN name ON(name.primaryName = t.title_basics.primaryTitle)

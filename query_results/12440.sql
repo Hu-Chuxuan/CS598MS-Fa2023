@@ -1,0 +1,1 @@
+SELECT DISTINCT t.* FROM title_basic AS t WHERE ((titleType = "movie") AND (startYear > 1976)) ORDER BY rating DESC LIMIT 2

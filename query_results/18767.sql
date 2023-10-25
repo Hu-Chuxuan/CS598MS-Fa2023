@@ -1,0 +1,1 @@
+SELECT tb.* FROM title_basics AS tb INNER JOIN title_ratings AS tr ON tb.titleID = tr.titleID WHERE tr.numVotes >= 2 AND ((tr.averageRating BETWEEN 7.9 AND 8.6)) OR ((((tb.startYear > 1990) AND (tb.endYear < 2000))) OR ((((tb.startYear <= 1990) AND (tb.endYear >= 2000)))))

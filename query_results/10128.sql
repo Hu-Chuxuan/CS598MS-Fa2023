@@ -1,0 +1,1 @@
+SELECT t.* FROM (title_basics AS t INNER JOIN title_ratings AS r ON t.id = r.movieId) INNER JOIN name_basics as n ON t.primaryName = n.name WHERE (r.averageRating > 6 AND ((NOT EXISTS( SELECT * from title_crew where director = 'Joe Dante') OR NOT EXISTS( SELECT * from title_crew where writer = 'Steve Oedekerk')))) ORDER BY r.numVotes DESC LIMIT 1

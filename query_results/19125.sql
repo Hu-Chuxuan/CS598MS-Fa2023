@@ -1,0 +1,1 @@
+SELECT * FROM tconst WHERE titleType = "action" AND ((startYear >= $year AND startYear <= $year + 5)) OR (endYear > $year)

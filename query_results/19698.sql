@@ -1,0 +1,1 @@
+SELECT t.titleId AS TitleID, t.titleName As MovieTitle FROM title_basic AS t WHERE t.titleType = "movie" AND t.isAdult = false

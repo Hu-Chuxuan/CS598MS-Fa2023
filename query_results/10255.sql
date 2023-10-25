@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE (title.isAdult = "TRUE" OR title.isAdult IS NULL) AND (director IN(SELECT director FROM crew WHERE writer='John Francis Daley')) AND (title.startYear >= 1976 AND title.endYear <= 2000)

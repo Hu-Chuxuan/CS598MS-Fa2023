@@ -1,0 +1,1 @@
+SELECT * FROM (title_basic tb JOIN rating_average ra ON tb.titleType = "Movie") WHERE tb.startYear >= '1980' AND (tb.endYear <= '2016') OR tb.genre IN ('Drama', 'Comedy')

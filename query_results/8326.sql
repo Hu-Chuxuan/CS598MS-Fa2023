@@ -1,0 +1,1 @@
+SELECT TITLE_BASICS.* FROM `title_basics` WHERE ((TITLE_PRINCIPALS.job LIKE '%actor%' OR TITLE_CREW.director LIKE '%actress%')) AND PRIMARYNAME IN ('Whitney Houston') GROUP BY TITLE_BASICS.`primaryname`

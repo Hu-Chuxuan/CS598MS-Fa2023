@@ -1,0 +1,1 @@
+SELECT DISTINCT(titleType), title_name FROM (select title_type from title_basics where title_type like '%comedy%') as T INNER JOIN title_ratings r ON T.title_id = r.title_id

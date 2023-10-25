@@ -1,0 +1,1 @@
+SELECT * FROM (title_basics t INNER JOIN title_rating r ON t.primaryTitle = r.primaryTitle) WHERE NOT EXISTS(SELECT * FROM cast c INNER JOIN actors a ON c.castingID = a.id AND a.name IN ('Johnny Depp', 'Jim Carrey')) ORDER BY rating DESC LIMIT 6

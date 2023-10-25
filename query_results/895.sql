@@ -1,0 +1,1 @@
+SELECT t.* FROM movies AS m INNER JOIN titles AS t ON m.titleID = t.id WHERE t.genre IN ('drama') AND t.startYEAR >= $year - 10 AND t.endYEAR <= $year + 10

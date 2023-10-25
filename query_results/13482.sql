@@ -1,0 +1,1 @@
+SELECT DISTINCT movies.* FROM imdb.title_recommendation as t INNER JOIN imdb.name_basics AS n ON t.primaryTitle = n.titleType WHERE t.isAdult!= true AND t.startYear > 1980 AND t.startYear < 1996 ORDER BY rating DESC LIMIT 5

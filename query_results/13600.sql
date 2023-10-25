@@ -1,0 +1,1 @@
+SELECT title.* FROM title WHERE title.genre IN ('comedy') AND userHistory LIKE '%(title.title)=%'

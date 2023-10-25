@@ -1,0 +1,1 @@
+SELECT t.* FROM title_basics AS t WHERE t.titleType = "movie" AND EXISTS( SELECT * FROM ((title_ratings JOIN name_basics ON title_ratings.numvotes = name_basics.primaryname) LEFT OUTER JOIN title_crew USING (directors)) LEFT OUTER JOIN title_principals USING (characters))

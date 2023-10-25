@@ -1,0 +1,1 @@
+SELECT * FROM titles WHERE genre = "Science Fiction" AND year >=?

@@ -1,0 +1,1 @@
+SELECT * FROM rating WHERE user_id = $userID AND genre IN ('sports') ORDER BY averageRATING DESC LIMIT 1

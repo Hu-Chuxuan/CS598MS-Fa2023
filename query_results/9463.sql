@@ -1,0 +1,1 @@
+SELECT tb.* FROM movies as m INNER JOIN title_basics as tb ON m.title_id = tb.primaryId WHERE (m.title_type='Fantasy') AND (tb.startYear >= 2000)

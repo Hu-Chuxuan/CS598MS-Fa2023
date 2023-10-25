@@ -1,0 +1,1 @@
+SELECT DISTINCT tb.* FROM title_basics AS tb INNER JOIN title_ratings AS tr ON tb.titleID = tr.titleID WHERE ((tr.averageRating > 6)) AND ((tb.startYear >= "1970")) AND ((tb.endYear <= "2019"))

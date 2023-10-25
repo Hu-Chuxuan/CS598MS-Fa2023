@@ -1,0 +1,1 @@
+SELECT * FROM tconst WHERE titleType = "movie" AND primaryTitle LIKE '%It%' OR primaryTitle LIKE '%Horror' ORDER BY rating DESC

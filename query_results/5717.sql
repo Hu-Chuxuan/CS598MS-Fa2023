@@ -1,0 +1,1 @@
+SELECT * FROM title_recommend WHERE userInput = 'All Time' AND titleRecommended = 'Raiders of the Lost Ark (1981)' ORDER BY rating DESC LIMIT 0,1

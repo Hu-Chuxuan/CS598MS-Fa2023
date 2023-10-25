@@ -1,0 +1,1 @@
+SELECT DISTINCT tconst FROM title_basics WHERE tconst IN ('title_type','primary_title','original_title')

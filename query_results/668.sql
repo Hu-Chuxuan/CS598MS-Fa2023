@@ -1,0 +1,1 @@
+SELECT DISTINCT t.* FROM movies AS m INNER JOIN titles ON m.titleID = titles.movieID WHERE titleType LIKE '%comedy%' AND userHasSeenMovie(m.id, 'This Is 40') ORDER BY rating DESC LIMIT 6

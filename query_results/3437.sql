@@ -1,0 +1,1 @@
+SELECT t.* FROM title AS t INNER JOIN title_ratings ON t.titleID = title_ratings.titleID WHERE t.isAdult = false AND t.startYear > 1980 ORDER BY t.runtimeMinutes DESC

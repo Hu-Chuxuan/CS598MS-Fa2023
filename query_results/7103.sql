@@ -1,0 +1,1 @@
+SELECT * FROM title_basics WHERE (titleType = "Movie" OR titleType = "TV Series") AND ((startYear <= year(now())) AND (endYear >= year(now()))) ORDER BY rating DESC LIMIT 0,1

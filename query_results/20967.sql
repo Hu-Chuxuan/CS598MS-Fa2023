@@ -1,0 +1,1 @@
+SELECT * FROM title_rating WHERE (startYear <= '1970' AND endYear >= '1980') AND (averageRating > 6) ORDER BY averageRating DESC LIMIT 10

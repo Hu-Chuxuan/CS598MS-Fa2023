@@ -1,0 +1,1 @@
+SELECT * FROM movies WHERE genre LIKE '%action%' AND year >=? AND userPref NOT IN ('Batman', 'Superhero') ORDER BY rating DESC LIMIT 6

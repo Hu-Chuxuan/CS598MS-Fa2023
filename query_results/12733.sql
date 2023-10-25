@@ -1,0 +1,1 @@
+SELECT * FROM title_principals WHERE category = 'actress' AND characters LIKE '%Sarah Michelle Gellar%' ORDER BY PRIMARYNAME ASC

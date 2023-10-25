@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE tconst = '2003-10-23'

@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE title_type = "movie" AND primary_title IN ('Sixteen Candles (1984)', 'The Princess Bride  (1987)') OR director_name LIKE '%John Hughes%' OR writer_name LIKE '%Steve Martin%' ORDER BY rating DESC LIMIT 5

@@ -1,0 +1,1 @@
+SELECT t.* FROM titles AS t WHERE t.titleType = "movie" AND t.startYear >=? AND t.endYear <=? ORDER BY t.runtimeMinutes DESC

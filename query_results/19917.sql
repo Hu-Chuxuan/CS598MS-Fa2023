@@ -1,0 +1,1 @@
+SELECT * FROM title_recommendation WHERE userInput = 'any' AND userPreferneceHistory LIKE '%Baby%'

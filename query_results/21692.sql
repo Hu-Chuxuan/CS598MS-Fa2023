@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE tconst IN ('title_basics','title_ratings') AND titleType = "movie" ORDER BY rating DESC LIMIT 3

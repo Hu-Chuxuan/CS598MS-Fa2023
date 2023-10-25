@@ -1,0 +1,2 @@
+SELECT * FROM (SELECT * FROM tconst WHERE tconst.titleType = "movie" AND NOT EXISTS( SELECT * FROM tconst WHERE tconst.titleType="horror"))
+WHERE (SELECT AVG(averageRating) FROM tconst GROUP BY tconst.primaryTitle HAVING COUNT(*) > 2)

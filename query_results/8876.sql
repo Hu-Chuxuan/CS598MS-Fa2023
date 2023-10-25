@@ -1,0 +1,1 @@
+SELECT * FROM title_ratings WHERE ((titleType = "Comedy") AND (numVotes >= 1)) ORDER BY rating DESC LIMIT 6

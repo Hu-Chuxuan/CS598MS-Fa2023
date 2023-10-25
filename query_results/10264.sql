@@ -1,0 +1,1 @@
+SELECT t.* FROM title_basics AS t INNER JOIN genre g ON t.genre = g.gid WHERE t.titleType LIKE '%Brad%' OR t.titleType LIKE '%Robert%'

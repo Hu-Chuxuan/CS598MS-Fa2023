@@ -1,0 +1,1 @@
+SELECT title.titleID AS id FROM title WHERE rating >= 6 AND genre = 'Comedy'

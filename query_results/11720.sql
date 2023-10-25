@@ -1,0 +1,1 @@
+SELECT DISTINCT movies.* FROM movies INNER JOIN genre ON genre.id = movies.genreID

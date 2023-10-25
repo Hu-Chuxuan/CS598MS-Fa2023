@@ -1,0 +1,1 @@
+SELECT rating,title FROM title WHERE rating>80

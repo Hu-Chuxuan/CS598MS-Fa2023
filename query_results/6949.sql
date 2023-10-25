@@ -1,0 +1,1 @@
+SELECT * FROM imdb WHERE primaryProfession = "Director" AND genre IN ('Action') ORDER BY rating DESC LIMIT 3

@@ -1,0 +1,1 @@
+SELECT t.* FROM title_basics AS t INNER JOIN name_basics as n ON n.primaryName = t.titleType WHERE ((t.isAdult!= true OR t.startYear <= 2016 AND t.endYear >= 2016)) AND n.job IN ('Actor') ORDER BY t.runtimeMinutes DESC

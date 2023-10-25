@@ -1,0 +1,1 @@
+SELECT t.* FROM title_principals AS t WHERE t.job LIKE '%actor%' AND t.category = 'character' ORDER BY t.ordering ASC LIMIT?

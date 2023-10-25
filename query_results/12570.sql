@@ -1,0 +1,1 @@
+SELECT t.* FROM title AS t JOIN cast ON cast.title = t.id WHERE genre LIKE '%Action%' AND genre LIKE '%Horror%'

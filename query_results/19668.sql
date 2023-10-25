@@ -1,0 +1,1 @@
+SELECT * FROM title_basic WHERE type = "comedy" AND year >= 2009

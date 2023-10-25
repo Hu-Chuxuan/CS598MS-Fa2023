@@ -1,0 +1,2 @@
+SELECT * FROM
+(SELECT tconst AS MovieId, avg(rating) as Rating from title_ratings where rating>6 AND tconst IN ('Mystic River','Good Will Hunting','Changeling') GROUP BY tconst HAVING count(*)>=2 ORDER by rating DESC LIMIT 3) AS rated WHERE NOT EXISTS (select * from title_recommendation where title_id = rated.MovieId)

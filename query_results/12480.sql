@@ -1,0 +1,1 @@
+SELECT t.* FROM imdb.title AS t JOIN imdb.name AS n ON t.primaryName = n.nconst WHERE t.category='ActionComedy'

@@ -1,0 +1,1 @@
+SELECT * FROM title_principals tc WHERE job = "actor" AND nconst IN ('John Cena','Rob Corddry') ORDER BY rating DESC LIMIT 2

@@ -1,0 +1,1 @@
+SELECT TOP(5) * FROM Title WHERE Job = 'Director' AND (Category LIKE '%Comedy%' OR Category LIKE '%Romance%') ORDER BY AverageRating DESC

@@ -1,0 +1,1 @@
+SELECT * FROM title_recommendation WHERE user_input LIKE '%horror%' AND user_preferences IN ('%It (1990)', '%Cabin in the woods %','% It (2017))')

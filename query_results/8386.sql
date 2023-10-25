@@ -1,0 +1,1 @@
+SELECT * FROM (title_principals JOIN title_rating WHERE rating > 6 AND genre = "Action" OR genre = "Fantasy") AS tpr JOIN title_basic ON title_basic.titleType=tpr.primaryName

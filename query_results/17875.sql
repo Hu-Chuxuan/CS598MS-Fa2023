@@ -1,0 +1,1 @@
+SELECT * FROM title_basics WHERE titleType = "movie" AND genre IN ('Crime','Mafia') ORDER BY avg(rating)

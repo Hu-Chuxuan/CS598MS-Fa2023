@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE rating >.5 AND director = "Paul Feig" OR writer = "Amy Schumer"

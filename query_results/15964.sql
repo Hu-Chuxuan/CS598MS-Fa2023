@@ -1,0 +1,1 @@
+SELECT DISTINCT tc.* FROM title_recommendation AS tr JOIN title_details as td ON tr.titleId = td.id WHERE tr.userId IN ('1','2') AND tr.dateTime BETWEEN '2018-09-06' AND '2018-12-01'

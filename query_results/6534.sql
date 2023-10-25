@@ -1,0 +1,1 @@
+SELECT DISTINCT titleType FROM title_ratings WHERE averageRating >= 7

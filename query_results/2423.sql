@@ -1,0 +1,1 @@
+SELECT * FROM movieRecommendation WHERE userPreferedGenre = "adventure" OR userPreferredGenre LIKE "%super%"

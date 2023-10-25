@@ -1,0 +1,1 @@
+SELECT movies.* FROM movies JOIN user_preferences ON movies.titleId = user_preferences.movieId WHERE user_id=1 AND user_preferneces LIKE '%horror%' ORDER BY rating DESC LIMIT 5

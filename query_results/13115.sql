@@ -1,0 +1,1 @@
+SELECT * FROM tconst WHERE type = "Action" AND genre IN ("Comedy") ORDER BY rating DESC LIMIT 6

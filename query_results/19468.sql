@@ -1,0 +1,1 @@
+SELECT * FROM imdb WHERE title_type = "movie" AND title_genre IN ("comedy", "adventure") ORDER BY rating DESC LIMIT 5

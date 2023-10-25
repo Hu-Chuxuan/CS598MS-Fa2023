@@ -1,0 +1,1 @@
+SELECT t.* FROM title_basics AS t JOIN title_ratings r ON t.titleID = r.movieID WHERE CONCAT(r.averageRating,'/') >= '4' AND CONCAT('horror', r.genreID) LIKE '%'

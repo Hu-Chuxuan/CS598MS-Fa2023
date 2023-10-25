@@ -1,0 +1,1 @@
+SELECT * FROM title_ratings WHERE (((title_ratings.primaryProfession = "Actor") AND (userPrefernecesHistory.category="Murder Mystery")))

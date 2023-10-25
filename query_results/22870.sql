@@ -1,0 +1,1 @@
+SELECT * FROM imdb WHERE titles IN ('Avengers: Infinity War (2018)','Deadpool 2  (2018)' AND primaryGenre = '' ) ORDER BY rating DESC LIMIT 6

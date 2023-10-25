@@ -1,0 +1,1 @@
+SELECT t.titleID AS id, r.rating AS rating FROM title_ratings AS r INNER JOIN title_basic AS t ON t.titleID = r.titleID WHERE titleType = "movie" AND userPreferredGenre LIKE "%comedy%" ORDER BY avg(r.rating)

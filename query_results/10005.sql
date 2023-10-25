@@ -1,0 +1,1 @@
+SELECT DISTINCT tb.* FROM title_basic AS tb INNER JOIN title_rating ON tb.titleID = title_rating.titleID

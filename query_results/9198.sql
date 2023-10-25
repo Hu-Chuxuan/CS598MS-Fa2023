@@ -1,0 +1,1 @@
+SELECT * FROM (title_basics tb JOIN genre g ON tb.genre = g.id WHERE tb.isAdult = false AND ((tb.startYear <= 2017 OR tb.endYear >= 1980)) ORDER BY rating DESC LIMIT 2) LEFT OUTER JOIN (name_basics nb JOIN crew c ON nb.job = c.category) RIGHT OUTER JOIN (title_rating tr JOIN name_rating nr ON tr.averageRating = nr.avgRat) USING(movieId)

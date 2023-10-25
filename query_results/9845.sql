@@ -1,0 +1,1 @@
+SELECT t.* FROM (title_basics as t JOIN title_ratings AS r ON t.primaryTitle = r.primaryTitle WHERE t.startYear >= 1967 AND r.averageRating >.5 ) JOIN name_basics as n USING(primaryName) where NOT EXISTS (SELECT * from cast_crew WHERE primaryName IN ('Leonardo DiCaprio','Jim Lovell')) GROUP BY t.titleType HAVING COUNT(*)>0 ORDER by count(*) DESC LIMIT 1

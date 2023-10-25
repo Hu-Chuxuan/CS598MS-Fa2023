@@ -1,0 +1,1 @@
+SELECT * FROM tconst WHERE tconst.primaryTitle = "Capote" AND titleType IN ('biography', 'drama') ORDER BY avg(rating), numvotes DESC LIMIT 1

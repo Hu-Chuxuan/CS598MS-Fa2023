@@ -1,0 +1,1 @@
+SELECT * FROM `title_basics` WHERE `startYear>='1960' AND `endYear<='2019'` AND (`primaryTitle LIKE '%Thrill%' OR `originalTitle LIKE '%Thril%')`AND (`isAdult=false`) ORDER BY `avgRatings DESC`

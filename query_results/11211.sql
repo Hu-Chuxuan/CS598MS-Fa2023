@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE (((titleType = "musical") AND ((startYear >=?))AND(endYear <=?))) OR (((titleType!= "musical")))

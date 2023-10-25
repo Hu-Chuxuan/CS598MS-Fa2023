@@ -1,0 +1,1 @@
+SELECT * FROM `title` WHERE `genre` LIKE '%comedy%' ORDER BY RAND() LIMIT 6

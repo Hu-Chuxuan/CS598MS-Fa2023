@@ -1,0 +1,1 @@
+SELECT DISTINCT(titleBasics.*), COUNT(*) FROM rating WHERE (((rating.year >= '1978') AND ((rating.year <= '2019'))) GROUP BY titleBasics.titleType ORDER BY COUNT(*) DESC LIMIT 5

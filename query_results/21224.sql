@@ -1,0 +1,1 @@
+SELECT DISTINCT t.* FROM titleratings r INNER JOIN titles t ON r.titleid = t.titleid WHERE r.rating >.6 AND t.genre IN ('Comedy','Animation') ORDER BY rating DESC LIMIT 2

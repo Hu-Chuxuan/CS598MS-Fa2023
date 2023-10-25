@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE titleType = 'comedy' AND rating >= 7/10 OR genre IN ('action', 'adventure') GROUP BY title LIMIT 5 OFFSET 10

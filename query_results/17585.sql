@@ -1,0 +1,1 @@
+SELECT * FROM (title_principals JOIN title_crew WHERE gender = "Female") AND genre IN ('Action') ORDER BY rating DESC LIMIT 1

@@ -1,0 +1,1 @@
+SELECT * FROM `title` WHERE `genre` LIKE '%comedy%' AND (`startYear` > '1986' OR `endYear` < '2018') ORDER BY `averageRating` DESC LIMIT 3

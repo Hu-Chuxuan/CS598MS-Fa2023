@@ -1,0 +1,1 @@
+SELECT * FROM knownfor JOIN titles WHERE rating > 7

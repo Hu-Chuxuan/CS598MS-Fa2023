@@ -1,0 +1,1 @@
+SELECT DISTINCT t.* FROM title_basic AS t JOIN name_basic AS n ON t.titleId = n.titleId AND n.primaryName =?

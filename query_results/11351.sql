@@ -1,0 +1,1 @@
+SELECT t.* FROM titles AS t WHERE EXISTS( SELECT * FROM ratings AS r WHERE t.titleID = r.titleID AND r.userID='jdoe') OR EXISTS(SELECT * from rating as R where userid= ‘jdoe’)

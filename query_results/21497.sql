@@ -1,0 +1,1 @@
+SELECT * FROM title_recommendation WHERE userPreferredMovie LIKE '%Seven%' AND NOT userPreferredMovie LIKE '%Hannibal%'

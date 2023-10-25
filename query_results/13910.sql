@@ -1,0 +1,1 @@
+SELECT * FROM rating WHERE userId = 'YOUR ID HERE' AND titleID IN ('YOUR MOVIES HERE') GROUP BY userId

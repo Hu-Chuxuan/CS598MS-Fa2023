@@ -1,0 +1,1 @@
+SELECT DISTINCT tc.* FROM TITLE_CREW AS tc WHERE tc.job = "Actor" AND tc.category <> "" ORDER BY tc.ordering ASC LIMIT 4

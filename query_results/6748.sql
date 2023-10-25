@@ -1,0 +1,1 @@
+SELECT * FROM title_basic WHERE tconst ='movie' AND userPref LIKE '%thrill%' ORDER BY avgrating DESC

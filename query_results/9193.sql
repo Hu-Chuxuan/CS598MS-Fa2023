@@ -1,0 +1,1 @@
+SELECT t.title_id as id FROM title_basic AS t INNER JOIN ( SELECT r.averageRating, r.numVotes FROM rating AS r WHERE r.titleId =? ) AS avgvotes ON t.titleID=avgvote.title_id

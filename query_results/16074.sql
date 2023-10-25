@@ -1,0 +1,1 @@
+SELECT * FROM movie_recommender WHERE userInput LIKE '%%'

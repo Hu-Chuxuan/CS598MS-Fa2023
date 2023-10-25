@@ -1,0 +1,1 @@
+SELECT t.* FROM title_ratings AS r INNER JOIN title_basics as b ON r.titleId = b.id WHERE (b.isAdult=false AND b.startYear>1980) ORDER BY r.averageRating DESC LIMIT 1

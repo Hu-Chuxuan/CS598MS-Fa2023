@@ -1,0 +1,1 @@
+SELECT * FROM title_rating WHERE tconst = "BACK TO THE FUTURE" AND rating >= 7

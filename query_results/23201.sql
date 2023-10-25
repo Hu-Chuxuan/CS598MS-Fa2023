@@ -1,0 +1,1 @@
+SELECT t.* FROM title AS t WHERE NOT EXISTS( SELECT * FROM title_recommendation r JOIN user u ON r.userid = u.userid AND r.titleid IN (SELECT id from title WHERE t.genres LIKE '%%') ) AND EXISTS( SELECT * FROM title_rating r WHERE t.imdbID=r.imdbId AND r.numvotes > 0 )

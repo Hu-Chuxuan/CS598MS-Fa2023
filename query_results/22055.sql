@@ -1,0 +1,1 @@
+SELECT * FROM title_recommendation WHERE user_preferences LIKE '%Superbad%' AND user_preferences NOT LIKE '%Dumb%'

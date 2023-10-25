@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE titleType = "movie" AND (startYear <= 2017 OR startYear >= 2018)

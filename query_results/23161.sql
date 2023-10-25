@@ -1,0 +1,1 @@
+SELECT DISTINCT tc.* FROM title_basics AS tb JOIN title_rating as tr ON tb.titleID = tr.titleID WHERE tb.startYEAR >= 1980 AND tr.averageRATING > 7

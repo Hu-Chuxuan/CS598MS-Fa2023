@@ -1,0 +1,1 @@
+SELECT t.titleID AS "Movie ID", t.primaryTitle as "Primary Title" FROM titles AS t WHERE ((t.isAdult = 'false' AND t.startYear >= 2018)) OR (((t.averageRating > 7) AND (t.numVotes < 10))) ORDER BY RAND() LIMIT 1

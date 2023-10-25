@@ -1,0 +1,1 @@
+SELECT * FROM title_rating WHERE rating >? AND title IN ('Peter Rabbit','Coco','The Boss Baby')

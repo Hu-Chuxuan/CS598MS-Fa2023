@@ -1,0 +1,1 @@
+SELECT tc.* FROM titles AS t INNER JOIN title_rating as tr ON tr.titleId = t.id WHERE tr.average RATING >= 6 AND tr.num VOTES > 1

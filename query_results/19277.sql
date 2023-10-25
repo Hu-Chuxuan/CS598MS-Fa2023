@@ -1,0 +1,1 @@
+SELECT tc.* FROM Title_Basics AS tb INNER JOIN Name_Basic as nb ON nb.titleId = tb.id AND nb.primaryName IS NOT NULL WHERE ((tb.isAdult=false OR tb.startYear>=1900)) AND (nb.deathYear>1900)

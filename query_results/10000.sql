@@ -1,0 +1,1 @@
+SELECT * FROM movie WHERE genre ='sci-fi' AND rating > 7

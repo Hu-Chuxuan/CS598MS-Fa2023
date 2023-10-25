@@ -1,0 +1,1 @@
+SELECT DISTINCT(title_basics.*), rating FROM title_rating INNER JOIN title_basics ON title_rating.movieid = title_basics.imdbID WHERE rating > 6 AND title_basics.startyear <= 1990 ORDER BY avg DESC LIMIT 5

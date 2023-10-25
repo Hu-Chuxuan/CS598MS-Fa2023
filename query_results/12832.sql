@@ -1,0 +1,1 @@
+SELECT * FROM titles WHERE animal LIKE '%cat%' OR animal LIKE '%dog%'

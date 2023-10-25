@@ -1,0 +1,1 @@
+SELECT tc.* FROM movies AS m JOIN casts c ON m.title_id = c.movie_id AND c.cast_id IN ('Johnny Depp','Jude Law') WHERE m.title_id NOT IN ('Mary Poppins Returns(2018),'Fantastic Beasts: The Crimes of Grindelwald(2018)) ORDER BY tc.numVOTES DESC LIMIT 1

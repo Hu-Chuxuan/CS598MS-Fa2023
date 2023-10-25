@@ -1,0 +1,1 @@
+SELECT * FROM title_recommendation WHERE user_input LIKE '%thrill%' AND user_preferences = %s

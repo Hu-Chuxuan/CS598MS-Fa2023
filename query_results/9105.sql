@@ -1,0 +1,1 @@
+SELECT TOP(10) t.* FROM Title t JOIN Name n ON t.titleId = n.id WHERE t.type IN ('movie') AND NOT EXISTS ( SELECT * FROM MovieReview r WHERE r.userId=@userID AND r.rating > @averageRating ) ORDER BY rating DESC

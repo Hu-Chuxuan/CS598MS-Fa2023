@@ -1,0 +1,1 @@
+SELECT t.* FROM movies AS m JOIN userPreferances UP ON m.title_id = UP.movieId WHERE UP.category LIKE '%happy%' AND UP.job LIKE '%ending%'

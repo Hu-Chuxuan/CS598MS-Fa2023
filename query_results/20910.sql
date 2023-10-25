@@ -1,0 +1,1 @@
+SELECT t.titleID AS TITLE_ID, t.titleType AS TYPE, t.primaryTitle AS PRIMARY_TITLE, t.originalTitle AS ORIGINAL_TITLE, t.isAdult AS ISADULT, t.startYear AS STARTYEAR, t.endYear AS ENDYEAR, t.runtimeMinutes AS RUNTIMEMINUTES, g.genre AS GENRE FROM title_basics t JOIN genre g ON t.genres = g.id WHERE type!= "TV" AND t.type <> "Short Film"

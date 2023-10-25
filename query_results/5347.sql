@@ -1,0 +1,1 @@
+SELECT * FROM title_ratings WHERE title_id IN (SELECT title_id from title_crew where director = "Jean-Claude Van Damme") AND rating >= 6

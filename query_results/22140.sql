@@ -1,0 +1,1 @@
+SELECT t.* FROM title_basics AS t WHERE ((t.titleType = "feature") AND (t.startYear >=?)) ORDER BY RAND() LIMIT?

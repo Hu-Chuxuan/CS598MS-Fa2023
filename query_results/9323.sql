@@ -1,0 +1,1 @@
+SELECT * FROM (title_ratings INNER JOIN title_crew ON title_rating.movieId = title_crew.id) WHERE (title_crews.job LIKE 'Director' OR title_crews.job LIKE 'Writer') AND (title_ratings.averageRATING > 7)

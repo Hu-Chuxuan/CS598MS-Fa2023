@@ -1,0 +1,1 @@
+SELECT t.* FROM titles AS t WHERE NOT EXISTS( SELECT * FROM ratings r INNER JOIN user_preferences u ON r.title = t.title AND u.userID = 'USERID' ) OR r.rating > rating

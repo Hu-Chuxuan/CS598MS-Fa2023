@@ -1,0 +1,1 @@
+SELECT * FROM title_principals WHERE title_type = 'actress' AND character IN ('Daphne Wilder', 'Mrs. Robinson') ORDER BY order DESC LIMIT 2

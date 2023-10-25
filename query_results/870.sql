@@ -1,0 +1,1 @@
+SELECT * FROM `title` WHERE `primaryTitle` LIKE '%2010%' AND (`averageRating` >.7 OR `numVotes` < 20)

@@ -1,0 +1,2 @@
+SELECT t.* FROM title AS t WHERE NOT EXISTS( SELECT * FROM genre g WHERE g.genreID = t.primaryGenre AND g.genreName LIKE '%horror%' )
+AND NOT EXISTS( SELECT * FROM genre g WHERE g.genreID = t.primaryGenre AND g.genreName LIKE '%comedy%')

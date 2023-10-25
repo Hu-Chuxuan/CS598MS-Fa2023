@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE (title.genre LIKE '%horror%' AND title.runtime < 120) OR (title.startyear >= 1967)

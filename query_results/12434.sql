@@ -1,0 +1,1 @@
+SELECT t.* FROM (title_basic AS t INNER JOIN title_rating AS r ON t.id = r.titleId AND r.userID='80') LEFT OUTER JOIN (name_basic as b WHERE b.job= 'Actor' OR b.job='Actress') as c ON t.id = c.titleId

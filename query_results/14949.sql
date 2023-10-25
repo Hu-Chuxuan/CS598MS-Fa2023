@@ -1,0 +1,1 @@
+SELECT t.* FROM movies AS m INNER JOIN casts AS c ON m.titleId = c.movieId AND c.character = 'Princess Leia'

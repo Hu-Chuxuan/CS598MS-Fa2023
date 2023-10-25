@@ -1,0 +1,1 @@
+SELECT * FROM title_basics WHERE titleType = "movie" AND ((title_ratings.averageRating > 5 OR title_ratings.numVotes < 10)) AND EXISTS(SELECT rating FROM title_ratings WHERE title_basic.title_id=rating.title_id)

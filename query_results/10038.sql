@@ -1,0 +1,1 @@
+SELECT * FROM title_rating WHERE rating >= 6 AND genre LIKE '%comedy%' ORDER BY avg_rating DESC

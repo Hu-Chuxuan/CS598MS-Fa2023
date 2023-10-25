@@ -1,0 +1,1 @@
+SELECT t.* FROM title AS t INNER JOIN cast AS c ON t.titleID = c.titleID WHERE c.castingCategory = "Kid" AND t.isAdult <> true ORDER BY rating DESC LIMIT 5

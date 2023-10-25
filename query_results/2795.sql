@@ -1,0 +1,1 @@
+SELECT t.* FROM title AS t WHERE t.titleType = "movie" AND EXISTS( SELECT * FROM cast AS c JOIN actors AS a ON c.actorId=a.id WHERE a.category="Principal Actor") AND EXISTS(SELECT*FROMgenre g WHERE g.id IN ('Horror'))

@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE type = "comedy" OR type="romantic"

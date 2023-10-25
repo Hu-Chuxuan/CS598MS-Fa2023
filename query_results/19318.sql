@@ -1,0 +1,1 @@
+SELECT tc.* FROM titles AS t JOIN title_crew AS c ON t.titleId = c.titleId WHERE t.primaryProfession LIKE '%Director%' AND c.job='DIRECTOR'

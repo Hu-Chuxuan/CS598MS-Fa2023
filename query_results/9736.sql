@@ -1,0 +1,1 @@
+SELECT t.* FROM title_basic AS t INNER JOIN (SELECT * FROM title_ratings WHERE rating >= 7) as r ON t.titleID = r.titleID AND r.rating > 6

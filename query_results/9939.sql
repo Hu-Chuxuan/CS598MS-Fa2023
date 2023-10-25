@@ -1,0 +1,1 @@
+SELECT DISTINCT t.title_type AS Movie Genre FROM title_types as t INNER JOIN title_basics ON t.id = tb.title_type WHERE tb.primaryTitle LIKE '%Brave%'

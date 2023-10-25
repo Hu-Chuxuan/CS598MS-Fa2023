@@ -1,0 +1,1 @@
+SELECT * FROM `title` WHERE `genre` LIKE '%Horror%' OR (`title_rating`.`numvoters >= 8 AND `title_rating`.`averageRatnging` >= 6`) ORDER BY `title_rating`.`avgRating`

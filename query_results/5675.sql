@@ -1,0 +1,1 @@
+SELECT * FROM table WHERE userInput LIKE '%Horror%' AND UserPreferneceHistory LIKE '%Get%'

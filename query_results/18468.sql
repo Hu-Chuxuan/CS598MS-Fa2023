@@ -1,0 +1,1 @@
+SELECT * FROM movie_recommendation WHERE rating > 8 AND genre = "Horror" OR rating < 6

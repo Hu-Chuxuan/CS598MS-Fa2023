@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE titleType = "classic" AND rating > 7

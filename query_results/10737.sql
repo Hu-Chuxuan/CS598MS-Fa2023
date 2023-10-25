@@ -1,0 +1,1 @@
+SELECT t.* FROM title_basics AS t JOIN name_basics ON (title_basics.primaryName = name_basics.nconst) WHERE t.category = 'actress'

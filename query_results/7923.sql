@@ -1,0 +1,1 @@
+SELECT * FROM title_recommendation WHERE rating > 7 AND genre = "Comedy" ORDER BY RANK() OVER(PARTITION BY userid, movieid ORDER BY rating DESC)

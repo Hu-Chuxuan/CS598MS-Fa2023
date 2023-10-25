@@ -1,0 +1,1 @@
+SELECT * FROM titles WHERE director = "Steven Spielberg" OR writer="Steven Spielberg"

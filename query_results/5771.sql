@@ -1,0 +1,1 @@
+SELECT DISTINCT title_id AS id FROM title WHERE title_type = "movie" AND title_genre LIKE '%action%' OR title_genre LIKE '%adventure%'

@@ -1,0 +1,1 @@
+SELECT t.* FROM title_basic as t JOIN name_basic as n ON t.`primaryTitle` = n.`title_type`

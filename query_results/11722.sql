@@ -1,0 +1,1 @@
+SELECT * FROM title_basic WHERE averageRATING > 6 AND director = "Chris Columbus" ORDER BY averageRATING DESC LIMIT 3

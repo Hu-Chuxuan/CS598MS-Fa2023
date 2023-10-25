@@ -1,0 +1,1 @@
+SELECT t.* FROM title AS t INNER JOIN name ON t.primaryTitle = n.title_id AND n.category IN ('Actor') WHERE ((((t.startYear <= 2000 OR t.endYear >= 2000)) AND ((n.birthYear > 1900))))

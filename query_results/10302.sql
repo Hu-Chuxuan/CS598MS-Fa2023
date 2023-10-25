@@ -1,0 +1,1 @@
+SELECT * FROM movies WHERE genre = "Western" AND rating > 6

@@ -1,0 +1,1 @@
+SELECT * FROM (title_recommendation JOIN title_user WHERE user_id = '0000-0000') JOIN title_rating ON title_user_movie_rate >= 7 AND title_user_movies_watched > 0 GROUP BY movies_genres ORDER BY rating DESC LIMIT 5

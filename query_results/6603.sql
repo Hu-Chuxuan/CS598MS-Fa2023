@@ -1,0 +1,1 @@
+SELECT * FROM movies WHERE tconst = "comedy" AND numvotes > 0 ORDER BY avgrating DESC

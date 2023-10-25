@@ -1,0 +1,1 @@
+SELECT * FROM title_ratings INNER JOIN title_crew ON title_crews.director = title_ratings.director AND title_crews.writer=title_ratings.writer

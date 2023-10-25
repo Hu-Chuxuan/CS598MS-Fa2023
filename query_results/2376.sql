@@ -1,0 +1,1 @@
+SELECT DISTINCT TITLE_BASICS.* FROM `title_basic` WHERE `genre` LIKE "%romance%" AND `primaryName` NOT IN ('Darren Aronofsky','George Miller') ORDER BY RANDOM() LIMIT 3

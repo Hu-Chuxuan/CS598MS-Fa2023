@@ -1,0 +1,1 @@
+SELECT t.* FROM titles AS t INNER JOIN ratings AS r ON t.titleID = r.titleID WHERE rating >= 6 AND genre IN ('action','comedy') ORDER BY rating DESC LIMIT 3

@@ -1,0 +1,1 @@
+SELECT * FROM movies WHERE title_basics.titleType = "animated" AND title_ratings.averageRating >.7

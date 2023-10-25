@@ -1,0 +1,1 @@
+SELECT * FROM imdb WHERE tconst = "title" AND (averageRating > 7 OR averageRating < 6)

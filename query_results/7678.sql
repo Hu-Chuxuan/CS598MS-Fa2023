@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE genre = 'Horror' AND startYear > 2018

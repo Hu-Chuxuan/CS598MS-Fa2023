@@ -1,0 +1,1 @@
+SELECT * FROM table WHERE category LIKE 'comedy' AND job = 'actor'

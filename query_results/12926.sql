@@ -1,0 +1,1 @@
+SELECT t.* FROM title_ratings AS r INNER JOIN title_basic as b ON(b.titleType = "movie") AND (r.primaryTitle=b.titleID) WHERE r.averageRating > 6/10

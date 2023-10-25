@@ -1,0 +1,1 @@
+SELECT * FROM movies WHERE ((genre LIKE '%comedy%' OR genre LIKE '%romantic%') AND cast =?)

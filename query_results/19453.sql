@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE ttype = 'tt0078698' AND tconst >= 1990

@@ -1,0 +1,1 @@
+SELECT * FROM title_recommendation WHERE (((titleType = "Movie") AND ((originalTitle LIKE '%Brad%')))) OR (((primaryProfession = "Actor")))

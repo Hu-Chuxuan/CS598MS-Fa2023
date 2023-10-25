@@ -1,0 +1,3 @@
+SELECT * FROM
+( SELECT t.title_id AS id, t.title_type AS type, t.primary_title as title, u.name_basics.birthyear AS year, d.director_id AS directorID, w.writer_id AS writerId
+FROM title_basics AS t JOIN name_basics ON (t.primary_title = n.primary_name) JOIN cast_members ON (cast_member.character_category ='main actor') WHERE t.isadult=0 AND t.startYEAR>=1980 AND t.endYEAR<=2017 ORDER BY t.title_rating DESC LIMIT 1 ) AS mainTable GROUP by year HAVING COUNT(*)>1

@@ -1,0 +1,1 @@
+SELECT * FROM movies WHERE genre = "Action" AND age > 20

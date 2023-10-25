@@ -1,0 +1,1 @@
+SELECT tb.* FROM title_basics AS tb INNER JOIN ( SELECT ratingAverage, COUNT(*) AS voteCount FROM title_rating GROUP BY ratingAverage ) as r ON tb.titleId = r.movieId WHERE tb.isAdult=false AND (tb.startYear BETWEEN? && tb.endYear)

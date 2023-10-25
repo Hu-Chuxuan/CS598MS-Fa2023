@@ -1,0 +1,1 @@
+SELECT DISTINCT t.* FROM title_basics AS t WHERE (t.titleType = "movie" AND ((t.startYear > 1986 OR t.endYear < 1978)) AND t.runtimeMinutes >= 100)

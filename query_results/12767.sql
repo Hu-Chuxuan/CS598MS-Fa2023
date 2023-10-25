@@ -1,0 +1,2 @@
+SELECT * FROM
+( SELECT DISTINCT tb.*, rr.averageRating AS ratingAverage FROM title_basics tb LEFT JOIN (title_ratings tr RIGHT OUTER JOIN title_recommendation trc ON tr.primaryMovieId = trc.movieId) WHERE tb.isAdult=0 AND ((tr.ratingAverage>9/10 OR tr.ratingAverage<6/10)) ORDER BY rr.averageRating DESC LIMIT 5

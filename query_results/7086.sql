@@ -1,0 +1,1 @@
+SELECT * FROM title_ratings WHERE tconst IN ('The Thin Blue Line ', 'Hoop Dreams') AND averageRating >.70

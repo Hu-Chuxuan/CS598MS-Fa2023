@@ -1,0 +1,1 @@
+SELECT DISTINCT t.titleID AS id FROM title_basic t JOIN genre g ON t.genreID = g.id WHERE t.startYear >=? AND t.endYear <=? AND t.primaryTitle LIKE '?%' OR t.originalTitle LIKE '%' ORDER BY t.averageRating DESC LIMIT 6

@@ -1,0 +1,2 @@
+SELECT * FROM (SELECT DISTINCT tconst AS MovieId,titleType, primaryTitle, originalTitle,isAdult,startYear,endYear,runtimeMinutes,genres
+FROM title_basics) WHERE ((primaryTitle LIKE '%Mira Sorvino%') OR(originalTitle LIKE '%Mira Sorvino%' )OR(isAdult='true' AND startYear > '0')) GROUP BY MovieId

@@ -1,0 +1,1 @@
+SELECT t.* FROM title_basics AS t INNER JOIN genre_titles g ON t.titleType = "comedy" AND t.genreId IN (g.id)

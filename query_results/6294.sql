@@ -1,0 +1,1 @@
+SELECT * FROM title_recommend WHERE userInput LIKE '%The Big Sick%' AND userPreferedHistory IN ('Son In Law','Bad Mom's') GROUP BY genre ORDER BY rating DESC LIMIT 6

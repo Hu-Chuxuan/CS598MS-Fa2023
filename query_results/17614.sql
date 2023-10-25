@@ -1,0 +1,2 @@
+SELECT tb.title_id AS MovieID, tc.* FROM (
+    SELECT tb.title_type as type, tb.primary_title, tb.original_title, tb.isadult, tb.startyear, tb.endyear, tb.runtime_minutes, tb.genre from TitleBasics tb WHERE tb.title_type = "Movie" AND (tb.original_title LIKE '%M%') OR (tb.primary_title LIKE '%M%')

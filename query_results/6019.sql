@@ -1,0 +1,1 @@
+SELECT * FROM movies WHERE rating >=? AND genre = "romance" OR rating >? AND genre="comedy"

@@ -1,0 +1,1 @@
+SELECT * FROM movie WHERE rating >= 7

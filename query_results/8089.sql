@@ -1,0 +1,1 @@
+SELECT movies.* FROM movies WHERE genre = "Horror" AND (title_ratings.averageRatings >= 7 OR title_ratings.numvotes>=60)

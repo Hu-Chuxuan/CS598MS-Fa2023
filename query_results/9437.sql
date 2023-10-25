@@ -1,0 +1,1 @@
+SELECT t.* FROM titles AS t INNER JOIN rating_titles R ON R.titleID = t.id AND R.userID=? WHERE R.rating >=? ORDER BY RATING DESC LIMIT 8

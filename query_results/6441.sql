@@ -1,0 +1,1 @@
+SELECT t.* FROM title_basics AS t INNER JOIN user_preferences UP ON t.title_id = UP.movie_id WHERE UP.user_name = "Bill" AND UP.year >= 1986

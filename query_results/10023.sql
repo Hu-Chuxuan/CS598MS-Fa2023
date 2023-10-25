@@ -1,0 +1,1 @@
+SELECT t.* FROM title_recommendation AS r JOIN (title_basics INNER JOIN title_ratings ON title_ratings.primaryTitle = title_basics.primaryTitle) ON title_rating.averageRating >.7 AND title_ratings.numVotes >= 600 WHERE rating_avg IS NOT NULL GROUP BY title_basic.id

@@ -1,0 +1,1 @@
+SELECT * FROM movies WHERE titleType = "movie" AND rating >= 8

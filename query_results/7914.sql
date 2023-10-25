@@ -1,0 +1,1 @@
+SELECT * FROM title_basic WHERE title_type = "movie" AND startyear > 1970

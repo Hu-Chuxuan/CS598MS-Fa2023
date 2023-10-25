@@ -1,0 +1,1 @@
+SELECT * FROM title_basics WHERE titleType = 'comedy' AND primaryTitle LIKE '%wedding%' OR primaryTitle LIKE '%crasher%'

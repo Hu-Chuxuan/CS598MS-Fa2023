@@ -1,0 +1,1 @@
+SELECT TITLE_BASICS.* FROM TITLE_BASICS WHERE title_type = "movie" AND AVERAGE(title_ratings.averageRATING) > 7/10

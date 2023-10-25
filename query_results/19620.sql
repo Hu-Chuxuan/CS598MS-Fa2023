@@ -1,0 +1,1 @@
+SELECT * FROM table WHERE titleType = "movie" AND genre LIKE "%music%" AND year BETWEEN? AND?

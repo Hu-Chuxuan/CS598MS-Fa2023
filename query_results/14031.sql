@@ -1,0 +1,1 @@
+SELECT tc.* FROM movies AS m INNER JOIN title_ratings as tr ON tr.titleID = m.id AND tr.averageRating >=.75 WHERE tr.numVotes > 800

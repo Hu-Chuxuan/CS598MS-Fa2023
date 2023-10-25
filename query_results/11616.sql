@@ -1,0 +1,1 @@
+SELECT * FROM movie_recommendation WHERE user_preferences LIKE '%' AND (genre_comedies = true OR genre_dramas = true)

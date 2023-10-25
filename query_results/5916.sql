@@ -1,0 +1,1 @@
+SELECT t.* FROM title_principals AS t WHERE t.job = "actress" AND t.category IN ('action') ORDER BY t.ordering DESC LIMIT 5

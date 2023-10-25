@@ -1,0 +1,1 @@
+SELECT t.* FROM Title AS t WHERE t.title_type ='movie'

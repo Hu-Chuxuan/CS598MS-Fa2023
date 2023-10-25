@@ -1,0 +1,1 @@
+SELECT * FROM `title` WHERE `genre` =? AND (`startyear <= $year`) OR ($year < `endyear`) ORDER BY `rating` DESC LIMIT 10

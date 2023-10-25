@@ -1,0 +1,1 @@
+SELECT tb.* FROM titles AS tb WHERE tb.genre IN ('Drama') AND NOT EXISTS(SELECT * FROM ratings AS r WHERE r.title = tb.id)

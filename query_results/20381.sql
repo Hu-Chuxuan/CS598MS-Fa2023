@@ -1,0 +1,1 @@
+SELECT t.* FROM `title_basics` AS t WHERE (`isAdult = false`) AND (`startYear >= "1980" OR endYear <= "2016")` ORDER BY `runtimeMinutes DESC`

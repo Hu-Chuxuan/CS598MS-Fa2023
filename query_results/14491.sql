@@ -1,0 +1,1 @@
+SELECT * FROM ( SELECT tb.*, tr.*, nr.*, tc.*, tcr.*, np.*, tcrr.* ) AS m WHERE (m.titleType = 'Movie' OR m.titleType IS NULL) AND ((m.averageRating >= 6/10) OR (m.averageRating < 6/10)) ORDER BY m.startYear DESC LIMIT 8

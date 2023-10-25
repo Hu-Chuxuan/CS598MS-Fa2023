@@ -1,0 +1,1 @@
+SELECT * FROM (title_rating INNER JOIN title_recommendation ON title_rating.primaryTitle = title_recommendation.movieID) WHERE rating >= '8' AND watched > 0

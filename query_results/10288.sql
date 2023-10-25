@@ -1,0 +1,1 @@
+SELECT * FROM rating WHERE year >=? AND year <=? AND genre =?

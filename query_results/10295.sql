@@ -1,0 +1,1 @@
+SELECT t.* FROM title_basics AS t WHERE t.isAdult = false AND t.startYear < 1980

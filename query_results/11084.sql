@@ -1,0 +1,1 @@
+SELECT * FROM movies WHERE (((titleType = "romance" OR titleType="comedy") AND ((startYear < 2016))AND(numVotes > 8))) ORDER BY rating DESC LIMIT 10

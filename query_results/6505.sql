@@ -1,0 +1,1 @@
+SELECT t.* FROM title_basics AS t INNER JOIN title_ratings as r ON r.titleID = t.id WHERE r.averageRating > 6 AND t.isAdult!= "yes" AND NOT EXISTS(SELECT * FROM title_principals WHERE r.rating < 7)

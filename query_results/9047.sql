@@ -1,0 +1,1 @@
+SELECT * FROM movies WHERE rating >=? AND genre = "Action" OR genre LIKE "%comedy%" ORDER BY rating DESC LIMIT 7

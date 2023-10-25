@@ -1,0 +1,1 @@
+SELECT title_name.* FROM title_name WHERE title_name.titleType='movie' AND ((title_name.startYear BETWEEN? AND?)) ORDER BY rating DESC

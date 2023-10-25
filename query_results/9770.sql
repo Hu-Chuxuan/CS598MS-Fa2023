@@ -1,0 +1,1 @@
+SELECT t.title_id as MovieID, tb.averageRating as AverageRatng, nc.primaryName AS TitleName FROM title_basic t INNER JOIN title_rating tb ON t.movie_id = tb.movie_id AND t.isAdult=tb.isAdult INNER JOIN name_basic nc ON tb.movie_id = nc.movie_id WHERE t.startYear >= 1967 OR t.endYear <= 2009

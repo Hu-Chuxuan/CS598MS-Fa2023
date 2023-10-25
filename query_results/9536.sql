@@ -1,0 +1,1 @@
+SELECT * FROM title_basics WHERE tconst =? AND ((titleType IS NOT NULL OR titleType <> '')) ORDER BY rating DESC

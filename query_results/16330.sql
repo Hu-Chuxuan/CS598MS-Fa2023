@@ -1,0 +1,1 @@
+SELECT * FROM movieRecommendation WHERE rating >= x AND genre = y

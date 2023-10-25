@@ -1,0 +1,1 @@
+SELECT t.* FROM (title_basics AS t JOIN cast AS c ON t.`tconst` = c.`tconst`) WHERE `genre` IN ('Comedy', 'Drama') AND (`startyear` BETWEEN? AND?) ORDER BY rating DESC

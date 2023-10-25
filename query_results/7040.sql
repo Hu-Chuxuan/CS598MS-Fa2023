@@ -1,0 +1,1 @@
+SELECT DISTINCT t.* FROM title_basics AS t JOIN name_basics ON t.titleId = name_basics.primaryTitle WHERE (t.isAdult!= 'True') AND ((name_basics.birthYear BETWEEN? AND?)) AND (t.startYear >=?)

@@ -1,0 +1,1 @@
+SELECT * FROM movie_recommendation(title_basics WHERE tconst = "movie" AND rating >= 6 OR genre IN ('War')) AND user_preferences

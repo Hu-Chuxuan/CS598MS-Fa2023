@@ -1,0 +1,2 @@
+SELECT tc.* FROM title_basic AS tc JOIN genre g ON tc.`genre` = g.id WHERE tc.`startyear` BETWEEN '1970-01-01' AND '2008-12-31')
+JOIN (SELECT rc.* FROM rating_counts as rc where rc.`title`='Seven (1995)' LIMIT 1)rc ON tc.title_id=rc.movie_id

@@ -1,0 +1,1 @@
+SELECT * FROM title_basics WHERE tconst = ‘movie’ AND (startyear BETWEEN 1970 AND 2020)

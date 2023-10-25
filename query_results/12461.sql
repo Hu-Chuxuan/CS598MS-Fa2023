@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE tconst IN ('title_basics') AND averageRating > 6

@@ -1,0 +1,1 @@
+SELECT * FROM movie_recommendation WHERE user_id = $user AND genre IN ('mystery') ORDER BY avg(rating), rating DESC LIMIT 1

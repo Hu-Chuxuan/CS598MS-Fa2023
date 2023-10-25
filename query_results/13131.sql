@@ -1,0 +1,1 @@
+SELECT t.* FROM title AS t JOIN cast AS c ON c.titleID = t.titleID WHERE c.category = "Actress" AND c.job IN ('Main Actor') ORDER BY c.ordering LIMIT 1

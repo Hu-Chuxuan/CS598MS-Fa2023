@@ -1,0 +1,1 @@
+SELECT * FROM ( SELECT tb.*, tr.*, nr.*, nc.*, tc.* WHERE title_type = 'Movie' AND user_input = "yes" ) AS TB INNER JOIN title_crew ON tc.director = TR.title_id LEFT OUTER JOIN title_rating ON NR.title_id=TR.title_id RIGHT OUTER JOIN name_basic NB ON NC.name_id = NB.name_id LEFT OUTER JOIN title_principal TP ON NC.character = TP.ordering ORDER BY rating DESC LIMIT 10

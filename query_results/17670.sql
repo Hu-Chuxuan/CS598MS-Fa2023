@@ -1,0 +1,1 @@
+SELECT t.* FROM title_basics AS t INNER JOIN title_rating AS r ON t.titleID = r.title_id WHERE r.averageRating >= 6 AND t.isadult <> 1

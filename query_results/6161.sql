@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE tconst =? AND (titleType =? OR titleType IS NULL)

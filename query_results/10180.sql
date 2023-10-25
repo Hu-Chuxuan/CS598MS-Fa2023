@@ -1,0 +1,1 @@
+SELECT * FROM `title` WHERE `primaryTitle` LIKE '%father%' OR `originalTitle` LIKE '%father%' AND `isAdult = false`

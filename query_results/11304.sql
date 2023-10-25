@@ -1,0 +1,1 @@
+SELECT * FROM (title_basic AS tb JOIN title_rating AS tr ON tb.primaryTitle = tr.title_basics) LEFT OUTER JOIN title_crew as crew USING(titleID)

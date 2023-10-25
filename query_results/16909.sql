@@ -1,0 +1,1 @@
+SELECT DISTINCT t.* FROM title_ratings r INNER JOIN title_basics b ON b.titleId = r.movieId LEFT OUTER JOIN name_basics p USING(primaryName)

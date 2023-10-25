@@ -1,0 +1,1 @@
+SELECT t.* FROM movielens ml JOIN title_ratings tr ON tr.titleId = ml.tmID WHERE tr.rating >= 6 AND ml.userID IN ('1','2') GROUP BY tmID

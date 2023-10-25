@@ -1,0 +1,1 @@
+SELECT DISTINCT(title_basics.*), rating_average FROM (movie_recommendation INNER JOIN title_ratings ON movie_recommendation.primaryTitle = title_rating.originalTitle AND movie_recommendation.startYear >= title_rating.startYear AND movie_recommendation.startYear <= title_rating.endYear) WHERE user_preferences LIKE 'comedy%' ORDER BY rating_average DESC LIMIT 10 OFFSET 0

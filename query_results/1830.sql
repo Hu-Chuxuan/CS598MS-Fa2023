@@ -1,0 +1,1 @@
+SELECT * FROM movie_recommendation WHERE (title_type = "Horror") AND (startyear >= 1970)

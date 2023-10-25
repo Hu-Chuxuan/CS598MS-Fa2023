@@ -1,0 +1,1 @@
+SELECT tc.* FROM title_basic AS tb LEFT JOIN title_rating AS tr ON tb.titleId = tr.titleId AND tb.primaryTitle=tr.title WHERE tr.averageRating>='6' ORDER BY tr.numvotes DESC LIMIT 5

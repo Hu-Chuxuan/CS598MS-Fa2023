@@ -1,0 +1,1 @@
+SELECT DISTINCT tb.* FROM title_basics as tb INNER JOIN name_basics as nb ON tb.primaryTitle = nb.primaryName

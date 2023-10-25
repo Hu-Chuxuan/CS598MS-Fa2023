@@ -1,0 +1,1 @@
+SELECT DISTINCT t1.* FROM movies AS t1 WHERE t1.genre = 'comedy' AND EXISTS( SELECT * from user_preferences as up where up.movie LIKE '%Talladega%') 

@@ -1,0 +1,1 @@
+SELECT t.* FROM TITLE t WHERE CONTAINER(t.genre) LIKE '%comedy%' AND NOT EXISTS ( SELECT * from title_ratings where rating <.6 ) ORDER BY avgrating DESC LIMIT 5

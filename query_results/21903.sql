@@ -1,0 +1,1 @@
+SELECT moviename FROM title WHERE rating > 8 AND rating < 6 OR genre IN ('Drama') ORDER BY avgrating DESC LIMIT 3

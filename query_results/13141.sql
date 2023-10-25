@@ -1,0 +1,1 @@
+SELECT * FROM (SELECT DISTINCT t.*, r.*, u.* WHERE ((u.name LIKE '%Seth%') AND(r.titleType ='movie')) OR((u.name LIKE '%Seth%') AND(r.titleType IS NULL)) ORDER BY rating DESC) AS x JOIN user u ON u.primaryName=x.director GROUP BY director

@@ -1,0 +1,1 @@
+SELECT * FROM `title` WHERE `title`.`primaryTitle` LIKE '%Dumb%' AND (`title`.`genre` = 'Comedy') ORDER BY RANDOM() LIMIT 3

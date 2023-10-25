@@ -1,0 +1,1 @@
+SELECT * FROM movies WHERE rating >.7 AND director IN ('Lenny Venito') ORDER BY rating DESC LIMIT 1

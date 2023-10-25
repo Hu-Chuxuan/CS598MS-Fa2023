@@ -1,0 +1,1 @@
+SELECT movies.* FROM movies INNER JOIN rating ON rating.movieID =movies.id WHERE userPreferneceHistory LIKE '%Spectre%'

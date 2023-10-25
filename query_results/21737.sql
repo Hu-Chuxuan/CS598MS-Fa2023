@@ -1,0 +1,1 @@
+SELECT DISTINCT t.* FROM title_basics AS t INNER JOIN name_basics as n ON t.titleType = n.primaryName WHERE t.startYear > 1970 AND t.endYear < CURRENT DATE

@@ -1,0 +1,1 @@
+SELECT * FROM title_ratings WHERE averageRating > 6 AND avgRating < 8

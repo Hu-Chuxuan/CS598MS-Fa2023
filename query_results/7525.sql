@@ -1,0 +1,1 @@
+SELECT t.titleId FROM title AS t INNER JOIN genre ON g.genreId = t.primaryGenre WHERE t.numVotes > 0 AND t.averageRating >= '7' OR g.name LIKE '%Action%' ORDER BY t.startYear DESC LIMIT 3

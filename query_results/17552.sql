@@ -1,0 +1,1 @@
+SELECT * FROM title_basic WHERE tconst = 'title' AND primaryTitle LIKE '%new town%' OR titleType IN ('movie', 'TV series') ORDER BY startYear DESC LIMIT 1

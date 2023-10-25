@@ -1,0 +1,1 @@
+SELECT DISTINCT TOP (10) titles.* FROM ratings INNER JOIN ratingstitle ON ratings.titleID = ratingstitle.titleID WHERE ratingstitle.rating >= @min AND ratingstitle.rating <= @max GROUP BY ratingstitle.titleID ORDER BY ratingstitle.averageRating DESC

@@ -1,0 +1,1 @@
+SELECT title_id FROM title WHERE title_type ='movie' AND title_year BETWEEN $1 AND $2

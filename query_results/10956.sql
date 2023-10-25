@@ -1,0 +1,1 @@
+SELECT DISTINCT tconst FROM title_basic WHERE (startyear>='1980' AND startyear<='2020') OR (endyear>='1980' AND endyear<='2020')

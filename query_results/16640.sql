@@ -1,0 +1,1 @@
+SELECT * FROM `title_basics`,`name_basics` WHERE `title_basics`.`primaryTitle` LIKE '%the%'

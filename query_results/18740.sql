@@ -1,0 +1,1 @@
+SELECT t.* FROM titles AS t WHERE t.titleType = "movie" AND EXISTS( SELECT * FROM ratings r WHERE r.rating > 8.5)

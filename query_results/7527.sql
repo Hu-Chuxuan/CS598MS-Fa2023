@@ -1,0 +1,1 @@
+SELECT t.title_id AS id, t.name_basics AS Movie Name, c.category AS Category from imdb.title_principals as p INNER JOIN imdb.categories as cat ON p.job = cat.cat_id WHERE p.ordering > 0 AND cat.cat_type!= "Genre" ORDER BY cat.sort_order ASC LIMIT 1

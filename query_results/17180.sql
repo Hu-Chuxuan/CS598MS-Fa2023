@@ -1,0 +1,1 @@
+SELECT t.* FROM title AS t JOIN name AS n ON t.primaryTitle = n.title WHERE n.category='Actor'

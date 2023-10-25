@@ -1,0 +1,1 @@
+SELECT * FROM rating WHERE (title_id = :movieId AND user_id = :userId)

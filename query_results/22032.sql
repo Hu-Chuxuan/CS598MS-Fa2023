@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE tconst = "Friday the 13th" OR "Scream"

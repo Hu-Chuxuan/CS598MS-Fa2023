@@ -1,0 +1,1 @@
+SELECT * FROM title_ratings WHERE tconst = 'Sing' AND numvotes >= 8

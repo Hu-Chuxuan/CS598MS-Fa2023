@@ -1,0 +1,1 @@
+SELECT * FROM title_rating WHERE title_type ='movie' AND (avgRating > 7) ORDER BY avgRATING DESC LIMIT 6

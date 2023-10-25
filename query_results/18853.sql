@@ -1,0 +1,1 @@
+SELECT * FROM `title` WHERE `genre` LIKE '%Action%' AND (`rating` >.7 OR rating <.6)

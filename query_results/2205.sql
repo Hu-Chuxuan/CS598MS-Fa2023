@@ -1,0 +1,1 @@
+SELECT * FROM titles WHERE rating >= $rating AND length <= $length

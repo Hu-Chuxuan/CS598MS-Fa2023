@@ -1,0 +1,1 @@
+SELECT * FROM title_basic WHERE isAdult = false AND titleType IS NOT NULL

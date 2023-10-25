@@ -1,0 +1,1 @@
+SELECT DISTINCT tc.* FROM title_basics AS tb INNER JOIN (title_ratings r ON tb.titleID = r.titleID AND tb.titleType='drama') WHERE (tb.startYear > 1980 OR b.endYear < 1970) AND tb.isAdult=false

@@ -1,0 +1,1 @@
+SELECT * FROM (SELECT DISTINCT titles.*, ratings.averageRating AS rating FROM imdb.title_basic titles LEFT JOIN imdb.name_basic names ON titles.primaryTitle = names.primaryName WHERE titles.startYear <=? AND titles.endYear >=? GROUP BY titles.primaryTitle HAVING COUNT(*) > 1) AS t INNER JOIN imdb.rating_summary ratings USING(titleId)

@@ -1,0 +1,1 @@
+SELECT t.titleID AS MovieID FROM Title t WHERE t.genre = "Drama" AND t.rating >= 6

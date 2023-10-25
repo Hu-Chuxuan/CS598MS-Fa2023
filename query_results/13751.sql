@@ -1,0 +1,1 @@
+SELECT * FROM rating WHERE title_id = 'title' AND user_id = 'user'

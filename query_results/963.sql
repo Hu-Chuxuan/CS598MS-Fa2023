@@ -1,0 +1,1 @@
+SELECT * FROM imdb.title_rating WHERE rating >= %v AND rating <=%v

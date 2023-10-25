@@ -1,0 +1,1 @@
+SELECT * FROM ratings WHERE rating = 8 AND (name IN ('Al Pacino') OR primaryName LIKE '%Al%')

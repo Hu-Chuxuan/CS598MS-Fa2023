@@ -1,0 +1,1 @@
+SELECT * FROM titles WHERE genre = "Comedy" AND userInput LIKE "%comedy%" ORDER BY rating DESC LIMIT 3

@@ -1,0 +1,1 @@
+SELECT tc.* FROM movies AS m INNER JOIN title_basic as b ON b.titleId = m.id WHERE m.userID =? AND ((b.isAdult = false OR (m.rating >= 8)) AND (b.genre IN ('Action'))) ORDER BY rating DESC LIMIT 7

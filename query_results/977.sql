@@ -1,0 +1,1 @@
+SELECT * FROM rating WHERE genre = "Comedy" AND rating >= 6

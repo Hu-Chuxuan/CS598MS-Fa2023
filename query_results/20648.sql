@@ -1,0 +1,1 @@
+SELECT t1.* FROM titles AS t1 INNER JOIN title_crew as tc ON(tc.tconst = t1.tconst)

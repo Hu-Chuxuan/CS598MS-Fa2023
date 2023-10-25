@@ -1,0 +1,1 @@
+SELECT * FROM title_basics WHERE tconst = "BLACK PANTHER" OR tconst = "IRON MAN 2"

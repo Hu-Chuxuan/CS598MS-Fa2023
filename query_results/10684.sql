@@ -1,0 +1,1 @@
+SELECT * FROM `title` WHERE `genre` = 'horror' AND (`startyear` >= '1968') OR ('endyear' <= '2017')

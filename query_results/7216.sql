@@ -1,0 +1,1 @@
+SELECT tb.* FROM title_basic AS tb JOIN title_rating as tr ON tr.title = tb.primaryTitle WHERE (tr.averageRating >.7 AND tr.numvotes >= 6)

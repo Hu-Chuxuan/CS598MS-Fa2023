@@ -1,0 +1,1 @@
+SELECT * FROM (SELECT * FROM movies WHERE rating > 7 AND genre = 'Comedy' OR rating < 6 AND genre='Drama') AS subquery UNION ALL SELECT * FROM (SELECT * FROM casts where actor IN ('Brooke Shields', 'Christopher Atkins')) as subquery

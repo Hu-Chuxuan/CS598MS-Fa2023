@@ -1,0 +1,1 @@
+SELECT tb.* FROM title_basic AS tb INNER JOIN title_rating ON tb.title_id = title_rating.movieID WHERE ((tb.startYear >= "1978") AND (tb.endYear <= "2020")) ORDER BY tb.avgRat DESC LIMIT 5

@@ -1,0 +1,1 @@
+SELECT * FROM (title_basics tb JOIN title_ratings tr ON tb.titleID = tr.titleID AND tr.primaryTitle LIKE '%inception%') WHERE tr.averageRating >= 8/10

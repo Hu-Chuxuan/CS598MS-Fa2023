@@ -1,0 +1,1 @@
+SELECT * FROM `title` WHERE `genre` = "comedy" AND (`startyear > 2000`) ORDER BY RAND() LIMIT 6

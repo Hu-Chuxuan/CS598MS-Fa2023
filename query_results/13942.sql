@@ -1,0 +1,1 @@
+SELECT TOP(numRecommendedMovies,100) * FROM Title WHERE ((titleType LIKE '%horror%') OR (genre LIKE '%horror%' ))

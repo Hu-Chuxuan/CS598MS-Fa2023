@@ -1,0 +1,5 @@
+SELECT * FROM (
+    SELECT tc.*, nr.*, tcr.*, ncr.*, mr.*, p.name AS primaryName, g.genreName AS genreName
+       , cast(cast(avg(rating) as unsigned)/numvoters*100 as float)::numeric AS avgrating,
+            case when sum(case when rating >= 7 then 1 else 0 end)*sum(case when rating <= 6 then 1 else 0 end)>=0.98 THEN 'Highly Recommended' ELSE if((sum(case when rating > 5 AND rating < 6 then 1 else 0 end))>=0.55 OR ((sum(case when rating = 5 AND rating <= 6 then 1 else 0 end))>0.44)OR ((sum(case when rating = 6 AND rating <= 7 then 1 else 0 end))>=0.55 )THEN 'Recommended'ELSE IF SUM(CASE WHEN RATING<=6 THEN 1 END)=0 THEN 'Not recommended'END AS recommendation
+FROM title_ratings NR INNER JOIN titles TC ON TC.titleID=NR.titleID WHERE TC.titleType='Movie'AND NR.primaryTitle IS NOT NULL GROUP BY TC.titleID ORDER BY TCR.avgrating DESC LIMIT 2

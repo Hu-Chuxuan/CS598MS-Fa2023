@@ -1,0 +1,1 @@
+SELECT * FROM movie_database WHERE startyear=2016 AND type="movie" ORDER BY rating DESC LIMIT 5

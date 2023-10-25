@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE tconst = "movie" AND primaryTitle LIKE '%Family%' AND rating >.8

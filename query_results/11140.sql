@@ -1,0 +1,1 @@
+SELECT * FROM (title_basics AS tb JOIN title_rating AS tr ON tb.titleID = tr.titleID) JOIN title_crew as c ON c.movieID = tb.titleID JOIN title_principals as p ON p.characterID=c.personID WHERE title_type='Movie' AND NOT EXISTS(SELECT * FROM title_genre g where g.titleID=tb.titleID)

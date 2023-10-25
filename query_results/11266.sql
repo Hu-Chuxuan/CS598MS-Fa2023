@@ -1,0 +1,1 @@
+SELECT DISTINCT t.* FROM title_basic t JOIN title_rating r ON t.titleId = r.titleId WHERE ((r.averageRating >= :minAvg AND r.averageRating <= :maxAvg)) OR (r.numVotes > :minNum)

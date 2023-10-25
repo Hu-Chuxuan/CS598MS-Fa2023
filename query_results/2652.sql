@@ -1,0 +1,1 @@
+SELECT t.* FROM title_basics AS t JOIN cast AS c ON t.id = c.titleID WHERE t.isAdult = 0 AND t.primaryTitle LIKE '%The Town%' OR t.originalTitle LIKE '%The Town%'

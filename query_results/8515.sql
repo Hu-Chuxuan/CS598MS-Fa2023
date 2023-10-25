@@ -1,0 +1,2 @@
+SELECT * FROM
+( SELECT * FROM title_basics WHERE titleType = "Movie" AND startYear < 1960 UNION ALL SELECT * from title_rating where tconst > 7 ORDER BY avg rating DESC LIMIT 3 ) AS ratedmovies JOIN title_crew ON ratedmovie.director = title_crew.directors

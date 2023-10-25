@@ -1,0 +1,1 @@
+SELECT tb.* FROM title_basic AS tb WHERE tb.titleType = "comedy" AND tb.startYear >= 2000

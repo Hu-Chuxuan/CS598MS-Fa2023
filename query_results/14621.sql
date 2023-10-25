@@ -1,0 +1,1 @@
+SELECT * FROM title_basics WHERE (titleType = "movie" OR titleType="tv") AND ((startYear > @userInputYear OR startYear < (@userInputYear - 3)) AND (endYear <= @userInputYear))

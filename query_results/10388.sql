@@ -1,0 +1,1 @@
+SELECT * FROM movies WHERE tconst = "title" AND genre = "comedy"

@@ -1,0 +1,1 @@
+SELECT t.titleId AS idMovie, t.titleBasics.* FROM title AS t WHERE EXISTS( SELECT * FROM ratings AS rr WHERE rr.titleId = t.titleId AND rr.userID =? ) GROUP BY t.titleId ORDER BY t.averageRating DESC LIMIT 6

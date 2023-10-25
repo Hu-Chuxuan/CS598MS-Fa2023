@@ -1,0 +1,1 @@
+SELECT * FROM title_basics WHERE tconst = 'tt0169872' AND titleType='movie'

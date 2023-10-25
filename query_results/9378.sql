@@ -1,0 +1,1 @@
+SELECT * FROM title_ratings WHERE averageRating >= '7' AND (isAdult = false OR isAdult IS NULL) ORDER BY rating DESC LIMIT 8

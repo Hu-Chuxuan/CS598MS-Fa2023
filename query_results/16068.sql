@@ -1,0 +1,1 @@
+SELECT title_rating.* FROM title_recommendation WHERE rating_id IN ('The Book of Eli (2010)','The Postman   (1997)','The Girl with All the Gifts  (2016))') AND user_preferences LIKE '%The Book Of%'

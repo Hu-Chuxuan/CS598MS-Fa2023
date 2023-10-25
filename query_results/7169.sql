@@ -1,0 +1,1 @@
+SELECT t.* FROM title_ratings AS r INNER JOIN title_crew AS c ON r.titleId = c.titleId AND c.job IN ('director') WHERE r.numVotes >= 60

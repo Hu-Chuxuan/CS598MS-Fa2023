@@ -1,0 +1,2 @@
+SELECT DISTINCT
+    t1.* FROM ( SELECT DISTINCT tb.* FROM title_basics AS tb WHERE ((tb.titleType ='movie') OR (tb.titleType IS NULL)) AND (((tb.startYear <= 2017) OR (tb.endYear >= 2019))) ) as t1 LEFT JOIN (SELECT DISTINCT tb.* FROM title_ratings AS tb WHERE (((tb.averageRating > 6.5) OR (tb.numVotes < 1000)) OR (tb.numVotes IS NULL)) ORDER BY tb.avgRat DESC LIMIT 8 OFFSET 0) as t2 ON(t1.primaryTitle = t2.primaryTitle)

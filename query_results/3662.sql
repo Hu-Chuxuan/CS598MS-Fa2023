@@ -1,0 +1,1 @@
+SELECT t.titleID AS 'Movie ID', c.category AS 'Category' FROM title_principals AS p JOIN casts ON p.cast = c.id WHERE type = "Actress" AND category IN ('Leading') ORDER BY order DESC LIMIT 1

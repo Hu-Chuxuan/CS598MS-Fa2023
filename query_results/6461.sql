@@ -1,0 +1,4 @@
+SELECT DISTINCT m.* FROM
+(SELECT tb.*, nr.*, c.*, p.*, rc.* from (title_basics as tb INNER JOIN
+(SELECT rating_id AS id, avg(rating), COUNT(*) AS votes FROM ratings GROUP BY rating_id ) as nr ON tb.primaryTitle = nr.originalTitle AND tb.startYear BETWEEN 1980 AND 2000 UNION ALL SELECT * FROM (name_basics AS n INNER JOIN
+(SELECT actor_id AS id, count(*)/totalCount AS percent FROM actors WHERE (birthyear > 1967 OR birthyear < 1940)) AS acct ON n.primaryName=acct.actor_id) AS np JOIN title_crew AS cr ON cr.directorID=np.id JOIN title_principals AS pr ON pr.characterId=cr.actor_id) AS cp LEFT OUTER JOIN title_ratings AS rr ON rr.averageRating >= 7/10 AND rr.numVotes>200 WHERE NOT EXISTS (SELECT * FROM movies WHERE primaryName IN ('John Goodman')) LIMIT 10

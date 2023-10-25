@@ -1,0 +1,1 @@
+SELECT * FROM title_basic WHERE titleType = 'Movie' AND title_rating >.8

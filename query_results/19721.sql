@@ -1,0 +1,1 @@
+SELECT * FROM rating WHERE genre LIKE '%horror%' AND RATING >=.2

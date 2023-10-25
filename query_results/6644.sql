@@ -1,0 +1,1 @@
+SELECT * FROM TITLE WHERE (((titleType = "movie") AND ((startYear >= 1980))))

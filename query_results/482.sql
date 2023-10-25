@@ -1,0 +1,1 @@
+SELECT * FROM title_recommend WHERE (titleType LIKE '%musical%' OR genre = %musical%) AND (titleType NOT IN ('documentary','short film')) GROUP BY titleType HAVING COUNT(*) > 0

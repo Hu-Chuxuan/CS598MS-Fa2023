@@ -1,0 +1,1 @@
+SELECT tc.* FROM title_basic AS tb JOIN title_rating as tr ON tb.titleType ='movie' AND tb.primaryTitle = tr.averageRating ORDER BY tr.numVotes DESC LIMIT 8

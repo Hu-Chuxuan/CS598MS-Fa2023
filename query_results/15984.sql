@@ -1,0 +1,1 @@
+SELECT t.* FROM title_basic AS t JOIN title_rating AS r ON(r.titleID = t.id AND userInput LIKE '%' + t.primaryTitle + '%') WHERE r.userPrefered IS NOT NULL

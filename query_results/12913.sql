@@ -1,0 +1,1 @@
+SELECT * FROM title_basics WHERE tconst = "movie" AND (titleType LIKE "%theater%" OR originalTitle LIKE "%theater%") ORDER BY avgRating DESC LIMIT 0, 7

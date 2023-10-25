@@ -1,0 +1,1 @@
+SELECT t.* FROM title_basics AS t INNER JOIN title_ratings AS r ON r.primaryTitle = t.title_id WHERE t.startYear >= '2018' AND t.genre IN ('Horror') ORDER BY rating DESC LIMIT 3

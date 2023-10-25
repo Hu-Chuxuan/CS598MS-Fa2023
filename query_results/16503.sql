@@ -1,0 +1,1 @@
+SELECT t1.* FROM `title` AS t1 INNER JOIN `name_basics` AS nb ON t1.`titleID` = nb.`titleID` WHERE t1.`primaryTitle` LIKE 'Father%' AND t1.`startYear` >= 2016

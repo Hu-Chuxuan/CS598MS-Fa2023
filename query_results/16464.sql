@@ -1,0 +1,1 @@
+SELECT * FROM title_principals WHERE characters IN ('Wakanda Forever') AND job = "actor"

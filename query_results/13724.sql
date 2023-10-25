@@ -1,0 +1,1 @@
+SELECT * FROM (title_ratings t1 INNER JOIN title_basic b ON t1.primaryTitle = b.titleID) WHERE (b.isAdult IS NULL OR b.isAdult <> true AND b.startYear >= $year AND b.endYear <= $year AND b.runtimeMinutes > 80)

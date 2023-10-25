@@ -1,0 +1,1 @@
+SELECT t.* FROM title AS t INNER JOIN name_basics as n ON t.titleId = n.titleId WHERE (t.primaryTitle LIKE '%' || $userInput || '%') AND ((n.birthYear BETWEEN $yearStart AND $yearEnd)) ORDER BY rating DESC LIMIT 6

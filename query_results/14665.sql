@@ -1,0 +1,1 @@
+SELECT * FROM ttitle_rating WHERE tconst =? AND avgRat >=?

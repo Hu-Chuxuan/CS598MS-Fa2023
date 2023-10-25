@@ -1,0 +1,1 @@
+SELECT DISTINCT tc.* FROM TITLE_BASICS AS tb INNER JOIN TITLE_CREW AS tc ON tb.title_id = tc.title_id WHERE (tb.isAdult > 0 OR b.averageRating < 6) AND ((tb.genre_id IN ('8','9') AND (tb.primaryGenre_id NOT IN ('6')))) AND ((((tc.director_name LIKE '%Joe Russo%' )OR(tc.writer_name LIKE '%Chris Marker%'))))) ORDER BY rating DESC LIMIT 5

@@ -1,0 +1,1 @@
+SELECT * FROM titles WHERE rating >=? AND genre = "Motivation" OR genre IN ('Sports', 'Coaching') ORDER BY vote DESC LIMIT 7

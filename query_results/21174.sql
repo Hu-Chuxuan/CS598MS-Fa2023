@@ -1,0 +1,1 @@
+SELECT * FROM title_basics WHERE tconst IN ('Avengers','deadpool') AND (startyear BETWEEN? AND? OR ENDYEAR >=?)

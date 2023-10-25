@@ -1,0 +1,1 @@
+SELECT * FROM `title_recommendation` WHERE user_input =? AND user_preferences LIKE? ORDER BY rating DESC LIMIT 5

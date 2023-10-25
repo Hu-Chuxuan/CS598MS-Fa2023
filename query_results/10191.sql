@@ -1,0 +1,1 @@
+SELECT * FROM titles WHERE averageRatings >= avg(averageRating) AND startYEAR > year(CURRENT DATE - interval 7 day)

@@ -1,0 +1,1 @@
+SELECT DISTINCT(movieId), title_basics.* FROM title_basic INNER JOIN name_basics ON title_basics.title_id = name_basics.name_id AND name_basics.birthYear <= '1960' AND name_basics.deathYear >= '1970'

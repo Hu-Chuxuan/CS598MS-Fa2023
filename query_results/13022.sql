@@ -1,0 +1,1 @@
+SELECT t.* FROM movies as m JOIN casts c ON (m.id = c.movieId) WHERE c.category = 'Science Fiction' AND c.job IN ('Actor', 'Director') GROUP BY m.title ORDER BY RAND() LIMIT 10

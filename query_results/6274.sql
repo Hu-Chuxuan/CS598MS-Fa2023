@@ -1,0 +1,1 @@
+SELECT TOP(5) * FROM title_basic WHERE title_type = "comedy" AND numvoters > 100

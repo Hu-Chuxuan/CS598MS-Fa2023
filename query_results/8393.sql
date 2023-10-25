@@ -1,0 +1,1 @@
+SELECT t.* FROM title_basics AS t JOIN (title_rating_users AS r INNER JOIN title_ratings AS u ON r.movieId = u.movieID AND r.userId=?) WHERE? IN (?)

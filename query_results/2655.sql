@@ -1,0 +1,1 @@
+SELECT tc.* FROM title_basics AS tb INNER JOIN title_ratings as tr ON tb.title_id = tr.title_id WHERE tr.numvotes > 9 AND tr.averagerating < 8

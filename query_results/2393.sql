@@ -1,0 +1,1 @@
+SELECT * FROM (title_ratings JOIN cast_members ON rating = casting_id) WHERE rating > 7 AND title LIKE '%comedy%' OR title LIKE '%action%'

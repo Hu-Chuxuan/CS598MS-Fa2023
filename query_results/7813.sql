@@ -1,0 +1,1 @@
+SELECT tc.* FROM Title_Basics AS tb INNER JOIN Title_Crews AS tc ON tb.titleId = tc.movieId

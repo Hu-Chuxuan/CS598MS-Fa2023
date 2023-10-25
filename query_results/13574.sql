@@ -1,0 +1,1 @@
+SELECT * FROM ( SELECT tb.*, nr.*, rc.* from title_basic as tb join title_rating as tr JOIN title_crew as tc ON tb.titleId = tc.titleId ) WHERE tb.primaryTitle LIKE '%movie%' AND tb.isAdult=FALSE ORDER BY tr.averageRATING DESC LIMIT 6

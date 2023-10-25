@@ -1,0 +1,1 @@
+SELECT t.* FROM title_basic AS t JOIN ( SELECT * from title_rating WHERE rating >.7 ) AS r ON( t.titleType = r.titleType AND t.startYear >= r.startYeat AND t.endYear <=r.endyear )

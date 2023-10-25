@@ -1,0 +1,1 @@
+SELECT DISTINCT tc.* FROM title_basics AS tb INNER JOIN title_ratings AS tr ON tr.titleId = tb.id INNER JOIN name_basics as nm ON tm.nameId=nm.id WHERE nm.primaryName='Johnny Depp'

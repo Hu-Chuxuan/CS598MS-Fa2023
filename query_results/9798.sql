@@ -1,0 +1,1 @@
+SELECT t1.* FROM title_basics AS t1 INNER JOIN (title_ratings AS r1 ON ((r1.averageRating > 7))) WHERE ((((t1.startYear BETWEEN? AND?)) OR (t1.endYear >=?)) OR (t1.runtimeMinutes <=?))

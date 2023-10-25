@@ -1,0 +1,1 @@
+SELECT * FROM title_basic WHERE tconst = 'JohnnyDepp' AND titleType!= 'TV Series'

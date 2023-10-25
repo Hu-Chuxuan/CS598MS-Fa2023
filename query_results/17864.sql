@@ -1,0 +1,1 @@
+SELECT tc.* FROM title_ratings r JOIN title_basic b ON r.title = b.title WHERE r.averageRating >=.8 AND r.numvotes > 1

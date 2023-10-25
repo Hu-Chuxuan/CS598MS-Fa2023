@@ -1,0 +1,1 @@
+SELECT tb.* FROM title_basic AS tb INNER JOIN title_rating AS tr ON tb.titleID = tr.titleID AND tb.isAdult!= tr.averageRating WHERE (tb.startYear >=? OR bb.endYear <=? )AND ((tr.numVotes >0)) AND (tr.primaryTitle LIKE '%Spirited%') AND (tr.genre IN ('Drama','Comedy'))

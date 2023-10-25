@@ -1,0 +1,1 @@
+SELECT * FROM as your first line of code when you are ready to begin writing queries in MySQL workbench. Do not use SELECT * from table

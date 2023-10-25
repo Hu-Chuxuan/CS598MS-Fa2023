@@ -1,0 +1,1 @@
+SELECT * FROM titles WHERE primaryTitle LIKE '%Action%' AND rating > 7

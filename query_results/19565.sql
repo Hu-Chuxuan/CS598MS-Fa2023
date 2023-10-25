@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE rating >= 7 AND (titleType = "Drama" OR titleType="Historical Drama") ORDER BY avg(rating)

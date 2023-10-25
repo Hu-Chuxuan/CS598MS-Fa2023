@@ -1,0 +1,1 @@
+SELECT * FROM title_ratings WHERE userInput LIKE '%fun%' AND genre IN ('Comedy', 'Musical') ORDER BY avgRATING DESC

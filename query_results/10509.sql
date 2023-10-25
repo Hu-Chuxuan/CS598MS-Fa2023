@@ -1,0 +1,1 @@
+SELECT t.* FROM `title` AS t WHERE t.`isAdult` = false AND t.`startYear` >= 2018 ORDER BY avg(t.`averageRating`) DESC LIMIT 10

@@ -1,0 +1,1 @@
+SELECT * FROM title_recommend WHERE rating >= '8' AND rating <= '9'

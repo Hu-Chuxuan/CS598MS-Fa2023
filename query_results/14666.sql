@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE titleType='comedy' AND genre IN ('Action') ORDER BY rating DESC LIMIT 1

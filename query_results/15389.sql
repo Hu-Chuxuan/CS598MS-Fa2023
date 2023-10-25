@@ -1,0 +1,1 @@
+SELECT DISTINCT tc.* FROM title_basic AS tb INNER JOIN cast_member AS cm ON tb.titleID = cm.titleID WHERE tb.primaryTitle LIKE "%Disney%" AND NOT EXISTS( SELECT * FROM title_rating WHERE titleID=tb.titleID AND rating>=7)

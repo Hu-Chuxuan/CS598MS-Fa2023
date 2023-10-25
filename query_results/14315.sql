@@ -1,0 +1,1 @@
+SELECT t.* FROM title_basics AS t JOIN ( SELECT DISTINCT t2.* WHERE title_type = 'Movie' AND average RATING >=.70 ) AS t2 ON( t.title_id= t2.title_id)

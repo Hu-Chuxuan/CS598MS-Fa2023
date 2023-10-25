@@ -1,0 +1,1 @@
+SELECT DISTINCT t.* FROM title_basic AS t JOIN user_preferences UP ON UP.movieId = t.titleID WHERE UP.userId =? AND UP.category LIKE '%similar%' ORDER BY UP.date DESC LIMIT 5

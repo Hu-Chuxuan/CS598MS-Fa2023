@@ -1,0 +1,1 @@
+SELECT * FROM `title_ratings` WHERE `averageRating >=.9 AND` `genre IN ('Horror','Sci-Fi')`

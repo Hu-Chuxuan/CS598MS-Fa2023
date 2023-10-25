@@ -1,0 +1,1 @@
+SELECT * FROM imdb.title_recommend WHERE rating > avg(rating)

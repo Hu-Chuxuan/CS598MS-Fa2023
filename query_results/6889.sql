@@ -1,0 +1,1 @@
+SELECT * FROM title_ratings t WHERE AVG(AVG(t.averageRating)) > 7

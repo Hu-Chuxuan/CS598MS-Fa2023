@@ -1,0 +1,1 @@
+SELECT * FROM `title` WHERE `isAdult` = false AND (`primaryTitle` LIKE '%Marvel%') OR (`genreID` IN ('2'))

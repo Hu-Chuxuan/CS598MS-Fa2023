@@ -1,0 +1,1 @@
+SELECT DISTINCT t.* FROM title AS t JOIN title_ratings AS r ON r.titleID = t.titleID WHERE rating >.8 AND userPreferedMovie IN ('The Boss Baby (2017)','Frozen (2013)','Sing   (2016)') GROUP BY t.titleID

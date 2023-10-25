@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE genre = “Musical” OR genre LIKE "%musical%" ORDER BY rating DESC LIMIT 5

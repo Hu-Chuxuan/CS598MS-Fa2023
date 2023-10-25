@@ -1,0 +1,1 @@
+SELECT t.title_basics.* FROM title_basics AS t WHERE t.isAdult = false AND t.startYear <=? AND t.endYear >=? ORDER BY t.averageRating DESC LIMIT 1

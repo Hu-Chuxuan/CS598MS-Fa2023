@@ -1,0 +1,1 @@
+SELECT * FROM imdb_movie WHERE rating >= 7 AND runningTime <= 100

@@ -1,0 +1,1 @@
+SELECT * FROM title_basics WHERE tconst = "title" AND titleType IN ('horror') ORDER BY rating DESC LIMIT 5

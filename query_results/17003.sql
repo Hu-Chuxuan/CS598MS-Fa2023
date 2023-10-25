@@ -1,0 +1,1 @@
+SELECT t.* FROM imdb.title AS t JOIN imdb.name AS n ON t.primaryTitle = n.primaryName WHERE genre IN ('romance', 'comedy') AND (n.birthYear <= 1970 OR n.deathYear >= 1960)

@@ -1,0 +1,1 @@
+SELECT DISTINCT TOP 1 * FROM #movieRecommendationSystem WHERE userPref LIKE '%The Sixth Sense%' AND rating > 6.8

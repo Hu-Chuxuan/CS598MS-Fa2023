@@ -1,0 +1,2 @@
+SELECT * FROM ( SELECT title_basics.*, title_ratings.*, CONCAT(title_ratings.averageRating,'/','numVotes') AS rating
+FROM title_basics INNER JOIN title_ratings ON title_basics.tconst = title_ratings.tconst AND title_basics.primaryTitle=title_ratings.title WHERE title_basics.startYear BETWEEN? AND? OR title_basics.endYear BETWEEN? AND?

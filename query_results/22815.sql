@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE genre = "comedy" AND rating > 8

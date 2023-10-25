@@ -1,0 +1,1 @@
+SELECT * FROM movies WHERE genre = "thrillers" AND director IN ('David Fincher','Martin Scorcese') OR actor in ("Ben Affleck","Leonardo DiCaprio") ORDER BY rating DESC LIMIT 10

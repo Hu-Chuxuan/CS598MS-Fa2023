@@ -1,0 +1,1 @@
+SELECT t.* FROM title_basic AS t INNER JOIN (title_rating AS r ON t.id = r.movieID) WHERE t.isAdult IN ('false') AND ((r.averageRating > 6 OR r.numVotes >= 200)) GROUP BY t.primaryTitle ORDER BY r.averageRating DESC LIMIT 10

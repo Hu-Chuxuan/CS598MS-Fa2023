@@ -1,0 +1,1 @@
+SELECT t.titleID as id, t.primaryTitle AS MovieTitle, r.averageRating AS rating FROM title_ratings t INNER JOIN name_basics n ON t.numVotes = 1 AND t.primaryName= n.name WHERE t.startYEAR <= 2016 AND t.endYEAR >= 1970

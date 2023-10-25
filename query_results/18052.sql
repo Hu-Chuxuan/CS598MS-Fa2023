@@ -1,0 +1,1 @@
+SELECT * FROM title_principals WHERE categories = "actress" AND character = "Eve"

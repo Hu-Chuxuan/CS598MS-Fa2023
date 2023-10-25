@@ -1,0 +1,1 @@
+SELECT t.* FROM titles AS t INNER JOIN userpreferences ON uid = id WHERE type ='movie' AND rating >= 6

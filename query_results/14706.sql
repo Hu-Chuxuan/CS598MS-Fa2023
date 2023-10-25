@@ -1,0 +1,1 @@
+SELECT * FROM titles WHERE tconst = "Black Panther" AND rating >= 7

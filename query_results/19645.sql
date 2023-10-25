@@ -1,0 +1,1 @@
+SELECT * FROM title_basics WHERE titleType = "Action" AND startYear >= 2007

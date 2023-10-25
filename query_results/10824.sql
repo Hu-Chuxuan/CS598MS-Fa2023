@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE (title_rating >=? AND title_genre IN ('Drama', 'Action')) OR (title_rating <=? AND title_genre IN ('Animation', 'Comedy'))

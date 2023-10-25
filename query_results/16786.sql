@@ -1,0 +1,1 @@
+SELECT t1.* FROM (title_basics AS tb JOIN genre_list AS gl ON tb.`genre`=gl.`id`) LEFT OUTER JOIN title_ratings as tr ON tr.`title_basics`.`primaryTitle` = 'D' WHERE tb.isAdult='Y'

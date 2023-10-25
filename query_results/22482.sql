@@ -1,0 +1,1 @@
+SELECT * FROM rating WHERE averageRATING > 7 AND director IN ('Jon Favreau')

@@ -1,0 +1,1 @@
+SELECT DISTINCT t.titleID as MovieID FROM Title AS t INNER JOIN TitleRatings TR ON(TR.movieID = t.titleID AND RATING >.8 ) WHERE RANK() OVER(PARTITION BY userInput ORDER by rating DESC) <= 2

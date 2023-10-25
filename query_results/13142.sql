@@ -1,0 +1,1 @@
+SELECT DISTINCT * FROM movies WHERE user_preferences LIKE '%Action%' AND title_type = "movie"

@@ -1,0 +1,1 @@
+SELECT tc.* FROM imdb.title_basic AS tb INNER JOIN imdb.name_basic as nb ON tb.primaryTitle = nb.primaryName WHERE nb.category IN ('Actor') AND nb.job='actor' AND nb.deathYear > 0

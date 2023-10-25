@@ -1,0 +1,1 @@
+SELECT DISTINCT titleID FROM title_recommendation WHERE (genre = 'Drama', rating >= 7)

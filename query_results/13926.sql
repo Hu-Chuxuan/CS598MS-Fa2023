@@ -1,0 +1,1 @@
+SELECT DISTINCT titles.* FROM title_basics AS tb INNER JOIN title_rating as tr ON tb.titleID = tr.movieID WHERE titleType = "Action" AND titleType NOT IN ('Documentary','Drama') ORDER BY avg(tr.averageRatings)

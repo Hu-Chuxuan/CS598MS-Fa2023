@@ -1,0 +1,1 @@
+SELECT * FROM title_basics WHERE titleType = "movie" AND ((startYear BETWEEN $year1 and $year2) OR (endYear BETWEEN $year1 and $year2)) ORDER BY rating DESC LIMIT 10

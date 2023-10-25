@@ -1,0 +1,1 @@
+SELECT DISTINCT t.* FROM title_basics AS t INNER JOIN name_basics as n ON t.titleId = n.id WHERE n.primaryName LIKE 'Blair' AND genre = 'Horror'

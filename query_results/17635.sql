@@ -1,0 +1,1 @@
+SELECT * FROM movie_recommendation WHERE (((title_type = "Drama" OR title_type="War") AND (startyear BETWEEN $year_from - 7 AND year_to)) OR ((startyear >= $year_from))) ORDER BY rating DESC LIMIT 6

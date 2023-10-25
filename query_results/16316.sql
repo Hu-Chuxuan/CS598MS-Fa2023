@@ -1,0 +1,1 @@
+SELECT * FROM `title` WHERE genre LIKE '%Action%' AND userPref LIKE '%Deadpool%'

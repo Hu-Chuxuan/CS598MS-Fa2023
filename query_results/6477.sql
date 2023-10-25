@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE (genre='family') AND (primaryTitle LIKE '%cinder%')

@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE titleType = "movie" AND (genre IN ('Action','Apocalypse') OR genre NOT LIKE '%%')

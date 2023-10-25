@@ -1,0 +1,1 @@
+SELECT * FROM imdb WHERE genre LIKE '%kid%' AND rating >= 7

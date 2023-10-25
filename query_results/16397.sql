@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE rating > 6 AND genre IN ('Alien Invasion') ORDER BY rating DESC LIMIT 1

@@ -1,0 +1,1 @@
+SELECT * FROM `title` WHERE (`genre` =? AND `primaryTitle` LIKE '%Star%') OR ((`name_basics`.`birthYear` BETWEEN? AND? AND `director` IN ('George Lucas')))

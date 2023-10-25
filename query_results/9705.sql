@@ -1,0 +1,1 @@
+SELECT * FROM title_principals WHERE job LIKE '%Actor%' AND category = 'Lead' ORDER BY rating DESC LIMIT 3

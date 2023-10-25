@@ -1,0 +1,1 @@
+SELECT t.* FROM movies AS m INNER JOIN casts c ON c.movie = m.title WHERE m.category = 'actress' AND m.job IN ('character') ORDER BY rating DESC LIMIT 5

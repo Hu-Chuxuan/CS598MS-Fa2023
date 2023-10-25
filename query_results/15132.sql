@@ -1,0 +1,1 @@
+SELECT * FROM title_recommendation WHERE userInput LIKE '%dc%' AND genre = 'animated' ORDER BY rating DESC LIMIT 0, 5

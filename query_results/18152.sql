@@ -1,0 +1,1 @@
+SELECT t.* FROM title AS t WHERE t.titleType = "movie" AND EXISTS( SELECT * FROM rating WHERE ratedTitle=t.titleId AND userID="user") GROUP BY genre

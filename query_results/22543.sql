@@ -1,0 +1,1 @@
+SELECT * FROM table WHERE title_ratings.averageRating > 7 AND title_crew.director IN ('Robin Williams') OR title_principals.job = "Actor"

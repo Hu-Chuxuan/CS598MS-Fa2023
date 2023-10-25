@@ -1,0 +1,1 @@
+SELECT * FROM ( SELECT r.titleID as id, t.rating as rating, t.numvoters AS voters FROM title_ratings r JOIN title_basics t ON r.primaryTitle = t.titleID ) WHERE ((rating >= $min AND rating <= $max)) OR ((rating > $min && rating < $max) AND (voters>=$min && voters<$max))

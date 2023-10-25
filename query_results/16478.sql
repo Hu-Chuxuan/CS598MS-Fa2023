@@ -1,0 +1,1 @@
+SELECT * FROM title_basics WHERE tconst = 'Leo Di Caprio' OR tconst IN ('The Wolf Of Wall street','The departed') AND tconst NOT in('Gangs of new York')

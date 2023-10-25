@@ -1,0 +1,1 @@
+SELECT * FROM (title_basic, title_rating, name_basis),(title_crew, title_principal) WHERE title_basic.primaryTitle = 'Star wars' AND title_basic.startYear BETWEEN '1976' AND '1983' AND title_basic.endYear > '1983'

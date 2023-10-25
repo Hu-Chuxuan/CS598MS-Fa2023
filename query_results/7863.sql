@@ -1,0 +1,1 @@
+SELECT t.* FROM title AS t WHERE t.titleType = "movie" AND NOT EXISTS( SELECT * from rating r where r.rating < 6)

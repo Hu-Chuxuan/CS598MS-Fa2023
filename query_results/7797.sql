@@ -1,0 +1,1 @@
+SELECT * FROM `title` WHERE `genre` LIKE '%psychological%' AND (`startyear` > 1987 OR `endyear` < 2016)

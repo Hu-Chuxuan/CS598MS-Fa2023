@@ -1,0 +1,1 @@
+SELECT * FROM title_recommendation WHERE rating >=.7 AND genre IN ('Horror') OR (title_type = "movie" AND title_year BETWEEN {userInput} AND {userPreferHistory}) ORDER BY title_rating DESC

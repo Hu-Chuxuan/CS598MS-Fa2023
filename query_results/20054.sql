@@ -1,0 +1,1 @@
+SELECT * FROM `title` WHERE (((primaryTitle LIKE '%funny%' OR originalTitle LIKE '%funny%') AND ((startYear >= 2000))))

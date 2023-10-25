@@ -1,0 +1,1 @@
+SELECT * FROM title_recommendation WHERE user LIKE '%Closer%' AND genre = 'drama' OR genre='romance'

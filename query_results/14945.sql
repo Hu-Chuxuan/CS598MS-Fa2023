@@ -1,0 +1,1 @@
+SELECT * FROM movies WHERE rating >.6 AND cast IN ('Brad Pitt') GROUP BY director ORDER BY avg(rating)

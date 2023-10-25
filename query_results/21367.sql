@@ -1,0 +1,1 @@
+SELECT DISTINCT title_name.* FROM imdb.title_name WHERE imdb.title_name.primaryName = :userInput AND imdb.title_name.category IN ('Action')) AS title_name

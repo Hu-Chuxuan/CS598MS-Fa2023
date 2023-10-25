@@ -1,0 +1,1 @@
+SELECT * FROM `title_basic` WHERE rating > 7 AND genre IN ('comedy') ORDER BY avg(rating)

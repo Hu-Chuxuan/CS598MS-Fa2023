@@ -1,0 +1,1 @@
+SELECT t.* FROM titles AS t INNER JOIN casts ON casts.title = t.id AND castingOrdering > 0

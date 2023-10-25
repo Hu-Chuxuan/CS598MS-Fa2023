@@ -1,0 +1,1 @@
+SELECT * FROM titles WHERE rating >= '8' AND director IN ('Sam Raimi', 'Bryan Singer') ORDER BY rating DESC LIMIT 5

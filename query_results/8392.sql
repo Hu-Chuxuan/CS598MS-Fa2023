@@ -1,0 +1,1 @@
+SELECT t.titleID AS MovieId, t.titleType AS TitleType, r.ratingValue as Rating, c.* FROM title_ratings r INNER JOIN title_basicst b ON r.titleID = b.titleID AND b.isAdult=false WHERE b.startYear BETWEEN 1970 AND 2016 AND b.endYear>b.startYear ORDER BY rating DESC LIMIT 1

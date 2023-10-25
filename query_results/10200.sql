@@ -1,0 +1,1 @@
+SELECT t.title_basics.* FROM `titles` AS t JOIN titles_rating r ON t.`primaryTitle` = r.`movieId` AND r.`averageRating` >.5 WHERE r.`numVotes` >= 1 AND (r.`startYear` <=? OR r.`endYear` <?)

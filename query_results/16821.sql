@@ -1,0 +1,1 @@
+SELECT tconst FROM title_ratings WHERE avg(averageRating)>=6 AND numVotes>1

@@ -1,0 +1,1 @@
+SELECT * FROM title_ratings WHERE rating >.9 AND titleType = "movie" AND numVotes >= 8

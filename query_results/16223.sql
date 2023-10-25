@@ -1,0 +1,1 @@
+SELECT tb.* FROM TitleBasics AS tb INNER JOIN NameBasics AS nb ON tb.titleID = nb.titleID AND tb.primaryTitle = nb.primaryName WHERE nb.category='actor' AND tb.genre IN ('Horror') ORDER BY tb.startYear DESC LIMIT 3

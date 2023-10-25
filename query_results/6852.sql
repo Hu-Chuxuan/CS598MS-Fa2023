@@ -1,0 +1,1 @@
+SELECT * FROM tconst WHERE tconst.titleType = "noir" AND tconst.startYear >= 1960

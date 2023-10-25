@@ -1,0 +1,10 @@
+SELECT t.titleId AS id,
+t.primaryTitle as title,
+t.originalTitle as origTitle,
+t.startYear as year,
+t.endYear as endYear,
+t.runtimeMinutes as runTime,
+r.rating AS avgRate,
+COUNT(DISTINCT r.voterId) AS votesCount,
+c.genreId,
+GROUP BY t.id, t.titleId, t.primaryTitle, t.origTitle, t.year, t.endYear, t.runTime, c.genreId

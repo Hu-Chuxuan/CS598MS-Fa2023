@@ -1,0 +1,1 @@
+SELECT * FROM title_ratings WHERE avgRating >= x AND avgRating <= y

@@ -1,0 +1,1 @@
+SELECT * FROM movies WHERE tconst = "comedy" AND genre IN ('horror', 'thriller') ORDER BY rating DESC LIMIT 8

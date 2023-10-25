@@ -1,0 +1,1 @@
+SELECT t.* FROM imdb.title AS t WHERE t.genre = "Drama" AND t.isAdult!= true

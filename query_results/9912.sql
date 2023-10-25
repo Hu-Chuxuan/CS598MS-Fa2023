@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE tconst ='movie' AND (titleType='lightweight') OR (titleType='date')

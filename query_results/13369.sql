@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE userPreference IN ('Annabelle ', 'The conjuring') AND rating >= 7

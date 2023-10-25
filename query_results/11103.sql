@@ -1,0 +1,1 @@
+SELECT t1.* FROM title AS t1 WHERE t1.primaryTitle = “Holy Roller” AND t1.titleType = "Movie" OR t1.genre IN ("Drama",“Horror”,“Comedy”)

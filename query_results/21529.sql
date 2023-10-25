@@ -1,0 +1,1 @@
+SELECT * FROM title_recommendation WHERE userPreferanceHistory = '[&quot

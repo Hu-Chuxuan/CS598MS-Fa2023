@@ -1,0 +1,1 @@
+SELECT * FROM `title` WHERE (genre = 'Action' OR genre IN ('Comedy', 'Drama')) AND ((startYear BETWEEN 1960 AND 2007) OR (endYear BETWEEN 1960 AND 2007)) ORDER BY rating DESC LIMIT 8

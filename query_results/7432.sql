@@ -1,0 +1,1 @@
+SELECT * FROM imdb WHERE tconst IN ('comedy') AND userInput LIKE '%' || userInput || '%'

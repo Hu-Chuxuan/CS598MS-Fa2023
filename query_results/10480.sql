@@ -1,0 +1,1 @@
+SELECT * FROM movies WHERE rating >=? AND genre IN ('Comedy') ORDER BY RANDOM() LIMIT 10

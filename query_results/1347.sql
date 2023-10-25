@@ -1,0 +1,1 @@
+SELECT * FROM (title_basics tb JOIN title_ratings tr ON tb.titleId = tr.movieId JOIN name_basics nb ON nb.nameId = tb.primaryTitle WHERE tb.startYear BETWEEN '1978-01-01' AND '2018-12-31') AS A LEFT OUTER JOIN (title_crew tc JOIN title_principals tp ON tc.directorId=tp.jobId) as b

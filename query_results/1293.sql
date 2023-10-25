@@ -1,0 +1,1 @@
+SELECT * FROM (SELECT rating AS r, COUNT(titleID) AS cnt, titleID AS id, title AS t FROM ratings GROUP BY t ORDER BY r DESC LIMIT 10)

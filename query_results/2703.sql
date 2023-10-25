@@ -1,0 +1,1 @@
+SELECT * FROM tconst WHERE titleType = "Horror" AND tconst NOT IN ('Halloween  (1978)') ORDER BY avgRating DESC LIMIT 3

@@ -1,0 +1,1 @@
+SELECT * FROM movie_recommendation WHERE user_id = 'user-input' AND rating > 6

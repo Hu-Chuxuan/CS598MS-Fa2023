@@ -1,0 +1,1 @@
+SELECT DISTINCT tb.* FROM titleratings tr JOIN title_principals tp ON tr.titleid = tp.titleid WHERE tp.job IN ('character') AND EXISTS( SELECT * from seenmovies sm JOIN seenmoviedetails smd ON sm.movieID=smd.MovieID where smd.userID=?)

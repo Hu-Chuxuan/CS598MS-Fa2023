@@ -1,0 +1,1 @@
+SELECT * FROM movie WHERE title_type = "movie" AND title_genre IN ("drama", "documentary") ORDER BY rating DESC LIMIT 6

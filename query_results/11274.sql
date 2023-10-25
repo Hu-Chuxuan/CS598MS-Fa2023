@@ -1,0 +1,1 @@
+SELECT * FROM title_recommend WHERE userInput LIKE 'Alien%' AND userPreferHistory = ('Alien  (1979)' OR 'Alien  (1986)')

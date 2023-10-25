@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE rating >= 7 AND genre = "Fantasy" ORDER BY avg(rating)

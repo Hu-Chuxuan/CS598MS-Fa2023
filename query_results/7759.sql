@@ -1,0 +1,1 @@
+SELECT t.titleID as MovieId, t.rating AS Rating FROM rating r INNER JOIN title_ratings tr ON (r.titleID = tr.movieID) AND (r.userID=?) WHERE tr.averageRating >=? ORDER BY RATING DESC LIMIT 0, 9

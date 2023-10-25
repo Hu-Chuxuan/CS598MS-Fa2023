@@ -1,0 +1,1 @@
+SELECT DISTINCT movies.* FROM imdb_movies AS movies WHERE movies.title_id = 'tt0078641' AND (movies.director LIKE '%Simon Wells%' OR movies.writer LIKE '%Simon Wells%') ORDER BY rating DESC LIMIT 1

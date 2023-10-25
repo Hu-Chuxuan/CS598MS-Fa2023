@@ -1,0 +1,1 @@
+SELECT DISTINCT tc.* FROM (title_basics as tb JOIN genre_genre AS g ON tb.genres = g.id) JOIN (name_basics as nb WHERE nb.primaryName LIKE 'Joe%') GROUP BY tb.isAdult, tb.startYear

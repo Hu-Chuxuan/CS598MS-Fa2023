@@ -1,0 +1,1 @@
+SELECT * FROM (title_basic WHERE tconst = 'IT') INNER JOIN (title_rating WHERE average rating > 8 AND average rating < 9 AND num votes >= 600) ON (title_basic.primary Title = title_rating.average ratting) INNER JOIN (name basic where primary Name = 'Mike') ON (title_basic.primary title = name_basic.primary name)

@@ -1,0 +1,1 @@
+SELECT tc.* FROM titles AS t JOIN ratings ON t.titleID = r.titleID AND r.userID='USER' UNION ALL SELECT tc.* FROM titlecrew AS tc JOIN crewmembers ON tc.titleID=cm.titleID WHERE cm.job LIKE 'Director%' OR cm.job LIKE 'Writer%'

@@ -1,0 +1,1 @@
+SELECT tc.* FROM title_basic AS tb WHERE (tb.titleType = "comedy" OR tb.titleType = "drama") AND NOT EXISTS( SELECT * from name_basic as nb where nb.primaryName IN ('Jason Biggs','Amy Schumer') ) ORDER BY rating DESC LIMIT 5

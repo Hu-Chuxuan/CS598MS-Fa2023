@@ -1,0 +1,1 @@
+SELECT t.* FROM title_ratings AS r INNER JOIN ( SELECT DISTINCT title.titleType, title.primaryTitle, title.originalTitle, title.isAdult, title.startYear, title.endYear, title.runtimeMinutes, genre.genreID as 'Genre' from `movie` WHERE actor.character LIKE '%Jason%') AS title ON r.averageRating = title.rating AND title.numVotes >= 60

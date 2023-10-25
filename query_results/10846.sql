@@ -1,0 +1,2 @@
+SELECT * FROM
+(select tb.* from TitleBasics as tb join NameBasic as n using (titleId)) AS tb INNER JOIN TitleCrew as c ON c.titleID = tb.titleid WHERE c.director IN ('Gary Dauberman', 'Andy Muschietti') AND c.writer IN ('Barbara Marshall')

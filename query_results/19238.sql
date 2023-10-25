@@ -1,0 +1,1 @@
+SELECT t.* FROM titles AS t INNER JOIN ratings r ON t.titleID = r.titleID WHERE r.averageRATING >? AND t.isAdult == 'false' ORDER BY t.runtimeMinutes DESC LIMIT 10

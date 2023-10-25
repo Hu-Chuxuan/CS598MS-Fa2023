@@ -1,0 +1,1 @@
+SELECT DISTINCT tc.* FROM titles AS tc JOIN ratings r ON (r.titleId = tc.id) WHERE (((r.averageRating >= @userPreferenceHistory[0]) AND ((r.averageRating <= @userPreferenceHistory[1])))) OR (@userPreferenceHistory IS NULL)

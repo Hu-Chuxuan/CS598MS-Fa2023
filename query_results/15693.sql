@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE genre = 'Horror' ORDER BY rating DESC LIMIT 1

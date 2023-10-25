@@ -1,0 +1,1 @@
+SELECT * FROM imdb.title_recommend WHERE title_id = <user-input> AND user_id = <user-preferences>

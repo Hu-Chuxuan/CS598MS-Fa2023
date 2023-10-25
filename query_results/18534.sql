@@ -1,0 +1,1 @@
+SELECT movies.* FROM movies INNER JOIN genre ON genre.genreID = movies.primaryGenre WHERE rating >= 7 AND rating <= 8

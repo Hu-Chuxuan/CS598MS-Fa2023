@@ -1,0 +1,1 @@
+SELECT t.titleID AS id, t.titleType AS type, t.primaryTitle AS prime, t.originalTitle AS orig, i.isAdult as adult, r.averageRating as avgRate, s.numVotes as votes FROM titles t INNER JOIN ratings r ON t.titleID = r.titleID LEFT OUTER JOIN nameNames n ON t.nameID = n.nameID LEFT OUTER JOIN names nn ON n.nameID = nn.nameID WHERE (type LIKE "drama") OR (type LIKE "comedy")

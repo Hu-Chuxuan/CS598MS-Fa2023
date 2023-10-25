@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE tconst LIKE '%War%' AND rating >= 7

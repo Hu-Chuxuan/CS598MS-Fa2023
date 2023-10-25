@@ -1,0 +1,1 @@
+SELECT * FROM title_basics WHERE (titleType = "drama" OR titleType IS NULL)

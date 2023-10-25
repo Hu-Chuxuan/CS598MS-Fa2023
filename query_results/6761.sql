@@ -1,0 +1,1 @@
+SELECT DISTINCT t.* FROM title_basic AS t WHERE ((t.titleType = "movie") AND (t.isAdult <> true))

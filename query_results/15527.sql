@@ -1,0 +1,1 @@
+SELECT DISTINCT tc.* FROM title_basic AS tb INNER JOIN title_rating AS tr ON tb.title_id = tr.title_id AND tr.userID =? WHERE (tb.isAdult IS NULL OR b.isAdult!= "true") AND ((tr.averageRating >= 7/10)) GROUP BY tc.title_type ORDER BY COUNT(*) DESC LIMIT 6

@@ -1,0 +1,1 @@
+SELECT * FROM tconst WHERE tconst.titleType = "Movie" AND (((startYear <= '1985') OR (endYear >= '1985')))

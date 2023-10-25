@@ -1,0 +1,1 @@
+SELECT t1.* FROM titles AS t1 INNER JOIN cast AS c ON t1.titleId = c.movieId WHERE t1.primaryTitle LIKE '%natural%' AND t1.isAdult!= true ORDER BY c.ordering

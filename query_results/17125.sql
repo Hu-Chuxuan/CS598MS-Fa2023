@@ -1,0 +1,1 @@
+SELECT * FROM title_basics WHERE tconst =? AND titleType!= 'title' GROUP BY titleType

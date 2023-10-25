@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE tconst LIKE '%Will%' AND genre IN ('comedy') ORDER BY rating DESC LIMIT 6

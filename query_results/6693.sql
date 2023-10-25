@@ -1,0 +1,1 @@
+SELECT DISTINCT t.* FROM titles AS t JOIN userpreferences ON uid = username AND year >= 1980 ORDER BY rating DESC LIMIT 2

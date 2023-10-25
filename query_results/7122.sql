@@ -1,0 +1,1 @@
+SELECT * FROM ttitle WHERE ttype = "Comedy" AND tgenre IN ("Drama", "Action") ORDER BY rating DESC

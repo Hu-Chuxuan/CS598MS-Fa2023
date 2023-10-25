@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE tconst = 'title' AND titleType!= '' GROUP BY titleType ORDER BY rating DESC

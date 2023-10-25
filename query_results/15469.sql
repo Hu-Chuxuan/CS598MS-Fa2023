@@ -1,0 +1,1 @@
+SELECT t.* FROM movies AS m JOIN casts c ON m.titleID = c.movieID AND c.category LIKE '%actor%' OR c.job LIKE '%director%'

@@ -1,0 +1,1 @@
+SELECT tb.* FROM (title_basic tb JOIN title_rating tr ON tb.primaryTitle = tr.averageRating) WHERE ((tb.isAdult=0 AND tr.numvotes>1)) ORDER BY tb.startYear DESC LIMIT 8

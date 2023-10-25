@@ -1,0 +1,1 @@
+SELECT * FROM movies WHERE rating >= 6 AND genre = "Comedy" ORDER BY avg(rating)

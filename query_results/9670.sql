@@ -1,0 +1,1 @@
+SELECT t.* FROM title_basics AS t INNER JOIN (SELECT title_ratings.titleID as id, title_rating.averageRating as rating WHERE title_ratings.numVotes > 1 AND ((title_ratings.startYear <= :year OR title_ratings.endYear >= :year)) AND ((((title_ratting.isAdult = false))) OR ((title_ratings.genre IN ('Drama','Fantasy')))))

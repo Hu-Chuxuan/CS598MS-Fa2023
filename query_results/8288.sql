@@ -1,0 +1,1 @@
+SELECT * FROM `title_basic` WHERE `startyear` >= 1986 AND `endyear` <= 2015

@@ -1,0 +1,1 @@
+SELECT TOP(10) * FROM titles WHERE ((title_type = "movie") AND (((title_genre IN ('horror','scifi') OR (title_rating >= 7))AND (title_year BETWEEN @start AND @end))) AND NOT EXISTS (@name)) ORDER BY rating DESC

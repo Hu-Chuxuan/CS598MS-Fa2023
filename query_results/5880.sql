@@ -1,0 +1,1 @@
+SELECT tb.* FROM (title_basic AS tb INNER JOIN title_rating AS tr ON tr.primaryTitle = tb.primaryTitle) LEFT OUTER JOIN name_basic as nb WHERE nb.category = 'Actress' AND tr.averageRating >= 6

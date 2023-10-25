@@ -1,0 +1,1 @@
+SELECT t1.* FROM imdb.title AS t1 JOIN imdb.name_basics AS nb ON t1.primaryName = nb.primaryName WHERE ((nb.deathYear IS NULL OR nb.deathYear > CURRENT DATE)) AND (t1.isAdult <> "True") ORDER BY AVG(t1.averageRating) DESC LIMIT 3

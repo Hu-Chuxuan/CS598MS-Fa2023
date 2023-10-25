@@ -1,0 +1,1 @@
+SELECT AVG(rating), COUNT(*) FROM ratings GROUP BY rating

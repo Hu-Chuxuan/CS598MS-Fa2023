@@ -1,0 +1,2 @@
+SELECT * FROM 
+( SELECT DISTINCT(titleID), ratingID FROM ratings WHERE titleID IN ('Kong: Skull Island (2017)','King Kong  (2005)' ) AND ratingID > 8 ) AS ratedMovies INNER JOIN casts ON ratedMovies.movieId = casts.movieId LEFT OUTER JOIN crew ON casts.castId = crew.id WHERE casts.castId IS NOT NULL

@@ -1,0 +1,1 @@
+SELECT t1.* FROM title_ratings AS t1 JOIN name_basics as nb ON nb.nconst = t1.title_id WHERE nb.primaryName LIKE '%mean%' AND ((nb.primaryName NOT IN ('Mean Girls (2004)'))) GROUP BY nb.title_id HAVING COUNT(DISTINCT t1.numVotes)>1

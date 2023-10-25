@@ -1,0 +1,7 @@
+SELECT * FROM
+( SELECT r.*, tb.titleType AS typeFromBasics, tr.*, nr.*, nc.category AS categoryFromNatCrew, pc.job AS jobFromPrincCrew
+FROM rating r INNER JOIN title_basic tb ON tb.primaryTitle = r.title_id AND tb.isAdult IS NULL UNION ALL
+INNER JOIN title_rating tr ON tr.averageRating > 6.7 WHERE tr.numVotes >= 10000 UNION ALL
+INNER JOIN title_name n ON n.primaryName LIKE CONCAT('%',r.title_id,'%') OR n.primaryName LIKE CONCAT('%%',r.title_id,'%%') GROUP BY r.title_id HAVING COUNT(*) >= 5 ) r
+LEFT OUTER JOIN title_basics tb ON r.title_id=tb.title_id LEFT OUTER JOIN title_ratings tr ON tr.title_id=r.title_id LEFT OUTER JOIN name_basics nb ON nb.title_id=r.title_id LEFT OUTER JOIN title_principals np ON np.title_id=r.title_id LEFT OUTER JOIN title_crew tcr ON tcr.title_id=r.title_id LEFT OUTER JOIN name_crews nc ON nc.title_id=np.title_id LEFT OUTER JOIN title_principals prnc ON prnc.title_id=np.title_id LEFT OUTER JOIN people p ON p.id = np.people_id LEFT OUTER JOIN title_principals pp ON pp.title_id=p.titles_id LEFT OUTER JOIN name_principals np ON np.title_id=pp.title_id LEFT OUTER JOIN categories c ON c.category_id = np.categories_id
+WHERE r.title_type IN ('comedy','drama','horror','musical','romance') AND r.movie_genre NOT REGEXP "action|adventure|biography|documentary|family" AND r.movies_year <= 2020 ORDER BY r.title_id DESC LIMIT 2`"

@@ -1,0 +1,1 @@
+SELECT * FROM movie WHERE titleType LIKE '%movie%' OR director LIKE %'%movie%' AND averageRating >= 7.5

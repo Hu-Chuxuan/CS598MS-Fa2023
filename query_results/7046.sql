@@ -1,0 +1,1 @@
+SELECT tc.* FROM titles AS t JOIN casts AS c ON t.titleId = c.titleId WHERE t.type LIKE '%drama%' AND t.primaryTitle IN ('Terms of Endearment (1983)','28 Days  (2000)') OR t.originalTitle IN ('Terms of Endearment (1983)','28 Days  (2000)')

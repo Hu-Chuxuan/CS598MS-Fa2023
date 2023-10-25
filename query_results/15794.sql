@@ -1,0 +1,1 @@
+SELECT * FROM title_basics WHERE tconst IN ('tt0118949') AND genre = "kid"

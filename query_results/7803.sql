@@ -1,0 +1,1 @@
+SELECT t.* FROM titles AS t WHERE t.titleType = "movie" AND ((t.startYear >= :yearStart AND t.endYear <= :yearEnd)) AND (:searchTerm IN t.genre)

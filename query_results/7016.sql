@@ -1,0 +1,1 @@
+SELECT * FROM title_basic WHERE title_type = "movie" AND title_name IN ('The Cabinet Of Doctor Caligari') OR title_name in('Metropolis','The Cabinet of Caligary','The Jazz Singer')

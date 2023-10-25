@@ -1,0 +1,1 @@
+SELECT * FROM imdb WHERE genre LIKE '%action%' AND rating >= avg(rating) + 0.8

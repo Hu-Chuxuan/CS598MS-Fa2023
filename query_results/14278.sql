@@ -1,0 +1,1 @@
+SELECT t.* FROM title_basics AS t JOIN ( SELECT * from movies WHERE genre = "Drama" AND releaseDate >= CURRENT_DATE - INTERVAL '6 months' ) as m ON t.titleId = m.titleId

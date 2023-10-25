@@ -1,0 +1,1 @@
+SELECT t.* FROM title AS t INNER JOIN name_basics as nb ON (nb.primaryName = t.title) WHERE ((nchar(lower(nb.category)) like '%strong%' OR nchar(lower(nb.job)) like 'heroine%') AND NOT EXISTS (select * from rating where title=t.title))

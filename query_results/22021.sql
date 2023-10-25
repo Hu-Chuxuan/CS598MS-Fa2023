@@ -1,0 +1,1 @@
+SELECT t.* FROM title AS t JOIN name AS n ON n.primaryName = t.titleType WHERE genre LIKE '%Horror%' AND rating >= 7

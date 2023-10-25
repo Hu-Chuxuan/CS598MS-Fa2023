@@ -1,0 +1,1 @@
+SELECT DISTINCT titles.* FROM title_ratings JOIN titles ON titles.titleID = ratings.titleID WHERE rating >= 6 AND rating <= 9

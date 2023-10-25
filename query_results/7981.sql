@@ -1,0 +1,1 @@
+SELECT * FROM title_rating WHERE rating >=? AND genre = "Comedy" ORDER BY RANK() DESC LIMIT 6

@@ -1,0 +1,1 @@
+SELECT * FROM movie_recommendation(title_rating, title_reviews, user_preferences)

@@ -1,0 +1,1 @@
+SELECT * FROM movie_recommendation WHERE user_input LIKE '%musical%' AND genre IN ('Musical') GROUP BY user_id ORDER BY rating DESC LIMIT 10

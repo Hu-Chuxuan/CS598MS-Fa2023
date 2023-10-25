@@ -1,0 +1,1 @@
+SELECT DISTINCT tc.* FROM imdb.title_basics AS tb INNER JOIN imdb.name_basics as n ON tb.primaryTitle = n.primaryTitle WHERE tb.isAdult=false AND tb.startYear>1980 ORDER BY tb.rating DESC

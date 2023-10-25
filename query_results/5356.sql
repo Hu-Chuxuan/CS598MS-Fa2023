@@ -1,0 +1,1 @@
+SELECT * FROM (title_basics JOIN title_ratings ON title_basics.titleId = title_ratings.titleId WHERE ((title_basic.startYear >= @year AND title_basic.endYear <= @year)) AND (@category IN ('Action','Comedy')) ORDER BY ABS(title_basic.averageRating -@rating)) AS tb JOIN title_principals ON tb.titleID=tp.titleID

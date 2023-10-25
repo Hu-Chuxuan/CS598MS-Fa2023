@@ -1,0 +1,1 @@
+SELECT t.* FROM movies AS m INNER JOIN title_ratings r ON m.title_id = r.movie_id WHERE ((r.rating >.7)) AND (r.numvoters >= 60)

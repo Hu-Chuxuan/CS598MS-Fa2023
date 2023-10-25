@@ -1,0 +1,1 @@
+SELECT DISTINCT genre FROM title_basics WHERE title_type = "Drama" OR title_type = "Thriller"

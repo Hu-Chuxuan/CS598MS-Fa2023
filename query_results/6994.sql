@@ -1,0 +1,1 @@
+SELECT * FROM title_recommendation WHERE userInput LIKE '%comedy%' AND userPreferenceHistory IN ('Caddyshack (1980)','Happy Gilmore (1996)') OR userPreferenceHistory = ['Caddyshack (1980)', 'Happy Gilmore (1996)']

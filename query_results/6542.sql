@@ -1,0 +1,1 @@
+SELECT t.* FROM title_recommendation AS r JOIN title_basic AS b ON r.titleId = b.id WHERE b.genre IN ('drama') AND NOT EXISTS( SELECT * FROM title_basic AS s WHERE s.primaryTitle=r.titleId)

@@ -1,0 +1,1 @@
+SELECT t.titleId AS MovieID, t.originalTitle As TitleName FROM title_basic AS t JOIN title_rating as r ON(r.titleId = t.titleId AND r.averageRating > '7') WHERE ((title_type= 'comedy' OR title_type='adventure')) ORDER BY avg(r.averageRating)

@@ -1,0 +1,1 @@
+SELECT title_id FROM title WHERE title_type = “movie” AND average_rating > 6

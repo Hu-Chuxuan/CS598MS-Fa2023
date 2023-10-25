@@ -1,0 +1,1 @@
+SELECT t.* FROM title_basics AS t JOIN name_basics ON t.titleId = name_basics.primaryTitle WHERE t.startYear >=? AND t.endYear <=?

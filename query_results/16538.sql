@@ -1,0 +1,1 @@
+SELECT * FROM `title` WHERE `genre` IN ('comedy','romance') ORDER BY rating DESC LIMIT $limit

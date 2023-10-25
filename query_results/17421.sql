@@ -1,0 +1,1 @@
+SELECT t.* FROM title_basics AS t JOIN ( SELECT t.primaryTitle, COUNT(*) as totalvotes WHERE userInput LIKE '%' + @userinput + '%' GROUP BY t.primaryTitle ) AS u ON t.titleType = u.totalvotes

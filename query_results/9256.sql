@@ -1,0 +1,1 @@
+SELECT * FROM imdb.title WHERE genre IN ('thriller', 'action') AND rating > 7

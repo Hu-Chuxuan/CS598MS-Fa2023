@@ -1,0 +1,1 @@
+SELECT * FROM title_basics WHERE tconst IN ('Knocked Up (2007)','Juno (2007)')

@@ -1,0 +1,1 @@
+SELECT * FROM rating WHERE genre = "horror" AND avg(rating)>=8

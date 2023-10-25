@@ -1,0 +1,1 @@
+SELECT * FROM movies WHERE rating >= x AND director = y

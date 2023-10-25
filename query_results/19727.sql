@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE tconst = "movie" AND (titleType!= "TV Series") ORDER BY averageRating DESC

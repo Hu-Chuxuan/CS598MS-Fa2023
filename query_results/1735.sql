@@ -1,0 +1,1 @@
+SELECT t.* FROM titles AS t JOIN name_basics AS b ON t.titleId = b.titleID WHERE b.primaryName LIKE '%thrill%' AND b.category!= 'TV Series' ORDER BY rating DESC LIMIT 10

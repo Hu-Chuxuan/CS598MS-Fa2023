@@ -1,0 +1,1 @@
+SELECT * FROM (SELECT DISTINCT tb.* WHERE tb.titleType ='movie' AND tb.isAdult IN ('no', 'yes')) AS mainTable INNER JOIN (SELECT DISTINCT tb.* WHERE tb.titleType ='movie' AND tb.startYear BETWEEN 1980 AND CURRENT YEAR - 5) as yearRange ON mainTable.id = yearRange.id

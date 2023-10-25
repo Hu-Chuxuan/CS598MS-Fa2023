@@ -1,0 +1,1 @@
+SELECT t.* FROM ( SELECT * from imdb WHERE rating >= 8 AND duration <= 90) AS T JOIN cast ON (cast.id = T.director OR cast.id = T.writer)

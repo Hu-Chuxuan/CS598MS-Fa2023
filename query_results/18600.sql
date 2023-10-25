@@ -1,0 +1,1 @@
+SELECT t.* FROM Title AS t INNER JOIN Name AS n ON t.primaryName = n.nconst WHERE t.category IN ('Drama') AND t.job LIKE '%Actor%' ORDER BY RANDOM() LIMIT 0,7

@@ -1,0 +1,1 @@
+SELECT t.* FROM title_basics AS t JOIN( SELECT * from title_rating WHERE avgRat >= '6' ) as r ON t.titleId =r.titleId AND r.numVoters > 1

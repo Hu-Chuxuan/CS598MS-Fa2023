@@ -1,0 +1,1 @@
+SELECT t.* FROM title_ratings AS r INNER JOIN title_basic as b ON r.title = b.title WHERE b.genre IN ('Crime') AND r.averageRating > 6

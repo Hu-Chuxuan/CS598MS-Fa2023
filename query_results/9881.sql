@@ -1,0 +1,1 @@
+SELECT DISTINCT title_basics.* FROM title_basics JOIN (title_rating INNER JOIN title_crew ON title_rating.movieId = title_crews.id) WHERE rating >= 6 AND length > 90

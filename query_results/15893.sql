@@ -1,0 +1,1 @@
+SELECT * FROM `title` WHERE (`title`.`primaryTitle` LIKE '%Elf%') AND (`title`.`isAdult` = 'false')

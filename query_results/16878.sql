@@ -1,0 +1,1 @@
+SELECT * FROM rating WHERE user LIKE '%saw%' OR genre LIKE 'horror'

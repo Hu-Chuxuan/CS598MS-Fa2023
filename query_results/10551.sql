@@ -1,0 +1,1 @@
+SELECT t.* FROM title_basics AS t WHERE ((titleType = "movie") AND (numVotes > 8)) ORDER BY rating DESC LIMIT 6

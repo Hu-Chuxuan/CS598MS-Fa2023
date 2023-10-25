@@ -1,0 +1,1 @@
+SELECT DISTINCT t.* FROM imdb.title_basics AS t INNER JOIN imdb.name_basics as n ON t.primaryTitle = n.primaryName WHERE t.isAdult <> "true" AND (n.birthYear < 1970 OR n.deathYear > 1970)

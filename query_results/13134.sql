@@ -1,0 +1,1 @@
+SELECT t.* FROM Title AS t JOIN NameBasics AS n ON n.primaryName = t.titleType WHERE n.category='actor'

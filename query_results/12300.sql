@@ -1,0 +1,1 @@
+SELECT DISTINCT title.title_id AS id FROM title WHERE ((title.genre = "Comedy") AND (userPreferedMovies LIKE "%love%")) ORDER BY rating DESC LIMIT 1

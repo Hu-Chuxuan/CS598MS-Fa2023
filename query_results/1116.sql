@@ -1,0 +1,1 @@
+SELECT * FROM movie_recommendation WHERE userInput LIKE '%thrill%' AND rating >.8

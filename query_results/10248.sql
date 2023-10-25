@@ -1,0 +1,1 @@
+SELECT * FROM imdb WHERE imdb.title_type ='movie' AND imdb.isAdult = false ORDER BY imdb.startYear DESC LIMIT 10

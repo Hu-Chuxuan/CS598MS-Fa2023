@@ -1,0 +1,1 @@
+SELECT * FROM title_recommend WHERE (((titleType = 'Scifi') OR ((titleType = 'Action'))) AND ((averageRating > 7) AND (numVotes >= 800)))

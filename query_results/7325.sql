@@ -1,0 +1,1 @@
+SELECT * FROM imdb.title_basic WHERE tconst = "family" AND avg(rating) > 7

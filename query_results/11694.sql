@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE ((title.startyear = '1976') AND (title.endyear <= '2018')) OR (((title.primaryname LIKE '%W%') AND (title.birthyear > '1946')))

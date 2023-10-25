@@ -1,0 +1,1 @@
+SELECT * FROM title_recommendation WHERE rating > 8 AND director = 'Tim Burton' ORDER BY rating DESC

@@ -1,0 +1,1 @@
+SELECT t.* FROM movies AS m JOIN title_basicstitle_ratingstitle_crewwtitle_principalstitle_categories ON m.primaryTitle = titlename_basicstitle_ratiostitle_crewtitle_princmtitle_category WHERE m.isAdult = true AND m.startYear < 1970

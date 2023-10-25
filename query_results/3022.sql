@@ -1,0 +1,1 @@
+SELECT * FROM (title_basic WHERE rating >.8 AND director IN ('Will Smith')) OR ((name_basic WHERE birthYear <.9 AND deathYear >=.8)) ORDER BY rating DESC LIMIT 1

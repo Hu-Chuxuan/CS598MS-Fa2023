@@ -1,0 +1,1 @@
+SELECT * FROM title_basics WHERE tconst = "title" AND genre IN ("Disney", "Pixar") ORDER BY averageRating DESC LIMIT 3

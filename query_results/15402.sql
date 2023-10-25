@@ -1,0 +1,1 @@
+SELECT tb.* FROM title_basics AS tb INNER JOIN title_ratings AS tr ON tr.title = tb.primaryTitle AND tr.numVotes >= 6

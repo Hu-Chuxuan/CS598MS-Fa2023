@@ -1,0 +1,1 @@
+SELECT DISTINCT t.titleID FROM title AS t JOIN cast AS c ON t.castID = c.castID WHERE ((c.primaryName LIKE '%male%' OR c.character IS NOT NULL)) AND (t.genre IN ('Drama'))

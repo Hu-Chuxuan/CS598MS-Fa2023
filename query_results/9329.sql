@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE title.primaryTitle LIKE '%smart%' AND title.startYEAR > '2017' ORDER BY rating DESC LIMIT 5

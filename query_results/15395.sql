@@ -1,0 +1,1 @@
+SELECT DISTINCT t.* FROM title_basic AS t INNER JOIN title_rating ON title_rateing.titleId = title_basic.id WHERE title_basic.isAdult = false AND title_basic.startYear >= 2018 AND title_basic.endYear <= 2019

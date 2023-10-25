@@ -1,0 +1,1 @@
+SELECT DISTINCT t1.* FROM titles AS t1 INNER JOIN title_crew as tc ON(tc.title=t1.title)

@@ -1,0 +1,1 @@
+SELECT DISTINCT tc.* FROM (title_basics AS tb INNER JOIN (title_rating AS tr ON ((tr.averageRating = tb.startYear) AND (tr.numVotes >= 0)) OR (tr.averageRating > tb.endYear))) WHERE tb.primaryTitle IN ('The Godfather', 'The Shawshank Redemption') AND (tb.isAdult=false)

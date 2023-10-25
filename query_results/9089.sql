@@ -1,0 +1,1 @@
+SELECT t.* FROM title_principals AS p JOIN title_basic AS b ON b.title_id = p.title_id WHERE p.job LIKE '%Actor%' AND p.ordering IN ('%07','%09')

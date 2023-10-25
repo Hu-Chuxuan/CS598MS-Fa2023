@@ -1,0 +1,1 @@
+SELECT * FROM title_basic WHERE title_type = 'Movie' AND title_primarytitle LIKE '%Sandra%'

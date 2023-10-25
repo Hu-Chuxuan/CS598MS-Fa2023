@@ -1,0 +1,1 @@
+SELECT t.* FROM title_basics AS t JOIN title_ratings AS r ON t.titleID = r.titleID WHERE ((r.averageRating >=? AND r.numVotes > 10)) OR ((r.averageRating <? AND r.numVotes <= 10))

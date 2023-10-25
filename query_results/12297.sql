@@ -1,0 +1,1 @@
+SELECT t.* FROM title AS t INNER JOIN rating AS r ON (r.titleID = t.titleID AND r.userID =?)

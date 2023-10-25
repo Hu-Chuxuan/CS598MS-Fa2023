@@ -1,0 +1,1 @@
+SELECT * FROM title_principals WHERE job = "Actress" AND categories IN ("Comedy", "Satire") ORDER BY nconst ASC

@@ -1,0 +1,1 @@
+SELECT * FROM title_basics WHERE tconst = "movie" AND genre IN ('action', 'comedy') LIMIT 8

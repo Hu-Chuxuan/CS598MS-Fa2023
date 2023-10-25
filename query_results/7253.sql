@@ -1,0 +1,1 @@
+SELECT t.* FROM title_principals AS p JOIN cast ON c.castID = p.id WHERE job IN ('director','writer') AND p.job NOT LIKE '%actor%' AND genre='Horror' GROUP BY year DESC ORDER BY rating DESC LIMIT 6

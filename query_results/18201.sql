@@ -1,0 +1,1 @@
+SELECT t.* FROM movies AS m INNER JOIN title_basics AS b ON b.tconst = m.titleId AND b.primaryTitle IS NOT NULL WHERE b.isAdult!= true

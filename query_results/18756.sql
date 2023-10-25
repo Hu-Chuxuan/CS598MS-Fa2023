@@ -1,0 +1,1 @@
+SELECT tb.* FROM titleratings AS tr JOIN titles AS t ON t.titleID = tr.movieID WHERE tr.rating > avg(tr.rating)

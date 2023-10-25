@@ -1,0 +1,1 @@
+SELECT * FROM `title_recommendation` WHERE `users`.`userID` = '0978e6a8-bdfc-4dcf-bbcb-befffc5decc3'

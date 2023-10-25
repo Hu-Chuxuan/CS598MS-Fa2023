@@ -1,0 +1,1 @@
+SELECT * FROM title_recommendation WHERE (title_id = 'The Revenant' OR title_id IN ('The Revenant','Inception')) AND rating >= 8

@@ -1,0 +1,1 @@
+SELECT DISTINCT titles.* FROM title_basics AS tb INNER JOIN name_basics AS nb ON nb.primaryName = tb.titleType AND nb.ordering > 0 WHERE tb.isAdult!= 1 OR nb.deathYear IS NULL ORDER BY RAND() LIMIT 6

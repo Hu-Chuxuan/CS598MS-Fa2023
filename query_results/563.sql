@@ -1,0 +1,1 @@
+SELECT * FROM (title_recommendation JOIN user_preferences ON user_preferences.userID = title_recommendation.userID AND user_preferences.movieID IN(title_recommendation.movieID)) WHERE ((title_recommendation.movieID NOT IN(user_preferences.movieID))) OR (user_preferences.movieID=NULL)

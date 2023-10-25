@@ -1,0 +1,1 @@
+SELECT * FROM title_basics WHERE tconst = "up" OR tconst LIKE "%up%"

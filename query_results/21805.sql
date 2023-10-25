@@ -1,0 +1,1 @@
+SELECT * FROM title_recommendation WHERE titleType = 'Science Fiction' AND (titleType LIKE '%Arrival%') OR userInput LIKE '%Arrival%' ORDER BY rating DESC LIMIT 3

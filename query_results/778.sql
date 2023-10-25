@@ -1,0 +1,1 @@
+SELECT * FROM movies WHERE genre = "Action" AND rating > 7 ORDER BY vote DESC LIMIT 10

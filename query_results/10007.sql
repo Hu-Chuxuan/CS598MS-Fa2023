@@ -1,0 +1,1 @@
+SELECT * FROM title_recommendation WHERE userInput LIKE 'Taken%' AND genre IN ('Action', 'Crime') ORDER BY rating DESC LIMIT 6

@@ -1,0 +1,1 @@
+SELECT t.* FROM title_basics AS t INNER JOIN ( SELECT * from user_inputs WHERE category = "movie" ) as u ON t.titleType=u.category AND t.primaryTitle LIKE CONCAT(u.title,"%") ORDER BY rating DESC LIMIT 3

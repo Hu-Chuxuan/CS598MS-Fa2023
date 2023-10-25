@@ -1,0 +1,1 @@
+SELECT DISTINCT rating FROM (title_ratings WHERE director IN ('Katsuhiro Otomo', 'Mamoru Oshii')) AND ((numVotes >= 7) OR (rating > 8)) ORDER BY rating DESC LIMIT 10

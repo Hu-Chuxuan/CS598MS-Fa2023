@@ -1,0 +1,1 @@
+SELECT * FROM title_principals WHERE (job = "director" OR job="writer") AND ((startYear <=?)AND(endYear >=?)) GROUP BY director ORDER by averageRating DESC LIMIT 5

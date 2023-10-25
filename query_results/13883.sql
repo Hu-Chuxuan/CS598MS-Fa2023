@@ -1,0 +1,1 @@
+SELECT t.titleID as id, t.titleName AS TitleName FROM title_basics t JOIN title_ratings r ON r.titleID = t.titleID WHERE r.averageRating >= 6 AND r.numVotes > 2 AND EXISTS(SELECT * from cast WHERE casting_id IN (SELECT c.casting_id FROM name_basics n JOIN cast c USING (primaryName)) AND (c.job LIKE '%actor%' OR c.job LIKE '%director%'))

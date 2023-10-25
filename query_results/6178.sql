@@ -1,0 +1,1 @@
+SELECT DISTINCT tb.* FROM title_basics AS tb JOIN title_ratings as tr ON tr.titleId = tb.id WHERE tr.averageRating > 7 AND EXISTS( SELECT * from title_crew where director IN ('John Hughes','Stanley Kubrick') )AND tb.startYear >= 1980

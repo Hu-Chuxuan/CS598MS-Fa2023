@@ -1,0 +1,1 @@
+SELECT * FROM title_recommendation WHERE userID = $userid AND genreId IN(select id from genre where name='Horror') ORDER BY rating DESC LIMIT 1

@@ -1,0 +1,1 @@
+SELECT DISTINCT t.* FROM title AS t INNER JOIN rating_details rd ON t.titleID = rd.movieID WHERE titleType IN ('comedy','romance') AND userInput LIKE '%light%' OR userInput LIKE '%entertainment%'

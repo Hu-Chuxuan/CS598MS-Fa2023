@@ -1,0 +1,1 @@
+SELECT DISTINCT mr.* FROM movies AS m LEFT JOIN titles AS t ON m.titleID = t.movieID AND t.primaryName LIKE CONCAT('%',?, '%') WHERE t.averageRating > 6

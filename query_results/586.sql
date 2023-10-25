@@ -1,0 +1,1 @@
+SELECT t.* FROM imdb.title AS t INNER JOIN imdb.name AS n ON t.id = n.imdbrated_id WHERE t.genre IN ('Comedy','Horror') AND n.primaryName LIKE '%Susan' OR n.birthYear >= 1960 ORDER BY t.startYear ASC LIMIT 5

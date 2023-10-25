@@ -1,0 +1,1 @@
+SELECT * FROM (SELECT DISTINCT tc.*,(SELECT avg(rating) AS rating from imdb_title_ratings tr WHERE tr.title = tc.primaryTitle AND userPreferedMovie in ('It'))) as movies where movies.rating > 6

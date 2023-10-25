@@ -1,0 +1,1 @@
+SELECT * FROM title_recommendation WHERE userInput = 'Frozen(2013)' AND genre IN ('Animation') OR rating >= 8

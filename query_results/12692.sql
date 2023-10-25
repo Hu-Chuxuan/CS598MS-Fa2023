@@ -1,0 +1,1 @@
+SELECT t.* FROM titles AS t INNER JOIN rating AS r ON t.titleID = r.movieID WHERE r.rating >.7 AND t.startYear >= 2018 AND t.endYear <= 2018 ORDER BY r.averageRATING DESC LIMIT 5

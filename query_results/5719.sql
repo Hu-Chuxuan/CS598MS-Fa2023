@@ -1,0 +1,1 @@
+SELECT * FROM `title` WHERE `genre` LIKE 'Comedy%' OR `genre` LIKE '%Sci-Fi%'

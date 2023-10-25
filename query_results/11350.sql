@@ -1,0 +1,1 @@
+SELECT * FROM movies WHERE genre = 'adventure' AND rating >.7

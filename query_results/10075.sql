@@ -1,0 +1,1 @@
+SELECT * FROM `title` WHERE `primaryTitle` = '22 jump street'

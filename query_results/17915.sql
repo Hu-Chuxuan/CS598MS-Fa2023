@@ -1,0 +1,1 @@
+SELECT * FROM title_recommend WHERE rating >=.6 AND genre = "romance" OR rating <=.6 AND genre ="comedy"

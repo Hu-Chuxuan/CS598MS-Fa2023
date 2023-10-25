@@ -1,0 +1,1 @@
+SELECT t.* FROM movies as m INNER JOIN cast as c ON m.id = c.movieId WHERE c.name LIKE '%Aaron%' AND c.character LIKE '%Superhero%'

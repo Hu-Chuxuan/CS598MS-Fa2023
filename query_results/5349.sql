@@ -1,0 +1,1 @@
+SELECT * FROM `title_basics` WHERE titleType = "movie" AND primaryTitle IN ('Batman','Batman Forever') OR (primaryTitle LIKE "%Bat%"AND primaryTitle NOT LIKE "%Man%" ) AND (startYear BETWEEN 1987 AND 1996)

@@ -1,0 +1,1 @@
+SELECT DISTINCT tc.* FROM title_basics as tb INNER JOIN cast_members AS cm ON tb.titleID = cm.movieID WHERE genre IS NOT NULL AND rating > '7' ORDER BY avg(rating)

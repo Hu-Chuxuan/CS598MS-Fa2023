@@ -1,0 +1,1 @@
+SELECT * FROM rating WHERE director LIKE '%Jason Blum%' AND genre = 'Horror' ORDER BY RATING DESC LIMIT 10

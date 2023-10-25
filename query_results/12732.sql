@@ -1,0 +1,1 @@
+SELECT * FROM title_principals WHERE characters LIKE '%Sylvester Stallone%' AND nconst > 6

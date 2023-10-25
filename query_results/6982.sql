@@ -1,0 +1,1 @@
+SELECT t.* FROM titles AS t JOIN rating AS r ON r.title = t.imdbID WHERE r.rating >.7 AND r.numVotes >= 100

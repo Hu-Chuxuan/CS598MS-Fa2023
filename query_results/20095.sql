@@ -1,0 +1,1 @@
+SELECT t.* FROM title_basics AS t JOIN title_ratings AS r ON t.titleID = r.movieId WHERE genre LIKE '%Horror%' AND rating > '6' ORDER BY avg(rating)

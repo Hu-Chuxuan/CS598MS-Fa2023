@@ -1,0 +1,1 @@
+SELECT * FROM titles WHERE (titleType = "movie" AND rating >=.8 OR genre IN ("Action", "Comedy")) ORDER BY avgRATING DESC LIMIT 1

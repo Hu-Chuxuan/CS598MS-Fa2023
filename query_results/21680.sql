@@ -1,0 +1,1 @@
+SELECT * FROM imdb_title WHERE rating >= '7' AND genre IN ('Drama','Fantasy') ORDER BY avg(rating)

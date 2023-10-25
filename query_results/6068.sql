@@ -1,0 +1,1 @@
+SELECT t.* FROM title_ratings AS r JOIN title_basic AS b ON b.titleID = r.titleID WHERE r.averageRating >=? AND NOT EXISTS( SELECT * from title_crew c where c.job in ('director') ) GROUP BY r.titleID ORDER BY r.numVotes DESC LIMIT 6

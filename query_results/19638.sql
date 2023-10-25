@@ -1,0 +1,1 @@
+SELECT * FROM (SELECT * FROM movie WHERE titleType = "comedy" AND averageRating >= 6)

@@ -1,0 +1,1 @@
+SELECT * FROM tconst WHERE titleType='Movie' AND ((startYear>1976 OR startYear<1800)) AND (endYear>=1976 AND endYear<=2019)

@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE genre = "romance" AND year >=? OR genre LIKE "%comedy%" AND year >?

@@ -1,0 +1,1 @@
+SELECT * FROM table_name WHERE rating >=? AND genre = "horror" ORDER BY rating DESC LIMIT?

@@ -1,0 +1,1 @@
+SELECT tb.* FROM title_basic AS tb JOIN title_rating as tr ON tb.titleID = tr.titleId AND tb.primaryTitle=tr.movieName WHERE genre='Comedy' OR genre='Action'

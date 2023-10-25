@@ -1,0 +1,1 @@
+SELECT DISTINCT t.titleID as id FROM title_basic AS t JOIN name_basic AS m ON t.primaryTitle = m.primaryName WHERE t.genre IN ('comedy', 'romance') AND NOT EXISTS( SELECT * FROM title_rating AS rr WHERE rr.averageRating > 6.8 OR rr.numVotes < 10)

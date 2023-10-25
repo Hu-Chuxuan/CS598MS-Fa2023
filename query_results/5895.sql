@@ -1,0 +1,1 @@
+SELECT * FROM title_basics WHERE tconst = '2' AND (titleType IN ('comedy','drama') OR isAdult!= true)

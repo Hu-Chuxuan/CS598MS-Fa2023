@@ -1,0 +1,1 @@
+SELECT * FROM table WHERE 'American Pie' IN(titleType)

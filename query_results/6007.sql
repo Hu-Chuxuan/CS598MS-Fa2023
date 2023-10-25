@@ -1,0 +1,1 @@
+SELECT DISTINCT t.* FROM title_basic as t WHERE t.isAdult = FALSE AND t.titleType NOT IN ('TV Series') ORDER BY rating DESC

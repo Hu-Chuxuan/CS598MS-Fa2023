@@ -1,0 +1,1 @@
+SELECT * FROM imdb.title_ratings WHERE rating >=? AND genre IN ('action','comedy') ORDER BY rating DESC LIMIT 10

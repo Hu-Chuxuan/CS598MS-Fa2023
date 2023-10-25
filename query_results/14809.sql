@@ -1,0 +1,1 @@
+SELECT * FROM title_basics WHERE tconst = "title" AND (startYear < 1980 OR startYear > 1960)

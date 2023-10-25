@@ -1,0 +1,1 @@
+SELECT t.* FROM TITLE_BASICS AS t JOIN NAME_BASES AS n ON n.primaryTitle = t.title_id WHERE n.primaryName LIKE '%' ||? || % AND t.startYear >=? && t.endYear <=? ORDER BY avg(rating)

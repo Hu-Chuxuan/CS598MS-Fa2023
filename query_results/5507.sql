@@ -1,0 +1,1 @@
+SELECT * FROM movies WHERE user_preferences LIKE '%usual%' AND user_preferences LIKE '%cell%' ORDER BY rating DESC LIMIT 3

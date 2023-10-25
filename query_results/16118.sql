@@ -1,0 +1,1 @@
+SELECT * FROM ( SELECT tb.*, tr.*, nr.*, tc.*, tp.* ) AS c WHERE tb.titleType = 'action' AND tr.averageRating > 7/10 AND nr.numVotes >= 5000 AND tc.primaryProfession LIKE '%Director%' AND tp.category IN ('Actor', 'Producer') GROUP BY casting ORDER BY castOrder DESC LIMIT 5

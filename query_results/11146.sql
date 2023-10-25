@@ -1,0 +1,1 @@
+SELECT t.* FROM title_basics AS t WHERE ((titleType='Movie' AND titleType!= 'TV Episode') OR (titleType = 'TV Series')) AND ((startYear <= @inputYear) OR (@inputYear IS NULL)) AND ((endYear >= @inputYear) OR (@inputYear IS NULL))

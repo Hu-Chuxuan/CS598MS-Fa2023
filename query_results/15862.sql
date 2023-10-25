@@ -1,0 +1,1 @@
+SELECT t.titleID AS 'Movie ID', c.category AS 'Category' FROM title_principals p JOIN cast_member m ON (m.castMember = p.primaryRole) JOIN character c WHERE (c.character = ‘Actor’ AND (p.job LIKE ‘%Cast%’ OR p.job LIKE ‘%Director%’)) ORDER BY p.ordering ASC

@@ -1,0 +1,1 @@
+SELECT * FROM title_principals WHERE nconst = "actor" AND character IN ('Malcolm Crowe')

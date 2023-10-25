@@ -1,0 +1,1 @@
+SELECT t.* FROM title_basics AS t INNER JOIN (title_ratings as r) ON r.primaryTitle = t.title WHERE rating > 6 AND title LIKE '%action%' ORDER BY avg(rating)

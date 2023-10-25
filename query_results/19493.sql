@@ -1,0 +1,1 @@
+SELECT * FROM title_recommendation WHERE rating >= 6 AND age > 0 ORDER BY vote DESC

@@ -1,0 +1,1 @@
+SELECT * FROM (title_basics INNER JOIN title_ratings ON title_basic.titleId = title_rating.movieId) INNER JOIN (name_basics INNER JOIN title_crew ON name_basic.actorId = crew_member.id) ON title_rating.movieId = title_crew.movieId AND castMember.category = 'actress'

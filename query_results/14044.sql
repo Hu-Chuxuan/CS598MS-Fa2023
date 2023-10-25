@@ -1,0 +1,1 @@
+SELECT DISTINCT titles.* FROM ratings INNER JOIN crew ON rating.movieID = crew.movieID INNER JOIN principals ON principal.movieID=rating.movieID WHERE rating.userID='johnny' AND rating.titleID IN ('Back To The Future','The Breakfast Club') ORDER BY rating DESC LIMIT 0,6

@@ -1,0 +1,1 @@
+SELECT tconst AS Title, nconst as Name FROM title_basic WHERE titleType = "Movie" AND ((startYear BETWEEN? AND? OR startYear >?)) AND (endYear <?)

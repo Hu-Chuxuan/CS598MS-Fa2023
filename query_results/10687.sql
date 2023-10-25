@@ -1,0 +1,1 @@
+SELECT * FROM title_recommend WHERE rating >= 7 AND genre LIKE '%comedy%' ORDER BY Average Rating DESC

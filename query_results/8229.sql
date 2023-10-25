@@ -1,0 +1,1 @@
+SELECT * FROM rating WHERE genre = 'romantic' AND movieName LIKE '%love%' ORDER BY rating DESC LIMIT 6

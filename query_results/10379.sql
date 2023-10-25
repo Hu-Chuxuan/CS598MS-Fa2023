@@ -1,0 +1,1 @@
+SELECT * FROM table WHERE userInput LIKE '%interstella%' AND userPreferneceHistory LIKE '%arriva%'

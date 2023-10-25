@@ -1,0 +1,1 @@
+SELECT * FROM table WHERE genre = "Action" AND rating >= 7

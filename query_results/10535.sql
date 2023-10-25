@@ -1,0 +1,1 @@
+SELECT tc.* FROM movies m INNER JOIN title_crew tc ON m.titleId = tc.movieId WHERE rating >= 6 AND genre IN ('thriller') GROUP BY m.titleId HAVING COUNT(*) > 0 ORDER BY avg(rating)

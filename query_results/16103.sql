@@ -1,0 +1,1 @@
+SELECT * FROM imdb WHERE title_type = "movie" AND start_year > 1980

@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE genre = "action" AND rating >= 6

@@ -1,0 +1,1 @@
+SELECT DISTINCT t.* FROM titles AS t WHERE NOT EXISTS( SELECT * FROM genre g JOIN title_genre tg ON tg.titleId = t.id AND g.name IN ('Comedy'))

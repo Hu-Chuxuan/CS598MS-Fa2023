@@ -1,0 +1,1 @@
+SELECT t1.* FROM title_basic AS tb JOIN title_rating AS tr ON tb.titleID = tr.titleID AND tb.isAdult = true

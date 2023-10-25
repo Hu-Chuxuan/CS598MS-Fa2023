@@ -1,0 +1,1 @@
+SELECT DISTINCT t.* FROM titles AS t JOIN name_basics as n ON t.title_id = n.tconst WHERE ((t.primaryTitle LIKE '%"' ||? || '"%') AND (n.primaryName NOT LIKE "%" || "'" ||? || "'%" OR n.birthYear <= YEAR(CURRENT_TIMESTAMP)) ORDER BY avg_rating DESC LIMIT 2

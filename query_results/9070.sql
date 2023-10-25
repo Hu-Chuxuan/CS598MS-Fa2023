@@ -1,0 +1,1 @@
+SELECT * FROM title_basic WHERE tconst = "Movie" AND genre IN ('Drama','Crime') ORDER BY avg(rating)

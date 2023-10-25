@@ -1,0 +1,1 @@
+SELECT DISTINCT t.* FROM movies AS m JOIN titles_ratings r ON m.titleId = r.movieId JOIN actors a WHERE m.primaryCast = 'Kevin McCallister' AND a.name LIKE '%McCALL%' ORDER BY rating DESC LIMIT 1

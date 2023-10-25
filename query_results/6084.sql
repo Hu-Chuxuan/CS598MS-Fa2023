@@ -1,0 +1,1 @@
+SELECT DISTINCT title_name.* FROM title_name WHERE (((title_genre ='sci fi' OR title_type IN ('movie','film') ) AND ((startyear >= @fromDate))AND (@toDate IS NULL)))ORDER BY rating DESC

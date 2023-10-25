@@ -1,0 +1,1 @@
+SELECT DISTINCT t.* FROM title_basic AS t JOIN title_rating AS r ON t.titleId = r.titleId AND t.isAdult=0 WHERE ((r.averageRating >=?)) AND ((((r.numVotes > 10))) OR ((r.numVotes < 8))) ORDER BY t.startYear DESC

@@ -1,0 +1,1 @@
+SELECT * FROM (title_basic WHERE tconst = 'The Godfather' OR tconst='Good Will Hunting') AND (name_basics.primaryName LIKE '%im%' ) AND NOT EXISTS( SELECT * from title_crew where directors like '%good%')

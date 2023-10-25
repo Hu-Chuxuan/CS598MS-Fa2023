@@ -1,0 +1,1 @@
+SELECT t.* FROM title_principals AS t WHERE t.job = "Character" AND t.characters LIKE '%Tom%'

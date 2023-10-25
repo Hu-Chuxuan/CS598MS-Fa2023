@@ -1,0 +1,1 @@
+SELECT * FROM imdb_movie_recommendation WHERE rating >= 7 AND title_type = "comedy" ORDER BY RANDOM() LIMIT 2

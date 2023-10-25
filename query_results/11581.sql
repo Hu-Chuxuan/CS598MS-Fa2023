@@ -1,0 +1,1 @@
+SELECT * FROM movies WHERE type='Comedy' AND startyear BETWEEN 1980 AND 1996

@@ -1,0 +1,1 @@
+SELECT title_principals.* FROM title_principals WHERE (((title_principals.[category]= 'Actor') AND ((title_principals.[job]= 'Character')))) ORDER BY title_principals.[ordering]

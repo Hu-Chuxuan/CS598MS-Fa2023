@@ -1,0 +1,1 @@
+SELECT t.titleId AS ID, mr.movieID as RecommendedMovieID FROM Title t INNER JOIN MovieReview MR ON T.TitleID = M.TitleID WHERE M.MovieID IN (select distinct(mr.movieid)) AND T.TitleID not in ('Father Figures','Den Of Thieves') ORDER BY RAND() LIMIT 1

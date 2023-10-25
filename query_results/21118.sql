@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE rating >= 8 AND year > 1970 ORDER BY avg(rating)

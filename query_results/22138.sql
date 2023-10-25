@@ -1,0 +1,1 @@
+SELECT * FROM movie WHERE rating >= 6 AND genre = "Action" OR genre LIKE "%Sci-Fi%" AND runtime < 2hrs

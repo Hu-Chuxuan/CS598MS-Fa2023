@@ -1,0 +1,1 @@
+SELECT * FROM rating WHERE rating.title_id = '10782' AND user_id IN ('1', '2') ORDER BY avg(rating)

@@ -1,0 +1,1 @@
+SELECT * FROM title_principals WHERE category = "LGBT" AND job!= "director"

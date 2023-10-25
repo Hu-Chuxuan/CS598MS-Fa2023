@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE title_id IN (SELECT tc.* from title_recommendation tr JOIN title_principals p ON tr.title_id = p.title_id AND p.category = "actor" AND p.job LIKE "%act%") OR (SELECT r.rating, COUNT(*) AS totalvotes FROM rating r GROUP BY r.movie_id HAVING SUM(r.rating > 7/10) >= 8)

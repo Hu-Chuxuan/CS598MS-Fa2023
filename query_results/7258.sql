@@ -1,0 +1,1 @@
+SELECT t1.* FROM titlerecommendation AS t1 WHERE t1.userid =? AND t1.titleid IN(select t2.titleId from titlehistory as t2 where userID=?) order by t1.averageRating desc LIMIT 3

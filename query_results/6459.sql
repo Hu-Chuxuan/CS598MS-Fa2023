@@ -1,0 +1,1 @@
+SELECT DISTINCT t1.* FROM title_basics AS t1 JOIN (title_rating AS tr ON t1.titleID = tr.titleId ) as t2 WHERE t1.isAdult=0 AND t1.startyear>=1980 AND t1.endyear<=2016 GROUP BY t1.titleID

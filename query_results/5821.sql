@@ -1,0 +1,1 @@
+SELECT DISTINCT t.* FROM title AS t WHERE NOT EXISTS( SELECT * FROM user_preferences UP JOIN title T ON T.titleID = UP.movieID AND UP.userID=? ORDER BY UP.rating DESC LIMIT? ) AND UP.userID!=?

@@ -1,0 +1,1 @@
+SELECT * FROM tconst WHERE avg(rating) > X AND type='movie' ORDER BY rating DESC LIMIT Y

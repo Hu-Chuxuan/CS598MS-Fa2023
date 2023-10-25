@@ -1,0 +1,1 @@
+SELECT * FROM `title_principals` WHERE `job` LIKE '%actor%' AND (`category` LIKE '%horror%' OR `category` LIKE '%thriller%') GROUP BY `characters`

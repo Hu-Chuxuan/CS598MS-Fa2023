@@ -1,0 +1,2 @@
+SELECT * FROM
+( SELECT t.*, n.*, c.*, d.*, w.*, r.* WHERE t.titleType = “movie” AND ((r.rating >= 8 OR r.averageRating > 9 )AND (t.startYear < 2015)) AND (c.job IN ('Actor','Actress') AND CURRENT_TIMESTAMP - c.birthYear <= 10 YEARS) GROUP BY CONCAT('', n.primaryName, '- ', p.category, '.'), r.rating DESC LIMIT 1 OFFSET 0)

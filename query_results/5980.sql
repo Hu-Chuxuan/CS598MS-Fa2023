@@ -1,0 +1,1 @@
+SELECT t.* FROM title_basics AS t INNER JOIN title_ratings AS r ON t.titleID = r.titleID WHERE r.averageRating > 6 AND t.primaryGenre IN ('Comedy')

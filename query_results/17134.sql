@@ -1,0 +1,1 @@
+SELECT DISTINCT t.title_id AS id FROM title_ratings r INNER JOIN title_principals p ON p.movieId = r.movieId AND p.category IN ('Actress', 'Actor') WHERE r.rating >.7

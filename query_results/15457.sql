@@ -1,0 +1,1 @@
+SELECT DISTINCT t.* FROM `title_basic` AS t JOIN (`name_basic` AS p ON t.`primaryName` = p.`nconst`) WHERE EXISTS( SELECT * from `name_basic` WHERE p.`birthYear` <=? AND p.`deathYear` >=? AND p.`category` IN ('actress')) GROUP BY t.`title_type`, t.`isAdult`, t.`startYear`, t.`endYear`, t.`runtimeMinutes`, t.`genre` ORDER by t.`rating` DESC LIMIT 6

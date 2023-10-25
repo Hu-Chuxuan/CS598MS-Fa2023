@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE rating >.9 AND genre = "Thrillers" ORDER BY Average Rating DESC LIMIT 1

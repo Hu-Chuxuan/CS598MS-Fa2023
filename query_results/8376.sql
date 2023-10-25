@@ -1,0 +1,1 @@
+SELECT tc.* FROM titles AS t INNER JOIN casts AS c ON t.titleId = c.movieId WHERE t.category IN ('Action', 'Comedy') AND t.primaryTitle LIKE '%Adventure%' OR t.originalTitle LIKE '%Adventure%'

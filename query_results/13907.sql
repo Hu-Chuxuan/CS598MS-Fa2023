@@ -1,0 +1,1 @@
+SELECT tb.* FROM title_basics AS tb INNER JOIN title_ratings as tr ON tb.titleId =tr.titleid WHERE rating >= "7" AND tb.isadult="false"

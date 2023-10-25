@@ -1,0 +1,1 @@
+SELECT * FROM title_crew WHERE directors = 'Clint Eastwood' AND writers IN ('Scott Frank') OR actors IN ('Brad Pitt')

@@ -1,0 +1,1 @@
+SELECT DISTINCT tconst.title_id AS id FROM title_basic tb JOIN title_rating tr ON tb.title_id = tr.title_id WHERE ((tr.averageRating > 6 AND tr.numVotes >= 8)) OR ((tr.averageRating < 7 AND tr.numVotes <= 9))

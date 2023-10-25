@@ -1,0 +1,1 @@
+SELECT * FROM (SELECT t.*,(SELECT avg(rating) FROM ratings WHERE rating > userInput AND genre IN ('comedy','crime')) AS 'avgRating' from titles WHERE titleType = "movie" OR titleType="tv") as T where T.titleType='movie' ORDER BY T.genre DESC LIMIT 0,10

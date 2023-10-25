@@ -1,0 +1,1 @@
+SELECT * FROM title_recommended WHERE userInput LIKE '%comedy%' AND userHistory LIKE '%scary%'

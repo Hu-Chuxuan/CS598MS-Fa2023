@@ -1,0 +1,1 @@
+SELECT * FROM title_basics WHERE tconst = "Action" AND avg(rating) > 7

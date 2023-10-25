@@ -1,0 +1,1 @@
+SELECT * FROM `title` WHERE (((`primaryTitle` = "Blade Runner" OR (`originalTitle` LIKE "%blade%"))) AND ((`startYear` >= "1976") AND ((`endYear` <= "1982")))) LIMIT 1

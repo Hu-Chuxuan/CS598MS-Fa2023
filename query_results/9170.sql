@@ -1,0 +1,1 @@
+SELECT t.title_id AS "Movie ID", t.primaryTitle AS Movie Title, r.averageRatig AS Rating FROM title_ratings as r INNER JOIN title_basicsss as t ON r.movieID = t.title_id WHERE genre IN ('Comedy') AND (r.numvoters > 1)

@@ -1,0 +1,1 @@
+SELECT * FROM title_recommendation WHERE tconst IN ('The Mask (1988)') AND tconst NOT LIKE '%' ORDER BY rating DESC LIMIT 2

@@ -1,0 +1,1 @@
+SELECT * FROM movies WHERE genre = "romance" AND rating >= 7

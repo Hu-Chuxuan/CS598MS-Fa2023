@@ -1,0 +1,1 @@
+SELECT t1.* FROM title_ratings AS t1 JOIN title_basics AS tb ON t1.titleID = tb.titleID WHERE tb.isAdult=false AND ((tb.startYear BETWEEN '1978-01-01') AND (tb.endYear <= '2016-01-01')) GROUP BY t1.averageRating ORDER BY COUNT(*) DESC LIMIT 10

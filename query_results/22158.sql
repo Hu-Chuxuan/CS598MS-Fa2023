@@ -1,0 +1,1 @@
+SELECT * FROM title_principals WHERE tconst = "Superman" AND character = "Lois Lane"

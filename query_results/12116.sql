@@ -1,0 +1,1 @@
+SELECT movies.* FROM title_basics AS tb LEFT JOIN title_ratings as tr ON(tb.title_id=tr.movieID)

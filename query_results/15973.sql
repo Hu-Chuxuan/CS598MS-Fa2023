@@ -1,0 +1,1 @@
+SELECT * FROM tconst WHERE averageRating > 7 AND titleType = "movie" ORDER BY rating DESC LIMIT 6

@@ -1,0 +1,1 @@
+SELECT DISTINCT t.title_basics.* FROM title_basics AS t JOIN name_basics as n ON(t.title_basics.primaryName = n.name_basics.primaryName AND t.title_basics.birthYear BETWEEN n.name_basics.birthYear + 10 AND n.name_basics.deathYear - 10) WHERE t.title_basics.isAdult=1

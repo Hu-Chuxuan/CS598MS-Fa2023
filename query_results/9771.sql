@@ -1,0 +1,1 @@
+SELECT DISTINCT t.titleID as TITLEID FROM title_basic AS t JOIN title_rating AS r ON t.titleID = r.titleID WHERE t.titleType='movie' AND ((r.averageRating BETWEEN 7 AND 8)) AND r.numVotes>6

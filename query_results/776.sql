@@ -1,0 +1,1 @@
+SELECT * FROM title_recommend WHERE (userInput LIKE '%good%') AND (userPreferedGenre LIKE 'action')

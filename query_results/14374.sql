@@ -1,0 +1,1 @@
+SELECT * FROM title_basics WHERE tconst = 'The King and I' AND isAdult = false

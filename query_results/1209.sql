@@ -1,0 +1,1 @@
+SELECT * FROM title_rating WHERE genre = "Drama" AND rating >= 7

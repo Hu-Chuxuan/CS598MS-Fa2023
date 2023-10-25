@@ -1,0 +1,1 @@
+SELECT tb.titleID as id, tc.titleType AS type FROM title_basic tb JOIN title_rating tc ON tb.titleID = tc.titleID WHERE tb.primaryTitle LIKE 'Malcom%' AND tc.averageRating >= 7

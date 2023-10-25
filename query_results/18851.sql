@@ -1,0 +1,1 @@
+SELECT * FROM title_ratings WHERE averageRating >= 6 AND genre IN ('Superhero') ORDER BY rating DESC

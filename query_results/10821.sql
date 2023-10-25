@@ -1,0 +1,1 @@
+SELECT t.* FROM title_ratings AS r INNER JOIN title_basic AS b ON r.title_id = b.tconst WHERE r.primaryTitle LIKE '%The%'

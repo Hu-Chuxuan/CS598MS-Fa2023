@@ -1,0 +1,1 @@
+SELECT * FROM rating WHERE avg_rating >= 7 AND avg_rating <= 9

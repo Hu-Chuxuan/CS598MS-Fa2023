@@ -1,0 +1,1 @@
+SELECT t.titleId FROM title_basic AS t INNER JOIN title_rating AS r ON t.titleId = r.titleId WHERE t.primaryTitle LIKE '%Get%'

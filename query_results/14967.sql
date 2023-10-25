@@ -1,0 +1,1 @@
+SELECT * FROM `title_ratings` WHERE `numVotes` > 7 AND (`averageRating` >= 8 OR `averageRating` <= 9)

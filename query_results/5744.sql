@@ -1,0 +1,1 @@
+SELECT * FROM 5 WHERE ((((job='actor') AND ((category = "Lead Actor"))) OR ((job = "Supporting Role") AND ((category = "Co-Star")))))

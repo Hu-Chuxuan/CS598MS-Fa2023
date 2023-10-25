@@ -1,0 +1,1 @@
+SELECT * FROM `title_principals` WHERE ((primaryJob LIKE '%actor%' OR primaryJob LIKE '%actress%') AND castingOrder >= 1)

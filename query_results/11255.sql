@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE rating >= X AND genre = Y

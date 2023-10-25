@@ -1,0 +1,1 @@
+SELECT * FROM `title` WHERE 'billy madison' IN (director, writer)

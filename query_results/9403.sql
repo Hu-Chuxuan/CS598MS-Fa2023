@@ -1,0 +1,1 @@
+SELECT * FROM title_ratings WHERE rating >= "4" AND genre = 'Action' OR rating <="7"

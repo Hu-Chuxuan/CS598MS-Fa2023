@@ -1,0 +1,1 @@
+SELECT tc.* FROM titles AS tc JOIN title_crew AS tc ON tc.title = tc.id WHERE tc.director LIKE '%Steven Spielberg%' OR tc.writer LIKE '%Steven Spielberg%'

@@ -1,0 +1,1 @@
+SELECT * FROM title_principals WHERE job = "director" OR job="writer"

@@ -1,0 +1,1 @@
+SELECT tc.* FROM title_basics AS tb JOIN title_ratings AS tr ON tb.titleID = tr.titleID AND tb.primaryTitle =? WHERE NOT EXISTS( SELECT * from title_principals as tp where tp.job LIKE '%actor%' OR tp.job LIKE'%actress%') GROUP BY tb.titleID

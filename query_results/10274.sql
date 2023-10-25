@@ -1,0 +1,1 @@
+SELECT DISTINCT(title.name_basics).primaryName as MovieName FROM title_basic INNER JOIN title_rating ON title_basic.id = title_rating.tconst WHERE rating > 6 AND genre IN ('romantic comedy') ORDER BY rating DESC

@@ -1,0 +1,1 @@
+SELECT DISTINCT t.* FROM imdb_data AS t INNER JOIN imdb_user AS u ON(u.id = t.title_id AND u.username LIKE '%$name%') WHERE t.startYear > $year OR t.endYear < $year ORDER BY rating DESC LIMIT 5

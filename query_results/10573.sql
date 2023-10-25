@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE titleType = “Movie” AND genre IN ('Football') ORDER BY rating DESC LIMIT 6

@@ -1,0 +1,1 @@
+SELECT t.* FROM movies AS m INNER JOIN casts AS c ON c.movieId = m.id WHERE m.title LIKE "5%"

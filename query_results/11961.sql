@@ -1,0 +1,1 @@
+SELECT * FROM ( SELECT * FROM title_rating WHERE rating >= 6 AND rating <= 8 ) AS t1 JOIN name_basic ON name_basic.primaryName = t1.title_basics.titleType

@@ -1,0 +1,1 @@
+SELECT t.* FROM titles AS t JOIN title_crew AS c ON t.titleID = c.titleID WHERE t.type = 'animated'

@@ -1,0 +1,1 @@
+SELECT t.* FROM title_basics AS t WHERE t.titleType = "movie" AND NOT EXISTS( SELECT * from user_preferences where u.userID=987654321 and u.titleID in (select titleID from title_principals as p join user_preferences as u using (u.titleID))) ORDER BY rating DESC LIMIT 5

@@ -1,0 +1,1 @@
+SELECT title_name.* FROM titles AS t INNER JOIN actors AS a ON t.primaryActor = a.actorID AND t.isadult = false WHERE t.startyear >= 1986

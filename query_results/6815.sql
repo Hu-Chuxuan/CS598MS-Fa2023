@@ -1,0 +1,1 @@
+SELECT t.* FROM title_basics AS t INNER JOIN name_basics AS n ON t.primaryTitle = n.titleType WHERE n.birthYear >= '1978' AND n.deathYear <= '2018'

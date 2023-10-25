@@ -1,0 +1,1 @@
+SELECT t.* FROM titles AS t JOIN casts AS c ON c.titleID = t.titleID WHERE t.primaryTitle LIKE '%horror%' AND t.isAdult='false'

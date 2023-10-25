@@ -1,0 +1,1 @@
+SELECT * FROM (title_principals AS t, name_basics as m WHERE ((m.primaryName = "Jeremy Renner" AND t.job IN ("actor") OR m.birthYear <= 1966)) ORDER BY t.ordering DESC LIMIT 1)

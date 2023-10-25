@@ -1,0 +1,1 @@
+SELECT t.* FROM movies AS m JOIN title_ratings r ON m.title_id = r.movie_id AND (r.averageRating >= 6 OR (r.numVotes > 10)) ORDER BY avg(r.rating), rating DESC LIMIT 3

@@ -1,0 +1,1 @@
+SELECT title_rating.* FROM title_rating WHERE title_rating.title_type='romantic' AND (title_rating.average_rating>0 OR title_rating.numvotes > 0)

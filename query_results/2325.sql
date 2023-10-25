@@ -1,0 +1,1 @@
+SELECT movies.* FROM imdb_movies AS movies INNER JOIN imdb_users_preferences USING(userID)

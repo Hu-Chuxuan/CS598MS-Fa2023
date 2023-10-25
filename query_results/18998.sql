@@ -1,0 +1,1 @@
+SELECT t.* FROM (title_ratings r JOIN title_basic b ON r.averageRating = b.startYear) AS t WHERE ((r.numVotes > 0 AND r.numVotes < 9)) OR (b.isAdult = false)

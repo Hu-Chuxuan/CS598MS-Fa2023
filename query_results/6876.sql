@@ -1,0 +1,1 @@
+SELECT t.* FROM titles AS t INNER JOIN rating_titles r ON t.titleId = r.titleId WHERE t.genre IN ('comedy') AND r.rating > 6

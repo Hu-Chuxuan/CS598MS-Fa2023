@@ -1,0 +1,1 @@
+SELECT DISTINCT tc.* FROM title_basics AS tb INNER JOIN cast AS c ON c.title = tb.primaryTitle AND c.character LIKE '%Dwayne Johnson%' ORDER BY rating DESC LIMIT 8

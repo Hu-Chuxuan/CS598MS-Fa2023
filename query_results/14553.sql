@@ -1,0 +1,1 @@
+SELECT t.* FROM title_basic AS t JOIN name_basic AS n ON n.primaryName = t.titleType ORDER BY rating DESC LIMIT 6

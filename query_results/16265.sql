@@ -1,0 +1,1 @@
+SELECT * FROM title_principals WHERE job = "Actor" AND character IN ('Joe Dirt')

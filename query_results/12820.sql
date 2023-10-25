@@ -1,0 +1,1 @@
+SELECT DISTINCT tc.* FROM title_basics AS tb LEFT JOIN genre g ON g.genreId = tb.primaryGenre WHERE tb.startYear >= '1978' AND tb.endYear <= '2016'

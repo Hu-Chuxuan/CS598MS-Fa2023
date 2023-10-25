@@ -1,0 +1,1 @@
+SELECT tb.* FROM imdb.title_basic as tb INNER JOIN imdb.name_basic as nb ON(tb.primaryTitle=nb.primaryName AND bd.startYear>2000)

@@ -1,0 +1,1 @@
+SELECT * FROM rating WHERE titleType = "movie" AND userInput LIKE "%' have you seen %'" ORDER BY average RATING DESC LIMIT 3

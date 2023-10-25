@@ -1,0 +1,1 @@
+SELECT * FROM  title_basics WHERE tconst = '0006879'

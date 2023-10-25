@@ -1,0 +1,1 @@
+SELECT * FROM title_rating WHERE rating >? AND averageRating <? ORDER BY avg(averageRating)

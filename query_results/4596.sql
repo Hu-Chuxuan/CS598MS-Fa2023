@@ -1,0 +1,1 @@
+SELECT * FROM rating WHERE user LIKE "M%"

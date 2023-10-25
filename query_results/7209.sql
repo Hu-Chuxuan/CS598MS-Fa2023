@@ -1,0 +1,1 @@
+SELECT tc.* FROM titles AS t JOIN categories as c ON t.category = c.id WHERE t.titleType!= "TV" AND (tc.primaryTitle LIKE '%fun%' OR tc.originalTitle LIKE '%fun%') ORDER BY t.startYear DESC LIMIT 3

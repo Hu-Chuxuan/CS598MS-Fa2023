@@ -1,0 +1,1 @@
+SELECT * FROM title_principals WHERE character LIKE '%Leonardo%'

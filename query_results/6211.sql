@@ -1,0 +1,1 @@
+SELECT DISTINCT tc.* FROM title_basic as tb INNER JOIN title_rating as tr ON tr.titleID = tb.titleID AND tr.primaryTitle = TRUE LEFT OUTER JOIN name_basic as nb ON nb.nameID = tb.nameID WHERE (((tb.isAdult = FALSE OR b.isAdult IS NULL)) AND ((tr.averageRating >=? AND tr.numVotes > 0))) GROUP BY tb.titleID ORDER BY COUNT(nb.nameID)

@@ -1,0 +1,1 @@
+SELECT * FROM table WHERE tconst = 'title_basics' AND (((job LIKE '%director%' OR job LIKE '%writer%') AND categories LIKE "%film" ))

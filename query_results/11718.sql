@@ -1,0 +1,1 @@
+SELECT DISTINCT(movieID), titleType FROM title_basics WHERE titleType = "Movie" AND tconst IN ('Land Of The Lost', 'Safe haven') ORDER BY rating DESC LIMIT 2

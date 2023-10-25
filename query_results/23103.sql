@@ -1,0 +1,1 @@
+SELECT t.* FROM titles AS t INNER JOIN title_rating AS r ON t.titleId = r.titleID WHERE r.userId=5 AND r.averageRating>=7

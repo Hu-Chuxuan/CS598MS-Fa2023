@@ -1,0 +1,1 @@
+SELECT * FROM `title` WHERE ((genre LIKE '%comedy%' OR genre LIKE '%holiday%') AND (`primaryTitle`,`originalTitle`) NOT IN ('Home Alone','Home Alone 2')) ORDER BY rating DESC LIMIT 6

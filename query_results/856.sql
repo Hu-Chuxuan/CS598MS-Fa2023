@@ -1,0 +1,1 @@
+SELECT * FROM title_basic WHERE tconst =? AND (titleType LIKE '%Comedy%' OR titleType LIKE '%Drama%') GROUP BY titleType ORDER BY AVG(averageRating)

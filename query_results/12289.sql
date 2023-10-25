@@ -1,0 +1,1 @@
+SELECT t.* FROM title_basic AS t JOIN title_rating as r ON t.titleID = r.movieID WHERE r.averageRating >=? AND t.startYear <=? AND t.endYear >? GROUP BY t.primaryTitle HAVING COUNT(DISTINCT r.userID)>0

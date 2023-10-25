@@ -1,0 +1,1 @@
+SELECT tc.* FROM imdb.title_basics AS tb INNER JOIN imdb.name_basics as n ON tb.primaryTitle = n.primaryName WHERE tb.isAdult = true AND n.category IN ('actor') AND tb.startYEAR BETWEEN 2010 AND 2017

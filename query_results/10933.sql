@@ -1,0 +1,1 @@
+SELECT t.* FROM movies AS m INNER JOIN title_ratings AS r ON m.titleId = r.movieId AND m.titleType='comedy'

@@ -1,0 +1,1 @@
+SELECT * FROM ( SELECT t.*, count(r.numvotes)/count(*) AS avgRat FROM titles t INNER JOIN ratings r ON t.titleID = r.titleid WHERE r.averageRating >.7 AND r.numvotes >= 10 GROUP BY t.titleID HAVING AVG(avgRAT)>=.5 ) AS T INNER JOIN names NAMES ON T.movieID = NAMES.nameID ORDER BY avgRAT DESC LIMIT 3

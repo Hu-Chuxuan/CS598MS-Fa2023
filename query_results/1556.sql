@@ -1,0 +1,1 @@
+SELECT * FROM movie_recommendation WHERE title_basics = @title AND title_ratings > @rating

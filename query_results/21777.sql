@@ -1,0 +1,1 @@
+SELECT DISTINCT title_basic.* FROM title_basics AS tb JOIN title_rating ON tb.title_id = title_rating.movie_id WHERE tb.isadult=false AND ((tb.startyear <=? OR b.endyear >=?) AND tb.runtimeminutes>60 )AND((tb.genre IN ('Comedy') AND tb.average rating >?)) ORDER BY tb.numvotes DESC LIMIT 3

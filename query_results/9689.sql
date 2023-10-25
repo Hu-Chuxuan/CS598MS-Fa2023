@@ -1,0 +1,1 @@
+SELECT * FROM tconst WHERE tconst LIKE '%super%hero%' AND tconst NOT IN ('Ant-Man', 'The Incredible') ORDER BY rating DESC LIMIT 6

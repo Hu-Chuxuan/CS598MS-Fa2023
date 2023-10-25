@@ -1,0 +1,1 @@
+SELECT DISTINCT t.* FROM title_basic AS t WHERE NOT EXISTS( SELECT * FROM rating_basic rb where rb.primaryTitle = t.title AND rb.averageRating <.67)

@@ -1,0 +1,1 @@
+SELECT * FROM (title_basic INNER JOIN title_rating ON title_basic.titleID = title_rating.titleID) WHERE rating >=.7 AND genre IN ('horror','thriller') ORDER BY rating DESC LIMIT 0, 10

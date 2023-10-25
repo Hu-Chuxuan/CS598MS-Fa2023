@@ -1,0 +1,1 @@
+SELECT * FROM title_basic WHERE tconst = "movie" AND titleType LIKE "%action%" ORDER BY avgrating DESC LIMIT 6

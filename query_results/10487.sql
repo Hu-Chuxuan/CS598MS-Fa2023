@@ -1,0 +1,1 @@
+SELECT * FROM movies WHERE category = 'romantic-comedy' AND rating > 7

@@ -1,0 +1,1 @@
+SELECT * FROM (SELECT t.*, COUNT(*) AS cnt FROM title_ratings r JOIN titles t ON r.title = t.id WHERE r.averageRating > 8 AND NOT EXISTS( SELECT 1 FROM ratingrated r WHERE r.ratingrater = user AND r.rated = id)) GROUP BY t.primaryName ORDER BY cnt DESC LIMIT 5

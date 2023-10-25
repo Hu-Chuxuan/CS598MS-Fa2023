@@ -1,0 +1,1 @@
+SELECT * FROM `title_recommendation` WHERE `user_preferences`.`category = 'comedy'` AND (`user_history`.`movie_id` LIKE '%Blind%' OR `user_history`.`movie_id` LIKE '%Mad%') ORDER BY RAND() LIMIT 2

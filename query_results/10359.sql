@@ -1,0 +1,1 @@
+SELECT t.* FROM title_ratings AS r JOIN title_basics AS b ON r.titleId = b.id WHERE ((b.isAdult = 'false' AND r.averageRating >.8)) OR ((r.averageRating <.6))

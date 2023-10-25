@@ -1,0 +1,1 @@
+SELECT * FROM imdb WHERE tconst = "title" AND titleType LIKE "%funny%" ORDER BY avg(averageRating)

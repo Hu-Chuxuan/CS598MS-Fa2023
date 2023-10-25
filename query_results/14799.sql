@@ -1,0 +1,1 @@
+SELECT t1.* FROM title_basic AS tb INNER JOIN name_basic as nb ON tb.`title_type` = `nb`.`primary_name`

@@ -1,0 +1,1 @@
+SELECT t.* FROM title AS t JOIN title_ratings AS tr ON t.titleID = tr.movieID AND tr.rating > 8

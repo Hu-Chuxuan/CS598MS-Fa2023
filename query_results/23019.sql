@@ -1,0 +1,1 @@
+SELECT * FROM (SELECT t.*, n.* from title_principals as p JOIN name_basics AS N ON p.`primaryName` =N.`nconst`) WHERE ((((job like '%actor%' OR job LIKE '%actress%') AND characters like '%Mark Wahlberg%' OR characters like '%Leonardo DiCaprio%'))) AND ((category not in ('Comedy','Horror')))

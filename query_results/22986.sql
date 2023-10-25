@@ -1,0 +1,1 @@
+SELECT * FROM ratings WHERE rating >= '8' AND rating <= '9'

@@ -1,0 +1,1 @@
+SELECT t.titleId AS id FROM Title_Basics as t INNER JOIN Name_Basic as n ON n.primaryName = t.titleType WHERE t.isAdult == false AND n.birthYear <= 1980

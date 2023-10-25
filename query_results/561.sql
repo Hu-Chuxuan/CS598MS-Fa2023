@@ -1,0 +1,1 @@
+SELECT t.* FROM title_basics AS t JOIN (SELECT t1.* FROM title_ratings as t1 INNER JOIN name_basics as t2 ON t1.titleType = t2.primaryTitle AND t1.startYear >= t2.birthYear - 70 UNION ALL SELECT t1.* FROM title_ratings as t1 INNER JOIN name_basics as t2 ON t1.titleType = t2.originalTitle OR t1.titleType = t2.isAdult AND t1.startYear <= t2.endYear + 60) AS t1 WHERE t1.numVotes > 2

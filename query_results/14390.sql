@@ -1,0 +1,1 @@
+SELECT * FROM (title_ratings JOIN title_crew ON rating.tconst = crew.tconst AND rating.isAdult=0 ORDER BY crew.numVotes DESC LIMIT 10)

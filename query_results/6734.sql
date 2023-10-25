@@ -1,0 +1,1 @@
+SELECT t.* FROM ( SELECT * FROM movies WHERE rating > '7') AS m INNER JOIN actors ON actors.actorID = m.director OR actors.actorID = m.writer UNION ALL SELECT * FROM movies WHERE genre IN ('Action', 'Comedy','Drama') AND rating < '8'

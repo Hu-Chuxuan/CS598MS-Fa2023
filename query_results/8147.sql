@@ -1,0 +1,1 @@
+SELECT * FROM title_basics WHERE title_type = "movie" AND (title_year > 1980 OR title_year < 1970)

@@ -1,0 +1,1 @@
+SELECT tb.* FROM title_basics AS tb INNER JOIN name_basics AS n ON tb.titleId = n.id INNER JOIN title_ratings as tr ON tb.titleID=tr.titleId AND tr.numvotes>0 WHERE tr.averagerating>=7 AND (tb.isadult='true' OR bb.isadult='false') ORDER BY tr.averagerating DESC

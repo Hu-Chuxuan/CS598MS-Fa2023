@@ -1,0 +1,1 @@
+SELECT TITLE_BASICS.* FROM `title_basic` WHERE TITLE_BASICS.`isAdult` = true

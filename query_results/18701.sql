@@ -1,0 +1,1 @@
+SELECT * FROM ttitle WHERE (isAdult = false AND ((startYear >= 1960 AND startYear <= 1990)) OR (startYear > 1990))

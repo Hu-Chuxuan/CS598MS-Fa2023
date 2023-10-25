@@ -1,0 +1,1 @@
+SELECT t.* FROM title_basics AS t JOIN genre_genre ON t.titleGenre = genre_genre.name GROUP BY genre_genre.name ORDER BY COUNT(DISTINCT t.titleId)

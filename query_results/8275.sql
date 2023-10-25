@@ -1,0 +1,1 @@
+SELECT * FROM movies WHERE titleType = 'genre' AND genre IN ('comedy','drama') ORDER BY rating DESC LIMIT 1

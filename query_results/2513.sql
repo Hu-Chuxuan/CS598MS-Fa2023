@@ -1,0 +1,1 @@
+SELECT t.* FROM titles AS t JOIN ratings r ON t.titleID = r.titleID WHERE t.titleType IN ('comedy','action') AND NOT EXISTS( SELECT * FROM userPreferences UPJOIN ratingMovie rm ON upj.userID=rm.ratingUserID AND rm.movieID = t.titleID ) GROUP BY t.titleID

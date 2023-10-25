@@ -1,0 +1,1 @@
+SELECT * FROM `title_rating` WHERE (((`averageRating`) > "3") AND (`numVotes`) >= 10)

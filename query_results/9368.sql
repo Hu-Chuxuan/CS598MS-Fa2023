@@ -1,0 +1,1 @@
+SELECT * FROM title_basics WHERE tconst = "drama" AND genre IN ('Action','Horror') OR genre LIKE "%Drama%"

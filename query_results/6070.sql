@@ -1,0 +1,1 @@
+SELECT * FROM TITLE WHERE AVERAGE(rating)>=8 AND Average(rating)=8

@@ -1,0 +1,1 @@
+SELECT DISTINCT tc.* FROM title_basic tb INNER JOIN name_basics n ON tb.titleType = n.primaryTitle WHERE tb.isAdult!= "true" AND tb.startYear BETWEEN YEAR(2000) - 2 AND YEAR(2020)

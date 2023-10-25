@@ -1,0 +1,1 @@
+SELECT * FROM movie_recommend WHERE rating >= 7

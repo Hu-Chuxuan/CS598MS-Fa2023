@@ -1,0 +1,1 @@
+SELECT * FROM titles WHERE rating >= '6' AND genre IN ('Horror') ORDER BY avgRATING DESC LIMIT 3

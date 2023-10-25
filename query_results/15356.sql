@@ -1,0 +1,1 @@
+SELECT * FROM rating WHERE genre = "Horror" AND year BETWEEN 2010 AND 2019

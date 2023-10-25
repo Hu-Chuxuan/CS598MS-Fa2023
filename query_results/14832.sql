@@ -1,0 +1,1 @@
+SELECT t.* FROM title_basic as t JOIN( SELECT r.title_id AS id, AVG(r.rating) as rating FROM rating WHERE user_id = $userID GROUP BY r.title_id ) as R ON t.primary_title=R.id

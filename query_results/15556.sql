@@ -1,0 +1,1 @@
+SELECT t.* FROM title AS t WHERE NOT EXISTS( SELECT * from rating r where r.title = t.id AND r.user_rating > '4') OR EXISTS(SELECT * from user_preferences u WHERE u.name LIKE '%horror%' AND u.movie_id=t.id)

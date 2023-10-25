@@ -1,0 +1,1 @@
+SELECT * FROM `title_ratings` WHERE `averageRating` > X AND (`startYear` >= Y && `endYear` <= Z)

@@ -1,0 +1,1 @@
+SELECT tc.* FROM title_basics AS tb INNER JOIN title_ratings AS tr ON tb.titleID = tr.titleID WHERE tr.numvotess > 0 AND tr.averagerating BETWEEN.7/2 AND.8/2

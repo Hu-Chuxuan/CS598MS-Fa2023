@@ -1,0 +1,1 @@
+SELECT * FROM `title` WHERE rating >= 8 AND (startyear > 1960 OR genre IN ('Sci-Fi')) ORDER BY ABS(rating - avg(rating)) DESC LIMIT 10

@@ -1,0 +1,1 @@
+SELECT * FROM tconst WHERE genre = "Drama" AND (startYear >= 1980)

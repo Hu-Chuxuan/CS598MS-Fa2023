@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE rating > 7 AND genre IN ('Horror','Drama') ORDER BY rating DESC LIMIT 1

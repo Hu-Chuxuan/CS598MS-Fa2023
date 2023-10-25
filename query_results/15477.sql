@@ -1,0 +1,1 @@
+SELECT DISTINCT t.titleID AS MovieID FROM title_rating t JOIN title_recommendation tr ON(tr.movieID=t.titleID AND tr.userID =?)

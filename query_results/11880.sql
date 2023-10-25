@@ -1,0 +1,1 @@
+SELECT tb.* FROM title_basics AS tb INNER JOIN title_rating ON title_rating.title = tb.primaryTitle WHERE rating > 7 AND title LIKE '%fast%' OR title LIKE '%drive%'

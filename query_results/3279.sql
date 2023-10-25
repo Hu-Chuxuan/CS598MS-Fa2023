@@ -1,0 +1,1 @@
+SELECT t.* FROM movies AS m INNER JOIN titles AS t ON(m.id = t.movieId)

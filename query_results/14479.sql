@@ -1,0 +1,1 @@
+SELECT * FROM title_recommendation WHERE titleType ='movie' AND rating >= 6

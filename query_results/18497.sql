@@ -1,0 +1,1 @@
+SELECT DISTINCT * FROM title_ratings WHERE (titleType = "movie" OR genre IS NULL)

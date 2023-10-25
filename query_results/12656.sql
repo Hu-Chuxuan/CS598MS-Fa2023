@@ -1,0 +1,1 @@
+SELECT tb.* FROM title_basics AS tb JOIN name_basics AS n ON tb.titleType = "movie" AND tb.primaryTitle = n.primaryName WHERE n.deathYear < 2000

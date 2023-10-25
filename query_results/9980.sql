@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE (((titleType = "movie" OR titleType IS NULL)) AND ((primaryTitle LIKE '%' ||? || '%')))

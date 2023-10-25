@@ -1,0 +1,1 @@
+SELECT t.* FROM title_principals AS p JOIN title_crew AS c ON p.`job` = c.`category` WHERE p.`characters` LIKE '%Tom%'

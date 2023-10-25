@@ -1,0 +1,1 @@
+SELECT * FROM title_ratings WHERE tconst = "Doctor Strange" AND avgrating > 8

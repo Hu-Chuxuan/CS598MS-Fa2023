@@ -1,0 +1,1 @@
+SELECT * FROM title_principals WHERE genre = "Comedy" AND year > 1970 ORDER BY rating DESC LIMIT 1

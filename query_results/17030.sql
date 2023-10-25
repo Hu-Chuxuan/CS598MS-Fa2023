@@ -1,0 +1,1 @@
+SELECT t.* FROM title_ratings AS r INNER JOIN title_basic as b ON b.titleID = r.titleID WHERE b.primaryTitle LIKE '%love%'

@@ -1,0 +1,1 @@
+SELECT DISTINCT tc.* FROM title_basic AS tb JOIN title_rating as tr ON(tb.titleId = tr.titleId AND tr.averageRating >= 6 )JOIN title_crew as tc ON(tr.titleId=tc.movieId)

@@ -1,0 +1,1 @@
+SELECT * FROM movies WHERE genre='Comedy' OR genre='Musical'

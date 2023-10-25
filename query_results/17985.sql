@@ -1,0 +1,1 @@
+SELECT * FROM `title_basic` WHERE `titleType` = "comedy" AND (`primaryTitle`,`originalTitle`) IN ('School Of Rock','Three Stooges')

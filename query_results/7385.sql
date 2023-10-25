@@ -1,0 +1,1 @@
+SELECT DISTINCT tc.* FROM titles AS t INNER JOIN title_rating AS tr ON t.titleID = tr.movieID WHERE tr.numVote > 1 AND t.isAdult < "true" ORDER BY avg(tr.averageRatings)

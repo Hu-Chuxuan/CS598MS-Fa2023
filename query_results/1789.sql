@@ -1,0 +1,1 @@
+SELECT * FROM movies WHERE userInput LIKE '%' AND userPreferneceHistory LIKE '%' AND genre = 'Mystery'

@@ -1,0 +1,1 @@
+SELECT * FROM `title_principals` WHERE `job` = "Actor" AND (`primaryName` LIKE "%John%") OR (`characters` LIKE "%Jennifer%")

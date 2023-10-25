@@ -1,0 +1,1 @@
+SELECT t.title_name AS Movie Title from title_basic as t INNER JOIN name_basic as n ON t.primaryTitle = n.primaryName WHERE t.isAdult=false AND t.startYear>1980

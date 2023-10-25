@@ -1,0 +1,1 @@
+SELECT * FROM `title_basics` WHERE `title_type` = "movie" AND (`primaryTitle` LIKE '%' ||? || '%') OR ((`genre` IN ('%' ||? || '%')))

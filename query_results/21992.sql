@@ -1,0 +1,1 @@
+SELECT movies.* FROM (movies INNER JOIN rating ON movies.titleID = rating.movieID) INNER JOIN user_preferences ON user_preferences.userID=movies.titleID

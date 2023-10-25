@@ -1,0 +1,1 @@
+SELECT * FROM title_ratings WHERE rating > =? AND genre IN ('Comedy') ORDER BY avg_rating DESC LIMIT 8

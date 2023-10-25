@@ -1,0 +1,1 @@
+SELECT * FROM (title_basic JOIN title_rating WHERE tconst = nconst AND avg(averageRating) > 6/10)

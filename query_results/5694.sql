@@ -1,0 +1,1 @@
+SELECT t.* FROM imdb.title AS t INNER JOIN imdb.name as n ON t.primaryTitle = n.primaryName WHERE n.birthYear BETWEEN? AND? ORDER BY avg(rating) DESC LIMIT 0, 6

@@ -1,0 +1,1 @@
+SELECT * FROM (title_basic WHERE titleType = "Movie" AND titleType NOT IN ('TV Show','Documentary')) JOIN(name_basics ON title_basic.primaryTitle=name_basics.primaryName) JOIN(title_rating ON title_basic.titleID=title_rating.titleID)

@@ -1,0 +1,1 @@
+SELECT * FROM `title` WHERE `genre` LIKE '%Gangsta%' AND (`startyear >=?`)AND(`endyear <=?)`

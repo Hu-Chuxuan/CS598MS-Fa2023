@@ -1,0 +1,1 @@
+SELECT t.* FROM Title AS t JOIN Name AS n ON t.titleID = n.titleID AND t.primaryTitle = n.primaryName WHERE ((((t.startYear <= @year OR (@year IS NULL)) AND ((@genre IS NOT NULL))) OR (@genre IN ('Action/Adventure', 'Animation', 'Comedy', 'Drama', 'Horror', 'Mystery/Suspense', 'Musical', 'Romance','Sci-Fi'))))

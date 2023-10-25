@@ -1,0 +1,1 @@
+SELECT DISTINCT * FROM title_basic WHERE tconst = '10' AND titleType IN ('movie', 'tv series') ORDER BY rating DESC LIMIT 10

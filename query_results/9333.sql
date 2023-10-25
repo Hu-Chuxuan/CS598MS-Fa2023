@@ -1,0 +1,1 @@
+SELECT * FROM title_recommendation WHERE rating > 7 AND gender = "F" ORDER BY rating DESC LIMIT 5

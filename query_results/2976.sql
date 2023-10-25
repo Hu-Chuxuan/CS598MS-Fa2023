@@ -1,0 +1,1 @@
+SELECT m.* FROM titles AS t JOIN (title_ratings r ON (r.title = t.id)) WHERE ((t.genre LIKE '%anime%' OR t.primaryGenre LIKE '%anime%') AND user_preferences.name IN ('Spirited Away','My Neighbor Totoro')) ORDER BY rating DESC LIMIT 3

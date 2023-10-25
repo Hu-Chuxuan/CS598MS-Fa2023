@@ -1,0 +1,1 @@
+SELECT DISTINCT t.* FROM imdb.title AS t JOIN imdb.name AS n ON t.primaryTitle = n.primaryName WHERE t.isAdult=false AND t.startYear>=1960

@@ -1,0 +1,1 @@
+SELECT * FROM table WHERE user_id=? AND title_type='movie' AND title_year>?)

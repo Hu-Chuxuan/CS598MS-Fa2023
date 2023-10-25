@@ -1,0 +1,1 @@
+SELECT DISTINCT t.* FROM (title_ratings r JOIN title_crew c ON r.tconst = c.tconst) LEFT OUTER JOIN (name_basics b JOIN title_principals p ON b.nconst=p.nconst) RIGHT OUTER JOIN (title_basic d JOIN title_rating e WHERE d.primaryTitle='Wonder') ON e.tconst = d.tconst

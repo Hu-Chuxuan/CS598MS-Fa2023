@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE tconst = 'The Mask' OR tconst IN ('The Mask', 'Scream  (1996)') AND titleType='Feature Film'

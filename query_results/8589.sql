@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE ttype = 'comedy' AND numvotes > 6

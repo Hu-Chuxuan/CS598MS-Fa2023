@@ -1,0 +1,1 @@
+SELECT rating FROM title_rating WHERE avg(rating)>=8 AND genre='Family'

@@ -1,0 +1,1 @@
+SELECT * FROM titles WHERE titleType = "movie" AND genre IN ('Action') ORDER BY avg(rating DESC)

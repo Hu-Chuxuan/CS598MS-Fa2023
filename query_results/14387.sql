@@ -1,0 +1,1 @@
+SELECT t.* FROM title AS t WHERE t.primaryTitle = 'The Lord of the Rings: The Fellowship of the Ring'

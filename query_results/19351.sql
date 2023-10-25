@@ -1,0 +1,1 @@
+SELECT * FROM title_ratings t INNER JOIN title_crew c ON t.titleID = c.titleID WHERE ((c.job LIKE 'Director' OR c.job LIKE 'Writer') AND t.averageRating >= 7)

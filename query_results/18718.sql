@@ -1,0 +1,1 @@
+SELECT DISTINCT tc.* FROM titles AS t JOIN casts as c ON t.titleID = c.movieID AND c.castRole LIKE "%actress%" ORDER BY rating DESC LIMIT 5

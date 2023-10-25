@@ -1,0 +1,1 @@
+SELECT * FROM titles WHERE genre = 'Comedy' AND year BETWEEN 1970 AND NOW() - RANK () OVER(PARTITION BY user_id ORDER BY rating DESC)

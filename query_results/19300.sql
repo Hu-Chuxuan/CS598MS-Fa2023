@@ -1,0 +1,1 @@
+SELECT t.* FROM title_basics AS t INNER JOIN userInput ON t.titleType = "Movie" AND t.primaryTitle LIKE "%Gene%" ORDER BY rating DESC LIMIT 1

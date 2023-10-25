@@ -1,0 +1,1 @@
+SELECT * FROM  title WHERE tconst LIKE '%US%' OR titleType = 'Drama' AND titleType <> '' ORDER BY avg(averageRating)/numVOTES DESC LIMIT 5

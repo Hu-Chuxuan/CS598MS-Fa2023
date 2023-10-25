@@ -1,0 +1,1 @@
+SELECT t.* FROM imdb.title AS t WHERE t.genre = 'Disaster' AND t.primaryTitle IN ('The Perfect Storm','Armageddon') OR t.name_basics.birthYear BETWEEN 1960 AND 2000

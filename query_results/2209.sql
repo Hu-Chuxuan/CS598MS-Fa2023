@@ -1,0 +1,1 @@
+SELECT title_id AS ID FROM title_ratings WHERE user_rating >= 8 AND average_rating > 6

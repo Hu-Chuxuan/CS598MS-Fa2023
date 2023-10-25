@@ -1,0 +1,1 @@
+SELECT * FROM title_ratings WHERE title_type = "comedy" AND avg(rating)>=8

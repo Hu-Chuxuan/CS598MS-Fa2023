@@ -1,0 +1,1 @@
+SELECT movies.* FROM title_ratings AS ratings INNER JOIN title_principals as principal ON rating.title = principal.movie WHERE director IN ('Edgar Wright') AND genre IN ('Action', 'Comedy','Crime','Drama') AND year >= 2016

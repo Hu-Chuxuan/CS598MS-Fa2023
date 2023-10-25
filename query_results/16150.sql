@@ -1,0 +1,1 @@
+SELECT DISTINCT tc.* FROM titles AS tc WHERE tc.titleType = "movie" AND ((tcd.primaryTitle LIKE '%The Terror%' OR tcd.originalTitle LIKE '%The Terror%'))

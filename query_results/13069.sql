@@ -1,0 +1,1 @@
+SELECT * FROM (SELECT tc.*, nr.* from title_basic tb JOIN name_basic nb ON tb.title_type = 'Movie' AND nb.primary_name='Hood') AS tc LEFT OUTER JOIN rating r ON tc.title_id=r.title_id WHERE (r.rating>6) OR ((r.average_rating<7)AND(nr.num_votes>=10)) ORDER BY nr.num_votes DESC LIMIT 2

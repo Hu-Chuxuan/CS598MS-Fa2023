@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE rating >= avg(rating) AND genre IN ('Drama') ORDER BY numvotess DESC LIMIT 6

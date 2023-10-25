@@ -1,0 +1,1 @@
+SELECT tc.* FROM title_recommendation AS tr JOIN title_details AS td ON tr.titleId = td.titleId WHERE td.user_id=? AND ((td.averageRating >?)) OR ((tr.primaryCategory =?))

@@ -1,0 +1,1 @@
+SELECT t.* FROM title_basics AS t JOIN ( SELECT n.* from name_basics as n WHERE n.birthyear > '0' AND n.deathyear < '9999')as n ON n.primaryname = t.titletype LIMIT 6

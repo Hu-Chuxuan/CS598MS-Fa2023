@@ -1,0 +1,1 @@
+SELECT t1.* FROM title_basics AS t1 INNER JOIN title_rating ON t1.titleId = t1.id WHERE t1.isAdult=false AND t1.startYear>=1980

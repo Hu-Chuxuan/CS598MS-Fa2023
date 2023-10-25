@@ -1,0 +1,1 @@
+SELECT * FROM movies WHERE rating > 7 AND director = "Robert Harling" OR writer IN ("Albert S. Ruddy", "Phyllis Nagy") ORDER BY AVERAGE(rating)

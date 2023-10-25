@@ -1,0 +1,1 @@
+SELECT t.* FROM title_basics AS t JOIN title_ratings AS r ON t.titleID = r.titleID WHERE r.averageRating > 7 AND t.startYear BETWEEN 1980 AND 1989

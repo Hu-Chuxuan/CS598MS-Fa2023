@@ -1,0 +1,1 @@
+SELECT * FROM (title_ratings INNER JOIN (name_basics INNER JOIN title_crew ON name_basics.primaryName = title_crew.director)) WHERE ((genre = "Musical") AND (averageRating > 8))

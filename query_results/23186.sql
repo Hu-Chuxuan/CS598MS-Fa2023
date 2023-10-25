@@ -1,0 +1,1 @@
+SELECT * FROM title_rating WHERE (averageRating >= $minimumRating AND rating <= $maximumRating) OR (averageRating > $minimumRating)

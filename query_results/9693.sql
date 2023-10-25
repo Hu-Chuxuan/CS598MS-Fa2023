@@ -1,0 +1,1 @@
+SELECT rating FROM movies WHERE genre='Drama' AND year BETWEEN 1970 AND 1979

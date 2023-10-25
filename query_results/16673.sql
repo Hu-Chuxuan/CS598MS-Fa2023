@@ -1,0 +1,1 @@
+SELECT DISTINCT tconst FROM title_basic WHERE tconst LIKE '%war%' AND titleType ='movie' ORDER BY tconst ASC

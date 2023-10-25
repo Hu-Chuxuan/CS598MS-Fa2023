@@ -1,0 +1,1 @@
+SELECT movies.* FROM titles AS t JOIN ratings AS r ON t.titleID = r.titleID WHERE t.primaryTitle LIKE '%Drama%' AND r.numVotes > 1

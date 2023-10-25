@@ -1,0 +1,1 @@
+SELECT DISTINCT(titleID), castId FROM casting WHERE titleID IN ('1789','1790') AND castId NOT IN ('casting','director')

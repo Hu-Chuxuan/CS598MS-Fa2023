@@ -1,0 +1,3 @@
+SELECT * FROM
+( SELECT t.title_id AS id, t.primaryTitle as title, t.startYear as year, r.rating AS rating, r.numvotes AS votes, cg.* from imdb.title_basic t LEFT JOIN imdb.name_basic n ON t.primaryTitle = n.primaryName left join imdb.title_ratings r on t.imdbID=r.title_id where n.birthyear between 1987 AND 1996 AND n.deathyear > 1996 AND n.primaryProfession LIKE "Actress" )
+INNER JOIN imdb.title_crew tc ON t.title_id = tc.title_id INNER JOIN imdb.title_principles cp ON t.title_id = cp.title_id WHERE ((year BETWEEN 2017-01-01 AND 2017-01-01)) AND ((rating >= 7 OR rating <= 8 OR rating < -1))) AND ((cp.job IN ('Actor') OR cp.job IN ("Crew") OR cp.job IN ("Director")))

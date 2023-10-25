@@ -1,0 +1,1 @@
+SELECT t.titleID as ID, t.primaryTitle as Title, r.rating AS Rating FROM title_ratings r JOIN title_basic t ON r.averageRating = t.primaryTitle WHERE t.isAdult == false AND t.startYear <= 1970

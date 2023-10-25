@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE genre = "animation" AND rating > 8

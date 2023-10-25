@@ -1,0 +1,1 @@
+SELECT t.* FROM movies AS m JOIN casts as c ON m.id = c.movie_id WHERE m.genre IN ('Drama') AND c.category='Lead' ORDER BY rating DESC LIMIT 5 OFFSET 1

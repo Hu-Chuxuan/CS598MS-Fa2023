@@ -1,0 +1,1 @@
+SELECT * FROM title_ratings WHERE rating >=.9 AND genre = "Action" OR SELECT * from title_crew WHERE director IN ('Joe Russo','Anthony Russo') OR SELECT * FROM name_basics WHERE birthYear <= 1965

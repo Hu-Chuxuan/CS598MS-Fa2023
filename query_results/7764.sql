@@ -1,0 +1,1 @@
+SELECT tc.* FROM TitleCrew as tc JOIN TitlePrincipal as p ON tc.directors = p.characters WHERE (tc.primaryName LIKE '%Margot Robbie%' OR tc.primaryName LIKE '%Jared Leto%') AND (p.job LIKE '%Actor%' OR p.job LIKE '%Director%) ORDER BY tc.startYear DESC

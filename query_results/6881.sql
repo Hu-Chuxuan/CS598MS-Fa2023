@@ -1,0 +1,1 @@
+SELECT * FROM `title` WHERE `title`.primaryTitle = "Alien" AND (`title`.`category` LIKE '%Horror%') OR (`title`.`genre` LIKE '%Horror%')

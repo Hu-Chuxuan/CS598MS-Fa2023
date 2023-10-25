@@ -1,0 +1,1 @@
+SELECT * FROM title_principals WHERE job = "actor" AND categories LIKE "%comedy%" OR categories LIKE "%thrillers%"

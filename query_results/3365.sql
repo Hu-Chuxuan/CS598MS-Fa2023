@@ -1,0 +1,1 @@
+SELECT titleID AS "movie ID", title_type as "Movie Type" FROM title_basics WHERE title_type = “all”

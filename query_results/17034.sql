@@ -1,0 +1,1 @@
+SELECT t.* FROM title_basics AS t JOIN title_rating AS r ON t.title_id = r.title_id WHERE t.startYear > 1800 AND t.endYear < 2010

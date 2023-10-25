@@ -1,0 +1,1 @@
+SELECT t.* FROM title_ratings r JOIN name_basics n ON r.primaryMovie = n.titleID WHERE r.numVotes > 1 AND r.averageRating >= 7/10

@@ -1,0 +1,1 @@
+SELECT DISTINCT title_basics.* FROM title_basics WHERE tconst = 'title_basics' AND titleType IS NOT NULL AND titleType <> '' ORDER BY titleType ASC

@@ -1,0 +1,1 @@
+SELECT * FROM (title_ratings JOIN title_crew ON title_ratings.tconst = title_crew.tconst) WHERE rating >.8 AND genre IN ('Crime', 'Drama') GROUP BY tconst ORDER BY rating DESC LIMIT 3

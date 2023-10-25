@@ -1,0 +1,1 @@
+SELECT * FROM ( SELECT tb.*, tr.*, nr.*, tc.*, np.*, cr.*, cp.*, tp.* WHERE tb.titleType = 'Movie' AND ((tb.startYear <=?) OR (tb.endYear >=?)) ) AS t WHERE t.genre IN ('Action', 'Adventure') AND EXISTS(SELECT 1 from np where t.name_id=np.name_id)

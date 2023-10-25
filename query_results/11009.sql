@@ -1,0 +1,2 @@
+SELECT tc.* FROM title_basics AS tb INNER JOIN
+( SELECT tc.titleType as genre, COUNT(*) as totalVoteCounts FROM title_ratings as tr GROUP BY tr.genre ) as r ON tb.isAdult = 'false' AND tb.startYear > DATEADD(year,-20,getdate()) AND tb.endYear < getdate() - DATEDIFF(day,'1/1/' + CAST(DATEPART('yyyy', GETDATE())-26 AS VARCHAR),'1/1/'+CAST(GETDATE()+1 AS VARCHAR)) AND r.totalVoteCounts >= 50

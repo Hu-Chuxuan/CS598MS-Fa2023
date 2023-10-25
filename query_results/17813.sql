@@ -1,0 +1,1 @@
+SELECT * FROM table WHERE tconst = "title" AND (primaryTitle LIKE '%the martian%' OR primaryTitle LIKE '%interstella%') AND ((startYear >= 2010 AND startYear <= 2020)) ORDER BY rating DESC LIMIT 10

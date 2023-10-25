@@ -1,0 +1,1 @@
+SELECT t.* FROM (title_basics AS t JOIN genre ON t.genre = genre.id) WHERE ((t.startyear >= '1970' AND t.endyear <= '1980') OR (t.startyear >='1980')) ORDER BY rating DESC LIMIT 6

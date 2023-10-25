@@ -1,0 +1,1 @@
+SELECT t.* FROM movies AS m JOIN casts AS c ON m.imdbID = c.movieId WHERE m.titleType IN ('feature film') AND m.startYear BETWEEN 1960 AND 2000

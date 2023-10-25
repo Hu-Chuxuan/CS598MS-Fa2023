@@ -1,0 +1,1 @@
+SELECT DISTINCT tb.* FROM title_basic AS tb INNER JOIN title_rating as tr ON tb.titleId = tr.titleId WHERE genre IN ('Horror') AND (tr.averageRating > 6 OR tr.numVotes < 1)

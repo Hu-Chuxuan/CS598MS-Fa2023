@@ -1,0 +1,1 @@
+SELECT t.* FROM title_basics AS t WHERE t.primaryTitle =? AND t.isAdult = FALSE

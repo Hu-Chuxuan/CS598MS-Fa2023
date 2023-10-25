@@ -1,0 +1,1 @@
+SELECT t.* FROM title_basics AS t JOIN title_rating ON t.title_id = title_rating.title_id WHERE title_type IN ('movie') AND num_votes > 1

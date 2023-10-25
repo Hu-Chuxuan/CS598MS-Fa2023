@@ -1,0 +1,1 @@
+SELECT DISTINCT tb.* FROM movies AS m JOIN titles AS t ON m.titleID = t.id WHERE (m.releaseDate BETWEEN "1970-01-01" AND "2010-01-01") OR (m.year BETWEEN "1970" AND "2010")

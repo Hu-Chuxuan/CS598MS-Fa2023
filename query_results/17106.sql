@@ -1,0 +1,1 @@
+SELECT * FROM title_rating WHERE (((titleType='Comedy') AND (averageRating>6)) OR ((titleType IN ('Action','Horror'))))

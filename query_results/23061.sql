@@ -1,0 +1,1 @@
+SELECT t.* FROM titles AS t JOIN name_basics ON t.titleID = name_basic.primaryTitle WHERE nconst LIKE '%climbing%' AND nconst NOT LIKE '%Himalaya%'

@@ -1,0 +1,1 @@
+SELECT * FROM (SELECT tc.*, nr.*, tb.*, nb.*, c.* FROM title_basic AS tc INNER JOIN title_rating as tr ON(tr.title_id = tc.title_id), name_basic as nb, cast as c WHERE c.job LIKE '%director%' OR c.job LIKE'%writer%' AND c.category='actor') AS q WHERE c.job LIKE "%actor%" ORDER BY q.nr DESC LIMIT 5

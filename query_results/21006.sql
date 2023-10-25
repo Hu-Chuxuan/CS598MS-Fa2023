@@ -1,0 +1,1 @@
+SELECT DISTINCT t.* FROM title_basic AS t JOIN (SELECT DISTINCT * FROM title_rating WHERE titleType = 'Movie') R ON t.titleType = R.titleType AND t.titleId = R.titleId

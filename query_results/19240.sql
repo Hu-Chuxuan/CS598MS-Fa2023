@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE titleType = "Drama" AND titleType NOT IN ('Documentary','Horror') AND ((startYear > 1970 OR startYear < 2000)) AND ((endYear <= 1970 OR endYear >= 2000))

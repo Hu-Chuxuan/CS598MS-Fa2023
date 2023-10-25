@@ -1,0 +1,1 @@
+SELECT * FROM title_rating WHERE avg(rating) >.6

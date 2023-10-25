@@ -1,0 +1,1 @@
+SELECT t.* FROM titles AS t INNER JOIN rating_titles RT ON t.titleID = RT.titleID AND RT.userID = '769' ORDER BY RT.rating DESC LIMIT 5

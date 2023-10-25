@@ -1,0 +1,1 @@
+SELECT t.title_type AS Movie Type, r.average_rating as Average Rating from (select * FROM rating_count where userID = '[user ID]') as r INNER JOIN title_ratings t ON r.numvotes = t.numvotes AND r.movieid=t.movieid WHERE t.isadult='false'

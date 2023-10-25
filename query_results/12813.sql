@@ -1,0 +1,1 @@
+SELECT * FROM movies WHERE genre LIKE '%comedy%' OR genre LIKE '%drama%' AND director ='Tim Burton'

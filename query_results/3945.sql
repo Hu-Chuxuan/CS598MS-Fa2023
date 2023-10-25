@@ -1,0 +1,1 @@
+SELECT DISTINCT tb.* FROM title_basics AS tb INNER JOIN (title_rating AS tr ON tr.movieID = tb.imdbID AND tb.isAdult=0 WHERE tr.averageRATING >= 7)

@@ -1,0 +1,1 @@
+SELECT * FROM ( SELECT tconst, PRIMARYNAME AS Title, rating, COUNT(*) as NumberOfReviews, COUNT(DISTINCT rating) as AverageRating from title_ratings GROUP BY tconst, PRIMARYNAME ) WHERE Title LIKE '%[your search term here]%' AND TCONST = 'title' HAVING AVERAGE RATING > 7 OR AVERAGE RATING < 4

@@ -1,0 +1,1 @@
+SELECT * FROM table WHERE genre='Animation' AND rating>8

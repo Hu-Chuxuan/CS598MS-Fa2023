@@ -1,0 +1,1 @@
+SELECT * FROM movies WHERE userPreferences LIKE '%mission%' AND genre = 'Action' ORDER BY rating DESC LIMIT 8

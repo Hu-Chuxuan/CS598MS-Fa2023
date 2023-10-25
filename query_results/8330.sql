@@ -1,0 +1,1 @@
+SELECT DISTINCT t.* FROM movies AS m INNER JOIN genre ON m.genre = genre.id WHERE m.primaryGenre = "Comedy" AND m.startYear >= 2010

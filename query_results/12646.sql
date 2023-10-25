@@ -1,0 +1,1 @@
+SELECT tb.* FROM title_basic as tb JOIN cast_member AS cm ON tb.title_id = cm.movie_id AND cm.actor_name LIKE '%Anthony%' OR actor_name LIKE '%Jerome%' OR actor_name LIKE '%George%' ORDER BY rating DESC LIMIT 5

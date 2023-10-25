@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE averageRating >= 7 AND genre = "Horror" OR averageRating < 6

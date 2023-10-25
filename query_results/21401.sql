@@ -1,0 +1,1 @@
+SELECT * FROM titles WHERE titleType = "Movie" AND director IN ('Danny De Vito') OR writer IN('Danny De Vito')

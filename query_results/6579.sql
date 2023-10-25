@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE tconst IN ('titleType','primaryTitle') AND primaryTitle LIKE '%sci%' OR tconst = 'isAdult'

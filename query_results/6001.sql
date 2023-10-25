@@ -1,0 +1,1 @@
+SELECT t.* FROM title_basic AS t WHERE CONCAT(title_type,' ',start_year,'-','end_year') LIKE '%' || userInput || "%" AND title_genre IN ('Drama', 'Comedy')

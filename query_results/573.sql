@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE (titleType = "Movie" OR titleType="TV") AND (startYear BETWEEN 1960 AND 2017)

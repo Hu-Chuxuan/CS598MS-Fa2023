@@ -1,0 +1,1 @@
+SELECT t.* FROM (title_basics AS t JOIN cast AS c ON t.primaryActor = c.name) WHERE t.isAdult = '0' AND t.startYear > '1967-08-28' AND t.endYear < '2020-03-06'

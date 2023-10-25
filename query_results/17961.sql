@@ -1,0 +1,1 @@
+SELECT tb.* FROM title_basic AS tb WHERE tb.genre = "Dancing" AND ((tb.startyear <=? )AND( tb.endyear >=?)) ORDER BY rating DESC LIMIT?

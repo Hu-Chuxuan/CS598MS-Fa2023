@@ -1,0 +1,1 @@
+SELECT * FROM title_basic WHERE titleType = "movie" AND (genre IN ('superhero') OR genre IS NULL)

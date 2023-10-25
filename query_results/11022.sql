@@ -1,0 +1,1 @@
+SELECT t.* FROM movies AS m INNER JOIN cast_members AS c ON(m.titleID = c.movieID AND c.castMemberCategory = 'Principal Cast') WHERE m.primaryTitle LIKE '%Silence%' ORDER BY m.startYear DESC LIMIT 0, 6

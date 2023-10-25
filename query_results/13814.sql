@@ -1,0 +1,1 @@
+SELECT tc.* FROM imdb.title_basics AS tb INNER JOIN imdb.name_basics as nb ON nb.primaryName = tb.originalTitle WHERE nb.category='musical' AND tb.startYear BETWEEN '1978-06-09' AND '1978-06-09'

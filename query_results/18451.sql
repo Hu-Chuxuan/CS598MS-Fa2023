@@ -1,0 +1,1 @@
+SELECT t1.* FROM Title_Basics AS t1 INNER JOIN Name_Basic AS n ON(t1.titleId = n.titleId)

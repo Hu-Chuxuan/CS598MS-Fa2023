@@ -1,0 +1,1 @@
+SELECT t.* FROM title AS t JOIN rating AS r ON t.titleID = r.movieID WHERE r.userID IN ('$userId') AND ((r.averageRating >= $minimumRating OR r.numVotes > $minimumNumberOfReviews)) ORDER BY r.avgRatng DESC LIMIT $numberOfResults

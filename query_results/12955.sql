@@ -1,0 +1,1 @@
+SELECT movies.* FROM movies WHERE rating > 8 AND genre = 'adventure' ORDER BY rating DESC LIMIT 6

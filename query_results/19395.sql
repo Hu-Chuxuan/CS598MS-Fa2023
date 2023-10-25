@@ -1,0 +1,1 @@
+SELECT * FROM movies WHERE rating >.7 AND length < 2h

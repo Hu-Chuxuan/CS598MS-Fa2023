@@ -1,0 +1,1 @@
+SELECT t.* FROM imdb.title AS t INNER JOIN imdb.name AS n ON t.primaryTitle = n.titleID WHERE t.genre IN ('Comedy') AND NOT EXISTS( SELECT * from movies WHERE movies.rating >= rating) ORDER BY t.startYear DESC LIMIT 6

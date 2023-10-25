@@ -1,0 +1,1 @@
+SELECT t.* FROM (title_basic WHERE (((startYear >=? AND startYear <=?)) OR ((endYear >=? AND endYear <=?))) UNION ALL SELECT rating_basic WHERE (((averageRating >? AND averageRating <?)) OR ((numvotes >? AND numvotes <?)))) JOIN crew ON title_basic.tconst = crew.tconst JOIN principal ON title_basic.primaryTitle = principal.nconst

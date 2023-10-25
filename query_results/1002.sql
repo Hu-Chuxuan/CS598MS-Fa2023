@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE rating >= 7 AND genre = "Science Fiction" ORDER BY RANDOM() LIMIT 6

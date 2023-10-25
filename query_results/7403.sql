@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE title LIKE %s AND NOT EXISTS ( SELECT * FROM rating WHERE rating.movieID=title.id AND rating.userID=%i ) ORDER BY avgRATING DESC LIMIT %d

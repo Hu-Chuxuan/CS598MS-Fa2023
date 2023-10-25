@@ -1,0 +1,1 @@
+SELECT * FROM title_basic WHERE startYear >= :start AND endYear <= :end

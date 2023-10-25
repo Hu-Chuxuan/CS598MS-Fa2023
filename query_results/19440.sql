@@ -1,0 +1,1 @@
+SELECT * FROM ( SELECT tb.*, nc.*, c.* FROM title_basic AS tb JOIN name_basic AS nc ON nc.primaryName = tb.titleType JOIN cast AS c WHERE ((tb.isAdult = 'false') AND (nc.category='Actress')) ORDER BY c.job) AS T GROUP by T.titleType, T.averageRating LIMIT 8

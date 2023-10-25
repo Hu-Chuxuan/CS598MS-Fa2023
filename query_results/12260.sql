@@ -1,0 +1,1 @@
+SELECT * FROM `title` WHERE genre='Action' AND rating>8

@@ -1,0 +1,1 @@
+SELECT * FROM movie WHERE rating > 7 AND director = 'John Musker' OR writer='Chris Williams'

@@ -1,0 +1,1 @@
+SELECT t.* FROM movie AS m JOIN genre g ON m.genreID = g.genreID WHERE m.title LIKE '%runway%' AND NOT EXISTS( SELECT * from rating r where r.movieID = m.id ) GROUP BY m.primaryTitle HAVING COUNT(*) > 1

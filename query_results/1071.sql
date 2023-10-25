@@ -1,0 +1,1 @@
+SELECT * FROM tconst WHERE titleType = “Action” AND director IN (SELECT director FROM title_director WHERE movie = ‘The Lord Of The Ring’ OR movie LIKE ‘%LordOfTheRing%' )AND writer NOT NULL

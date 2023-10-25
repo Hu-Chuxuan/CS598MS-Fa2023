@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE title.titleType = "movie" AND title.isAdult IN ('false') AND title.startYear BETWEEN 1970 AND 1999 ORDER BY rating DESC LIMIT 1

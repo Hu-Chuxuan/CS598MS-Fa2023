@@ -1,0 +1,1 @@
+SELECT t.* FROM title_ratings AS r JOIN name_basics AS b ON r.averageRating >= 7 WHERE r.numVotes > 6 AND r.primaryTitle IN ('Caddyshack') OR r.titleType = 'MOVIES' AND r.genre LIKE '%comedy%' AND r.startYear < 1980

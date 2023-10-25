@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE rating > 8 AND genre = "Drama" OR genre = "Action"

@@ -1,0 +1,1 @@
+SELECT movies.* FROM title_principals AS p INNER JOIN title_crew AS c ON c.id = p.directorID AND p.category IN ('d','a') OR p.job='actor' WHERE c.id=1 AND p.primaryProfession LIKE '%Actor%' ORDER BY rating DESC LIMIT 5 OFFSET 6

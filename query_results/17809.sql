@@ -1,0 +1,1 @@
+SELECT * FROM imdb.title_rating WHERE averageRATING > '6' AND titleType = "movie" OR SELECT * FROM imdb.name_basic WHERE BIRTHYEAR >= '1985'

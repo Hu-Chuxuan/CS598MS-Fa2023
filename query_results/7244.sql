@@ -1,0 +1,1 @@
+SELECT DISTINCT tb.* FROM TITLE_BASICS AS tb WHERE tb.titleType='movie' AND NOT EXISTS(SELECT * FROM TITLE_CREW WHERE tb.primaryName = 'director') OR EXISTS(SELECT * FROM TITLES_PRINCIPALS WHERE tb.category LIKE '%actress%' OR tb.job LIKE '%actor%')

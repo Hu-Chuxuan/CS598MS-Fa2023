@@ -1,0 +1,1 @@
+SELECT t.* FROM titles AS t JOIN name_basics as n ON t.primaryName = n.primaryName WHERE n.birthYear >= '1987' AND n.deathYear <= '2000'

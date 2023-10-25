@@ -1,0 +1,2 @@
+SELECT * FROM (SELECT t.titleId AS 'Movie Id', r.rating AS Rating, nc.*, tc.*, c.*, p.* WHERE ((t.titleType ='movie') AND (r.averageRating >?)) OR (nc.category IN ('Horror')) OR (tc.director LIKE '%Joss Whedon%' OR tc.writer LIKE '%Drew Goddard%'))
+AS MovieDetails JOIN title_ratings r ON(r.titleId=m.movieId) JOIN name_basics nb ON((nb.primaryName='Anthony Perkins' AND nb.ordering<10))

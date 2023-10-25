@@ -1,0 +1,1 @@
+SELECT t.titleID as MovieID, nc.nameID AS NameID FROM title_crew t JOIN name_basics n ON t.director = n.primaryName WHERE n.category='Comedy' AND t.job='Director'

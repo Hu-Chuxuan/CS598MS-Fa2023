@@ -1,0 +1,1 @@
+SELECT title_id FROM imdb.title WHERE rating >= avg(rating)

@@ -1,0 +1,1 @@
+SELECT t.* FROM title_ratings AS r INNER JOIN title_basics AS b ON r.title = b.title WHERE r.numVotes > 1 AND ((b.genre IN ('Horror','Drama') OR (r.averageRating >= 3))) ORDER BY r.avgRatng DESC

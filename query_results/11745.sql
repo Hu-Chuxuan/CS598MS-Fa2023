@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE title_type = "movie" AND rating >.7 AND runtime < 120

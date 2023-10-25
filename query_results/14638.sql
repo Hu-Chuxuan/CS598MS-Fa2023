@@ -1,0 +1,1 @@
+SELECT * FROM title_basics WHERE tconst = "TEEN" AND (isAdult = false OR isAdult IS NULL)

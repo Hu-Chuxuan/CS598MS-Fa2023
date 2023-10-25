@@ -1,0 +1,1 @@
+SELECT DISTINCT movies.* FROM movies WHERE ((movies.titleType = 'Feature Film') AND (movies.genres LIKE '%Drama%')) OR (movies.primaryProfession IN ('Actor','Director'))

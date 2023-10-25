@@ -1,0 +1,1 @@
+SELECT * FROM imdb WHERE userPreference LIKE '%Bill Murrey%' AND rating >=.7

@@ -1,0 +1,1 @@
+SELECT tb.* FROM title_basic as tb INNER JOIN title_rating as tr ON tb.titleID =tr.titleID AND tr.userID=? WHERE tr.averageRating > '8' ORDER BY rating DESC LIMIT 3

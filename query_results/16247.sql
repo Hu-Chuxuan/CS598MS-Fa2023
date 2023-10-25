@@ -1,0 +1,1 @@
+SELECT DISTINCT t.titleId FROM title AS t WHERE t.genre IN ('Drama', 'Comedy') AND NOT EXISTS( SELECT * FROM ratings r JOIN titles t ON r.titleID = t.titleId WHERE r.userid = $userInput AND r.rating > 7)

@@ -1,0 +1,1 @@
+SELECT * FROM table WHERE user_preferences = "funny" AND genre IN ('comedy', 'drama') ORDER BY rating DESC LIMIT 6

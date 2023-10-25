@@ -1,0 +1,1 @@
+SELECT * FROM title_recommendation WHERE userInput = 'Bill Murray' AND userPreferneceHistory LIKE '%(2003)' ORDER BY rating DESC LIMIT 6

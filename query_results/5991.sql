@@ -1,0 +1,1 @@
+SELECT * FROM title_basic WHERE tconst = "movie" AND ((startyear < 1980 OR startyear > 2016)) AND (endyear >= 1970 AND endyear <= 2016)

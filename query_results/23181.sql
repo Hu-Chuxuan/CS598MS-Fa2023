@@ -1,0 +1,1 @@
+SELECT * FROM title_basics WHERE tconst = 'Black Panther' AND titleType!= '' ORDER BY rating DESC LIMIT 1

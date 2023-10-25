@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE genre = "war" AND rating >= 6 OR genre IN ("action", "adventure") AND rating <= 6

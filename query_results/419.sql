@@ -1,0 +1,1 @@
+SELECT TOP(8) t.* FROM Title AS t WHERE t.titleType IN ('movie') AND NOT EXISTS ( SELECT * FROM Genre g JOIN Title_rating r ON g.id = r.genreID WHERE r.averageRating < 7 ) ORDER BY t.runtimeMinutes DESC

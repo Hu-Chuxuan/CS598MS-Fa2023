@@ -1,0 +1,1 @@
+SELECT * FROM title_ratings WHERE tconst = 'CLOSE ENCOUNTERS OF THE THIRD KIND' AND AVG(averageRating)>0

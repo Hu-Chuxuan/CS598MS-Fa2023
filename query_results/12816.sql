@@ -1,0 +1,1 @@
+SELECT * FROM `title` WHERE `genre` IN ('Drama') AND (`startyear`) > 1990

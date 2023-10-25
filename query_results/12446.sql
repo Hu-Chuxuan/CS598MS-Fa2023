@@ -1,0 +1,1 @@
+SELECT t.* FROM title_basics AS t INNER JOIN (title_ratings AS r) ON t.tconst = r.tconst WHERE t.isAdult=0 AND t.startyear BETWEEN 2019 AND 2020 ORDER BY avg(r.averagerating)

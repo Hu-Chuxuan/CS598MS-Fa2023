@@ -1,0 +1,1 @@
+SELECT t.* FROM title AS t INNER JOIN name_basics ON t.title_id = name_basics.nameID WHERE t.genre LIKE '%Action%' AND t.isAdult = false

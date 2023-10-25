@@ -1,0 +1,1 @@
+SELECT * FROM title_basics WHERE (titleType = "Action" OR titleType="Super Hero") AND userInput LIKE "%action%" ORDER BY rating DESC LIMIT 8

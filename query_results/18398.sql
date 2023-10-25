@@ -1,0 +1,1 @@
+SELECT t.* FROM title AS t INNER JOIN ( SELECT DISTINCT ON(titleType) titleType, primaryTitle, rating AverageRatings, numVotes FROM title WHERE isAdult = '0') as t1 ON ((t.primaryTitle=t1.primaryTitle AND t.startYear>=t1.startYear AND t.endYear<=t1.endYear)) OR ((t.rating >= t1.AverageRatings/2 )AND t.numvotes>0)

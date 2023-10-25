@@ -1,0 +1,1 @@
+SELECT * FROM table where column = value

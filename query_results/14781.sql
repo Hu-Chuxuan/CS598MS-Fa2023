@@ -1,0 +1,1 @@
+SELECT t.* FROM titles AS t INNER JOIN rating AS r ON t.titleId = r.titleId AND r.userID =? WHERE (r.rating >? OR r.rating <?)

@@ -1,0 +1,1 @@
+SELECT DISTINCT t.* FROM title AS t JOIN cast ON t.id = cast.title_id WHERE t.primaryProfession LIKE "actress" AND t.genre IN ("Horror", "Drama") ORDER BY rating DESC LIMIT 7

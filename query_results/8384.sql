@@ -1,0 +1,1 @@
+SELECT movies.* FROM movies WHERE movies.titleType='Movie' AND movies.isAdult=FALSE

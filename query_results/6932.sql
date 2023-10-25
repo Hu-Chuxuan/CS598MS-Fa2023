@@ -1,0 +1,1 @@
+SELECT tc.* FROM titles AS tc INNER JOIN casts AS c ON tc.titleId = c.titleID AND c.actorId IN ('Bradley Cooper','Jennifer Lawrence') WHERE tc.isAdult IS NOT NULL

@@ -1,0 +1,1 @@
+SELECT * FROM table WHERE (titleType LIKE'movie' OR titleType = 'episode') AND ((startYear > 1960) AND (startYear < 2020)) GROUP BY rating ORDER by avg(rating)

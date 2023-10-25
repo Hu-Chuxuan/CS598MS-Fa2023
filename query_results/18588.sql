@@ -1,0 +1,1 @@
+SELECT * FROM (title_ratings INNER JOIN title_principals ON title_ratings.numVotes = title_principals.rating WHERE rating >= 7 AND rating <= 10)

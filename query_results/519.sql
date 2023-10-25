@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE tconst LIKE '%Will%Farrel%' OR tconst LIKE '%Kevin%Hart%' AND rating >= 8

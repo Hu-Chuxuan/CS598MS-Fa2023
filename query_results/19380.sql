@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE titleType='movie' AND titleType LIKE '%Wedding%' OR titleType LIKE '%Dates%'

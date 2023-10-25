@@ -1,0 +1,1 @@
+SELECT * FROM tconst WHERE tconst = "comedy" AND userPreferredMovie IN ('Harold & Kumar','Hot Tub Time Machine') OR userPreferedMovie LIKE '%Harold%' OR userPreferedMovie LIKE '%Time%' UNION SELECT * FROM title_ratings WHERE rating >=.7

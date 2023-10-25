@@ -1,0 +1,1 @@
+SELECT t1.* FROM title_ratings AS t1 INNER JOIN title_principals as t2 ON t1.titleID = t2.titleID WHERE t2.job!= "Director" AND t1.averageRating >=.9

@@ -1,0 +1,1 @@
+SELECT * FROM table WHERE category = "comedy" OR genre IN ('drama') AND (title_type = "feature film") GROUP BY year(start_year), rating DESC LIMIT 10

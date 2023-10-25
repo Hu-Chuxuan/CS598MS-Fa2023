@@ -1,0 +1,1 @@
+SELECT t.* FROM titles AS t INNER JOIN casts AS c ON t.titleId = c.movieId WHERE t.primaryTitle IN ('I Know What You Did Last Summer') AND t.startYear <= 2000

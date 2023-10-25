@@ -1,0 +1,1 @@
+SELECT * FROM title_recommendation WHERE userInput = "Reservoir Dogs" AND userPreferHistory LIKE "%Reservoir%" ORDER BY rating DESC

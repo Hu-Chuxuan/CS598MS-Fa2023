@@ -1,0 +1,1 @@
+SELECT tb.* FROM title_basic AS tb WHERE tb.titleType ='movie' AND (tb.genre IN ('Action', 'Comedy') OR tb.genre IS NULL) ORDER BY rating DESC LIMIT 10

@@ -1,0 +1,1 @@
+SELECT * FROM `title` WHERE rating >= 8 AND genre LIKE '%comedy%' ORDER BY avg(rating)

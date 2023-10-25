@@ -1,0 +1,1 @@
+SELECT * FROM title_ratings WHERE genre = "Documentary" ORDER BY avgRATING DESC LIMIT 3

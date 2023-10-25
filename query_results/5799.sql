@@ -1,0 +1,1 @@
+SELECT t.* FROM title_basics AS t INNER JOIN name_basics ON (t.titleId = n.titleId AND n.primaryName LIKE "%John%" OR n.birthYear BETWEEN 1968 AND 1989) WHERE ((t.isAdult!= "TRUE") AND (t.startYear >= 1995)) ORDER BY t.averageRating DESC LIMIT 1

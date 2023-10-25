@@ -1,0 +1,1 @@
+SELECT DISTINCT t.* FROM imdb.title AS t WHERE EXISTS( SELECT * FROM imdb.name_basics AS nb WHERE t.id = nb.primaryMovieId AND NOT EXISTS( SELECT * FROM imdb.title_principals AS tp WHERE tp.job IN ('director','writer') OR tp.ordering > 7 ) )

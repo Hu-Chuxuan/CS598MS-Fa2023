@@ -1,0 +1,1 @@
+SELECT t.* FROM title_basic AS t JOIN (title_rating AS r ON r.primaryTitle = t.primaryTitle AND r.averageRating > 6/10),name_basic as n WHERE ((r.numvoters=0 OR r.numvote>8 )AND n.birthyear >= 1950)

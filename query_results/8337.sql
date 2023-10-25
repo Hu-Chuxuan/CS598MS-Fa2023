@@ -1,0 +1,1 @@
+SELECT * FROM title_recommendation WHERE userID = "userInput" AND rating >= "averageRatings"

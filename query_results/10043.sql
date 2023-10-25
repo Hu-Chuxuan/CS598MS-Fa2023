@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE tconst = "movie" AND (titleType="comedy", titleType="drama") AND ((startYear <= 1970 OR startYear > 2020)) AND ((endYear >= 1970 OR endYear < 2020))

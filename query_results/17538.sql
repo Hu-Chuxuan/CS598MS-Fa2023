@@ -1,0 +1,1 @@
+SELECT * FROM (SELECT movies.*, COUNT(movies.) AS ratingCount FROM title_ratings JOIN title_crew ON title_crews.titleId = titles.id AND title_crew.job = "Director" GROUP BY movies.movieId HAVING count >= 2)

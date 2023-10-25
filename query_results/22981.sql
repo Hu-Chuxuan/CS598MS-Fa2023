@@ -1,0 +1,1 @@
+SELECT t.* FROM titles AS t WHERE 1 = 1 AND t.genre IN ('Drama', 'Horror') ORDER BY rating DESC LIMIT 6

@@ -1,0 +1,1 @@
+SELECT tb.* FROM title_basic as tb INNER JOIN title_rating AS tr ON tr.title = tb.id WHERE rating >= 8 AND runtime < 90

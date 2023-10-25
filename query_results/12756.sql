@@ -1,0 +1,1 @@
+SELECT * FROM title_recommendation WHERE userInput LIKE 'action%' AND userPreferencHistory LIKE '%(Suicide Squad  (2016))' OR userInput LIKE '%(Suicide Squad  (2016)))%' ORDER BY rating DESC LIMIT 1

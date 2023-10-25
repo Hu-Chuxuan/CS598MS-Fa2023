@@ -1,0 +1,1 @@
+SELECT DISTINCT t.title_id FROM titles AS t JOIN name_basics as b ON b.primaryName = t.name_id WHERE t.title_type='movie' AND b.birthYear <= 1980

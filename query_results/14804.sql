@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE genre = 'documentary' OR genre = 'drama'

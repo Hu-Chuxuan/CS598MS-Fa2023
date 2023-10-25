@@ -1,0 +1,1 @@
+SELECT t.* FROM title_basics AS t INNER JOIN title_ratings AS r ON t.titleID = r.titleID WHERE r.averageRating >= userInput AND NOT EXISTS( SELECT * FROM title_principals AS p WHERE p.job LIKE '%actor%' ) GROUP BY t.titleID

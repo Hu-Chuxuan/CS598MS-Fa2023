@@ -1,0 +1,1 @@
+SELECT t.* FROM `title` AS t WHERE ((t.`genre` LIKE '%Action%' OR t.`genre` = 'Action') AND (t.`year` BETWEEN '2018' AND '2019')) ORDER BY RAND() LIMIT 1

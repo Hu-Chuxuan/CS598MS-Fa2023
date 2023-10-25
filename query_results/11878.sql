@@ -1,0 +1,1 @@
+SELECT t.* FROM movies AS m JOIN casts as ca ON m.title_id = ca.movieID WHERE m.isAdult = false AND m.startYEAR > 2006

@@ -1,0 +1,1 @@
+SELECT t.titleID AS MovieId,t.titleType as Type, t.primaryTitle as Title, t.originalTitle as OriginalTitle, t.isAdult as IsAdult, t.startYear as StartYear, t.endYear as EndYear, t.runtimeMinutes as RuntimeMinutes, g.genreName as Genre FROM title_basics t INNER JOIN genre g ON t.genre IN(g.genreID)

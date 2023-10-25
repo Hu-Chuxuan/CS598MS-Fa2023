@@ -1,0 +1,1 @@
+SELECT * FROM titlerecommendation WHERE primaryProfession = "Actor" AND startYear > 1870 ORDER BY rating DESC LIMIT 10

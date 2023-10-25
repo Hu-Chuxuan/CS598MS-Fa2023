@@ -1,0 +1,1 @@
+SELECT DISTINCT * FROM title_recommendation WHERE rating > 6

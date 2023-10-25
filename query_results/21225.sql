@@ -1,0 +1,1 @@
+SELECT * FROM title_ratings t JOIN cast_principal c ON t.titleId = c.titleId WHERE t.averageRating >.7 AND t.numVotes >= 1

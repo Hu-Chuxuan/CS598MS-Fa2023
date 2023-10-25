@@ -1,0 +1,1 @@
+SELECT DISTINCT * FROM rating WHERE title_type = 'action' AND genre IN ('comedy', 'drama') ORDER BY avg(rating)

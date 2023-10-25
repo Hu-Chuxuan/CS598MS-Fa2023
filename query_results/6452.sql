@@ -1,0 +1,1 @@
+SELECT * FROM table WHERE title_type = "Animated" AND userPreferredMovie = "Zootopia"

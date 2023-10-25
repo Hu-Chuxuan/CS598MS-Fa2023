@@ -1,0 +1,1 @@
+SELECT movies.* FROM title_reviews r JOIN title_movies m ON r.movieId = m.id WHERE r.user_rating > 6

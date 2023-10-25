@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE tconst = 'comedy' ORDER BY avgrating DESC LIMIT 0,8

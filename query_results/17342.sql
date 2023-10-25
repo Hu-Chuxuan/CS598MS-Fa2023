@@ -1,0 +1,1 @@
+SELECT DISTINCT(titleType), COUNT(*) AS totalCount FROM `movie` WHERE titleType = "Comedy" AND rating >= 6 GROUP BY titleType ORDER BY totalCount DESC LIMIT 5

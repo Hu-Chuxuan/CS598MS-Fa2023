@@ -1,0 +1,1 @@
+SELECT * FROM TITLE WHERE tconst = "title_basics" AND ((primaryTitle LIKE '%sandra%') OR (originalTitle LIKE '%sandra%'))

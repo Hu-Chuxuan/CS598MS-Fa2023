@@ -1,0 +1,1 @@
+SELECT DISTINCT(title_basics).primaryTitle FROM title_basics WHERE primaryTitle LIKE 'Sound%' AND userInput IN ('%The Greatest Showman') AND genre = 'Musical' GROUP BY primaryTitle HAVING COUNT(*) > 0 ORDER BY rating DESC LIMIT 3

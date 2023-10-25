@@ -1,0 +1,1 @@
+SELECT * FROM 'title_ratings' WHERE ('title_ratings'.averageRating > 7 AND 'name_basics'.primaryName LIKE '%Jesus%') ORDER BY 'rating'.averageRating DESC LIMIT 5

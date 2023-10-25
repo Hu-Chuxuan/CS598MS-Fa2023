@@ -1,0 +1,1 @@
+SELECT * FROM title_basic WHERE title_type = "movie" AND title_genre LIKE '%thriller%' ORDER BY rating DESC LIMIT 5

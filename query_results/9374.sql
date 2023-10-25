@@ -1,0 +1,1 @@
+SELECT t.* FROM title_basics AS t JOIN title_rating as r ON t.titleID = r.titleID WHERE r.averageRATING > 6

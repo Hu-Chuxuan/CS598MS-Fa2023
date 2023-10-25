@@ -1,0 +1,1 @@
+SELECT * FROM rating WHERE tconst = 'title' AND (numVotes >= 8 OR numVotes > 70) ORDER BY avgRatig DESC LIMIT 1

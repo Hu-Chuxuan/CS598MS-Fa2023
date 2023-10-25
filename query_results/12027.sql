@@ -1,0 +1,1 @@
+SELECT * FROM title_ratings WHERE tconst = "title" AND averageRating >= 8

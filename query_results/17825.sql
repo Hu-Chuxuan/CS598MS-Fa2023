@@ -1,0 +1,1 @@
+SELECT tb.* FROM titles AS t INNER JOIN title_ratings r ON t.titleID = r.titleID WHERE r.averageRating >.8 AND NOT EXISTS( SELECT * FROM titles WHERE id!= t.id AND user_rating <=.6)

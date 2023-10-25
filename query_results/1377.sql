@@ -1,0 +1,1 @@
+SELECT * FROM `title_basics` WHERE (title_type = "comedy") AND (`primaryTitle` LIKE '%comed%') ORDER BY `startYear`

@@ -1,0 +1,1 @@
+SELECT tb.* FROM (title_basics AS tb INNER JOIN title_ratings AS tr ON tb.tconst = tr.tconst) INNER JOIN name_basics AS nb ON tb.primaryTitle=nb.primaryName WHERE (tr.numvotes>0 AND tr.averagerating<7)

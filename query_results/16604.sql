@@ -1,0 +1,2 @@
+SELECT * FROM 
+(SELECT r.titleId AS MovieID, tb.rating AS rating, COUNT(*) AS numOfReviews FROM ratings AS r JOIN titles AS t ON tb.movie = r.movie GROUP BY r.movie ORDER BY r.numOfReviews DESC LIMIT 5 OFFSET 0)

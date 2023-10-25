@@ -1,0 +1,1 @@
+SELECT * FROM title_basics WHERE tconst = 'title' AND genre IN ('Science fiction') OR genre IN('Fantasy')

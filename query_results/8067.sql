@@ -1,0 +1,1 @@
+SELECT DISTINCT title_id FROM title WHERE rating >= '7' AND genre IN ('adventure', 'animation') ORDER BY avg(rating)

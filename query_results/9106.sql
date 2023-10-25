@@ -1,0 +1,1 @@
+SELECT * FROM `title` WHERE ((startyear = :startyear OR startyear IS NULL)) AND (endyear >= :endyear)

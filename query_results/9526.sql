@@ -1,0 +1,1 @@
+SELECT t.* FROM title_recommendation AS r JOIN title_basics as b ON r.titleID = b.id AND b.isAdult = true WHERE r.rating > 6

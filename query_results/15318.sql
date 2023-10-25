@@ -1,0 +1,1 @@
+SELECT * FROM title_basics WHERE rating > 7 AND genre = "Drama" ORDER BY avg(rating),numvotes DESC LIMIT 6

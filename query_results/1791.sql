@@ -1,0 +1,1 @@
+SELECT * FROM movies WHERE genre = "psychological thrillers" AND rating > 8

@@ -1,0 +1,1 @@
+SELECT * FROM movies WHERE `title_type` = "feature" AND `startyear` >= 2010

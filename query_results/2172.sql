@@ -1,0 +1,1 @@
+SELECT * FROM movies WHERE title_type='drama' AND 'Dead Poet Society(1989)' IN (genre) ORDER BY avg_rating DESC LIMIT 6

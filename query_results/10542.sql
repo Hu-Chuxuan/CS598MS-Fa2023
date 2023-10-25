@@ -1,0 +1,1 @@
+SELECT * FROM (title_basic WHERE titleType = "Action") INNER JOIN (title_rating WHERE Average Rating >= 7 AND Num Votes > 50) ON TitleId

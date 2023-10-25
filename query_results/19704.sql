@@ -1,0 +1,1 @@
+SELECT * FROM rating WHERE genre = "western" AND userPreferredMovie LIKE '%Few%' OR userPreferredMovie LIKE "%Seven%" ORDER BY vote DESC LIMIT 3

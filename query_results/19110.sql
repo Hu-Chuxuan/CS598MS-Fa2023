@@ -1,0 +1,1 @@
+SELECT * FROM `title` WHERE `genre` LIKE '%thriller%' AND (`rating` >= '7') OR (`rating` <= '8')

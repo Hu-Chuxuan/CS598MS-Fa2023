@@ -1,0 +1,1 @@
+SELECT t.* FROM title AS t INNER JOIN title_ratings as r ON t.titleID = r.titleID WHERE ((r.averageRating >= @minAverage AND r.numVotes > 1)) OR (@genre LIKE '%horror%') OR (@genre LIKE '%comedy%')

@@ -1,0 +1,1 @@
+SELECT title_principals.* FROM title_principals WHERE (job = 'Director') AND (category LIKE '%thrill%')

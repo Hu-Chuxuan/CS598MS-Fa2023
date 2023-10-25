@@ -1,0 +1,1 @@
+SELECT t.* FROM title_basics AS t WHERE t.titleType = "Movie" AND ((t.genre IN ("Drama", "Documentary")) OR (t.runtimeMinutes > 90)) ORDER BY t.startYear DESC

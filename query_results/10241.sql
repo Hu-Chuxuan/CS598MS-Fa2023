@@ -1,0 +1,1 @@
+SELECT tconst AS Title, avg(rating)/numvotes as Average Rating FROM ratings WHERE rating > 7 AND rating < 10 GROUP BY tconst ORDER BY Average Rating DESC LIMIT 10

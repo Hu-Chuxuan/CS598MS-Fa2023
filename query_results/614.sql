@@ -1,0 +1,1 @@
+SELECT DISTINCT t.* FROM title_basics AS t JOIN name_basics ON t.titleType = "movie" AND t.primaryTitle=n.primaryName WHERE t.isAdult!= "TRUE"

@@ -1,0 +1,1 @@
+SELECT t.title_id AS id FROM title_basic t INNER JOIN genre g ON t.genre = g.genre WHERE user_input LIKE '%adventur%' AND t.startYEAR >= 1980

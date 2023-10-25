@@ -1,0 +1,1 @@
+SELECT * FROM table WHERE userInput LIKE '%comedy%' AND rating > 6

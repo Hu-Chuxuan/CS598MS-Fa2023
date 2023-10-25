@@ -1,0 +1,1 @@
+SELECT * FROM title_basics WHERE (startYear <= '1970' AND endYear >= '1980') OR (startYear >='1960' AND endYear < ='1970')

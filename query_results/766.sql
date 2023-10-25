@@ -1,0 +1,1 @@
+SELECT DISTINCT t.* FROM movies AS t WHERE t.titleType = 'Fantasy'

@@ -1,0 +1,1 @@
+SELECT * FROM movie_recommendation WHERE user_preferences LIKE '%50%'

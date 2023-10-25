@@ -1,0 +1,1 @@
+SELECT * FROM movies WHERE userInput LIKE '%horror%' AND userPreferenceHistory LIKE '%%'

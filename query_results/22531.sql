@@ -1,0 +1,1 @@
+SELECT * FROM rating WHERE title_id = 86933 AND user_rating >= '8' OR user_rating <= '7'

@@ -1,0 +1,1 @@
+SELECT t.* FROM title_basics AS t JOIN title_ratings as r ON t.titleID = r.titleID WHERE t.primaryTitle LIKE '%Total%Recall%' AND NOT EXISTS( SELECT * FROM title_basics WHERE titleID IN (select titleID from title_ratings where rating <.7)) GROUP BY t.titleID ORDER by r.numvotes DESC LIMIT 6

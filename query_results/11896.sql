@@ -1,0 +1,1 @@
+SELECT * FROM `title_ratings` WHERE `numvotes` > 1 AND (`averagerating` < 7 OR `averagerating` IS NULL)

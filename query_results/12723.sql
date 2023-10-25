@@ -1,0 +1,1 @@
+SELECT t1.* FROM title_basics AS t1 JOIN title_ratings AS r ON t1.titleId = r.titleID WHERE AVG(r.averageRating)>7 AND t1.isAdult=0 GROUP BY t1.primaryTitle ORDER BY AVG(AVG(r.averageRating)) DESC LIMIT 6

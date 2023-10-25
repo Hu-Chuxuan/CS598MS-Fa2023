@@ -1,0 +1,1 @@
+SELECT t.* FROM title_ratings AS r JOIN title_basics as b ON r.title = b.primaryTitle AND r.averageRating >.7 WHERE (b.genre IN ('Crime')) OR (r.numVotes >= 800)

@@ -1,0 +1,1 @@
+SELECT t.* FROM title AS t JOIN rating AS r ON r.titleId = t.id WHERE (r.rating > 7 AND r.numVotes >= 6)

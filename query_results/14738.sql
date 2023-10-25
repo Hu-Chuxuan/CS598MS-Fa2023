@@ -1,0 +1,1 @@
+SELECT * FROM title_ratings WHERE (title_type = "movie" AND actors IN ('Tom Hanks')) ORDER BY avg_rating DESC LIMIT 3

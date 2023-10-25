@@ -1,0 +1,1 @@
+SELECT t.* FROM title_basics AS t JOIN title_rating ON t.titleId = title_rating.movieId WHERE (t.startYear <= 2000 OR t.endYear >= 2000)

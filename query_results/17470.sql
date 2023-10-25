@@ -1,0 +1,1 @@
+SELECT DISTINCT(titleType), PRIMARY TITLE FROM tconst WHERE titleType ='movie' AND rating >.9

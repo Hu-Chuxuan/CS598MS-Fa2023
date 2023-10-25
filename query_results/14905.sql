@@ -1,0 +1,1 @@
+SELECT * FROM movies WHERE rating > 7 AND startYear < 2010

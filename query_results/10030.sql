@@ -1,0 +1,1 @@
+SELECT tb.* FROM title_basic AS tb JOIN title_rating as tr ON tr.primaryTitle = tb.title_id WHERE ((tb.startYear >= 1940 AND b.endYear <= 1949)) OR ((tr.averageRating > 7))

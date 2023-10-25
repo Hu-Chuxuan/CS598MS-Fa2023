@@ -1,0 +1,1 @@
+SELECT * FROM title_recommendation WHERE userInput = 'I\'m looking to find a recent comedy.' AND userPreferenceHistory LIKE '%A%'

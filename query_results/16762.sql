@@ -1,0 +1,1 @@
+SELECT t.* FROM title AS t JOIN rating ON rating.title = t.id WHERE rating.averageRating > 6 AND genre IN ('comedy') ORDER BY avg(rating)

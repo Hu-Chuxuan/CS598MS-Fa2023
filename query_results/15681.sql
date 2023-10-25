@@ -1,0 +1,1 @@
+SELECT t.* FROM title AS t JOIN title_ratings r ON (r.title_id = t.titleID)

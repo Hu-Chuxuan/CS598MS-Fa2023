@@ -1,0 +1,1 @@
+SELECT tc.* FROM title_basics AS tb INNER JOIN ( SELECT tc.*, RANK() OVER(PARTITION BY tc.titleType ORDER BY avg(rating) DESC ) AS rk FROM title_ratings WHERE rating >= 7 AND userID =? GROUP BY tc.titleType HAVING rk <= 2 ) AS tk ON tk.titleType = tb.titleType

@@ -1,0 +1,1 @@
+SELECT * FROM titles WHERE titleType ='movie' AND originalTitle IN ('Deadpool') OR primaryTitle LIKE '%dead%' GROUP BY rating ORDER BY avg(rating DESC)

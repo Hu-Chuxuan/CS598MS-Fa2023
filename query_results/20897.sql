@@ -1,0 +1,1 @@
+SELECT DISTINCT tb.titleId FROM title_basics AS tb JOIN title_ratings as tr ON tb.titleID = tr.titleId AND tr.averageRating >= 7 WHERE (((tb.genre!= "Documentary") OR (tb.genre IS NULL)) AND ((tr.numVotes > 20))) ORDER BY tr.rating DESC LIMIT 3

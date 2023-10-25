@@ -1,0 +1,1 @@
+SELECT * FROM title_basics WHERE titleType = "Movie" AND ((startYear > 1978 OR startYear < 1960)) ORDER BY rating DESC LIMIT 5

@@ -1,0 +1,1 @@
+SELECT * FROM title_principals WHERE ((characters LIKE '%romance%') OR (job LIKE '%comedy%')) AND NOT EXISTS( SELECT * from user_inputs where title_id = titleID)

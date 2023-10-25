@@ -1,0 +1,1 @@
+SELECT DISTINCT tc.* FROM title_basics AS tb INNER JOIN title_ratings as tr ON tb.titleID = tr.titleID WHERE tr.averageRating >.8 AND ((tb.startYear <=? OR bb.startYear >=?) AND (tb.endYear <=? OR bb.endYear>=?) ) AND ((tr.numvoters>2)) GROUP BY tb.titleID

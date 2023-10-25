@@ -1,0 +1,1 @@
+SELECT DISTINCT t.* FROM title_principals AS t JOIN name_basics ON(t.nconst = nb.primaryName)

@@ -1,0 +1,1 @@
+SELECT t.* FROM title_recommendation AS r INNER JOIN title_ratings AS t ON t.titleID = r.movieID AND r.userID=? WHERE t.isAdult=FALSE ORDER BY rating DESC

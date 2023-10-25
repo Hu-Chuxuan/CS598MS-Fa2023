@@ -1,0 +1,1 @@
+SELECT DISTINCT r.title AS Recommended Movie FROM title_ratings r JOIN name_basics b ON r.primaryTitle = b.primaryName AND r.startYear >= b.birthYear

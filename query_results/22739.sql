@@ -1,0 +1,1 @@
+SELECT t.* FROM title AS t INNER JOIN title_ratings r ON t.titleID = r.titleID WHERE t.primaryTitle LIKE '%Bob%' AND NOT EXISTS(SELECT * FROM rating AS s INNER JOIN user_preferences u ON s.ratingID=u.ratingID WHERE u.userID='1') GROUP BY t ORDER BY count(*) DESC LIMIT 1

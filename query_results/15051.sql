@@ -1,0 +1,1 @@
+SELECT * FROM imdb.title WHERE tconst ='movie' AND (primaryTitle LIKE '%Annihili%' OR primaryTitle LIKE '%Blade%') ORDER BY rating DESC LIMIT 6

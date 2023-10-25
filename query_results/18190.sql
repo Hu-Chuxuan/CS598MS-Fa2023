@@ -1,0 +1,1 @@
+SELECT t.* FROM title AS t INNER JOIN cast AS c ON c.titleID = t.titleID WHERE c.name = "John Candy" AND t.primaryTitle LIKE "%Train%" OR t.originalTitle LIKE "%Train%"

@@ -1,0 +1,1 @@
+SELECT t.* FROM titles AS t JOIN categories c ON t.category = c.category AND t.job IN ('actor','director') WHERE (t.titleType = "Movie" OR t.titleType = "TV Series") GROUP BY t.job ORDER BY count(*) DESC LIMIT 3

@@ -1,0 +1,1 @@
+SELECT * FROM `title` WHERE ((((isAdult = 'True') AND ((startYear >= 1970)) AND ((endYear <= 2020))) OR (((primaryTitle LIKE '%crime%' )AND ((genre like %'%Crime%')))))

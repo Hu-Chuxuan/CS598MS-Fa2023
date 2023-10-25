@@ -1,0 +1,1 @@
+SELECT DISTINCT titleType FROM title_basics WHERE tconst = "Movie" AND userInput LIKE '%animals%' OR userPreferenceHistory LIKE '%animals%'

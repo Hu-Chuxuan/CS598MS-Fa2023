@@ -1,0 +1,1 @@
+SELECT titleId FROM title WHERE rating >= 8 AND genre IN ('Action', 'Comedy') OR length <= 90

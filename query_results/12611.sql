@@ -1,0 +1,1 @@
+SELECT DISTINCT(titleBasics.*), rating_average AS avg_rating FROM title_ratings JOIN title_principals ON rating_average = avg_rating AND (characters = 'Actress' OR characters = 'Director') WHERE titleBasics.isAdult=false

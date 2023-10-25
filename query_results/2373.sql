@@ -1,0 +1,1 @@
+SELECT * FROM rating WHERE ((titleType = "Drama" AND averageRating >= 6)) OR (((titleType <> "Comedy")AND(averageRating <= 6))) ORDER BY averageRating DESC LIMIT 5

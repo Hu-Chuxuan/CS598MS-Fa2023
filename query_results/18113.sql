@@ -1,0 +1,1 @@
+SELECT * FROM (title_ratings AS t INNER JOIN title_principals as p ON p.job = "actress" AND p.characters IN ('Megan Fox')) WHERE rating >= 8

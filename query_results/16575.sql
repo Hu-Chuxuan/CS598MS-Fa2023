@@ -1,0 +1,1 @@
+SELECT t.* FROM title AS t JOIN cast AS c ON t.titleID = c.movieID WHERE t.primaryProfession LIKE 'actor%' AND t.averageRating > 7

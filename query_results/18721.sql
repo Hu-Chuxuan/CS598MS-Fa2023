@@ -1,0 +1,1 @@
+SELECT DISTINCT t.* FROM title AS t JOIN rating AS r ON t.titleID = r.movieID WHERE t.category IN ('comedy') AND NOT EXISTS( SELECT * FROM user_preferences WHERE id = <user ID> AND genre IN ('horror','drama'))

@@ -1,0 +1,1 @@
+SELECT * FROM movies WHERE title_type = "Book" AND user_input LIKE "%book%" ORDER BY rating DESC LIMIT 8

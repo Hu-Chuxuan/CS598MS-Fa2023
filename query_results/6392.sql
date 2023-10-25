@@ -1,0 +1,1 @@
+SELECT DISTINCT t.* FROM title_principals AS t JOIN titles AS s ON t.job = s.title WHERE s.category LIKE '%action%' AND s.characters LIKE '%Keanu Reeves%'

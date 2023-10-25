@@ -1,0 +1,1 @@
+SELECT t.* FROM `title` AS t JOIN `name_basics` AS n ON (t.`primaryTitle` = n.`primaryName`) WHERE ((n.`birthYear` <= $year AND n.`deathYear` >= $year)) AND ($genre IN ('drama', 'thriller'))

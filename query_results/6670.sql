@@ -1,0 +1,1 @@
+SELECT * FROM movie_recommendation(userInput, userPreferences)

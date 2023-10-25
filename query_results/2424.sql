@@ -1,0 +1,1 @@
+SELECT DISTINCT tc.* FROM title_basics AS tb JOIN name_basics ON tb.titleType = "movie" AND tb.primaryName = name_basics.nconst WHERE tb.isAdult=0

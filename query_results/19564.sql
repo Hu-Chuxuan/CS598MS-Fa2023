@@ -1,0 +1,1 @@
+SELECT * FROM imdb.title WHERE title_type = "movie" AND title_genre IN ('action','comedy') ORDER BY rating DESC

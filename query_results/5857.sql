@@ -1,0 +1,1 @@
+SELECT t.* FROM title AS t WHERE NOT EXISTS( SELECT * from title_ratings as r where r.title = t.id AND r.averageRating >.8 ) OR EXISTS( SELECT * from title_ratingas as r where r.title=t.id AND r.averageRating <.6)

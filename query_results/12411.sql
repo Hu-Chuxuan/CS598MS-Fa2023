@@ -1,0 +1,1 @@
+SELECT * FROM tconst WHERE tconst.primaryTitle = "Iron Man" AND tconst.isAdult!= true

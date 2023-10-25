@@ -1,0 +1,1 @@
+SELECT * FROM title_ratings WHERE (titleType = "Family" OR titleType IS NULL)

@@ -1,0 +1,1 @@
+SELECT tc.* FROM titles AS tc INNER JOIN name_basics ON tc.titleId = name_basics.titleId WHERE nb.primaryName LIKE '%Johnny%' AND nb.primaryProfession IN ('actor','director') GROUP BY tc.movieId ORDER BY rating DESC LIMIT 8

@@ -1,0 +1,1 @@
+SELECT * FROM movies WHERE title_type = "historical" AND userPreferedMovies LIKE '%' OR title_genre IN ('Action','Drama') ORDER BY rating DESC LIMIT 6

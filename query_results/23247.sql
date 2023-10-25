@@ -1,0 +1,1 @@
+SELECT t.* FROM title AS t INNER JOIN title_rating as tr ON t.titleId =tr.titleId WHERE t.isAdult=true AND t.primaryTitle IN ('Frozen','Coco') GROUP BY t.titleId ORDER by avg(tr.averageRatig) DESC LIMIT 1

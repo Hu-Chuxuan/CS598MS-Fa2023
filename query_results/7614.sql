@@ -1,0 +1,1 @@
+SELECT t.* FROM `title_basic` AS t INNER JOIN `name_basics` ON(t.`primaryTitle` = n.`primaryName`) WHERE ((n.`birthYear` >= 1980 AND n.`deathYear` <= 2000)) OR (((n.`birthYear` > 1980 AND n.`deathYear` < 2000))) AND t.`isAdult`!= "True" AND ((t.`startYear` BETWEEN 2000 AND 2005) OR (t.`endYear` BETWEEN 2000 AND 2005))

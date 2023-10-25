@@ -1,0 +1,1 @@
+SELECT * FROM movies WHERE user_preferences LIKE '%Jurassic%' OR user_preferences LIKE '%Edge%'

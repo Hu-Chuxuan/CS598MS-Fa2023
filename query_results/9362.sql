@@ -1,0 +1,1 @@
+SELECT DISTINCT(title_id), title_type FROM title WHERE title_type = "movie" AND genre IN ('Action','Comedy') ORDER BY rating DESC LIMIT 3

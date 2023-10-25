@@ -1,0 +1,1 @@
+SELECT * FROM movies WHERE genre = "comedy" AND year BETWEEN 1960-2000

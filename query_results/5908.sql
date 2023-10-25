@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE category='documentary' AND rating > 6

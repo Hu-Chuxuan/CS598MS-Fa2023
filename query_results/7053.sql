@@ -1,0 +1,1 @@
+SELECT * FROM title_basics tb JOIN genre g ON tb.genre = g.id WHERE tb.isadult=true AND tb.startyear>1970

@@ -1,0 +1,1 @@
+SELECT * FROM title_principals WHERE job = "Director" AND category LIKE "%Children%" ORDER BY rating DESC LIMIT 6

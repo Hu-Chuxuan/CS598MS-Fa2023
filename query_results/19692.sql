@@ -1,0 +1,1 @@
+SELECT * FROM `title` WHERE `primaryTitle` LIKE '%Documentaries%' AND (`startYear` BETWEEN '2019' AND '2020') ORDER BY `numVotes` DESC LIMIT 8

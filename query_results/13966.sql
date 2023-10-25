@@ -1,0 +1,1 @@
+SELECT * FROM movies WHERE rating > 6 AND title LIKE '%romantic%' OR genre = 'Drama' ORDER BY RAND() LIMIT 7

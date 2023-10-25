@@ -1,0 +1,1 @@
+SELECT * FROM TITLE_CREW WHERE directors = 'Brad Bird' AND writer IN ('Jonathan Hensleigh','Robert Rodriguez') OR director='Michael Bay'

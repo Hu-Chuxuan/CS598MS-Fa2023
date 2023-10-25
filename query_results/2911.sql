@@ -1,0 +1,1 @@
+SELECT t.* FROM `title` AS t WHERE t.`titleType` = "movie" AND t.startYear > YEAR(NOW()) - 10

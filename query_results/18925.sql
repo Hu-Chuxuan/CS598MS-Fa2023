@@ -1,0 +1,1 @@
+SELECT t.* FROM title_basics AS t JOIN name_basics AS n ON t.titleId = n.movieId WHERE n.primaryName LIKE '%funny%' AND EXISTS( SELECT * from name_basics where genre='Comedy' ) ORDER BY t.startYear DESC

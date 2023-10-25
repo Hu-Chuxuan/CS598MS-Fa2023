@@ -1,0 +1,1 @@
+SELECT * FROM title_ratings WHERE averageRating >? AND titleType = "romance" ORDER BY numVotes DESC LIMIT 6

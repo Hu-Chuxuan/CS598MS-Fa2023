@@ -1,0 +1,1 @@
+SELECT * FROM titles WHERE rating >= 7 AND genre = "Family" ORDER BY avg(rating), numvotes DESC LIMIT 0,6

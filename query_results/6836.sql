@@ -1,0 +1,1 @@
+SELECT t.* FROM titles AS t WHERE (((titleType = "movie") AND ((startYear <= @userInputStartYear)) AND ((endYear >= @userInputEndYear))) OR (@userPreferences LIKE '%@userInput%'))

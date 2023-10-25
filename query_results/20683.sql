@@ -1,0 +1,1 @@
+SELECT rating FROM movies WHERE title_type = "comedy" AND genre IN ('action','drama')

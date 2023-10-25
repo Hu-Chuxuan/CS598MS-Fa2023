@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE title_type = "movie" AND genre IN ('Horror') AND rating >= 6

@@ -1,0 +1,1 @@
+SELECT DISTINCT t.* FROM movies AS m INNER JOIN casts AS c ON m.id = c.movieId AND c.character IN ('Leonard') ORDER BY rating DESC LIMIT 6

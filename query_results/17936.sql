@@ -1,0 +1,1 @@
+SELECT * FROM rating WHERE title_type = 'comedy' AND title_year > 1960 OR title_year < 1960

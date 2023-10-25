@@ -1,0 +1,1 @@
+SELECT * FROM rating WHERE tconst = "The Reader" AND avgrating >.6

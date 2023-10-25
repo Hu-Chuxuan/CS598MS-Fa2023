@@ -1,0 +1,1 @@
+SELECT * FROM movies WHERE rating > 6 AND title LIKE '%blade%' OR year BETWEEN 1975 AND 2020

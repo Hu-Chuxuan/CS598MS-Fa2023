@@ -1,0 +1,1 @@
+SELECT * FROM title_principals WHERE category = "character" AND job IN ('actor') ORDER BY job

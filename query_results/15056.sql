@@ -1,0 +1,1 @@
+SELECT * FROM rating WHERE genre IN ('scifi') AND rating > avg(rating)

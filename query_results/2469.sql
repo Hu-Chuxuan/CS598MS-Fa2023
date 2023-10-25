@@ -1,0 +1,1 @@
+SELECT movies.* FROM movies JOIN title_ratings ON movies.titleID = title_ratings.movieID WHERE title_ratings.averageRating > 6

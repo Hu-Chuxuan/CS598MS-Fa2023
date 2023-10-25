@@ -1,0 +1,1 @@
+SELECT DISTINCT tc.* FROM title_crew AS tc WHERE tc.director IN ('Jon Favreau','Sam Raimi')

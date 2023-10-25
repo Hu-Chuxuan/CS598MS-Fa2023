@@ -1,0 +1,1 @@
+SELECT DISTINCT t.titleID FROM titles AS t INNER JOIN rating AS r ON t.titleID = r.titleID WHERE ((r.rating >= '8') AND ('Action' IN CONCAT(genre))) ORDER BY t.titleID ASC LIMIT 10

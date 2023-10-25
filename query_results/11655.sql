@@ -1,0 +1,1 @@
+SELECT t.titleID FROM titles AS t INNER JOIN title_ratings AS tr ON t.titleID = tr.tconst WHERE avg(tr.averageRating) >? AND ((SELECT count(*) from userpreferences where titleID=t.titleID)>0)

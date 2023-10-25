@@ -1,0 +1,1 @@
+SELECT t.* FROM title AS t INNER JOIN name AS n ON t.primaryName = n.name WHERE n.birthYear >= 1968 AND n.deathYear <= 1978

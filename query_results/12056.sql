@@ -1,0 +1,1 @@
+SELECT * FROM `title` WHERE `title`.`category` = 'actress' AND (`title`.`primaryName` LIKE '%James%') ORDER BY `rating`

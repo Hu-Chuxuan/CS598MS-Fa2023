@@ -1,0 +1,1 @@
+SELECT * FROM imdb.title WHERE rating >= 7 AND runtime < 160

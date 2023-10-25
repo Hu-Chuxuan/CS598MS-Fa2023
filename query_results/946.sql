@@ -1,0 +1,1 @@
+SELECT t.* FROM title AS t WHERE t.isAdult = true AND t.titleType IN ('Movie') AND t.startYear >= :year AND t.endYear <= :year

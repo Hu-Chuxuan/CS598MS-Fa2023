@@ -1,0 +1,1 @@
+SELECT * FROM rating WHERE (((rating.titleType = 'Movie') AND ((averageRating > 6))) OR ((titleType!= 'Movie')))

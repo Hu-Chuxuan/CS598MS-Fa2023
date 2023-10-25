@@ -1,0 +1,1 @@
+SELECT * FROM title_ratings WHERE tconst = "His Girl Friday" AND avg(rating) >.7

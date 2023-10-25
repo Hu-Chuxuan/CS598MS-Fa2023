@@ -1,0 +1,1 @@
+SELECT * FROM title_basic WHERE genre = "Western" OR genre LIKE "%western%" AND rating >= 8

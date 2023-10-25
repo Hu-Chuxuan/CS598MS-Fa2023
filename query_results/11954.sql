@@ -1,0 +1,1 @@
+SELECT DISTINCT(titleType), avg(averageRating) AS rating FROM title_ratings WHERE tconst IN ('Horror') AND genre IN ('Drama','Suspense')

@@ -1,0 +1,1 @@
+SELECT DISTINCT t.* FROM movies AS m JOIN titles AS t ON m.titleID = t.id WHERE ((t.isAdult = TRUE AND m.genre LIKE '%horror%') OR (t.isAdult = FALSE AND m.genre LIKE '%horror%' ))

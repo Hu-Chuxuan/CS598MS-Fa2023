@@ -1,0 +1,1 @@
+SELECT DISTINCT t.* FROM `title_rating` AS t INNER JOIN `name_basic` AS n ON n.`primaryName` = t.`primaryName` WHERE t.`numVotes` >= :minimum AND n.`birthYear` BETWEEN 1800 AND CURRENT_TIMESTAMP GROUP BY t.`primaryName`, t.`averageRating`

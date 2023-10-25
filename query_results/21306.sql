@@ -1,0 +1,1 @@
+SELECT * FROM (title_recommendation JOIN (movie_user_preferences JOIN user_profile ON (movie_user_preferences.userID = profile.id))) WHERE ((title_recommendation.startYear <= 2007 AND title_recommendation.endYear >= 2009)) OR ('Déjà Vu  (2006)' LIKE '%Deja%') OR ('Source Code (2011)' LIKE '%Source%')

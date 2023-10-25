@@ -1,0 +1,2 @@
+SELECT * FROM TITLE_BASICS WHERE ISADULT = false AND GENRES LIKE '%comedy%' OR GENRES LIKE '%romance%'
+UNION ALL SELECT DISTINCT(title_basics).* from title_rating where title_basic in ('hitch','beautyandthebeast') ORDER BY AVERAGE RATING DESC LIMIT 5

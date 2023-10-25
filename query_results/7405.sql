@@ -1,0 +1,1 @@
+SELECT * FROM title_recommendation WHERE tconst='comedy' AND rating >.80 ORDER BY rating DESC LIMIT 10

@@ -1,0 +1,1 @@
+SELECT * FROM title_basic WHERE titleType='movie' AND tconst LIKE '%Horror%' ORDER BY rating DESC LIMIT 5

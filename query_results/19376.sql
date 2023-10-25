@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE type = "Western" AND rating >= 8

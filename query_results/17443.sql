@@ -1,0 +1,1 @@
+SELECT * FROM title_principals WHERE category = "character" AND characters LIKE '%John Belushi%' OR actors LIKE '%John Belushi%'

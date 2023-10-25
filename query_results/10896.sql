@@ -1,0 +1,1 @@
+SELECT * FROM title_recommendation WHERE genre = "action" AND year BETWEEN <start> AND <end>

@@ -1,0 +1,1 @@
+SELECT * FROM rating WHERE genre = 'comedy' AND year > '2000'

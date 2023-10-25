@@ -1,0 +1,1 @@
+SELECT * FROM title_ratings WHERE ((title_type = "movie") AND (average_rating >= 7)) ORDER BY numvoters DESC LIMIT 6

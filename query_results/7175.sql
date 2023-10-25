@@ -1,0 +1,1 @@
+SELECT DISTINCT movies.* FROM movies WHERE user_id = $userID AND rating >= $minimumRatings AND genre IN ('Comedy') ORDER BY rating DESC LIMIT 1

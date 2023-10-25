@@ -1,0 +1,1 @@
+SELECT t.* FROM title AS t WHERE title_type = "Movie" AND (title LIKE "%D%") OR (title LIKE "%G%" OR title LIKE "%H%")

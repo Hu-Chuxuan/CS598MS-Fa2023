@@ -1,0 +1,1 @@
+SELECT * FROM rating WHERE userID =? AND genre IN ('drama','thriller')

@@ -1,0 +1,1 @@
+SELECT * FROM (title_rating INNER JOIN title_principal ON rating = principal AND type = "actress") WHERE ((job = "actor" OR job = "director")) GROUP BY actor ORDER BY rating DESC LIMIT 2

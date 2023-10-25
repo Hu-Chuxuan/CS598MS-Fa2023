@@ -1,0 +1,1 @@
+SELECT * FROM movies WHERE (titleType='feature film') AND ('startYear>=1978')

@@ -1,0 +1,1 @@
+SELECT DISTINCT TITLE FROM title WHERE rating >.6 AND STARCAST LIKE '%Jim Carrey%' OR CAST LIKE "%Robin Williams%" GROUP BY CONCAT(title, year)

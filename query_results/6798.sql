@@ -1,0 +1,1 @@
+SELECT tb.titleType AS Title Type, tc.* FROM title_basics tb INNER JOIN title_ratings tr ON tr.primaryTitle = tb.titleID LEFT OUTER JOIN name_basics tn* ON tn.primaryName=tb.titleID WHERE tb.isAdult='True' AND tr.averageRating>=8 AND tc.genre LIKE '%Action%' LIMIT 5

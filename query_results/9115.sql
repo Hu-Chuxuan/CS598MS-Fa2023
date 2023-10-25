@@ -1,0 +1,2 @@
+SELECT t.* FROM title AS t WHERE 
+(SELECT COUNT(*) FROM rating AS r INNER JOIN user_rating as u ON u.titleId = r.id AND u.user_id IN (SELECT id from user where username='john') GROUP BY t.titleId HAVING SUM(r.averageRating)>=7 )>0

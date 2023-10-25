@@ -1,0 +1,1 @@
+SELECT * FROM title_recommendation WHERE rating >? AND user_rating =?

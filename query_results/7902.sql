@@ -1,0 +1,1 @@
+SELECT movies.* FROM title_ratings AS ratings INNER JOIN title_principals as principal ON titles.titleID = principals.titleID AND rating.movieId=titles.movieId WHERE rating.averageRating >.6 && genre in ('Comedy') ORDER BY rating DESC LIMIT 1

@@ -1,0 +1,1 @@
+SELECT t1.* FROM title_basics AS t1 JOIN title_rating as t2 ON t1.titleID = t2.titleID WHERE avg(t2.averageRating)>=9 AND t1.startYear>='2000'

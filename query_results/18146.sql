@@ -1,0 +1,1 @@
+SELECT DISTINCT tc.* FROM title_basics AS tb INNER JOIN name_basics AS nb ON tb.titleId = nb.primaryMovieId WHERE ((tb.isAdult!= 'true' AND (nb.primaryProfession <> '' OR nb.knownForTitles IS NOT NULL)))

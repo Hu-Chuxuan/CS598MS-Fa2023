@@ -1,0 +1,1 @@
+SELECT t.* FROM (title_basics AS t JOIN title_rating as r ON t.primaryTitle = r.primaryTitle) WHERE (r.numVotes >= 8 AND r.averageRating >.90)

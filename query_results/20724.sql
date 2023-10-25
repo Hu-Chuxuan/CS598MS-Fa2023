@@ -1,0 +1,1 @@
+SELECT * FROM (title_basics INNER JOIN name_basics ON (title_basics.id = name_basics.primaryMovieId)) WHERE (name_basics.birthYear <=? AND name_basics.deathYear >=?)

@@ -1,0 +1,1 @@
+SELECT * FROM rating WHERE user_rating =? AND genre IN ('Horror','Suspense') ORDER BY avg(user_rating)

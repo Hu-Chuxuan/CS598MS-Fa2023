@@ -1,0 +1,1 @@
+SELECT title_name.* FROM title_rating JOIN title_name ON title_rating.titleID = title_name.id WHERE title_name.primaryName LIKE '%[A-Za-z]+%' AND title_rating.averageRATING > 7

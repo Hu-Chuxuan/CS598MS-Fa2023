@@ -1,0 +1,1 @@
+SELECT t.* FROM title_basic AS t WHERE ((t.titleType = "Movie") AND (t.startYear BETWEEN? AND?)) ORDER BY rating DESC LIMIT 5

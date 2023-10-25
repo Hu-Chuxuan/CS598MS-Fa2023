@@ -1,0 +1,1 @@
+SELECT tb.* FROM title_basics AS tb JOIN ( SELECT * FROM title_ratings WHERE title_id = $movieId ) AS tr ON tb.titleID = tr.titleID

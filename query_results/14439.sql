@@ -1,0 +1,1 @@
+SELECT * FROM movie WHERE genre LIKE '%comedy%' AND rating >= 7

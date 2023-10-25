@@ -1,0 +1,1 @@
+SELECT * FROM ( SELECT DISTINCT tc.*, nc.* FROM title_basic AS tb JOIN name_basic as nb ON tb.titleType = nb.primaryName WHERE tb.isAdult IS NULL AND tb.startYEAR <=? AND tb.endyear >=? AND tb.runtimeMINUTES > 75 AND ((tb.genre IN ('Action','Comedy') OR tb.genre='Drama')) ) AS tc LEFT OUTER JOIN cast AS c USING(tconst)

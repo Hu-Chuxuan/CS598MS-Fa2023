@@ -1,0 +1,1 @@
+SELECT * FROM movies WHERE genre = 'Suspense' ORDER BY rating DESC LIMIT 6

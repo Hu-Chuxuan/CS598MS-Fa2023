@@ -1,0 +1,1 @@
+SELECT * FROM movies WHERE rating >=? AND title IN (SELECT title from ratings WHERE userId =?)

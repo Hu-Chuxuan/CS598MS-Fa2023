@@ -1,0 +1,1 @@
+SELECT * FROM movies WHERE titleType = "Psychological Thrillers" AND genre IN ("Crime", "Drama") ORDER BY rating DESC LIMIT 10

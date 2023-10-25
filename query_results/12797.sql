@@ -1,0 +1,1 @@
+SELECT * FROM (title_ratings tcross JOIN title_crew tcrew WHERE tcrew.director = "John Musker" AND tcrew.writer="Chris Williams") LEFT OUTER JOIN title_principals tprincipal ON tcrew.job=tprincipal.category JOIN (name_basics ncross JOIN title_principals princ ON princ.primaryName=ncross.primaryName) USING(nconst)

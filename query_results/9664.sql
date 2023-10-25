@@ -1,0 +1,1 @@
+SELECT * FROM movieRecommendation WHERE userPreferenceHistory LIKE '%' AND rating > '6/10'

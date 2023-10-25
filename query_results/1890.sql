@@ -1,0 +1,1 @@
+SELECT * FROM title_recommendation WHERE userID = $userID AND genre IN ('Comedy') ORDER BY rating DESC LIMIT 3

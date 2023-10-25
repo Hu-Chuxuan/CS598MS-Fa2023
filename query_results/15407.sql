@@ -1,0 +1,1 @@
+SELECT * FROM title_basics WHERE tconst = 'The Dark Knight Rises(2012)' AND (startYear >= 1960 OR startYear <= 2010)

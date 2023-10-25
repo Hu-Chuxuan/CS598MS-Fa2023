@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE tconst = "horror" OR tconst LIKE "%action%" AND rating >= 6

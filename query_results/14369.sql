@@ -1,0 +1,1 @@
+SELECT * FROM `title` WHERE `title`.`primaryTitle` LIKE '%dory%' AND (`title`.genre IN ('Comedy','Animation') OR `title`.`isAdult` = false)

@@ -1,0 +1,1 @@
+SELECT DISTINCT t.title AS title FROM title_basics as t INNER JOIN title_ratings as r ON t.titleID = r.titleID AND r.numVotes > 10 WHERE r.averageRating >= 6.8

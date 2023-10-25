@@ -1,0 +1,1 @@
+SELECT DISTINCT t.* FROM titles AS t INNER JOIN casts ON (casts.titleID = t.id)

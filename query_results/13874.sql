@@ -1,0 +1,1 @@
+SELECT tb.* FROM title_basics AS tb JOIN name_basics as nb ON nb.primaryName = tb.titleType WHERE tb.startYear >? AND tb.endYear <? ORDER BY tb.rating DESC LIMIT 5

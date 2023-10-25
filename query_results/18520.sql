@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE rating >= 7 AND genre IN ('Comedy') ORDER BY RAND() LIMIT 1

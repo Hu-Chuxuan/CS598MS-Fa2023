@@ -1,0 +1,1 @@
+SELECT DISTINCT tc.* FROM titles AS t INNER JOIN title_recommendation AS tr ON tc = t INNER JOIN title_ratings as r ON tr=r WHERE userInput LIKE '%It%' AND NOT EXISTS(SELECT * FROM title_principals WHERE pv IN ('Actor','Actress'))

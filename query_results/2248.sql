@@ -1,0 +1,1 @@
+SELECT DISTINCT tc.* FROM title_basics AS tc INNER JOIN title_ratings AS tr ON tc.titleId = tr.titleId WHERE ((tr.numVotes > 2)) AND ((tc.primaryTitle LIKE '%comedy%')) OR ((tr.averageRating >= 8))

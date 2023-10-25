@@ -1,0 +1,1 @@
+SELECT queries would do by default because they don't know what else needs doing until after everything has been done already anyway

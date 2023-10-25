@@ -1,0 +1,1 @@
+SELECT t.* FROM `title` AS t INNER JOIN `name` AS n ON t.`primaryName` = n.`nconst`

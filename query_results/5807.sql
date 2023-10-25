@@ -1,0 +1,1 @@
+SELECT * FROM title_basics WHERE tconst IN ('comedy') AND nconst NOT LIKE '%dumb%' OR nconst = 'dum%'

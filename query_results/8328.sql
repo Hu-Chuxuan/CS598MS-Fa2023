@@ -1,0 +1,1 @@
+SELECT * FROM title_principals WHERE title_type='Action' AND category IN ('Actor', 'Actress')

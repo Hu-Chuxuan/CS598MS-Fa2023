@@ -1,0 +1,1 @@
+SELECT DISTINCT (title) FROM title WHERE title = 'The Shawshank Redemption' AND rating > 8

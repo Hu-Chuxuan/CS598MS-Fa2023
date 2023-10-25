@@ -1,0 +1,1 @@
+SELECT t.* FROM movies AS m INNER JOIN actors AS a ON m.primaryActors = a.id AND m.titleId IN ('0677110','0000000') ORDER BY a.name ASC

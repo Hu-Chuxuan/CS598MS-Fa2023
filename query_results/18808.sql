@@ -1,0 +1,1 @@
+SELECT t.* FROM movies AS m INNER JOIN actors ON m.actors = actors.id WHERE m.title LIKE '%Bat%' AND actors.name LIKE '%Robin%'

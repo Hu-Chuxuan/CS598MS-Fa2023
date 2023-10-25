@@ -1,0 +1,1 @@
+SELECT * FROM rating WHERE user_id =? AND genre IN ('Action') ORDER BY avg_rating DESC LIMIT 5

@@ -1,0 +1,1 @@
+SELECT tc.* FROM title_basic tb INNER JOIN title_rating tr ON tb.titleId = tr.movieId WHERE tr.numVotes >= 1 AND tr.averageRating BETWEEN 3 and 4

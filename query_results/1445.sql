@@ -1,0 +1,1 @@
+SELECT t.* FROM title_basic AS t INNER JOIN title_rating ON t.titleId = title_rating.titleId WHERE rating > 7 AND userPreferencedMovie IN ('The Taking of Pelham 123  (2009)','End of Watch (2012)')

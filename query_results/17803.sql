@@ -1,0 +1,1 @@
+SELECT * FROM movie WHERE rating >= 7 AND length < 90

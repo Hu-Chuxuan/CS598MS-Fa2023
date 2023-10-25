@@ -1,0 +1,1 @@
+SELECT DISTINCT t.title AS title FROM title_ratings r INNER JOIN title_principals p ON r.movieId = p.id LEFT OUTER JOIN title_crew c ON p.directorId=c.id WHERE r.averageRating >= 7 AND r.numVotes > 10

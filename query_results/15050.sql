@@ -1,0 +1,1 @@
+SELECT * FROM (title_ratings t INNER JOIN name_basics n ON t.primaryTitle = n.titleType WHERE n.birthYear < 1970 AND n.deathYear > 1970 AND n.job IN ('Actor')) INNER JOIN title_principals p ON n.primaryName = p.category INNER JOIN title_crew c ON p.job = c.job GROUP BY title_rating.averageRating HAVING COUNT(*) >= 3 ORDER BY RAND() LIMIT 3

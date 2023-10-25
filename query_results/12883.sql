@@ -1,0 +1,1 @@
+SELECT * FROM 'title_ratings' WHERE rating >= 6 AND title_type = "Movie" AND ('genre' IN('comedy','romance') OR 'primaryProfession'='actor')

@@ -1,0 +1,1 @@
+SELECT * FROM rating WHERE genre = "Action" AND year >= 1960

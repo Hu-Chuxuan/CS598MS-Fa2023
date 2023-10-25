@@ -1,0 +1,1 @@
+SELECT * FROM title_recommendation WHERE (((title_type = "Movie") AND ((start_year BETWEEN '2016' AND '2021')) OR (start_year >= '2017') AND (end_year <= '2021')))

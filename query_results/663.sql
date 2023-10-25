@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE primaryTitle LIKE '%sci%' AND runtimeMinutes >= 90

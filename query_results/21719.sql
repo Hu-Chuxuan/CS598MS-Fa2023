@@ -1,0 +1,1 @@
+SELECT * FROM title_recs WHERE title = 'Wild Things  (1998)' AND rating >.70

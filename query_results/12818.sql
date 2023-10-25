@@ -1,0 +1,1 @@
+SELECT * FROM `title_basic` WHERE (`primaryTitle` LIKE 'The Good...') AND (startYear >= '1900' OR startYEAR <= '2020')

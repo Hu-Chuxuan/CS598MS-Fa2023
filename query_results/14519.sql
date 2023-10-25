@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE (titleType = 'Movie') AND (genre IN ('Action', 'Comedy')) ORDER BY rating DESC LIMIT 0, 6

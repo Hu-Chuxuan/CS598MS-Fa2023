@@ -1,0 +1,1 @@
+SELECT tc.* FROM title_basic AS tb JOIN title_rating AS tr ON tr.title_id = tb.title_id AND tr.user_id=1 WHERE (tb.isadult='false') OR (tr.averagerating>7)

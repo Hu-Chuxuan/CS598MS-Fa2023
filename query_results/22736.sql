@@ -1,0 +1,1 @@
+SELECT t.* FROM title AS t JOIN title_rating AS r ON t.titleID = r.titleID WHERE r.averageRating > 7 AND t.genre IN ('Animated','Comedy') ORDER BY t.runtimeMinutes DESC LIMIT 3

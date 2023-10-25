@@ -1,0 +1,1 @@
+SELECT t.* FROM title AS t WHERE (((titleType = 'Movie') AND ((averageRating >= 8))) OR ((averageRating <= 8)))

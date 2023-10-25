@@ -1,0 +1,1 @@
+SELECT tc.* FROM TITLE_BASICS AS tb WHERE tb.isadult = false AND tb.titleType= "drama"

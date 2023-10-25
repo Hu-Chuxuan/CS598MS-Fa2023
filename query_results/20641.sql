@@ -1,0 +1,1 @@
+SELECT DISTINCT tc.* FROM titles AS t INNER JOIN name_basics AS n ON n.primaryName = t.title_basics.primaryName WHERE t.title_basics.category IN ('actress','director') AND t.title_basic.job LIKE '%actor%' OR t.title_basic.job LIKE '%producer%'

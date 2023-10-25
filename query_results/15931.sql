@@ -1,0 +1,1 @@
+SELECT tb.* FROM titleratings AS tr JOIN title_basics AS tb ON tr.title_id = tb.tconst WHERE tr.numvoters > 7 AND tb.startyear <= 2019

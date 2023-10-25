@@ -1,0 +1,1 @@
+SELECT tc.* FROM title_basics as tb INNER JOIN title_ratings as tr ON tr.title_id = tb.id WHERE tr.rating >= 7 AND tb.primaryTitle IN ('Raiders Of The Lost Ark','Avengers') GROUP BY tb.id HAVING COUNT(*) > 1

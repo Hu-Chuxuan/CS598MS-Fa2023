@@ -1,0 +1,1 @@
+SELECT t.* FROM movies AS m INNER JOIN title_principals AS p ON p.movieId = m.id WHERE p.job LIKE ‘%director’ OR p.job LIKE ‘%writer’ AND EXISTS( SELECT * from genre g WHERE g.genreId in (SELECT DISTINCT genreID FROM genres where genreID IN ('Documentaries') ))

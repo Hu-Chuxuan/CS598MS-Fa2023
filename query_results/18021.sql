@@ -1,0 +1,1 @@
+SELECT DISTINCT t.* FROM (title_basic AS t INNER JOIN title_rating AS r ON t.primaryTitle = r.primaryTitle) LEFT OUTER JOIN (name_basic as n INNER JOIN title_crew as c ON n.primaryName=c.director) WHERE ((r.averageRating>=7 AND n.birthyear>1980)) ORDER BY n.ordering ASC LIMIT 6

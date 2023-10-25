@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE tconst = "Incredibles" AND averageRating >=.9

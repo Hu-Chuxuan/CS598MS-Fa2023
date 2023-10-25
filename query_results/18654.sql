@@ -1,0 +1,1 @@
+SELECT DISTINCT(title.originalTitle),title.startYear FROM imdb.title_basics AS title JOIN imdb.name_basics AS person ON title.primaryName = person.primaryName WHERE ((person.birthYear BETWEEN "1960" AND "1970") OR (person.deathYear > "1960")) ORDER BY title.startYear DESC LIMIT 3

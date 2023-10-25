@@ -1,0 +1,1 @@
+SELECT DISTINCT * FROM imdb.title_ratings

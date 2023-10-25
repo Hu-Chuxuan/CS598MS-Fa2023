@@ -1,0 +1,2 @@
+SELECT * FROM
+(select tb.* from TitleBasics as tb inner join NameBasics as nb where nb.primaryName='John McClane') AS TB INNER JOIN TitleCrew As C ON C.director = "McTiernan" AND C.writer IN ('Carl Witty','William Kelley')

@@ -1,0 +1,1 @@
+SELECT tb.* FROM titles AS tb WHERE (tb.genre = "Horror" OR tb.genre LIKE "%Horror%") AND (t.titleType <> "TV Series")

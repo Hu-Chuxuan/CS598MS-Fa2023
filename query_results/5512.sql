@@ -1,0 +1,1 @@
+SELECT movies.* FROM `title_ratings` AS ratings INNER JOIN `name_basics` AS names ON titles.movieId = names.id WHERE rating >= 7 AND (titles.primaryTitle LIKE '%' || userInput || '%') ORDER BY rating DESC

@@ -1,0 +1,1 @@
+SELECT * FROM imdb.title WHERE type ='movie' AND startYEAR >= CURRENT YEAR - 1

@@ -1,0 +1,1 @@
+SELECT * FROM title_ratings WHERE (genre = "sports" OR genre = "athletic") AND userInput LIKE '%sports%' ORDER BY avgRatng DESC LIMIT 6

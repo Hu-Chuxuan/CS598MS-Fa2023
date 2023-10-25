@@ -1,0 +1,1 @@
+SELECT TOP(1) * FROM `title_basics` WHERE ((titleType = 'Action') AND (((startYear >= 1980)))AND (((startYear <= 2020))))

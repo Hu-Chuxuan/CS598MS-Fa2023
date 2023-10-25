@@ -1,0 +1,1 @@
+SELECT * FROM (title_basic tb LEFT JOIN cast c ON tb.id = c.castId WHERE tb.genre='FANTASY') left join (title_rating tr RIGHT OUTER JOIN name_basic NB ON tr.movieID=NB.imdbID AND tr.averageRATING>7 where NB.primaryName like '%Sly%' OR NB.primaryName LIKE "%JK%") ON tb.title_id =tr.titleID ORDER BY rating DESC LIMIT 8

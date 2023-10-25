@@ -1,0 +1,1 @@
+SELECT * FROM movies WHERE user_preferences LIKE '%Den%' AND genre='Action' ORDER BY rating DESC LIMIT 5

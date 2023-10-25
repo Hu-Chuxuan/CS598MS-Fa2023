@@ -1,0 +1,1 @@
+SELECT tb.* FROM title_basic AS tb INNER JOIN title_rating AS tr ON tr.titleId = tb.id WHERE tb.titleType!= '' AND tb.primaryTitle LIKE '%Drama%' ORDER BY avg(tr.averageRating) DESC LIMIT 5

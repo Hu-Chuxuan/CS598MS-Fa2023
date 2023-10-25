@@ -1,0 +1,1 @@
+SELECT * FROM table WHERE userInput LIKE '%funny%' AND genre IS NOT NULL

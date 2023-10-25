@@ -1,0 +1,1 @@
+SELECT tb.* FROM (title_basic as tb JOIN name_basic as nb) WHERE tb.primaryTitle LIKE '%Drama%' AND tb.startYear >= '2019' AND tb.endYear <= '2020'

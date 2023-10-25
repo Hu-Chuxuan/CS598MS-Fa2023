@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE averageRating > 7 AND director IN ('George Miller') OR actors('Tom Hardy' OR Charlize Theron')

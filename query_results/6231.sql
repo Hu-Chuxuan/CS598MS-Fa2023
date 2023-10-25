@@ -1,0 +1,1 @@
+SELECT movies.* FROM movie_recommendation movies INNER JOIN title_ratings ratings ON rating_id = movie_id WHERE user_rating > 7 AND genre IN ('Action') ORDER BY total_voters DESC LIMIT 6

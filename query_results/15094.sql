@@ -1,0 +1,1 @@
+SELECT * FROM title_recommendation WHERE userPreferredMovie = 'It' AND genre = "Horror" OR userPreferredMovie LIKE '%Saw%' AND genre='Mystery'

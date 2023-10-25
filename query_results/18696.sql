@@ -1,0 +1,1 @@
+SELECT tc.* FROM title_basics AS tb INNER JOIN title_rating AS tr ON tr.title_id = tb.title_id

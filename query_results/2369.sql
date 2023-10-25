@@ -1,0 +1,1 @@
+SELECT * FROM `title` WHERE (((((((SELECT rating_avg from ratings where title = "Bridesmaids" AND user_id="1") OR SELECT rating_avg from ratings where title = "How To Lose A Guy In Ten Days" AND user_id= "1")) OR...))))) ORDER BY rating_avg DESC LIMIT 5

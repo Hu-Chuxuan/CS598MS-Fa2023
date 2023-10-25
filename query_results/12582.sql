@@ -1,0 +1,1 @@
+SELECT DISTINCT tc.* FROM `title_basics` AS tb LEFT JOIN `name_basics` as nb ON tb.`titleId` = nb.`primaryTitle` WHERE nb.`category` LIKE '%comedy%' AND EXISTS(SELECT * from `title_principals` where tp.`job` like '%actor%') ORDER BY tc.`startYear`

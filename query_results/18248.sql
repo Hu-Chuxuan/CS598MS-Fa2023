@@ -1,0 +1,1 @@
+SELECT DISTINCT rating FROM title_ratings WHERE rating >=.8 AND title IN ('Moana','Beauty And The Beast') GROUP BY rating ORDER BY rating DESC

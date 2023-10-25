@@ -1,0 +1,1 @@
+SELECT * FROM imdb WHERE type=romance AND userid='a678' OR userpreferences LIKE '%romance%' GROUP BY rating DESC LIMIT 3

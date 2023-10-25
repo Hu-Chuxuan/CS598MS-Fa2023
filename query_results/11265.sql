@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE (titleType ='movie' AND (startYear > "2018" OR startYear < "1960")) AND (runtimeMinutes <= "70") ORDER BY rating DESC LIMIT 5

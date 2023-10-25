@@ -1,0 +1,1 @@
+SELECT t.* FROM title_basics AS t INNER JOIN title_ratings ON t.titleID = rating.titleID WHERE t.primaryTitle LIKE '%Incredibles%' AND genre IN ('Animation') OR 'Book Of Life' IN(rating.titleID)

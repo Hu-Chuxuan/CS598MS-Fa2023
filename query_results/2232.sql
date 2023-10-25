@@ -1,0 +1,1 @@
+SELECT * FROM `title_basics` WHERE (`titleType`) LIKE ('%Drama%' OR '%Comedy%' OR '%Musical%' OR '%Action-adventure%' ) AND (`startYear`) BETWEEN (2016) AND (2018)

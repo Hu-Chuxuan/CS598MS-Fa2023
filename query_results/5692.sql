@@ -1,0 +1,1 @@
+SELECT * FROM (title_ratings t INNER JOIN title_principals p ON t.primaryTitle = p.primaryName) WHERE ((p.category LIKE '%animated%' OR p.job='voice actor' AND NOT EXISTS(SELECT * FROM title_crew c WHERE c.director=p))) AND (((t.averageRating>=6))AND(t.numVotes>1))

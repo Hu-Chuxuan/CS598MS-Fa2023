@@ -1,0 +1,1 @@
+SELECT * FROM movies WHERE user_id =? AND rating > X

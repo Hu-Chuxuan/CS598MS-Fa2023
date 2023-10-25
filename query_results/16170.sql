@@ -1,0 +1,1 @@
+SELECT * FROM titles WHERE titleType ='movie' AND startYear >= 1978

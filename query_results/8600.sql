@@ -1,0 +1,1 @@
+SELECT * FROM `title_basic` WHERE `genre` IN ('Horror','Suspense') AND `startYear` <= "2006" ORDER BY `averageRating`, `numVotes`

@@ -1,0 +1,1 @@
+SELECT * FROM title_recommendation WHERE rating >= 7 AND genre = "Drama" ORDER BY RAND() LIMIT 6

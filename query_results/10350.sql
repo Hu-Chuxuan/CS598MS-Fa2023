@@ -1,0 +1,1 @@
+SELECT tc.* FROM imdb.title_basics AS tb JOIN imdb.name_basics as nb WHERE tb.primaryTitle = "The Dark Knight" AND nb.job LIKE '%Bruce Wayne%' OR nb.characters LIKE "%Bruce%"

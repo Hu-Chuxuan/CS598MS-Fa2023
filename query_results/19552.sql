@@ -1,0 +1,1 @@
+SELECT * FROM title_basics WHERE tconst = "TITLE" AND ((startyear <= 1900 OR startyear > 2000)) ORDER BY rating DESC LIMIT 6

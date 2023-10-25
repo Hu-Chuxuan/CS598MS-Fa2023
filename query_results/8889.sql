@@ -1,0 +1,1 @@
+SELECT * FROM movies WHERE rating >= 7 AND genre IN ('comedy') ORDER BY vote DESC LIMIT 6

@@ -1,0 +1,1 @@
+SELECT * FROM title_recommended WHERE userInput = "A Wrinkle in Time" AND userHistory LIKE "%Tangled%" ORDER BY rating DESC LIMIT 1

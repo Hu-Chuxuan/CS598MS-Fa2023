@@ -1,0 +1,1 @@
+SELECT t1.* FROM `title_basic` AS t1 JOIN `name_basic` AS n1 ON(t1.`primaryTitle` = n1.`primaryName`) WHERE ((n1.`birthYear` BETWEEN? AND?)) GROUP BY t1.`id`

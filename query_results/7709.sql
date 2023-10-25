@@ -1,0 +1,1 @@
+SELECT * FROM title_basic WHERE tconst = 'The Silence Of The Lamp' AND averageRating > 6

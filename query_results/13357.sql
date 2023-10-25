@@ -1,0 +1,1 @@
+SELECT DISTINCT t.* FROM title_basic AS t INNER JOIN title_rating AS r ON t.titleId = r.movieId WHERE t.isAdult = false AND t.startYear BETWEEN 2000 AND 2020

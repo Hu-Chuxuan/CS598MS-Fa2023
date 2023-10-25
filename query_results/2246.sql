@@ -1,0 +1,1 @@
+SELECT DISTINCT tc.* FROM titles AS t INNER JOIN genre ON t.genreId = genre.id WHERE t.titleType IN ('feature film') AND t.isAdult IS NULL

@@ -1,0 +1,1 @@
+SELECT t.* FROM titles AS t WHERE t.titleType ='movie' AND t.primaryTitle LIKE '%comedy%' AND NOT EXISTS( SELECT * from userPreferences WHERE userId IN(1,2) ) ORDER BY avgRatings DESC LIMIT 6

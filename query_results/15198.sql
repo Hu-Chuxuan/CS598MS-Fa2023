@@ -1,0 +1,1 @@
+SELECT DISTINCT t.* FROM title_basic AS t JOIN title_rating ON t.titleID = title_rating.titleID WHERE t.primaryTitle LIKE 'the shawshank redemption' AND t.isAdult=0

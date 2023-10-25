@@ -1,0 +1,1 @@
+SELECT * FROM `title` WHERE `title`.`isAdult` = "True" AND (`name`.`birthYear` <= 1986 OR `name`.`deathYear` >= 1986)

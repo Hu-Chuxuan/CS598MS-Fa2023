@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE rating > 8 AND genre = "Comedy" ORDER BY rating DESC LIMIT 3

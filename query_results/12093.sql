@@ -1,0 +1,1 @@
+SELECT * FROM title_basics WHERE ((title_type = "Movie") AND (startyear > 2017)) OR (title_type = 'TV Series') ORDER BY avgrating DESC LIMIT 6

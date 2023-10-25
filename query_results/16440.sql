@@ -1,0 +1,1 @@
+SELECT movies.* FROM movies WHERE genre = 'disaster' AND userPreferenceHistory LIKE '%Tw%'

@@ -1,0 +1,1 @@
+SELECT TOP(10) * FROM title_ratings WHERE (((titleType = 'Movie' OR titleType IS NULL)) AND ((startYear >= @userInputStartDate) AND (startYear <= @userInputEndDate))) ORDER BY AVG(rating)

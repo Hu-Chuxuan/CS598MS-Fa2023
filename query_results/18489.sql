@@ -1,0 +1,1 @@
+SELECT * FROM title_principals WHERE nconst = "David Tennant" AND category IN ('actor') ORDER BY job DESC

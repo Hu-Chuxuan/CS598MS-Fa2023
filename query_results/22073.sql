@@ -1,0 +1,1 @@
+SELECT t.* FROM title AS t INNER JOIN name ON t.titleID = n.titleID WHERE ((n.primaryName LIKE '%Gosling%' OR n.birthYear BETWEEN? AND?)) ORDER BY rating DESC LIMIT 8

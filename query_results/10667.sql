@@ -1,0 +1,1 @@
+SELECT t.titleId as TitleID, r.averageRating AS Rating FROM ratings r INNER JOIN titles t ON r.titleId = t.id WHERE r.numVotes > 0 AND ((r.primaryName LIKE '%Jim%') OR (r.primaryName IS NULL)) ORDER BY r.rating DESC

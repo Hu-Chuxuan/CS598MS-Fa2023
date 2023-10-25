@@ -1,0 +1,1 @@
+SELECT DISTINCT tb.* FROM imdb.title_basics AS tb JOIN imdb.name_basics AS n WHERE tb.titleType = "movie" AND tb.startYear >= 1980

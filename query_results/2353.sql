@@ -1,0 +1,1 @@
+SELECT tc.* FROM titles AS tc WHERE tc.titleType = "movie" AND tc.isAdult = true

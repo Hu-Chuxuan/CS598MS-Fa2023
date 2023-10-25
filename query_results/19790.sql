@@ -1,0 +1,1 @@
+SELECT * FROM title_basics WHERE tconst IN ('comedy') AND user_input LIKE '%comedy%' ORDER BY rating DESC LIMIT 6

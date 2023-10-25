@@ -1,0 +1,1 @@
+SELECT t1.* FROM title_ratings AS t1 INNER JOIN title_basic ON t1.titleID = title_basic.titleID WHERE t1.primaryTitle LIKE '%Bat%' AND t1.isAdult = false

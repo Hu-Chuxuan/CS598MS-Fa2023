@@ -1,0 +1,1 @@
+SELECT * FROM ttitle_ratings WHERE avgrating >= 7

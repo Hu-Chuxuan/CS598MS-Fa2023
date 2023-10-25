@@ -1,0 +1,1 @@
+SELECT DISTINCT t1.* FROM `title_ratings` AS t1 INNER JOIN `name_basics` as t2 ON t1.`primaryTitle` = t2.`primaryName` WHERE t2.`birthYear` > '1960' AND t1.`numVotes` >= 10

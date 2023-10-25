@@ -1,0 +1,1 @@
+SELECT DISTINCT TITLE_BASICS.* FROM TITLE_BASES AS T, TITLE_CREW AS C WHERE CONCAT(C.`director`,' ',C.`writer`) LIKE '%James Wan%' AND C.`job` = 'Director' OR C.`job`='Writer'

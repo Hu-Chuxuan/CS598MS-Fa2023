@@ -1,0 +1,1 @@
+SELECT * FROM title_recommended WHERE user LIKE '%funny%' AND history LIKE '%baywatch%' OR history LIKE '%snatch%'

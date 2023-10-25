@@ -1,0 +1,1 @@
+SELECT t.* FROM title_basic AS t JOIN title_rating as r ON t.titleId = r.titleId WHERE t.isAdult=true AND NOT EXISTS( SELECT * from title_crew where directorId in ('70831','287')) GROUP BY t.titleId HAVING COUNT(*) > 1

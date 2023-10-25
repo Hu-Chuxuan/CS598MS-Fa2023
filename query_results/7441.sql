@@ -1,0 +1,2 @@
+SELECT t.titleId AS MovieId, t.titleType, t.primaryTitle, t.originalTitle, t.isAdult, t.startYear, t.endYear, t.runtimeMinutes, g.genre
+FROM titles AS t INNER JOIN genre AS g ON t.id = g.titleId WHERE t.isAdult IS NULL AND ((t.primaryTitle LIKE '%comedy%') OR (g.name LIKE '%comedy%')) ORDER BY rating DESC

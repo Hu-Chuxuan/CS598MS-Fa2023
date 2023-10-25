@@ -1,0 +1,1 @@
+SELECT * FROM `title_basics` WHERE titleType='movie' AND ((startYear BETWEEN 1967 AND 1999 OR startYear = NULL)) GROUP BY titleID ORDER BY avg(rating DESC)

@@ -1,0 +1,1 @@
+SELECT DISTINCT t.* FROM imdb.title AS t WHERE EXISTS( SELECT * FROM imdb.name_basics as nb WHERE nb.primaryName = t.title AND nb.primaryProfession IN ('Actor','Actress') ) GROUP BY genre

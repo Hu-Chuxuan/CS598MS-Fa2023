@@ -1,0 +1,1 @@
+SELECT DISTINCT(titleID), movieTitle FROM title_basics WHERE titleType ='movie'

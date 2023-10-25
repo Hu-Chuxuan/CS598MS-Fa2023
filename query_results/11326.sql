@@ -1,0 +1,1 @@
+SELECT * FROM movie_recommendation WHERE userInput LIKE '%the lord of the rings%' AND preferenceHistory LIKE '%the princess bride%'

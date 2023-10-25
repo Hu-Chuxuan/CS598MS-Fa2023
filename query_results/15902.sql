@@ -1,0 +1,1 @@
+SELECT title.* FROM title_basics AS tb WHERE tb.titleType = "Movie" AND tb.primaryTitle LIKE '%Babadoo%' OR tb.originalTitle LIKE '%Babadoo%'

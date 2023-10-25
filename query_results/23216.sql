@@ -1,0 +1,1 @@
+SELECT * FROM (title_basic tb, cast c, crew cc WHERE tb.genre = "Drama" AND c.job LIKE '%Actor%' OR c.job LIKE "%Actress%" OR cc.job LIKE "%Director%") ORDER BY rating DESC LIMIT 3

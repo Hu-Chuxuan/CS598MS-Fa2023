@@ -1,0 +1,1 @@
+SELECT TOP(10) t.* FROM titles AS t INNER JOIN rating AS r ON t.titleID = r.movieID WHERE r.rating >= '7/10'

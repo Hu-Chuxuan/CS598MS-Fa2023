@@ -1,0 +1,1 @@
+SELECT * FROM (SELECT id as "userID", title as "movieTitle" from userPreferneceHistory)

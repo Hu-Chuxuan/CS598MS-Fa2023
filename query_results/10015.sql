@@ -1,0 +1,1 @@
+SELECT tb.* FROM title_basics AS tb INNER JOIN title_ratings as tr ON tr.primaryTitle = tb.title_basics WHERE ((tr.averageRating >= 7 AND tr.numVotes > 8)) OR ((tb.isAdult = true))

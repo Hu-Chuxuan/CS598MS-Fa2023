@@ -1,0 +1,1 @@
+SELECT DISTINCT t.* FROM title_ratings AS r JOIN ( SELECT * FROM title_basics WHERE tconst =? AND PRIMARY TITLE IN ('Norbit (2007)','Identity thief (2013)') ) as b ON RATING > 7/10

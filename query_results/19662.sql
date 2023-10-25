@@ -1,0 +1,1 @@
+SELECT t.titleId AS idMovie, r.rating AS ratingMovie FROM titles AS t INNER JOIN ratings AS r ON t.titleId = r.movieId WHERE ((t.isAdult = false AND t.startYear BETWEEN? AND? ) OR (t.endYear >?)) ORDER BY AVG(r.rating)

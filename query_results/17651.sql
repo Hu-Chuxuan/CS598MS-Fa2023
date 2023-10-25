@@ -1,0 +1,1 @@
+SELECT * FROM `title` WHERE (`primaryTitle` LIKE '%Action%') AND (`averageRating` > 6)

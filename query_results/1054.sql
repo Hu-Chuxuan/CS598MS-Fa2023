@@ -1,0 +1,1 @@
+SELECT * FROM `title` WHERE (`directors`,`writers`) IN ('Joe Johnston','Philip Kaufman')

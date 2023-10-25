@@ -1,0 +1,1 @@
+SELECT * FROM title_principals WHERE category = "Actor" AND (job LIKE "%Actress%" OR job LIKE "%Director%") ORDER BY rating DESC LIMIT 2

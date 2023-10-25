@@ -1,0 +1,1 @@
+SELECT DISTINCT t.* FROM title AS t JOIN genre g ON t.genreID = g.id WHERE t.titleType LIKE '%comedy%' AND NOT EXISTS(SELECT * FROM user_rating u where u.movieID=t.id)

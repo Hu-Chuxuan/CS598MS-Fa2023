@@ -1,0 +1,1 @@
+SELECT * FROM title_recommendation WHERE userInput LIKE '%romantic%comedy%' AND rating >= 6 OR genre IN ('Comedy') ORDER BY rating DESC LIMIT 3

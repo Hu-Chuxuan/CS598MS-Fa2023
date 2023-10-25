@@ -1,0 +1,1 @@
+SELECT t.titleID as id FROM title AS t JOIN rating AS r ON t.titleID = r.movieId WHERE r.userid =? AND r.rating >=?

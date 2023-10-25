@@ -1,0 +1,1 @@
+SELECT DISTINCT tc.* FROM title_basic AS tb INNER JOIN name_basic as nb ON tb.titleType = "drama" AND nb.primaryProfession LIKE "%actor%" WHERE tb.startYear >= 2009

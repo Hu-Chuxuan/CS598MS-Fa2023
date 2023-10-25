@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE genre = "war" OR genre = "political thriller"

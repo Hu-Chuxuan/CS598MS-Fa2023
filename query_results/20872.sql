@@ -1,0 +1,1 @@
+SELECT DISTINCT t.* FROM (title_basics AS t INNER JOIN title_ratings ON t.primaryTitle = title_ratings.title) LEFT OUTER JOIN cast_credits AS c USING(titleId)

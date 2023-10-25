@@ -1,0 +1,1 @@
+SELECT t.* FROM `title` AS t WHERE genre IN ('Horror') AND title_type = 'Movie'

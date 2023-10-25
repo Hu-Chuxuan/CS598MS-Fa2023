@@ -1,0 +1,1 @@
+SELECT movies.* FROM movies INNER JOIN title_ratings ON movies.titleId = title_ratings.movieId AND rating >= 6 WHERE year BETWEEN 1940-1970

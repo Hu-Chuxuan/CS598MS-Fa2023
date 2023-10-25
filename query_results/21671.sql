@@ -1,0 +1,1 @@
+SELECT * FROM movie_recommendation WHERE userID = 'UA1' AND genre = 'Horror'

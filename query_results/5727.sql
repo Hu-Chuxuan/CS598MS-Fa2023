@@ -1,0 +1,1 @@
+SELECT DISTINCT titleID FROM (title_principals) WHERE (((category = 'Actor') OR (job = 'Director')) AND ((characters LIKE '%Love%'))) ORDER BY rating DESC LIMIT 0, 6

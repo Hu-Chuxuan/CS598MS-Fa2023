@@ -1,0 +1,1 @@
+SELECT * FROM imdb.title_basic WHERE tconst = 'Highlander' AND ttype NOT IN ('TV Series', 'Video Game') LIMIT 1

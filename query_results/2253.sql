@@ -1,0 +1,1 @@
+SELECT * FROM ( SELECT t.*, r.* from title_basics AS t LEFT JOIN ratings AS r ON t.titleID = r.titleID WHERE t.titleType = "Movie" AND r.averageRATING > 6 ) AS m GROUP BY titleID HAVING COUNT(DISTINCT genre) >= 2

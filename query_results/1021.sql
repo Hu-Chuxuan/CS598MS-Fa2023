@@ -1,0 +1,1 @@
+SELECT * FROM movies WHERE gender = "Woman" AND rating > 7

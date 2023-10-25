@@ -1,0 +1,1 @@
+SELECT * FROM movies WHERE userPreference LIKE '%Deadpool%' OR userPreference LIKE '%Man%'

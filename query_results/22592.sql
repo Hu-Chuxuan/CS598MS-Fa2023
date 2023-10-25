@@ -1,0 +1,1 @@
+SELECT m.* FROM titles AS t JOIN title_crew AS c ON (c.director = t.primaryDirector OR c.writer = t.primaryWriter)

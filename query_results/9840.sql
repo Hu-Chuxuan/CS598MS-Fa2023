@@ -1,0 +1,1 @@
+SELECT t1.* FROM title_basics AS t1 WHERE t1.`titleType` = ‘movie’ AND (((t1.`startYear`)>=(‘2006-01-01′))AND(t1.`endYear`)<=('2010-01-01')) AND ((t1.`isAdult`)=false)

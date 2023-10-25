@@ -1,0 +1,1 @@
+SELECT * FROM (title_rating JOIN title_crew ON rating = crew.movie) WHERE genre IN ('Drama') AND ((startyear <= '2018' OR endyear >= '2018')) GROUP BY title_type ORDER BY Average RATING DESC LIMIT 6

@@ -1,0 +1,1 @@
+SELECT DISTINCT titles.* FROM movies AS m INNER JOIN casts as c ON m.titleID = c.movieID AND c.actorID=768 WHERE m.year BETWEEN 2000 AND 2015

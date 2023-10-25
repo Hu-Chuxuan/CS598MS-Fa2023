@@ -1,0 +1,1 @@
+SELECT tc.* FROM titles AS t JOIN name_basics ON nb.primaryName = t.titleID WHERE t.startYear <=? AND t.endYear >=? ORDER BY t.averageRating DESC LIMIT 5

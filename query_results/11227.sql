@@ -1,0 +1,1 @@
+SELECT titleID FROM title WHERE titleType = "comedy" AND rating > 6

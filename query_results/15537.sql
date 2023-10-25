@@ -1,0 +1,1 @@
+SELECT * FROM title_basics WHERE title_type = "movie" AND title_name IN ('Black Panther','Suicide Squad') ORDER BY rating DESC LIMIT 3

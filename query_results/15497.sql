@@ -1,0 +1,1 @@
+SELECT * FROM `title_ratings` WHERE `numVotes` > 9 AND (`isAdult` = false OR (`genre` IN ('Action') OR `job` LIKE '%Actor%' OR `character%')) ORDER BY `averageRating`

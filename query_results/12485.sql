@@ -1,0 +1,1 @@
+SELECT t.* FROM title_basic AS t WHERE (startyear >= '1980') AND (endyear <= 'now')

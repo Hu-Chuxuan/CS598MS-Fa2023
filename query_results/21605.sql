@@ -1,0 +1,1 @@
+SELECT DISTINCT titles.* FROM title_ratings AS ratings JOIN title_basics AS basics ON ratingstitleid = basictitleid AND ratingstitleid IN( SELECT t.titleid FROM title_principals AS principals WHERE principaltitleid=1762)

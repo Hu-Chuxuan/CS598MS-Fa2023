@@ -1,0 +1,1 @@
+SELECT * FROM (title_principals AS t1 JOIN actors AS a ON t1.characters = a.name) WHERE t1.job IN ('Director','Writer') AND t1.category='Comedy' AND t1.ordering > 6

@@ -1,0 +1,1 @@
+SELECT * FROM TITLE_BASICS WHERE tconst = "Movie" AND CONCAT(originalTitle,' ',titleType) LIKE '%Romance%' ORDER BY AVG(averageRating),numvotes DESC

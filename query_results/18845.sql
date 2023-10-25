@@ -1,0 +1,1 @@
+SELECT * FROM title_rating WHERE rating >= 8 AND genre IN ('Crime') ORDER BY rating DESC LIMIT 1

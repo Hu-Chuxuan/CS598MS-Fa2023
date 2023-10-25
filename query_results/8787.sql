@@ -1,0 +1,1 @@
+SELECT * FROM movies WHERE type = 'thriller' AND year BETWEEN 1980 AND 2000

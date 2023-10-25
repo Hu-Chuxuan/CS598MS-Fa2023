@@ -1,0 +1,1 @@
+SELECT movies.* FROM imdb.title_basics AS tb JOIN imdb.name_basics AS nb ON(tb.primaryTitle = nb.primaryName AND tb.startYear <= nb.deathYear)

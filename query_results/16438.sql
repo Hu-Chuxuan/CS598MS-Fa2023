@@ -1,0 +1,1 @@
+SELECT * FROM rating WHERE primaryTitle LIKE 'Drama%' AND avg(rating) > 7

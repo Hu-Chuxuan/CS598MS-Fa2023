@@ -1,0 +1,1 @@
+SELECT * FROM title_basics WHERE tconst = 'Get Out (2017)' AND primaryTitle <> '' ORDER BY avg(averageRating)

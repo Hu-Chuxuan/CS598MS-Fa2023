@@ -1,0 +1,1 @@
+SELECT * FROM `title` WHERE (`isAdult = "true"`) AND (`genre = 'Comedy' OR genre='Drama'`)

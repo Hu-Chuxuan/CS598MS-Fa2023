@@ -1,0 +1,1 @@
+SELECT * FROM `title_basic` WHERE titleType ='movie' AND ((startYear > 1860 OR startYEAR < 1970))AND ((endYear >= 1980 AND endYear <= 2020))

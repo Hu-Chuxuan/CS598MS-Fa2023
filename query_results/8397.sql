@@ -1,0 +1,1 @@
+SELECT DISTINCT t.* FROM title AS t JOIN title_rating ON title_rating.title = t.id WHERE ((t.isAdult=TRUE OR t.isAdult IS NULL)) AND ((t.genre IN ('Action','Comedy')))

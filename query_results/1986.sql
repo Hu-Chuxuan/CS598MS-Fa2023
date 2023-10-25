@@ -1,0 +1,1 @@
+SELECT * FROM imdb_movies WHERE user_preferences LIKE '%thrill%' AND year BETWEEN 1800 AND NOW

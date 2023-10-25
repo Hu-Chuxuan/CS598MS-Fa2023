@@ -1,0 +1,1 @@
+SELECT tb.* FROM titles AS t INNER JOIN ratings AS r ON tb.titleID = r.movieID WHERE rating >=? AND tb.startYear <=? AND tb.endYear >?

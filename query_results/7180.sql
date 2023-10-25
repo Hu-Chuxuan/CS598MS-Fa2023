@@ -1,0 +1,1 @@
+SELECT movies.* FROM title_ratings r INNER JOIN title_basic b ON r.titleId = b.id WHERE ((r.averageRating > 6 AND b.titleType IN ('movie')) OR (r.averageRating < 6 AND b.titleType!= 'tv'))

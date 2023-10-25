@@ -1,0 +1,1 @@
+SELECT * FROM movie_recommendation(movieID) WHERE userPreferedMovieCategory = "Kid's Movie" AND userInputMovieCategory <> "Kid's Movie"

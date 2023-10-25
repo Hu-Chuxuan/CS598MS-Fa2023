@@ -1,0 +1,1 @@
+SELECT * FROM (SELECT DISTINCT t.*, r.*, c.* WHERE (r.averageRating >= 7) AND ((c.job = 'Director' OR c.category IN ('Writer', 'Actor')))) AS movies JOIN rating ON movies.titleID=rating.movieID JOIN cast ON movies.castID=cast.movieID

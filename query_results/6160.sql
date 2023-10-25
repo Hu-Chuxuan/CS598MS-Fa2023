@@ -1,0 +1,1 @@
+SELECT * FROM ( SELECT DISTINCT tc.*, tcr.* from title_basic as tb INNER JOIN title_rating as tr ON tb.titleID = tr.titleID ) WHERE ((tb.category = "comedy") AND (tr.averageRating > 6)) ORDER BY tr.numvotes DESC LIMIT 0,7

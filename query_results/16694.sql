@@ -1,0 +1,1 @@
+SELECT t.* FROM title AS t WHERE NOT EXISTS( SELECT * FROM rating AS rr WHERE rr.title = t.id AND rr.userID <> 976)

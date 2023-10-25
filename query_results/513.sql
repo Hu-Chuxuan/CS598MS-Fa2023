@@ -1,0 +1,1 @@
+SELECT t.* FROM title AS t JOIN name_basics ON t.titleId = nb.titleId WHERE ((nbr.primaryProfession LIKE '%actor%' OR nbr.primaryProfession LIKE '%actress%') AND (nb.deathYear IS NULL)) ORDER BY (t.startYear DESC)

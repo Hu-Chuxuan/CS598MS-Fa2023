@@ -1,0 +1,1 @@
+SELECT * FROM table_name WHERE field_name = value

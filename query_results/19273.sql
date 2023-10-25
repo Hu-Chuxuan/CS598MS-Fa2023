@@ -1,0 +1,1 @@
+SELECT * FROM titles WHERE title_type = "movie" AND (title_rating > 6 OR title_rating < 7)

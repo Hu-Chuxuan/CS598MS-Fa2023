@@ -1,0 +1,1 @@
+SELECT t.* FROM titles AS t INNER JOIN ratings AS r ON r.titleId = t.id WHERE r.rating >=? AND ((r.voterCount >? OR r.numVoters IS NULL)) GROUP BY t.primaryTitle HAVING COUNT(*) <? ORDER BY SUM(r.averageRating * -1) DESC LIMIT?

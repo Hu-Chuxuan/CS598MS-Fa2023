@@ -1,0 +1,1 @@
+SELECT t1.* FROM title_basics AS t1 INNER JOIN rating_history RH ON t1.titleID = RH.titleID WHERE RH.userID = 'USER' AND ((t1.startYear BETWEEN 2019 AND 2020)) ORDER BY t1.rating DESC

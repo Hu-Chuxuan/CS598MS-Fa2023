@@ -1,0 +1,1 @@
+SELECT * FROM movies WHERE userPreferenceHistory LIKE '%(Jack And Jill %|Mr Deeds% | Big Daddy%)'

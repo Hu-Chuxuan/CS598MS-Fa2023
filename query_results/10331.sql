@@ -1,0 +1,1 @@
+SELECT * FROM tconst WHERE tconst IN ('director','writer') AND rating > 6

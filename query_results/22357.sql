@@ -1,0 +1,1 @@
+SELECT tb.* FROM title_basics as tb INNER JOIN title_rating AS tr ON tb.titleID = tr.titleID AND tr.voterID LIKE '%' ORDER BY tb.startYear DESC LIMIT 6

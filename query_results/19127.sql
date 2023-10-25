@@ -1,0 +1,1 @@
+SELECT * FROM title_recommendation WHERE title_type LIKE '%romance%' AND genre IN ('comedy','drama') OR title_type LIKE '%sci-fi%' AND director NOT NULL

@@ -1,0 +1,1 @@
+SELECT DISTINCT tc.* FROM title_basics as tb JOIN title_rating as tr ON(tb.titleID = tr.titleID)

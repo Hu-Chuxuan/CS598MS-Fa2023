@@ -1,0 +1,1 @@
+SELECT * FROM tconst WHERE titleType = "Comedy" AND avg(averageRating) > 8

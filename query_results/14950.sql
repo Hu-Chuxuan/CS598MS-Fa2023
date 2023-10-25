@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE ((title_type ='movie' OR title_type IS NULL)) AND ((primaryTitle LIKE '%Sense%' OR primaryTitle LIKE '%SENSE%') AND genre NOT IN ('Action','Comedy')) ORDER BY avgRATING DESC LIMIT 0, 6

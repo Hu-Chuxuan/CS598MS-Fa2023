@@ -1,0 +1,1 @@
+SELECT * FROM rating WHERE ((titleType = "movie" OR titleType = "tv") AND avg(averageRating)>=7.5)

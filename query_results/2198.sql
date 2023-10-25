@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE averageRating >.9 AND isAdult = false

@@ -1,0 +1,1 @@
+SELECT * FROM title_principals WHERE category = "character" AND job IN ("actor", "actress") ORDER BY numCharacters DESC LIMIT 1

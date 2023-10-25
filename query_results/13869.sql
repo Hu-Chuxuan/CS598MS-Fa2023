@@ -1,0 +1,1 @@
+SELECT * FROM imdb_movie WHERE rating >.5 AND title IN ('"+str(history).join(",' OR title LIKE '%' || '" + str(userInput[-1]).lower()+"'"+'%')+ "'")

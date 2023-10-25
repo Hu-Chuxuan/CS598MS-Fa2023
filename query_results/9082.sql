@@ -1,0 +1,1 @@
+SELECT tb.* FROM title_basics AS tb LEFT JOIN (title_ratings AS tr INNER JOIN (name_basics AS nb) ON (tb.isAdult=nb.primaryTitle AND tb.startYear BETWEEN nb.startYear-10 AND nb.endYear+10)) WHERE ((tr.averageRating >= '7') OR ('7' < avg(tr.rating))) AND (nb.primaryTitle = '')

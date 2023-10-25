@@ -1,0 +1,1 @@
+SELECT t.* FROM title AS t JOIN name AS n ON n.primaryName = t.titleType WHERE ((t.genre!= 'Comedy' AND t.genre <> '')) ORDER BY avg(rating) DESC LIMIT 7

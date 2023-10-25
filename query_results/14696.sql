@@ -1,0 +1,1 @@
+SELECT tb.* FROM title_basics AS tb JOIN title_ratings AS tr ON tb.titleId = tr.titleId WHERE (((tr.averageRating > 7)) AND ((tr.numVotes >= 1))) ORDER BY tr.rating DESC LIMIT 3
