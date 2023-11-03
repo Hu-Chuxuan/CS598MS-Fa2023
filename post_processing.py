@@ -1,14 +1,10 @@
 import json
 import sqlparse
 from tqdm import tqdm
-data = []
-with open('./predicted_results.jsonl', 'r') as f:
-    for line in f.readlines():
-        data.append(json.loads(line))
 
-for item in tqdm(data):
+def extract_SQL(item):
     if 'SELECT' in item['output'] and ';' in item['output']:
-        print('*'*10)
+        # print('*'*10)
         start = item['output'].index('SELECT')
         end = item['output'].index(';')
         statement = item['output'][start:end]
@@ -16,8 +12,20 @@ for item in tqdm(data):
             try:
                 parsed = sqlparse.parse(statement)
                 if parsed:
-                    with open(f'./query_results/{item["id"]}.sql', "w") as sql_file:
-                        sql_file.write(statement)
-                    # print(statement)
+                    return statement
             except Exception as e:
-                pass
+                return None
+    return None
+
+if __name__ == "__main__":
+    data = []
+    with open('./predicted_results.jsonl', 'r') as f:
+        for line in f.readlines():
+            data.append(json.loads(line))
+
+    for item in tqdm(data):
+        statement = extract_SQL(item)
+        if statement is not None:
+            with open(f'./query_results/{item["id"]}.sql', "w") as sql_file:
+                sql_file.write(statement)
+    
