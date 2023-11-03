@@ -1,12 +1,18 @@
 import os
 import json
 
-with open('./predicted_results.jsonl', 'r') as json_file:
-    json_list = [json.loads(line) for line in json_file]
+def get_ground_truth_dict():
+    with open('./predicted_results.jsonl', 'r') as json_file:
+        json_list = [json.loads(line) for line in json_file]
 
-ground_truth_dict = {}
-for json_obj in json_list:
-    ground_truth_dict[json_obj['id']] = json_obj['groundtruth']
+    ground_truth_dict = {}
+    for json_obj in json_list:
+        ground_truth_dict[json_obj['id']] = json_obj['groundtruth']
+    return ground_truth_dict
+
+def is_hit()
+
+
 
 result_dir = './execution_results/'
 cnt_total = 0

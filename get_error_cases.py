@@ -21,21 +21,29 @@ def error_non_executable():
     print(execution_results)
     # assert 1==0
     non_executable_case_ids = []
+    id2query = {}
     for file in os.listdir('./query_results/'):
         query_id = file.split('.')[0]
         if query_id not in execution_results:
             non_executable_case_ids.append(query_id)
+            file_path = os.path.join('./query_results/', file)
+            with open(file_path, 'r') as f:
+                id2query[query_id] = f.read()
     print(len(non_executable_case_ids))
     non_executable_cases = []
     with open('predicted_results.jsonl', 'r') as f:
         for line in f.readlines():
             tmp = json.loads(line)
             if str(tmp['id']) in non_executable_case_ids:
-                non_executable_cases.append(line)
+                tmp['extracted_SQL'] = id2query[str(tmp['id'])]
+                non_executable_cases.append(tmp)
     with open("./error_cases/non_executable.jsonl", 'w') as f:
         for case in non_executable_cases:
-            f.write(case)
-        
+            f.write(json.dumps(case)+'\n')
+def not_hit():
+    
+    return 0
 if __name__=='__main__':
     # error_without_SQL()
     error_non_executable()
+    # not_hit()
