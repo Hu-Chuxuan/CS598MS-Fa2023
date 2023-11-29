@@ -3,7 +3,7 @@ import re
 from transformers import pipeline
 import json
 from tqdm import tqdm
-from utils import SYS_MESSAGE, USER_INPUT
+from utils import SYS_MESSAGE_BASE, SYS_MESSAGE_DETAILED, SYS_MESSAGE_FEWSHOT, USER_INPUT
 import openai
 from retry import retry
 
@@ -37,11 +37,13 @@ def get_response_text(data, anchor):
 def ChatCompletion_with_backoff(**kwargs):
     return openai.ChatCompletion.create(**kwargs)
 
-def predict(query, history):
+def predict(query, history, sys_message):
     messages = [
-        {"role": "system", "content": SYS_MESSAGE},
+        {"role": "system", "content": sys_message},
         {"role": "user", "content": USER_INPUT.format(user_query = query, user_history = history)}
     ]
+    # print(messages)
+    # assert 1==0
     try:
         response = ChatCompletion_with_backoff(
             model="gpt-3.5-turbo-1106",
@@ -56,13 +58,20 @@ def predict(query, history):
 
 
 if __name__=='__main__':
+    model = "gpt3.5"
+    prompt_mode = "base"
+    base_dir = "results_new_cases"
+    data_path = "./data/processed_data_test_filtered.jsonl"
+    output_name = "predicted_results_test_filtered.jsonl"
+    
+    
     data = []
-    with open("processed_data.jsonl", 'r') as f:
+    with open(data_path, 'r') as f:
         for line in f.readlines():
             data.append(json.loads(line))
             
-    output_dir = './results/gpt3.5'
-    output_file = f"{output_dir}/predicted_results.jsonl"
+    output_dir = f'./{base_dir}/{model}_{prompt_mode}'
+    output_file = f"{output_dir}/{output_name}"
     
     processed_items = set()
     try:
@@ -74,12 +83,16 @@ if __name__=='__main__':
         # If the file doesn't exist, we start from scratch
         print("Output file not found. Starting from the beginning.")
 
-    
+    sys_message = {
+        "base": SYS_MESSAGE_BASE,
+        "detailed": SYS_MESSAGE_DETAILED,
+        "fewshot": SYS_MESSAGE_FEWSHOT
+    }[prompt_mode]
     with open(output_file, 'a') as f:
         for item in tqdm(data):
             if item['id'] in processed_items:
                 continue
-            results = predict(item['query'], item['history'])
+            results = predict(item['query'], item['history'], sys_message)
             if results == "":
                 print(item["id"])
             item['output'] = results

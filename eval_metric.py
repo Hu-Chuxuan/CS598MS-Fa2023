@@ -1,8 +1,9 @@
 import os
 import json
-output_dir = './results/gpt3.5'
+output_dir = './results_new_cases/gpt3.5_fewshot'
+result_file = "./results_new_cases/gpt3.5_fewshot/predicted_results_test_filtered.jsonl"
 def get_ground_truth_dict():
-    with open(f'./{output_dir}/predicted_results.jsonl', 'r') as json_file:
+    with open(result_file, 'r') as json_file:
         json_list = [json.loads(line) for line in json_file]
 
     ground_truth_dict = {}
@@ -33,9 +34,9 @@ for file in os.listdir(result_dir):
         if i in results:
             cnt_hit += 1
             print("*"*20)
-            print(results)
-            print(ground_truth)
+            # print(results)
+            # print(ground_truth)
             n_item_list.append(len(results))
             hit_cases.append(file_id)
             break
-print(f"total: {cnt_total}, hit cases:{cnt_hit}, hit ratio: {cnt_hit/cnt_total}, zero results: {cnt_zero},zero ratio: {cnt_zero/cnt_total},  average_item_num:{sum(n_item_list)/len(n_item_list)}; min_item_num:{min(n_item_list)};max_item_num:{max(n_item_list)};{hit_cases}")
+print(f"{hit_cases};total: {cnt_total}, hit cases:{cnt_hit}, hit ratio: {cnt_hit/cnt_total}, zero results: {cnt_zero},zero ratio: {cnt_zero/cnt_total},  average_item_num:{sum(n_item_list)/len(n_item_list)}; min_item_num:{min(n_item_list)};max_item_num:{max(n_item_list)}")

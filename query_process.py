@@ -32,9 +32,12 @@ df4.createOrReplaceTempView("title_principals")
 df5 = spark.read.csv("IMDB/ImdbTitleRatings.csv", header = True)
 df5.createOrReplaceTempView("title_ratings")
 
-output_dir = './results/gpt3.5'
-
-with open(f'./{output_dir}/predicted_results.jsonl', 'r') as json_file:
+model = "llama13b"
+mode = "detailed"
+output_dir = f'results_new_cases/{model}_{mode}'
+result_file = f"./results_new_cases/{model}_{mode}/predicted_results_test_filtered.jsonl"
+    
+with open(result_file, 'r') as json_file:
     json_list = [json.loads(line) for line in json_file]
 
 ground_truth_dict = {}

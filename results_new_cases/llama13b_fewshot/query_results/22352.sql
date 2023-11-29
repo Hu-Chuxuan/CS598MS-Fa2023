@@ -1,0 +1,4 @@
+SELECT tb.primaryTitle
+FROM title_basics tb
+WHERE FIND_IN_SET('Romantic Comedy', tb.genres) > 0
+AND FIND_IN_SET('Forgetting Sarah Marshall', tb.primaryTitle) > 0

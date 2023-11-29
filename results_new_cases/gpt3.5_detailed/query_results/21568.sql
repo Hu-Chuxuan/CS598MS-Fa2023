@@ -1,0 +1,9 @@
+SELECT tb1.primaryTitle AS movie_title, tb1.startYear AS release_year, tb1.genres AS movie_genres, tr.averageRating AS movie_rating
+FROM title_basics AS tb1
+JOIN title_ratings AS tr ON tb1.tconst = tr.tconst
+WHERE tb1.titleType = 'movie'
+AND tb1.startYear = 1999
+AND tb1.genres LIKE '%Thriller%'
+AND tb1.tconst != 'tt0167404' 
+ORDER BY tr.averageRating DESC
+LIMIT 5

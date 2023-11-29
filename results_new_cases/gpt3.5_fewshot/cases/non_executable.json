@@ -1,0 +1,309 @@
+[
+ {
+  "id": 20301,
+  "query": "I am hoping you can help me find a movie about gangsters, like Casino  (1995) . I love that movie. I also really like Goodfellas (1990) .",
+  "history": [
+   "Casino  (1995)",
+   "Goodfellas (1990)",
+   "Godfather  (1991)"
+  ],
+  "groundtruth": [
+   "American Gangster  (2007)",
+   "Scarface  (1983)"
+  ],
+  "output": "SELECT tb.primaryTitle\nFROM title_basics tb\nWHERE FIND_IN_SET('Crime', tb.genres) > 0\nAND startYear = 1995\nAND averageRating > (SELECT averageRating FROM title_ratings WHERE tconst = (SELECT tconst FROM title_basics WHERE primaryTitle = 'Casino') LIMIT 1)\nUNION\nSELECT tb.primaryTitle\nFROM title_basics tb\nWHERE FIND_IN_SET('Crime', tb.genres) > 0\nAND startYear = 1990\nAND averageRating > (SELECT averageRating FROM title_ratings WHERE tconst = (SELECT tconst FROM title_basics WHERE primaryTitle = 'Goodfellas') LIMIT 1)\nLIMIT 5;",
+  "extracted_SQL": "SELECT tb.primaryTitle\nFROM title_basics tb\nWHERE FIND_IN_SET('Crime', tb.genres) > 0\nAND startYear = 1995\nAND averageRating > (SELECT averageRating FROM title_ratings WHERE tconst = (SELECT tconst FROM title_basics WHERE primaryTitle = 'Casino') LIMIT 1)\nUNION\nSELECT tb.primaryTitle\nFROM title_basics tb\nWHERE FIND_IN_SET('Crime', tb.genres) > 0\nAND startYear = 1990\nAND averageRating > (SELECT averageRating FROM title_ratings WHERE tconst = (SELECT tconst FROM title_basics WHERE primaryTitle = 'Goodfellas') LIMIT 1)\nLIMIT 5"
+ },
+ {
+  "id": 20458,
+  "query": "Can you please reccomend a movie",
+  "history": [
+   "Step Brothers  (2008)",
+   "Seven Psychopaths (2012)",
+   "The Silence of the Lambs  (1991)"
+  ],
+  "groundtruth": [
+   "Blockers (2018)",
+   "Avengers: Infinity War (2018)"
+  ],
+  "output": "SELECT tb.primaryTitle\nFROM title_basics tb\nWHERE FIND_IN_SET('Comedy', tb.genres) > 0\nOR FIND_IN_SET('Crime', tb.genres) > 0\nOR FIND_IN_SET('Drama', tb.genres) > 0\nORDER BY tb.numVotes DESC\nLIMIT 10;",
+  "extracted_SQL": "SELECT tb.primaryTitle\nFROM title_basics tb\nWHERE FIND_IN_SET('Comedy', tb.genres) > 0\nOR FIND_IN_SET('Crime', tb.genres) > 0\nOR FIND_IN_SET('Drama', tb.genres) > 0\nORDER BY tb.numVotes DESC\nLIMIT 10"
+ },
+ {
+  "id": 20963,
+  "query": "I like Comedy and Action movies",
+  "history": [
+   "Black Panther (2018)",
+   "I Now Pronounce You Chuck & Larry (2007)",
+   "Get Out (2017)"
+  ],
+  "groundtruth": [
+   "Jumanji  (2017)"
+  ],
+  "output": "SELECT tb.primaryTitle\nFROM title_basics tb\nWHERE (FIND_IN_SET('Comedy', tb.genres) > 0 OR FIND_IN_SET('Action', tb.genres) > 0)\nAND startYear > 2000\nAND averageRating > 7\n;",
+  "extracted_SQL": "SELECT tb.primaryTitle\nFROM title_basics tb\nWHERE (FIND_IN_SET('Comedy', tb.genres) > 0 OR FIND_IN_SET('Action', tb.genres) > 0)\nAND startYear > 2000\nAND averageRating > 7\n"
+ },
+ {
+  "id": 20995,
+  "query": "Do you know of any family friendly movies?",
+  "history": [
+   "Peter Rabbit (2018)",
+   "Finding Nemo (2003)",
+   "Finding Dory (2016)"
+  ],
+  "groundtruth": [
+   "Black Panther (2018)"
+  ],
+  "output": "SELECT primaryTitle\nFROM title_basics\nWHERE FIND_IN_SET('Family', genres) > 0\nAND startYear > 2010\nAND averageRating > 6.5\nAND numVotes > 1000;",
+  "extracted_SQL": "SELECT primaryTitle\nFROM title_basics\nWHERE FIND_IN_SET('Family', genres) > 0\nAND startYear > 2010\nAND averageRating > 6.5\nAND numVotes > 1000"
+ },
+ {
+  "id": 21049,
+  "query": "I  am looking for good romance movie.",
+  "history": [
+   "Hangover (2010)",
+   "Yes  (2004)"
+  ],
+  "groundtruth": [
+   "Life of the Party  (2018)"
+  ],
+  "output": "SELECT tb.primaryTitle\nFROM title_basics tb\nWHERE FIND_IN_SET('Romance', tb.genres) > 0\nORDER BY tb.averageRating DESC, tb.numVotes DESC;",
+  "extracted_SQL": "SELECT tb.primaryTitle\nFROM title_basics tb\nWHERE FIND_IN_SET('Romance', tb.genres) > 0\nORDER BY tb.averageRating DESC, tb.numVotes DESC"
+ },
+ {
+  "id": 21191,
+  "query": "Hi. Can you please recommend a good action movie. Something similar to The Matrix (1999)",
+  "history": [
+   "The Matrix (1999)",
+   "John Wick (2014)"
+  ],
+  "groundtruth": [
+   "The Matrix Revolutions (2003)"
+  ],
+  "output": "SELECT tb.primaryTitle\nFROM title_basics tb\nWHERE FIND_IN_SET('Action', tb.genres) AND startYear > 1990 AND startYear < 2010;",
+  "extracted_SQL": "SELECT tb.primaryTitle\nFROM title_basics tb\nWHERE FIND_IN_SET('Action', tb.genres) AND startYear > 1990 AND startYear < 2010"
+ },
+ {
+  "id": 21409,
+  "query": "I am home all weekend and am looking for some movie recommendations. I'm not picky.",
+  "history": [
+   "Sex and Lucia (2001)",
+   "The Pianist  (2002)",
+   "The Shawshank Redemption (1994)"
+  ],
+  "groundtruth": [
+   "Life of Pi "
+  ],
+  "output": "SELECT tb.primaryTitle\nFROM title_basics tb\nWHERE tb.titleType = 'movie'\nAND tb.startYear > 2002\nORDER BY tb.averageRating DESC\nLIMIT 10;",
+  "extracted_SQL": "SELECT tb.primaryTitle\nFROM title_basics tb\nWHERE tb.titleType = 'movie'\nAND tb.startYear > 2002\nORDER BY tb.averageRating DESC\nLIMIT 10"
+ },
+ {
+  "id": 21431,
+  "query": "do you have some horror movies to recommend please!",
+  "history": [
+   "Godfather  (1991)"
+  ],
+  "groundtruth": [
+   "Life of the Party  (2018)",
+   "Scarface  (1983)"
+  ],
+  "output": "SELECT tb.primaryTitle\nFROM title_basics tb\nWHERE FIND_IN_SET('Horror', tb.genres) > 0\nORDER BY tb.averageRating DESC, tb.numVotes DESC;",
+  "extracted_SQL": "SELECT tb.primaryTitle\nFROM title_basics tb\nWHERE FIND_IN_SET('Horror', tb.genres) > 0\nORDER BY tb.averageRating DESC, tb.numVotes DESC"
+ },
+ {
+  "id": 21528,
+  "query": "I am looking for good horror movie.",
+  "history": [
+   "The Lion King (1994)",
+   "Beauty and the Beast  (1992)",
+   "Pocahontas  (1995)"
+  ],
+  "groundtruth": [
+   "Tangled (2010)"
+  ],
+  "output": "SELECT tb.primaryTitle\nFROM title_basics tb\nWHERE FIND_IN_SET('Horror', tb.genres) > 0\nORDER BY tb.averageRating DESC\nLIMIT 3;",
+  "extracted_SQL": "SELECT tb.primaryTitle\nFROM title_basics tb\nWHERE FIND_IN_SET('Horror', tb.genres) > 0\nORDER BY tb.averageRating DESC\nLIMIT 3"
+ },
+ {
+  "id": 21610,
+  "query": "I love Saving Private Ryan (1998) , could you recommend more?",
+  "history": [],
+  "groundtruth": [
+   "Equilibrium  (2002)",
+   "Oblivion  (2013)"
+  ],
+  "output": "SELECT tb.primaryTitle\nFROM title_basics tb\nWHERE FIND_IN_SET('War', tb.genres) > 0\nAND startYear = 1998\nAND tb.tconst != 'tt0120815'\nORDER BY tb.averageRating DESC, tb.numVotes DESC\nLIMIT 5;",
+  "extracted_SQL": "SELECT tb.primaryTitle\nFROM title_basics tb\nWHERE FIND_IN_SET('War', tb.genres) > 0\nAND startYear = 1998\nAND tb.tconst != 'tt0120815'\nORDER BY tb.averageRating DESC, tb.numVotes DESC\nLIMIT 5"
+ },
+ {
+  "id": 21657,
+  "query": "I would like to watch a good action movie tonight. any recommendations?",
+  "history": [
+   "The Matrix (1999)",
+   "Source Code (2011)",
+   "Primer  (2004)"
+  ],
+  "groundtruth": [
+   "Inception (2010)"
+  ],
+  "output": "SELECT tb.primaryTitle\nFROM title_basics tb\nWHERE FIND_IN_SET('Action', tb.genres) > 0\nAND tb.startYear > 2000\nORDER BY tb.averageRating DESC\nLIMIT 5;",
+  "extracted_SQL": "SELECT tb.primaryTitle\nFROM title_basics tb\nWHERE FIND_IN_SET('Action', tb.genres) > 0\nAND tb.startYear > 2000\nORDER BY tb.averageRating DESC\nLIMIT 5"
+ },
+ {
+  "id": 21665,
+  "query": "Im looking for a good comedy what would you suggest",
+  "history": [
+   "Fargo  (1996)",
+   "The Usual Suspects (1995)",
+   "Reservoir Dogs (1992)",
+   "Pulp Fiction (1994)",
+   "Oldboy  (2003)"
+  ],
+  "groundtruth": [
+   "I Saw the Devil (2010)"
+  ],
+  "output": "SELECT tb.primaryTitle\nFROM title_basics tb\nWHERE FIND_IN_SET('Comedy', tb.genres) > 0\nORDER BY tb.averageRating DESC, tb.numVotes DESC;",
+  "extracted_SQL": "SELECT tb.primaryTitle\nFROM title_basics tb\nWHERE FIND_IN_SET('Comedy', tb.genres) > 0\nORDER BY tb.averageRating DESC, tb.numVotes DESC"
+ },
+ {
+  "id": 21926,
+  "query": "What about a good comedy for the end?",
+  "history": [
+   "Wells Fargo  (1937)",
+   "Pulp Fiction (1994)",
+   "Sin City  (2005)"
+  ],
+  "groundtruth": [
+   "Eagle Eye (2008)"
+  ],
+  "output": "SELECT tb.primaryTitle\nFROM title_basics tb\nWHERE FIND_IN_SET('Comedy', tb.genres) > 0\nAND tb.startYear < 2022\nORDER BY tb.averageRating DESC\nLIMIT 1;",
+  "extracted_SQL": "SELECT tb.primaryTitle\nFROM title_basics tb\nWHERE FIND_IN_SET('Comedy', tb.genres) > 0\nAND tb.startYear < 2022\nORDER BY tb.averageRating DESC\nLIMIT 1"
+ },
+ {
+  "id": 21989,
+  "query": "i like horror and comedies do you know any good ones",
+  "history": [
+   "Insidious  (2011)",
+   "Jigsaw (2017)",
+   "Girls Trip (2017)"
+  ],
+  "groundtruth": [
+   "The Other Guys (2010)",
+   "The Possession (2012)"
+  ],
+  "output": "SELECT tb.primaryTitle\nFROM title_basics tb\nWHERE (FIND_IN_SET('Horror', tb.genres) OR FIND_IN_SET('Comedy', tb.genres))\nAND tb.startYear > 2010\nAND tb.startYear < 2020;",
+  "extracted_SQL": "SELECT tb.primaryTitle\nFROM title_basics tb\nWHERE (FIND_IN_SET('Horror', tb.genres) OR FIND_IN_SET('Comedy', tb.genres))\nAND tb.startYear > 2010\nAND tb.startYear < 2020"
+ },
+ {
+  "id": 22547,
+  "query": "Sure can you suggest some good movies for me to watch.",
+  "history": [
+   "Toy Story (1995)",
+   "Coco  (2017)",
+   "Coraline  (2009)",
+   "Finding Dory (2016)",
+   "Mary Poppins  (1964)"
+  ],
+  "groundtruth": [
+   "The Karate Kid (1984)"
+  ],
+  "output": "SELECT tb.primaryTitle\nFROM title_basics tb\nWHERE (\n    FIND_IN_SET('Animation', tb.genres) > 0 \n    OR FIND_IN_SET('Adventure', tb.genres) > 0\n    OR FIND_IN_SET('Family', tb.genres) > 0\n)\nAND (tb.startYear > 1990)\nAND (tb.averageRating > 7.5)\nAND (tb.numVotes > 5000);",
+  "extracted_SQL": "SELECT tb.primaryTitle\nFROM title_basics tb\nWHERE (\n    FIND_IN_SET('Animation', tb.genres) > 0 \n    OR FIND_IN_SET('Adventure', tb.genres) > 0\n    OR FIND_IN_SET('Family', tb.genres) > 0\n)\nAND (tb.startYear > 1990)\nAND (tb.averageRating > 7.5)\nAND (tb.numVotes > 5000)"
+ },
+ {
+  "id": 22576,
+  "query": "Hi, what is a good action movie?",
+  "history": [
+   "Star Wars  (1977)",
+   "Paycheck  (2003)",
+   "Guardians of the Galaxy  (2014)",
+   "Jumanji (1995)",
+   "Guardians of the Galaxy Vol. 2 (2017)"
+  ],
+  "groundtruth": [
+   "Jumanji  (2017)"
+  ],
+  "output": "SELECT tb.primaryTitle\nFROM title_basics tb\nWHERE FIND_IN_SET('Action', tb.genres) > 0\nAND tb.startYear > 1990\nAND tb.numVotes > 100000;",
+  "extracted_SQL": "SELECT tb.primaryTitle\nFROM title_basics tb\nWHERE FIND_IN_SET('Action', tb.genres) > 0\nAND tb.startYear > 1990\nAND tb.numVotes > 100000"
+ },
+ {
+  "id": 22612,
+  "query": "They recommend me a movie of heroes",
+  "history": [
+   "Memento  (2000)",
+   "Eraserhead (1977)",
+   "Aliens  (1986)",
+   "The Silence of the Lambs  (1991)"
+  ],
+  "groundtruth": [
+   "Inception (2010)"
+  ],
+  "output": "SELECT tb.primaryTitle\nFROM title_basics tb\nWHERE FIND_IN_SET('Action', tb.genres) > 0\nOR FIND_IN_SET('Thriller', tb.genres) > 0\nOR FIND_IN_SET('Crime', tb.genres) > 0\nOR FIND_IN_SET('Mystery', tb.genres) > 0\nOR FIND_IN_SET('Sci-Fi', tb.genres) > 0\nORDER BY tb.averageRating DESC, tb.numVotes DESC\nLIMIT 1;",
+  "extracted_SQL": "SELECT tb.primaryTitle\nFROM title_basics tb\nWHERE FIND_IN_SET('Action', tb.genres) > 0\nOR FIND_IN_SET('Thriller', tb.genres) > 0\nOR FIND_IN_SET('Crime', tb.genres) > 0\nOR FIND_IN_SET('Mystery', tb.genres) > 0\nOR FIND_IN_SET('Sci-Fi', tb.genres) > 0\nORDER BY tb.averageRating DESC, tb.numVotes DESC\nLIMIT 1"
+ },
+ {
+  "id": 22695,
+  "query": "Some action movie do you have in mind?",
+  "history": [
+   "A Good Day to Die Hard (2013)",
+   "Die Hard with a Vengeance (1995)",
+   "Die Hard (1988)",
+   "Deadpool 2  (2018)",
+   "Black Panther (2018)",
+   "The Avengers  (2012)",
+   "Avengers: Infinity War (2018)",
+   "Live Free or Die Hard (2007)",
+   "Deadpool  (2016)"
+  ],
+  "groundtruth": [
+   "Vacation  (2015)"
+  ],
+  "output": "SELECT tb.primaryTitle\nFROM title_basics tb\nWHERE FIND_IN_SET('Action', tb.genres) > 0\nAND startYear > 2010\nAND tb.tconst NOT IN ('tt1345836', 'tt4154756', 'tt0848228', 'tt2395427', 'tt0848228', 'tt3498820', 'tt1431045', 'tt5463162', 'tt0848228')\nORDER BY tb.numVotes DESC\nLIMIT 5;",
+  "extracted_SQL": "SELECT tb.primaryTitle\nFROM title_basics tb\nWHERE FIND_IN_SET('Action', tb.genres) > 0\nAND startYear > 2010\nAND tb.tconst NOT IN ('tt1345836', 'tt4154756', 'tt0848228', 'tt2395427', 'tt0848228', 'tt3498820', 'tt1431045', 'tt5463162', 'tt0848228')\nORDER BY tb.numVotes DESC\nLIMIT 5"
+ },
+ {
+  "id": 22841,
+  "query": "I really like comedy and action and good recommendations ?!",
+  "history": [
+   "The Hurt Locker (2008)",
+   "Black Hawk Down  (2002)",
+   "Braveheart (1995)",
+   "High Noon (1952)",
+   "Saving Private Ryan (1998)",
+   "MASH  (1970)"
+  ],
+  "groundtruth": [
+   "Dunkirk  (2017)"
+  ],
+  "output": "SELECT tb.primaryTitle\nFROM title_basics tb\nWHERE (FIND_IN_SET('Comedy', tb.genres) > 0 OR FIND_IN_SET('Action', tb.genres) > 0)\nAND tb.startYear > 1990\nAND tb.averageRating > 7\nORDER BY tb.averageRating DESC;",
+  "extracted_SQL": "SELECT tb.primaryTitle\nFROM title_basics tb\nWHERE (FIND_IN_SET('Comedy', tb.genres) > 0 OR FIND_IN_SET('Action', tb.genres) > 0)\nAND tb.startYear > 1990\nAND tb.averageRating > 7\nORDER BY tb.averageRating DESC"
+ },
+ {
+  "id": 22934,
+  "query": "I'm in the mood for something by Stephen King.",
+  "history": [
+   "The Other Woman  (2014)",
+   "When Harry Met Sally... (1989)",
+   "50 First Dates (2004)"
+  ],
+  "groundtruth": [
+   "Me, Myself & Irene (2000)"
+  ],
+  "output": "SELECT tb.primaryTitle\nFROM title_basics tb\nJOIN title_crew tc ON tb.tconst = tc.tconst\nJOIN name_basics nb ON nb.nconst = ANY(tc.writers)\nWHERE nb.primaryName = 'Stephen King';",
+  "extracted_SQL": "SELECT tb.primaryTitle\nFROM title_basics tb\nJOIN title_crew tc ON tb.tconst = tc.tconst\nJOIN name_basics nb ON nb.nconst = ANY(tc.writers)\nWHERE nb.primaryName = 'Stephen King'"
+ },
+ {
+  "id": 23182,
+  "query": "can you recommend a movie",
+  "history": [
+   "Natural Born Killers (1994)",
+   "Fight Club (1999)",
+   "Gone Girl  (2014)"
+  ],
+  "groundtruth": [
+   "Inception (2010)"
+  ],
+  "output": "SELECT tb.primaryTitle\nFROM title_basics tb\nWHERE \n    FIND_IN_SET('Crime', tb.genres) > 0\n    AND startYear > 2010\n    AND avgRating > 7\n    AND numVotes > 50000;",
+  "extracted_SQL": "SELECT tb.primaryTitle\nFROM title_basics tb\nWHERE \n    FIND_IN_SET('Crime', tb.genres) > 0\n    AND startYear > 2010\n    AND avgRating > 7\n    AND numVotes > 50000"
+ }
+]

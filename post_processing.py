@@ -56,10 +56,13 @@ def extract_SQL(item):
 if __name__ == "__main__":
     # print(parser_statement("SELECT * FROM movie WHERE titleType ='movie' AND titleType IS NOT NULL ORDER BY averageRating DESC LIMIT?"))
     # assert 1==0
-    output_dir = './results/gpt3.5'
+    model = "llama13b"
+    mode = "fewshot"
+    output_dir = f'results_new_cases/{model}_{mode}'
+    result_file = f"./results_new_cases/{model}_{mode}/predicted_results_test_filtered.jsonl"
     
     data = []
-    with open(f'./{output_dir}/predicted_results.jsonl', 'r') as f:
+    with open(result_file, 'r') as f:
         for line in f.readlines():
             data.append(json.loads(line))
 
