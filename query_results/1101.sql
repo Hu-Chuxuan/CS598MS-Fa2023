@@ -1,1 +1,0 @@
-SELECT DISTINCT tb.* FROM imdb.title_basics AS tb INNER JOIN imdb.name_basics as na ON tb.primaryTitle = na.primaryName

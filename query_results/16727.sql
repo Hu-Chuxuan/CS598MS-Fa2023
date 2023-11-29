@@ -1,0 +1,1 @@
+SELECT * FROM title_principals WHERE category = \'\N\' AND job LIKE '%actor%' ORDER BY SUM(CASE WHEN category='actress' THEN 1 ELSE 0 END) DESC LIMIT 1

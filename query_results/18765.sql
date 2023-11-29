@@ -1,1 +1,0 @@
-SELECT t.* FROM titles AS t WHERE t.titleType = "movie" AND t.primaryTitle IN ('The Hangover','The Jerk') ORDER BY rating DESC LIMIT 6

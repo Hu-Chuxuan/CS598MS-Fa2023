@@ -1,1 +1,0 @@
-SELECT t.* FROM `title` AS t INNER JOIN `name_basics` as b ON t.`id` = b.`primaryMovieId`

@@ -1,1 +1,0 @@
-SELECT tb.* FROM title_basic AS tb WHERE ((tb.genre = "Horror") AND (tb.startyear < 1990))

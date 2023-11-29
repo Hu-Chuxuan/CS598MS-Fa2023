@@ -1,1 +1,0 @@
-SELECT t.* FROM (title_basic t INNER JOIN title_rating r ON t.id = r.tID) WHERE ((r.averageRating >= '6') AND ('7' <= r.numVotes)) OR ((r.averageRating <='0'))

@@ -1,1 +1,1 @@
-SELECT t.* FROM imdb.title AS t INNER JOIN imdb.name as n ON t.primaryTitle = n.primaryName WHERE n.birthYear BETWEEN? AND? ORDER BY avg(rating) DESC LIMIT 0, 6
+SELECT * FROM title WHERE isAdult = true AND titleType LIKE '%mov%' ORDER BY numVotes DESC LIMIT 10 OFFSET 0

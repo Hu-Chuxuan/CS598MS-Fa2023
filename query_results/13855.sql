@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE titleType = "Movie" AND (startYear >= $yearFrom OR startYear <= yearTo)

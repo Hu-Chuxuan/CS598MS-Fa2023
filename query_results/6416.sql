@@ -1,1 +1,0 @@
-SELECT tb.* FROM title_basic AS tb JOIN name_basic as nb ON tb.titleType = nb.primaryName WHERE tb.isAdult!= true AND tb.startYear > 1960

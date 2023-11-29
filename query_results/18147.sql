@@ -1,1 +1,0 @@
-SELECT * FROM (title_ratings t INNER JOIN name_basics b ON t.primaryTitle = b.primaryName) WHERE (b.deathYear IS NULL OR b.deathYear >= :userInput AND b.startYear <= :userInput)

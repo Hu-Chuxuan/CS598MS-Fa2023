@@ -1,1 +1,0 @@
-SELECT * FROM title_basics WHERE tconst IN ('Dumb and Dumber','Hot Tub Time Machine') AND titleType='Movie' ORDER BY rating DESC LIMIT 6

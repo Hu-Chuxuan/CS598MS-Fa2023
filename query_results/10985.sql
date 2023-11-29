@@ -1,1 +1,0 @@
-SELECT * FROM (title_recommendation INNER JOIN title_history ON title_histories.user_id = title_recommendations.user_id) WHERE rating > 6

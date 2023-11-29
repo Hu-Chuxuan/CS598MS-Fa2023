@@ -1,1 +1,0 @@
-SELECT tc.* FROM title_basics AS tb JOIN name_basics ON (tb.titleId = nb.titleId) WHERE tb.isAdult=false AND tb.startYEAR<=1990

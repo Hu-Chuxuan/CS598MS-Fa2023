@@ -1,1 +1,1 @@
-SELECT DISTINCT(title) AS "Title" FROM imdb.movies
+SELECT DISTINCT t.* FROM title AS t JOIN title_basics b ON b.tconst = t.tconst AND b.primaryName =? WHERE ((b.startYear BETWEEN CAST(? AS DATE) AND CAST(? AS DATE)) OR (b.deathYear IS NULL))

@@ -1,1 +1,1 @@
-SELECT t1.* FROM title_basic AS tb INNER JOIN name_basic as nb ON tb.`title_type` = `nb`.`primary_name`
+SELECT * FROM title WHERE tconst = 'tt0000001' AND (((job LIKE '%Director%' OR job LIKE '%Writer%') OR ((category='Self' AND job NOT IN ('Production Manager','Stunt Performer')))) OR (job LIKE '%Actor%'))

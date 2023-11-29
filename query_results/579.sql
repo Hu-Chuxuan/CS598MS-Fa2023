@@ -1,1 +1,0 @@
-SELECT DISTINCT t.* FROM title_rating r INNER JOIN title_basics b ON r.titleID = b.id INNER JOIN cast c ON r.castId = c.id WHERE b.primaryTitle LIKE '%romantic%' AND c.job LIKE %'comedy%'

@@ -1,1 +1,1 @@
-SELECT tb.* FROM title_basic AS tb INNER JOIN (title_rating AS tr ON tb.titleId = tr.titleId) WHERE tb.primaryTitle LIKE'really%' AND tb.startYear >= 2019
+SELECT * FROM title_basics WHERE nconst = 'nm0000001'

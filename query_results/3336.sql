@@ -1,1 +1,0 @@
-SELECT t1.* FROM (title_basics AS tb JOIN title_ratings AS tr ON tb.primaryTitle = tr.title) LEFT OUTER JOIN title_crew AS tc ON tb.movieId=tc.id JOIN title_principals as tp WHERE tb.startYear > 2018 AND tb.endYear < 2022

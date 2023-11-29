@@ -1,1 +1,1 @@
-SELECT TOP(3) * FROM title_rating WHERE rating > 6
+SELECT * FROM `title` WHERE `genre` LIKE '%comedy%' AND (`startyear <=? OR `endyear >=?)` ORDER BY `avgrating` DESC LIMIT 1 OFFSET 0

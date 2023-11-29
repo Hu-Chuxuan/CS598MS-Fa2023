@@ -1,1 +1,3 @@
-SELECT * FROM title_recommendation WHERE userInput = "Reservoir Dogs" AND userPreferHistory LIKE "%Reservoir%" ORDER BY rating DESC
+SELECT * FROM 
+	title_principals AS TP
+WHERE (((TP.job='actress') AND ((TP.category='character')))) OR ((TP.job IN ('assistant','blacksmith','carpenter','compositor','cutter','dolly grip','electrician','editor','makeup artist','miscellaneous crew','property master','set decorator','special effects assistant','stunts','trainee'))) ORDER BY (((ordering=1)),((ordering>1)))

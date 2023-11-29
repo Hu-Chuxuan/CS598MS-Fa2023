@@ -1,1 +1,0 @@
-SELECT DISTINCT tb.titleID AS id FROM title_basics as tb INNER JOIN title_ratings as tr ON tb.titleID = tr.movieID INNER JOIN name_basics as na ON tb.nameID = na.personID INNER JOIN title_crew as c ON c.titleID = tb.titleID AND c.job = "director" WHERE na.primaryName LIKE "%Angelina%" OR tb.startYear >= 2000

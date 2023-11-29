@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE titleType = "movie" AND (director = "James Cameron") OR (writer="Nicholas Sparks")

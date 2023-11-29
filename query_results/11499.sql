@@ -1,1 +1,1 @@
-SELECT tconst.titleId FROM `title` AS tconst INNER JOIN `name` AS nconst ON(nconst.`primaryName`, tconst.`primaryName`) WHERE tconst.`averageRating` > 8 AND ((nconst.birthYear BETWEEN? AND?)) AND tconst.`isAdult` = false
+SELECT * from title_principals where title = 'tt0000001' order by nconst asc limit 1

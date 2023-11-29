@@ -1,1 +1,1 @@
-SELECT * FROM title WHERE rating > 7
+SELECT * from title_basics where primaryTitle =? order by avgRating desc limit 5

@@ -1,1 +1,0 @@
-SELECT * FROM imdb WHERE tconst LIKE '%dumb%' OR tconst LIKE '%super%'

@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE ttype ='movie' AND startyear >= '1900' ORDER BY avgrat DESC LIMIT 10 OFFSET 0

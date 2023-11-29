@@ -1,1 +1,0 @@
-SELECT * FROM titles WHERE rating >=.7 AND genre = 'comedy' ORDER BY avg(rating), numvoters DESC LIMIT 6

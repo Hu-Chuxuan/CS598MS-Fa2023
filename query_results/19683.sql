@@ -1,1 +1,0 @@
-SELECT t.* FROM movies AS m INNER JOIN title_rating AS r ON m.title = r.movieID WHERE rating >= 6 AND genre IN ('Comedy') ORDER BY rating DESC LIMIT 5

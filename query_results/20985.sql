@@ -1,1 +1,0 @@
-SELECT title_basics.* FROM title_basics WHERE title_basic.startyear < 1980 AND NOT EXISTS( SELECT * FROM title_principals WHERE character LIKE '%Murder%' OR character LIKE '%Suicide%' ) ORDER BY rating DESC LIMIT 6

@@ -1,1 +1,0 @@
-SELECT title.* FROM title_rating AS rating WHERE rating.titleID = title.id AND rating.numVotes >= userInput AND rating.averageRating <= userPreferedRatings

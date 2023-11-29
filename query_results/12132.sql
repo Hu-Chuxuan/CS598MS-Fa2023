@@ -1,1 +1,0 @@
-SELECT * FROM imdb WHERE tconst = "title_basics" AND averageRating > 8

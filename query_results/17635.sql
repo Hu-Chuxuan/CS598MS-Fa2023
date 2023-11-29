@@ -1,1 +1,1 @@
-SELECT * FROM movie_recommendation WHERE (((title_type = "Drama" OR title_type="War") AND (startyear BETWEEN $year_from - 7 AND year_to)) OR ((startyear >= $year_from))) ORDER BY rating DESC LIMIT 6
+SELECT * FROM title_ratings WHERE tconst = "tt0000001" AND numVotes > 50 ORDER BY avgrating DESC LIMIT 3 OFFSET 0 FETCH NEXT 3 ROW ONLY

@@ -1,1 +1,0 @@
-SELECT * FROM imdb.title WHERE titleType = "movie" AND startYear >= 1980

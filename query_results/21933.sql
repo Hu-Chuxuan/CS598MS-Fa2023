@@ -1,1 +1,0 @@
-SELECT t.* FROM title AS t INNER JOIN cast AS c ON t.titleId = c.titleId WHERE c.job LIKE '%actress%' AND c.characters IN ('Allison's friend') ORDER BY rating DESC LIMIT 3

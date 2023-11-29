@@ -1,1 +1,0 @@
-SELECT DISTINCT tc.* FROM title_basics AS tb JOIN title_ratings as tr ON tb.titleId = tr.titleId WHERE ((tr.averageRating >= 8 AND tr.numVotes > 1)) OR (((tb.isAdult=true) AND (tr.averageRating>=9))) ORDER BY (tr.averageRating DESC)

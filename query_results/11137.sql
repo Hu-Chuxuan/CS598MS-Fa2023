@@ -1,1 +1,1 @@
-SELECT tc.* FROM title_basic tb INNER JOIN title_rating tr ON tb.titleId = tr.titleId WHERE tr.numvotes >= 10 AND tr.averageRatng > 7
+SELECT * FROM title WHERE tconst =? AND (genre LIKE '%western%' OR genre LIKE '%spaghetti%' OR genre LIKE '%cowboy%') ORDER BY averageRATING DESC LIMIT 5

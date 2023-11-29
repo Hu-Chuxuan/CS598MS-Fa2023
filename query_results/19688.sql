@@ -1,2 +1,0 @@
-SELECT * FROM
-(SELECT tc.*, nr.numvotes AS rating FROM title_basic TB INNER JOIN title_rating TR ON TB.titleID = TR.titleID LEFT OUTER JOIN title_ratings NR ON TB.titleID=NR.titleID WHERE tb.isadult IS FALSE AND tb.startyear BETWEEN? AND? ORDER BY tb.genre ASC LIMIT?)

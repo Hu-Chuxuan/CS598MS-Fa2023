@@ -1,1 +1,1 @@
-SELECT * FROM title WHERE (genre='family') AND (primaryTitle LIKE '%cinder%')
+SELECT * from tconst where ttype='movie' order by avgratings desc limit 1

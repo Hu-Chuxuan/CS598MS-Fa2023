@@ -1,1 +1,0 @@
-SELECT DISTINCT t.* FROM titles AS t JOIN casts AS c ON t.titleId = c.movieId WHERE ((c.actor IN ('Mel Gibson','Sandra Bullock')) AND ((((t.category IN ("Comedy","Action")) OR t.primaryProfession='Actor') AND t.genre NOT LIKE '%Drama%'))) ORDER BY t.startYear DESC

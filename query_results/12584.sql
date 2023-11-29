@@ -1,1 +1,1 @@
-SELECT t.* FROM movies AS m INNER JOIN casts c ON m.titleID = c.movieID AND c.characterID > 'Oh's favorite character' UNION SELECT * from movie where titleid in(select distinct titleId from ratings r inner join ratingset rs on r.ratingSetID=rs.ratingSetID WHERE userId='Oh') GROUP BY t.titleID HAVING COUNT(*) >= 1 ORDER by count(distinct t.titleID) DESC LIMIT 6
+SELECT * FROM title WHERE titleType = “Movie” AND ((startYear BETWEEN 2000 AND 2020 OR endYear BETWEEN 2000 AND 2020)) AND (genre IN ('Biographical','Drama')) ORDER BY runtime DESC LIMIT 1

@@ -1,1 +1,0 @@
-SELECT * FROM title_basics WHERE rating >= '8' AND length <= '2h'

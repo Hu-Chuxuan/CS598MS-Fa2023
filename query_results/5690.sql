@@ -1,1 +1,0 @@
-SELECT tb.* FROM title_basic AS tb JOIN title_rating as tr ON tb.titleID = tr.titleID WHERE ((tr.averageRating > 6 AND tr.numvoters>7)) OR (tr.averageRating < 6)

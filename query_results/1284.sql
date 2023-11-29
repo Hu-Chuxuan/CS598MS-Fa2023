@@ -1,1 +1,2 @@
-SELECT DISTINCT tc.* FROM title_basics AS tb JOIN title_ratings AS tr ON tb.titleID = tr.movieId WHERE tr.averageRating >=? AND tr.numVotes >?
+SELECT * FROM ((SELECT DISTINCT t.*,(CASE WHEN r.numVotes > 1 THEN avg(r.averageRating)/AVG(r.avgVoteCount) ELSE AVG(r.averageRating)*AVG(r.avgVoteCount)/AVG(r.numVotes+1) END) AS 'Score')
+FROM imdb.rating AS r INNER JOIN imdb.title AS t ON r.tconst = t.tconst WHERE r.userID=1 AND r.job IN ('director','actress','author')) AS subquery GROUP BY t.primaryTitle ORDER BY Score DESC LIMIT 5 OFFSET 0)

@@ -1,1 +1,0 @@
-SELECT * FROM title_basics tb WHERE tb.titleType = "Movie" AND tb.isAdult!= TRUE

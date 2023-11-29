@@ -1,1 +1,0 @@
-SELECT t.titleID AS MovieId, t.movieName as Title, t.rating, t.genre FROM title AS t WHERE t.movieName LIKE '%blade%' OR t.movieName LIKE '%kage%'

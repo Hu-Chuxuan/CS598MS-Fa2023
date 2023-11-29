@@ -1,1 +1,0 @@
-SELECT t.* FROM titles AS t JOIN name_basics ON t.titleId = nb.titleId WHERE nb.primaryName LIKE '%Matthew%' AND nb.primaryProfession='Actor'

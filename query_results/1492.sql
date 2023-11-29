@@ -1,1 +1,0 @@
-SELECT t.* FROM imdb_movie AS t INNER JOIN imdb_title_rating AS r ON t.imdbID = r.imdbID WHERE genre LIKE 'comedy'

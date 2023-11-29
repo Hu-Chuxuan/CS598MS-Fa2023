@@ -1,1 +1,0 @@
-SELECT * FROM title_recommendation WHERE userInput = "yeah that one was alriguth" AND userPreferneceHistory LIKE '%Office%'

@@ -1,1 +1,1 @@
-SELECT DISTINCT t.* FROM titles AS t JOIN title_recommendation AS tr ON(tr.titleId = t.id AND tr.userId=?) WHERE (t.genres LIKE '%action%' OR t.directors LIKE '%Peter Jackson%') ORDER BY rating DESC LIMIT?
+SELECT t.* FROM `movielens` AS m INNER JOIN (`titleratings` AS r ON m.`id = r.`mid`) LEFT OUTER JOIN (`titlenames` AS n ON m.`id = n.`tmID`) WHERE n.`nID` IN ('nm0005690','nm0374658') AND ((r.`avgrating` >=.5 OR r.`numvotes` > 20)) ORDER BY r.`avgrating`, r.`numvotes`

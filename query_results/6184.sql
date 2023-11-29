@@ -1,1 +1,1 @@
-SELECT DISTINCT tc.* FROM title_basic AS tb INNER JOIN title_rating as tr ON(tb.title_id=tr.title_id AND tb.isadult = true)
+SELECT * FROM `title` WHERE (`isAdult` = false AND `startYear >= 1980`) ORDER BY `genre`, `runtimeMinutes` DESC LIMIT 10 OFFSET 10

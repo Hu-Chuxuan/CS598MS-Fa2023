@@ -1,1 +1,0 @@
-SELECT * FROM title_basic WHERE tconst = "Cheaper by the Dozen" AND titleType IN ('movie') OR tconst ="Stepmom"

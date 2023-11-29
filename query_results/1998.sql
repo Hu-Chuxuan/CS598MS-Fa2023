@@ -1,1 +1,1 @@
-SELECT * FROM title_rating WHERE rating >= 6 AND user_id = 1
+SELECT * FROM `title` WHERE `isAdult` = '1' AND (`primaryTitle`,`startYear`) IN ('[Movie Name]','[Start Year])')

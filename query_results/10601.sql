@@ -1,1 +1,0 @@
-SELECT DISTINCT t.* FROM title AS t JOIN name AS n ON t.titleType = n.primaryName WHERE n.birthYear >=? AND n.deathYear <=? AND t.genre IN ('Action') ORDER BY rating DESC LIMIT?

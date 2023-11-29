@@ -1,2 +1,0 @@
-SELECT * FROM ((SELECT DISTINCT t.*, r.numvotes, r.averagerating from imdb.title_ratings as r INNER JOIN imdb.title_basicstitle_ratings AS r ON(r.titleID=t.titleID)) INNER JOIN imdb.name_basictitle_principalspathname_basicstitle_crewtitle_principals AS p ON (p.primaryName = t.name) WHERE p.job='Actress' AND p.category IN ('Leading') )
-INNER JOIN imdb.name_basictitle_principalsexualitypathname_basictitle_crewwriterstitle_crew AS w ON (w.directorid = t.directorId) where t.genre in ('Horror','Thriller')

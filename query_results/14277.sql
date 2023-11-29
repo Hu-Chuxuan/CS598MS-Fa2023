@@ -1,1 +1,0 @@
-SELECT * FROM `title` WHERE `genre` LIKE '%drama%' OR `genre` LIKE 'documentary' AND `year` >= 1900

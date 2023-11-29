@@ -1,1 +1,0 @@
-SELECT * FROM `title` WHERE `genre` LIKE '%Science%Fiction%' AND (`primaryTitle`, `originalTitle`) IN ('Doctor', 'Who') ORDER BY RAND() LIMIT 10

@@ -1,1 +1,0 @@
-SELECT * FROM movie WHERE genre LIKE '%comedy%' OR rating >= 7 AND runningTime <= 90

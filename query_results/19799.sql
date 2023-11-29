@@ -1,1 +1,1 @@
-SELECT * FROM title WHERE (director IN ('Joss Whedon')) AND (runtimeMinutes >= 96)
+SELECT * FROM title_principals WHERE category = 'actors' AND job IN ('assistant','blacksmith') ORDER BY averageRATING DESC LIMIT 3 OFFSET 3

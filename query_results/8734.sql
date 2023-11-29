@@ -1,1 +1,1 @@
-SELECT * FROM movies WHERE rating >.7 AND genre = "Sci-Fi" ORDER BY rating DESC LIMIT 5
+SELECT * from title_basics where tconst = 'tt0000001' order by averageRating desc limit 3

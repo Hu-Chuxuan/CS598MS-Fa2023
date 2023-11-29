@@ -1,1 +1,0 @@
-SELECT DISTINCT tc.* FROM title_basic as tb INNER JOIN title_rating as tr ON tb.title_id = tr.title_id AND tr.averageRating >.90

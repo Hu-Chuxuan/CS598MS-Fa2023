@@ -1,1 +1,0 @@
-SELECT DISTINCT t.* FROM titles AS t WHERE ((genre LIKE '%Comedy%' OR genre LIKE '%Drama%') AND titleType!= "TV") ORDER BY rating DESC LIMIT 1

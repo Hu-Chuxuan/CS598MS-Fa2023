@@ -1,1 +1,0 @@
-SELECT * FROM TITLE_BASICS WHERE titleType = "movie" AND (title_genre IN ('Drama','Comedy') OR actors IN ("Hugh Grant", "Jennifer Aniston")) ORDER BY rating DESC LIMIT 3

@@ -1,1 +1,0 @@
-SELECT DISTINCT tb.titleID AS MovieID FROM title_basic as tb INNER JOIN name_basic as nb ON tb.primaryTitle = nb.primaryName WHERE (tb.isAdult=TRUE OR tb.isAdult=FALSE AND tb.startYear>1960)

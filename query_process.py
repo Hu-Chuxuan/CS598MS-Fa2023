@@ -32,8 +32,9 @@ df4.createOrReplaceTempView("title_principals")
 df5 = spark.read.csv("IMDB/ImdbTitleRatings.csv", header = True)
 df5.createOrReplaceTempView("title_ratings")
 
+output_dir = './results/gpt3.5'
 
-with open('./predicted_results.jsonl', 'r') as json_file:
+with open(f'./{output_dir}/predicted_results.jsonl', 'r') as json_file:
     json_list = [json.loads(line) for line in json_file]
 
 ground_truth_dict = {}
@@ -46,17 +47,10 @@ cnt_AnalysisException = 0
 cnt_otherError = 0
 cnt_timeout = 0
 flag = 0
-for filepath in tqdm(glob.iglob('query_results/*.sql')):
+for filepath in tqdm(glob.iglob(f'./{output_dir}/query_results/*.sql')):
     cnt_total += 1
     print(cnt_total)
     
-    if filepath in ['query_results/16640.sql', 'query_results/10295.sql']:
-        cnt_timeout += 1
-        if filepath == "query_results/10295.sql":
-            flag = 1
-        continue
-    if not flag:
-        continue
     try:
         with open(filepath) as sql_file:
             sql_query = sql_file.read()

@@ -1,1 +1,0 @@
-SELECT * FROM title_basics WHERE tconst =? AND genre IN ('Comedy') ORDER BY avg(rating)

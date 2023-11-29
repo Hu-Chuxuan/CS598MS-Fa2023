@@ -1,1 +1,0 @@
-SELECT DISTINCT * FROM `title_recommendation` WHERE (`user_input` LIKE '%Iron%') AND ('user_preferences' like "%Star%") ORDER BY RAND() LIMIT 7

@@ -1,1 +1,0 @@
-SELECT * FROM title_basics WHERE tconst = "tt1867910" AND (primaryTitle LIKE "%romance%" OR primaryTitle LIKE "%comedy%") AND ((startYear > 1990)) ORDER BY rating DESC LIMIT 5

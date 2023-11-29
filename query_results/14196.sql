@@ -1,2 +1,0 @@
-SELECT DISTINCT movies.* FROM
-(movies JOIN cast ON movies.imdbID = cast.movieid) AS m INNER JOIN cast AS c USING (imdbID) LEFT OUTER JOIN rating AS r ON m.imdbID=r.title WHERE ((c.category LIKE '%mystery%' AND c.job='actor' OR c.job='director') AND (r.rating > '7')) ORDER BY c.birthyear DESC LIMIT 5

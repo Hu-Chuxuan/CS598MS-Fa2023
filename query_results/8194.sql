@@ -1,1 +1,0 @@
-SELECT DISTINCT * FROM (SELECT tb.*, count(tb.titleId) AS "num votes" FROM titleratings as tr JOIN titles as t ON t.id = tr.titleID WHERE ((tr.averageRating > 7 AND tr.averageRating < 8)) AND (tr.numvotes >= 1000 OR tr.numvotes <= 1000 ) GROUP BY tb.titleId HAVING COUNT(*)>1)

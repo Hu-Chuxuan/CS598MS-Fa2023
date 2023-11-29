@@ -1,1 +1,1 @@
-SELECT * FROM title_basics WHERE titleType = "movie" AND ((startYear >= 1860 OR startYear <= 1980)) ORDER BY avg(rating)
+SELECT titleID AS MovieID, titleType AS Movietype FROM title_basic WHERE titleType = “Movie” AND startyear >= '1990' ORDER BY runtimeMinutes DESC LIMIT 2 OFFSET 0 

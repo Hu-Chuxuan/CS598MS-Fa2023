@@ -1,1 +1,0 @@
-SELECT t.* FROM title_principals AS p JOIN title_crew AS c ON p.job = "actor" AND c.director = true WHERE c.id IN(SELECT d.title_id FROM title_crew AS d WHERE actor = 'Al Pacino') OR c.id IN(SELECT w.title_id FROM title_crew AS w WHERE writer=true)

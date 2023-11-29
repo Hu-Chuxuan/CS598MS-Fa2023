@@ -1,1 +1,0 @@
-SELECT t1.* FROM imdb_movies AS t1 JOIN imdb_title_ratings as t2 ON t1.`id` = t2.`movieId` WHERE t2.averageRating >= 8 AND t2.numvotes > 0

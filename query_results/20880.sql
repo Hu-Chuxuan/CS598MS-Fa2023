@@ -1,1 +1,0 @@
-SELECT tc.* FROM title_basics as tb JOIN title_rating as tr ON tb.titleID = tr.titleID WHERE tb.isAdult = 'true' AND tr.averageRating >= 8

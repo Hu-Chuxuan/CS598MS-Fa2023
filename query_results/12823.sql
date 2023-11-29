@@ -1,1 +1,0 @@
-SELECT t.* FROM title_basic AS t WHERE t.titleType = "movie" AND (t.genre LIKE '%comedy%' OR t.genre LIKE '%horror%') ORDER BY t.rating DESC LIMIT 5

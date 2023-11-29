@@ -1,1 +1,0 @@
-SELECT * FROM title_principals WHERE primaryCharacters LIKE '%comedy%' AND category = 'actor' ORDER BY PRIMARYCHARACTER ASC LIMIT 3

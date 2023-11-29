@@ -1,1 +1,0 @@
-SELECT DISTINCT m.* FROM movies AS m INNER JOIN ( SELECT rating, count(rating) as voteCount from ratings GROUP BY rating ORDER BY VoteCount DESC LIMIT 5 ) r ON ((m.title_id = r.movieId AND m.isAdult == false)) WHERE m.genre!= '' OR m.genre IS NULL

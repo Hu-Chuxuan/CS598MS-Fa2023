@@ -1,1 +1,0 @@
-SELECT * FROM TITLE_BASICS WHERE tconst = 'title_basics' AND titleType IN ('movie') ORDER BY rating DESC LIMIT 6

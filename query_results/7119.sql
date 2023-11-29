@@ -1,1 +1,0 @@
-SELECT t1.* FROM title_basic AS t1 JOIN title_rating AS t2 ON t1.titleType = t2.tconst WHERE t1.primaryTitle LIKE '%Action%' AND (t1.startYear >= '1960' OR t1.endYear <= '2010') GROUP BY t1.primaryTitle ORDER BY COUNT(*) DESC LIMIT 3

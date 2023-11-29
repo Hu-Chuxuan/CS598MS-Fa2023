@@ -1,1 +1,0 @@
-SELECT t.* FROM title_basics AS t INNER JOIN title_ratings as r ON t.titleId = r.titleID WHERE r.averageRating >= 7 AND r.numvoters > 5

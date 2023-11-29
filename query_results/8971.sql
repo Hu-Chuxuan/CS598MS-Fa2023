@@ -1,1 +1,0 @@
-SELECT t.* FROM movies AS m JOIN casts c ON c.movieId = m.id AND c.category = "character" WHERE m.title IN ('John Wick (2014)','Training Day (2001)' ) GROUP BY m.id

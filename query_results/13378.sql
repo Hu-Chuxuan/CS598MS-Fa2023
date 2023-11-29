@@ -1,1 +1,0 @@
-SELECT * FROM title_principals WHERE ((job = "actor" AND actors IN ('Leonardo DiCaprio','Cillian Murphy') OR actors NOT LIKE '%Ben Affleck%')) ORDER BY rating DESC LIMIT 5

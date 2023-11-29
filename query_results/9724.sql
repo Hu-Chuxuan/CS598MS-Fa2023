@@ -1,1 +1,0 @@
-SELECT * FROM movie WHERE genre='Drama' AND year BETWEEN 2000 AND 2007

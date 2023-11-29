@@ -1,1 +1,1 @@
-SELECT * FROM title WHERE rating >= 6 AND rating <= 10
+SELECT title_id FROM title WHERE title_type ='movie' AND title_genre NOT LIKE '%documentary%' ORDER BY avg_rating DESC LIMIT 3

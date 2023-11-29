@@ -1,1 +1,0 @@
-SELECT * FROM (title_rating INNER JOIN title_crew ON title_rating.director = title_crew.id)

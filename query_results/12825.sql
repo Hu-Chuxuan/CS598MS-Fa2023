@@ -1,1 +1,0 @@
-SELECT t.* FROM (title_basics AS t JOIN (select distinct genre from title_genre) g ON t.`genres` = g.`name`) WHERE t.`startyear` > '1970' AND t.`endyear` < '2008'

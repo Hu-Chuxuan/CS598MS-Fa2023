@@ -1,1 +1,1 @@
-SELECT * FROM movie WHERE genre ='sci-fi' AND rating > 7
+SELECT * FROM title_ratings WHERE ((titleType = 'Movie') AND (numVotes > 1)) ORDER BY avgRating DESC LIMIT 3

@@ -1,1 +1,1 @@
-SELECT t.* FROM movies AS m INNER JOIN cast AS c ON c.title = m.title WHERE (c.job LIKE '%Actor%' OR c.job LIKE '%Actress%') AND c.characters LIKE '%Tim Allen%' ORDER BY rating DESC LIMIT 6
+SELECT * FROM `moviedb`.`title` WHERE (`startyear >=? AND `endyear <=?)` ORDER BY `averagerating DESC`

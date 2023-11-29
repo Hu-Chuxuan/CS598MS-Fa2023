@@ -1,1 +1,0 @@
-SELECT t.* FROM movies AS m JOIN (title_ratings AS r) ON r.movieID = m.id WHERE m.title LIKE '200%' AND m.year >= 1980

@@ -1,1 +1,0 @@
-SELECT t.* FROM movies AS m INNER JOIN title_principals TP ON M.title_id = TP.title_id WHERE TP.job LIKE 'actress' AND TP.category LIKE 'lead' ORDER BY rating DESC LIMIT 1

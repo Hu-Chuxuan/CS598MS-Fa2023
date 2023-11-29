@@ -1,1 +1,0 @@
-SELECT movies.* FROM movies JOIN name_basics ON movies.title_id = name_basics.primaryName WHERE movies.category LIKE "Comedy" AND name_basics.birthYear BETWEEN 1987 AND 1997

@@ -1,1 +1,0 @@
-SELECT t.title_id as MovieId, t.primaryTitle AS Title FROM movies m JOIN titles t ON m.title_id = t.movie_id WHERE t.averageRatings > 7 AND genre LIKE '%Drama%' GROUP BY MovieID HAVING COUNT(*) >= 2

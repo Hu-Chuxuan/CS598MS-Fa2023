@@ -1,1 +1,1 @@
-SELECT t1.* FROM title_ratings AS t1 INNER JOIN title_basic as t2 ON t1.titleID = t2.titleID WHERE t2.isAdult = false AND t1.averageRating >=.8
+SELECT * FROM title_ratings WHERE ((averageRating >= 8 AND averageRating <= 9)) OR (averageRating > 9)

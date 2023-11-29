@@ -1,1 +1,0 @@
-SELECT t.* FROM title AS t JOIN title_principals as p ON t.titleId = p.titleId WHERE p.job IN ('Director') AND p.characters LIKE '%Star-Lord%' ORDER BY p.ordering ASC

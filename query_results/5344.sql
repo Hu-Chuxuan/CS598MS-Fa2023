@@ -1,1 +1,1 @@
-SELECT * FROM titles WHERE director = "Steven Spielberg" OR writer="Steven Spielberg"
+SELECT * FROM title WHERE primaryTitle LIKE '%ant%' OR primaryTitle LIKE '%man%'' AND genre='comic_book_adaptation'

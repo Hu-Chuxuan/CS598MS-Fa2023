@@ -1,1 +1,1 @@
-SELECT * FROM `title` WHERE ((((startYear > 1986 AND startYear < 1997) OR ((endYear <= 2020))))) ORDER BY rating DESC LIMIT 5
+SELECT * FROM title_ratings WHERE numVotes >= @numOfReviews AND avgRating > = @ratingThreshold ORDER BY avgRating DESC LIMIT (@pageSize)

@@ -1,1 +1,0 @@
-SELECT t.* FROM title_basics AS t JOIN name_basics ON t.titleID = n.titleID WHERE (n.primaryName LIKE 'Batman' OR n.birthYear BETWEEN 1976 AND 1978)

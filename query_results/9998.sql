@@ -1,1 +1,0 @@
-SELECT t.* FROM title AS t JOIN actors ON t.actors = actors.id WHERE t.titleType!= '' AND actors.primaryName LIKE '%Leonardo%' ORDER BY t.startYear DESC LIMIT 6

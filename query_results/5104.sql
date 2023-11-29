@@ -1,1 +1,1 @@
-SELECT * FROM movies WHERE title_type = "Book" AND user_input LIKE "%book%" ORDER BY rating DESC LIMIT 8
+SELECT * FROM title WHERE titleType='movie' AND (startYear>=1970 OR startYear<=1999)

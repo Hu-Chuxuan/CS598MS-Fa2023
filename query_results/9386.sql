@@ -1,1 +1,0 @@
-SELECT * FROM titles WHERE rating >= '8' AND runtime > '60'

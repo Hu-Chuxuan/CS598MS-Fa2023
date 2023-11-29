@@ -1,1 +1,0 @@
-SELECT titleId AS id,title_basics.* FROM title_basics WHERE title_type ='movie'

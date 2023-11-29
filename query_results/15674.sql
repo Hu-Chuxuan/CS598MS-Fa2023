@@ -1,1 +1,0 @@
-SELECT * FROM rating WHERE rating >= userInput AND genre = "Documentaries" OR genre LIKE "%Document%" ORDER BY avg(rating)

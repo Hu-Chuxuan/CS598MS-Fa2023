@@ -1,1 +1,0 @@
-SELECT * FROM  tconst WHERE titleType = "KIDS" AND avg(averageRating)/numVotes > 6/5

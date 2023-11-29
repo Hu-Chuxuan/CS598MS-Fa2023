@@ -1,1 +1,0 @@
-SELECT title_types.title_type AS 'Movie Type', COUNT(DISTINCT ratings.title_id) AS 'Number Of Movies' FROM title_rating AS rating LEFT JOIN title_basic AS basic ON rating.title_id = basic.title_id INNER JOIN title_types AS types ON basic.title_type=types.title_type GROUP BY title_types.title_type

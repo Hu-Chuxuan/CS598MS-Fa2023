@@ -1,1 +1,0 @@
-SELECT tc.* FROM title_basics AS tb JOIN name_basics AS nb ON(tb.titleId = nb.titleId AND nb.primaryName =?)

@@ -1,1 +1,0 @@
-SELECT t.* FROM title AS t INNER JOIN rating AS r ON t.titleID = r.movieID WHERE ((r.rating > 6 OR r.rating < 7)) AND NOT EXISTS(SELECT * FROM name WHERE name.primaryName LIKE '%die%') ORDER BY r.averageRating DESC LIMIT 0, 1

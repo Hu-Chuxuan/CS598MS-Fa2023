@@ -1,1 +1,1 @@
-SELECT * FROM  title_ratings WHERE titleType = "movie" AND rating >= 6
+SELECT * FROM title WHERE genre LIKE '%ghost%' AND NOT startyear > 1980 OR startyear = 1980 ORDER BY numvotes DESC LIMIT 3

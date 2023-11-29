@@ -1,1 +1,0 @@
-SELECT t.* FROM titles AS t JOIN title_ratings AS tr ON (tr.title = t.id AND tr.primaryTitle = true)

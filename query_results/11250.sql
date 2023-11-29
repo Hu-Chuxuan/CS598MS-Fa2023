@@ -1,1 +1,0 @@
-SELECT DISTINCT TOP(20) TITLE.titleId AS id, TITLE.primaryTitle AS title FROM Title TITLE INNER JOIN Crew CREW ON TITLE.id = CREW.titleId WHERE CREW.job LIKE '%Director%' AND TITLE.category IN ('Action','Comedy') ORDER BY TITLE.rating DESC

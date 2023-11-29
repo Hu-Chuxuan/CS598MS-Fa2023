@@ -1,1 +1,0 @@
-SELECT tc.* FROM movies AS m INNER JOIN titles_basic AS tb ON m.titleId = tb.id AND tb.isAdult IS NOT NULL

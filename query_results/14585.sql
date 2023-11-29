@@ -1,1 +1,0 @@
-SELECT * FROM (title_ratings JOIN title_principals ON title_rating.movieId = title_principal.movieId) WHERE rating > 7 AND userKnownForTitle IN ('Christian Bale', 'Heath Ledger') GROUP BY rating

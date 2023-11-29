@@ -1,1 +1,0 @@
-SELECT * FROM movie WHERE userInput LIKE '%fun%' AND userPreferanceHistory LIKE '[Troy(2004)]' OR (userInput LIKE '%fun%')AND (userPreferencesHistory LIKE '[Troy(2004)]')

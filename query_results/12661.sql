@@ -1,1 +1,0 @@
-SELECT t1.* FROM (title_basics AS t1 INNER JOIN cast_members AS cm ON t1.`id` = cm.`movieId`) WHERE ((cm.`primaryRole` IS NOT NULL) AND (cm.`category` LIKE 'actor')) GROUP BY `titleType`, `startYear`

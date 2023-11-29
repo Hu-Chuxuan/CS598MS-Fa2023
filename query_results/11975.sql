@@ -1,3 +1,0 @@
-SELECT * FROM ( SELECT DISTINCT t.titleID AS "movieID", n.primaryName AS 'name', t.startYear as year, t.runtimeMinutes as duration,
-                        CASE WHEN t.genre = '' THEN 'Action' ELSE CONCAT(CONVERT('char','GENRES'), t.genre) END genre
-                FROM title_basic t JOIN name_basic n ON t.primaryTitle=n.primaryName WHERE t.isAdult='false') AS T LEFT OUTER JOIN rating r ON r.titleId=T.movieid AND r.numvotes>0 ORDER BY AVG(r.averageRATING) DESC LIMIT 3

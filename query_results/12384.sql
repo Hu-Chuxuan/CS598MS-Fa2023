@@ -1,1 +1,0 @@
-SELECT DISTINCT movies.* FROM (movies INNER JOIN cast ON movies.titleId = cast.movieId) INNER JOIN crew ON cast.castMemberId = crew.memberId WHERE (CASEY AFFLECK IN(cast)) AND ((Academy Award Winner) OR (Oscar Nominee) )AND ((primaryProfession = "actor") OR ("director")) AND ((startYear >= '1980') AND (endYear <= '2017')) ORDER BY rating DESC LIMIT 1

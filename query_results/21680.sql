@@ -1,1 +1,1 @@
-SELECT * FROM imdb_title WHERE rating >= '7' AND genre IN ('Drama','Fantasy') ORDER BY avg(rating)
+SELECT * FROM title_basics WHERE ((isAdult = 0 AND startYear <= \'2019\' ) OR (\'1999\' < startYear && startYear <= \'2019\'))

@@ -1,1 +1,0 @@
-SELECT tc.* FROM title_basics AS tb JOIN title_ratings as tr ON tb.titleID =tr.titleID WHERE ((tb.isAdult=false AND tb.startYear <= 2018)) OR((tb.endYear >= 2019))

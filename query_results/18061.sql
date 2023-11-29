@@ -1,1 +1,0 @@
-SELECT * FROM title_basics WHERE titleType = 'Action' AND (startYear > 2019 OR startYear < 1987) ORDER BY avg(rating) DESC

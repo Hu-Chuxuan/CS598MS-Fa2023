@@ -1,1 +1,0 @@
-SELECT DISTINCT t.* FROM movies AS m INNER JOIN ( SELECT * FROM rating WHERE userID =? ) r ON m.id=r.movieId AND m.titleType='feature film'

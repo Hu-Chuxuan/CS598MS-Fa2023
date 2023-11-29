@@ -1,1 +1,0 @@
-SELECT t.title_type AS "movie type", COUNT(DISTINCT r.rating) as numberOfReviews, AVG(r.rating) as avgScore FROM title_ratings r INNER JOIN title_basics t ON r.averageRating >=.80 AND r.numVotes > 6 WHERE CONCAT(t.primaryTitle,' ',t.originalTitle)=? GROUP BY t.title_type ORDER by numberOfReviews DESC LIMIT?

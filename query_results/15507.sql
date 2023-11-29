@@ -1,1 +1,0 @@
-SELECT * FROM movie_recommendation WHERE userInput LIKE '%action%' OR userInput LIKE '%drama%'

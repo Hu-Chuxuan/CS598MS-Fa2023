@@ -1,1 +1,1 @@
-SELECT * FROM title_recommendation WHERE userInput LIKE '%serial%' AND userPreferenceHistory NOT IN ('Friday the 13th  (1980), Halloween  (1978))'
+SELECT * FROM title WHERE primaryTitle LIKE '%serial%' AND NOT genre = 'documentary' OR genre LIKE '%romantic%'

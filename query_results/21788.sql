@@ -1,1 +1,0 @@
-SELECT * FROM title_basics WHERE tconst IN ('The Notebook', 'Marriage Story')

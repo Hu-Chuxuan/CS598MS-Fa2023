@@ -1,0 +1,2 @@
+SELECT * FROM title_basic WHERE title_type = 'Movie' AND primary_title LIKE '%Christmas%' ORDER BY average_rating DESC LIMIT 2 OFFSET 0
+UNION ALL SELECT * FROM title_basic WHERE title_type = 'Movie' AND primary_title NOT IN ('Hocus Pocus','Elf') AND PRIMARY TITLE LIKE %CHRISTMAS% AND AVG RATING > 5 UNION ALL SELECT * FROM title_basic WHERE title_type!= 'Movie' OR primary_title NOT IN ['Hocus Pocus','Elf'] GROUP BY category ASC OVER (ORDER BY average_rating DESC ) ORDER BY average_rating DESC LIMIT 2 OFFSET 0

@@ -1,1 +1,0 @@
-SELECT DISTINCT tc.* FROM titles AS tc JOIN ratings r ON tc.titleId = r.titleID AND r.userId=? WHERE tc.primaryTitle IN ('Horror') ORDER BY tc.averageRating DESC LIMIT?

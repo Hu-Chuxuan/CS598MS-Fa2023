@@ -1,1 +1,0 @@
-SELECT DISTINCT tc.* FROM title_basic AS tb LEFT JOIN title_rating AS tr ON tb.titleID =tr.titleID WHERE tr.averageRATING >= 6 AND tr.numvotes > 1

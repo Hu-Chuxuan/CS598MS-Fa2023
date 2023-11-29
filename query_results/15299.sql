@@ -1,1 +1,0 @@
-SELECT DISTINCT title_rating.title_id AS id FROM rating_details INNER JOIN title_rated ON rating_details.rating_id = title_rated.rating_detail_id INNER JOIN title_movie ON title_rated.title_id = title_movie.title_id WHERE user_preferences LIKE '%' AND title_movies.startYear <= 1980 AND title_movies.endYear >= 1970

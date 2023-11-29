@@ -1,1 +1,0 @@
-SELECT DISTINCT tconst FROM title_ratings WHERE avgRating > 6 AND numVotes >= 1

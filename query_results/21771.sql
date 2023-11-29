@@ -1,1 +1,0 @@
-SELECT * FROM table1 WHERE type = "drama" AND rating >= 8

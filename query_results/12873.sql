@@ -1,1 +1,0 @@
-SELECT movies.* FROM movies WHERE (movies.genre = 'Comedy' OR movies.genre IS NULL) AND NOT EXISTS(SELECT * FROM genre WHERE genre.titleId IN (SELECT t.id FROM titles AS t JOIN ratings r ON t.id=r.titleId WHERE rating > 7)) ORDER BY averageRating DESC LIMIT 6

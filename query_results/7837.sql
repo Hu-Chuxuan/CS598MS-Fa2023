@@ -1,1 +1,1 @@
-SELECT * FROM titles WHERE genre = 'Action' AND rating >= 8
+SELECT * FROM title_principals WHERE category = 'actress' AND job IN ('[\"Jane\", \"Lily\"]') OR category = 'actor' AND job IN ([\"Dwayne Johnson\", \"John Cena\"], ['\"Dwayne Johnson\", \"John Cena\"']) ORDER BY order ASC LIMIT 5 OFFSET? FETCH NEXT? ROWS ONLY 

@@ -1,1 +1,2 @@
-SELECT DISTINCT tc.* FROM title_basics AS tb INNER JOIN title_ratings as tr ON tb.titleID = tr.titleID WHERE ((tr.averageRating > 7)) AND (tb.isAdult <> true)
+SELECT * FROM (
+    SELECT * FROM `title` WHERE (`startYear` >= 1990 AND `endYear` <= 2000)

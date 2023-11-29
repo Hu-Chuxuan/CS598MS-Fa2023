@@ -1,1 +1,0 @@
-SELECT * FROM title_recommendation WHERE userInput = "woody allen" AND userPreferneceHistory LIKE "%' + userInput + '%"

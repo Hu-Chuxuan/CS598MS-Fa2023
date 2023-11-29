@@ -1,1 +1,0 @@
-SELECT t.titleID AS TITLE_ID FROM title_basics AS t WHERE t.titleType = "movie" AND t.primaryTitle LIKE "%Jumanji%" ORDER BY RAND() LIMIT 5

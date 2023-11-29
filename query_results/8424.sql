@@ -1,1 +1,0 @@
-SELECT DISTINCT t.* FROM title_basic AS t JOIN ( SELECT ratingAverage, count(DISTINCT userID) as totalVoters FROM ratings GROUP BY ratingAverage ) AS r ON r.ratingAverage = t.averageRating WHERE t.isAdult=0 AND ( t.startYear <= '1978')AND ( t.endYear >= '1969')

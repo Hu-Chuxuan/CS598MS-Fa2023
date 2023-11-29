@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE rating >= 7 AND genre = "Family" ORDER BY rating DESC

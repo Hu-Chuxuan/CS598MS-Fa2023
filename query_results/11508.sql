@@ -1,1 +1,0 @@
-SELECT * FROM rating WHERE userInput = "Tommy boy" AND genre IN ("Comedy", "Action") ORDER BY RANDOM() LIMIT 1

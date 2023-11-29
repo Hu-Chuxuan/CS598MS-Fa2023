@@ -1,1 +1,1 @@
-SELECT * FROM title_recommendation WHERE userInput LIKE '%martial%' AND userPreferedMovie LIKE 'Enter%'
+SELECT * FROM `titles` WHERE (((`genre` = "Action") AND (`year` BETWEEN '1970' AND '1975')) OR ((`genre` LIKE "%martial%"))) ORDER BY RAND() LIMIT 3

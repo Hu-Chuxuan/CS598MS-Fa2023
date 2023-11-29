@@ -1,1 +1,0 @@
-SELECT * FROM title_recommend WHERE userInput LIKE '%romantic%' AND genre IN ('Comedy') ORDER BY rating DESC

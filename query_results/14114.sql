@@ -1,1 +1,0 @@
-SELECT * FROM title_basics WHERE tconst = 'Jumanji' OR tconst LIKE '%Jumanji%' AND isAdult!= TRUE

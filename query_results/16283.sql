@@ -1,1 +1,0 @@
-SELECT DISTINCT(title_basic).title FROM title_basic WHERE rating >.9 AND title_basic.genre IN ('Action') ORDER BY avg(rating)

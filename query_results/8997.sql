@@ -1,1 +1,1 @@
-SELECT * FROM title_recommendation WHERE titleType = 'Drama' AND userInput LIKE '%Apollo%' AND rating > 7
+SELECT * FROM title WHERE rating > 5 AND titleType ='movie' ORDER BY avgRating DESC LIMIT 5

@@ -1,1 +1,0 @@
-SELECT tc.* FROM titles AS tc JOIN title_rating as tr ON tc.titleID = tr.titleID AND tc.primaryTitle = tr.movieName

@@ -1,1 +1,0 @@
-SELECT * FROM movies WHERE rating >= 6 AND genre IN ('comedy','drama') ORDER BY avg(rating)

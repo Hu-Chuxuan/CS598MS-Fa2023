@@ -1,1 +1,0 @@
-SELECT DISTINCT tb.titleId AS id FROM title_basic AS tb INNER JOIN cast_member AS cm ON tb.castingId = cm.castingId WHERE ((cm.primaryRole LIKE '%actress%' OR cm.primaryRole LIKE '%actor%') AND cm.gender='Female')

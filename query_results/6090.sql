@@ -1,1 +1,1 @@
-SELECT * FROM movie_recommendation WHERE userInput = 'Avengers Infinity War'
+SELECT * FROM title_basic WHERE ((startYear = 2010 OR startYear IS NULL)) AND ((endYear <= 2015))

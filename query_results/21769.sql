@@ -1,1 +1,1 @@
-SELECT * FROM title_ratings WHERE rating > 6 AND userHasSeen = false
+SELECT DISTINCT title_id FROM title WHERE genre = 'comedy' AND rating >= 8 ORDER BY avg_rating DESC LIMIT 5 OFFSET 5

@@ -1,1 +1,0 @@
-SELECT t.title_id AS id FROM imdb.title WHERE genre = "comedy" AND (startyear < @year OR year = @year)

@@ -1,1 +1,1 @@
-SELECT * FROM title_recommend WHERE (titleType LIKE '%musical%' OR genre = %musical%) AND (titleType NOT IN ('documentary','short film')) GROUP BY titleType HAVING COUNT(*) > 0
+SELECT * FROM title WHERE (((titleType ='movie') AND ((startYear <= @year OR @year IS NULL)) AND (@genre LIKE '%action%'))) ORDER BY (rating DESC)

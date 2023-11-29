@@ -1,1 +1,0 @@
-SELECT t.* FROM title_basics AS t WHERE ((t.titleType = "movie" AND t.startYear BETWEEN 1970 AND 1980)) OR (t.titleType!= "tvshow")

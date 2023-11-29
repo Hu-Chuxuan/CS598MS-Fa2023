@@ -1,0 +1,1 @@
+SELECT * FROM title_basic WHERE rating >= 5 AND avg_rating > 5 ORDER BY avg_rating DESC LIMIT 10

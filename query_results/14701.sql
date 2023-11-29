@@ -1,1 +1,0 @@
-SELECT * FROM title_ratings WHERE tconst = "Happy Death Day" AND avg(rating) > 6

@@ -1,1 +1,3 @@
-SELECT * FROM `title` WHERE (`primaryProfession = "Princess"`) AND ((genre LIKE "%Disney%") OR (director LIKE "%John Musker%" OR director LIKE "%Jeffrey Katzenberg%")) ORDER BY rating DESC LIMIT 0, 5
+SELECT * FROM ( SELECT DISTINCT(r).rating AS r
+   , COUNT(*) AS cnt
+FROM title_ratings RATINGS JOIN name_basics NB ON r.averageRating = NB.primaryName AND NB.birthYear BETWEEN 1950 AND 1999 GROUP BY PRIMARYNAME ) AS subquery WHERE cnt > 1 ORDER BY r DESC LIMIT 2 OFFSET 0

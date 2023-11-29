@@ -1,1 +1,0 @@
-SELECT t.* FROM title_basic AS t WHERE t.titleType ='movie' AND NOT EXISTS( SELECT * FROM user_preferences WHERE userID = $userID AND movie_id IN ($movies)) ORDER BY avgRATING DESC LIMIT 0,5

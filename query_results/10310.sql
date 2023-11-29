@@ -1,1 +1,0 @@
-SELECT tc.* FROM title_crew AS tc WHERE tc.director IN ('James Mangold', 'Hugh Jackman')

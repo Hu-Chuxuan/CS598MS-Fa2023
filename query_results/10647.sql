@@ -1,3 +1,0 @@
-SELECT * FROM
-( SELECT tc.*, nr.*, nb.*, nc.*, tc.titleId AS TitleId, nb.nameId as NameId, nc.characterId As CharacterId, nc.jobId As JobId FROM
-     title_basics tc INNER JOIN rating_details rd ON tc.titleId = rd.titleID AND rd.ratingId IN ('1','2') LEFT OUTER JOIN title_ratings nr ON tc.titleId=nr.titleID LEFT OUTER JOIN name_basic nb ON nr.averageRating >=.7 WHERE rd.ratingId='1' OR rd.ratingId='2' GROUP BY tc.titleId ) AS A INNER JOIN cast c ON A.titleId = c.titleId AND A.TitleId!= 0 AND A.TitleId IS NOT NULL LEFT OUTER JOIN character ch ON C.CharacterId = CH.CharacterId AND C.JobId <> -1 AND C.JobId!=NULL AND C.JobId!=-1

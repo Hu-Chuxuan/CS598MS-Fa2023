@@ -1,1 +1,0 @@
-SELECT TOP(7) * FROM tconst WHERE titleType = “Fantasy” AND numVotes > 8

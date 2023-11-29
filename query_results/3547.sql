@@ -1,2 +1,0 @@
-SELECT t.* FROM title_basic AS t WHERE
-t.isAdult = false AND t.genre IN ('Comedy','Action') AND NOT EXISTS( SELECT * FROM title_rating r JOIN title_principal p ON p.titleId=r.titleId WHERE r.averageRating > 7/10)

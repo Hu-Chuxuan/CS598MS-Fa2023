@@ -1,1 +1,0 @@
-SELECT TITLE_BASICS.* FROM TITLE_BASETS WHERE ((((titleType = "movie"))) AND ((primaryTitle LIKE '%' || REPLACE(%@userInput%,' ', '')|| '%')))

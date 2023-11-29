@@ -1,1 +1,0 @@
-SELECT * FROM title_basic WHERE titleType = "movie" AND ((startYear > 1800 OR endYear < 1800)) AND rating >=.5

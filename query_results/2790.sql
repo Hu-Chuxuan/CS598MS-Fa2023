@@ -1,1 +1,0 @@
-SELECT * FROM title_basic WHERE titleType = "movie" AND userPreferedMovie =? OR userPreferredGenre IN ('comedy','musical') ORDER BY rating DESC LIMIT 1

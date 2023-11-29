@@ -1,1 +1,0 @@
-SELECT * FROM title_basic WHERE tconst = "movie" AND (startyear <= $inputDate && endyear >= $inputDate)

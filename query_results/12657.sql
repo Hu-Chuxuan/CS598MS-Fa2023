@@ -1,1 +1,0 @@
-SELECT tc.* FROM title_crew AS tc JOIN casts ON (tc.id = casts.titleId AND (casts.category='actor' OR casts.category='actress')) WHERE actors(actors.primaryName IN ('Jeremy Sisto', 'Benjamin Walker') AND actors.birthYear BETWEEN? AND?)

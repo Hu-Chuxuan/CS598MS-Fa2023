@@ -1,1 +1,1 @@
-SELECT tc.* FROM title_basic AS tb INNER JOIN title_rating as tr ON tb.title_id = tr.title_id AND tr.userID='a3e0d6ab-fcbb-4bd1-acda-df1cfcafdbe4'
+SELECT * FROM (SELECT DISTINCT * FROM (SELECT DISTINCT * FROM ('Westworld') LEFT JOIN ('Doctor Strange') ON ('Inglorious Bastard')) JOIN ('Cinderella Man') ON ('Hellboy II: The Golden Army') JOIN ('Lord Of The Rings: Return Of The King') WHERE ('Doctor Strange' = 'Inglorious Bastard'))

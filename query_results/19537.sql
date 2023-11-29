@@ -1,1 +1,0 @@
-SELECT * FROM title_recommendation WHERE rating > 7 AND genre IN ('Horror', 'Sci-Fi') ORDER BY rating DESC LIMIT 0, 3

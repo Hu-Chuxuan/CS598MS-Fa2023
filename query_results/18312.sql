@@ -1,1 +1,0 @@
-SELECT DISTINCT tconst FROM title_ratings WHERE rating > 7

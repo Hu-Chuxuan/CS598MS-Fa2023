@@ -1,1 +1,0 @@
-SELECT * FROM title_principals WHERE category = "actor" AND characters IN ('Arnie','Schwarz') ORDER BY actors ASC

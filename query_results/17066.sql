@@ -1,2 +1,1 @@
-SELECT * FROM
-title_rating INNER JOIN title_crew ON title_rating.id = title_crew.id WHERE title_rating.averageRating > 8 AND title_crew.job IN ('director') ORDER BY title_rating.numvoters DESC LIMIT 1
+SELECT DISTINCT t.* FROM title_basics AS t WHERE t.startyear <=? AND t.endyear >=? AND EXISTS ( SELECT * FROM title_ratings AS rr JOIN actors ON t.primaryprofession = actor.nconst WHERE rr.tconst=? AND rr.numvotes >? ) ORDER BY t.averagerating DESC LIMIT 10 OFFSET 0

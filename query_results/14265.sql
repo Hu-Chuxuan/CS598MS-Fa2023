@@ -1,1 +1,0 @@
-SELECT * FROM `title` WHERE `genre` = 'Action' AND (`startYear >= 2010 OR `endYear <= 2020`) AND (`runtimeMinutes > 90 OR `runtimeMinutes < 80)` ORDER BY `rating` DESC LIMIT 1

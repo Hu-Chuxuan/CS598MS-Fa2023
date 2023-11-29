@@ -1,1 +1,1 @@
-SELECT t.* FROM Title AS t WHERE t.genre LIKE "Animated" AND NOT EXISTS( SELECT * FROM MovieRecommendation mr WHERE t.titleId = mr.movieId ) ORDER BY Average Rating DESC LIMIT 5
+SELECT * FROM title_basic WHERE startyear >=? AND startyear <=? ORDER BY avgrating DESC LIMIT 5

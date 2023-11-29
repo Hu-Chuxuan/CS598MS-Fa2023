@@ -1,1 +1,1 @@
-SELECT * FROM `title` WHERE rating >= 8 AND (startyear > 1960 OR genre IN ('Sci-Fi')) ORDER BY ABS(rating - avg(rating)) DESC LIMIT 10
+SELECT DISTINCT p.primaryProfession AS Profession FROM title_basics b JOIN name_basics n ON n.nconst = b.nconst AND n.primaryName = 'Johnny Depp' JOIN cast c ON n.nconst = c.nconst JOIN crew cr ON n.nconst = cr.nconst JOIN title_crew tr WHERE b.isAdult!= 1 AND b.startYear >= 1970 AND b.endYear <= 2018 AND ((b.originalTitle LIKE '%Aladdin%' OR b.originalTitle LIKE '%Alice%') OR (b.genre IN ('Action','Comic Book')))

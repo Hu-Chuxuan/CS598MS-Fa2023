@@ -1,1 +1,1 @@
-SELECT * FROM (SELECT title_crew.*, title_ratings.*, name_basics.*, title_principals.* WHERE title_rating.title_id = title_crews.title_id AND title_rating.numvoters > 6 ORDER BY avg(title_rating.averageRatings)) AS rating JOIN title_crew ON title_crew.title_id=rating.title_id JOIN name_basics ON name_basics.primaryname=title_crew.director JOIN title_principal ON title_prinicpal.job='Director'
+SELECT * FROM title_ratings WHERE tconst IN ('tt0000001','tt0000002') AND (averageRating >= 7 OR averageRating <= 10)

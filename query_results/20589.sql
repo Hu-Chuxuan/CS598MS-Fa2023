@@ -1,1 +1,0 @@
-SELECT t.* FROM titles AS t WHERE t.titleType ='movie' AND EXISTS( SELECT * FROM casts c JOIN actors a ON a.id = c.actorId WHERE c.castingId IN ('a0790ddee','bcdc1bbcc') ) OR exists(select * from crews where crew.filmId='a0790ddee')

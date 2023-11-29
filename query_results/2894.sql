@@ -1,1 +1,0 @@
-SELECT * FROM title_ratings WHERE ((titleType = "movie") AND (averageRating > 6)) ORDER BY rating DESC LIMIT 10

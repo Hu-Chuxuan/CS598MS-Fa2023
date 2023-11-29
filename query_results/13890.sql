@@ -1,1 +1,0 @@
-SELECT t.* FROM title_principals AS p JOIN cast AS c ON c.castid = p.titleid AND c.category IN ('Actress') WHERE p.job LIKE 'Actress' ORDER BY rating DESC LIMIT 3

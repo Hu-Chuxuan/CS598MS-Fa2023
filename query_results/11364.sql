@@ -1,1 +1,0 @@
-SELECT * FROM title_ratings WHERE tconst = '7.8'

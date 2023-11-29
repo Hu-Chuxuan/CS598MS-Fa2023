@@ -1,1 +1,0 @@
-SELECT * FROM movies WHERE genre IN ('comedy', 'romantic') ORDER BY rating DESC LIMIT 6

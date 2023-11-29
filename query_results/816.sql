@@ -1,1 +1,0 @@
-SELECT * FROM titles WHERE ((titleType = "movie") AND (startYear > 1980)) ORDER BY rating DESC LIMIT 6

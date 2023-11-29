@@ -1,3 +1,1 @@
-SELECT * FROM tconst WHERE tconst = 'title' AND
-((startYear BETWEEN 2000-01-01 and 2018-07-01))AND ((endYear >= 2000-01-01 OR endYear IS NULL))
-and genre IN ('Drama', 'Action') and avgRating > 6
+SELECT * FROM ( SELECT tconst, avg(rating), count(*) AS cnt FROM title_ratings WHERE tconst IN ('tt0000001') GROUP BY tconst ) AS x JOIN ( SELECT tconst, COUNT(*) AS cnt FROM title_ratings GROUP BY tconst ) AS y ON x.cnt = y.cnt AND x.avg > y.avg ORDER BY AVG DESC LIMIT 1 OFFSET 0

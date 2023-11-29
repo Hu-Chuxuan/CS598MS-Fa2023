@@ -1,1 +1,0 @@
-SELECT tb.* FROM title_basics as tb INNER JOIN title_ratings as tr ON tb.primaryTitle = tr.title WHERE tr.averageRating >=.8 AND tr.numVotes > 1

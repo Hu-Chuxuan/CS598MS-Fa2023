@@ -1,1 +1,0 @@
-SELECT * FROM rating WHERE titleType = 'Dance' AND averageRating > 7

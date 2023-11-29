@@ -1,1 +1,0 @@
-SELECT t.* FROM (title_principals AS t INNER JOIN (title_rating as r ON t.primaryName = r.name) WHERE ((r.averageRating > 7)) AND ((((category='Comedy'))) OR ((category=NULL)))) ORDER BY rating DESC

@@ -1,1 +1,0 @@
-SELECT * FROM (title_basic WHERE (((startYear >= '01/01/2000' AND endYear <= '09/16/2018') OR (endYear IS NULL)) AND ((genre = 'Action')))

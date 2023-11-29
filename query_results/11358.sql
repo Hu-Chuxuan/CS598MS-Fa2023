@@ -1,1 +1,0 @@
-SELECT * FROM (title_ratings r INNER JOIN title_crew c ON r.director = c.id) WHERE genre IN ('Comedy', 'Drama') AND (r.averageRating > 6 OR r.numVotes < 2)

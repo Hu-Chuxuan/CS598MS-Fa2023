@@ -1,1 +1,0 @@
-SELECT DISTINCT(tconst).titleType FROM title_basic WHERE tconst = 'Pulp Fiction' AND titleType LIKE '%movie%' OR titleType LIKE '%documentary%'

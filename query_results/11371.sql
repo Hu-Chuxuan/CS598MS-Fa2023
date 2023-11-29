@@ -1,1 +1,1 @@
-SELECT tb.* FROM title_basic as tb INNER JOIN (title_rating AS tr) ON tb.primaryTitle = tr.primaryTitle WHERE tr.averageRating >= '7'
+SELECT title_principals.* FROM title_principals JOIN title_ratings ON title_principals.ordering = title_ratings.tconst WHERE title_principals.category LIKE '%actor%' AND title_principals.job LIKE '%actor%'

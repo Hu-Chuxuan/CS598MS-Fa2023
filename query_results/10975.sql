@@ -1,1 +1,0 @@
-SELECT * FROM imdb.title WHERE imdb.title.genre = 'Animation'

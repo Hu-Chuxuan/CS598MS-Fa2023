@@ -1,1 +1,2 @@
-SELECT t.* FROM title_basics AS t WHERE NOT EXISTS( SELECT * from title_ratings as r where r.title = t.title AND r.averageRating > 6 ) OR EXISTS( select * from title_ratingas s where s.title in ('The Road to El Dorado') )
+SELECT DISTINCT t.* FROM (
+    SELECT * from title_basic WHERE isAdult = 0 AND titleType='movie'

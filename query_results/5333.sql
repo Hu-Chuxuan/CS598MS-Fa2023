@@ -1,1 +1,0 @@
-SELECT * FROM title_crew WHERE job LIKE "director"

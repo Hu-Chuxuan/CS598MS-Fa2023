@@ -1,1 +1,0 @@
-SELECT tc.* FROM title_basic AS tb INNER JOIN name_basics as nb ON tb.`titleType` = `nconst` WHERE tb.`startYear` >= 2016 AND tb.`endYear` <= CURRENT YEAR( ) AND EXISTS ( SELECT * FROM `name_basics` where nb.`primaryProfession` LIKE '%actor%' OR nb.`job` LIKE '%director%') ORDER BY rating DESC LIMIT 1

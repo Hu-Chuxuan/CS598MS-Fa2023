@@ -1,1 +1,0 @@
-SELECT * FROM rating WHERE average RATING >= x AND average RATING <= y

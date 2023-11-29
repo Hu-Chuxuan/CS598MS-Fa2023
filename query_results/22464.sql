@@ -1,1 +1,1 @@
-SELECT DISTINCT tc.* FROM title_basics AS tb LEFT JOIN title_crew as tcr ON tcb.titleID = tbc.titleID AND tcb.category LIKE '%director%' OR tcb.category LIKE '%writer%'
+SELECT t.* FROM title_basic AS t INNER JOIN title_rating AS tr ON t.primaryTitle = tr.title WHERE ((tr.averageRating > 7)) AND EXISTS((SELECT * FROM title_principal WHERE tr.titleID=t.titleID))

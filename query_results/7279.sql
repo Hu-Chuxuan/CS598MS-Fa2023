@@ -1,1 +1,0 @@
-SELECT * FROM `title` WHERE `primaryTitle` LIKE '%sing%' AND `averageRating` >= 7

@@ -1,1 +1,0 @@
-SELECT t.* FROM title AS t WHERE t.genre IN ('comedy', 'drama') AND t.runtime >= 90

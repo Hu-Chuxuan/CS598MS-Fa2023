@@ -1,1 +1,1 @@
-SELECT * FROM movies WHERE rating >=? AND title IN (SELECT title from ratings WHERE userId =?)
+SELECT DISTINCT tconst FROM imdb_movies WHERE tconst NOT IN ('tt0000001')

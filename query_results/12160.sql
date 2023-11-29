@@ -1,1 +1,0 @@
-SELECT * FROM titles WHERE type = 'comedy' AND rating >= 7

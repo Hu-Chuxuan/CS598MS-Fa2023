@@ -1,1 +1,0 @@
-SELECT tb.* FROM title_basics AS tb INNER JOIN title_rating ON tb.titleID = title_rating.titleID WHERE genre LIKE "family" AND rating >.8

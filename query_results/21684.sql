@@ -1,1 +1,0 @@
-SELECT t.* FROM title AS t JOIN name AS n ON t.title_id = n.name_id WHERE t.isAdult='false' AND t.startYear BETWEEN 1970 AND 1990 ORDER BY rating DESC LIMIT 5

@@ -1,1 +1,0 @@
-SELECT * FROM tconst WHERE tconst = 'title' AND (job LIKE '%director%' OR job LIKE '%writer%') ORDER BY numVotes DESC LIMIT 6

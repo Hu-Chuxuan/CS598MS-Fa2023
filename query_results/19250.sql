@@ -1,1 +1,0 @@
-SELECT t.* FROM title_basics AS t INNER JOIN name_basics AS n ON t.titleId = n.primaryTitle WHERE n.category='comedy'

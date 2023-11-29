@@ -1,1 +1,0 @@
-SELECT t.titleId AS MovieID, r.rating AS RecommendedRatings FROM ratings r WHERE rating >= 6 AND rating <= 8 AND titleId IN( SELECT distinct titleId from ratings where userId = 2 ) ORDER BY r.recommendationScore DESC

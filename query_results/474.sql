@@ -1,1 +1,1 @@
-SELECT DISTINCT tc.* FROM movies m JOIN cast c ON m.titleid = c.movieid AND c.character LIKE '%Girl%' WHERE m.year >= 2016
+SELECT * FROM title WHERE category = 'character' AND titleType IN ('movie','tvseries') ORDER BY avgRATING DESC LIMIT 1 OFFSET?

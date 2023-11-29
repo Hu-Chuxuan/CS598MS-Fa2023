@@ -1,1 +1,0 @@
-SELECT t.* FROM movies AS m INNER JOIN rating_movies AS r ON m.title = r.movie WHERE r.rating > 6 AND NOT EXISTS( SELECT * FROM ratings WHERE userID = '789' AND rateMovieID IN (SELECT movieId FROM rating_movies WHERE rating >= 6)) GROUP BY m.id HAVING COUNT(*)>1 ORDER BY COUNT(*) DESC LIMIT 5

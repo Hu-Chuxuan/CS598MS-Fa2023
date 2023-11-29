@@ -1,1 +1,0 @@
-SELECT t.title_id FROM titles AS t INNER JOIN ratings as r ON t.title_id = r.movie_id WHERE r.rating >= 7 AND rating <= 9

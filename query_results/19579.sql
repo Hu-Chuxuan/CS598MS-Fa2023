@@ -1,1 +1,0 @@
-SELECT t1.* FROM title_principals AS t1 INNER JOIN (title_ratings as r ON t1.primaryName = r.primaryName WHERE t1.job IN ('actor')) as actor ON t1.ordering >= 9

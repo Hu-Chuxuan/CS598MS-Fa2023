@@ -1,0 +1,1 @@
+SELECT * from title where titleType = “Movie” order by avg(rating) desc limit 20

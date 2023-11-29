@@ -1,1 +1,0 @@
-SELECT * FROM title_basics WHERE tconst = "The Hangover" AND averageRating >= 7

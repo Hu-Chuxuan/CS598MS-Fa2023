@@ -1,1 +1,0 @@
-SELECT * FROM `title` WHERE titleType = "Comedy" AND userPrefHistory LIKE '%Bridesmaid%' OR userPrefHistory LIKE "%Mike%" ORDER BY rating DESC LIMIT 5

@@ -1,1 +1,4 @@
-SELECT * FROM title WHERE ((title_type ='movie' OR title_type IS NULL)) AND ((primaryTitle LIKE '%Sense%' OR primaryTitle LIKE '%SENSE%') AND genre NOT IN ('Action','Comedy')) ORDER BY avgRATING DESC LIMIT 0, 6
+SELECT * FROM `movies` WHERE ((((`genre` = 'Drama') AND (`startyear` >= 1990)) OR (`endyear` <= 2010))) ORDER BY RAND() LIMIT 10 OFFSET?
+
+Expected Output:
+[{'titleid': 1,'primarytitle': 'Pride &amp

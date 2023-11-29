@@ -21,7 +21,7 @@ id2movie = {movies_with_mentions["movieId"][i]:movies_with_mentions["movieName"]
 test_case = pd.read_csv('./case_test.csv')
 train_case = pd.read_csv('./case_train.csv')
 all_case = pd.concat([test_case, train_case])
-
+print(len(all_case))
 # pipe = pipeline("text-generation", model="/home/qiusi/code/model/Llama-2-7b-hf", max_new_tokens=512, device=0)
 processed_data = []
 for conv_id, query, history, groundtruth in zip(all_case['conv_id'], all_case['query'], all_case['history'], all_case['groundtruth']):
@@ -30,8 +30,11 @@ for conv_id, query, history, groundtruth in zip(all_case['conv_id'], all_case['q
     
     if len(groundtruth) == 0:
         continue
+    if type(query) == float:
+        continue
     query = map_query(query, id2movie)
     history = [id2movie[int(movie)] for movie in history]
+    # print(groundtruth)
     groundtruth = [id2movie[int(movie)] for movie in groundtruth]
     processed_data.append({
         "id": conv_id,
@@ -43,4 +46,4 @@ for conv_id, query, history, groundtruth in zip(all_case['conv_id'], all_case['q
 with open("processed_data.jsonl", 'w') as f:
     for item in processed_data:
         f.write(json.dumps(item) + '\n')
-    
+print(len(processed_data))

@@ -1,1 +1,0 @@
-SELECT t.* FROM imdb.title AS t WHERE NOT EXISTS( SELECT * from imdb.name as s where s.primaryName = t.primaryTitle AND s.birthYear <= t.startYear)

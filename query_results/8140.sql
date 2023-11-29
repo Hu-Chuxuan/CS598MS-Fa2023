@@ -1,1 +1,1 @@
-SELECT t.* FROM movies AS m INNER JOIN titles_ratings as tr ON m.titleId = tr.movieId AND m.titleId IN ('Die Hard (1988)','The Fifth Element') WHERE rating > 6
+SELECT * from title_basics where primaryProfession = “actress” order by avg(rating) desc limit 10

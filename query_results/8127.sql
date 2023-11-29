@@ -1,1 +1,0 @@
-SELECT * FROM movies WHERE rating >= 8 AND runtime < 90

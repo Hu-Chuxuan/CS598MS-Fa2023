@@ -1,1 +1,0 @@
-SELECT * FROM movie WHERE genre='Horror' AND rating>6

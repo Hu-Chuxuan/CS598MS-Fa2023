@@ -1,1 +1,0 @@
-SELECT DISTINCT tc.* FROM title_basic as tb INNER JOIN title_rating AS tr ON tr.titleId = tb.id AND tr.numVote > 6 WHERE tb.titleType <> "tv" OR tb.startYear <= 2009 ORDER BY tr.averageRatng DESC LIMIT 1

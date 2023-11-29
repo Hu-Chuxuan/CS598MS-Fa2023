@@ -1,1 +1,0 @@
-SELECT * FROM movies WHERE genre = "horror" AND year >= $year && year <= $endyear

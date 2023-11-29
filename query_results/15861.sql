@@ -1,1 +1,0 @@
-SELECT t.* FROM title_ratings AS t INNER JOIN title_crew ON title_rating.director = crew.title_crew WHERE rating > 6 AND movie LIKE '%romance%' ORDER BY avg(rating)

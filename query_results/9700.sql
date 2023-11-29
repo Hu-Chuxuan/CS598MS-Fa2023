@@ -1,1 +1,1 @@
-SELECT * FROM  movies WHERE category='action' AND averageRating>7/10
+SELECT * from name_basics where birthyear between \`1955\' and \`1969\' order by `primaryName`

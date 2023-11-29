@@ -1,1 +1,1 @@
-SELECT * FROM title_ratings WHERE rating >= 6 AND genre IN ('Comedy') ORDER BY rating DESC LIMIT 5
+SELECT * FROM `movielens` WHERE avgrating >=? AND avgrating <=? GROUP BY titleid HAVING COUNT(*) > 0 ORDER BY avgrating DESC LIMIT 1 OFFSET?

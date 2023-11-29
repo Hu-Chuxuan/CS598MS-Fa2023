@@ -1,1 +1,0 @@
-SELECT * FROM tconst WHERE (titleType = "comedy" AND (startYear > 1970)) OR (titleType <> "comedy") ORDER BY avg(averageRating)

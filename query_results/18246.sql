@@ -1,1 +1,0 @@
-SELECT * FROM movies WHERE genre LIKE '%sports%' AND rating >= 8

@@ -1,1 +1,0 @@
-SELECT * FROM (title_ratings INNER JOIN title_crew ON ratingId = crewId INNER JOIN title_principals ON castMemberId = characterId AND principal) WHERE director IN ('Matthew Leutwyler') AND writer IN ('Drew Goddard')

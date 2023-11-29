@@ -1,1 +1,0 @@
-SELECT t.titleID AS TITLEID, p.primaryName AS PRIMARYNAME FROM TITLES t JOIN NAMES p ON p.nameID = t.nameID WHERE t.titleID IN(SELECT titleID from titles WHERE titleID in ('Blow  ', 'Black Panther ', 'Creed ') AND userPreferences LIKE '%Black%') ORDER BY RANDOM() LIMIT 5

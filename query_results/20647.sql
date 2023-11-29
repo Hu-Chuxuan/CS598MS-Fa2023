@@ -1,1 +1,0 @@
-SELECT * FROM `title` WHERE title_type = "movie" AND ((startyear >= $input_user_preferences[0]) OR (startyear <= $input_user_preferences[0])) ORDER BY rating DESC LIMIT 6

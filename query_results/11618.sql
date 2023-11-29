@@ -1,1 +1,0 @@
-SELECT t.* FROM (title_basic t JOIN title_rating r ON t.primaryTitle = r.title) LEFT OUTER JOIN name_basic c ON c.birthYear >= '0' AND c.deathYear <= '9999-12-31' WHERE t.genre IN ('Action', 'Sport') AND r.averageRATING > 7

@@ -1,1 +1,1 @@
-SELECT t.* FROM movies AS m INNER JOIN genre_genre AS g ON m.`genres` = g.`name` WHERE `title_type` LIKE '%movie%' AND `startyear` BETWEEN 1970 AND 1990
+SELECT title_id FROM title WHERE title_type = 'Movie' AND (startyear >= $userInputStartYear OR endyear <= $userInputEndYear)

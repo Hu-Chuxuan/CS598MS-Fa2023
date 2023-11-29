@@ -1,1 +1,0 @@
-SELECT * FROM title_ratings WHERE avg_rating > 6

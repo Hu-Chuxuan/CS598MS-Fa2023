@@ -1,1 +1,0 @@
-SELECT t.* FROM title_basic AS t INNER JOIN title_rating AS r ON t.titleId = r.movieId WHERE ((r.averageRating >= 8 AND r.numOfUsers > 1)) OR ((r.averageRating < 6 AND r.numOfUsers <= 1))

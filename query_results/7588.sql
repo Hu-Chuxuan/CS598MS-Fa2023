@@ -1,1 +1,0 @@
-SELECT t.* FROM title AS t JOIN name as n ON n.primaryName = t.titleType WHERE ((job LIKE '%actor%' OR job LIKE '%actress%') AND genre LIKE '%comedy%' AND rating >= 6/10)

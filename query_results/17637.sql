@@ -1,1 +1,1 @@
-SELECT * FROM title_basic WHERE genre = "Western" OR genre LIKE "%western%" AND rating >= 8
+SELECT * from `title_basics` where `primaryTitle` like '%alamo%' order by avg(`averageRating`) desc limit 2

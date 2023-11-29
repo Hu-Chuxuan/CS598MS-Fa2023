@@ -1,1 +1,0 @@
-SELECT * FROM title_principals WHERE nconst = "Meg Ryan" AND categories LIKE "%actress%" ORDER BY nconst ASC LIMIT 0, 3

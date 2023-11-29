@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE type = "Drama" AND rating >.7

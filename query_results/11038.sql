@@ -1,1 +1,3 @@
-SELECT tb.* FROM imdb.title_basic as tb INNER JOIN imdb.name_basic as nb ON(tb.primaryTitle=nb.primaryName AND bd.startYear>2000)
+SELECT * FROM title WHERE titleType ='movie' AND
+startYear <= '2019' OR
+endYear >= '1970' ORDER BY averageRating DESC LIMIT 5 OFFSET 1

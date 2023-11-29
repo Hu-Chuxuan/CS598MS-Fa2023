@@ -1,1 +1,0 @@
-SELECT * FROM title_ratings WHERE title_type = "movie" AND rating >= 8

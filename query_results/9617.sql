@@ -1,1 +1,0 @@
-SELECT * FROM title_principals WHERE (characters LIKE '%comedy%' OR categories LIKE '%comedy%') AND (job IN ('Director','Writer')) ORDER BY nconst ASC LIMIT 3

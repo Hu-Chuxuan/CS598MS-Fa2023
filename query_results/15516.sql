@@ -1,1 +1,0 @@
-SELECT t.titleId AS MovieID FROM title_basics t JOIN title_rating r ON t.titleId = r.movieId WHERE r.averageRating >=.8 AND r.numOfReviews > 5

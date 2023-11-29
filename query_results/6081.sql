@@ -1,1 +1,0 @@
-SELECT * FROM TITLE_CREW WHERE CONTAINS(director,'Phil Connors') OR CONTAINS(writer,'Bill Murray')

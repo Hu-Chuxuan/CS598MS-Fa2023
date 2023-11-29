@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE (((title.startYear >= :yearFrom AND title.endYear <= :yearTo)) OR ((title.startYear < :yearFrom AND title.endYear > :yearTo)))

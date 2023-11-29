@@ -1,1 +1,0 @@
-SELECT DISTINCT title_basics.* FROM title_basic, title_rating WHERE title_basics.titleType = "movie" AND title_rating.numVotes > 6

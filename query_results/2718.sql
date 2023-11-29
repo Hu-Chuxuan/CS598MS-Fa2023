@@ -1,1 +1,0 @@
-SELECT * FROM table WHERE tconst = 'title' AND averageRating >= 8

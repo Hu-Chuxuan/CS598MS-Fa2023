@@ -1,2 +1,0 @@
-SELECT * FROM `title_principals` AS p INNER JOIN `name_basics` ON p.`job` = n.`primaryProfession`,
-    WHERE (((`category`= 'actor') OR (`category`='actress')) AND ((`ordering` >= $i))), GROUP BY `characters`

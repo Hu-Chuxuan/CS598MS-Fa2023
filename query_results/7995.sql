@@ -1,1 +1,0 @@
-SELECT t.* FROM title_basics AS t INNER JOIN title_ratings as r ON t.titleId = r.titleID WHERE genre IN ('Action','Thrillers') AND (((r.averageRatings>6) OR ((r.numvotes>=7)))AND ((r.averageRatings<9)OR(r.avgRate=NULL)) AND ((startyear>1990)OR(endyear < 2000)))

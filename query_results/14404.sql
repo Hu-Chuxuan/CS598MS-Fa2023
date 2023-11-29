@@ -1,1 +1,0 @@
-SELECT * FROM title_recommendation WHERE rating >= 8 AND userInput LIKE '%scary%' OR rating < 6

@@ -1,1 +1,1 @@
-SELECT * FROM movie_recommendation(title_basics tb JOIN title_ratings tr ON tb.primaryTitle = tr.title_basics WHERE (tr.averageRating > 6 AND tr.numVotes >= 10))
+SELECT * FROM title WHERE rating >= 6 AND length > 1 HAVING numVOTES > 50 ORDER BY avgrating DESC LIMIT 5 OFFSET 10

@@ -1,1 +1,0 @@
-SELECT t1.* FROM titles AS t1 JOIN casts as c ON c.movieId = t1.imdbID WHERE t1.titleType='Movie' AND t1.isAdult=False

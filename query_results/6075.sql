@@ -1,1 +1,1 @@
-SELECT * FROM titles WHERE ttype = 'Movie'
+SELECT * FROM title WHERE titleType='Movie' AND (startYear>1995 OR startYear=1995)

@@ -1,1 +1,0 @@
-SELECT * FROM movie WHERE title_type =? AND startyear >? AND endyear <? ORDER BY rating DESC

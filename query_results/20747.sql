@@ -1,1 +1,0 @@
-SELECT * FROM rating WHERE avg >= '0.7'

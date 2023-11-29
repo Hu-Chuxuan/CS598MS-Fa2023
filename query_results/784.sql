@@ -1,1 +1,0 @@
-SELECT t.* FROM imdb_movie AS m INNER JOIN imdb_title_ratings AS r ON m.imdbID = r.imdbID WHERE m.year BETWEEN '1900' AND '1999'

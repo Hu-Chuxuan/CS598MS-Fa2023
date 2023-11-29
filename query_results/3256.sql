@@ -1,1 +1,0 @@
-SELECT t.* FROM title AS t JOIN name AS n ON t.titleID = n.id WHERE (n.birthYear >? AND n.deathYear <?) OR ((n.primaryProfession LIKE '%Actor%' AND n.knownForTitles NOT NULL)) ORDER BY t.rating DESC LIMIT 1

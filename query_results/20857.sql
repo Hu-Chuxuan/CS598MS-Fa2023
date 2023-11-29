@@ -1,1 +1,0 @@
-SELECT DISTINCT tb.* FROM title_ratings AS tr INNER JOIN title_basics as TB ON tr.titleID = TB.id WHERE TB.primaryTitle LIKE '%coco%' AND ((tr.averageRATING >.8 OR tr.numvotes > 100)) ORDER BY tr.averageRATING DESC LIMIT 2

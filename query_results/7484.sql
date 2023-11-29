@@ -1,1 +1,0 @@
-SELECT tb.* FROM title_basics AS tb INNER JOIN title_ratings ON tb.titleID = tr.movieID WHERE tr.averageRating >= 8 AND tr.numVotes > 1

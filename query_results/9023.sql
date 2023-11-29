@@ -1,1 +1,0 @@
-SELECT * FROM title_basic WHERE titleType = "comedy" AND startYEAR >= 1990

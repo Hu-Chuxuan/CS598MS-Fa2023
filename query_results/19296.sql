@@ -1,1 +1,0 @@
-SELECT t1.* FROM title_basics AS t1 INNER JOIN title_ratings AS t2 ON t1.titleID = t2.titleID WHERE t2.numVotes > 5 AND ((t1.startYear < 2017 OR t1.endYear >= 2017)) AND ((((t1.genre LIKE '%air%') AND (t1.genre NOT LIKE '%war%'))) OR (t1.primaryGenre IN ('Comedy','Action'))) GROUP BY t1.titleID ORDER BY rating DESC LIMIT 5

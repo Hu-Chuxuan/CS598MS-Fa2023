@@ -1,1 +1,0 @@
-SELECT * FROM title_ratings WHERE averageRating >= 8 AND ratingType = "comedy" OR ratingType = "action"

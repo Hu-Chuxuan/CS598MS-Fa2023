@@ -1,1 +1,0 @@
-SELECT DISTINCT t.* FROM title_ratings AS r INNER JOIN title_basic AS b ON r.titleID = b.id AND r.rating >.8 WHERE rating >=.6 AND rating <=.9

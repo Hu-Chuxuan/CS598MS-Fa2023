@@ -1,1 +1,0 @@
-SELECT * FROM title_recommendation WHERE (title_type ='movie' AND title_genre IN ('Horror')) AND user_preferences LIKE '%Conjuring%' OR user_preferences LIKE '%Chainsaw%'

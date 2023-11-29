@@ -1,1 +1,1 @@
-SELECT * FROM rating WHERE user_id = $userID AND genre IN ('sports') ORDER BY averageRATING DESC LIMIT 1
+SELECT * FROM title WHERE genre='documentary' OR genre IN ('drama','romance') AND runtime < 2 HOURS ORDER BY avgrating DESC LIMIT 2

@@ -1,3 +1,1 @@
-SELECT * FROM
-title_basics tb WHERE tb.isadult = true AND
-(tb.startyear <= $2 OR tb.endyear >= $2)
+SELECT * FROM `movies` WHERE ((titleType ='movie') AND (averageRating > 4)) ORDER BY (numVotes DESC)

@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE genre = "Classic" AND year >= 1900

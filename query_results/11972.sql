@@ -1,1 +1,0 @@
-SELECT DISTINCT t.* FROM titles AS t INNER JOIN casts AS c ON t.titleID = c.movieID WHERE t.primaryTitle LIKE '%Action%' AND t.isAdult IN ('true','false') ORDER BY rating DESC

@@ -1,1 +1,0 @@
-SELECT tc.* FROM title_recommendation tr JOIN title_crew c ON tr.`titleId` = c.`titleId`

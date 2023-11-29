@@ -1,1 +1,0 @@
-SELECT tb.* FROM title_basic AS tb INNER JOIN title_rating as tr ON tb.titleID = tr.titleID WHERE tr.averageRating > 7 AND tb.isAdult=false ORDER BY tr.numVotes DESC LIMIT 6

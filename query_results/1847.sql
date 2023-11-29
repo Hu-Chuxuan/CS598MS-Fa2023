@@ -1,1 +1,1 @@
-SELECT tc.* FROM title_basics AS tb WHERE tb.titleType ='movie' AND EXISTS( SELECT * FROM casts WHERE tb.numVotes > 700 ) ORDER BY tb.runtimeMinutes DESC LIMIT 5
+SELECT t.* FROM title_basics AS t WHERE NOT EXISTS ( SELECT * FROM title_ratings r JOIN name_basics b ON r.primaryName = b.primaryName AND r.averageRating > b.rating ) ORDER BY t.startYear ASC LIMIT 3

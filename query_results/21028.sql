@@ -1,1 +1,0 @@
-SELECT * FROM rating WHERE userID = 'YOUR USER ID' AND genre LIKE '%comedy%' OR genre LIKE '%romance%'

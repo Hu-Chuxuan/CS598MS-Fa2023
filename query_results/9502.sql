@@ -1,1 +1,0 @@
-SELECT t.* FROM title AS t WHERE t.titleType = "movie" AND EXISTS( SELECT * FROM name_principals np JOIN name_categories c ON np.category=c.id WHERE np.job='actor' OR np.job='actress') AND EXISTS(SELECT * from rating r where r.title_rating=t.imdbID ) GROUP BY t ORDER BY avg((r.averageRating*1)) DESC LIMIT 1

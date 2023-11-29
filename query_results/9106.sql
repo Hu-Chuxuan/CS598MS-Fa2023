@@ -1,1 +1,1 @@
-SELECT * FROM `title` WHERE ((startyear = :startyear OR startyear IS NULL)) AND (endyear >= :endyear)
+SELECT * FROM title_basics WHERE title_type ='movie' AND startyear > 1980 GROUP BY tconst ORDER BY avgrating DESC LIMIT 2 OFFSET 2

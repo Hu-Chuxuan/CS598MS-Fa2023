@@ -1,0 +1,1 @@
+SELECT DISTINCT title_id FROM `title` WHERE title_type = 'Movie' AND (startyear >=? OR startyear <=?)

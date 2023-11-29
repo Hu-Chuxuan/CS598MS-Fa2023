@@ -1,2 +1,1 @@
-SELECT * FROM
-title_basics tb JOIN name_basics np ON tb.isAdult = np.primaryName AND tb.startYear > np.deathYear WHERE tb.genre IN ('Action','Comedy') ORDER BY tb.rating DESC LIMIT 6
+SELECT title_id AS id, tconst FROM title WHERE title_type ='movie' AND tconst IN ('tt0000001','tt0000002') ORDER BY title_rating DESC LIMIT 5 OFFSET 0

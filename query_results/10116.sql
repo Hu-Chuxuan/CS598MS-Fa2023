@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE tconst ='movie' AND titleType LIKE '%epic%' OR rating >= 7

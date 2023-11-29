@@ -1,1 +1,0 @@
-SELECT DISTINCT t1.* FROM title AS t1 JOIN title_rating as tr ON tr.titleId = t1.id AND rating > 6 WHERE t1.genre IN ('Action','Horror') OR t1.director IN ("David Fincher", "M. Night Shyamalan") ORDER BY rating DESC LIMIT 0, 5

@@ -1,1 +1,0 @@
-SELECT t.* FROM (title_ratings r INNER JOIN title_crew c ON r.averageRating >=.8 AND r.numVotes > 690 ) as t WHERE t.genre = "action" OR t.genre = "thrill"

@@ -1,1 +1,0 @@
-SELECT DISTINCT(title_name).movie_id AS 'Movie ID' FROM title_rating WHERE rating >= 6 AND user_prefered = "The Passion of the Christ"

@@ -1,1 +1,0 @@
-SELECT DISTINCT(title_basics).primaryTitle FROM title_basics WHERE ((title_rating = (SELECT AVG((title_rating)) AS avgRat FROM title_rating WHERE userInput IN ('In the Heart of the Sea  (2015)','The Revenant  (2015)'))) AND (title_genre LIKE '%Nature%' OR title_genre LIKE '%Outdoors%')) ORDER BY rating DESC LIMIT 1

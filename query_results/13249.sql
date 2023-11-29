@@ -1,1 +1,0 @@
-SELECT t.* FROM movies AS m INNER JOIN casts as c ON m.imdbID = c.movieId WHERE c.character in ('Richard Avery','Emma Brown') AND ((m.titleType='Feature Film' OR m.titleType IS NULL)) GROUP BY m.imdbID HAVING COUNT(*) >= 2

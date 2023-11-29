@@ -1,1 +1,1 @@
-SELECT t.* FROM title_basics AS t WHERE t.titleType = “movie” AND EXISTS( SELECT * from name_basics as b where b.primaryName like ‘%Jennifer Lawrence’)
+SELECT DISTINCT tconst FROM title_basic WHERE isAdult = true AND ttype = “Movie” ORDER BY avgrat DESC LIMIT 3 OFFSET 0

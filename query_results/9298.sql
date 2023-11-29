@@ -1,1 +1,1 @@
-SELECT * FROM title_recommender WHERE title LIKE '%s%' AND genre LIKE '%s%'
+SELECT * FROM title_rating WHERE averageRATING >=? AND numvotes >? ORDER BY averageRATING DESC LIMIT 3

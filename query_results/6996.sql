@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE rating > 7 AND director IN ('Wes Craven') OR writer = 'Carl Ellsworth' GROUP BY director ORDER BY rating DESC LIMIT 3

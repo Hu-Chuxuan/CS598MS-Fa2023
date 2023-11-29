@@ -1,1 +1,0 @@
-SELECT rating FROM (title_ratings) WHERE ((director = "Jon Favreau") AND (startYear BETWEEN '1968' AND '1970')) OR ((writer = "Mike White"))

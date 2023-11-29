@@ -1,1 +1,0 @@
-SELECT DISTINCT tc.* FROM title_basic as tb INNER JOIN title_rating AS tr ON tb.titleID = tr.titleID WHERE (tb.isAdult=FALSE OR tb.isAdult IS NULL)

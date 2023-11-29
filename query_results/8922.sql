@@ -1,1 +1,1 @@
-SELECT * FROM TITLE_CREW WHERE directors = 'Brad Bird' AND writer IN ('Jonathan Hensleigh','Robert Rodriguez') OR director='Michael Bay'
+SELECT t.* FROM title AS t WHERE (((t.startYear <= @year AND t.endYear >= @year)) OR (@year IS NULL))

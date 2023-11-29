@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE rating >= avg(rating) AND rating <= avg(rating + 0.8)

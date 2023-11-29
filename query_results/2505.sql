@@ -1,3 +1,1 @@
-SELECT * FROM ((title_basics tb INNER JOIN title_rating tr ON tb.id = tr.movieId) LEFT OUTER JOIN title_crew c ON tb.id=c.movieID)
-INNER JOIN title_principal p ON tb.id = p.movieId AND p.job IN ('director','writer')
-WHERE p.category='acting' OR p.character LIKE '%Actor%' OR p.character LIKE '%Actress%'
+SELECT DISTINCT t.* FROM titleratings AS tr JOIN title_principals AS pr ON pr.tconst = tr.tconst WHERE pr.category IN ('actress','actor') AND (tr.averageRating > 7 OR tr.numvotes >= 10)

@@ -1,1 +1,0 @@
-SELECT t.* FROM imdb.title AS t WHERE (t.genre LIKE '%Horror%' OR t.primaryGenre LIKE '%Horror%') AND t.averageRating > 6

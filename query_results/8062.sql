@@ -1,8 +1,9 @@
-SELECT t.titleId as TitleID,
-       CASE WHEN m.numVotes > 6 THEN m.averageRating ELSE NULL END AS Average Rating,
-       t.titleType as Type,
-       CASE WHEN r.directorName IS NOT null AND r.writerName IS NOT null then 1 else 0 END AS Has Director & Writer Credits,
-       IF(r.directorName IS not null OR r.writerName IS not null, 1, 0 ) AS Genre Counts,
-       t.genres as Genres
-FROM titles t
-INNER JOIN ratings r ON t.titleId = r.titleId
+SELECT * FROM (
+    SELECT DISTINCT tconst
+           , AVG(rating) AS avgRatng
+           , COUNT(*) OVER () AS totalCount
+        FROM `title_ratings` tr
+        JOIN `title_principals` p ON tr.`tconst` = p.`tconst` AND p.`category` LIKE '%Act%'
+                                OR p.`job` LIKE '[%Actor%]'
+GROUP BY tconst ORDER BY avgRatng DESC LIMIT 10
+)

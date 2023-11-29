@@ -1,1 +1,0 @@
-SELECT t.* FROM title_ratings AS t JOIN title_principals AS p ON t.primaryName = p.name_basics WHERE (((((job='Actor') AND p.category IN ('Main Cast')) OR (job='Actress')))AND t.startYear >= CURRENT DATE - 6 MONTHS)

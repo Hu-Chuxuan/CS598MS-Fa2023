@@ -1,1 +1,1 @@
-SELECT * FROM title_ratings WHERE tconst = 'Sing' AND numvotes >= 8
+SELECT * FROM title WHERE ((titleType ='movie') AND (isAdult <> 1)) ORDER BY avgrating DESC LIMIT 10 OFFSET?

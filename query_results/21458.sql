@@ -1,1 +1,0 @@
-SELECT * FROM `title_basics` WHERE `isAdult ='false'` AND (`genre LIKE '%action%' OR genre LIKE '%thriller%')` ORDER BY rating DESC LIMIT 6

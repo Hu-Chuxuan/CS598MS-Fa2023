@@ -1,1 +1,0 @@
-SELECT * FROM title_recommendation WHERE tconst = 'Chinatown' AND userPreferedMovie IN ('The Godfather', 'The Usual Suspects') OR tconst LIKE '%detective%' ORDER BY rating DESC

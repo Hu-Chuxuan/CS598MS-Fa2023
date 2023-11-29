@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE titleType = "movie" AND ((titleType = "adventure") OR (titleType = "animation")) AND ((startYear >= 2000)) ORDER BY rating DESC

@@ -1,1 +1,1 @@
-SELECT t.* FROM title AS t INNER JOIN cast AS c ON c.titleID = t.titleID WHERE c.name = "John Candy" AND t.primaryTitle LIKE "%Train%" OR t.originalTitle LIKE "%Train%"
+SELECT t.* FROM title_basic t JOIN title_crew c ON t.tconst = c.tconst WHERE ((c.directors LIKE '%Bill Murray%' OR c.writers LIKE '%Bill Murray%') AND c.startyear > 1980)

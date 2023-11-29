@@ -1,1 +1,0 @@
-SELECT tb.* FROM `title_basic` AS tb INNER JOIN `name_basic` ON(tb.`primaryTitle` = `nb`.`primaryName`) WHERE (`tb`.`isAdult`=0 AND `tb`.`startYear>=1970)` AND (`tb`.`endYear<=2020`)

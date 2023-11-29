@@ -1,1 +1,1 @@
-SELECT * FROM title WHERE rating > 6
+SELECT DISTINCT tconst FROM title_ratings WHERE avgrat >= 4 AND avgrat <= 5 AND tconst IN ('tt0000001','tt00319')

@@ -1,1 +1,0 @@
-SELECT * FROM title_basics WHERE tconst = "action" AND (genre = genre OR genre IS NULL)

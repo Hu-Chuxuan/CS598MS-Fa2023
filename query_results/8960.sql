@@ -1,1 +1,0 @@
-SELECT * FROM movies WHERE type = "comedy" ORDER BY rating DESC LIMIT 3

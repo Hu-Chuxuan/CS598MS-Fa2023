@@ -1,0 +1,1 @@
+SELECT * from title_recommendation where user_id='user_input' AND  date >= 'date_of_preference' order by avg_rating desc limit 1

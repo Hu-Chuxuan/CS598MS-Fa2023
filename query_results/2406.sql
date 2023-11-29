@@ -1,0 +1,1 @@
+SELECT * FROM movie_recommendation WHERE rated >=? AND rated <=? ORDER BY avgrating DESC LIMIT? OFFSET?

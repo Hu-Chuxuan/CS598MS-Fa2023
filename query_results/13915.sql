@@ -1,1 +1,0 @@
-SELECT tb.* FROM title_basics AS tb INNER JOIN title_rating ON tb.titleID = title_rating.titleID WHERE rating >= '7' AND title_rating.numVotes > 0 ORDER BY avg(rating), title_rating.numVotes DESC LIMIT 5

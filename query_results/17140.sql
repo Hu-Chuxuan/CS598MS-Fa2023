@@ -1,1 +1,2 @@
-SELECT * FROM imdb WHERE rating > 7
+SELECT * FROM ( SELECT * FROM title_basic WHERE titleType ='movie') AS b INNER JOIN
+    	   ( SELECT * from title_crew where titleID=b.tconst ) as c ON b.tconst = c.tconst AND c.job IN ('director','writer')

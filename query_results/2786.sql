@@ -1,1 +1,1 @@
-SELECT * FROM title_ratings WHERE rating >= "3" AND director IN ('Richard Donner') ORDER BY AVG(rating)
+SELECT * FROM `title_basic` WHERE (`startyear` >= '1900') AND (`endyear` <= '2000')

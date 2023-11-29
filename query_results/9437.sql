@@ -1,1 +1,1 @@
-SELECT t.* FROM titles AS t INNER JOIN rating_titles R ON R.titleID = t.id AND R.userID=? WHERE R.rating >=? ORDER BY RATING DESC LIMIT 8
+SELECT * FROM title WHERE titleType = “Movie” AND titleID IN ('tt0000001') ORDER BY AVG(rating), numvotes DESC LIMIT 2 OFFSET 0

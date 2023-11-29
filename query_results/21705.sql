@@ -1,1 +1,1 @@
-SELECT * FROM `title` WHERE `genre` LIKE '%comedy%' AND `originalTitle` NOT IN ('Guardians of the Galaxy') ORDER BY rating DESC LIMIT 1
+SELECT * FROM movie_recommendation WHERE

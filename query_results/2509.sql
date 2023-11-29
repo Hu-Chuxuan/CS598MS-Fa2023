@@ -1,1 +1,0 @@
-SELECT t1.* FROM movies AS m INNER JOIN casts AS c ON m.titleID = c.movieID WHERE c.category!= "Character" AND m.primaryGenre IN ('Action/adventure','Comedy') ORDER BY avg(c.rating) DESC LIMIT 0, 2

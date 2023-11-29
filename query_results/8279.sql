@@ -1,1 +1,2 @@
-SELECT * FROM title WHERE rating >.6 AND genre = 'drama'
+SELECT DISTINCT t.* FROM t AS t INNER JOIN
+    (SELECT * from name_basics WHERE nconst LIKE '%Jeff Bridges%') AS b ON b.primaryName = t.titletype AND t.startyear >= 1975 AND t.endyear <= 2019 AND t.genre like ('Drama') ORDER BY t.rating DESC LIMIT 5 OFFSET 0

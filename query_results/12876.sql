@@ -1,1 +1,0 @@
-SELECT t.titleID as'movie', r.averageRating AS 'rating' FROM titles t JOIN ratings r ON (r.titleID = t.titleID) WHERE r.averageRating >= 7 AND r.numVotes > 0 ORDER BY rating DESC LIMIT 1

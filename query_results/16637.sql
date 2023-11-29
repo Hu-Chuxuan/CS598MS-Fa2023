@@ -1,1 +1,1 @@
-SELECT * FROM `title_ratings` WHERE rating >= 8 AND genre = "Horror" ORDER BY rating DESC LIMIT 5
+SELECT * FROM title WHERE averageRating >= 8 AND numVotes > 5 ORDER BY avgRating DESC LIMIT 10 OFFSET?

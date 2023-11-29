@@ -1,1 +1,0 @@
-SELECT * FROM `title_rating` WHERE ((((averageRating>6 AND (numVotes>=1)) OR ((averageRating<6 AND (numVotes<=1)))))

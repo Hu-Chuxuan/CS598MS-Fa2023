@@ -1,1 +1,0 @@
-SELECT * FROM movies WHERE (title_ratings.averageRatng >? AND title_ratings.numVote >=?)

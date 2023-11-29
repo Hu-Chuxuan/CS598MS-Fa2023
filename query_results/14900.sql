@@ -1,1 +1,0 @@
-SELECT t.* FROM title_recommendation AS r JOIN title_principals as p ON(r.title = p.primaryName AND p.job IN ('actress')) WHERE r.userInput LIKE '%breakfast%' ORDER BY rating DESC LIMIT 5

@@ -1,1 +1,0 @@
-SELECT * FROM movieRecommendationSystem(movieName) WHERE (isAdult = 'false' AND startYear < '1980') OR (startYear >= '1980' AND startYear <= '1990')

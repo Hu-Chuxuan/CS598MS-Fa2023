@@ -1,1 +1,0 @@
-SELECT * FROM title_basic WHERE tconst = "title" AND titleType = "movie"

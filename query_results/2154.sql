@@ -1,1 +1,0 @@
-SELECT * FROM `title_rating` WHERE (`averageRating`) BETWEEN @input AND (@history[0]) ORDER BY RAND() LIMIT(@limit)

@@ -1,1 +1,0 @@
-SELECT t.* FROM imdb.title AS t WHERE t.isAdult = true AND EXISTS( SELECT * from imdb.genre g WHERE g.genreID IN (select genreId as intValue from imdb.genre where lower(name)=lower('Slasher')))

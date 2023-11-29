@@ -1,1 +1,0 @@
-SELECT t.* FROM titles AS t JOIN title_ratings AS tr ON t.titleID = tr.tconst WHERE avg(tr.rating) >=? AND rating > 6

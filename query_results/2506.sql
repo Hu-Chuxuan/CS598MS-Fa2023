@@ -1,1 +1,1 @@
-SELECT * FROM title_rating WHERE tconst = "BACK TO THE FUTURE" AND rating >= 7
+SELECT * from title_basic where isAdult = true order by runtime desc limit 1

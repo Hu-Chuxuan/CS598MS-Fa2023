@@ -1,1 +1,0 @@
-SELECT * FROM `title` WHERE genre = "Comedy" ORDER BY rating DESC LIMIT 6

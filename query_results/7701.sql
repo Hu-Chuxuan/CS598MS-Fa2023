@@ -1,1 +1,0 @@
-SELECT DISTINCT movies.* FROM movies JOIN rating ON rating.movie = movies.title WHERE movies.title IN ('March of the Penguins (2005), Oceans  (2009), Born to Be Wild  (2011)' AND rating.rating > 6/10

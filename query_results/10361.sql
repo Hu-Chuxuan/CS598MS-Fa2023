@@ -1,1 +1,0 @@
-SELECT t.* FROM title_basic AS t JOIN cast_members AS c ON t.titleId = c.movieId WHERE t.startYear >=? AND t.endYear <=?

@@ -1,1 +1,0 @@
-SELECT t.* FROM title_basic AS t JOIN title_rating AS r ON r.title = t.title WHERE (r.averageRating >.5 OR r.numvoters < 10) AND ((((r.avgRatimg >.5) OR (r.numVoter < 10)) AND ((t.genre IN ('Drama')) OR (t.primaryProfession='Actor'))))

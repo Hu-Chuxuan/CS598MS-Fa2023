@@ -1,1 +1,0 @@
-SELECT title_basics.* FROM title_basics WHERE (title_rating > 7 AND title_rating < 8 OR title_rating = 8)

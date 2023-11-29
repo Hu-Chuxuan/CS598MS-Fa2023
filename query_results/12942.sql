@@ -1,1 +1,0 @@
-SELECT t.* FROM title AS t INNER JOIN ( SELECT rating, COUNT(*) as totalvoters FROM ratings GROUP BY rating ) r ON t.titleId = r.rating WHERE t.titleType <> 'TV' AND t.isAdult IN ('true', 'false') AND ((r.totalvoters > 0) OR (t.runtimeMinutes < 90)) ORDER BY t.startYear DESC LIMIT 8

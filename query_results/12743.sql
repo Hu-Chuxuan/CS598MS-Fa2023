@@ -1,1 +1,0 @@
-SELECT * FROM title_principals WHERE title_id =? AND job LIKE '%actor%' OR job LIKE %'%director%' ORDER BY rating DESC LIMIT 8

@@ -1,1 +1,0 @@
-SELECT tc.* FROM title_basic AS tb INNER JOIN title_rating as tr ON tr.primarytitle = tb.titleid WHERE ((tr.averageRating >= 7 AND tr.numvotes > 100)) OR (tr.averageRating <= 6)

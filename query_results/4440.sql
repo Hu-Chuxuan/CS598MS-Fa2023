@@ -1,1 +1,1 @@
-SELECT * FROM rating WHERE (((rating.titleType = 'Movie') AND ((averageRating > 6))) OR ((titleType!= 'Movie')))
+SELECT * FROM title_principals WHERE tconst = 'tt0000001' AND category LIKE '%actor%' ORDER BY nconst ASC LIMIT 5

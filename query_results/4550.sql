@@ -1,1 +1,0 @@
-SELECT * FROM (title_basics JOIN title_ratings ON title_basic.titleID = title_rating.movieID )JOIN(name_basics JOIN title_principals ON name_basic.nameID=title_principal.characterID)ON ((title_ratting.averageRating >= 8 AND title_ratting.numvotes > 100) OR (name_basic.primaryProfession LIKE ‘%actor%’)) WHERE title_bastards.startyear <= 1976 AND title_bastard.endyear>= 2005

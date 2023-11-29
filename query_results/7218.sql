@@ -1,1 +1,0 @@
-SELECT t.* FROM title_basic AS t JOIN user_preferences as u ON t.`titleType` = u.`movieType` WHERE `isAdult` <> "Y" AND ((u.`movieType` = "Action") OR (u.`movieType` = "Comedy")) GROUP BY t.`primaryTitle`

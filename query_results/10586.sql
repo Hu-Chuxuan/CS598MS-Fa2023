@@ -1,1 +1,0 @@
-SELECT * FROM `title` WHERE `genre` LIKE '%crime%' AND (`director`='Brian De Palma' OR `writer` = 'David Mamet')

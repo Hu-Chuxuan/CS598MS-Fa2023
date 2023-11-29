@@ -1,1 +1,0 @@
-SELECT t.* FROM title AS t JOIN rating AS r ON r.title = t.title WHERE t.isAdult=true AND t.startYear>=2017 AND t.endYear<=2020 GROUP BY t.title

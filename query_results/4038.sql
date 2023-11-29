@@ -1,1 +1,1 @@
-SELECT * FROM title_ratings WHERE tconst = 6
+SELECT * FROM `movies` WHERE (`startyear` >=? AND `endyear` <=?)

@@ -1,1 +1,1 @@
-SELECT t.* FROM title_basic AS t JOIN (SELECT * from name_basics WHERE titleType = 'Director') as d ON d.primaryName=t.titleType ORDER BY d.birthYear DESC LIMIT 5
+SELECT * FROM tb_recommendation WHERE titleType='movie' AND (((startYear<=2000 OR startYear>=1900)) AND ((endYear>2000 OR endYear<1900))) AND (((runtimeMinutes<=200 OR runtimeMinutes>=100)))

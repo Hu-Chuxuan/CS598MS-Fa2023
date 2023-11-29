@@ -1,1 +1,0 @@
-SELECT * FROM table WHERE primaryTitle LIKE '%Transformer%' OR startYear BETWEEN? AND?

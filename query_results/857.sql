@@ -1,1 +1,1 @@
-SELECT * FROM movies WHERE rating >=? AND length <?
+SELECT * FROM title_basic WHERE isAdult = true AND primaryTitle LIKE '%comedy%' ORDER BY startYear DESC LIMIT 1 OFFSET 0

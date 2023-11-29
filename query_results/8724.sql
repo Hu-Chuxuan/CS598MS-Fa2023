@@ -1,2 +1,1 @@
-SELECT * FROM title_recommended
-WHERE userPreference LIKE '%Blade%' OR userPreference LIKE '%Independence%' OR userPreference LIKE '%Ghost%' OR userPreference LIKE '%Robot%'
+SELECT * FROM `titleratings` WHERE ((`averageRating` >= @minAverageRating) AND (`numVotes` > @minNumOfReviews)) ORDER BY (`averageRating`) ASC LIMIT 2 OFFSET 0

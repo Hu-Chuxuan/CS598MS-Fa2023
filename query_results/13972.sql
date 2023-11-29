@@ -1,1 +1,0 @@
-SELECT t.* FROM title_basic AS t INNER JOIN title_rating AS r ON t.title_id = r.movieId WHERE r.average >? AND r.numvoters >=? ORDER BY r.avg DESC LIMIT?

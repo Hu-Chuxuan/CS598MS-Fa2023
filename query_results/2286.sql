@@ -1,1 +1,4 @@
-SELECT DISTINCT tc.* FROM title_basics AS tb INNER JOIN cast AS c ON c.title = tb.primaryTitle AND c.character LIKE '%Dwayne Johnson%' ORDER BY rating DESC LIMIT 8
+SELECT DISTINCT
+    r.tconst AS titleID, r.averageRating AS avgRatings,
+    r.numVotes AS numOfReviews
+FROM (rating r INNER JOIN title_principals pr ON r.tconst = pr.tconst AND r.ordering >= pr.ordering)

@@ -1,1 +1,0 @@
-SELECT * FROM rating WHERE type = "movie" AND (director IN ('Dylan O'Brien', 'Kaya Scodelario') OR writer IN ('Wes Ball')) ORDER BY avgRatings DESC LIMIT 0, 8

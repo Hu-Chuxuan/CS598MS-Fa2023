@@ -1,1 +1,0 @@
-SELECT * FROM table WHERE title LIKE '%movie%' AND rating > 6

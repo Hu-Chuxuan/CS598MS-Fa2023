@@ -1,1 +1,1 @@
-SELECT DISTINCT tc.* FROM title_ratings tr JOIN title_basicstb b ON tr.titleId = b.id WHERE ((tr.averageRating > 7 AND tr.numVotes >= 698)) OR (tr.averageRating < 6)
+SELECT * FROM  title_rating WHERE avgRat >= 7 AND avgRat <= 8 ORDER BY avgRAT DESC LIMIT 10 OFFSET 0

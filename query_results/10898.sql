@@ -1,1 +1,0 @@
-SELECT * FROM title_principals WHERE characters = 'Clint Eastwood' AND actors = 'Richard Harris'

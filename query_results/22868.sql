@@ -1,1 +1,0 @@
-SELECT t1.* FROM title_ratings AS r INNER JOIN title_basics AS b ON r.title_id = b.title_id WHERE r.numvotes >= 6 AND b.startyear <= 1970

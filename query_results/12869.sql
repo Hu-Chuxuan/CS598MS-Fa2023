@@ -1,1 +1,0 @@
-SELECT t.* FROM (title_basics AS t) INNER JOIN (title_rating AS r ON r.primaryTitle = t.primaryTitle AND r.startYear <= t.endYear)

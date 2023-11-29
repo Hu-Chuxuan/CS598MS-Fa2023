@@ -1,1 +1,0 @@
-SELECT t.* FROM movies AS m JOIN actors AS a ON m.actor = a.id WHERE m.titleType IN ('drama') AND a.name LIKE '%Greta%'

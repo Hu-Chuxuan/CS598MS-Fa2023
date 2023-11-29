@@ -1,1 +1,1 @@
-SELECT * FROM movies WHERE (title_type="Drama") AND (startyear>2016)`
+SELECT * FROM ( SELECT r.*, s.* ) AS s INNER JOIN title_basic b ON b.tconst = s.tconst AND b.primaryTitle = s.primaryTitle WHERE b.isAdult=1 ORDER BY b.startyear DESC LIMIT 5 OFFSET 0

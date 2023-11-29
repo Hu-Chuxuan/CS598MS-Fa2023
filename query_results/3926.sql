@@ -1,1 +1,0 @@
-SELECT * FROM title_basic WHERE startYear >= $startYear AND startYear <=$endYear

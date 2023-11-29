@@ -1,1 +1,0 @@
-SELECT * FROM title_basic WHERE tconst = "action" AND (primaryTitle LIKE "%Jack%") OR (originalTitle LIKE "%Jack%")

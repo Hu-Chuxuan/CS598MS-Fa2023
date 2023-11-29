@@ -1,1 +1,1 @@
-SELECT * FROM rating WHERE title_id = 86933 AND user_rating >= '8' OR user_rating <= '7'
+SELECT * FROM title_ratings WHERE tconst = 'tt0000001' AND averageRating > 5.5 ORDER BY numVOTES DESC LIMIT 1 OFFSET 0 

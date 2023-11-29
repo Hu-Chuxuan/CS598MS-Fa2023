@@ -1,1 +1,0 @@
-SELECT t.* FROM title_basic AS t JOIN title_rating ON t.titleID = t.title_rating.titleID WHERE genre = "Horror" AND avg(title_rating.averageRatings) >= 8/10

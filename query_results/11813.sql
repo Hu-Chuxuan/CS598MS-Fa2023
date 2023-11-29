@@ -1,1 +1,0 @@
-SELECT * FROM title_basic WHERE tconst = "XXX" OR tconst = "Live Free Or Die Hard"

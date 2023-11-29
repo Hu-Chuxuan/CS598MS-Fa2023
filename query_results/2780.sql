@@ -1,1 +1,0 @@
-SELECT * FROM movie_recommendation WHERE user_input = 'Is it good?' AND rating >.6

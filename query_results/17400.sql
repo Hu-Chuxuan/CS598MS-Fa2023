@@ -1,1 +1,1 @@
-SELECT t.* FROM title AS t JOIN title_ratings as tr ON t.titleID = tr.titleID WHERE tr.averageRating >= $input AND tr.numVotes > 1
+SELECT * FROM title_basic WHERE titleType = “movie” AND averageRatings > 6 ORDER BY averageRatings DESC LIMIT 5 OFFSET 1 

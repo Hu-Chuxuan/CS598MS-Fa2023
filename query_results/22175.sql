@@ -1,1 +1,1 @@
-SELECT * FROM title_recommend WHERE title_id =? AND user_id=?
+SELECT * FROM title_principals WHERE tconst = 'tt0000001' AND job LIKE '%Actor%' ORDER BY averageRating DESC LIMIT 3 OFFSET 0

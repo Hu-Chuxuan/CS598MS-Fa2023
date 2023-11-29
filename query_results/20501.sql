@@ -1,1 +1,0 @@
-SELECT * FROM rating WHERE movie IN ('The Good Place','The Good Doctor') AND userid=<user id> GROUP BY genre

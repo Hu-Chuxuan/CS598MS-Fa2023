@@ -1,1 +1,7 @@
-SELECT DISTINCT(movies).movieID FROM movies INNER JOIN name_basics ON movies.titleID = name_basics.titleID AND movies.primaryName = name_basics.nameID WHERE movies.isAdult=false
+SELECT * FROM
+    TITLE_BASICS AS tb
+INNER JOIN
+    MOVIES AS m ON m.tconst = tb.tconst AND m.startyear <=? && m.endyear >=?
+WHERE
+    m.genre IN ('Drama') || m.rating > 6 OR m.averageRATING > 6 OR m.numvotes > 1000
+GROUP BY tb.tconst ORDER BY RANDOM() LIMIT 2

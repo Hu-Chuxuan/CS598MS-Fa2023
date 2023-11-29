@@ -1,2 +1,0 @@
-SELECT DISTINCT t.title_id AS MovieId, t.originalTitle AS Title, t.runtimeInMinutes AS Runtime
-FROM title_principals p INNER JOIN cast c ON p.castingID = c.castingID AND c.job IN ('Actor') OR c.job IN ('Actress')

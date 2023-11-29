@@ -1,1 +1,0 @@
-SELECT t.titleId AS MovieID, t.titleBasics AS TitleInfo FROM titles as t JOIN casts as c ON t.movieId = c.titleId AND c.characterName LIKE "%" + @input + "%"

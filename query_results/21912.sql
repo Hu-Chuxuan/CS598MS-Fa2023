@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE tconst IN ('movie','tv') AND (startYear BETWEEN 1980 AND 2000 OR startYear < 1980)

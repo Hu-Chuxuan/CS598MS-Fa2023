@@ -1,1 +1,0 @@
-SELECT t.* FROM titles AS t INNER JOIN ratings ON t.imdbID = ratings.titleID WHERE (rated >= 7 AND rated <= 9 OR rated == 10 ) ORDER BY rating DESC LIMIT 10

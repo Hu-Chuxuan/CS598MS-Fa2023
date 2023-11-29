@@ -1,1 +1,0 @@
-SELECT * FROM title_basic WHERE title_type = "movie" AND (title_genre IN ('comedy','action') OR title_rating > 7)

@@ -1,1 +1,1 @@
-SELECT * FROM title_basics WHERE ((title_type = "Movie") AND (startyear > 2017)) OR (title_type = 'TV Series') ORDER BY avgrating DESC LIMIT 6
+SELECT * FROM title_ratings WHERE averageRating = '5.6' AND numVotes > 100 ORDER BY avgRating DESC LIMIT 1 OFFSET 0

@@ -1,1 +1,1 @@
-SELECT * FROM rating WHERE userID =? AND genre IN ('drama','thriller')
+SELECT * FROM title WHERE titleType ='movie' AND startYear <=? ORDER BY numVotes DESC LIMIT 10 OFFSET?

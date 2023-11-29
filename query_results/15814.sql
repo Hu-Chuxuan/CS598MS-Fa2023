@@ -1,1 +1,0 @@
-SELECT * FROM table WHERE userInput =? AND genre LIKE '%Comedy%' ORDER BY rating DESC

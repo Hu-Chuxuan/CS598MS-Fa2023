@@ -1,1 +1,0 @@
-SELECT * FROM (title_rating_user) WHERE (((((user_id =? AND rating >=?)) OR (((rating >?))) AND (((movie_id IN (?)))))))

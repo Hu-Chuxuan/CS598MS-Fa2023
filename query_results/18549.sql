@@ -1,1 +1,1 @@
-SELECT * FROM title_ratings WHERE rating > avg(rating)
+SELECT * FROM title WHERE isAdult = 1 AND startyear >= $startDate AND endyear <= $endDate ORDER BY avgRatings DESC LIMIT 5

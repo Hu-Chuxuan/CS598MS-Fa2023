@@ -1,1 +1,0 @@
-SELECT * FROM title_recommend WHERE userID=1 AND genre='scary' OR userID IS NULL

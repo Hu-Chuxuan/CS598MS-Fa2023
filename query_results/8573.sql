@@ -1,0 +1,1 @@
+SELECT t.* FROM title AS t WHERE t.titleType = 'Movie' AND t.startYear > 1970 ORDER BY avg(userRatings), numVotes DESC LIMIT 10

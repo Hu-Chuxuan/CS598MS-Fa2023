@@ -1,1 +1,0 @@
-SELECT * FROM rating WHERE genre = 'action' AND rating >= avg(rating) GROUP BY tconst ORDER BY rating DESC LIMIT 10

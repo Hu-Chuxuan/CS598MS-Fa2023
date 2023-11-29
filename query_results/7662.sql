@@ -1,1 +1,0 @@
-SELECT * FROM title_recommend WHERE tconst LIKE "%{}" AND user_input LIKE %s

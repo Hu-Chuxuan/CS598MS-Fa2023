@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE title_type = "movie" AND genre LIKE "%police%" OR genre LIKE "%cop%"

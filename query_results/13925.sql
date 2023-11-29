@@ -1,1 +1,0 @@
-SELECT TOP(10) * FROM movies WHERE averageRating >= 6

@@ -1,1 +1,0 @@
-SELECT * FROM titles WHERE genre LIKE '%comedy%' AND rating > 7

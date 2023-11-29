@@ -1,1 +1,0 @@
-SELECT t.* FROM title_basics AS t JOIN (title_ratings AS r WHERE r.averageRating >=? AND r.numVotes > 100 ) AS m ON t.primaryTitle = m.primaryTitle

@@ -1,1 +1,0 @@
-SELECT DISTINCT t.* FROM titles AS t INNER JOIN ratings ON t.titleID = r.movieID WHERE r.userID='YOUR USER ID' AND r.rating >= 8

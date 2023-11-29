@@ -1,1 +1,0 @@
-SELECT DISTINCT * FROM (title_ratings JOIN actors ON rating.actorID = actor.id) JOIN (name_basics LEFT OUTER JOIN title_principals ON name_basics.primaryName = title_principals.nconst AND name_basics.birthYear >= year(now())) WHERE rating.averageRating > 6 OR rating.numVotes < 700

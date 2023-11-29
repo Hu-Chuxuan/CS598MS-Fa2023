@@ -1,1 +1,0 @@
-SELECT t.* FROM imdb_movies AS m JOIN imdb_title_crew AS c ON m.id = c.movieId AND c.job = 'director'

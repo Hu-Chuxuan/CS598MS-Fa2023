@@ -1,1 +1,0 @@
-SELECT * FROM (SELECT t.*, tc.title_rating AS rating FROM titles t INNER JOIN title_recommendation tr ON(tr.movieId = t.imdbID)) WHERE t.category='Drama' AND t.job IN ('Actor','Actress') ORDER BY rating DESC LIMIT 6

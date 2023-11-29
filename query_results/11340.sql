@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE titleType = "movie" AND genre LIKE "%horror%" OR director LIKE "%hitchcock%"

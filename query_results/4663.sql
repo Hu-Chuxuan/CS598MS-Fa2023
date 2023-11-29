@@ -1,1 +1,0 @@
-SELECT * FROM rating WHERE tconst = 'Love Actually' AND averagerating >.75

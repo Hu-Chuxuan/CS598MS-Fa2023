@@ -1,1 +1,0 @@
-SELECT * FROM title_basics WHERE titleType = "Drama" AND genre IN ("Horror", "Mystery")

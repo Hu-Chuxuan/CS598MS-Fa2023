@@ -1,1 +1,1 @@
-SELECT titleID FROM title_basics WHERE titleType = 'Comedy' AND (startYear >= 2019) ORDER BY avg(averageRating)
+SELECT * from title_principals where category = 'actress' order by averageRating desc limit 10 offset 0

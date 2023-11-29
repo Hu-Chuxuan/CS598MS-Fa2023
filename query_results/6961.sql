@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE tconst = "movie" AND (titleType IN ('drama','comedy') OR averageRating < 6)

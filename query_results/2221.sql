@@ -1,0 +1,1 @@
+SELECT * FROM title_principals WHERE category = 'actor' AND title_id IN ('tt0053137') ORDER BY ordering ASC LIMIT 2 OFFSET 0

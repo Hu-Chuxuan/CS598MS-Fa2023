@@ -1,1 +1,0 @@
-SELECT DISTINCT title.title_basics.* FROM title WHERE title.title_basics.primaryTitle = "What Movie Would You Recommend?" AND title_ratings.averageRating > 7

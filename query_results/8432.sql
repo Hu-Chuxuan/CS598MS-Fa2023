@@ -1,1 +1,1 @@
-SELECT tb.* FROM title_ratings AS r JOIN title_principals as p ON r.primaryTitle = p.title WHERE p.category=’actor' AND p.job='character'
+SELECT * FROM title_ratings WHERE averageRating >= 5 AND numVotes > 10 ORDER BY numVotes DESC LIMIT 10 OFFSET?

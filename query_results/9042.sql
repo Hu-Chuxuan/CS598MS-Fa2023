@@ -1,1 +1,0 @@
-SELECT * FROM title_basics WHERE tconst =? AND primaryTitle LIKE '%family%' OR primaryTitle LIKE %'%family%'

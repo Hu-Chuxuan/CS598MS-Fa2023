@@ -1,1 +1,1 @@
-SELECT t.titleID AS 'Movie ID', c.category AS 'Category' FROM title_principals AS p JOIN casts ON p.cast = c.id WHERE type = "Actress" AND category IN ('Leading') ORDER BY order DESC LIMIT 1
+SELECT * FROM title WHERE genre IN ('Horror') AND isAdult = true ORDER BY avgRatng DESC LIMIT 2 OFFSET 1

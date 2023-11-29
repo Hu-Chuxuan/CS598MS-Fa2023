@@ -1,1 +1,1 @@
-SELECT * FROM title_basics WHERE title_type = "movie" AND (title_year > 1980 OR title_year < 1970)
+SELECT * FROM tt_rating WHERE tconst = 'tt0000001' AND avgrating >= 5 ORDER BY numvotes DESC LIMIT 5 OFFSET 1 

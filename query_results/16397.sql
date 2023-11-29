@@ -1,1 +1,1 @@
-SELECT * FROM title WHERE rating > 6 AND genre IN ('Alien Invasion') ORDER BY rating DESC LIMIT 1
+SELECT DISTINCT TITLE_PRINCIPALS.* FROM `title_principals` JOIN `title_basics` ON (`title_basics`.`tconst`) =(`title_principals`.`tconst`) WHERE (`title_principals`.`category`) LIKE '%act%' AND (`title_principals`.`job`) NOT IN ('%self') GROUP BY (`title_principals`.`ordering`, `title_principals`.`nconst`, `title_principals`.`category`, `title_principals`.`job`) ORDER BY RAND() LIMIT 3

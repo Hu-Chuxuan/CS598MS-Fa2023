@@ -1,1 +1,1 @@
-SELECT * FROM title WHERE title_type = "movie" AND rating >.7 AND runtime < 120
+SELECT * from title_rating where (averageRating >= 5 AND numVotes > 100)

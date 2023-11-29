@@ -1,1 +1,0 @@
-SELECT * FROM TITLE_BASICS WHERE titleType = "movie" AND tconst IN ('the marine','12 rounds') GROUP BY genre HAVING COUNT(*) > 1 ORDER BY AVERAGE(runtimeMinutes DESC)

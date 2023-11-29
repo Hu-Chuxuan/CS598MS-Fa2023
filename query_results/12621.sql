@@ -1,1 +1,0 @@
-SELECT DISTINCT title_ids FROM title_recommendation WHERE user_id='1')) OR EXISTS((select distinct title_id from title_recommendation where user_id = '1') AND tID IN (SELECT DISTINCT title_ids FROM title_recommendation WHERE user_id='1'))

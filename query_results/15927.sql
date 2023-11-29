@@ -1,1 +1,0 @@
-SELECT * FROM `title` WHERE title LIKE '%star wars%' AND rating > '6' OR category = 'actress'

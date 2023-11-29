@@ -1,1 +1,0 @@
-SELECT DISTINCT tb.* FROM `title_basic` AS tb LEFT JOIN `name_basic` as nb ON tb.`primaryName` = nb.`nconst`

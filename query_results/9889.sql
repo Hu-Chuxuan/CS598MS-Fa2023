@@ -1,1 +1,0 @@
-SELECT DISTINCT * FROM title_basics WHERE titleType = "comedy" AND NOT EXISTS( SELECT * from title_ratings where rating < 7)

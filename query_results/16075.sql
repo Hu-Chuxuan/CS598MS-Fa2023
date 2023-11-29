@@ -1,1 +1,0 @@
-SELECT * FROM `title_recommends` WHERE `rating >='7'` AND `genre = "comedy"` ORDER BY rating DESC LIMIT 6

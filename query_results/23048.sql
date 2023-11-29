@@ -1,1 +1,0 @@
-SELECT t.* FROM title AS t JOIN (SELECT rating, count(rating) as votes from ratings GROUP BY rating HAVING sum(votes)>=7 AND avg(vote)>6/10 WHERE userid = 987654321 LIMIT 5)

@@ -1,1 +1,0 @@
-SELECT DISTINCT t.* FROM titles AS t JOIN casts as c ON c.titleId = t.id WHERE t.isAdult=false AND t.startYear>1960

@@ -1,1 +1,0 @@
-SELECT * FROM title_basics WHERE tconst = 'TWISTER' AND startYEAR > "2007" ORDER BY rating DESC LIMIT 5

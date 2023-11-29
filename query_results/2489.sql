@@ -1,1 +1,0 @@
-SELECT * FROM imdb_data WHERE rating > 6 AND user_rating = true

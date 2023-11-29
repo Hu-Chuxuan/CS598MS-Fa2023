@@ -1,1 +1,0 @@
-SELECT * FROM title_basic WHERE title_type = 'comedy' AND title_year BETWEEN? AND?

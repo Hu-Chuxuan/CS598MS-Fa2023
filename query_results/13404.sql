@@ -1,2 +1,0 @@
-SELECT DISTINCT tc.* FROM title_basics AS tb JOIN movies AS m ON tb.title_id = m.title_id WHERE tb.title_type='movie' AND ((tb.startyear BETWEEN? AND? OR tb.endyear BETWEEN? AND?))AND tb.genre IN ('comedy','sports')
-ORDER BY tb.runtime DESC LIMIT?

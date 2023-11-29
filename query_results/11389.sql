@@ -1,1 +1,1 @@
-SELECT DISTINCT tc.* FROM title_basics AS tb INNER JOIN cast AND crew ON tb.titleId = c.titleId
+SELECT * FROM title WHERE rating > avg(rating)

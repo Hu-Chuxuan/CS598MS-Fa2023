@@ -1,1 +1,1 @@
-SELECT * FROM title_principals WHERE job LIKE '%actor%' OR job LIKE '%actress%'
+SELECT * FROM title_basic WHERE genre = "kidsfun"

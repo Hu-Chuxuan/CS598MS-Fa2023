@@ -1,1 +1,0 @@
-SELECT * FROM rating WHERE title_type = "movie" AND genre IN ("war", "action") ORDER BY avg(rating)

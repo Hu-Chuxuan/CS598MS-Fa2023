@@ -1,1 +1,0 @@
-SELECT * FROM 'title_ratings' WHERE ('director' LIKE '%George A Romero%' OR 'writer' LIKE '%George A Romero%') AND ('averageRating' >= 7)

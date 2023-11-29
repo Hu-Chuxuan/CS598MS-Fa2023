@@ -1,1 +1,0 @@
-SELECT * FROM movie WHERE genre = "Historical Drama" AND rating >= 7

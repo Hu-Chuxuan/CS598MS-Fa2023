@@ -1,0 +1,1 @@
+SELECT * FROM `title` WHERE (`startyear` BETWEEN? AND? OR `endyear` BETWEEN? AND?)

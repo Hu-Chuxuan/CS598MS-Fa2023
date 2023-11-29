@@ -1,1 +1,0 @@
-SELECT * FROM `title_recommendation` WHERE (`userInput` LIKE '%action%' AND `userPreferenceHistory` LIKE '%movie%') ORDER BY rating DESC

@@ -1,1 +1,1 @@
-SELECT * FROM title_ratings WHERE rating >= 6 AND genre IN ('Drama','Horror') ORDER BY rating DESC LIMIT 5
+SELECT * FROM title WHERE ttype ='movie' AND numVote > 10 OR titleID IN ('tt0000001','tt0000002')

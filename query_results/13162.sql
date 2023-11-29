@@ -1,1 +1,0 @@
-SELECT t.* FROM title AS t JOIN cast AS c ON t.titleID = c.movieID WHERE t.genre = "comedy" AND c.actorName IN ('Rob Schneider','Jon Heder') ORDER BY rating DESC LIMIT 7

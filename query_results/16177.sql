@@ -1,1 +1,0 @@
-SELECT * FROM title_recommendation WHERE (userInput LIKE '%action%' OR userPreferneceHistory LIKE '[%action%]') AND (titleType='movie' OR titleType='tv-show')

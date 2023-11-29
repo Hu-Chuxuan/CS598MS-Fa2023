@@ -1,1 +1,0 @@
-SELECT t.* FROM title_basic AS t WHERE t.titleType = 'Movie' AND (t.startYear > 2016 OR t.startYear IS NULL)

@@ -1,1 +1,0 @@
-SELECT * FROM title_recommendation WHERE userInput LIKE '%action%' AND userPreferanceHistory IN ('%Speed %','%Wonder Woman %','%Thor %','%Spider Man %') ORDER BY Average Rating DESC LIMIT 6

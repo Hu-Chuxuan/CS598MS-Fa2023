@@ -1,1 +1,0 @@
-SELECT * FROM movies WHERE (title_type = "family") AND (primaryTitle LIKE '%(userInput)%' OR originalTitle LIKE '%(userInput)%') ORDER BY rating DESC LIMIT 8

@@ -1,2 +1,0 @@
-SELECT * FROM
-(SELECT DISTINCT title_ratings.*, rating AS avg_rating FROM title_ratings JOIN movies ON title_ratings.movie_id = movies.title_id WHERE movies.genre IN ('Drama','Horror') AND movies.year >= 1970 UNION ALL SELECT * FROM ratings WHERE user_id=?) AS t

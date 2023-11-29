@@ -1,1 +1,1 @@
-SELECT * FROM title_recommendation WHERE userInput LIKE '%Ghost%'
+SELECT * FROM title WHERE ((startyear >=? AND endyear <=?) OR (? < startyear AND?? > endyear))AND (((? ='movie') OR ('movienetflix' IN genre))) ORDER BY rating DESC LIMIT 1 OFFSET 0

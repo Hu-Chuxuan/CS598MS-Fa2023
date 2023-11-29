@@ -1,1 +1,0 @@
-SELECT TOP(6) * FROM TitleBasics WHERE AverageRating >.7 AND TitleType = "Movie" ORDER BY AvgRate DESC

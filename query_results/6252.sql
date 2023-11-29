@@ -1,1 +1,0 @@
-SELECT * FROM `title` WHERE (`genre` LIKE '%super%') AND (`startyear` BETWEEN '1978' AND '2006')

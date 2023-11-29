@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE tconst = "title" AND nconst IN ('step brothers','girls trip') ORDER BY avg(rating)

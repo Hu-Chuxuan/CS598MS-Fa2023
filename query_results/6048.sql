@@ -1,1 +1,1 @@
-SELECT t.* FROM title_basics AS t INNER JOIN name_basics as n ON t.titleID=n.titleID WHERE genre = "Fantasy" AND rating > 7 ORDER BY rating DESC
+SELECT * FROM `titles` WHERE (`isAdult = 1`) AND ((`startYear >= '${userPreferenceHistory[0]}') OR (`endYear <= '${userPreferenceHistory[0]}')) ORDER BY RAND() LIMIT ${userPreferenceHistory.length}

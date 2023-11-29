@@ -1,1 +1,0 @@
-SELECT title_basics.* FROM title_basics WHERE title_type = "movie" AND (startyear >= 1980 OR startyear <= 2016)

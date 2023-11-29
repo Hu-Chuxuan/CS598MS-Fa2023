@@ -1,1 +1,0 @@
-SELECT * FROM titles WHERE rating > '6' AND tconst = "The Smurfs" OR nconst IN ('Peyo', 'Heidi MacDonald')

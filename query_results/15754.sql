@@ -1,1 +1,0 @@
-SELECT * FROM (title_principals as tc INNER JOIN title_rating AS tr ON tc.job = "actor" AND tr.primaryName LIKE '%Rob%') WHERE tr.numVotes > 0 ORDER BY tr.averageRating DESC LIMIT 1

@@ -1,1 +1,1 @@
-SELECT * FROM title_basic WHERE titleType = "horror" AND (startYEAR < 2018 OR startYEAR > 1960)
+SELECT DISTINCT * FROM title_basic WHERE tconst='tt0000001' AND isAdult=1 ORDER BY numVotes DESC LIMIT 10 OFFSET 0

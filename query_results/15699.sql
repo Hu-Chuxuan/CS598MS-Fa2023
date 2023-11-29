@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE tconst = 'title' AND titleType IN ('Drama', 'Comedy') OR tconst LIKE '%movie%' GROUP BY titleType

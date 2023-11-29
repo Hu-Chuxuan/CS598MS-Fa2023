@@ -1,1 +1,0 @@
-SELECT tc.* FROM title_basics AS tb INNER JOIN title_ratings as tr ON tr.title_id = tb.title_id WHERE ((tb.isAdult=true OR bb.isAdult=false)) AND ((tr.averageRating>=3.0) AND (tr.numvotes>0))

@@ -1,1 +1,0 @@
-SELECT DISTINCT(title_basic.primaryTitle), title_rating.averageRating FROM title_basic INNER JOIN title_rating ON title_basic.tconst = title_rating.tconst WHERE title_basic.isAdult=false AND title_basic.startYear>=1960 AND title_basic.endYear<=2020

@@ -1,1 +1,1 @@
-SELECT t.* FROM title_basics AS t JOIN title_ratings AS r ON t.titleId = r.movieId WHERE r.averageRating >.80 AND t.startYear < '2007' OR t.endYear > '2016'
+SELECT t.* FROM title AS t INNER JOIN title_principals AS p ON t.id = p.tconst WHERE p.category LIKE '%director%' AND t.startyear >= \`userInputDate\' ORDER BY t.`averageRatings` DESC LIMIT 10

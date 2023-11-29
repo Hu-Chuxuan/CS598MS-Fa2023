@@ -1,1 +1,0 @@
-SELECT * FROM title_basics WHERE titleType = "movie" AND (((startYear <= 1970 OR startYear > 2019)) AND ((endYear >= 1970 OR endYear < 2020))) AND (((runtimeMinutes BETWEEN 80 MINUTES AND 120 MINUTES))) AND ((genre IN ("Action", "Comedy", "Drama")))

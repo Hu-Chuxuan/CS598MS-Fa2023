@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE genre = "Dark Comedy" AND ((titleType='Movie') OR(titleType='TV Series')) ORDER BY rating DESC LIMIT 5

@@ -1,0 +1,1 @@
+SELECT * FROM title_basic WHERE title_type ='movie' AND ((startyear >= '2010') OR ('endyear <= '2010')) ORDER BY avgrating DESC LIMIT 5 OFFSET?

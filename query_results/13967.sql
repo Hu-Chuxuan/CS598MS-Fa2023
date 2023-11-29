@@ -1,1 +1,0 @@
-SELECT DISTINCT r.titleId FROM ratings AS r JOIN titles t ON t.id = r.movieId WHERE r.userId IN ('user-input') AND r.rating >.9

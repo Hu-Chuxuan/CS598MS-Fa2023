@@ -1,0 +1,1 @@
+SELECT DISTINCT t.primaryTitle FROM title AS t JOIN title_rating r ON t.tconst = r.tconst WHERE r.averageRating > 6 AND t.isAdult <> 1 ORDER BY r.numVotes DESC LIMIT 10

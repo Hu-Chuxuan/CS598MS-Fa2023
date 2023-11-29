@@ -1,1 +1,0 @@
-SELECT * FROM movies WHERE titleType='Action' AND rating>8

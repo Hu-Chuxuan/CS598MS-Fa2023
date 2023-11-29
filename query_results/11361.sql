@@ -1,1 +1,0 @@
-SELECT * FROM (title_ratings r INNER JOIN title_basic b ON r.titleID = b.titleID) WHERE r.averageRating > x AND (r.numVotes <= y OR r.numVotes IS NULL)

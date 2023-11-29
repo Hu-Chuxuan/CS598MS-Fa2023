@@ -1,1 +1,0 @@
-SELECT DISTINCT title_id FROM rating WHERE user_rating > 8 AND genre IN ('Drama','Sci-Fi')

@@ -1,1 +1,0 @@
-SELECT * FROM title_basic WHERE tconst IN ('Bicycle Thieves (1948)','La Dolce Vita (1960)') AND userInput LIKE '%Italian%' OR tconst = 'Life Is Beautiful (1997)' GROUP BY tconst

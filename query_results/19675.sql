@@ -1,1 +1,0 @@
-SELECT t.* FROM titles AS t WHERE NOT EXISTS( SELECT * FROM title_recommendation_history H JOIN title T ON H.title_id = T.title_id AND H.user_id=? AND H.date >?)

@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE genre = 'Comedy' AND averageRating > 7 ORDER BY avgRATING DESC LIMIT 3 OFFSET?

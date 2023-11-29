@@ -1,1 +1,1 @@
-SELECT t.* FROM title AS t WHERE t.titleType = "Movie" AND (t.primaryTitle LIKE '%Cheese%' OR t.originalTitle LIKE '%Cheese%') AND ((t.isAdult=FALSE AND t.startYEAR>='1876' AND t.endYEAR<='2019')) ORDER BY t.numVOTES DESC LIMIT 3
+SELECT * FROM `moviedb` WHERE (`genre`) LIKE '%romantic%' AND (`isAdult`) = false ORDER BY `averageRating` DESC LIMIT 10 OFFSET 0

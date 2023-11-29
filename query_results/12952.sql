@@ -1,1 +1,0 @@
-SELECT * FROM rating WHERE (rating.titleType = 'history' AND userPreferedHistory.numVotes >0) OR (userHistoryInput!= "history" )AND (rating.movieRecommendationID IS NULL)

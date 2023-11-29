@@ -1,1 +1,0 @@
-SELECT DISTINCT tc.* FROM title_recommendation tr INNER JOIN title_principals tp ON tr.titleId = tp.titleId WHERE userPreference IN ('The Basketball Diaries  (1995)','Holy Rollers  (2010)','The Wolf Of Wall Street  (2013)') AND tr.userInput LIKE '%the basketball diaries%' OR tr.userInput LIKE '%holy rollers%' OR tr.userInput LIKE '%the wolf of wall street%'

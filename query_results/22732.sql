@@ -1,1 +1,0 @@
-SELECT title_basics.* FROM title_basics WHERE user_preferences LIKE '%Gone%'

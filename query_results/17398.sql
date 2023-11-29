@@ -1,1 +1,0 @@
-SELECT * FROM `title_basics` WHERE `primaryTitle` LIKE '%' AND (`startYear` > 1980 OR `endYear` < 2016)

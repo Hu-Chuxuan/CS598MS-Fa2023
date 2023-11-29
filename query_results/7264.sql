@@ -1,1 +1,0 @@
-SELECT DISTINCT t.* FROM imdb.title AS t JOIN imdb.name AS n ON t.nid = n.nid WHERE t.type='movie' AND t.isadult=false

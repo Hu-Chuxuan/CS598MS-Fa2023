@@ -1,1 +1,0 @@
-SELECT * FROM rating WHERE genre = "romance"

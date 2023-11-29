@@ -1,1 +1,0 @@
-SELECT * FROM (title_ratings INNER JOIN title_crew ON title_ratings.tconst = title_crews.tconst) LEFT OUTER JOIN title_principals USING(tconst)

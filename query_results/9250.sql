@@ -1,1 +1,0 @@
-SELECT * FROM imdb.title_basics WHERE titleType = "movie" AND genre IN ('Horror') ORDER BY rating DESC LIMIT 6

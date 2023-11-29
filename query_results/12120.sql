@@ -1,1 +1,0 @@
-SELECT * FROM title_principals WHERE job = 'actor' AND category IN ('Comedy','Action') ORDER BY job DESC LIMIT 3

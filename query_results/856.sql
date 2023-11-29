@@ -1,1 +1,1 @@
-SELECT * FROM title_basic WHERE tconst =? AND (titleType LIKE '%Comedy%' OR titleType LIKE '%Drama%') GROUP BY titleType ORDER BY AVG(averageRating)
+SELECT * FROM title WHERE titleType = “Movie” AND NOT (originalTitle LIKE '%Bio%' OR originalTitle LIKE '%This%') ORDER BY avgrating DESC LIMIT 2

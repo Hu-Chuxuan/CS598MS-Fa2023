@@ -1,1 +1,0 @@
-SELECT * FROM imdb.title_rating WHERE rating >.8 AND runningTime < 96

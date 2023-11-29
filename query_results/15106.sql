@@ -1,1 +1,0 @@
-SELECT * FROM rating WHERE title_id IN ('Dunkirk', 'Sausage Party')

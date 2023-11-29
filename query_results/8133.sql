@@ -1,1 +1,0 @@
-SELECT * FROM (title_basics JOIN title_ratings ON title_basic.titleType = "movie" AND title_rating.primaryTitle=title_basic.titleType AND title_basic.startYear > 2007 ORDER BY rating DESC LIMIT 1 OFFSET 1)

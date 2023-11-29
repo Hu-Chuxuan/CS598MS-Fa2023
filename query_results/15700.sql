@@ -1,1 +1,0 @@
-SELECT * FROM title_recommendation WHERE userInput LIKE '%action%' AND numVote > 1

@@ -1,1 +1,0 @@
-SELECT * FROM tconst WHERE titleType = "movie" AND (((startYear >= @year1) AND (@year1 < yearEnd)) OR ((endYear <= @year1) AND (@year1 > yearStart))) AND ((isAdult = true))

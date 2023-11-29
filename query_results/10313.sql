@@ -1,1 +1,0 @@
-SELECT t.* FROM (title_basics AS t INNER JOIN title_ratings ON t.id = title_ratings.title_id) LEFT OUTER JOIN (name_basics as n ON title_principals.id=n.primaryName AND n.category='Actress') WHERE ((title_basics.isAdult='true' OR title_basics.startYear<1970)) AND (title_ratings.averageRating>6/10) AND (title_ratings.numVotes>=8)

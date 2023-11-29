@@ -1,1 +1,0 @@
-SELECT movies.* FROM movies WHERE rating >= 7

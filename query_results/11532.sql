@@ -1,1 +1,0 @@
-SELECT t.titleID AS id FROM title_ratings r JOIN title_basic b ON r.primaryTitle = b.id WHERE rating > 7 AND titleType IN ('comedy') ORDER BY avgRATING DESC LIMIT 6

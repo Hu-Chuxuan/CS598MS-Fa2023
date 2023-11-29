@@ -1,1 +1,1 @@
-SELECT * FROM imdb WHERE title_type = "movie" AND title_genre IN ("comedy", "adventure") ORDER BY rating DESC LIMIT 5
+SELECT t.* FROM ((title_basic AS t JOIN title_rating AS r ON t.primaryTitle = r.titleID) JOIN name_basic AS nb ON t.isAdult = true AND r.numVotes > 0 AND r.averageRating >= 6 WHERE nb.primaryProfession LIKE '%Actor%' OR nb.primaryProfession LIKE '%Writer%') ORDER BY nb.ordering DESC LIMIT 1

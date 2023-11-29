@@ -1,1 +1,1 @@
-SELECT tb.* FROM titleratings AS rr INNER JOIN titlenames as tn ON rr.titleid = tn.titleID WHERE rr.rating >= userInput AND NOT EXISTS(SELECT * from movies where imdbid IN (SELECT DISTINCT m.imdbId from movies as m inner join titles as t ON m.titlereferenced=t.imdbid where t.primaryname='userinput'))
+SELECT * FROM title WHERE rating >= avg('rating') AND rating <= avg('rating')

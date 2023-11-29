@@ -1,1 +1,0 @@
-SELECT * FROM imdb.title WHERE rating > 9

@@ -1,0 +1,1 @@
+SELECT t.* FROM `title` AS t JOIN `rating` AS r ON r.`titleid` = t.`tconst`

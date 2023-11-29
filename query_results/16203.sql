@@ -1,1 +1,0 @@
-SELECT t.titleID AS id, t.primaryTitle, t.originalTitle FROM titlerecommendation AS tr JOIN titles AS t ON tr.movieRecomID = t.titleID WHERE t.isAdult=true AND t.startYear BETWEEN '1986' AND '2009'

@@ -1,1 +1,1 @@
-SELECT t.* FROM title AS t JOIN (title_rating AS r ON t.primaryTitle = r.titleId AND r.averageRating >= 7)
+SELECT * FROM title WHERE (((primaryTitle LIKE '%The%') AND ((startYear BETWEEN 2000 AND 2010))) OR (genre LIKE '%Drama%')) LIMIT 5 OFFSET 0

@@ -1,1 +1,0 @@
-SELECT * FROM title_recommendation WHERE tconst = "movie" AND userPrefer = "all" ORDER BY avg(rating) DESC LIMIT 3

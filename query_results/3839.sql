@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE tconst = "Blazing Saddles" AND primaryTitle IS NOT NULL

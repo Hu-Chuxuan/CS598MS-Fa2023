@@ -1,1 +1,1 @@
-SELECT t.* FROM titles AS t JOIN title_ratings AS r ON t.titleID = r.titleID WHERE t.titleType IN ('movie') AND (r.averageRating >=? OR r.numVotes <=?)
+SELECT * FROM title WHERE rating >= 8 AND averageRating > 5 ORDER BY rating DESC LIMIT 10 OFFSET?

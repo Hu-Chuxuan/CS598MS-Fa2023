@@ -1,1 +1,0 @@
-SELECT DISTINCT tb.* FROM title_basics AS tb INNER JOIN (title_ratings AS tr LEFT OUTER JOIN name_basics AS n ON tr.primaryName = n.primaryName) WHERE tb.startYear > '1980' AND tb.endYear < '2020'

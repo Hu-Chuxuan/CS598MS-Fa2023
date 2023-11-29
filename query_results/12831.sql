@@ -1,1 +1,0 @@
-SELECT * FROM (title_rating INNER JOIN title_crew ON title_rating.director = title_crew.director) WHERE ((title_crew.writer IN ('Joe Eszterhas', 'Frank Darabont')) AND (title_rating.averageRating > 7)) GROUP BY director ORDER BY rating DESC LIMIT 10

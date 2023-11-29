@@ -1,1 +1,0 @@
-SELECT * FROM title_recommendation WHERE rating >= 9/10 AND length <= 180

@@ -1,1 +1,0 @@
-SELECT t.* FROM (title_rating as r INNER JOIN title_basic as b ON r.movieId = b.id) AS t WHERE ((b.isAdult = '0') AND (r.averageRating >= '6')) ORDER BY t.numVotes DESC LIMIT 8

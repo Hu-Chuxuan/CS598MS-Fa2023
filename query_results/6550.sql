@@ -1,1 +1,0 @@
-SELECT * FROM title_recommend WHERE rating >= avg(rating) AND rating < max(rating)

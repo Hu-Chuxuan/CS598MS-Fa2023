@@ -1,1 +1,0 @@
-SELECT tb.* FROM imdb.title_basic AS tb JOIN imdb.name_basic AS n WHERE tb.isadult = false AND tb.startyear > 1970

@@ -1,1 +1,0 @@
-SELECT * FROM title_basics WHERE tconst LIKE '%Wonder%' AND tconst NOT IN ('%Wonder Woman') AND tconst NOT IN ('%Thor')

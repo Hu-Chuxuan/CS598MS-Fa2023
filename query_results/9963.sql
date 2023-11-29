@@ -1,1 +1,0 @@
-SELECT * FROM movies WHERE userPreference LIKE '%blade%' OR userPreference LIKE '%notebo%'

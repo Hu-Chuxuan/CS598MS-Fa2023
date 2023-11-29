@@ -1,1 +1,0 @@
-SELECT * FROM tconst WHERE tconst.titleType = "movie" AND tconst.startYear >= 2009

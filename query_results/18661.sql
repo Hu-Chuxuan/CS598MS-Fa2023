@@ -1,1 +1,1 @@
-SELECT * FROM title_rating INNER JOIN title_crew ON title_rating.titleId = title_crew.titleId
+SELECT * FROM title_basic WHERE titleType = “Movie” AND isAdult=‘0′ ORDER BY avgRate DESC LIMIT 5

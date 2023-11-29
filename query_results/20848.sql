@@ -1,1 +1,0 @@
-SELECT title_basic.* FROM title_basic JOIN rating_basic ON title_rating = title_basic WHERE rating_basic > 7 AND genre IN ('Animation') ORDER BY RAND() LIMIT 1

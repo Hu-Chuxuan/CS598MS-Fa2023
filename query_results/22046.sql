@@ -1,1 +1,0 @@
-SELECT t.* FROM title AS t JOIN title_ratings AS r ON t.titleID = r.tconst WHERE t.isAdult <> "true" AND ((r.numVotes >= 6 OR r.averageRating > 8 ))

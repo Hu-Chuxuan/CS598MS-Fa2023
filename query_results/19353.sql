@@ -1,1 +1,1 @@
-SELECT * FROM title WHERE tconst IN ('title_ratings','title_principals') AND averageRating > 7
+SELECT * FROM title_principals WHERE tconst = 'tt0000001' AND job IN ('[\"assistant\", \"blacksmith\"]') ORDER BY order DESC LIMIT 1

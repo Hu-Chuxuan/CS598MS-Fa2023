@@ -1,1 +1,0 @@
-SELECT * FROM movie WHERE rating >= 8 AND rating <= 9

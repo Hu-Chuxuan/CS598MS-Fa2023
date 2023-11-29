@@ -1,1 +1,0 @@
-SELECT * FROM movies WHERE userPrefer = 'Anchorman 2' AND userLike = 'Get Out'

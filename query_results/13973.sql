@@ -1,1 +1,0 @@
-SELECT * FROM (SELECT * from title_basics WHERE titleType ='movie' AND (startYear > 1980 OR startYear < 1970)) AS t UNION ALL SELECT * FROM (SELECT * from title_rating where avg(averageRating) >= 6) as r

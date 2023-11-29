@@ -1,1 +1,0 @@
-SELECT DISTINCT(title_principals.*).job as Job FROM title_principals WHERE user_preferences LIKE '%Iron%'

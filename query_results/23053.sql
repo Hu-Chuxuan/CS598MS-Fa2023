@@ -1,1 +1,0 @@
-SELECT * FROM `title_ratings` WHERE (`startYear`) <= '2018-07-16'

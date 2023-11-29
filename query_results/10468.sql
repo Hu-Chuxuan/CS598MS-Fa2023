@@ -1,1 +1,1 @@
-SELECT t.* FROM title_basics AS t INNER JOIN (title_ratings as r) ON r.primaryTitle = t.title WHERE rating > 6 AND title LIKE '%action%' ORDER BY avg(rating)
+SELECT t.primaryTitle AS Movie Title FROM title_basics t WHERE t.isAdult = true AND t.startYear >= 1950 AND t.endYear <= 2020 ORDER BY t.averageRating DESC LIMIT 2 OFFSET 0

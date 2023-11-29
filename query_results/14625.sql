@@ -1,1 +1,0 @@
-SELECT * FROM imdb.title WHERE tconst =? AND (startYear >=? AND endYear <=?) OR (startYear BETWEEN? AND?)

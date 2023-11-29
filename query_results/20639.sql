@@ -1,1 +1,0 @@
-SELECT t.* FROM title_ratings AS t INNER JOIN name_basics ON t.primaryName = nb.nconst WHERE nb.category='Actress' AND t.averageRating >= 6 ORDER BY t.numVotes DESC LIMIT 3

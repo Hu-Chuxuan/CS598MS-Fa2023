@@ -1,1 +1,1 @@
-SELECT tb.* FROM title_basics AS tb JOIN title_ratings as tr ON tb.titleId = tr.movieId
+SELECT * FROM title WHERE isAdult = true AND ((primaryTitle LIKE '%Prestige%' OR primaryTitle LIKE '%Showman%') AND (startYear >= 2000)) ORDER BY avgrat DESC LIMIT 10 OFFSET 0 

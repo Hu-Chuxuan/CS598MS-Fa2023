@@ -1,1 +1,0 @@
-SELECT t.* FROM title AS t JOIN cast AS c ON (c.titleID = t.id) WHERE t.primaryProfession LIKE 'actor%' AND t.job IN ('Actor', 'Director') AND t.category NOT IN ('Leading Role','Supporting Actor')

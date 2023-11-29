@@ -1,1 +1,1 @@
-SELECT t.* FROM titles AS t WHERE t.titleType = "movie" AND ((t.startYear >= :yearStart AND t.endYear <= :yearEnd)) AND (:searchTerm IN t.genre)
+SELECT * FROM title_basic WHERE isAdult = 0 AND rating > 6 ORDER BY rating DESC LIMIT 1 OFFSET 0

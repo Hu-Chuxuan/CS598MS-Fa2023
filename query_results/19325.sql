@@ -1,1 +1,1 @@
-SELECT * FROM title_ratings WHERE rating >= 8 AND averageRating <= 9
+SELECT * FROM `movies` WHERE (`rating` >= 5 OR `genre` IN ('Drama')) AND (`startyear` <=?)

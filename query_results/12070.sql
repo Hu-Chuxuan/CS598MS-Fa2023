@@ -1,1 +1,0 @@
-SELECT DISTINCT titles.* FROM movies as t JOIN casts AS c ON t.movieId = c.movieID AND c.actor =? WHERE t.titleType =? ORDER BY rating DESC LIMIT 6

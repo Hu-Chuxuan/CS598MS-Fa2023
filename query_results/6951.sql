@@ -1,1 +1,0 @@
-SELECT * FROM movies WHERE rating >= x AND rating <= y AND runningTime > z

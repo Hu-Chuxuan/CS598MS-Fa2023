@@ -1,1 +1,0 @@
-SELECT * FROM `title_ratings` WHERE (((rating >= $minimumRatings) AND ((averageRating < $maximumRatings))) OR ($genre IN ('Horror'))) ORDER BY (`numVotes`) DESC LIMIT 1

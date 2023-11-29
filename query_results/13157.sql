@@ -1,1 +1,0 @@
-SELECT t1.* FROM title_basic AS t1 INNER JOIN name_basics as t2 ON t1.titleType = t2.primaryTitle WHERE t1.isAdult=false AND ((t1.startYear <= 2016) OR (t1.endYear >= 1970)) AND ((t1.runtimeMinutes < 120))

@@ -1,1 +1,0 @@
-SELECT movies.* FROM (movies JOIN name_basics ON movies.primaryTitle = name_basics.title_basics) JOIN casts ON casts.movieID=movies.id WHERE ((name_basics.birthYear>0 AND name_basics.deathYear<0)) OR (casts.category='actor' AND casting_role IN ('lead actor','supporting role')) GROUP BY movies.id HAVING COUNT(DISTINCT casting_role)=2

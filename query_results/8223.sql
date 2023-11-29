@@ -1,1 +1,0 @@
-SELECT * FROM tconst WHERE titleType = "movie" AND genre IN ("Horror", "Slasher") ORDER BY rating DESC LIMIT 5

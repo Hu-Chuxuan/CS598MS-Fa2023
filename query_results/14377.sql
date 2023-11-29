@@ -1,1 +1,0 @@
-SELECT * FROM title_recommendation WHERE rating >.8 AND title_type ='movie' ORDER BY RANK() DESC LIMIT 5

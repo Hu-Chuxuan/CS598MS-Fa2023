@@ -1,1 +1,1 @@
-SELECT * FROM `title_ratings` WHERE rating >.7 AND ((director='Jerry Reed' OR writer='Tom Shadyac'))
+SELECT DISTINCT * FROM `titles` WHERE `primaryTitle` = "True Memories Of An International Assasin" AND (`startYear` BETWEEN? AND? OR `endYear` IS NOT NULL)

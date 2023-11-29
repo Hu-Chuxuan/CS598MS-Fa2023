@@ -1,1 +1,0 @@
-SELECT * FROM movies WHERE rating >= 7 AND genre = 'action' OR genre='cartoons'

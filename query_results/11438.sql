@@ -1,1 +1,0 @@
-SELECT * FROM movies WHERE userInput LIKE '%Star%' AND rating > 6

@@ -1,1 +1,0 @@
-SELECT t.* FROM title_basic AS t INNER JOIN name_basics ON t.title_id = name_basics.tconst WHERE t.isadult=false AND t.primaryTitle='The Martian' ORDER BY rating DESC LIMIT 5

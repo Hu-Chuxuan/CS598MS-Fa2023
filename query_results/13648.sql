@@ -1,1 +1,0 @@
-SELECT movies.* FROM titles AS m INNER JOIN rating AS r ON m.titleID = r.titleID AND r.userID=? WHERE m.genre IN ('romantic comedy') ORDER BY avg(r.rating) DESC LIMIT?

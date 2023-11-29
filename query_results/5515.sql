@@ -1,1 +1,0 @@
-SELECT * FROM (title_ratings INNER JOIN title_basic ON rating >.9), (title_ratings INNER JOIN title_basic ON rating <.7), (name_basic INNER JOIN title_basic ON year > 1960 AND year < 1990), (name_basic INNER JOIN title_basic ON year >= 1990)

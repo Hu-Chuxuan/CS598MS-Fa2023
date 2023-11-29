@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE ((title_type = "movie" AND title_genre IN ("thriller", "mystery") AND title_year >= 2006)) OR ((title_rating > 6))

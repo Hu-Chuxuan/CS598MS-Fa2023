@@ -1,2 +1,1 @@
-SELECT * FROM 
-title_recommendation WHERE rating > 6 AND director IN ('Robin Williams', 'Matt Damon') AND genre = "Drama" OR genre = "Comedy"
+SELECT DISTINCT t.* FROM `titles` AS t INNER JOIN (`titles_ratings` AS tr ON t.`id` = tr.`tconst`) WHERE ((tr.`averageRating` >= 8 AND tr.`numVotes` > 10)) OR EXISTS((SELECT * FROM `users` USERS WHERE (USERS.username='user') AND (USAGES.titleId=t.`id`))) GROUP BY t.`id`

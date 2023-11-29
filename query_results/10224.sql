@@ -1,1 +1,0 @@
-SELECT * FROM (SELECT rating AS Rating, title AS Title from ratings WHERE userInput LIKE 'Ok sounds interesting' OR userHistory = [] AND genre IN ('Drama', 'Horror')) ORDER BY Rating DESC LIMIT 0, 8

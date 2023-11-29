@@ -1,1 +1,0 @@
-SELECT * FROM rating WHERE user_id = 1 AND title_type IN ('Movie') AND title_rating >.70

@@ -1,1 +1,1 @@
-SELECT * FROM... WHERE... AND... ORDER BY... LIMIT..
+SELECT * FROM `movies` WHERE (`primaryTitle` = 'Major league') OR (`originalTitle` like '%Major%')

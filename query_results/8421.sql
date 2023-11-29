@@ -1,1 +1,1 @@
-SELECT t.* FROM title AS t WHERE t.titleType = "movie" AND t.startYear BETWEEN $yearStart && $yearEnd
+SELECT * FROM `movies` WHERE (`startyear >= 1890`) AND (`endyear <= 1999`) ORDER BY `averageratingscore` DESC LIMIT 5

@@ -1,1 +1,0 @@
-SELECT t.* FROM imdb.title_ratings AS r INNER JOIN imdb.name_basics AS b ON r.averageRating = b.numVotes WHERE r.primaryTitle IN ('It', 'Split') AND NOT EXISTS( SELECT * FROM imdb.title_recommendation WHERE title = b.title)

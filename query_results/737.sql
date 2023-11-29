@@ -1,1 +1,0 @@
-SELECT t.* FROM title_basics AS t WHERE t.titleType = "movie" AND ((t.startYear >=? OR t.endYear <=?) AND NOT EXISTS( SELECT * from title_ratings r WHERE t.id=r.title_id)) AND NOT EXISTS( SELECT * from title_crew c WHERE t.id=c.title_id)

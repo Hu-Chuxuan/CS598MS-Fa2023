@@ -1,1 +1,0 @@
-SELECT DISTINCT tc.* FROM title_rating AS tr JOIN (title_basic TB ON TR.titleID =TB.id) WHERE TP.category LIKE 'Suspense' AND TC.primaryProfession IS NULL

@@ -1,1 +1,0 @@
-SELECT * FROM titles WHERE genre = "Horror" AND rating >= 8

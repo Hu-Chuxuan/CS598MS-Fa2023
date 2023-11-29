@@ -1,1 +1,0 @@
-SELECT t.* FROM imdb.title AS t INNER JOIN imdb.name_basics ON t.primaryName = nb.nconst WHERE nb.category IN ('actress') AND nb.job LIKE '%actor%' ORDER BY t.numVotes DESC LIMIT 3

@@ -1,1 +1,0 @@
-SELECT t.* FROM `title` AS t WHERE t.`primaryTitle` = $1 AND t.`genre` IN ($2)

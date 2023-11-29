@@ -1,1 +1,0 @@
-SELECT DISTINCT tc.* FROM titles AS t INNER JOIN name_basics AS n ON n.primaryName = t.titleType WHERE ((tc.isAdult = TRUE OR tc.startYear < 1978)) AND ((((n.birthYear > 1964 AND n.deathYear <= 2015) OR (n.birthYear IS NULL AND n.deathYear >= 1964))) AND n.job LIKE '%actor%' OR n.job LIKE '%director%') ORDER BY t.rating DESC LIMIT 3

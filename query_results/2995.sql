@@ -1,1 +1,1 @@
-SELECT t.* FROM (title_basic AS t JOIN (title_rating AS r INNER JOIN name_basic ON t.primaryTitle = n.primaryName) ON r.numVotes >.6 AND r.averageRating < 7.0) WHERE NOT EXISTS(SELECT * from title_crew where title_crew.director = 'David Lynch') AND NOT EXISTS(SELECT * from title_principal where title_principal.character = 'Harry Potter')
+SELECT * FROM (SELECT * from `title` where (((startyear>1980))) AND ((endyear<1990)) ) AS tbl WHERE (((category='actress')))

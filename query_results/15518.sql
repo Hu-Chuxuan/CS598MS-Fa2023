@@ -1,1 +1,0 @@
-SELECT * FROM title_basics WHERE genre = "Action" AND (titleType LIKE "%mission impossible%" OR titleType LIKE "%die hard%") ORDER BY rating DESC LIMIT 2

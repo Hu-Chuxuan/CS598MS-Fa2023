@@ -1,1 +1,0 @@
-SELECT * FROM movies WHERE rating > 6 AND type = "comedy" AND genre IN ("romance", "drama") ORDER BY rating DESC LIMIT 10

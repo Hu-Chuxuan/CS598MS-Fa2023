@@ -1,1 +1,1 @@
-SELECT * FROM title_basic WHERE tconst = "movie" AND titleType!= "tv"
+SELECT * FROM title WHERE primaryTitle LIKE '%Matrix%' OR primaryTitle LIKE '%Grit%'

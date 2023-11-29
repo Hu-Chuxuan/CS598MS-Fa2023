@@ -1,1 +1,0 @@
-SELECT movies.* FROM (title_basic AS tb INNER JOIN title_rating as tr ON tb.id = tr.movieId) INNER JOIN name_basics as nb ON tb.nameId=nb.id WHERE nb.category='Actor'

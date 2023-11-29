@@ -1,1 +1,0 @@
-SELECT * FROM title_principals WHERE category = "actress" AND job LIKE "%actor%" ORDER BY ordering ASC LIMIT 6

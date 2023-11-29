@@ -1,1 +1,0 @@
-SELECT * FROM title_ratings WHERE rating >= 7 AND genre = "Drama" ORDER BY avg_rating DESC LIMIT 3

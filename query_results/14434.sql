@@ -1,1 +1,0 @@
-SELECT t.* FROM title_basics AS t WHERE t.titleType = "movie" AND ((t.genre IN ('Horror','Comedy')) OR (t.genre NOT IN ('Drama') ))

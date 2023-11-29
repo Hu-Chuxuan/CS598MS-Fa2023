@@ -1,1 +1,1 @@
-SELECT * FROM title WHERE rating > 6 AND genre IN ('Comedy') AND NOT EXISTS(SELECT * from title_rating WHERE id = t.id AND user_id!= 7)
+SELECT * FROM title WHERE isAdult = true AND averageRating > 7 AND runtime < 120 ORDER BY avgRat DESC LIMIT 3 OFFSET?

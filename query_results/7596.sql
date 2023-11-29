@@ -1,1 +1,0 @@
-SELECT tc.* FROM title_recommended tr JOIN title_basics tb ON tb.titleId = tr.titleId AND tr.userId =? WHERE NOT EXISTS( SELECT * FROM title_ratings rr WHERE rr.movieId IN (tr.titleId)) GROUP BY tr.titleId ORDER BY COUNT(*) DESC LIMIT 1

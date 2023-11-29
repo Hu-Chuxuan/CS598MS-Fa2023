@@ -1,1 +1,1 @@
-SELECT * FROM title WHERE rating > '7' AND `genre` LIKE '%action%' OR rating < '8'
+SELECT * FROM movie_recommendation WHERE title_type ='movie' AND rating > 7 ORDER BY avg_rating DESC LIMIT 10 OFFSET 20

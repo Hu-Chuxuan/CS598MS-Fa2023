@@ -1,1 +1,1 @@
-SELECT tc.* FROM title_recommendation AS tr JOIN title_rating AS r ON r.titleID = tr.titleID AND r.userID=?
+SELECT title_principals.* FROM `title_principals` WHERE ((category = \"actress\" AND job LIKE "%Bonnie%") OR (job IN ('Actress','Production Manager')))

@@ -1,1 +1,0 @@
-SELECT t.* FROM imdb.title AS t JOIN imdb.name as n ON t.`titleID` = n.`titleID` WHERE n.primaryName LIKE '%' || @userInput || '%'

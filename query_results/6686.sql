@@ -1,1 +1,1 @@
-SELECT t.titleID as TitleID FROM title_basics AS t INNER JOIN title_rating AS r ON t.titleId = r.titleID AND r.primaryTitle = true
+SELECT t.* FROM `titles` AS t WHERE t.`genre` = 'Horror' AND NOT EXISTS ( SELECT * FROM `users` WHERE u.`id` IN (2)) ORDER BY avg(`rating`) DESC LIMIT 5 OFFSET 0

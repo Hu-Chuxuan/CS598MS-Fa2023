@@ -1,1 +1,0 @@
-SELECT * FROM `title` WHERE `director` = "M Night Shyamalan" OR `writer` = "William Blake Herron II"

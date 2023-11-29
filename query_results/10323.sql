@@ -1,1 +1,0 @@
-SELECT tc.* FROM title_basics AS tb JOIN title_crew AS tc ON tb.titleID = tc.titleID WHERE tc.category IN ('Director')

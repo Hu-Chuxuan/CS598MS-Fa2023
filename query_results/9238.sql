@@ -1,1 +1,0 @@
-SELECT t.* FROM title_recommendation AS r INNER JOIN title_basics AS b ON r.primaryTitle = b.titleID WHERE b.isAdult=false AND b.startYear>1987 GROUP BY r.primaryTitle ORDER BY COUNT(r.titleID)

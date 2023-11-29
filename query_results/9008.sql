@@ -1,1 +1,0 @@
-SELECT * FROM title_basics WHERE (titleType = 'Movie') AND (genre IN ('War')) ORDER BY avg(averageRating) DESC LIMIT 0, 10

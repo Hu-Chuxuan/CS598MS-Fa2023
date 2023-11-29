@@ -1,1 +1,1 @@
-SELECT * FROM (title_recommendation WHERE user LIKE '%Reese%') AND (user LIKE '%Matthew%')
+SELECT * FROM `titles` WHERE `titleTypes` LIKE '%romcom%' AND (`startYear` BETWEEN \N AND \N)

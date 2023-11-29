@@ -1,1 +1,0 @@
-SELECT t.* FROM title AS t WHERE t.titleType = "movie" AND ((t.startYear <= 2017 OR t.endYear >= 2017)) AND (((t.runtimeMinutes < 120))) ORDER BY AVG(t.averageRating)

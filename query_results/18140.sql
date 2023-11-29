@@ -1,1 +1,0 @@
-SELECT tb.* FROM title_basics AS tb WHERE tb.startyear BETWEEN 1980 AND 2016

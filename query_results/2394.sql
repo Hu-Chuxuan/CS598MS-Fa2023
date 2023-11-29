@@ -1,1 +1,1 @@
-SELECT * FROM title WHERE type = "thriller" AND (genre in ('drama','crime') OR genre IS NULL)
+SELECT t.* from title_basic t where t.primaryTitle='Zodiac  (2007)' order by t.rating desc limit 2

@@ -1,1 +1,0 @@
-SELECT * FROM `title` WHERE (`name_basics`.`primaryName`) LIKE "%Thor%" AND (`genre`) IN ('Fantasy') GROUP BY "title" HAVING COUNT(*) > 1

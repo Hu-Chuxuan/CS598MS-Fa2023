@@ -1,1 +1,1 @@
-SELECT * FROM movies WHERE user_id =? AND rating > X
+SELECT * FROM title_basics WHERE ttype='movie' AND ((primaryTitle LIKE '%Little%') OR (originalTitle LIKE '%Little%')) ORDER BY avgrating DESC LIMIT 10 OFFSET 0

@@ -1,1 +1,0 @@
-SELECT movies.* FROM title_recommendation AS movies JOIN user_preferences as u ON movies.title_id = u.movieId WHERE user_id='user' AND user_rating>0 ORDER BY rating DESC LIMIT 5

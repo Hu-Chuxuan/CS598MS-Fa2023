@@ -1,1 +1,0 @@
-SELECT DISTINCT t.* FROM title AS t JOIN name AS n ON t.titleId = n.movieId AND t.primaryName LIKE '%' +? + '%'

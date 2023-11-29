@@ -1,1 +1,1 @@
-SELECT * FROM title_recommendation WHERE genre = 'Documentary'
+SELECT * FROM title_rating WHERE averageRATING > 6 AND titleType = “movie” GROUP BY tconst ORDER BY avgrating DESC LIMIT 10 OFFSET 0

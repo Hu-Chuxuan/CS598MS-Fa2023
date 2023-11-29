@@ -1,1 +1,0 @@
-SELECT t.* FROM title_basics AS t JOIN title_ratings AS r ON r.titleID = t.id AND r.averageRating > 7 WHERE t.isAdult!= "TRUE" ORDER BY avg(r.rating)

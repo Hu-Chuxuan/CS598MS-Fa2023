@@ -1,1 +1,0 @@
-SELECT DISTINCT t.* FROM movies AS m INNER JOIN casts ON m.titleID = casts.movieID AND casts.characterID IN ('Actor','Director') LEFT OUTER JOIN titles ON m.titleID=titles.id WHERE titles.genre='thriller' OR titles.genre='horror'

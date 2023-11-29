@@ -1,1 +1,0 @@
-SELECT DISTINCT t.* FROM titles AS t INNER JOIN title_ratings AS r ON t.titleId = r.titleId AND r.userID=? WHERE rating >?

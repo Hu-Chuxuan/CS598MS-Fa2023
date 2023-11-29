@@ -1,1 +1,1 @@
-SELECT * FROM tconst WHERE titleType = "foreign" AND (startYear > 1980 OR startYear < 2000)
+SELECT * FROM `title_basic` WHERE `primaryTitle` LIKE '%Am%'

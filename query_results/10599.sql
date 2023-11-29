@@ -1,1 +1,0 @@
-SELECT t.* FROM title AS t WHERE (titleType ='movie' AND rating >.7) OR (rating >=.6)

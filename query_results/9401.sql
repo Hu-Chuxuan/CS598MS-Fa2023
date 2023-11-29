@@ -1,1 +1,1 @@
-SELECT t.* FROM titles AS t INNER JOIN rating_titles RT ON t.titleID = RT.titleID AND RT.userID = '769' ORDER BY RT.rating DESC LIMIT 5
+SELECT * FROM ( SELECT TOP 25 PERCENT tconst, avgrat AS rating FROM Title_Ratings WHERE tconst = @Moviename ORDER BY avgrat DESC ) AS RATINGS INNER JOIN ( SELECT DISTINCT tconst, avgrat AS rating FROM Title_Ratings GROUP BY tconst HAVING COUNT(*) > 1 AND SUM(avgrat) < 3 ) AS MOST_POPULAR ON RATINGS.tconst = MOST_POPULAR.tconst WHERE MOST_POPULAR.rating <= RATINGS.rating GROUP BY tconst

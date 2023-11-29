@@ -1,1 +1,0 @@
-SELECT t.* FROM title_basic AS t INNER JOIN title_rating as r ON t.titleId = r.titleId WHERE rating >= 9 AND t.isAdult <> true ORDER BY r.averageRating DESC LIMIT 3

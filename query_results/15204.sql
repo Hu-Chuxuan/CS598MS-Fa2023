@@ -1,1 +1,0 @@
-SELECT t.* FROM title_ratings AS r INNER JOIN title_basics AS b ON b.titleID = r.titleID WHERE NOT EXISTS( SELECT * FROM title_principals AS p INNER JOIN title_crew AS c ON c.titleID = p.titleID AND c.job = 'director' AND c.category IN ('drama', 'romance') )AND b.startYear <=? AND b.endYear >=? GROUP BY b.titleID ORDER BY COUNT(*) DESC LIMIT?

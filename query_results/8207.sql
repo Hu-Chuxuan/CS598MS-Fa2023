@@ -1,1 +1,0 @@
-SELECT * FROM title_principals WHERE category = "Actor" AND CHARACTERS LIKE '%Bill Murray%' OR JOB='Director'

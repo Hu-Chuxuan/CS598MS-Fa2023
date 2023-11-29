@@ -1,1 +1,0 @@
-SELECT * FROM tconst WHERE primaryTitle LIKE '%' + :input_text + '%'

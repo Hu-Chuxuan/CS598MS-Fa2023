@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE genre = "Comedy" AND rating > 6

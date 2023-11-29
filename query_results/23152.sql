@@ -1,1 +1,1 @@
-SELECT * FROM title_rating WHERE averageRating >= 8 AND averageRating <= 10
+SELECT * from title_basic where title_type ='movie' order by avg(rating)

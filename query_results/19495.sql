@@ -1,1 +1,0 @@
-SELECT * FROM rating WHERE title_type = "movie" AND user_name LIKE "%yes%" OR title_type!= "tv"

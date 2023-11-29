@@ -1,1 +1,0 @@
-SELECT title_id FROM imdb.title_basics WHERE tconst =? AND primaryTitle IS NOT NULL

@@ -1,2 +1,0 @@
-SELECT * FROM (title_basics tb INNER JOIN (name_basics np INNER JOIN (title_rating tr ON np.primaryTitle = tr.primaryTitle)) ON tb.tconst=tr.tconst WHERE tr.numvotes>0 AND ((tb.startyear>=1960 OR b.startyear<=1960)))
-AND ((np.deathyear IS NULL OR np.endyear >= np.deathyear ) AND ((tp.ordering > 0 OR p.category='Supporting Role') OR (tp.job IN ('Director','Writer'))))

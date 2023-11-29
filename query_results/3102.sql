@@ -1,1 +1,0 @@
-SELECT DISTINCT titles.* FROM title_principals AS tpr WHERE tpr.job = "actress" AND (tpr.category IN ('comedy') OR tpr.category IS NULL)

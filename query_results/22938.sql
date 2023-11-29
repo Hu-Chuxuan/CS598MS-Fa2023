@@ -1,1 +1,0 @@
-SELECT * FROM movie_recommendation WHERE rating >.05 AND genre LIKE '%action%' OR genre LIKE '%war%'

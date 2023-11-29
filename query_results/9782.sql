@@ -1,1 +1,0 @@
-SELECT TITLE_BASICS.* FROM title_basics WHERE title_type='comedy'

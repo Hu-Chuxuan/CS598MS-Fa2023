@@ -1,1 +1,0 @@
-SELECT * FROM title_ratings WHERE tconst = "Dirty Grandpa" OR tconst IN ("Dirty Grandpa", "Meet the Fockers") AND avg(rating) >.7

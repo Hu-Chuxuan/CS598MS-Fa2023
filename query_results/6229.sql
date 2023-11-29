@@ -1,1 +1,0 @@
-SELECT tc.* FROM TitleCrew AS tc INNER JOIN NameBasics AS nb ON tc.director = nb.primaryName WHERE tc.category LIKE "Director" AND tc.job IN ("AD","DP", "UPM") GROUP BY tc.titleID ORDER BY COUNT(*) DESC LIMIT 3

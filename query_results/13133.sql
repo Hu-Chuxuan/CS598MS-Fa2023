@@ -1,2 +1,1 @@
-SELECT * FROM (SELECT DISTINCT tconst AS MovieId,titleType, primaryTitle, originalTitle,isAdult,startYear,endYear,runtimeMinutes,genres
-FROM title_basics) WHERE ((primaryTitle LIKE '%Mira Sorvino%') OR(originalTitle LIKE '%Mira Sorvino%' )OR(isAdult='true' AND startYear > '0')) GROUP BY MovieId
+SELECT t.* FROM title AS t JOIN cast AS c ON t.primaryTitle = c.tconst WHERE c.category='actress' AND c.job LIKE '%Mira%' ORDER BY avgrating DESC LIMIT 1 OFFSET?

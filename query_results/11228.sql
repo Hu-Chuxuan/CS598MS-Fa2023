@@ -1,1 +1,0 @@
-SELECT tc.* FROM (title_recommendation tr JOIN title_rating r ON r.movieId = tr.primaryMovieId) JOIN title_details td WHERE (tr.userInput LIKE '%comedy%' OR r.averageRating > 6/10 AND r.numVotes >= 100)

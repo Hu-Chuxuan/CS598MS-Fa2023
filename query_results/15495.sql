@@ -1,1 +1,0 @@
-SELECT * FROM rating WHERE director LIKE '%Christopher Nolan%' OR writer LIKE '%Christopher Nolan%' AND genre LIKE '%Action%' ORDER BY AverageRating DESC LIMIT 10

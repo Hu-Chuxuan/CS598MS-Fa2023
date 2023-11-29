@@ -1,1 +1,0 @@
-SELECT titleType AS MovieGenre FROM title_basics WHERE tconst =? AND titleType IN ('Comedy','Drama') ORDER BY averageRating DESC LIMIT 8

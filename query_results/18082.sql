@@ -1,1 +1,0 @@
-SELECT movies.* FROM title_basic movies JOIN title_rating ratings ON movies.titleID = ratings.movieID WHERE ratings.averageRating >= (SELECT avg(rating) from rating where userID=?) AND ((movies.startYear <=? OR movies.endYear >=?)) AND (movements.primaryTitle LIKE '%sports%' OR movements.originalTitle LIKE '%sports%') AND ((movement.category IN ('Comedy', 'Drama')))

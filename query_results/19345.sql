@@ -1,1 +1,0 @@
-SELECT * FROM movie_recommendation WHERE rating >= 7 AND user_preferences LIKE '%meet%' OR user_preferences LIKE '%fock%'

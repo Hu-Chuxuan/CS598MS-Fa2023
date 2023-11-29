@@ -1,1 +1,0 @@
-SELECT tb.titleID AS TitleID, r.averageRating AS AverageRating FROM ratings AS r INNER JOIN title_ratings AS tr ON r.titleID = tr.titleID WHERE tr.primaryTitle = ‘The Matrix ’ AND NOT EXISTS( SELECT * FROM ratings WHERE rating = AVG(r.rating)) GROUP BY r.averageRating ORDER BY r.AverageRating DESC LIMIT 3

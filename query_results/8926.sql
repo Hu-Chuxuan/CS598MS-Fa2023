@@ -1,1 +1,1 @@
-SELECT * FROM title_basics WHERE tconst = "title" AND (startYear <= 2009 OR startYear > 2010)
+SELECT * FROM tconst, nconst WHERE title_basics.isAdult = 0 AND title_basics.startYear >= 2018 ORDER BY avgRatings DESC LIMIT 3

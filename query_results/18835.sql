@@ -1,1 +1,0 @@
-SELECT * FROM rating WHERE rating.userID = $userID AND ratedMovie.titleID IN (SELECT t.id FROM title AS t JOIN title_ratings TR ON t.id=TR.titleId) GROUP BY ratedMovie ORDER BY sum(rating) DESC LIMIT 6

@@ -1,1 +1,1 @@
-SELECT tc.* FROM Title_Basics AS tb JOIN Name_Basic As n ON tb.titleType = "movie" AND n.primaryName IN ('Matthew Broderick', 'Cameron Diaz') WHERE n.category IS NULL
+SELECT * FROM title WHERE rating >.5 AND titleType = "movie" GROUP BY title_id HAVING COUNT(*) >= 2 ORDER BY avgrating DESC LIMIT 5

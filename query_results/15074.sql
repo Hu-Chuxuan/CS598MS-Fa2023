@@ -1,1 +1,0 @@
-SELECT * FROM movie_recommendation WHERE user_input = 'funny' AND user_preferences LIKE '%super%'

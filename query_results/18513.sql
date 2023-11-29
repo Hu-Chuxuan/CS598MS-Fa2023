@@ -1,1 +1,1 @@
-SELECT * FROM title_recommendation
+SELECT * from title_basic where primary_name =? limit 1

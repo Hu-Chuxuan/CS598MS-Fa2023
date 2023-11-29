@@ -1,1 +1,0 @@
-SELECT * FROM 'title_basics' WHERE ('titleType = "Horror" OR 'genre = Horror') AND ('startYear > 1900')

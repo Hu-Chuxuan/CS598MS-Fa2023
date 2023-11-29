@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE (title_type='movie') AND (director IN ('Ben Affleck'))AND(genre IN('crime','drama'))

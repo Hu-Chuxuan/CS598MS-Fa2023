@@ -1,1 +1,0 @@
-SELECT tb.* FROM title_basic AS tb WHERE tb.isadult = true AND tb.titletype IN ('movie') ORDER BY avg(tb.rating) DESC LIMIT 1

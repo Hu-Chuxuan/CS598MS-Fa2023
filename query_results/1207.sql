@@ -1,0 +1,1 @@
+SELECT * FROM `moviedb`.`title` WHERE (`isAdult = 0`) AND (`startYear > 1890 AND startYear < 2018`) ORDER BY `runtimeMinutes` ASC LIMIT 2

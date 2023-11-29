@@ -1,1 +1,0 @@
-SELECT * FROM title_rating WHERE avg(rating) >=? AND avg(rating) <=?

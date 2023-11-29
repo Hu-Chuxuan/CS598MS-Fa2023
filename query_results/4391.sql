@@ -1,1 +1,0 @@
-SELECT * FROM tconst WHERE tconst.titleType = "Animation" AND tconst.isAdult!= 1 ORDER BY avg(tconst.averageRating), numvotes DESC LIMIT 6

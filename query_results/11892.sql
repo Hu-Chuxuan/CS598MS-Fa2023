@@ -1,1 +1,0 @@
-SELECT titles.* FROM (titles) INNER JOIN title_ratings ON titleID=titleID WHERE avg(rating)>7

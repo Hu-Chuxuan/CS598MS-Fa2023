@@ -1,1 +1,0 @@
-SELECT t.titleID as MovieID, t.titleType AS Genre FROM title_basic t WHERE t.isAdult = false AND t.startYear < 2017

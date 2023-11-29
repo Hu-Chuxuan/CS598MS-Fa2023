@@ -1,1 +1,1 @@
-SELECT t.* FROM imdb.title AS t JOIN imdb.name_basics AS n ON t.primaryTitle = n.primaryName WHERE n.birthYear BETWEEN 1987 AND 1996 OR n.deathYear BETWEEN 1987 AND 1996
+SELECT * from title where title_type = “movie” order by avg(rating), numvotes desc limit 10

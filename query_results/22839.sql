@@ -1,1 +1,0 @@
-SELECT * FROM (title_basics INNER JOIN title_rating ON title_basic.primaryTitle = title_rateing.primaryTitle) WHERE ((title_basic.isAdult = 'no') AND (title_basic.startYear > 1960)) GROUP BY genre ORDER BY rating DESC LIMIT 5

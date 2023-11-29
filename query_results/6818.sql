@@ -1,1 +1,0 @@
-SELECT * FROM `title_basic` WHERE (((titleType = 'Movie' OR titleType IS NULL)) AND ((startYear BETWEEN @minStartYr AND @maxStartYr))) UNION ALL SELECT * FROM `title_rating` WHERE (((averageRating >= @thresholdRatng)) AND ((numVotes > @minNumOfReviews)))

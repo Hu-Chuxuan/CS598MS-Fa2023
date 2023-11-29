@@ -1,1 +1,0 @@
-SELECT * FROM title_ratings WHERE rating >= 7 AND (titleType = "Movie" OR titleType = "TV Series") ORDER BY avgRating DESC LIMIT 1

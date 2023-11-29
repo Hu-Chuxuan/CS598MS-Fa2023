@@ -1,1 +1,1 @@
-SELECT * FROM movies WHERE genre = "Comedy" AND rating >= 8
+SELECT * from title_basic where title_type='movie' order by avg_rating desc limit 10

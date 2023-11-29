@@ -1,1 +1,0 @@
-SELECT DISTINCT t.* FROM titles AS t WHERE EXISTS( SELECT * FROM rating r INNER JOIN user u ON t.titleId = r.movieId AND u.userID IN (10066)) GROUP BY t.`primaryTitle` HAVING COUNT(*) > 1

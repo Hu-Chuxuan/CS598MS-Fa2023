@@ -1,1 +1,1 @@
-SELECT tb.* FROM title_basic AS tb WHERE tb.primaryTitle = "Game Night" AND tb.isAdult <> true
+SELECT * from imdb_movies where title_type='Movie' AND title_id IN ('tt0000001','tt0000002') AND genre LIKE '%comedy%' OR genre LIKE '%romance%'

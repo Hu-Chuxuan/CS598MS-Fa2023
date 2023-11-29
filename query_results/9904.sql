@@ -1,1 +1,0 @@
-SELECT * FROM title_principals WHERE job = "character" AND job LIKE "%actor%" ORDER BY numVOTES DESC

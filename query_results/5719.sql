@@ -1,1 +1,1 @@
-SELECT * FROM `title` WHERE `genre` LIKE 'Comedy%' OR `genre` LIKE '%Sci-Fi%'
+SELECT DISTINCT titleID FROM imdb WHERE averageRATING > 5 AND numVOTES < 1000 ORDER BY avgRATING DESC LIMIT 5

@@ -1,1 +1,0 @@
-SELECT DISTINCT tc.* FROM titles AS t JOIN name_basics ON t.titleId = nb.titleId WHERE t.primaryTitle LIKE '%Mysterious%' AND nb.job LIKE '%actor%'

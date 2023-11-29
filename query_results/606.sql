@@ -1,1 +1,0 @@
-SELECT * FROM title_ratings WHERE tconst IN ('Working Girl (1988)','Six Days, Seven Nights (1998)') AND avgRatng > 6

@@ -1,1 +1,0 @@
-SELECT * FROM title_rating WHERE rating >=.5 AND user_id = <userID> LIMIT 2

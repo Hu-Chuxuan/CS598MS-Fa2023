@@ -1,1 +1,1 @@
-SELECT * FROM movies WHERE rating >= 7 AND type = "Comedy" ORDER BY rating DESC LIMIT 10
+SELECT * FROM  title_basics WHERE tconst = 'tt0000001'

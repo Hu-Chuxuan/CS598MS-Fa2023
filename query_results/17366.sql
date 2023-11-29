@@ -1,3 +1,1 @@
-SELECT * FROM
-(SELECT t.*, r.averageRating AS rating, r.numVotes AS votes
-FROM titles as t INNER JOIN ratings as r ON t.titleID = r.titleID)
+SELECT * from title_ratings where averageRating >= xxx AND numvotes > yyy WHERE title_type = zzz ORDER BY averageRATING DESC LIMIT 10

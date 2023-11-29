@@ -1,1 +1,1 @@
-SELECT * FROM movies WHERE gender = "Woman" AND rating > 7
+SELECT * FROM title_basic WHERE titleType = "movie" AND genre IN ("Drama") GROUP BY titleID ORDER BY avgRatings DESC LIMIT 5 OFFSET?

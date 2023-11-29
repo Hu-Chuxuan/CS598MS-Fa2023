@@ -1,1 +1,0 @@
-SELECT t.* FROM title AS t JOIN casts ON t.id = casts.titleID WHERE casts.actorID IN ('Patrick Wilson', 'Lili Taylor')

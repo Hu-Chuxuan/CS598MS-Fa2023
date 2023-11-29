@@ -1,1 +1,0 @@
-SELECT * FROM imdb_movie WHERE (titleType = "thriller") AND (isAdult = false)

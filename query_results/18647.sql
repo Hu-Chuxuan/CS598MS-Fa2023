@@ -1,1 +1,0 @@
-SELECT t.* FROM movies AS m INNER JOIN title_ratings as r ON m.titleID = r.movieID AND m.primaryTitle = 'Two Weeks Notice'

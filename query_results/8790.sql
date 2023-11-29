@@ -1,3 +1,0 @@
-SELECT * FROM tconst WHERE tconst = 'title_rating' AND averageRating >= X ORDER BY numVotes DESC LIMIT Y """
-"""SELECT * FROM tconst WHERE tconst = 'name_basics' AND birthYear <= Z AND deathYear > Z AND primaryName LIKE '%My Sister\'s%' ORDER BY orderNum ASC LIMIT Y """
-"""SELECT * FROM tconst WHERE tconst IN ('director','writer') AND (directors OR writers) NOT NULL GROUP BY director OR writer HAVING COUNT(*) &gt

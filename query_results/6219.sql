@@ -1,1 +1,0 @@
-SELECT * FROM table WHERE type LIKE '%comedy%' OR genre LIKE '%romantic%'

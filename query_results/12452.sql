@@ -1,1 +1,0 @@
-SELECT t.* FROM title AS t JOIN genre g ON t.genreId = g.id WHERE t.isAdult!= "True" AND t.titleType <> "TVSeries"

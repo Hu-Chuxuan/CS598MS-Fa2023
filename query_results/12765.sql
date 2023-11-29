@@ -1,1 +1,0 @@
-SELECT DISTINCT t.* FROM titles AS t WHERE t.genre = 'Action' AND t.year >= 1986

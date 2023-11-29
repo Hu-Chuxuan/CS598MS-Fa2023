@@ -1,1 +1,0 @@
-SELECT t.* FROM movies AS m INNER JOIN genre AS g ON g.genreID = m.genreID WHERE m.titleType = 'Comedy' AND m.startYear BETWEEN YEAR(CURRENT_DATE()) - 1960 AND CURRENT_YEAR() + 1

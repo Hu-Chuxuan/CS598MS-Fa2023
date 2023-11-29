@@ -1,1 +1,1 @@
-SELECT movies.* FROM movies INNER JOIN title_ratings ON movies.titleId = title_ratings.movieId AND rating >= 6 WHERE year BETWEEN 1940-1970
+SELECT title_basics.* FROM title_basics WHERE titleType = “movie” AND ((startYear >= $userInput[0]) OR ($userPreferHistory[0])) ORDER BY titleType DESC LIMIT 1 OFFSET 0

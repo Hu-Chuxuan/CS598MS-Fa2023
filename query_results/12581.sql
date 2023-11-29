@@ -1,1 +1,0 @@
-SELECT t.* FROM title AS t JOIN title_rating as tr ON tr.titleId = t.id WHERE tr.averageRating >= 7 AND EXISTS( SELECT * from cast c where c.movieId=t.id)

@@ -1,1 +1,0 @@
-SELECT t.* FROM title_basics AS t INNER JOIN title_ratings AS r ON t.titleID = r.titleID AND r.userID=? WHERE r.averageRating >=?

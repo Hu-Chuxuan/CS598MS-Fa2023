@@ -1,1 +1,0 @@
-SELECT t.* FROM imdb.title AS t WHERE ((((directors = 'James Cameron' OR writers = 'Jim Thomas') AND (primaryName LIKE '%Sigourney Weaver%'))) AND ((startYear BETWEEN 1986 AND 2018)) ) ORDER BY rating DESC LIMIT 10

@@ -1,1 +1,0 @@
-SELECT t.* FROM titles AS t JOIN casts as c ON t.titleID = c.titleID WHERE c.category = "Actress" AND t.isAdult=false ORDER BY t.startYear DESC LIMIT 5

@@ -1,1 +1,0 @@
-SELECT * FROM movie_recommendation WHERE userInput LIKE '%' AND userPreferneceHistory LIKE % AND userInput IN (%)

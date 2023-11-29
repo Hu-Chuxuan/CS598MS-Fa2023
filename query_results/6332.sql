@@ -1,0 +1,1 @@
+SELECT * from title_principals where title = 'tt0000001' order by casting asc limit 10

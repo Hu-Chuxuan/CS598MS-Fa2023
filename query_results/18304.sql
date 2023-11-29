@@ -1,1 +1,0 @@
-SELECT t.* FROM title_basics AS t JOIN ( SELECT * FROM ( SELECT m.*, d.title_id as id WHERE d.user_id =? AND d.movie_name LIKE CONCAT('%',m.title_id,'%') ORDER BY rating DESC LIMIT 1 ) AS movies GROUP BY d.title_id HAVING COUNT(d.title_id)>=? ) AS mv ON mv.id=t.title_id

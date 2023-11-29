@@ -1,1 +1,0 @@
-SELECT t.* FROM titles AS t JOIN ratings r ON r.title = t.primaryTitle AND r.averageRating >.6 WHERE t.isAdult = FALSE ORDER BY rating DESC LIMIT 1

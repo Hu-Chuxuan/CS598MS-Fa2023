@@ -1,1 +1,0 @@
-SELECT tb.* FROM title_basics AS tb WHERE tb.isAdult = false AND ((tb.genre!= NULL OR tb.genre IS NOT NULL)) ORDER BY rating DESC LIMIT 6

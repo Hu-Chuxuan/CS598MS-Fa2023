@@ -1,1 +1,0 @@
-SELECT * FROM title_recommend WHERE user_input = "comedy" AND rating >= 7

@@ -1,1 +1,0 @@
-SELECT * FROM imdb.title WHERE rating > = '7' AND genre IN ('Horror') ORDER BY RANDOM() LIMIT 10

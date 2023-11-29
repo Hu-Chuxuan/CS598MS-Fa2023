@@ -1,1 +1,1 @@
-SELECT title_id FROM imdb.title WHERE rating >= avg(rating)
+SELECT * FROM title_basic WHERE titleType='movie' AND runtimeMinutes>120 ORDER BY numVOTES DESC LIMIT 10

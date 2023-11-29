@@ -1,1 +1,2 @@
-SELECT t.* FROM title_basics AS t WHERE ((titleType='Movie' AND titleType!= 'TV Episode') OR (titleType = 'TV Series')) AND ((startYear <= @inputYear) OR (@inputYear IS NULL)) AND ((endYear >= @inputYear) OR (@inputYear IS NULL))
+SELECT * FROM title_rating WHERE avg_rating > 6 AND avg_rating < 7 OR avg_rating = 7
+AND numvotes >= 100 AND numvotes <= 200 ORDER BY avg_rating DESC LIMIT 20 OFFSET 0

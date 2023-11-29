@@ -1,1 +1,1 @@
-SELECT t.* FROM title_principals AS t WHERE t.job = "Character" AND t.characters LIKE '%Tom%'
+SELECT * FROM title WHERE ((startyear >=? AND endyear <=? ) OR (startyear <?)) AND (genre =?)

@@ -1,1 +1,0 @@
-SELECT titleID FROM rating WHERE (titleID IN ('07869', '08320')) AND ((rating > 0) OR (rating < -1))

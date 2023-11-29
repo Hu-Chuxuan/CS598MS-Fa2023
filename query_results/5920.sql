@@ -1,1 +1,1 @@
-SELECT DISTINCT(title).* FROM title_basics WHERE title_type = "movie" AND title_name LIKE '%horror%' OR title_genre LIKE '%paranormal%'
+SELECT * FROM title_basic WHERE tconst IN ('tt0000001','tt0000002')

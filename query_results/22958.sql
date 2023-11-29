@@ -1,1 +1,0 @@
-SELECT * FROM (title_ratings r JOIN name_basics n ON n.primaryName = r.director) WHERE (r.numVotes > 1 AND r.averageRating >= 7 OR r.avgRatings <= 4)

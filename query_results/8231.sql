@@ -1,1 +1,0 @@
-SELECT t.* FROM title_ratings AS r INNER JOIN title_crew AS c ON r.titleId = c.titleId AND c.job LIKE '%director%' ORDER BY r.averageRating DESC LIMIT 1

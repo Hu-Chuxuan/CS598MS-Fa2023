@@ -1,1 +1,0 @@
-SELECT DISTINCT t.* FROM title AS t JOIN title_ratings r ON t.titleId = r.titleId AND r.averageRating > 7 WHERE r.numVotes >= 2

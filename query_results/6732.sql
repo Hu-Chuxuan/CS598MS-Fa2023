@@ -1,1 +1,0 @@
-SELECT DISTINCT rating, title FROM title_ratings WHERE averageRating >? AND numVotes >=? ORDER BY numVotes DESC LIMIT 8

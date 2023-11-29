@@ -1,0 +1,1 @@
+SELECT distinct(title_id),average_rating from title_ratings where title_type='movie' order by average_rating desc limit 10

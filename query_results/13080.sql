@@ -1,1 +1,0 @@
-SELECT * FROM title_recommend WHERE userInput = 'I have not seen these movies' AND (userPreferneceHistory LIKE '%Frozen%' OR userPreferenceHistory LIKE '%Mary Poppins%') ORDER BY RAND() LIMIT 0, 6

@@ -1,1 +1,0 @@
-SELECT movies.* FROM movies INNER JOIN rating ON movies.title = ratings.movie WHERE userPreference IN ('Black Panther', 'Avengers') AND rating >.7

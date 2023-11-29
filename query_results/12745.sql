@@ -1,1 +1,0 @@
-SELECT tc.* FROM title_ratings tr JOIN title_basic tb ON tr.titleID = tb.id WHERE tb.primaryTitle='Annie' AND tr.numVotes > 7

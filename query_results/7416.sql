@@ -1,0 +1,1 @@
+SELECT * FROM `title_ratings` WHERE (`primaryTitle` LIKE '%Original%') AND (`startYear` >= '2000')

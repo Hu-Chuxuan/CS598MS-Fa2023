@@ -1,1 +1,0 @@
-SELECT * FROM title_basic WHERE tconst =? AND average rating >? AND num votes >=?

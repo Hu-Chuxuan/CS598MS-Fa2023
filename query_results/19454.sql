@@ -1,1 +1,1 @@
-SELECT DISTINCT tc.* FROM movies AS m JOIN cast AS c ON m.imdbID = c.movieId AND m.title_type='feature' WHERE c.character IS NOT NULL ORDER BY m.startYear DESC
+SELECT DISTINCT titles.* FROM titles WHERE titles.startyear >=? AND titles.endyear <=? ORDER BY AVG(titles.rating) DESC LIMIT 10

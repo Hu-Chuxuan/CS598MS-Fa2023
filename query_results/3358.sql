@@ -1,1 +1,0 @@
-SELECT tc.* FROM title_basic tb INNER JOIN genre g ON tb.genre = g.id WHERE tb.titleType IN ('Movie') AND tb.isAdult IS NOT NULL

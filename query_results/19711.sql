@@ -1,1 +1,2 @@
-SELECT movies.* FROM movies WHERE user_rating >= $minimum AND user_rating <= $maximum
+SELECT * FROM
+    TITLE_BASICS AS b, TITLE_CREW AS c WHERE b.TCONST = c.TCONST AND NM0000001 IN ('nm0005690','nm0374658')

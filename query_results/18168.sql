@@ -1,1 +1,0 @@
-SELECT * FROM movies WHERE rating > 7 AND genre = "comedy" OR rating < 6 AND genre!= "horror"

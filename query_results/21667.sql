@@ -1,1 +1,0 @@
-SELECT t.* FROM title AS t JOIN title_ratings r ON t.titleID = r.titleID WHERE r.averageRating > 5 AND (r.numVotes >= 5 OR r.numVotes IS NULL)

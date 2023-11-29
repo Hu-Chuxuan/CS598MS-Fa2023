@@ -1,1 +1,0 @@
-SELECT DISTINCT(title_type), COUNT(*) AS count FROM movies WHERE title_rating > 6 AND genre = “Crime” GROUP BY genre ORDER BY rating DESC LIMIT 3

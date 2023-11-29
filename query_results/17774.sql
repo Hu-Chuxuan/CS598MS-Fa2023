@@ -1,1 +1,0 @@
-SELECT * FROM `title` WHERE (((`name_basics`.`birthYear`) >= (`userInput`) AND ((`name_basics`.`deathYear`) <= (`userInput`))) OR (((`director`) LIKE '%' || `${userInput}` || `%')))

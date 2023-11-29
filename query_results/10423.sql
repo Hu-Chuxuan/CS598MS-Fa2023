@@ -1,1 +1,0 @@
-SELECT t.* FROM title_basic AS t JOIN cast AS c ON t.titleId = c.movieId AND c.category IN ('Actor', 'Actress')

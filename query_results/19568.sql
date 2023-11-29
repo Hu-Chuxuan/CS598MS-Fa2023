@@ -1,2 +1,0 @@
-SELECT * FROM
-(SELECT tc.*, nr.*, nb.*, ncp.*, tc.titleType AS type WHERE (nr.averageRating >= 7 OR nr.numvotes > 10) AND tc.primaryTitle = "Lord Of The Ring" GROUP BY tc.primaryTitle HAVING COUNT(*)>1 ) AS allmovies JOIN title_principals AS np ON np.job LIKE '%actor%' JOIN title_rating AS rr ON rr.averageRATING >= 6 AND rr.numvote > 10 JOIN title_crew AS c CROSS APPLY ( SELECT count(*), AVG(averagERATING) as avg FROM title_rating AS r WHERE r.movieId IN (allmovies.id)) AS ratingGroup WHERE np.category ='actor' AND np.ordering<10 AND ratinggroup.avg>=8

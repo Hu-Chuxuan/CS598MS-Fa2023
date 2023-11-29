@@ -1,1 +1,1 @@
-SELECT * FROM title WHERE averageRating >=? AND averageRating <=? GROUP BY title ORDER BY averageRating DESC LIMIT?
+SELECT * FROM title WHERE titleType = “movie” AND ((startYear > {input}) OR ({input} IS NULL)) ORDER BY avgRating DESC LIMIT {limit}

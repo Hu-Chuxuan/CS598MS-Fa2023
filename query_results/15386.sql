@@ -1,1 +1,0 @@
-SELECT * FROM title_recommendation WHERE rating >= 6 AND user_preferences LIKE '%moulin rouge%' OR user_preferences LIKE '%phantom of opera%'

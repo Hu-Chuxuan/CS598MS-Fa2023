@@ -1,1 +1,1 @@
-SELECT tb.* FROM title_basic AS tb WHERE tb.titleType ='movie' AND (tb.genre IN ('Action', 'Comedy') OR tb.genre IS NULL) ORDER BY rating DESC LIMIT 10
+SELECT * FROM `title_principals` WHERE (`category` LIKE '%actor%' OR `job` LIKE '%actor%') AND (`category` NOT IN ('director','editor')) ORDER BY `ordering`

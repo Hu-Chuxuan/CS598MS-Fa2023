@@ -1,1 +1,1 @@
-SELECT t.* FROM title_basics AS t JOIN title_ratings AS r ON t.titleID = r.titleID WHERE ((r.averageRating >=? AND r.numVotes > 10)) OR ((r.averageRating <? AND r.numVotes <= 10))
+SELECT t.* FROM title_basic AS t INNER JOIN title_rating AS r ON r.tconst = t.tconst WHERE ((r.averageRating > 5 OR r.numvotes >= 10)) AND NOT EXISTS (SELECT * FROM title_crew WHERE t.tconst=title_crew.tconst)

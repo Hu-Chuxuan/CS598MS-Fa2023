@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE type = "movie" AND (title LIKE '%Hangover%' OR title LIKE "%Rush%") AND (title NOT LIKE '%Borat%') ORDER BY avgRATING DESC

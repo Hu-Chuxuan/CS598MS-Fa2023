@@ -1,1 +1,0 @@
-SELECT * FROM movies WHERE genre='Horror' OR genre='Parody'

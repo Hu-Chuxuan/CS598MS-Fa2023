@@ -1,1 +1,1 @@
-SELECT tc.* FROM title_basics AS tb INNER JOIN title_rating AS tr ON tr.title_id = tb.title_id
+SELECT * FROM `movies` WHERE (`genre` LIKE '%comedy%' OR `genre` LIKE '%romance%') AND (`startyear` <=? ) ORDER BY `runtime` DESC LIMIT 1 OFFSET 0

@@ -1,1 +1,1 @@
-SELECT * FROM title_ratings WHERE rating >=? AND rating <=?
+SELECT * FROM title_basic WHERE tconst = 'tt0000001'

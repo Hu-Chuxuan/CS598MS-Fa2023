@@ -1,1 +1,0 @@
-SELECT t.titleID AS id, t.originalTitle as Title, t.startYear As Start Year, t.endYear As End Year, t.runtimeMinutes As Runtime Minute, t.genreId AS Genre ID FROM `title` t WHERE (((t.titleID = 16)) AND ((t.isAdult = false))) ORDER BY t.startYear DESC LIMIT 3

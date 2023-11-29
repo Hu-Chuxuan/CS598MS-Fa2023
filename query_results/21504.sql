@@ -1,1 +1,0 @@
-SELECT * FROM imdb_movies WHERE userInput LIKE '%good%' AND (genre = 'Drama' OR genre = 'Comedy') ORDER BY rating DESC LIMIT 5

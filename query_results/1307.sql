@@ -1,1 +1,0 @@
-SELECT * FROM rating_table WHERE user = 'Jane' AND year > 1980

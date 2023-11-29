@@ -1,1 +1,1 @@
-SELECT * FROM title_rating WHERE rating >= 6 AND genre LIKE '%comedy%' ORDER BY avg_rating DESC
+SELECT * FROM title WHERE titleType ='movie' AND ((startYear <= 1979 OR startYear >= 2000)) AND titleType NOT IN ('documentary','short') ORDER BY avgRating DESC LIMIT 1 OFFSET 0 

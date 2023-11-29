@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE titleType = “Comedy” AND avg(rating) > x

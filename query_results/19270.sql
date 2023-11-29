@@ -1,1 +1,0 @@
-SELECT * FROM TITLE WHERE tconst IN ('Action','Comedy') AND rated >= 6 AND releaseDate > '2010-01-01' AND castIncludes ANY('Iron Man', 'Wonder Woman', 'Star Wars', 'Deadpool')

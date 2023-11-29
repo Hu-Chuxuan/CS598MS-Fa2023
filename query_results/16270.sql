@@ -1,1 +1,0 @@
-SELECT * FROM title_ratings WHERE rating > 8 AND genre IN ('Drama') ORDER BY AVG(rating), numvotes DESC

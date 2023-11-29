@@ -1,1 +1,1 @@
-SELECT titleID FROM title WHERE (titleType = 'Movie') AND ((startYear >=?) OR (endYear <=?)) GROUP BY titleID HAVING COUNT(*) > 0 ORDER BY SUM(numVotes)/COUNT(*) DESC LIMIT 6
+SELECT * FROM title_basic WHERE titleType ='movie' AND originalTitle LIKE '%Carmencita%' ORDER BY numVote DESC LIMIT 5 OFFSET 0

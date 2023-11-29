@@ -1,1 +1,0 @@
-SELECT TOP 10 movies.* FROM title_ratings r INNER JOIN titles t ON t.titleId = r.titleId WHERE rating >= 6 AND genre IN ('action','comedy') ORDER BY avg(rating)

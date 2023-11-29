@@ -1,1 +1,0 @@
-SELECT t.* FROM (title_basics AS t JOIN name_basics ON(name_basics.primaryName = t.primaryTitle)) WHERE ((t.startYear BETWEEN 1970 AND 1986) OR (t.endYear < 1970))

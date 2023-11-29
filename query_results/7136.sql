@@ -1,1 +1,0 @@
-SELECT * FROM (SELECT t.*, n.* FROM titles AS t INNER JOIN name_basics AS n ON n.primaryTitle = t.titleID) WHERE t.genre IN ('romantic comedy') AND (t.startyear BETWEEN $startDate and $endDate)

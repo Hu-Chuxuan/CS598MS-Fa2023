@@ -1,1 +1,0 @@
-SELECT * FROM (title_basic) WHERE ((title_rating > 7 AND title_rating < 8)) OR ((name_basic.birthyear = '1906')) ORDER BY rating DESC LIMIT 10

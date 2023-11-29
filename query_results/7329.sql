@@ -1,1 +1,0 @@
-SELECT * FROM title_ratings WHERE ((titleType='movie' AND originalTitle = 'logan') OR (originalTitle IN ('spider-man','marvel'))) GROUP BY rating

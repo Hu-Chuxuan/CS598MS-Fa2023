@@ -1,1 +1,0 @@
-SELECT * FROM `title` WHERE `genre` = 'Action' AND (`title`.`primaryTitle` LIKE '%Taken%' OR `name_basics`.`birthYear` BETWEEN 1967 AND 1972)

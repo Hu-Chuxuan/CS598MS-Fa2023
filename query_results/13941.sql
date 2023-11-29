@@ -1,1 +1,0 @@
-SELECT * FROM movies WHERE rating > 6 AND year >= 1980

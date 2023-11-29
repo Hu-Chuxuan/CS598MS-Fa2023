@@ -1,2 +1,0 @@
-SELECT DISTINCT t.* FROM title_basics AS t JOIN
-( SELECT tb.titleId as TitleId, avg(tb.averageRating) as AverageRating, count(*) as NumOfReviews from title_ratings AS tr join title_basics AS tb where tr.titleId = tb.id GROUP BY tb.titleId ) r ON r.AverageRating >.6 AND r.NumOfReviews >= 10

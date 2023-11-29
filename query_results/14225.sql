@@ -1,1 +1,0 @@
-SELECT DISTINCT tc.* FROM (title_basics AS tb INNER JOIN title_ratings AS tr ON tb.tconst = tr.tconst) LEFT OUTER JOIN (name_basics AS nb INNER JOIN title_crew AS tc ON nb.nconst = tc.nconst) WHERE ((tb.isAdult <> "TRUE") AND (tr.averageRating > 6)) AND (nb.primaryProfession LIKE '%Actor%' OR nb.category LIKE '%Producer%') GROUP BY tc.nconst ORDER BY nb.ordering ASC

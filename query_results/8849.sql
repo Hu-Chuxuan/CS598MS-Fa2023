@@ -1,1 +1,0 @@
-SELECT DISTINCT t.* FROM title_basics AS t INNER JOIN title_rating ON (title_basic_id = title_rating_title_basics_id)

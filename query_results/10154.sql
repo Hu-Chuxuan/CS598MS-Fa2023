@@ -1,1 +1,0 @@
-SELECT DISTINCT tc.* FROM title_basic AS tb JOIN title_rating AS tr ON tb.titleId = tr.titleId WHERE tr.averageRating >.7 AND tb.isAdult < "true" AND tb.startYear <=? AND tb.endYear >=? ORDER BY tb.runtimeMinutes DESC LIMIT 5

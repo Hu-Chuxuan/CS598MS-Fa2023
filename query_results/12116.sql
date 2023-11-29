@@ -1,1 +1,1 @@
-SELECT movies.* FROM title_basics AS tb LEFT JOIN title_ratings as tr ON(tb.title_id=tr.movieID)
+SELECT * FROM title_ratings WHERE numvotes > 1 AND avgrating >= 7 ORDER BY avgrating DESC LIMIT 3 OFFSET 2

@@ -1,1 +1,0 @@
-SELECT * FROM rating_history WHERE user_id=<userID> AND year(startDate)=2018

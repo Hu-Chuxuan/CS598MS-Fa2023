@@ -1,1 +1,0 @@
-SELECT tc.* FROM titles AS t JOIN ( SELECT * FROM title_recommendation WHERE userId =? AND genreID IN(?) ) AS tr ON tr.titleId=t.id

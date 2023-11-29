@@ -1,1 +1,0 @@
-SELECT * FROM `title_basic` WHERE ((title_type = "feature") AND (primary_title LIKE '%The%') OR (original_title LIKE '%The Other%')) LIMIT 1

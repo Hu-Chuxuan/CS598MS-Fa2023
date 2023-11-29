@@ -1,1 +1,4 @@
-SELECT * FROM titles WHERE (((titleType='drama') AND ((startYear>1990)) AND ((endYear<2010))) OR ((genre='Drama')))
+SELECT * FROM (
+    SELECT DISTINCT tconst, avg(rating), COUNT(*) AS cnt, nconst
+    FROM title_ratings WHERE tconst IN ('tt0000001','tt0000002') AND numvotes > 1
+    GROUP BY tconst,avg(rating),cnt,nconst HAVING count(*) >= 2 ORDER BY avg(rating)

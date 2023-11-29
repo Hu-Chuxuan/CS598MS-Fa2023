@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE tconst = 'tt0087364'

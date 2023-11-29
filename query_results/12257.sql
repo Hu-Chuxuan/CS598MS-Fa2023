@@ -1,1 +1,0 @@
-SELECT DISTINCT title_basics.* FROM title_basics INNER JOIN title_rating ON title_basic.titleID = title_rating.titleID WHERE ((title_basic.titleType!= "TV") AND (title_basic.isAdult IS NULL)) AND ((title_basic.startYear >= 1970) AND (title_basic.endYear <= 2017))

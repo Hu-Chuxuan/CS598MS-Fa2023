@@ -1,1 +1,0 @@
-SELECT * FROM (SELECT rating FROM ratings WHERE userid = 1 AND rated =?) AS RATINGS JOIN (SELECT rating FROM titles WHERE userid = 1 AND rated >? ORDER BY AVG(rating)) AS TITLES ON RATINGS.rating >= TITLE.rating

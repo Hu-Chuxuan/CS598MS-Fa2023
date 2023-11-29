@@ -1,1 +1,0 @@
-SELECT movies.* FROM movies INNER JOIN title_rating ON titles_ratings.titleID = movies.movieID WHERE titles_ratings.averageRating >.7 AND titles_ratings.numVotes >= 10

@@ -1,1 +1,0 @@
-SELECT * FROM title_ratings t INNER JOIN name_basics n ON t.title_id = n.name_id WHERE t.isAdult=0 AND t.startYear<2000

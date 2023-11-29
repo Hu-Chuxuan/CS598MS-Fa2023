@@ -1,1 +1,0 @@
-SELECT t.* FROM titles AS t JOIN rating AS r ON (r.titleID = t.id AND r.userID=?) WHERE? IN(jobs) ORDER BY avgRatings DESC

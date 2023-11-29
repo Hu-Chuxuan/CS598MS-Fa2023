@@ -1,1 +1,0 @@
-SELECT tc.* FROM title_basic AS tb LEFT JOIN (title_rating as tr INNER JOIN name_basic as n ON n.primaryName = tr.director) WHERE tb.isAdult=false AND n.category='Actor' ORDER BY avg(tr.averageRating),numvotes DESC LIMIT 5

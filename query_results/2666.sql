@@ -1,1 +1,0 @@
-SELECT * FROM (title_rating_join title_name_join) WHERE title_name.primaryName = "Keanu Reeves" AND title_name.birthyear BETWEEN '89-07-16' AND '89-07-16'

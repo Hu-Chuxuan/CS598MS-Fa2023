@@ -1,1 +1,1 @@
-SELECT * FROM TITLE WHERE AVERAGE(rating)>=8 AND Average(rating)=8
+SELECT * FROM tconst WHERE primaryTitle LIKE '%Maid%' AND primaryTitle NOT IN ('Maid in Manhattan') ORDER BY avgrating DESC LIMIT 10 OFFSET 0

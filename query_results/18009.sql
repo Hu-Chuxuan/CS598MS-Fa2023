@@ -1,2 +1,1 @@
-SELECT * FROM TITLE_BASICS WHERE ISADULT = false AND GENRES LIKE '%comedy%' OR GENRES LIKE '%romance%'
-UNION ALL SELECT DISTINCT(title_basics).* from title_rating where title_basic in ('hitch','beautyandthebeast') ORDER BY AVERAGE RATING DESC LIMIT 5
+SELECT DISTINCT t.* FROM title AS t JOIN ( SELECT * FROM ((title_principals AS p JOIN title ON p.ordering = title._id) LEFT OUTER JOIN title_rating r ON r.tconst=p._id AND r.numvotes>0 WHERE NOT EXISTS ( SELECT _id FROM title_recommendation R WHERE R._id IN (SELECT t.tconst)) ) LEFT OUTER JOIN title_crew c ON p._id=c.tconst WHERE r.avgrating < 6 AND c.job!= '' AND NOT EXISTS ( SELECT _id FROM title_recommendation R WHERE R._id IN (SELECT t.tconst)) ORDER BY avgrating DESC LIMIT $LIMIT OFFSET $OFFSET) USING (_ID)

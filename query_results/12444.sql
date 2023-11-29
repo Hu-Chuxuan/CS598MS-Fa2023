@@ -1,1 +1,0 @@
-SELECT * FROM imdb.title_rating WHERE (((genre LIKE '%surfer%' OR genre LIKE %'skater%') AND userPreferredMovie NOT IN ('Point Break (1991)','Lords of Dogtown (2005)')))

@@ -1,1 +1,0 @@
-SELECT t.* FROM titles AS t JOIN genre_titles gt ON t.titleID = gt.titleID WHERE gt.genreID IN ('Drama','Crime') AND t.isAdult='false' ORDER BY RANDOM() LIMIT 6

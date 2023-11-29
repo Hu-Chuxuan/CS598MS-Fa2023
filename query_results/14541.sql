@@ -1,1 +1,1 @@
-SELECT * FROM tconst WHERE tconst.primaryTitle = "Jaws" AND tconst.isAdult == true
+SELECT * from movie where tconst = $1 and titleType='Movie' order by averageRating desc limit 1

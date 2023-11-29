@@ -1,1 +1,0 @@
-SELECT * FROM rating WHERE title_type = "movie" AND (avg(rating)>=6)

@@ -1,1 +1,0 @@
-SELECT DISTINCT(titleBasics.primaryTitle), cast(genre AS STRING), genreCount FROM titleBasics JOIN titleCrew ON titleBasic.movieID = titleCrew.movieID WHERE titleCrew.director IS NOT NULL AND titleCrew.writer IS NOT NULL GROUP BY genre HAVING COUNT(*) > 1 ORDER BY genreCount DESC LIMIT 6

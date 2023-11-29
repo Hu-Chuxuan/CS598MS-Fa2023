@@ -1,2 +1,1 @@
-SELECT * FROM
-    TITLE_BASICS tb INNER JOIN TITLE_RATINGS tr ON tb.titleId = tr.titleId WHERE tr.numvotes > 0 AND NOT EXISTS( SELECT rating from title_rating trr where tb.titleId=trr.titleid and trr.averageRating <= 7/10)
+SELECT * FROM (SELECT tconst, avg(rating)/numvotes AS rated_avg from title_ratings where tconst IN ('tt0000001','tt0000002') group by tconst order by rated_avg desc limit 10)

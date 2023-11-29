@@ -1,0 +1,1 @@
+SELECT t.* FROM imdb.title AS t WHERE t.isAdult = 0 AND NOT EXISTS ( SELECT * FROM imdb.user_rating AS ur WHERE ur.title = t.id AND ur.userId IN ('111','222') ) GROUP BY t ORDER BY avgRat DESC LIMIT 5 OFFSET?

@@ -1,1 +1,0 @@
-SELECT * FROM rating WHERE avg(rating) >= 7 AND userID = "bob" ORDER BY avg DESC LIMIT 6

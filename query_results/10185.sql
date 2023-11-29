@@ -1,1 +1,0 @@
-SELECT * FROM (title_principals JOIN title_rating ON title_principal.job = 'character') WHERE ((title_prinicpal.ordering BETWEEN? AND?)) GROUP BY title_princapsl.category ORDER BY rating DESC LIMIT 6

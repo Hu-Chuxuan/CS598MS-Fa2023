@@ -1,1 +1,1 @@
-SELECT * FROM (title_recommendation INNER JOIN (name_recommendation LEFT OUTER JOIN cast_recommendation ON cast_recommendation.character = name_recommendation.primaryName)) WHERE userPreferedMovie IN ('Guardians of the Galaxy  (2014)','Guardians of the Galaxy Vol. 2 (2017)') AND movieNotInList(cast_recommendation)
+SELECT * FROM title WHERE (titleType='movie') AND ((startYear >= 1980)) ORDER BY avgRating DESC LIMIT 3 OFFSET?

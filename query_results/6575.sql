@@ -1,1 +1,0 @@
-SELECT * FROM title_basics WHERE tconst ='movie' AND primaryTitle LIKE '%horror%' ORDER BY numVotes DESC LIMIT 8

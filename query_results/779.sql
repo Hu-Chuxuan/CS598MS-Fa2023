@@ -1,1 +1,0 @@
-SELECT * FROM (title_basics tb) INNER JOIN (name_basics nb) ON tb.`primaryTitle` = nb.`primaryName`

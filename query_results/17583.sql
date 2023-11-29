@@ -1,1 +1,0 @@
-SELECT t.* FROM title_basic t WHERE (titleType = "Movie" AND startYear < 1975)

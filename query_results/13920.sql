@@ -1,1 +1,0 @@
-SELECT tc.* FROM title_basics AS tb LEFT JOIN (title_rating as tr INNER JOIN (name_basic as nb ON tb.primaryTitle = nb.primaryTitle) ON tr.titleID = tb.titleID WHERE nb.primaryName LIKE 'Jason Statham' AND tb.startYEAR >= 2018) RIGHT OUTER JOIN (name_basic as nb ON tb.primaryTitle = nb.primaryTitle) ON tb.titleID = rtr.titleID WHERE tb.isAdult=TRUE

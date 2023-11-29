@@ -1,0 +1,1 @@
+SELECT DISTINCT tconst FROM title_principals WHERE category='character' AND job IN ('Actor','Director') GROUP BY tconst HAVING COUNT(*) > 0 ORDER BY SUM(CASE WHEN category = 'category' THEN 1 ELSE 0 END), SUM(CASE WHEN category = 'job' THEN 1 ELSE 0 END)

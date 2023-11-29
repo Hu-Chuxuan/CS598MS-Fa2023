@@ -1,1 +1,0 @@
-SELECT tc.* FROM title_basic as tb INNER JOIN title_rating AS tr ON tb.titleId = tr.titleID AND tb.isAdult = true

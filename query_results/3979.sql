@@ -1,1 +1,0 @@
-SELECT * FROM title_basic WHERE titleType = "Comedy" AND averageRating > 7

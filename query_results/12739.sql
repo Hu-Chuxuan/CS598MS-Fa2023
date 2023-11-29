@@ -1,1 +1,0 @@
-SELECT tc.* FROM title_crew AS tc WHERE director LIKE 'Wes Craven'

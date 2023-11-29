@@ -1,1 +1,1 @@
-SELECT * FROM (title_basics JOIN title_rating ON title_basic.titleId = title_rating.titleId AND title_rating.userID=1689)
+SELECT * FROM movie WHERE title_type='movie' AND (genre LIKE '%action%' OR genre LIKE '%crime%') ORDER BY avgrating DESC LIMIT 5 OFFSET 0

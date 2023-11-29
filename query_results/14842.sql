@@ -1,1 +1,0 @@
-SELECT t.titleID AS id, t.titleType as type FROM title_basics t WHERE t.startYear >=? AND t.endYear <=? ORDER BY t.averageRating DESC LIMIT?

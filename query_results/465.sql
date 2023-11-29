@@ -1,1 +1,1 @@
-SELECT * FROM title_principals WHERE nconst = "actor" AND character IN ('Malcolm Crowe')
+SELECT DISTINCT t.* FROM ((title_basics AS t INNER JOIN (title_rating AS r INNER JOIN (title_principal AS p INNER JOIN (title_crew AS c)) ON p.ordering = c.ordering AND p.category = c.job AND p.job = \"Director\"))) WHERE (((r.numvotes > 1) OR (r.averageRating < 2)) AND (c.job <> \"Self")) GROUP BY t.titleType HAVING COUNT(*) >= 1 ORDER BY SUM(CASE WHEN t.isAdult=TRUE THEN 0 ELSE 1 END)/COUNT(*) DESC LIMIT 10 OFFSET 0

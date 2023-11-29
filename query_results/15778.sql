@@ -1,1 +1,0 @@
-SELECT * FROM table WHERE 1=1 AND userInput LIKE '%' +?

@@ -1,1 +1,0 @@
-SELECT * FROM title_principals WHERE job = "actress" AND character IN ('Moana' OR 'Snow White') ORDER BY rating DESC LIMIT 5

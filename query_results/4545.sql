@@ -1,1 +1,0 @@
-SELECT * FROM rating WHERE tconst = 3 AND nconst in ('Paranormal Activity 4 (2012)','Annabelle  (2014)') OR tconst IN (1,2)

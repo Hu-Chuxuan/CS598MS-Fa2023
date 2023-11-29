@@ -1,1 +1,0 @@
-SELECT * FROM title_ratings WHERE tconst = 'Ferris Buellers Day Off'

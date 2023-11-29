@@ -1,1 +1,0 @@
-SELECT DISTINCT rating_title.* FROM (rating_title INNER JOIN title_ratings ON rating_title.titleID = title_ratings.tconst) WHERE ((title_ratings.numVotes >= 0)) AND (((title_ratings.averageRating BETWEEN 6 AND 8))) ORDER BY ((rating_title.startYear))

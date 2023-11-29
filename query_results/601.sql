@@ -1,1 +1,0 @@
-SELECT * FROM title_principals WHERE job = "Actor" AND character LIKE "%Harry Potter%" ORDER BY order DESC LIMIT 2

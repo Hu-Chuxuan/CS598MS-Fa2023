@@ -1,1 +1,0 @@
-SELECT * FROM title_ratings WHERE genre = "romantic" AND rating > 7

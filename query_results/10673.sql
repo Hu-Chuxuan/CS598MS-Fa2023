@@ -1,1 +1,0 @@
-SELECT t.* FROM titles AS t JOIN title_ratings AS r ON r.titleId = t.id WHERE t.isAdult!= true AND ((r.averageRating > 8 OR r.numvotes >= 1000)) ORDER BY r.avgRatings DESC LIMIT 5

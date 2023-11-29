@@ -1,1 +1,0 @@
-SELECT * FROM title_ratings WHERE rating > 6 AND genre = "Comedy" OR genre IN ('Drama','Sci-Fi') ORDER BY avgRATING DESC LIMIT 10

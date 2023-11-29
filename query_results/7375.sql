@@ -1,1 +1,0 @@
-SELECT rating FROM title_ratings WHERE tconst = 9

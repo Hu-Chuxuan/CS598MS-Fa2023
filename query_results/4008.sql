@@ -1,1 +1,0 @@
-SELECT * FROM imdb WHERE title_type = "movie" AND startYEAR >= 2016 ORDER BY rating DESC

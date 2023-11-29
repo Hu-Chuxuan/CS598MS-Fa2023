@@ -1,1 +1,0 @@
-SELECT * FROM table WHERE rating > 6 AND genre IN ('Horror','Thriller') ORDER BY AVG(rating)

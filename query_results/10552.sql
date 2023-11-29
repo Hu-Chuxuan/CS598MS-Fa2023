@@ -1,1 +1,0 @@
-SELECT * FROM title_principals WHERE categories = "action" AND characters LIKE "%Casino Royale%" OR characters LIKE "%James Bond%"

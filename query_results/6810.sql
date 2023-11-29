@@ -1,1 +1,0 @@
-SELECT t.* FROM titles AS t JOIN name_basics as n ON t.titleId = n.nameId AND t.isAdult=n.birthYear>78

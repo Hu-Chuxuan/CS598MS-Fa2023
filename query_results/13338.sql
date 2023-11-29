@@ -1,1 +1,0 @@
-SELECT * FROM (title_basics tb WHERE tb.startYear BETWEEN '1980-01-01' AND '2017-06-01') LEFT JOIN (name_basics nb) ON nb.primaryName = tb.titleType ORDER BY tb.averageRating DESC LIMIT 2

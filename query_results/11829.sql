@@ -1,1 +1,0 @@
-SELECT DISTINCT * FROM (title_basics tb JOIN title_ratings tr ON tb.titleID = tr.titleID) JOIN (name_basics nb JOIN title_crew tc ON nb.primaryName=tc.director) JOIN (title_principals tp ON nb.primaryName IN(tp.job)) WHERE nb.deathYear > '1900-01-01'

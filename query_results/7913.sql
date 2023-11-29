@@ -1,1 +1,0 @@
-SELECT t.* FROM title AS t WHERE t.titleType = "movie" AND NOT EXISTS( SELECT * FROM ratings r JOIN actors a ON r.actorID=a.id WHERE a.name IN ('Will Smith','Tom Hanks') ) OR exists (select * from name as n where n.primaryName='Brad Pitt' )

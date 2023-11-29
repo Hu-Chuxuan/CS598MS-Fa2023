@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE genre IN ('comedy','romance','drama') AND rating >.6

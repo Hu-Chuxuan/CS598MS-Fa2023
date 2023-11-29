@@ -1,1 +1,0 @@
-SELECT tc.* FROM title_ratings tr JOIN (title_crew tc ON tr.movie = tc.film) WHERE tr.averageRating >= 7 AND tr.numVotes > 0

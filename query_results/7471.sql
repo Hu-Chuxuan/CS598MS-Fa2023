@@ -1,1 +1,0 @@
-SELECT t.* FROM title_principals AS t WHERE t.category = "actor" AND (t.job LIKE 'Actor%' OR t.job LIKE '%Director') AND NOT EXISTS( SELECT * from title_principals as u where u.ordering > t.ordering)

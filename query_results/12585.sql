@@ -1,1 +1,1 @@
-SELECT t.* FROM title_ratings AS r JOIN name_basics AS b ON r.primaryTitle = b.titleID WHERE r.averageRating > 7 AND NOT EXISTS( SELECT * from title_principals as p where p.job LIKE '%actor%' ) ORDER BY SUM(r.numVotes)/SUM(b.numVotes) DESC LIMIT 8
+SELECT * FROM title_basic WHERE startYear >= 1970 AND endYear <= 2018 ORDER BY averageRatings DESC LIMIT 10 OFFSET 0

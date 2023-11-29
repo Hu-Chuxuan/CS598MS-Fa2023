@@ -1,1 +1,1 @@
-SELECT t.* FROM title_basic t JOIN name_basic n ON t.titleType = n.primaryName WHERE t.startYear >= 1980 AND t.endYear <= 2016 AND t.isAdult = true
+SELECT * FROM (SELECT t.*,(SELECT avg(v.rating) AS rating FROM v WHERE t.id = v.tconst AND v.userID IS NULL) AS recommendRatings FROM t WHERE (startYear >=? OR startYear <=?)) AS sorted ORDER BY recommendRatings DESC LIMIT 10

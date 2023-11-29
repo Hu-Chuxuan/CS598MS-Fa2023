@@ -1,1 +1,0 @@
-SELECT * FROM title_ratings WHERE averageRating >= 7 AND genre = 'Horror' OR genre LIKE '%Ghost%' LIMIT 0, 6

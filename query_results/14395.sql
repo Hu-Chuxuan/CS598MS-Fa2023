@@ -1,1 +1,0 @@
-SELECT * FROM title_recommendation WHERE userInput LIKE '%mystery%' AND genre IN ('Drama') ORDER BY avg(rating)

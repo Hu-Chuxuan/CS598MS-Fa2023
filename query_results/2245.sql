@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE titleType = "movie" AND (director IN ('Malcolm D Lee', 'Kenya Barris') OR writer IN('Ali LeRoi')) ORDER BY averageRating DESC LIMIT 5

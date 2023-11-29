@@ -1,1 +1,0 @@
-SELECT * FROM title_principals WHERE (job = 'actress' AND ((category = 'comedy') OR (category IS NULL)) AND ((characters IN ('Diane Keaton', 'Meryl Streep'))))

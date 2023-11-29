@@ -1,1 +1,0 @@
-SELECT rating FROM ratings WHERE title LIKE '%Mo%'

@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE genre='Comedy' AND (startYear BETWEEN 1976 AND 2018 OR endYEAR between 1976 AND 2018)

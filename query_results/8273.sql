@@ -1,1 +1,0 @@
-SELECT * FROM `title_recommendation` WHERE genre LIKE '%drama%' AND rating >=7

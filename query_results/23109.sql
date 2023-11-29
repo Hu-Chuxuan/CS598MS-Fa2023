@@ -1,1 +1,0 @@
-SELECT * FROM title_principals WHERE category = "Actor" AND job IN ("Lead Actor", "Supporting Actor") ORDER BY numVotes DESC LIMIT 0, 7

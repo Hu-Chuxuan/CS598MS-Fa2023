@@ -1,1 +1,1 @@
-SELECT * FROM `title` WHERE rating >= $rating AND startyear <= $startyear AND endyear>= $endyear
+SELECT * FROM title_basic WHERE ttype='movie'

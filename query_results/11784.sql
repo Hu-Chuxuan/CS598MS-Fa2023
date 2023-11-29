@@ -1,1 +1,0 @@
-SELECT DISTINCT tc.* FROM title_basics AS tb LEFT JOIN name_basics AS nb ON nb.primaryName = tb.titleType WHERE tb.isAdult = false AND tb.startYear <= '1980-01-01' ORDER BY tb.endYear DESC LIMIT 5

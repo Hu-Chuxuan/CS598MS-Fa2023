@@ -1,1 +1,1 @@
-SELECT * FROM title_ratings WHERE tconst = "His Girl Friday" AND avg(rating) >.7
+SELECT DISTINCT titleID FROM title_basic WHERE primaryTitle = 'Breakfast at Tiffanys' AND isAdult='0'

@@ -1,1 +1,0 @@
-SELECT t.* FROM title_ratings AS r JOIN (title_basics B LEFT OUTER JOIN... ) ON A = C WHERE RIGHT(B.primaryTitle, CHARINDEX(' ', B.primaryTitle)) > LENGTH(A.primaryTitle)

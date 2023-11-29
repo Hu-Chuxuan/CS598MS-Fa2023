@@ -1,1 +1,0 @@
-SELECT DISTINCT tc.* FROM title_basics AS tb JOIN title_ratings as tr ON tb.titleID = tr.movieID WHERE ((tr.averageRating > 6 AND tr.numVotes >= 5)) OR ((tb.isAdult!= "true" AND bb.startYear < 2010))

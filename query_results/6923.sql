@@ -1,1 +1,0 @@
-SELECT DISTINCT t.* FROM (title_basics AS t JOIN title_rating AS r ON r.primaryTitle = t.primaryTitle) LEFT OUTER JOIN (name_basics AS n INNER JOIN cast AS c ON c.category = 'actress' AND n.primaryName=c.primaryName) WHERE r.numVotes >= 10

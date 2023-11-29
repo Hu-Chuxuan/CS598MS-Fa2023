@@ -1,1 +1,0 @@
-SELECT * FROM tconst WHERE tconst = "title" AND genre IN ('Drama') ORDER BY avg(rating),numvotes DESC

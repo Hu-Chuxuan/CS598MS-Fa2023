@@ -1,1 +1,0 @@
-SELECT DISTINCT tconst FROM title_basics WHERE titleType = ‘Movie’ AND tconst IN ('It (1990), Friday the 13th  (2009), It  (2017)

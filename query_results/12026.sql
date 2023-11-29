@@ -1,2 +1,5 @@
-SELECT t.titleID as TitleId, tb.titleType AS TypeOfMovie, tb.primaryTitle As MovieTitle, tb.originalTitle As OriginalTitle, tb.isAdult AS AdultContent, tb.startYear AS StartYear, tb.endYear AS EndYear, tb.runtimeMinutes AS RuntimeMinutes, tg.genre AS Genre, tc.averageRating AS AverageRating, tr.numVotes AS NumberofUsersRatedThisMovie
-FROM `title_basic` AS t INNER JOIN `name_basics` AS n ON t.`titleID` = n.`titleID` LEFT OUTER JOIN `title_rating` AS r ON t.`titleID` = r.`titleID` WHERE ((((r.`averageRating`) >= ((tr.`numVotes`) / 10))) AND ((n.`primaryName`) IN ('John Goodman')))) OR ((n.`primaryName`) LIKE '%Steve Martin%') ORDER BY t.`titleID` DESC LIMIT 6
+SELECT * FROM ( SELECT DISTINCT t.*, COUNT(*) OVER() AS cnt 
+FROM ( SELECT t.*, r.rating AS avgRat, count(*)/sum(numvotes) over () AS ratio 
+FROM ( SELECT title_id, rating from title_ratings where (isAdult = 1 OR isAdult IS NULL)) r JOIN  
+    (SELECT distinct title_id from title_basic WHERE ((startyear > 1950 AND endyear < 2000 ) OR \N)) b ON TRUE 
+WHERE ((b.title_type IN ('movie') AND (r.averageRating >= 8))) GROUP BY title_id HAVING SUM((cnt*avgRat)/(ratio+1)>=.8) 

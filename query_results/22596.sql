@@ -1,1 +1,0 @@
-SELECT t.* FROM title_ratings AS r JOIN title_basic as b ON r.title_id = b.title_id WHERE r.numvotes > 0 AND b.startyear < 2010

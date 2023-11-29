@@ -1,1 +1,0 @@
-SELECT DISTINCT tb.title_id AS id FROM movies m JOIN titles t ON m.primaryTitle = t.titleID WHERE m.rating > 6 AND m.genre IN ('Horror') ORDER BY m.startyear DESC

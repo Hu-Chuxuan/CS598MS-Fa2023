@@ -1,0 +1,1 @@
+SELECT DISTINCT tconst FROM title_ratings WHERE avg(averageRating)>=5 AND avg(numVotes)>=10 GROUP BY tconst ORDER BY avg(avgerating)

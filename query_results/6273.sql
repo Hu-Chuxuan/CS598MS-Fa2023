@@ -1,1 +1,0 @@
-SELECT DISTINCT(title_id), rating FROM `title` WHERE ((title_type='movie' AND (startyear>1970)) OR (endyear<2010))

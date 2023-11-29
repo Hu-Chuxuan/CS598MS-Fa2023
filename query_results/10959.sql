@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE ((titleType='Movie') AND (startYear BETWEEN 1985 AND 1986)) ORDER BY averageRating DESC LIMIT 3

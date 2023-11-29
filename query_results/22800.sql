@@ -1,1 +1,1 @@
-SELECT tb.* FROM title_basic AS tb WHERE tb.titleType ='movie'
+SELECT DISTINCT TOP 5 * FROM `title` WHERE (`startyear` <= @fromDate AND `@toDate`) ORDER BY `averagerating` DESC LIMIT 1 OFFSET 1

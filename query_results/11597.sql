@@ -1,1 +1,0 @@
-SELECT * FROM rating WHERE title_type = “comedy” AND year BETWEEN ‘1960’ AND ‘2017’ ORDER BY Average Rating DESC LIMIT 2

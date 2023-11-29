@@ -1,1 +1,0 @@
-SELECT DISTINCT tc.* FROM titles AS tc WHERE ((((job = 'Actor' OR job = 'Director') AND genre!= 'Documentary')))

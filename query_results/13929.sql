@@ -1,1 +1,0 @@
-SELECT statements inside your query. Be sure not mix up different types like inner vs outer when selecting data because they perform differently depending upon whether we're talking about nested queries versus unnested ones

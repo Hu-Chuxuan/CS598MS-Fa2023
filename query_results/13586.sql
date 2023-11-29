@@ -1,1 +1,0 @@
-SELECT * FROM (title_basic tb WHERE tb.primaryTitle = 'Hitch') JOIN (name_basic nb ON nb.primaryName LIKE '%romance%') JOIN (title_rating tr ON tr.averageRating > 8 AND tr.numVotes >= 200)

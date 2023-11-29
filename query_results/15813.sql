@@ -1,1 +1,0 @@
-SELECT * FROM title_principals WHERE nconst =? AND characters LIKE '%Matt Damon%' ORDER BY characters

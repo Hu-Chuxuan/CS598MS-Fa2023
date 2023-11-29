@@ -1,1 +1,0 @@
-SELECT * FROM tconst WHERE tconst IN ('title_basics','title_ratings') AND titleType='movie' AND (averageRating > 6 OR averageRating < 3)

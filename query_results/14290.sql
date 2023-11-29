@@ -1,1 +1,0 @@
-SELECT * FROM imdb_data WHERE tconst = "title" AND (isAdult=false OR isAdult IS NULL)

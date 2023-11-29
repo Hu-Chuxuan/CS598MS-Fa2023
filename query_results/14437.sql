@@ -1,1 +1,0 @@
-SELECT tc.* FROM titles AS tc INNER JOIN rating AS r ON (tc.titleID = r.movieId) WHERE userInput LIKE '%good%' AND tc.rating >.7

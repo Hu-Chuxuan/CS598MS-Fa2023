@@ -1,1 +1,0 @@
-SELECT * FROM ( SELECT tc.*, nr.* WHERE tc.title_type ='movie' AND nr.average_rating >= 7 ) AS movies INNER JOIN ( SELECT nb.*, r.* WHERE nb.primary_name LIKE '%comedy%' OR nb.genre IN ('Comedy') ) as comedys ON movies.nconst=comedys.nconst

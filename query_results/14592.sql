@@ -1,1 +1,0 @@
-SELECT t.* FROM title AS t WHERE t.titleType ='movie' AND ((t.isAdult <> "true" OR t.startYear > 1967)) ORDER BY avg(rating) DESC LIMIT 1

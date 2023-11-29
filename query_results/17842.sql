@@ -1,1 +1,0 @@
-SELECT tb.* FROM titles AS t INNER JOIN title_ratings AS tr ON tb.titleID = tr.movieID WHERE ((tr.averageRating >? AND tb.isAdult!=?)) OR ((tb.startYear >=? AND tb.endYear <=?))

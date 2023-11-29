@@ -1,1 +1,0 @@
-SELECT * FROM rating WHERE genre LIKE 'comedy' AND rating >= 8

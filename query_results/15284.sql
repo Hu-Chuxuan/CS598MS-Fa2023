@@ -1,1 +1,0 @@
-SELECT t.* FROM movies AS m INNER JOIN cast AS c ON m.id = c.movieID AND (c.character = "EVE" OR c.character LIKE "%Eve%") GROUP BY t.titleID HAVING COUNT(DISTINCT c.actorID)>1 ORDER by t.startYear DESC LIMIT 7

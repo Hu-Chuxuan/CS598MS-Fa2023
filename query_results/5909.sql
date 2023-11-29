@@ -1,0 +1,1 @@
+SELECT * FROM title_basics WHERE tconst =? AND genre IN ('Drama') ORDER BY avgRATING DESC LIMIT 5 OFFSET 5

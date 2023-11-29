@@ -1,1 +1,0 @@
-SELECT * FROM `title` WHERE (`genre` LIKE '%comedy%' OR `genre` LIKE '%romance%') AND (`runtimeMinutes` > 90)

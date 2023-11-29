@@ -1,1 +1,0 @@
-SELECT * FROM title_rating WHERE rating > 7 AND genre = "comedy" ORDER BY avg_rating DESC LIMIT 1

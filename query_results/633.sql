@@ -1,0 +1,1 @@
+SELECT DISTINCT title_id FROM title_basic WHERE (isAdult = 1 OR isAdult IS NULL)

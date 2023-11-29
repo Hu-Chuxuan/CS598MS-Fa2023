@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE rating >.7 AND runtime < 2hr

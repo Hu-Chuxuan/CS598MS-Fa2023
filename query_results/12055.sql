@@ -1,1 +1,1 @@
-SELECT t.* FROM (title_basics AS t JOIN (name_basics as n ON t.primaryTitle = n.primaryTitle) WHERE ((n.birthYear BETWEEN 1980 AND 1986 OR n.deathYear >= 1980)) GROUP BY t.id ORDER BY t.numVotes DESC LIMIT 5)
+SELECT * FROM title_principals WHERE ((category='actress') AND (job!="")) ORDER BY nconst ASC LIMIT 3 OFFSET?

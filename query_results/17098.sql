@@ -1,1 +1,0 @@
-SELECT * FROM tconst WHERE titleType ='movie' AND (isAdult <> 1 OR (startYear >= currentDate() - 6)) ORDER BY rating DESC LIMIT 5

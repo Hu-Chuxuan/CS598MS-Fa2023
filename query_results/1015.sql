@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE rating > 6 AND genre = 'Horror' OR (rating < 7 AND genre IN ('Comedy', 'Drama')) ORDER BY avg(rating) DESC LIMIT 5

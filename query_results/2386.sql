@@ -1,1 +1,1 @@
-SELECT tb.* FROM title_basic AS tb INNER JOIN title_rating ON tb.titleId = tr.titleID WHERE tr.averageRating >= 7 AND tr.numVotes > 6
+SELECT * FROM title_basic WHERE rating >= 5 AND runtime < 1 HOUR

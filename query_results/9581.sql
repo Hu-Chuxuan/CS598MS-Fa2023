@@ -1,1 +1,0 @@
-SELECT DISTINCT tc.* FROM title_basic AS tb INNER JOIN cast_member AS cm ON(cm.title_id = tb.imdbID) WHERE tb.primaryTitle IN ('Step Brothers ', 'Billy Madison') AND cm.name_category LIKE '%actor%' OR cm.job LIKE %'writer%'

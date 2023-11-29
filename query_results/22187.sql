@@ -1,1 +1,1 @@
-SELECT * FROM movies WHERE rating > 7 AND genre = 'Comedy' ORDER BY vote DESC LIMIT 10
+SELECT * FROM title WHERE ((rating > 6 OR rating < 4)) AND (genre IN ('[comedy],[romance]')) ORDER BY rating DESC LIMIT 5 OFFSET 0

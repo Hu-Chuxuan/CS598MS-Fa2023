@@ -1,1 +1,0 @@
-SELECT t.* FROM movies AS m JOIN genre g ON m.genre = g.id WHERE g.name LIKE 'Comed%'

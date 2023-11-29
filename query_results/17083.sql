@@ -1,1 +1,1 @@
-SELECT * FROM title_ratings WHERE rating >= '6'
+SELECT * from title_basic where title_type = 'Movie' order by avg_rating desc limit 10

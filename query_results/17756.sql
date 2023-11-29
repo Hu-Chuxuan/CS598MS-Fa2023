@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE rating > 7 AND director = "M Night Shyamalan" OR actors IN ('Joaquin Phoenix') ORDER BY avgRATING DESC LIMIT 3

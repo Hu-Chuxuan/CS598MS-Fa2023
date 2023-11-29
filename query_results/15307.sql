@@ -1,1 +1,0 @@
-SELECT * FROM title_rating WHERE averageRat > 6 AND averageRat < 10

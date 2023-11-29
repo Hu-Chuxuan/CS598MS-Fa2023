@@ -1,1 +1,1 @@
-SELECT DISTINCT * FROM tconst WHERE titleType='Horror'
+SELECT t.* FROM `title` AS t WHERE ((t.`isAdult` = true AND (t.`startYear` < 1970)) OR ('It (1990)' IN (t.`primaryTitle`, t.`originalTitle`))) ORDER BY AVG(`rating`) DESC LIMIT 3

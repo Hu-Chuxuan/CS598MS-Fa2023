@@ -1,1 +1,1 @@
-SELECT movies.* FROM movies WHERE movies.titleType='Movie' AND movies.isAdult=FALSE
+SELECT * FROM title WHERE (((titleType ='movie') AND ((startYear >= 2000))) OR (titleType IS NULL)) ORDER BY avgRating DESC LIMIT 3

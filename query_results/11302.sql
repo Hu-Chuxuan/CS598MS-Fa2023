@@ -1,1 +1,1 @@
-SELECT * FROM movies WHERE rating > 7 AND genre = "Crime" ORDER BY year DESC LIMIT 3
+SELECT * FROM title WHERE primaryTitle LIKE '%Goodfellas%' OR primaryTitle LIKE '%Seven%' AND genre IN ('Crime') ORDER BY averageRating DESC LIMIT 10 OFFSET 0

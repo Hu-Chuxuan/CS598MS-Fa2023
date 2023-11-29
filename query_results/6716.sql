@@ -1,1 +1,0 @@
-SELECT t.title_id AS MovieID, t.name_id as NameId FROM title_ratings r JOIN name_basics n ON r.movie_id = n.primaryMovie WHERE rating > 6 AND NOT EXISTS( SELECT * from title_recommendation tr WHERE tr.user_id=1 AND tr.movie_id in ('The Notebook (2013)','Eat Pray Love (2010)' ))

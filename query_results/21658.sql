@@ -1,1 +1,1 @@
-SELECT * FROM title WHERE titleType ='movie'
+SELECT * FROM title WHERE isAdult = TRUE AND category IN ('actress','director') ORDER BY avgrating DESC LIMIT 5 OFFSET 5

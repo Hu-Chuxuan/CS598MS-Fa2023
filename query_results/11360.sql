@@ -1,1 +1,0 @@
-SELECT t.* FROM title AS t WHERE ((titleType ='movie' AND (startYear > 1900)) OR (titleType!= 'tv')) ORDER BY rating DESC LIMIT 5

@@ -1,1 +1,0 @@
-SELECT tb.* FROM title_basic AS tb INNER JOIN name_base as n ON n.primaryName = tb.titleType AND n.primaryProfession='Actor' WHERE tb.isAdult=0

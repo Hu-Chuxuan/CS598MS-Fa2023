@@ -1,1 +1,0 @@
-SELECT tb.* FROM title_basics AS tb JOIN title_rating AS tr ON tr.title_id = tb.title_id WHERE tr.average_rating > 6 AND tb.isadult IS NULL

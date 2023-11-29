@@ -1,1 +1,1 @@
-SELECT * FROM movies WHERE rating >= 7 AND rating <= 10 ORDER BY rating DESC LIMIT 5
+SELECT * from imdb.movies where (((((titleType='Movie') OR ((titleType='TVSeries')))) AND ((isAdult=0))) AND (((startYear>1900)))

@@ -1,1 +1,0 @@
-SELECT t.title_id AS TID FROM title_basics t WHERE t.primaryTitle = 'The Godfather' AND t.startYear >= 1978

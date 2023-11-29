@@ -1,1 +1,0 @@
-SELECT t1.* FROM title AS t1 WHERE EXISTS( SELECT * from title as t2 where t1.genre = t2.genre AND t2.numvotes >= 7)

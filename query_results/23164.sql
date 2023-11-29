@@ -1,1 +1,0 @@
-SELECT * FROM TableOne JOIN TableTwo ON Column = Value

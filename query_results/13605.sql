@@ -1,0 +1,1 @@
+SELECT * FROM `titles` WHERE (`primaryTitle`) LIKE '%Poseid%' OR (`originalTitle`) LIKE '%Poseid%' AND (`startYear`) BETWEEN 1972 AND 2009 ORDER BY AVG(`averageRatings`) DESC LIMIT 10

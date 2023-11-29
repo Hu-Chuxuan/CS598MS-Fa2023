@@ -1,1 +1,0 @@
-SELECT DISTINCT titles FROM ratings WHERE rating > 6

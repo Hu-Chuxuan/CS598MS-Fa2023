@@ -1,1 +1,1 @@
-SELECT * FROM movies WHERE tconst = 'title_basics'
+SELECT t.* FROM title AS t INNER JOIN ( SELECT t.*, RANK() OVER (PARTITION BY nconst ORDER BY numVotes DESC) rk UNION ALL SELECT * FROM title WHERE nconst IN ('nm1588970') ) USING (tconst) WHERE (((rk = 1 AND ((averageRating > 8)) OR ((averageRating < 4))) AND ((startYear <= 1990) AND ((endYear >= 2010)))))

@@ -1,1 +1,0 @@
-SELECT DISTINCT titles.* FROM title_rating JOIN movies ON titles.titleId = movies.id WHERE userPreferedMovies IN ('The Shining','The Mist') AND userPreferredGenre = "Horror" OR userPreferredGenre LIKE "%thriller%" OR userPreferredGenre LIKE "%mystery%" ORDER BY rating DESC LIMIT 6

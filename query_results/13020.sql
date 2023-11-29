@@ -1,1 +1,0 @@
-SELECT * FROM ( SELECT tb.*, tr.*, nr.*, c.*, p.*) WHERE (tb.titleType='movie') AND ((nr.numVotes > '0' OR nr.averageRating> '0'))AND(tr.director IN ('Steven Spielberg', 'Quentin Tarantino','Jordan Peele'))

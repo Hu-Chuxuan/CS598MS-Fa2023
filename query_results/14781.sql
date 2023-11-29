@@ -1,1 +1,1 @@
-SELECT t.* FROM titles AS t INNER JOIN rating AS r ON t.titleId = r.titleId AND r.userID =? WHERE (r.rating >? OR r.rating <?)
+SELECT * from imdb.movietitle where avgrating >= 7.0 AND avgrating <= 8.0 AND numvotes > 5000 GROUP BY movieid ORDER BY avgrating DESC LIMIT 10 OFFSET 0

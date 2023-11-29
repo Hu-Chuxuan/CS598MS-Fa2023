@@ -1,1 +1,1 @@
-SELECT * FROM title_basics WHERE tconst IN ('tt0118949') AND genre = "kid"
+SELECT * from title where titleType = “movie” order by avgRate desc limit 3

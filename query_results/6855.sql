@@ -1,1 +1,0 @@
-SELECT movies.* FROM title_basics as tb INNER JOIN title_ratings AS tr ON tb.title_id = tr.movieID AND tr.rating >= 6 WHERE tb.isAdult <> 1

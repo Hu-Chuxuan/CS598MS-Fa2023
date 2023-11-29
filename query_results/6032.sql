@@ -1,3 +1,1 @@
-SELECT DISTINCT tc.* FROM title_basics as tb INNER JOIN 
-title_crew AS tcr ON tcb.movieID = tcr.movieID AND tcr.job = "Director" OR 
-tcb.movieID = tcr.movieID AND tcr.job = "Writer"
+SELECT * FROM title WHERE rating > 5 OR rating < 2 AND director = 'Christopher Nolan' AND actor IN ('Leonardo DiCaprio') ORDER BY rating DESC LIMIT 1 OFFSET 2 

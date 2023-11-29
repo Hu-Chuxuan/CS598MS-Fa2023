@@ -1,1 +1,1 @@
-SELECT DISTINCT t.* FROM (title_basic AS t JOIN title_rating AS r ON (t.primaryTitle = r.primaryTitle)) WHERE r.averageRating >= 7 AND ((r.numVotes BETWEEN 8000 - 9000 OR r.avgRating < 6 )AND r.numVotes > 1000)
+SELECT DISTINCT t.* FROM titlestats AS t WHERE ((((t.title_type ='movie') AND ((t.primaryTitle LIKE '%Memento%'))) OR (t.genre IN ('Crime','Drama')))) ORDER BY AVG(rating) DESC LIMIT 1

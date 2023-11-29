@@ -1,1 +1,0 @@
-SELECT DISTINCT t.* FROM TITLE AS t INNER JOIN NAME AS n ON t.primaryName = n.primaryName WHERE ((t.genre IN ('Horror') OR t.category IN ('Horror')) AND n.birthYear BETWEEN 1960 AND 2010)

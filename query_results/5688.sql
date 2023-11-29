@@ -1,1 +1,0 @@
-SELECT DISTINCT movies.* FROM ratingMovie AS ratings INNER JOIN title_basics as tb ON tb.titleId = ratings.movieId WHERE ratings.rating >= 7 AND (tb.genre IN ('drama', 'romance')) ORDER BY avg(rating) DESC LIMIT 10

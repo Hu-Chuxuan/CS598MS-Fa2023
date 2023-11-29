@@ -1,6 +1,1 @@
-SELECT TOP(10) * FROM
-    #movieRecommendationSystem
-WHERE
-    (#userInput = @userInput OR (NOT EXISTS (@userPreferencedMovie))) AND
-    (ISNULL(@userPreferencedMovie,'') <> '')
-ORDER BY AverageRating DESC
+SELECT * FROM title_basics WHERE primaryTitle =? AND averageRating >=? ORDER BY averageRating DESC LIMIT 1 OFFSET 0

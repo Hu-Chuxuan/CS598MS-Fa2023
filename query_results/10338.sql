@@ -1,1 +1,0 @@
-SELECT * FROM `title` WHERE (`director` LIKE '%Eric%') OR (`writer` LIKE '%Eric%')

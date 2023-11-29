@@ -1,1 +1,0 @@
-SELECT tc.* FROM (title_ratings r INNER JOIN title_basics b ON r.primaryTitle = b.title) LEFT OUTER JOIN (name_basics n INNER JOIN title_principals p USING(n.category)) WHERE (r.averageRating > 7 AND EXISTS((n.birthYear >= '1960'))) GROUP BY tc.title

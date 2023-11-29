@@ -1,1 +1,0 @@
-SELECT * FROM (title_recommendation) WHERE ((((movie_id = "ELF"))) AND ((age >= 7)))

@@ -1,1 +1,0 @@
-SELECT * FROM tconst WHERE tconst = 'title'

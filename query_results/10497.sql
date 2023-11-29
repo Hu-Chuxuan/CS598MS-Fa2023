@@ -1,1 +1,0 @@
-SELECT * FROM title_principals WHERE job = "Character" AND categories LIKE "%Action%" ORDER BY rating DESC LIMIT 5

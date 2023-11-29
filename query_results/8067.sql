@@ -1,1 +1,1 @@
-SELECT DISTINCT title_id FROM title WHERE rating >= '7' AND genre IN ('adventure', 'animation') ORDER BY avg(rating)
+SELECT * FROM `title` WHERE (`startyear` >= $inputyear AND (`endyear` <= $inputyear OR `endyear` IS NULL)) AND (`genre` LIKE '%%') ORDER BY `averagerating`, `numvotes`

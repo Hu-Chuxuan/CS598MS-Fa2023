@@ -1,1 +1,0 @@
-SELECT DISTINCT tc.* FROM (title_ratings tr JOIN name_basics nb ON nb.primaryTitle = tr.primaryTitle) JOIN title_principals tp WHERE ((tp.job LIKE 'Actor') AND (tp.category IN ('Actress', 'Crew'))) ORDER BY COUNT(*) DESC LIMIT 10

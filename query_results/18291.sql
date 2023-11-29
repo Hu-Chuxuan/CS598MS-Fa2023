@@ -1,1 +1,0 @@
-SELECT * FROM title_rating WHERE rating >= '7' AND director IN ('James Cameron') GROUP BY title ORDER BY avg(rating)

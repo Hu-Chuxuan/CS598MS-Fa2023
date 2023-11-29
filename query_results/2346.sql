@@ -1,1 +1,0 @@
-SELECT * FROM title_principals WHERE character = 'Dr Watson' AND title_type IN ('movie') ORDER BY rating DESC

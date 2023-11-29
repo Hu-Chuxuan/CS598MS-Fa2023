@@ -1,1 +1,0 @@
-SELECT * FROM imdb.title_ratings WHERE averageRating > 6 AND genre = "Comedy" ORDER BY rating DESC LIMIT 3

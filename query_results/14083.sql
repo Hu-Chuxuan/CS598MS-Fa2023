@@ -1,1 +1,0 @@
-SELECT t.* FROM imdb.title AS t JOIN imdb.name_basic as n ON t.`primaryTitle` = n.`primaryName` WHERE t.`isAdult`=false AND t.`startYear` BETWEEN $1 AND $2 AND t.`endYear`>= $2 AND t.`runtimeMinutes`<60 ORDER BY rating DESC LIMIT 3

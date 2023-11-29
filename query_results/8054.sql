@@ -1,1 +1,0 @@
-SELECT TOP(10) * FROM movies WHERE rating >.7 AND genre = 'Horror' ORDER BY rating DESC

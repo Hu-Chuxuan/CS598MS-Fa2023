@@ -1,1 +1,1 @@
-SELECT * FROM title_principals WHERE category='character' AND job = "actor" ORDER BY rating DESC LIMIT 6
+SELECT * FROM title WHERE ((((startyear <= @userinputdate AND endyear >= @userinputdate)) OR (@userpreferencedate BETWEEN startyear AND endyear))) ORDER BY averagerating DESC LIMIT 10

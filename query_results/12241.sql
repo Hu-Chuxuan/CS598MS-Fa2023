@@ -1,1 +1,0 @@
-SELECT * FROM (title_basics JOIN title_rating ON title_basics.id = title_rating.movieID) WHERE title_basics.startYear >= '1970' AND title_basics.endYear <= '2018'

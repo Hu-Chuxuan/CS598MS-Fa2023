@@ -1,1 +1,0 @@
-SELECT * FROM rating WHERE (startYear >= '2016-07-29') AND (endYear <= '2016-07-29')

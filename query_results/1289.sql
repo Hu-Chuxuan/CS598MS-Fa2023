@@ -1,1 +1,0 @@
-SELECT * FROM title_basics WHERE tconst = 'thrillers' AND rating >= 7

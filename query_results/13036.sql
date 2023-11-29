@@ -1,1 +1,0 @@
-SELECT * FROM (title_ratings) WHERE ((title_ratings).averageRating >=? AND (title_ratings).numVotes > 0)

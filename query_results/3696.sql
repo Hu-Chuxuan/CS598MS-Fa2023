@@ -1,1 +1,1 @@
-SELECT * FROM `title_recommendation` WHERE user_preferences LIKE '%jumanji%' OR user_preferences LIKE '%almost famous%'
+SELECT * FROM `movielens` WHERE ((userID = 1 OR userID IS NULL)) AND ((title_type LIKE '%film%' OR title_type NOT IN ('documentary','music video')))

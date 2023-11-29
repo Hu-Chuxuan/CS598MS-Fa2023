@@ -1,1 +1,0 @@
-SELECT * FROM title_basics tb WHERE tb.isAdult = 'True' AND tb.genre in ('Comedy') ORDER BY tb.startYear DESC LIMIT 6

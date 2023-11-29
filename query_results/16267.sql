@@ -1,0 +1,1 @@
+SELECT * from title_rating where averageRating>='5' AND averageRating<='6' ORDER BY avgRATING DESC LIMIT 2 OFFSET 0

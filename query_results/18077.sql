@@ -1,1 +1,0 @@
-SELECT * FROM title_principals WHERE category = 'actor' AND actors IN ('John Hawkes', 'Josh Brolin') ORDER BY actors

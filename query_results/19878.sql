@@ -1,1 +1,0 @@
-SELECT * FROM title_basic WHERE titleType = "movie" AND tconst IN ('Aladdin  (1992)','The Little Mermaid  (1989)') OR (titleType = "movie" AND tconst NOT IN('Indiana Jones ')AND titleType!= "tv series")ORDER BY numVotes DESC

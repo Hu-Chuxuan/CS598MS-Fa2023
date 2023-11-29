@@ -1,1 +1,0 @@
-SELECT t.* FROM title AS t WHERE t.genre = "Drama" AND t.startyear >= 1970

@@ -1,1 +1,0 @@
-SELECT t.* FROM title AS t JOIN name AS n ON t.primaryTitle = n.title_id WHERE n.birthYear < '1980' AND n.deathYear > '1979'

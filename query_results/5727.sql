@@ -1,1 +1,1 @@
-SELECT DISTINCT titleID FROM (title_principals) WHERE (((category = 'Actor') OR (job = 'Director')) AND ((characters LIKE '%Love%'))) ORDER BY rating DESC LIMIT 0, 6
+SELECT DISTINCT * FROM title_rating WHERE averageRATING > 4 AND numVOTES >= 100 ORDER BY averageRATING DESC LIMIT 2

@@ -1,1 +1,0 @@
-SELECT tb.* FROM title_basics AS tb WHERE tb.titleType = "Animation" AND ((tb.startYear >= @yearFrom AND tb.endYear <= @yearTo)) AND (@genre LIKE '%%') ORDER BY rating DESC LIMIT 1

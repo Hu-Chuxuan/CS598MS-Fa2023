@@ -1,1 +1,0 @@
-SELECT DISTINCT t.* FROM title_basics AS t JOIN genre_list ON t.genres = genre_list.id WHERE t.titleType LIKE '%action%' AND t.startYear BETWEEN 1987 AND 1990

@@ -1,1 +1,1 @@
-SELECT * FROM title_basic WHERE tconst = 'drama'
+SELECT DISTINCT `title`.*,`genre`.`genre` AS `Genres`,`castmember`.`character` FROM `title` LEFT JOIN `genre` ON (`title`.`primaryGenre`=`genre`.`id`)LEFT JOIN `castmember` ON (`title`.`castmember`=`castmember`.`id`)WHERE `title`.`isAdult` = 'false' AND (( `title`.`startyear` >='2000') OR ('2000'<='title`.`endyear'))AND (`title`.`rating`>='6') ORDER BY `title`.`averageRating` DESC LIMIT 20 OFFSET 0

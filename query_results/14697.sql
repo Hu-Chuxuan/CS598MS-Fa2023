@@ -1,1 +1,1 @@
-SELECT t.* FROM title AS t JOIN title_ratings r ON t.titleID = r.tconst WHERE rating > 7 AND genre NOT IN ('Drama','Horror') ORDER BY r.avgrating DESC LIMIT 5
+SELECT DISTINCT title.primaryTitle AS Title FROM title LEFT JOIN title_principals ON title.tconst = title_principals.tconst WHERE title_principals.category='actors' AND title_principals.job LIKE '%Actor%' ORDER BY title.startYear DESC LIMIT 1 OFFSET?

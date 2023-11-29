@@ -1,1 +1,1 @@
-SELECT * FROM imdb_movie WHERE tconst='title_basics'
+SELECT * FROM title_principals WHERE titleId = 1 AND nconst IN ('nm1588970','nm0005690')

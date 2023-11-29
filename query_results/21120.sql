@@ -1,3 +1,0 @@
-SELECT * FROM (
-    SELECT tc.*, avg(tv.averageRating), COUNT(*) AS numVoters
-        FROM titles_ratings tr INNER JOIN titles_basic tb ON tb.titleID = tr.titleID LEFT OUTER JOIN names_basic nb ON nb.nameID = tb.primaryName WHERE nb.category LIKE 'actor%' AND nb.job IN ('actress','actor') GROUP BY tb.movieID HAVING SUM(CASE WHEN tv.numVotes > 0 THEN 1 ELSE NULL END)= 1 ORDER BY SUM(CASE WHEN tv.avgRate >= 8 THEN 1 ELSE NULL END) DESC LIMIT 1

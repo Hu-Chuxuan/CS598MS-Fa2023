@@ -1,1 +1,0 @@
-SELECT * FROM table WHERE genre = 'Horror' AND (job LIKE '%Actor%' OR job LIKE '%Director%') ORDER BY rating DESC LIMIT 10

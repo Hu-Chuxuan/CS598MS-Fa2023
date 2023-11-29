@@ -1,1 +1,0 @@
-SELECT * FROM title_ratings WHERE tconst = 'Dumb and Dumber (1994)' AND avgrating <.6

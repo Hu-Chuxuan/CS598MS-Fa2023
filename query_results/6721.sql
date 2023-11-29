@@ -1,2 +1,0 @@
-SELECT * FROM
-(select * from title_basic where title_type ='movie' AND (isadult = true OR isadult = false) ORDER BY rating DESC LIMIT 0,5 ) as tb UNION ALL SELECT * from casts WHERE actors IN ('Tom Hanks', 'Daniel Day-Lewis') GROUP BY actor

@@ -1,1 +1,0 @@
-SELECT DISTINCT tconst FROM titleratings, titles WHERE rating > 8 AND rating < 10

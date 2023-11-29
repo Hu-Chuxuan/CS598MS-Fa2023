@@ -1,1 +1,1 @@
-SELECT t.titleId FROM title AS t INNER JOIN name AS n ON t.nameId = n.id WHERE t.primaryName LIKE "%Disney%" AND n.birthYear BETWEEN 1980 AND 2017
+SELECT * FROM `title_basic` WHERE (`startyear`) >= ('2011') AND (`endyear`) <= ('2015')

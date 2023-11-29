@@ -1,1 +1,1 @@
-SELECT tc.* FROM title_basic AS tb INNER JOIN title_rating as tr ON tb.titleID =tr.titleID AND tb.primaryTitle=tr.titleID
+SELECT * FROM title_principals WHERE category = 'actress' AND title_type IN ('movie','tvseries') ORDER BY nconst ASC LIMIT 2

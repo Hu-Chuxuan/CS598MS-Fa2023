@@ -1,1 +1,1 @@
-SELECT t.* FROM title_basic AS t INNER JOIN name_basic as c ON t.titleType = c.primaryName WHERE c.category IN ('Director','Writer') AND t.isAdult=FALSE ORDER BY t.startYear ASC
+SELECT * FROM title_basic WHERE titleType ='movie' AND ((startYear >= '1970') OR (startYear <= '1980')) ORDER BY avgRating DESC LIMIT 3

@@ -1,2 +1,0 @@
-SELECT * FROM 
-(SELECT tc.*, rr.*, rv.* FROM titles AS t JOIN ratings as r ON t.titleID = r.titleID WHERE r.rating >= '7' AND r.category IN ('Drama', 'Mystery') ) AS tc JOIN title_recommendation AS tr ON tc.movieID=tr.movieID LEFT OUTER JOIN title_vote as tv ON tc.movieID = tv.movieID where tv.userID='1986-12-03'

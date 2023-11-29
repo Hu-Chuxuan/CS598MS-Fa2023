@@ -1,1 +1,0 @@
-SELECT * FROM (title_basics tb) JOIN (name_basics nb) ON ((tb).primaryTitle = (nb).primaryTitle) AND ((tb).isAdult <> 'True') WHERE ((tb).startYear BETWEEN '0' AND '98') ORDER BY ((tb).runtimeMinutes DESC)

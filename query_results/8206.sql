@@ -1,1 +1,0 @@
-SELECT t1.* FROM title_principals AS t1 JOIN name_basics AS t2 ON t1.primaryName = t2.nconst WHERE t1.category LIKE '%Girls%' AND t2.birthYear <= 1970

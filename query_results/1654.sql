@@ -1,1 +1,2 @@
-SELECT t.* FROM title AS t JOIN name AS n ON n.primaryName = t.titleType WHERE ((t.genre!= 'Comedy' AND t.genre <> '')) ORDER BY avg(rating) DESC LIMIT 7
+SELECT t.* FROM
+    (SELECT * from imdb.title where type ='movie') AS t WHERE (t.startyear <=? AND t.endyear >=? )AND (t.primarytitle like '%(?)%')

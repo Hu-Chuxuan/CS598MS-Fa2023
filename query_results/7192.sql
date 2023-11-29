@@ -1,1 +1,10 @@
-SELECT * FROM title_basics WHERE titleType = "Movie" AND ((startYear > 1978 OR startYear < 1960)) ORDER BY rating DESC LIMIT 5
+SELECT DISTINCT
+	t.*,
+	r.*
+FROM
+	titles AS t INNER JOIN
+	ratings r ON
+		t.tconst = r.tconst AND
+		t.startyear <= r.date && r.date < t.endyear
+WHERE
+	t.isadult!= '1' OR ('t.isadult=''1''AND t.runtime >= 120)

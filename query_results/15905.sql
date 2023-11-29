@@ -1,1 +1,0 @@
-SELECT t.* FROM title_ratings AS r INNER JOIN title_crew AS c ON r.`title_id` = c.`movie_id`, title_basics as b WHERE b.`isAdult`=true AND (r.`primaryTitle` LIKE '%mama%') OR (b.`startYear` >= 2016)

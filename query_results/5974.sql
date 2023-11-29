@@ -1,0 +1,1 @@
+SELECT * FROM (SELECT DISTINCT t.*, r.rating AS avgRating FROM titleratings r INNER JOIN title_basic b ON b.tconst = r.tconst WHERE EXISTS (SELECT rating FROM titleratings WHERE tconst IN ('tt0000001')) AND rating > 6 ORDER BY avgRating DESC LIMIT 10) t LEFT OUTER JOIN ( SELECT * FROM title_crew WHERE tconst='tt0000001') c USING (nconst)

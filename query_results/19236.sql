@@ -1,1 +1,0 @@
-SELECT t.* FROM title AS t JOIN name_basics as n ON t.titleID = n.titleID WHERE n.primaryProfession LIKE '%Actor%' AND t.startYear >= 2017

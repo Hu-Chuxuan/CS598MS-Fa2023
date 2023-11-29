@@ -1,1 +1,0 @@
-SELECT t.* FROM (title_basicstitle_ratingsname_bassicstitle_crewtitel_principlestable movies WHERE ((movies.titleType = 'Feature Film') AND (movies.isAdult IS NULL)) ORDER BY movies.primaryTitle) AS t JOIN (table movies JOIN table actors ON (movies.actingAs = actors.actorID)) AS actors

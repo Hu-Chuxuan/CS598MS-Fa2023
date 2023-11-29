@@ -1,3 +1,0 @@
-SELECT * FROM
-(SELECT DISTINCT tc.*, tcr.*, tnp.*, tcp.* FROM titles AS tc JOIN title_ratings as tcr ON tc.title_id = tcr.title_id JOIN name_basics as tnb ON tcb.name_id=tnb.name_id JOIN title_crew as tcn ON tcb.title_id = tcn.title_id JOIN title_principals as ttp ON ttb.title_id = ttp.title_id )AS t
-WHERE (((((tcb.primaryName='Jennifer Carpenter') AND (tcb.job='Actress')) OR ((tcb.primaryName='Douglas Smith')AND (tcb.job='Actor')))OR ((tcb.category="Horror")))AND (((((tcr.averageRating>=6)) OR (((tcr.numVotes>=8)))))))ORDER BY tcr.averageRating DESC LIMIT 5

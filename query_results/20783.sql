@@ -1,1 +1,0 @@
-SELECT * FROM `title_basic` WHERE ((titleType = "movie" AND titleType <> "") OR (titleType IS NULL)) ORDER BY avg(rating DESC)

@@ -1,1 +1,0 @@
-SELECT * FROM table WHERE rating > 7 AND genre = 'Action' ORDER BY avgrating DESC LIMIT 6

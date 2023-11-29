@@ -1,1 +1,0 @@
-SELECT t.* FROM ( SELECT * from title_ratings WHERE rating >= 8 ) AS r INNER JOIN (( SELECT * from title_basics where type ='movie' AND adult IS NULL) UNION ALL (SELECT * from title_crew WHERE director IN ('Jon Favreau')) ) as m ON r.titleID=m.titleID

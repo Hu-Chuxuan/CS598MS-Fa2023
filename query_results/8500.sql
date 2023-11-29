@@ -1,2 +1,0 @@
-SELECT t.titleID AS MovieId FROM
-( SELECT r.movieId as TitleID, r.userID as UserID from rating r WHERE userID =? AND movieID IN ('Blade Runner','The Martian') ORDER BY avgRATING DESC LIMIT 1 ) as Rating JOIN title_basic t ON Rating.MovieId=t.titleid

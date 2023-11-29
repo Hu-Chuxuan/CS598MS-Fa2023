@@ -1,1 +1,1 @@
-SELECT * FROM title_principals WHERE job = "Director" AND category LIKE "%Children%" ORDER BY rating DESC LIMIT 6
+SELECT DISTINCT title.primaryTitle AS MovieTitle FROM title WHERE title.isAdult = 1 AND title.startYear > 1950 ORDER BY title.runtimeMinutes DESC LIMIT 2 OFFSET 0 FILTER (WHERE title.rating >= 7 OR title.averageRating >= 7)

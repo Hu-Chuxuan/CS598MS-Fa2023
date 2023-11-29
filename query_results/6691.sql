@@ -1,1 +1,0 @@
-SELECT t1.* FROM title_recommendation AS t1 JOIN title_basics AS t2 ON t1.title = t2.title WHERE t1.rating >= 7 AND t1.genre IN ('Comedy') ORDER BY rating DESC LIMIT 3

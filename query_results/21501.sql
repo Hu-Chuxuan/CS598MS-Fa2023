@@ -1,1 +1,0 @@
-SELECT * FROM titles WHERE rating >= 8 AND year <= 2016 ORDER BY rating DESC LIMIT 10

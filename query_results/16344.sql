@@ -1,1 +1,0 @@
-SELECT t.* FROM movies AS m INNER JOIN title_ratings as tr ON m.titleId = tr.movieId WHERE tr.averageRating >= 7 AND EXISTS( SELECT * FROM name_basics as bb INNER JOIN title_principals AS pp ON bb.primaryName=pp.job WHERE bb.category='Director' AND pp.job IN ('Steven Spielberg') ) GROUP BY m.titleId ORDER BY COUNT(*) DESC LIMIT 1

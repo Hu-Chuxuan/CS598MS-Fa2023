@@ -1,1 +1,3 @@
-SELECT * FROM title_ratings WHERE rating >=? AND rating <=? ORDER BY rating DESC LIMIT?
+SELECT * FROM movie_recommendation WHERE
+   ((genres = 'comedy') OR (genres LIKE '%comedy%' ESCAPE '')) AND
+   ((rating > 5.5) AND (numvotes >= 1000))

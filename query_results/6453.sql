@@ -1,1 +1,0 @@
-SELECT t1.* FROM title_basics AS t1 INNER JOIN title_ratings AS t2 ON t1.titleId = t2.titleId WHERE t1.isAdult=0 AND t2.averageRating >= 7/10

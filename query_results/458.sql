@@ -1,1 +1,1 @@
-SELECT t.* FROM movies AS m INNER JOIN casts AS c ON c.movie = m.id AND c.character LIKE 'The Rock' WHERE m.title LIKE '%Musical%' OR m.title LIKE '%Comedy%' GROUP BY m.id ORDER BY RAND() LIMIT 2
+SELECT * FROM `title` WHERE (`rating` > 5 AND `startyear` < 2000)

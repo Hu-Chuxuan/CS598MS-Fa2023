@@ -1,1 +1,0 @@
-SELECT t.* FROM title_basic AS t INNER JOIN genre_rating AS r ON t.genre = r.titleID WHERE t.titleType='movie' AND ((r.averageRating>6 OR r.numVotes=1)) ORDER BY r.averageRating DESC LIMIT 5

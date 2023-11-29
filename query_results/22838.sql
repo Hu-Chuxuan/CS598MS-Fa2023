@@ -1,1 +1,1 @@
-SELECT TITLE_CREW.* FROM MOVIES AS m INNER JOIN TITLE_CREW ON(m.ID=title_crews.movieId)
+SELECT * FROM `title` WHERE ((startyear <= 1980 AND endyear >= 1980)) OR ((startyear < 1980 AND endyear > 1980))

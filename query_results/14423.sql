@@ -1,1 +1,0 @@
-SELECT DISTINCT t.* FROM title_ratings AS r INNER JOIN title_principals AS p ON r.title = p.primaryTitle AND p.job LIKE "actor%" WHERE NOT EXISTS(SELECT * FROM title_crew WHERE director=r.director OR writer=r.writer)

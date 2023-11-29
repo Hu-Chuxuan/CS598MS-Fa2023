@@ -1,1 +1,0 @@
-SELECT t.* FROM (title_basic t INNER JOIN title_rating r ON t.tconst = r.tconst AND t.isadult=r.isadult ) INNER JOIN name_basic n ON t.primaryTitle = n.primaryname WHERE t.genre IN ('Comedy') OR t.director in ('Chong, Tommy','Statham, Jason','Peyton Reed')

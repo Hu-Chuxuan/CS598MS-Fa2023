@@ -1,1 +1,0 @@
-SELECT * FROM rating WHERE tconst =? AND avgrating >?

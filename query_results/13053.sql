@@ -1,1 +1,0 @@
-SELECT DISTINCT tb.* FROM title_basics AS tb JOIN title_rating ON tb.titleID = title_rating.titleID WHERE tb.titleType!= '' AND tb.primaryTitle LIKE '%' ||? || '%' OR tb.originalTitle LIKE %?% OR tb.isAdult='True'

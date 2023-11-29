@@ -1,1 +1,0 @@
-SELECT * FROM ( SELECT title_basics.*, title_ratings.*, name_basics.*, cast(cast(title_crew.director as varchar) + ',' AS VARCHAR), CAST('' + title_principals.job AS VARCHAR)) AS titles WHERE titles.isadult = false AND ((titles.startyear > @datefrom OR titles.endyear < @dateto)) ORDER BY AVG(title_rating) DESC LIMIT 0,6

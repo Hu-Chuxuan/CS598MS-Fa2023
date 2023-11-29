@@ -1,1 +1,0 @@
-SELECT * FROM rating WHERE type=‘war’ AND genre IN(‘action’)

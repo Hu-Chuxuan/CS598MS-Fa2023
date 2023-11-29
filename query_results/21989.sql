@@ -1,1 +1,0 @@
-SELECT tb.title_type AS MovieType, tc.average_rating as Rating FROM title_basic tb INNER JOIN title_rating tcr ON tcr.tconst = tb.tconst WHERE tb.primary_title LIKE '%' || :userInput || '%'

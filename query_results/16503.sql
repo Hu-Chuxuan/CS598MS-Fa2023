@@ -1,1 +1,1 @@
-SELECT t1.* FROM `title` AS t1 INNER JOIN `name_basics` AS nb ON t1.`titleID` = nb.`titleID` WHERE t1.`primaryTitle` LIKE 'Father%' AND t1.`startYear` >= 2016
+SELECT * FROM title_basic WHERE ((isAdult=false AND genre='comedy') OR (isAdult=true)) ORDER BY avgrating DESC LIMIT 1

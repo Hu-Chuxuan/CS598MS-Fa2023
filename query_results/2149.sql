@@ -1,1 +1,0 @@
-SELECT DISTINCT title_type AS TitleType FROM title_basics WHERE tconst = "movie" AND (titleType="Comedy") ORDER BY avg(rating) DESC LIMIT 8

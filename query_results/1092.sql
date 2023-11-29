@@ -1,1 +1,0 @@
-SELECT * FROM title_recommendation WHERE user_id = $userID AND preference_history LIKE '%$movie%' ORDER BY rating DESC LIMIT 5

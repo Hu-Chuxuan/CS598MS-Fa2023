@@ -1,1 +1,0 @@
-SELECT * FROM title_ratings WHERE averageRating >.8 AND genre IN ('Drama','Action') ORDER BY rating DESC LIMIT 6

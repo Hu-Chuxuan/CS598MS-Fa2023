@@ -1,1 +1,0 @@
-SELECT * FROM movies WHERE userPreferedMovies LIKE '%Get%'

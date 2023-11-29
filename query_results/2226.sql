@@ -1,1 +1,1 @@
-SELECT DISTINCT tconst FROM title_basics WHERE tconst IN ('title_type','primary_title','original_title')
+SELECT * from title_basics where titleType = “movie” and isAdult=1 order by avgRatings desc limit 3

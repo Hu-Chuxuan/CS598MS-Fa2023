@@ -1,1 +1,0 @@
-SELECT t.* FROM title_basics AS t JOIN title_ratings AS r ON t.titleID = r.movieID WHERE r.averageRating >=? AND r.numVotes > 0

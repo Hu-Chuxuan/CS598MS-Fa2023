@@ -1,1 +1,0 @@
-SELECT t.* FROM title_basics AS t INNER JOIN (title_rating AS r AND r.numVotes > 600 OR r.averageRating < 7.8)

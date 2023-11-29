@@ -1,1 +1,0 @@
-SELECT * FROM rating WHERE userID=? AND (title LIKE '%the sixth sense%' OR director LIKE '%m%') GROUP BY movieID ORDER BY avgRatng DESC LIMIT?

@@ -1,1 +1,0 @@
-SELECT * FROM (title_rating r INNER JOIN cast c ON r.movieID = c.movieID AND r.voteGender = "Male") WHERE r.numOfReviews >= 10

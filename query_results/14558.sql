@@ -1,1 +1,1 @@
-SELECT DISTINCT tc.* FROM Title_Basics AS tb JOIN Name_Basics ON tb.titleID = nb.titleID WHERE nb.primaryName LIKE '%Doubt%' AND nb.category IN ('Comedy') GROUP BY tb.titleID ORDER by rating DESC
+SELECT DISTINCT t.* FROM `titles` AS t INNER JOIN (`user_preferences` USING(`id`) AND (`type`)='Movie') WHERE ((startyear > 1900)) ORDER BY `averagerating`, `numvotes`

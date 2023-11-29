@@ -1,1 +1,0 @@
-SELECT * FROM title_ratings WHERE genre = "Action" AND avg_rating > 6

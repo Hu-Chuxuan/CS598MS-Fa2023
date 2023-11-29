@@ -1,1 +1,0 @@
-SELECT movies.* FROM movies JOIN user_preferences ON (movies.id = user_preferences.movie_id) WHERE (user_preferences.user_name='') AND (user_preferences.date >= '06/09/2017'::DATE)

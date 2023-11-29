@@ -1,1 +1,0 @@
-SELECT * FROM TITLE_BASICS WHERE titleType = "comedy" AND rating >.8

@@ -1,1 +1,1 @@
-SELECT * FROM movies WHERE genre = "Action" AND rating > 7
+SELECT DISTINCT t.* FROM imdb.title AS t JOIN imdb.name_basics ON (t.primaryName = nb.primaryName AND t.startYear <= nb.deathYear) WHERE NOT EXISTS ( SELECT * FROM imdb.rating WHERE r.movie = t.tconst ) ORDER BY avg_rating DESC LIMIT 5 OFFSET 0 

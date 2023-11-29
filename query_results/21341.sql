@@ -1,1 +1,0 @@
-SELECT * FROM table WHERE table.titleType = "movie" AND table.primaryTitle LIKE 'life%' OR table.originalTitle LIKE '%party%'

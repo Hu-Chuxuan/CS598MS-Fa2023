@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE (title_type = "movie" OR title_type = "tv") AND ((start_year >=? )AND(end_year <=?)) AND (avg_rating >?)

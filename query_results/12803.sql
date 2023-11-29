@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE genre IN ('[action, comedy]') AND originalTitle LIKE '%[canada|quebec]%' ORDER BY avgRating DESC LIMIT 20 OFFSET 20

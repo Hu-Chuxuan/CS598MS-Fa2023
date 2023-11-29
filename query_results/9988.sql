@@ -1,4 +1,0 @@
-SELECT * FROM
-( SELECT title_basics.*, title_ratings.*, name_basics.*, cast(cast(title_crew.directors AS TEXT) + " |" + cast(cast(title_crew.writers as text)) AS CHAR(MAXLENGTH = 8000) ) AS crew
-FROM imdb.titles t INNER JOIN imdb.title_basic b ON t.imdbratedbID=b.id INNER JOIN imdb.name_basic c ON b.nm_primaryKey=c.nm_id INNER JOIN imdb.title_rating d ON t.imdbratedbID=d.tm_id INNER JOIN imdb.title_crew e ON t.imdbratedbID=e.tcrew_id WHERE t.type="movie")
-WHERE ((title_basics.genre LIKE '%adventure%') OR (title_basics.genre LIKE '%comedy%' OR (title_basics.genre LIKE '%family%'))) AND ((title_basics.startYear >= 2000)AND((title_basics.endYear <= 2019)))

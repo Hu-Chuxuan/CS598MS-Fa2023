@@ -1,0 +1,2 @@
+SELECT * FROM ( SELECT DISTINCT TOP 5 title_id AS id, title_type, title_original_language AS lang, title_genre, PRIMARY_NAME AS actor, title_startyear AS date, title_endyear AS time FROM title_basic WHERE title_lang = '' AND title_isadult = '' ) AS source UNION ALL 
+SELECT DISTINCT TOP 5 title_id AS id, title_type, title_original_language AS lang, title_genre, PRIMARY_NAME AS actor, title_startyear AS date, title_endyear AS time FROM title_basic WHERE title_lang <> '' AND title_isadult IN ('1','2') OR title_isadult IS NULL ORDER BY title_rating DESC LIMIT 5 OFFSET 0)

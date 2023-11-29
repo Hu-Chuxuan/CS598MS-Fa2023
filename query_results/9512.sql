@@ -1,1 +1,0 @@
-SELECT t.* FROM title AS t JOIN name AS n ON t.primaryName = n.primaryName WHERE t.titleType='movie' AND NOT EXISTS(SELECT * FROM name WHERE titleType='actor') GROUP BY t.id ORDER BY avg(rating)

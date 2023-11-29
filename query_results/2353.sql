@@ -1,1 +1,1 @@
-SELECT tc.* FROM titles AS tc WHERE tc.titleType = "movie" AND tc.isAdult = true
+SELECT * from title_principals where category = \'Actor\' order by descending job ascending

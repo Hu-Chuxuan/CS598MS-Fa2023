@@ -1,1 +1,1 @@
-SELECT * FROM... WHERE... AND... ORDER BY... LIMIT x
+SELECT DISTINCT * FROM title_ratings WHERE (primaryTitle='Godfather') AND numVotes>1 ORDER BY avgRatng DESC LIMIT 3 OFFSET 1

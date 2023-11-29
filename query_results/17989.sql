@@ -1,1 +1,0 @@
-SELECT * FROM tconst JOIN title_ratings ON tconst.titleID = title_ratings.tconstID WHERE ((isAdult=FALSE AND avgRating>6/10)) OR (avgRating<8/10)

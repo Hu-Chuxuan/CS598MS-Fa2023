@@ -1,1 +1,0 @@
-SELECT t.title_id AS MovieID, t.genre as Genre FROM title_basics t WHERE t.isAdult = 'TRUE'

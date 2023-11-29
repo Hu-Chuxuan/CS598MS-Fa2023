@@ -1,1 +1,0 @@
-SELECT * FROM table WHERE rating > 7 AND title LIKE '%boomer%' OR rating < 6

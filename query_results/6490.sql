@@ -1,1 +1,1 @@
-SELECT * FROM title_rating WHERE rating >= 7 AND genre = "Action" ORDER BY rating DESC LIMIT 3
+SELECT * FROM title_basics WHERE tconst='tt0000001' AND startyear>1980 AND endyear<2015 ORDER BY averagerating DESC LIMIT 5 OFFSET 0

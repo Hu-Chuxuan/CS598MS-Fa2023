@@ -1,1 +1,0 @@
-SELECT t.* FROM title_principals AS p JOIN title_crew AS c ON p.job = 'Director' AND p.ordering > c.ordering WHERE c.directors LIKE '%Paul Feig%' OR c.writers LIKE '%Kristen Wiig%'

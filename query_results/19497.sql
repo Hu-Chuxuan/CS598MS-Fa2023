@@ -1,1 +1,1 @@
-SELECT * FROM titles WHERE rating >= 7
+SELECT * FROM title_basic WHERE isAdult = 1 AND (startyear > 1976 OR startyear < 1994)

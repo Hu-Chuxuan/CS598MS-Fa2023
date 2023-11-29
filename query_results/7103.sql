@@ -1,1 +1,1 @@
-SELECT * FROM title_basics WHERE (titleType = "Movie" OR titleType = "TV Series") AND ((startYear <= year(now())) AND (endYear >= year(now()))) ORDER BY rating DESC LIMIT 0,1
+SELECT * FROM title_basic WHERE ((primaryTitle = 'The Breakfast Club') OR ('The Breakfast Club' IN ("'The Breakfast Club'"))) AND ((startYear > 1985)) ORDER BY startYear DESC LIMIT 10 OFFSET 0

@@ -1,1 +1,0 @@
-SELECT * FROM `title` WHERE `primaryTitle` LIKE '%X%' OR `originalTitle` LIKE '%X%'

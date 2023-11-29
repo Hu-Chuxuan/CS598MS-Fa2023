@@ -1,1 +1,0 @@
-SELECT DISTINCT tc.* FROM title_basics AS tb JOIN name_basics as nb ON nb.primaryName = tb.titleType WHERE nb.category = "Actor" AND tb.startYear >= 1980

@@ -1,1 +1,0 @@
-SELECT DISTINCT t.* FROM title_basic AS t INNER JOIN rating_basic R ON r.titleID = t.titleID WHERE ((r.averageRating >=? AND r.numvotes > 0)) OR (((r.averageRating <? AND r.numvotes <= 0))) ORDER BY t.startyear DESC LIMIT 2

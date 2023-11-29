@@ -1,1 +1,0 @@
-SELECT DISTINCT t.* FROM title_basics AS t INNER JOIN title_rating WHERE t.title_id = t.title_rating.title_id AND t.primaryTitle IN ('Alien: Covenant','Dunkirk') GROUP BY t.title_name

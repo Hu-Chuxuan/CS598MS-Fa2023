@@ -1,1 +1,1 @@
-SELECT t.* FROM title AS t WHERE t.titleType = "movie" AND NOT EXISTS( SELECT * from rating r where r.rating < 6)
+SELECT * FROM `title` WHERE `isAdult` = 0 AND (`startYear` <=? AND `endYear` >=?)

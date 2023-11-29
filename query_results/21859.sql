@@ -1,1 +1,0 @@
-SELECT DISTINCT title_basic.* FROM title_basics INNER JOIN title_ratings ON title_ratings.title = title_basics.title WHERE rating > 7 AND rating < 9

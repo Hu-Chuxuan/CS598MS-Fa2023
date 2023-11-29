@@ -1,1 +1,0 @@
-SELECT * FROM titles WHERE (titleType = 'Comedy') AND (avg(rating) >=?)

@@ -1,1 +1,0 @@
-SELECT * FROM `title` WHERE `genre` = 'cartoon' AND (`director` LIKE '%Jennifer%') OR (`writer` LIKE '%Jennifer%' OR `writer` LIKE '%John Lasseter')

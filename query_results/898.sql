@@ -1,1 +1,0 @@
-SELECT * FROM movies WHERE title_type = "comedy" AND startyear BETWEEN 2005 TO 2017

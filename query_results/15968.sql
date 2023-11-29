@@ -1,1 +1,0 @@
-SELECT DISTINCT title_id FROM title WHERE rating >.80 AND cast(job AS VARCHAR) = ‘actress’

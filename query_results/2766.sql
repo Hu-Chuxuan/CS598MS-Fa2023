@@ -1,1 +1,1 @@
-SELECT * FROM title_ratings WHERE rating >= 7
+SELECT * FROM title_basic WHERE titleType = “movie” AND ((startYear <= 1990 OR endYear >= 2000)) ORDER BY avgRatings DESC LIMIT 5

@@ -1,1 +1,0 @@
-SELECT * FROM (title_ratings t JOIN title_basic b ON b.id = t.titleId AND b.primaryTitle = true) WHERE ((b.startYear <= 1960 OR b.endYear >= 2000)) AND (t.numVotes > 5)

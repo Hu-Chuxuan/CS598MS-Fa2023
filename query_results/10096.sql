@@ -1,2 +1,0 @@
-SELECT tb.titleId AS TITLEID,
-       rt.* FROM title_recommendation tr JOIN rating_type RT ON TR.ratingType = RT.ratingType AND rt.numVotes > 1 AND rt.averageRatng >= 6/10 WHERE EXISTS( SELECT * from user_preferences UP WHERE UP.userID=1 AND UP.movieId IN (SELECT DISTINCT TitleId FROM tr)) ORDER BY avgRating DESC LIMIT 5

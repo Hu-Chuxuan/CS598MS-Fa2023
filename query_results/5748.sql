@@ -1,1 +1,0 @@
-SELECT t.titleID AS "Movie ID", m.movieName AS Movie Name FROM titles AS t INNER JOIN movies as m ON t.primaryTitle = m.titleID WHERE t.genre IN ('Musical') AND NOT EXISTS(SELECT * FROM userPreferenceHistory WHERE titleID=m.titleID)

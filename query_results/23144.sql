@@ -1,1 +1,0 @@
-SELECT t.titleID as id FROM title AS t WHERE t.primaryTitle =? AND t.isAdult!= "true" ORDER BY t.startYear DESC LIMIT 0, 5

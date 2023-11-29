@@ -1,1 +1,0 @@
-SELECT DISTINCT movies.* FROM movies INNER JOIN genre ON movies.genre = genre.id WHERE movies.title_type IN ('movie','miniSeries') AND ((movies.runtimeMinutes >= 90 OR movies.runtimeMinutes <= 89)) AND (((movies.primaryTitle LIKE '%The Mermaid%' OR movies.originalTitle LIKE '%The Mermaid%')))

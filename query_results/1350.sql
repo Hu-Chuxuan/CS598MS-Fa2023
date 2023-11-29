@@ -1,1 +1,0 @@
-SELECT t.* FROM title_ratings AS t INNER JOIN title_basics AS b ON t.titleId = b.id WHERE b.isAdult IS NOT NULL AND b.startYear >? AND b.endYear <? ORDER BY avg(t.averageRating)

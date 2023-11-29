@@ -1,1 +1,0 @@
-SELECT movies.* FROM movies WHERE genre = "Drama" AND rating > 7

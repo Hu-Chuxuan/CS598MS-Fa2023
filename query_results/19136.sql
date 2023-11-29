@@ -1,1 +1,1 @@
-SELECT * FROM title WHERE rating >= 7 AND genre = "Action" AND runningTime <= 100
+SELECT DISTINCT titleID FROM title_principals WHERE job='actor' AND category = 'character' ORDER BY titleID ASC LIMIT 5

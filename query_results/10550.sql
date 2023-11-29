@@ -1,1 +1,0 @@
-SELECT tb.titleID AS "Movie Title", r.rating AS "Overall Rating" FROM titles AS t INNER JOIN rating AS r ON t.titleID = r.titleID WHERE tb.titleID IN(SELECT tb.titleID FROM ratings AS r INNER JOIN titleBasics as tb ON r.titleID=tb.titleID AND r.userID=1)

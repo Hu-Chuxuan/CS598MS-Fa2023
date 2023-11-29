@@ -1,1 +1,0 @@
-SELECT t.* FROM title AS t INNER JOIN name AS n ON (n.primaryName = t.titleType AND n.birthYear BETWEEN? AND?) WHERE ((t.genre IN ('Drama')) OR (t.job IS NULL)) ORDER BY rating DESC LIMIT 0, 5

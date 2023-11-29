@@ -1,1 +1,0 @@
-SELECT * FROM ( SELECT tc.*, tcr.* FROM title_basics AS tb INNER JOIN title_ratings AS tr ON tb.titleID = tr.titleID LEFT OUTER JOIN title_crew as tc ON tc.titleID=tb.titleID LEFT OUTER JOIN title_principals AS tp ON tp.titleID=tc.titleID WHERE tb.isAdult!= 'true') AS t WHERE t.startYear BETWEEN 1986 AND 2017

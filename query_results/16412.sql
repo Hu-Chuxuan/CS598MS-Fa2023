@@ -1,1 +1,1 @@
-SELECT * FROM `title` WHERE (`title`.`primaryTitle` LIKE "%love%" OR `title`.`originalTitle` LIKE "%love%") AND (`title`.`isAdult` = "false")
+SELECT * FROM movie_recommendation WHERE userPreferenceHistory LIKE '%Super%'

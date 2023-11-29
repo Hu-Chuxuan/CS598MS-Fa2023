@@ -1,1 +1,0 @@
-SELECT tb.* FROM title_basics AS tb WHERE tb.titleType = "Movie" AND EXISTS( SELECT * from ratingr where rr.movieId = tb.id)

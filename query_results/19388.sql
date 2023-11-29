@@ -1,1 +1,1 @@
-SELECT t1.* FROM title_basics as t1 INNER JOIN title_ratings AS t2 ON t1.titleId = t2.titleId WHERE t2.averageRating >= '7'
+SELECT * FROM `movies` WHERE `startyear` > 2010 AND (`averageratingscore` >= 8 OR `numvotes`>= 10)

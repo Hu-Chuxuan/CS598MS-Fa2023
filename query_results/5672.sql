@@ -1,1 +1,1 @@
-SELECT DISTINCT t.* FROM title AS t INNER JOIN rating_details rd ON t.titleID = rd.movieID WHERE titleType IN ('comedy','romance') AND userInput LIKE '%light%' OR userInput LIKE '%entertainment%'
+SELECT * FROM `titles` WHERE ((startyear > 1970 AND startyear < 2000)) AND (`primaryTitle LIKE "%Shopaholic%" OR `primaryTitle LIKE "%Prada%")` ORDER BY `averageRating`

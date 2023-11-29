@@ -1,1 +1,0 @@
-SELECT * FROM title_ratings WHERE avg(rating) >= $input AND avg(rating) <=$input

@@ -1,1 +1,1 @@
-SELECT * FROM rating_table WHERE user_id = '6789'
+SELECT * FROM tb_imdb WHERE ((category='director') AND (job = \"director\")) OR((category= \"producer\")AND (job=\"producer\"))OR((category=\"actor\")AND (job=\"actor\")))

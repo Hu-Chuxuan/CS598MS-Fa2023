@@ -1,1 +1,0 @@
-SELECT t.* FROM imdb.title AS t INNER JOIN imdb.name AS n ON t.primaryName = n.primaryName WHERE t.category IN ('Director','Writer') AND t.job NOT LIKE '%actor%' OR t.job NOT LIKE '%producer%'

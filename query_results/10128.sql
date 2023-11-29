@@ -1,1 +1,11 @@
-SELECT t.* FROM (title_basics AS t INNER JOIN title_ratings AS r ON t.id = r.movieId) INNER JOIN name_basics as n ON t.primaryName = n.name WHERE (r.averageRating > 6 AND ((NOT EXISTS( SELECT * from title_crew where director = 'Joe Dante') OR NOT EXISTS( SELECT * from title_crew where writer = 'Steve Oedekerk')))) ORDER BY r.numVotes DESC LIMIT 1
+SELECT * FROM title_basic WHERE tconst =? AND (startyear >? OR (endyear <?)) ORDER BY avgrat DESC LIMIT? OFFSET?
+UNION ALL
+SELECT * FROM title_rated WHERE tconst =? AND (avgrat >=?) ORDER BY avgrat ASC LIMIT? OFFSET?
+UNION ALL
+SELECT * FROM title_crew WHERE tconst IN (?,?) UNION ALL SELECT * FROM title_principal WHERE tconst IN(?,?),category='act',job=?,characters!="[\"Assistant\"]"
+ORDER BY avgrat DESC LIMIT? OFFSET?
+UNION ALL
+SELECT * FROM title_principal WHERE tconst IN?(?,?),(category LIKE '%%'),job=?,characters!=""
+ORDER BY avgrat DESC LIMIT? OFFSET?
+UNION ALL
+SELECT * from title_rating where tconst=(?,?) order by avgrat desc LIMIT? offset?

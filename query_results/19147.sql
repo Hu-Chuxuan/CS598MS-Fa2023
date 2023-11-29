@@ -1,2 +1,1 @@
-SELECT t.* FROM title_basics AS t WHERE t.titleType = 'Movie' AND t.primaryTitle IN ('The 40-Year-Old Virgin')
-UNION ALL SELECT d.* FROM director AS d WHERE d.directorID in(select distinct directorID from title_rating where rating >= 8)
+SELECT title_id FROM title WHERE ((startyear >= 2000 AND startyear <= 2010)) AND ((endyear > 2000 OR endyear IS NULL))

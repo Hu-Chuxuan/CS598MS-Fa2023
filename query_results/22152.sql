@@ -1,1 +1,0 @@
-SELECT t.* FROM imdb.title AS t WHERE t.genre IN ('Comedy') AND ((t.startYear <= :year) OR (:year = '')) AND ((t.endYear >= :year) OR (:year = ''))

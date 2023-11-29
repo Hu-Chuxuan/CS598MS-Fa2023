@@ -1,1 +1,0 @@
-SELECT * FROM title_recommendation WHERE user_input = "The Dark Knight" AND user_preferences LIKE "%Dark Knight%" ORDER BY rating DESC

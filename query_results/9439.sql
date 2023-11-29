@@ -1,1 +1,1 @@
-SELECT t.* FROM title_basics AS t JOIN title_ratings AS r ON t.titleID = r.titleID WHERE t.primaryTitle LIKE '%Spider%'
+SELECT DISTINCT title_id FROM title_basics WHERE title_type ='movie' AND ((startyear > $1 OR startyear < $2)) ORDER BY avgrating DESC LIMIT 1 OFFSET $3

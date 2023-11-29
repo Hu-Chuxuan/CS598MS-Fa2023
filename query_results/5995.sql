@@ -1,1 +1,1 @@
-SELECT * FROM rating WHERE rating.title_id = '10782' AND user_id IN ('1', '2') ORDER BY avg(rating)
+SELECT * FROM title_basics WHERE primaryTitle='Scream' AND isAdult=1 ORDER BY avgRate DESC LIMIT 10 OFFSET 0 

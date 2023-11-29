@@ -1,1 +1,1 @@
-SELECT * FROM rating WHERE userID = 1 AND genre IN ('Sci-Fi','Action')
+SELECT DISTINCT r.* FROM ( SELECT * FROM title_ratings WHERE tconst =? ) AS RATINGS JOIN title_principals ON RATINGS.tconst=PRINCIPALS.tconst AND PRINCIPALS.category='Actor' ORDER BY AVG(RATINGS.numvotes)/AVG(RATINGS.averagerating)

@@ -1,1 +1,0 @@
-SELECT tb.title_type AS genre FROM titles AS t JOIN title_ratings AS tr ON t.movie_id =tr.movie_id WHERE t.primary_title LIKE '%' || $searchTerm || '%'

@@ -1,1 +1,0 @@
-SELECT * FROM title_principals WHERE category = "character" AND characters LIKE "%Groot%" OR characters LIKE "%Drax%" ORDER BY nconst DESC LIMIT 2

@@ -1,1 +1,1 @@
-SELECT * FROM title_basic WHERE title_type = 'fanstasy' AND director IN ('Peter Jackson') ORDER BY rating DESC LIMIT 6
+SELECT * FROM `title` WHERE (`primaryTitle` LIKE '%Lord%' OR `originalTitle` LIKE '%Lord%') AND (`startYear` BETWEEN? AND?)

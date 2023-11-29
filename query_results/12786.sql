@@ -1,1 +1,0 @@
-SELECT t.* FROM title_recommendation AS r INNER JOIN title_basics AS b ON r.titleId = b.id WHERE r.userInput LIKE '%' || :input || '%'

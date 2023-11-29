@@ -1,1 +1,1 @@
-SELECT * FROM 1 WHERE genre = "Comedy" AND rating > 6
+SELECT titleID FROM tconst WHERE primaryTitle='Superbad' OR primaryTitle='Airplane!' AND NOT averageRating > 6.0 ORDER BY numVotes DESC LIMIT 5 OFFSET 0

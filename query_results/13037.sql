@@ -1,1 +1,0 @@
-SELECT t.* FROM imdb.title AS t JOIN imdb.name AS n ON t.primaryTitle = n.primaryName WHERE n.birthYear < 1980 AND n.deathYear > 1980

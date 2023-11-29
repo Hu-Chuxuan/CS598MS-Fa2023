@@ -1,1 +1,0 @@
-SELECT * FROM title_basics WHERE titleType = "Movie" AND ((startYear <= 1978 OR startYear >= 2021)) AND ((endYear > 1978 AND endYear < 2021))

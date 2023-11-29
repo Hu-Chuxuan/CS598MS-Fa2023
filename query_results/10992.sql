@@ -1,1 +1,0 @@
-SELECT t.* FROM title AS t INNER JOIN rating AS r ON(r.titleId = t.id AND r.userID =?) WHERE r.rating >= 6

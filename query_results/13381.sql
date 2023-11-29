@@ -1,1 +1,0 @@
-SELECT * FROM (title_ratings WHERE genre IN ('Action') AND rating >= 7)

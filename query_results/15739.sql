@@ -1,1 +1,0 @@
-SELECT tc.* FROM imdb.title_basic AS tb INNER JOIN imdb.name_basic as nb ON tb.primaryTitle = nb.primaryName WHERE tb.isAdult = 1 AND nb.deathYear > 1968

@@ -1,0 +1,1 @@
+SELECT * FROM title_recommend WHERE num_votes > 5 AND (user_preferences LIKE '%dunk%') OR ((user_preferences LIKE '%just%' AND user_preferences NOT LIKE '%league%')) ORDER BY average_rating DESC LIMIT 10

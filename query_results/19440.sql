@@ -1,1 +1,1 @@
-SELECT * FROM ( SELECT tb.*, nc.*, c.* FROM title_basic AS tb JOIN name_basic AS nc ON nc.primaryName = tb.titleType JOIN cast AS c WHERE ((tb.isAdult = 'false') AND (nc.category='Actress')) ORDER BY c.job) AS T GROUP by T.titleType, T.averageRating LIMIT 8
+SELECT * FROM ( SELECT DISTINCT T.*, COUNT(*) AS cnt FROM ( SELECT * from imdb WHERE isAdult = 1 AND genre IN ('Drama','Horror') GROUP BY titleType ) AS T ) where cnt > 2 

@@ -1,1 +1,0 @@
-SELECT * FROM title_principals WHERE nconst = "actress" AND categories LIKE '%%'

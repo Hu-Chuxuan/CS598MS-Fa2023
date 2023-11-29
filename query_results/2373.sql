@@ -1,1 +1,2 @@
-SELECT * FROM rating WHERE ((titleType = "Drama" AND averageRating >= 6)) OR (((titleType <> "Comedy")AND(averageRating <= 6))) ORDER BY averageRating DESC LIMIT 5
+SELECT * FROM title WHERE titleType='movie' AND ((startYear BETWEEN 1990 AND 1999))
+AND (((genre = 'Drama') OR (genre IN ('Crime','Suspense'))))

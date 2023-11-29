@@ -1,1 +1,0 @@
-SELECT * FROM title_recommendation WHERE userId = '6' AND rating > 7

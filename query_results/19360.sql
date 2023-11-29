@@ -1,3 +1,0 @@
-SELECT t.titleID AS "Movie ID",
-       (CASE WHEN r.rating IS NULL THEN -1 ELSE 0 END) AS "Average Rating",
-       CASE WHEN r.numVotes = 'null' OR r.numVotes > 100 THEN 0 ELSE r.numVotes/r.averageRatng * 100 END AS "Num Vote Counts" FROM titles t LEFT JOIN ratings r ON t.titleID=r.titleID WHERE ((t.primaryName LIKE '%Joker%' AND t.startYear >= 2019)) ORDER BY AVG(r.avgRating), NumvoteCount DESC LIMIT 7

@@ -1,1 +1,1 @@
-SELECT * FROM rating WHERE genre LIKE '%Action%' AND year BETWEEN 2000 AND 2019
+SELECT * from title_ratings where averageRating>3 limit 10 order by numVotes desc

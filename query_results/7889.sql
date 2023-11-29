@@ -1,1 +1,0 @@
-SELECT t1.* FROM title_basics AS t1 JOIN name_basics AS nb ON t1.titleId = nb.titleID WHERE t1.isAdult=0 AND t1.genre IN ('Horror') ORDER BY t1.startYear DESC LIMIT 3

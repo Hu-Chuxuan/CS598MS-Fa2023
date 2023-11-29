@@ -1,1 +1,1 @@
-SELECT * FROM rating WHERE avg_rating >= 7 AND avg_rating <= 9
+SELECT * FROM title_basics WHERE startYear >= 1960 AND genre IN ('drama','thriller') ORDER BY numVote DESC LIMIT 3

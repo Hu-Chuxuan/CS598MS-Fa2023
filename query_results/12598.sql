@@ -1,1 +1,0 @@
-SELECT * FROM (title_recommendation AS r JOIN user_preferences UP ON r.primaryMovie = up.movieId WHERE up.userId='userid' AND r.rating >= 6.5 ORDER BY rating DESC LIMIT 3

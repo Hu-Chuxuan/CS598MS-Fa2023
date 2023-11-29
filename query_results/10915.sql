@@ -1,1 +1,0 @@
-SELECT t.* FROM title_recommendation AS rr INNER JOIN title_basics as t ON t.titleId = rr.titleId WHERE t.isAdult IS NOT NULL AND EXISTS( SELECT * from rating where rating.ratingId IN(SELECT rating.ratingID from rate_user_movie WHERE userMovieId in (SELECT m.titleId from rate_user_movie where userId=?)) GROUP BY titleId HAVING COUNT(*) >=? ) ORDER by avgRating DESC LIMIT 2

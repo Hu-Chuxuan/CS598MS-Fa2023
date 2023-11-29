@@ -1,1 +1,0 @@
-SELECT * FROM `title` WHERE (`title`.`genre` = 'romance' AND (`title`.`year` >= 2018)) ORDER BY RANDOM() LIMIT 7

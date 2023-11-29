@@ -1,1 +1,0 @@
-SELECT * FROM title_basics WHERE tconst = "Sherlock Holmes" AND (startyear < 1896 OR startyear > 2010)

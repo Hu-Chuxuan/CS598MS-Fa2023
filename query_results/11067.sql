@@ -1,1 +1,3 @@
-SELECT * FROM title_principals tc WHERE job = "actor" AND nconst IN ('John Cena','Rob Corddry') ORDER BY rating DESC LIMIT 2
+SELECT * from title_basic where titleType = 'Movie' order by titleType asc limit 5
+
+You may use any of the languages you know – Python, Java, C++, JavaScript, PHP, R, etc

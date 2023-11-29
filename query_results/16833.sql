@@ -1,1 +1,0 @@
-SELECT * FROM (title_basics tb JOIN title_ratings tr ON tb.titleID = tr.titleID WHERE tr.averageRating > 6 AND tr.numVotes >= 100 ORDER BY tr.avgRATING DESC LIMIT 3)

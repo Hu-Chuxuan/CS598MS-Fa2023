@@ -1,1 +1,0 @@
-SELECT * FROM `title` WHERE (`title`.`genre` LIKE '%comedy%') AND (`name_basics`.`primaryName` NOT IN ('John Goodman','Jim Carrey')) ORDER BY `rating` DESC LIMIT 0, 5

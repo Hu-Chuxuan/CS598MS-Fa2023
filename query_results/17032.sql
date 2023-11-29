@@ -1,1 +1,0 @@
-SELECT t.* FROM title_ratings AS r INNER JOIN title_crew as c ON r.tconst = c.tconst WHERE r.primaryTitle IN ('X-Men  (2000)','Thor: Ragnarok (2017)') AND r.averageRating >.5

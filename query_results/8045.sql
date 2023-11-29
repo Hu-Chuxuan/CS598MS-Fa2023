@@ -1,1 +1,1 @@
-SELECT * FROM movies WHERE type = 'Horror' AND rating > 6
+SELECT * FROM ((SELECT tconst AS TitleID, nconst AS NameID, avg(rating) AS Rating, count(*) AS VoteCount FROM title_ratings GROUP BY TitleID ) UNION ALL SELECT tconst AS TitleID, nconst AS NameID, avg(rating) AS Rating, count(*) AS VoteCount FROM title_ratings GROUP BY TitleID ) JOIN (SELECT DISTINCT nconst AS PersonID, tconst AS MovieID FROM title_principals WHERE category = 'actor') ON (PersonID = NameID)

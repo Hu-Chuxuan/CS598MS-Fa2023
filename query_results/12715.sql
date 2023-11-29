@@ -1,1 +1,0 @@
-SELECT * FROM title_recommend WHERE userInput LIKE '%deadpool%' AND userPreferencHistory = ['Deadpool  (2016),'Deadpool 2  (2018)] ORDER BY rating DESC

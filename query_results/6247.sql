@@ -1,1 +1,1 @@
-SELECT t.* FROM movies AS m JOIN actors as s ON m.actors = s.id WHERE ((m.title_type='movie') AND (m.primary_name LIKE '%time%' OR m.genre IN ('Science Fiction')))
+SELECT * FROM title WHERE genre='Science Fiction' AND (startYear >= 1970 OR startYear <= 1979)

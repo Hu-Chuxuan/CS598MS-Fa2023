@@ -1,1 +1,0 @@
-SELECT * FROM movie WHERE genre LIKE "Thriller" OR genre LIKE "Suspense"

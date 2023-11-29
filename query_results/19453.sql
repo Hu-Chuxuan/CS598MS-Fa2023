@@ -1,1 +1,1 @@
-SELECT * FROM title WHERE ttype = 'tt0078698' AND tconst >= 1990
+SELECT * FROM movie WHERE rating >.8 AND length < 120 OR rating >.9 AND length <= 140 OR rating >=.8 AND length = 120 AND rating <=.9 AND length == 120 ORDER BY rating DESC LIMIT 3 OFFSET 0

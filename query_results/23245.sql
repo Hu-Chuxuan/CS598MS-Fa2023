@@ -1,1 +1,0 @@
-SELECT t.title_type AS Movie Type FROM title_basic t JOIN name_basic s ON t.primaryTitle = s.name_id WHERE title_type IN ('Movie') AND CONCAT(s.firstName,' ',s.lastName) LIKE '%user%' GROUP BY t.title_type

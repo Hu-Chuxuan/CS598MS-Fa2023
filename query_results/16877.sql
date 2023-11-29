@@ -1,1 +1,0 @@
-SELECT t.* FROM titles AS t WHERE ((title_type = "movie" AND PRIMARY_NAME LIKE '%predator%') OR (director IN ('John McTiernan'))) AND AVERAGE_RATING >.6

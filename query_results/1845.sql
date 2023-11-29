@@ -1,0 +1,1 @@
+SELECT DISTINCT * FROM title_basic WHERE (((genre='documentary') OR (genre='short')) AND ((startyear BETWEEN '1894' AND '1900')))

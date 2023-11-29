@@ -1,1 +1,0 @@
-SELECT t.* FROM titles AS t JOIN cast AS c ON t.titleID = c.movieId WHERE c.characterCategory IN ('Principal Actor') AND c.primaryCharacter = 'Male' AND genre LIKE '%Supernatural%' ORDER BY rating DESC LIMIT 6

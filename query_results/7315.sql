@@ -1,1 +1,0 @@
-SELECT t.* FROM titles AS t WHERE rating >= 8 AND genre = 'comedy' OR rating < 9

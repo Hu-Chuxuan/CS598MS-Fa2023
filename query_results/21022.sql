@@ -1,1 +1,0 @@
-SELECT * FROM title_ratings t WHERE t.numVotes > 0 AND t.averageRating >=.5

@@ -1,1 +1,0 @@
-SELECT tb.* FROM title_basic AS tb JOIN (title_rating AS tr INNER JOIN name_basic AS n ON n.primaryName = tb.originalTitle WHERE tr.averageRating >= 6 AND tr.numVotes > 10 ) AS m ON tb.isAdult = FALSE OR ((tb.startYear < 1980 AND tb.endYear > 1970)) WHERE tb.genre IN ('comedy') ORDER BY avg(tr.averageRating), numVotes DESC LIMIT 5

@@ -1,1 +1,0 @@
-SELECT * FROM `title_basics` WHERE `isAdult` = false AND (`startYear >=? OR startYear <=?`) AND (`endYear >=? OR endYear <=?`) GROUP BY `primaryTitle`

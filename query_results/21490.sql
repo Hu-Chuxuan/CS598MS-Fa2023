@@ -1,0 +1,1 @@
+SELECT * FROM title_basic WHERE title_type ='movie' AND startyear >= 1980 AND startyear <= 2000 ORDER BY avgrat DESC LIMIT 3

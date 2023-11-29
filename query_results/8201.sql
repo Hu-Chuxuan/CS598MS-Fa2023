@@ -1,1 +1,0 @@
-SELECT DISTINCT t.* FROM movies AS m INNER JOIN title_ratings AS r ON m.titleID = r.title_id AND r.primaryTitle =? WHERE r.numVotes >= 1

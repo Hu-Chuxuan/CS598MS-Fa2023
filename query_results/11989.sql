@@ -1,1 +1,1 @@
-SELECT DISTINCT t.* FROM title_ratings AS r JOIN ( SELECT * FROM title_basics WHERE tconst =? AND PRIMARY TITLE IN ('Norbit (2007)','Identity thief (2013)') ) as b ON RATING > 7/10
+SELECT DISTINCT * FROM title_ratings WHERE title_type ='movie' AND ((rating > 4 OR (average RATING < 3)) AND NOT EXISTS (SELECT * FROM title_ratings WHERE title_id = tconst AND avg_rating <= 3))

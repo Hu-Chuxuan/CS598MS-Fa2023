@@ -1,1 +1,1 @@
-SELECT * FROM (title_ratings AS r INNER JOIN casts ON r.movieId = c.castMovieId AND c.job IN ('actress', 'actor') WHERE (r.averageRating >= 6 OR r.numVotes > 100)) LEFT OUTER JOIN (title_crew AS crew WHERE crew.directorID IN (SELECT directorId from title_crews WHERE rating >= 6))) INNER JOIN casts AS actors ON actor.castMovieId = movie.id
+SELECT DISTINCT tconst FROM title_basics WHERE tconst LIKE '%The%'

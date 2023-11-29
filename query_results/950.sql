@@ -1,1 +1,2 @@
-SELECT * FROM title_ratings WHERE rating >= X AND rating <= Y
+SELECT * FROM ((SELECT DISTINCT t.*,(SELECT avg(rating) from title_ratings where title=t.id limit 1) AS rate FROM title_basic WHERE t.category='actor')
+UNION ALL SELECT * FROM ((SELECT DISTINCT t.*,(SELECT avg(rating) from title_ratings where title=t.id limit 1) AS rate FROM title_basic WHERE t.category='character')))

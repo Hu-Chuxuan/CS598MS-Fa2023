@@ -1,1 +1,0 @@
-SELECT DISTINCT titles.* FROM titles LEFT JOIN ratings ON titles.titleID = ratings.movieID WHERE rating > 6 AND averageRating < 8

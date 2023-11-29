@@ -1,1 +1,0 @@
-SELECT DISTINCT tc.* FROM title_basics AS tb INNER JOIN title_rating as tr ON(tr.title_id = tb.title_id AND tr.average_rating > 6)

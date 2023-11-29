@@ -1,1 +1,0 @@
-SELECT * FROM title_rating WHERE tconst = 'title_ratings' AND averageRating > 7

@@ -1,1 +1,0 @@
-SELECT DISTINCT tb.titleId AS id, tb.originalTitle AS movie, tc.averageRating as rating FROM imdb.title_basics tb LEFT JOIN imdb.title_ratings tr ON(tb.primaryTitle = tr.titleId AND tr.isAdult IS NULL) INNER JOIN imdb.name_basic na ON(tb.id = na.title_basics.id) WHERE na.category IN ('actor') OR na.job IN ('director','writer') GROUP BY tb.titleId ORDER BY rating DESC LIMIT 10

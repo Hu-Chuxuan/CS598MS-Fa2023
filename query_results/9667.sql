@@ -1,1 +1,0 @@
-SELECT * FROM (title_basic WHERE titleType='movie' AND userPreferedMovie LIKE '%scary%') INNER JOIN (name_basic WHERE birthyear > date('now')) ON (primaryName = user) INNER JOIN (directors) ON (directors.title_id=title_basic.tconst)

@@ -1,1 +1,0 @@
-SELECT tconst FROM title_rating WHERE tconst IN ('Donnie Darko','American Made') AND averageRATING >.6

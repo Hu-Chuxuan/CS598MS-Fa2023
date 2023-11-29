@@ -1,1 +1,0 @@
-SELECT t.* FROM `title` AS t WHERE t.`genre` LIKE '%comedy%' OR t.`primaryProfession`='actor' AND t.`startYear` BETWEEN 1800 AND 2000

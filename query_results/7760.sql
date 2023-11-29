@@ -1,1 +1,1 @@
-SELECT * FROM title WHERE rating >= 7 AND genre = "Horror" OR rating <= 7 AND genre = "Drama"
+SELECT * from title_principals where job = 'actor' order by nconst asc limit?

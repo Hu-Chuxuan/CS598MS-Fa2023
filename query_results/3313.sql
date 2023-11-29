@@ -1,1 +1,1 @@
-SELECT * FROM movie_recommendation(title_basics, title_rating, name_basic, title_crew, title_principal)
+SELECT * FROM `title` WHERE `isAdult` = 1 AND (`startYear` >=? AND `endYear` <=?)

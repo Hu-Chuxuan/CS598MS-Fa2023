@@ -1,1 +1,1 @@
-SELECT * FROM `title` WHERE (`genre` =? AND `rating` >=?)
+SELECT t.* FROM ( SELECT * FROM title WHERE genre='Action') AS t INNER JOIN ( SELECT * FROM name WHERE profession IN ('actress','director')) AS p ON t.primaryTitle = p.nconst WHERE primaryTitle LIKE '%Max%' AND isAdult=0 ORDER BY avgrating DESC LIMIT 3 OFFSET 0

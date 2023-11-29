@@ -1,1 +1,1 @@
-SELECT DISTINCT tb.* FROM titles AS t INNER JOIN (title_ratings AS tr ON tb.title_id = tr.title_id AND tr.isAdult <> 'Y') LEFT OUTER JOIN (name_basics AS nb ON tb.title_id = nb.primaryTitleID) RIGHT OUTER JOIN (title_crew AS tc ON tb.title_id = tc.titleId) LEFT OUTER JOIN (title_principals AS tp ON tb.title_id = tp.titleId) WHERE ((tb.isAdult IS NULL OR tb.isAdult NOT IN ('Y')))
+SELECT * FROM tt0000001 WHERE ((averageRating >= 7 AND averageRating <= 7)) OR (numVotes > 500)

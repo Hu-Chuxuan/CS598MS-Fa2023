@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE rating >.7 AND genre = 'Horror' OR rating <.6

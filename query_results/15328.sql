@@ -1,1 +1,0 @@
-SELECT * FROM imdb.title WHERE rating >= 6 AND genre = "Horror" ORDER BY voteCount DESC LIMIT 3

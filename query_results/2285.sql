@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE titleType ='movie' AND genre IN ('comedy', 'horror') ORDER BY rating DESC LIMIT 2

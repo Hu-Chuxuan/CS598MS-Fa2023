@@ -1,1 +1,0 @@
-SELECT * FROM `title` WHERE (((`title`.`primaryTitle`) = "Hotel For Dogs ") AND ((`genre`='Comedy') OR (`genre`='Drama'))) ORDER BY `startYear`

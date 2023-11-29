@@ -1,1 +1,0 @@
-SELECT t.* FROM title_ratings AS r INNER JOIN title_basics as b ON r.title = b.id INNER JOIN name_basics as s ON b.name = s.id WHERE b.isAdult=true AND ((r.averageRating>3.6 OR r.numVotes>=500)) AND ((b.startYear<2000 OR b.endYear>=2018))

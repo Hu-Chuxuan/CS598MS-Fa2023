@@ -1,1 +1,0 @@
-SELECT * FROM (title_basics tb LEFT JOIN title_rating tr ON tb.primaryTitle = tr.titleID WHERE tb.isAdult=FALSE AND tb.startYear<2007 ORDER BY tr.averageRating DESC LIMIT 1)

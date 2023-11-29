@@ -1,0 +1,1 @@
+SELECT t.* FROM title AS t WHERE t.startYear >=? AND t.endYear <=? AND ((t.primaryTitle =? OR t.originalTitle LIKE CONCAT('%',?))AND ((t.isAdult =? OR NOT EXISTS (SELECT * from title_ratings where t.tconst=title_ratings.tconst))))

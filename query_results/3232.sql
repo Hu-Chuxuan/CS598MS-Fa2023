@@ -1,1 +1,0 @@
-SELECT DISTINCT * FROM title_ratings WHERE tconst IN ('Star Trek Beyond', 'Interstellar') AND avg(rating)>=7

@@ -1,1 +1,1 @@
-SELECT * FROM title_recommendation WHERE titleType ='movie' AND rating >= 6
+SELECT DISTINCT t.primaryTitle AS MovieTitle FROM `titles` AS t INNER JOIN `title_principals` AS p ON p.`tconst` = t.`tconst` WHERE t.isAdult=0 AND ((p.category='actor') OR (p.job='actor')) GROUP BY p.ordering HAVING COUNT(*) > 1 ORDER BY SUM((CASE WHEN rating IS NOT NULL THEN IFNULL(rating,'0') ELSE 0 END)/COUNT(*) ) DESC LIMIT 5 OFFSET 0 

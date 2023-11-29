@@ -1,1 +1,1 @@
-SELECT DISTINCT t1.* FROM title_basics AS t1 JOIN( SELECT * FROM title_rating WHERE ttitle_id =? ) as r ON t1.titleID=r.ttitle_id AND t1.isadult=false
+SELECT * FROM `title` WHERE (`startyear >= 2017`) AND ((`genre LIKE %drama%`) OR (`genre LIKE %action%`)) ORDER BY RAND() LIMIT 1

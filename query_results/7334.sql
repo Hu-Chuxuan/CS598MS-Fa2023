@@ -1,1 +1,0 @@
-SELECT * FROM title_principals WHERE director = "Jon Favreau" AND rating >= 7

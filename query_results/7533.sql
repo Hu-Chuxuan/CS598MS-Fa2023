@@ -1,1 +1,0 @@
-SELECT DISTINCT title_id FROM title WHERE title_type = “movie” AND title IN ('The Notebook','Cinderella') OR title IN('How To Lose A Guy In Ten Days')

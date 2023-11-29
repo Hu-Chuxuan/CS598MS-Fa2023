@@ -1,1 +1,0 @@
-SELECT t.* FROM titles AS t JOIN rating AS r ON t.titleID = r.titleID WHERE t.isAdult!= "Y" AND ((r.averageRating >= 6 OR r.numVotes > 98)) ORDER BY r.rating DESC LIMIT 3

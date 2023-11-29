@@ -1,1 +1,0 @@
-SELECT t.* FROM Title AS t JOIN Name AS n ON t.titleId = n.titleId WHERE n.primaryName LIKE '%Stephen King%' AND t.isAdult > 0 ORDER BY n.birthYear DESC LIMIT 1

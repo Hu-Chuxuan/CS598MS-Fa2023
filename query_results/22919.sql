@@ -1,1 +1,0 @@
-SELECT DISTINCT * FROM tconst WHERE tconst.titleType = "Animation" AND tconst.startYear > 1900

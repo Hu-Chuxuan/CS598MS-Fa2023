@@ -1,1 +1,0 @@
-SELECT * FROM (SELECT rating from title_ratings WHERE tconst = "Anchorman") AS ratings INNER JOIN (SELECT rating as avg from title_ratings) AS average ON (rating <= avg)

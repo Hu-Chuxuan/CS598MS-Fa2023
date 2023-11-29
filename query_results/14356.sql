@@ -1,1 +1,1 @@
-SELECT * FROM (title_ratings WHERE tconst = '0' AND avg(averageRating) > 7/10 UNION SELECT * FROM (name_basics WHERE nconst = '1') JOIN (title_principals WHERE categories LIKE '%actor%' OR categories LIKE '%actress%')) AS movies GROUP BY titles ORDER by rating DESC LIMIT 3
+SELECT tconst AS TitleID FROM title_basic WHERE isAdult = 1 AND PRIMARYNAME LIKE '%[A-Za-z]{3}%' GROUP BY TITLEID HAVING COUNT(*)>1 ORDER BY AVG RATING DESC LIMIT 1 OFFSET 0 

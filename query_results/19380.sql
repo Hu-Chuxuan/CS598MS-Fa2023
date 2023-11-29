@@ -1,1 +1,3 @@
-SELECT * FROM title WHERE titleType='movie' AND titleType LIKE '%Wedding%' OR titleType LIKE '%Dates%'
+SELECT * FROM title WHERE
+((rating > 5 AND genre = 'documentary') OR
+   ((rating < 5 AND genre <> 'comedy')))

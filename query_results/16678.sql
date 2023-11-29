@@ -1,1 +1,1 @@
-SELECT t.* FROM title_basic as t JOIN (title_rating r INNER JOIN name_basic na ON t.primaryTitle = na.primaryName) WHERE t.isAdult AND NOT EXISTS(SELECT * FROM rating_value v WHERE v.movieId=t.id AND v.ratingValue < 6/10)
+SELECT * FROM title_ratings WHERE averageRATING > 5 AND averageRATING < 7 ORDER BY averageRATING DESC LIMIT 1 OFFSET? FETCH NEXT? ROWS ONLY 

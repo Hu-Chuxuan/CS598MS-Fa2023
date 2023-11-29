@@ -1,0 +1,1 @@
+SELECT t.* FROM title AS t JOIN cast ON t.cast = cast.t WHERE t.isAdult IN ('0','1') AND t.startYear >= 1899 ORDER BY numVOTES DESC LIMIT 5 OFFSET 0

@@ -1,1 +1,0 @@
-SELECT * FROM ratings WHERE userid =? AND genre =?

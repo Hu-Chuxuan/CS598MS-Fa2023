@@ -1,1 +1,0 @@
-SELECT * FROM (title_basics INNER JOIN rating_basics ON title_basics.id = rating_basics.movieId) WHERE (((rating_basics.averageRating >= 8 AND rating_basics.numVotes > 0)) OR ((rating_basics.averageRating < 7 AND rating_basics.numVotes <= 0))) ORDER BY rating DESC LIMIT 10

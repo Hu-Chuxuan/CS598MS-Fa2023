@@ -1,1 +1,1 @@
-SELECT * FROM table WHERE title_type = "Animated" AND userPreferredMovie = "Zootopia"
+SELECT t.* FROM title AS t JOIN name AS n ON t.primaryName = n.primaryName WHERE t.startYear >= 2010 AND n.birthYear <= 1987 ORDER BY RAND() LIMIT 3

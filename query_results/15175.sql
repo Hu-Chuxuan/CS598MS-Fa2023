@@ -1,1 +1,0 @@
-SELECT DISTINCT * FROM title_ratings INNER JOIN title_basics ON title_ratings.title_id = title_basics.tconst WHERE title_rating >=.8 AND title_basics.isAdult=false ORDER BY title_average DESC LIMIT 1

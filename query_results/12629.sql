@@ -1,1 +1,0 @@
-SELECT * FROM title_recommendation WHERE (titleType = 'comedy') AND (averageRating >= 6/10)

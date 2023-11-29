@@ -1,1 +1,0 @@
-SELECT tc.* FROM title_recommendation tr JOIN title_basic tb ON tb.titleId = tr.titleId WHERE tr.userInput LIKE '%thrill%' AND tr.category IN ('Action', 'Drama') GROUP BY tb.titleId ORDER BY SUM(tr.numVotes)/COUNT(*) DESC LIMIT 10

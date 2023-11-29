@@ -1,1 +1,1 @@
-SELECT * FROM title_recommendation WHERE userInput LIKE '%Wreck%' AND genre ='comedy'
+SELECT t.* FROM title_basics AS t JOIN title_ratings r ON t.primaryTitle = r.title WHERE r.averageRating > 7 AND (r.numVotes >= 1 OR r.isAdult = true)

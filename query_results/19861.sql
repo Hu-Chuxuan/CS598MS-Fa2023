@@ -1,1 +1,1 @@
-SELECT * FROM title_principals WHERE category='actress' AND job IN ('actor', 'director') ORDER BY numVotes DESC
+SELECT * from title_basic where averageRating > 7 order by averageRating desc limit 10

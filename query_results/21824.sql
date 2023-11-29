@@ -1,1 +1,0 @@
-SELECT t1.* FROM title_basics AS t1 JOIN title_rating AS t2 ON t1.titleId = t2.movieId WHERE t1.isAdult=1 AND t1.startyear > 1978

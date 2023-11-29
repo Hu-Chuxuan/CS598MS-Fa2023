@@ -1,1 +1,0 @@
-SELECT * FROM (title_basics WHERE tconst =?) JOIN (name_basics WHERE nconst IN (?)) ON ((?)=?)

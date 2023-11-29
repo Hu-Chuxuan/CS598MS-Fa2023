@@ -1,1 +1,0 @@
-SELECT DISTINCT t.titleID FROM title_basics AS t JOIN title_rating AS r ON t.titleID = r.titleID WHERE r.averageRating >.8 AND t.primaryTitle LIKE '%Musical%' ORDER BY t.startYear DESC LIMIT 3

@@ -1,1 +1,0 @@
-SELECT * FROM title_ratings WHERE tconst =? AND (numVotes >? OR (numVotes <?)) GROUP BY rating

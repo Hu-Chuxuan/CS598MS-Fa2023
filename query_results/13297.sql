@@ -1,1 +1,0 @@
-SELECT * FROM movies WHERE ttype = "comedy" AND rating >= 6

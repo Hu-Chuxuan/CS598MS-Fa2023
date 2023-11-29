@@ -1,1 +1,0 @@
-SELECT * FROM title_recommend WHERE title_type = "Horror" AND genre IN ('Comedy','Drama') GROUP BY year

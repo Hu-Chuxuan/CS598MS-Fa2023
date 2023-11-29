@@ -1,1 +1,1 @@
-SELECT * FROM movies WHERE rating > x AND rating < y
+SELECT * FROM title_basics WHERE (primaryName LIKE '%Idina%' OR primaryName = 'idina%') AND (startYear BETWEEN 2000 AND 2010)

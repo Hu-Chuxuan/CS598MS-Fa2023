@@ -1,1 +1,1 @@
-SELECT t.* FROM title_basics AS t INNER JOIN title_ratings AS r ON t.titleID = r.titleID WHERE r.averageRating >= 6 AND r.numVotes > 2
+SELECT * FROM title_basic WHERE titleType = “Movie” AND genre LIKE '%Horror%' ORDER BY avgRATING DESC LIMIT 3 OFFSET 0 

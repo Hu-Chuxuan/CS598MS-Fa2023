@@ -1,1 +1,1 @@
-SELECT * FROM title WHERE genre = "comedy" AND rating > 8
+SELECT title_id FROM title WHERE title_type ='movie' AND (startyear > 1990 OR startyear < 1920)

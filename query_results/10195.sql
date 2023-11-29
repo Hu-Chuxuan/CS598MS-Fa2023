@@ -1,1 +1,0 @@
-SELECT tb.* FROM title_basic AS tb INNER JOIN name_basic as nb ON nb.primaryName = tb.titleType WHERE tb.isAdult=0 AND ((tb.startYear BETWEEN 1980 AND 1989 OR tb.endYear BETWEEN 1970 AND 1979)) AND tb.genre IN ('Action','Comedy') GROUP BY tb.title_id ORDER BY rating DESC LIMIT 6

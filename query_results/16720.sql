@@ -1,3 +1,3 @@
-SELECT * FROM
-(SELECT DISTINCT TITLE_BASICS.*, RATINGS.AVG AS AVERAGE_RATING, CREW.DIRECTOR, WRITERS.WRITER
-FROM TITLES_BASICS LEFT JOIN NAME_BASEDS USING (TCONST), TITLE_CREWS USING (TCONST), TITLE_PRINCIPALS USING (NCONST), RATINGS USING (TCONST), WRITERS USING (TCONST)
+SELECT t.* FROM title_basic AS t WHERE ((t.startyear <=? AND t.endyear >=?)) ORDER BY avgrating DESC LIMIT 5 OFFSET?
+
+The above SQL query will return 5 recommended films from the IMDB database based on the inputs provided by the user in his preference history and the current date range SELECTed by him

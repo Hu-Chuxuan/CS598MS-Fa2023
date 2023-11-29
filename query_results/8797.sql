@@ -1,1 +1,0 @@
-SELECT t.* FROM title AS t JOIN user_preferences AS u ON (u.userID =? AND t.titleID IN(u.titleID)) WHERE rating >=? GROUP BY t.titleID HAVING COUNT(*) > 1

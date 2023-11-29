@@ -1,1 +1,0 @@
-SELECT t.* FROM (title_basics AS t) JOIN (name_basics as n) ON(t.titleId = n.primaryTitle)

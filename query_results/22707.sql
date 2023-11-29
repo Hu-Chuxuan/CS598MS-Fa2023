@@ -1,1 +1,0 @@
-SELECT t.* FROM title_ratings r INNER JOIN title_basics b ON r.titleId = b.id WHERE r.averageRating >= 6 AND EXISTS( SELECT c.jobID from cast c where c.castingID=r.movieID ) GROUP BY rating

@@ -1,1 +1,0 @@
-SELECT t1.* FROM title_recommendation AS t1 INNER JOIN (title_ratings AS r1 LEFT OUTER JOIN (name_basics AS b1) ON(r1.primaryName = b1.primaryName)) WHERE r1.averageRating > 6 AND r1.numVotes >= 80 AND NOT EXISTS ((b1.primaryProfession LIKE &apos

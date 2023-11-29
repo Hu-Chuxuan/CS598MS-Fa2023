@@ -1,1 +1,0 @@
-SELECT t.titleId AS id, t.averageRating AS rated, COUNT(*) as count FROM title AS t JOIN title_ratings AS tr ON t.id = tr.tconst WHERE YEAR(tr.startDate)=2018 AND RATING >= 6.5 AND RATING < 8 GROUP BY AVG(rated), COUNT() ORDER BY AVERAGE DESC

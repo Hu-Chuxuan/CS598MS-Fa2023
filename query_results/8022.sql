@@ -1,1 +1,0 @@
-SELECT t1.* FROM title_recommendation AS t1 INNER JOIN title_ratings AS t2 ON t1.`primaryTitle` = t2.`titleID` AND t1.`startYear` BETWEEN? && t2.`averageRating` >? WHERE t1.`isAdult`!=?

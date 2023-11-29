@@ -1,1 +1,6 @@
-SELECT tc.* FROM TitleCrew as tc JOIN TitlePrincipal as p ON tc.directors = p.characters WHERE (tc.primaryName LIKE '%Margot Robbie%' OR tc.primaryName LIKE '%Jared Leto%') AND (p.job LIKE '%Actor%' OR p.job LIKE '%Director%) ORDER BY tc.startYear DESC
+SELECT * FROM tb_recommendation
+WHERE
+    numVotes > 1 AND
+    avgRate >= 6 AND
+    titleType = “Movie” OR
+    ((titleType <> “TVSeries” AND (startYear < 1900)))

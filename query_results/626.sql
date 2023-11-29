@@ -1,1 +1,0 @@
-SELECT tc.* FROM title_basic AS tb JOIN title_rating as tr ON tr.titleId = tb.titleId WHERE tr.averageRating >=? AND tr.numvotes >? ORDER BY tr.averageRating DESC LIMIT 5

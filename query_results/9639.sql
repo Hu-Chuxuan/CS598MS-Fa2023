@@ -1,1 +1,0 @@
-SELECT * FROM movies WHERE rating >.9 AND genre = 'Drama' ORDER BY RAND() LIMIT 5

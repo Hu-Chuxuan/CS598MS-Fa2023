@@ -1,1 +1,0 @@
-SELECT t.* FROM title_basics AS t WHERE (t.titleType = "movie" AND t.primaryTitle LIKE "%Heist%" OR t.originalTitle LIKE "%Heist%") ORDER BY t.startYear DESC LIMIT 6

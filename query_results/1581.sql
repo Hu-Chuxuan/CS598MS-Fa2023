@@ -1,1 +1,1 @@
-SELECT * FROM title WHERE genre = 'Drama'
+SELECT * FROM title WHERE ttype = 'Movie' AND (startyear BETWEEN 1945 AND 1949 OR endyear BETWEEN 1945 AND 1949)

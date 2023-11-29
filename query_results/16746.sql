@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE userPreferedMovies LIKE '%kid%' AND rating > 8

@@ -1,1 +1,1 @@
-SELECT tc.* FROM title_basics AS tb JOIN title_ratings AS tr ON tb.titleID = tr.titleID AND tb.primaryTitle =? WHERE NOT EXISTS( SELECT * from title_principals as tp where tp.job LIKE '%actor%' OR tp.job LIKE'%actress%') GROUP BY tb.titleID
+SELECT t.* FROM title AS t WHERE t.isAdult = 1 AND t.startYear > $year FROM (SELECT DISTINCT t.primaryTitle FROM title AS t ORDER BY RAND() LIMIT 1)

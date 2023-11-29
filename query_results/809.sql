@@ -1,1 +1,1 @@
-SELECT * FROM movies WHERE userInput LIKE '%I%'
+SELECT * from `titles` where `averageRating` > 5 order by `numVotes`, `startYear`

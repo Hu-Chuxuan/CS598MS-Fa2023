@@ -1,1 +1,1 @@
-SELECT * FROM tconst WHERE tconst.titleType = "noir" AND tconst.startYear >= 1960
+SELECT * FROM (SELECT title_id, title_type from title_basic where title_rating >=? AND title_rating <=? limit 10)

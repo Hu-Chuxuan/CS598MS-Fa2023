@@ -1,2 +1,0 @@
-SELECT * FROM
-(select t.*, n.name AS "primaryName", m.rating as rating from movies as m INNER JOIN cast as c ON c.movieId = m.id AND c.character IN ('Mary Poppins') INNER JOIN titles as t ON t.titleId = m.titleID LEFT OUTER JOIN name as n ON n.nameId=c.nameId WHERE n.category='Actor' OR n.category='Actress')

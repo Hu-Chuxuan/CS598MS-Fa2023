@@ -1,1 +1,0 @@
-SELECT * FROM (title_basics tb INNER JOIN title_rating tr ON tb.titleId = tr.titleId) WHERE (tr.numVotes > 0 AND ((tb.isAdult = 'false' OR b.isAdult IS NULL)) AND ((tb.startYear >=? AND tb.endYear <=?) OR (ISNULL(tb.endYear,'9999')=?)) AND ((tr.averageRating BETWEEN? AND?))) GROUP BY (tb.movieId)

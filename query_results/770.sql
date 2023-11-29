@@ -1,1 +1,4 @@
-SELECT * FROM (title_basics t INNER JOIN title_rating r ON t.primaryTitle = r.primaryTitle) WHERE NOT EXISTS(SELECT * FROM cast c INNER JOIN actors a ON c.castingID = a.id AND a.name IN ('Johnny Depp', 'Jim Carrey')) ORDER BY rating DESC LIMIT 6
+SELECT * FROM title WHERE genre IN ('documentary','comedy') AND ((rating > avg(rating)) OR (rating < avg(rating))) ORDER BY rating DESC LIMIT 5
+
+### Part B
+Write an algorithm to determine whether two string arrays contain identical contents using Loops and Array methods such as length() method and.equals() method. Write your code so that you don’t use any hardcoded values, variables or constants

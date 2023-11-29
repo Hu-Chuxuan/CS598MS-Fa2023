@@ -1,1 +1,1 @@
-SELECT DISTINCT t.* FROM title_basics AS t INNER JOIN name_basics as n ON t.titleType = n.primaryName WHERE t.startYear > 1970 AND t.endYear < CURRENT DATE
+SELECT * FROM title_basic WHERE ((startyear < 1960 OR startyear > 2000)) AND NOT EXISTS (SELECT * from Title_Crew where (directors = 'nm0005690')) ORDER BY startyear DESC LIMIT 5

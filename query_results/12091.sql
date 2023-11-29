@@ -1,1 +1,1 @@
-SELECT t.* FROM title_basic AS t JOIN cast AS c ON c.title_id = t.movie_id WHERE t.genre LIKE 'comedy' AND t.primaryTitle LIKE '%Meet%'
+SELECT DISTINCT t.* FROM imdb.title AS t JOIN imdb.title_principals ON t.imdbID = imdb.title_principals.title WHERE t.primaryTitle LIKE '%Meet%Dave%' AND t.startYear >= 2000 ORDER BY t.startYear DESC LIMIT 1 OFFSET 0

@@ -1,1 +1,0 @@
-SELECT * FROM movie WHERE rating >= x AND genre = y

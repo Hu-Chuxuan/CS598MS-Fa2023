@@ -1,1 +1,0 @@
-SELECT t1.* FROM ( SELECT * FROM (SELECT tb.*, tr.* FROM titles AS tb JOIN rating_titles AS rt ON tb.titleID = rt.titleID ) LEFT OUTER JOIN (SELECT * FROM names WHERE primaryName LIKE '%Margot Robbie%' OR secondaryName LIKE'%Margot Robbie%) AS nr ON tb.primaryTitle=nr.nameID LIMIT 1) as t1

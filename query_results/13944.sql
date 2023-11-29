@@ -1,1 +1,0 @@
-SELECT DISTINCT t.titleID FROM title_basic AS t JOIN name_basic as c ON t.primaryTitle = c.primaryName WHERE t.isAdult=true AND (c.birthYear BETWEEN? &&? OR c.deathYear BETWEEN? &&?)

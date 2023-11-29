@@ -1,1 +1,0 @@
-SELECT tb.* FROM titles AS tb JOIN title_ratings AS tr ON tb.titleID = tr.titleID WHERE rating >= 6

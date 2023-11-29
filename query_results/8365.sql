@@ -1,1 +1,1 @@
-SELECT * FROM title WHERE tconst IN ('title_basics','name_basics') AND (isAdult=false OR isAdult='true')
+SELECT * FROM title_basic WHERE isAdult = 0 AND titleType IN ('movie') ORDER BY avgRating DESC LIMIT 3 

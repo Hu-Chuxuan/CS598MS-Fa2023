@@ -1,1 +1,0 @@
-SELECT * FROM title_principals WHERE characters LIKE "Robin William" AND job = "actor"

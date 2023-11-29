@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE tconst = "title" AND category IN ('comedy') ORDER BY avg(rating)

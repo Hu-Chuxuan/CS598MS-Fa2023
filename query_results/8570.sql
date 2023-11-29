@@ -1,5 +1,0 @@
-SELECT * FROM
-( SELECT DISTINCT rating AS r, tname.title_id as tid, tname.title_type as titletype, tname.primary_title as primtitle, tname.original_title as origtitl, tname.isadult as adult, tname.startyear as staryear, tname.endyear as endyeard, tname.runtimeas minutess, tgenre.genres as genre, tcrew.director as director, tcrew.writer as writer from tname inner join tgenre on tname.title_id = tgenre.title_id where tname.title_type='movie' )
-AS A INNER JOIN
-( SELECT DISTINCT avgvoters AS v, tname.title_id as tid, tname.title_type as titletype, tname.primary_title as primtite, tname.original_title as originall, tname.isadult as adult, tname.startyear as staryeard, tname.endyear as endyeyar, tname.runtimeminute as runtimeminute, tname.genre as genre, tcrew.director as director, tcrew.writer as writer from tname inner join tgenre on tname.title_id= tgenre.title_id where tname.title_type='movie')
-AS B ON ((A.tid=(B.tid)) AND (((A.r>=6)&(&(B.avgvoter>=7)))&(&(A.r<=8)&(&(B.avgvoter<=9)))))

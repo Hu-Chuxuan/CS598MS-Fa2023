@@ -1,1 +1,0 @@
-SELECT DISTINCT tb.* FROM (title_basic tb) JOIN (name_basic nb ON tb.primaryTitle = nb.primaryName) WHERE ((tb.startYear > '1980' AND tb.endYear < '2000') OR (nb.deathYear IS NULL)) GROUP BY tb.titleType ORDER BY SUM(nb.numVotes)/SUM((CASE WHEN tb.isAdult THEN 1 ELSE -1 END)*tb.runtimeMinutes/60 + CASE WHEN nb.job IN ('writer', 'director') THEN 1 ELSE -1 END*COUNT(*) OVER()) DESC

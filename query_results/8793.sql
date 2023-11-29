@@ -1,1 +1,0 @@
-SELECT * FROM table WHERE genre = 'comedy' AND rating >= 7

@@ -1,1 +1,0 @@
-SELECT DISTINCT tc.* FROM title_crew AS tc JOIN name_basics ON tc.director = nb.primaryName WHERE tc.job LIKE 'Director' AND tc.category IN ('Drama', 'Horror') GROUP BY tc.title

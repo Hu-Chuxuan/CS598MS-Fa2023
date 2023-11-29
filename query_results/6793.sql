@@ -1,1 +1,0 @@
-SELECT title_basics.* FROM titles WHERE title_basics.startYear > 1980 AND title_basics.titleType = "movie" AND title_basics.isAdult IN ('true','false') GROUP BY title_basics.primaryTitle ORDER BY rating DESC LIMIT 3

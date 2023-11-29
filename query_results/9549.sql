@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE rating > 6 AND (title_genre = "Sci-Fi" OR title_genre LIKE "%sci%") ORDER BY avg(rating)

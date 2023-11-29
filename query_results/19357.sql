@@ -1,1 +1,0 @@
-SELECT t.* FROM title AS t JOIN genre g ON t.genre = g.name WHERE t.titleType LIKE "blockbusters" AND t.startYear > 1986 ORDER BY t.rating DESC LIMIT 5

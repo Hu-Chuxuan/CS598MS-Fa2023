@@ -1,1 +1,0 @@
-SELECT * FROM tconst WHERE titleType ='movie' AND ((startYear <= YEAR(CURRENT_TIMESTAMP)) OR (endYear >= YEAR(CURRENT_TIMESTAMP))) ORDER BY avgRatng DESC

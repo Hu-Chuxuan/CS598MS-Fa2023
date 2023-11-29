@@ -1,2 +1,1 @@
-SELECT * FROM (title_basic WHERE tconst =? OR nconst =? AND ((startYear <=? )AND(endYear >=?)) AND((averageRating >?))) UNION ALL SELECT * FROM (title_rating WHERE avg rating>?)
-UNION ALL select* from (name_basic WHERE primaryName=?) ORDER BY?
+SELECT * FROM title_ratings WHERE tconst IN ('tt0000001','tt0000002') AND avgrating > 7 ORDER BY numvotes DESC LIMIT 10 OFFSET?

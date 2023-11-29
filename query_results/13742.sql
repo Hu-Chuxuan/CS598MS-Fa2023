@@ -1,1 +1,0 @@
-SELECT * FROM (SELECT DISTINCT titles.*, rating_averages.*, ratings.numvoters, crew.*, principals.*) AS t WHERE t.titleType = 'Movie' AND t.isAdult = false ORDER BY t.rating_average DESC LIMIT 6

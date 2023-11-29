@@ -1,1 +1,1 @@
-SELECT tb.* FROM TitleBasics AS tb INNER JOIN NameBasics AS nb ON tb.titleID = nb.titleID AND tb.primaryTitle = nb.primaryName WHERE nb.category='actor' AND tb.genre IN ('Horror') ORDER BY tb.startYear DESC LIMIT 3
+SELECT * from ((SELECT * from title_basic where titleType ='movie') inner join (SELECT * from name_basic where nconst like '%n%')) as b where ((b.primaryName like %?%)) order by b.startyear desc limit?

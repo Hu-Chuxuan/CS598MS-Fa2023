@@ -1,1 +1,0 @@
-SELECT DISTINCT t.title_type AS Title Type, t.start_year as Start Year, t.end_year as End Year FROM imdb.title_types t JOIN imdb.movies m ON t.id = m.imdbrated_type WHERE m.releaseDate >= '2016-12-01' AND m.releaseDate <= '2019-12-01'

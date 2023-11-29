@@ -1,1 +1,0 @@
-SELECT DISTINCT movies.* FROM title_ratings ratings JOIN titles ON ratings.titleId = titles.id WHERE rating > 8 AND (rating >= 7 OR rating <= 7)

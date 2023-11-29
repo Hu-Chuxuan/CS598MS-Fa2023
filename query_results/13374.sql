@@ -1,1 +1,0 @@
-SELECT t.title_id FROM Title t INNER JOIN Name n ON t.name_id = n.movieId

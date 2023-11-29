@@ -1,1 +1,1 @@
-SELECT * FROM title_basics WHERE tconst = "comedy" AND avg(rating) >.8
+SELECT * FROM title_ratings WHERE averageRating > 5 AND averageRating < 10 ORDER BY avgrating DESC LIMIT 5 OFFSET 0

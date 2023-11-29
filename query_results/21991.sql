@@ -1,1 +1,0 @@
-SELECT * FROM table WHERE userInput LIKE '%horror%' AND userInput LIKE '%comedy%'

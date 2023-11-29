@@ -1,1 +1,0 @@
-SELECT * FROM rating WHERE rating.title = userInput

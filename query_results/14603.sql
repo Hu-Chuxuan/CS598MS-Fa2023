@@ -1,1 +1,0 @@
-SELECT * FROM (SELECT ratingAverage AS avgRat from ratings WHERE ratingAverage >= 8) as TOPRATINGS GROUP BY genre

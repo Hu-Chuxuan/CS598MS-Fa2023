@@ -1,1 +1,0 @@
-SELECT t.* FROM title_principals AS p JOIN title_basics AS b ON p.titleId = b.id WHERE ((b.startYear >= :yearFrom AND b.endYear <= :yearTo)) OR (:genre LIKE '%super%') ORDER BY RANDOM() LIMIT 1

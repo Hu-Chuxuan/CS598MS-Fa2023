@@ -1,1 +1,2 @@
-SELECT t.* FROM title_basics AS t JOIN name_basics AS n ON t.`titleType` = n.`primaryTitle`
+SELECT * FROM ( SELECT DISTINCT title_id AS id, CONCAT('Recommendation for ',title_type,' ',title_originalTitle) AS title_recom FROM (( SELECT distinct title_id from imdb_titles WHERE (((title_type = "movie") AND (title_year >= 1990)) OR (title_type IN ("tvseries","tvepisode"))))) UNION ALL (SELECT distinct title_id from imdb_titles WHERE ((title_type="movie") AND (startYear < 1990)))) )
+WHERE NOT EXISTS (SELECT title_id FROM imdb_user_preferences WHERE title_id=id)

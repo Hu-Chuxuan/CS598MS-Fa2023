@@ -1,1 +1,0 @@
-SELECT * FROM title_recommend WHERE userPreferredMovie = 'Thor: Ragnarok' AND userHistory LIKE '%%'

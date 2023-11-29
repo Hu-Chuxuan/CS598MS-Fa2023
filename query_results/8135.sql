@@ -1,1 +1,1 @@
-SELECT * FROM title WHERE rating >.8 AND genre = "Drama" OR genre ="Comedy"
+SELECT DISTINCT t.* FROM title_basic AS t JOIN title_principal AS p ON t.tconst = p.tconst WHERE t.category='director' AND ((p.job LIKE '%[\"Director\"]%') OR (p.job LIKE '%[\"Production Designer\"]%')) ORDER BY RAND() LIMIT 10

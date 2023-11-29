@@ -1,1 +1,0 @@
-SELECT t.* FROM title_basics AS t INNER JOIN name_basics ON t.primaryTitle = name_basics.title_id WHERE t.isAdult=true AND t.startYear>=2017

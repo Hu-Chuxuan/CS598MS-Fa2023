@@ -1,1 +1,0 @@
-SELECT tc.* FROM title_basics AS tb INNER JOIN title_rating as tr ON tr.title_id = tb.titleID AND tr.userID=? WHERE? in ('Memento  (2000)','The Bourne Identity  (2002)','Taken  (2008)','Identity  (2003)') ORDER BY tc.startyear DESC

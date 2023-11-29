@@ -1,1 +1,1 @@
-SELECT * FROM title_recommendation WHERE userPreferedMovie LIKE '%Transformer%' AND rating >= 8
+SELECT * from title_principals where title_id='tt0000001' order by desc limit 100

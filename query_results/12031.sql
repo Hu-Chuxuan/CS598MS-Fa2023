@@ -1,2 +1,0 @@
-SELECT DISTINCT titles.* FROM `title_basics` AS tb JOIN `name_basics` AS nb ON tb.`primaryTitle` = nb.`primaryName`,
-    tb.`startYear` <=? AND tb.`endYear` >=? AND nb.`category` IN ('Comedy') AND NOT EXISTS( SELECT * FROM `title_principals` WHERE `job`='Director')

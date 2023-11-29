@@ -1,1 +1,0 @@
-SELECT DISTINCT t.* FROM title AS t JOIN name_basics AS b ON t.title_id = b.name_id WHERE b.primaryName LIKE '%' || :userInput || '%'

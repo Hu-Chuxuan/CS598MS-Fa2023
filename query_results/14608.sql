@@ -1,1 +1,0 @@
-SELECT * FROM movies WHERE title_type='movie' AND primary_title = 'Space Jam'

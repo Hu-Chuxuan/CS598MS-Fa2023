@@ -1,1 +1,0 @@
-SELECT DISTINCT movies.* FROM title_recommendation AS mr INNER JOIN title_principals AS mp ON mp.movienumber = mr.titleid WHERE mr.userID =? AND EXISTS( SELECT * from title_principals WHERE movieNumber IN (mr.movieNumber)) GROUP BY movies.titleid ORDER BY rating DESC

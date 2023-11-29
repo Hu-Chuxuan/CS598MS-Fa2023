@@ -1,1 +1,0 @@
-SELECT * FROM movies WHERE tconst = "title" AND nconst="name"

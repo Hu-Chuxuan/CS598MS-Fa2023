@@ -1,1 +1,0 @@
-SELECT tc.* FROM title_ratings r INNER JOIN (title_crew c) ON r.director = c.name WHERE r.averageRating > 7 AND NOT EXISTS( SELECT * FROM title_ratings WHERE director= 'Robert Wise' ) ORDER BY r.numVotes DESC LIMIT 0, 9

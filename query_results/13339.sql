@@ -1,1 +1,0 @@
-SELECT * FROM ratings WHERE title_id IN(SELECT t.titleID from titles AS t where rating>8)

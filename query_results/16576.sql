@@ -1,1 +1,1 @@
-SELECT * FROM (title_recommendation INNER JOIN (movie_preferences INNER JOIN user WHERE movie_preferences.user_id = user.userID)) ON (movie_preferences.rating >= user.minimum_score AND movie_preferences.rating <= user.maximum_score)
+SELECT * FROM title_basic WHERE titleType='movie' AND (((startYear>1890 OR startYear<2000))AND ((endYear>1890 OR endYear<2000))) AND ((runtimeMinutes>=30 OR runtimeMinutes<=200))

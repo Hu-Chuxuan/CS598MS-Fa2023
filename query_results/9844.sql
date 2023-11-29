@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE (((titleType = "movie") AND ((startYear BETWEEN 2003 AND 2008))) OR ((director IN ('Quentin Tarantino'))) OR ((writer IN('Willem Dafoe')))) LIMIT 1

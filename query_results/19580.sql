@@ -1,1 +1,1 @@
-SELECT * FROM title_principals WHERE ((characters LIKE '%romance%') OR (job LIKE '%comedy%')) AND NOT EXISTS( SELECT * from user_inputs where title_id = titleID)
+SELECT tconst FROM title_basic WHERE tconst = 'tt0000001' AND ((startyear <= \'\') OR (\'' + str(userinput[0])+ '' >= startyear)) AND (endyear > \'\')

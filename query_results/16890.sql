@@ -1,1 +1,0 @@
-SELECT * FROM (title_basics tb JOIN title_ratings tr ON tb.titleId = tr.titleId) WHERE ((tr.averageRating BETWEEN '7/10') AND (tr.numVotes >= '9')) OR (tb.isAdult == TRUE)

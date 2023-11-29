@@ -1,1 +1,0 @@
-SELECT t.titleID AS id, r.rating AS rating FROM title_ratings r INNER JOIN title_basics t ON r.averageRating = t.primaryTitle WHERE t.isAdult = "false" AND t.startYear <= 1970 ORDER BY r.numVotes DESC LIMIT 6

@@ -1,1 +1,0 @@
-SELECT tb.* FROM imdb.title_basic AS tb INNER JOIN imdb.title_rating AS tr ON tr.tconst = tb.tconst WHERE tb.primaryTitle LIKE '%gravity%' AND NOT EXISTS( SELECT * from imdb.name_basic where nconst='Gravity') ORDER BY rating DESC LIMIT 3

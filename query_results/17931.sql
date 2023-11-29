@@ -1,1 +1,0 @@
-SELECT * FROM title_principals WHERE category = "character" AND job LIKE '%actor%' OR job LIKE "%director%" ORDER BY nconst DESC LIMIT 1

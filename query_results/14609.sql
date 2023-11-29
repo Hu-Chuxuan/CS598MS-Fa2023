@@ -1,1 +1,0 @@
-SELECT * FROM movies WHERE genre IN ('Action','Comedy') AND rating >.6

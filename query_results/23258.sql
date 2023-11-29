@@ -1,1 +1,0 @@
-SELECT * FROM title_principals WHERE category = "Actor" AND job IN ("Lead Actor", "Supporting Actress") AND nconst >= 8

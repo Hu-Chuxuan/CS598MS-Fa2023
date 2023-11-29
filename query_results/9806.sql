@@ -1,1 +1,0 @@
-SELECT * FROM title_basics tb WHERE tb.startYear >=? AND tb.endYear <=?

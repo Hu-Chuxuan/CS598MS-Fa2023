@@ -1,1 +1,0 @@
-SELECT DISTINCT t.titleId FROM title_ratings AS r JOIN title_basic AS b ON(r.titleId = b.id) WHERE (b.isAdult=false AND b.startYear>=1970 AND b.endYear<=2020) AND ((r.averageRating >= 7 OR r.numVotes > 20)) ORDER BY r.averageRating DESC LIMIT 10

@@ -1,1 +1,0 @@
-SELECT * FROM TITLE_BASICS WHERE titleType = “movie” AND genre IN(“Comedy”, “Action & Adventure”)

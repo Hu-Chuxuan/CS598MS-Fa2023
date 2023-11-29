@@ -1,1 +1,0 @@
-SELECT DISTINCT tb.* FROM titles AS t INNER JOIN title_rating as tr ON tb.titleID = tr.titleID WHERE tr.numvotes >= 1 AND tb.primaryTitle LIKE '%Selma%'

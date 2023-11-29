@@ -1,1 +1,1 @@
-SELECT t.* FROM title_basics AS t WHERE t.titleType = "movie" AND EXISTS( SELECT * FROM title_recommendation_history AS trh WHERE trh.userID =? AND trh.titleID IN (SELECT DISTINCT titleId FROM title_viewed AS tv JOIN title_rating_history AS r ON tv.titleID=r.titleID JOIN user_profile AS uo USING (userid)) ) ORDER BY rating DESC LIMIT 5
+SELECT * FROM title_principals WHERE titleId = <titleId> AND (category LIKE '%act%' OR category LIKE '%writer%')

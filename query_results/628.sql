@@ -1,1 +1,0 @@
-SELECT tb.* FROM title_basics AS tb INNER JOIN name_basics ON tb.titleID = nb.titleID WHERE (tb.isAdult!= "true" AND tb.startYear BETWEEN? AND? AND tb.endYear >=?)

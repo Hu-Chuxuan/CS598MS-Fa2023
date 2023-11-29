@@ -1,1 +1,0 @@
-SELECT * FROM  ( SELECT  'title_basics'.*, avg(rating)/numvotes AS rating,  COUNT(*) OVER () AS total_watched FROM   ('title_ratings') WHERE  'title_ratings'.movie_id = 'title_basics'.movie_id GROUP BY 'title_basics'.movie_id ORDER BY rating DESC LIMIT 1 ) A JOIN  ('name_basics', 'title_crew','title_principals') B ON A.movie_id=B.movie_id

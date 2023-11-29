@@ -1,1 +1,1 @@
-SELECT title.* FROM title_basics as tb LEFT JOIN title_ratings as tr ON tb.titleID = tr.titleID AND tr.averageRating >.8 WHERE tr.numVotes >= 1
+SELECT * FROM title_principals WHERE category = 'actor' AND job IN ('actor') ORDER BY title_id DESC LIMIT 1 OFFSET 1

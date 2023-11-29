@@ -1,1 +1,0 @@
-SELECT * FROM rating WHERE rating.title_id = 'X' AND rating.user_id='Y'

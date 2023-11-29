@@ -1,1 +1,1 @@
-SELECT * FROM title_ratings WHERE averageRating >= 9 AND numVotes > 6
+SELECT * FROM title_principals WHERE nconst = 'nm0000001' AND category IN ('actor') ORDER BY ordering ASC LIMIT 1

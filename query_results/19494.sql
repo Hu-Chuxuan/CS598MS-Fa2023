@@ -1,1 +1,0 @@
-SELECT * FROM `title_basic` WHERE rating >= 8 AND runtime < 10

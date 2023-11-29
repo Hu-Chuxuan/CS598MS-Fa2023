@@ -1,1 +1,0 @@
-SELECT t.* FROM imdb.title AS t WHERE t.primaryTitle LIKE '%love%' AND NOT EXISTS( SELECT * from imdb.title as t where t.primaryTitle like '%series%' ) AND t.startYear <=?

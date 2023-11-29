@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE titleType = "movie" AND ((titleType <> "short") OR (primaryTitle IS NOT NULL)) AND (genre IN ('Comedy','Satire'))

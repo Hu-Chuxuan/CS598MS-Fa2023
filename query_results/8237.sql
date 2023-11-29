@@ -1,1 +1,0 @@
-SELECT * FROM table WHERE titleType = "movie" AND rating >= x AND rating <= y

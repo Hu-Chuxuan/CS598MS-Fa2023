@@ -1,1 +1,0 @@
-SELECT DISTINCT titles.* FROM title_basics AS tb INNER JOIN title_ratings AS tr ON tr.titleID = tb.titleID AND tr.rating >= 7 WHERE tb.isAdult=false ORDER BY rating DESC LIMIT 3

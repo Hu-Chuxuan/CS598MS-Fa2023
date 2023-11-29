@@ -1,1 +1,0 @@
-SELECT * FROM movieRecommendationSystem WHERE userInput = 'Iron Man' AND userPreferneceHistory = ['Iron Man  (2008)]'

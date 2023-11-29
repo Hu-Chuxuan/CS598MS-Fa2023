@@ -1,1 +1,0 @@
-SELECT * FROM rating WHERE userInput = "The Matrix" AND genre LIKE "%Sci-Fi%" OR genre LIKE "%Action%"

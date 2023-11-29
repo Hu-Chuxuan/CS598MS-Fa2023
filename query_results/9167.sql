@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE rating > 6 AND genre = "Action" ORDER BY avg(rating)

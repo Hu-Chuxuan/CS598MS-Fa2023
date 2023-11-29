@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE titleType ='movie' AND startYear BETWEEN "1995" AND "1999"

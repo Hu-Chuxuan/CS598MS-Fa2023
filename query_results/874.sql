@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE (genre = 'Horror' OR genre LIKE '% Horror%') AND (startyear >= $userPreference[0].startYr AND startyear <= $userPrefence[0].endYr)

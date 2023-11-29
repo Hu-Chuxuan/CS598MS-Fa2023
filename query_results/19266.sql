@@ -1,0 +1,1 @@
+SELECT * FROM title_principals WHERE category = 'actor' AND job IN ('[assistant], [blacksmith]) ORDER BY AVG(averageRating), numVOTES DESC LIMIT 1 OFFSET 0

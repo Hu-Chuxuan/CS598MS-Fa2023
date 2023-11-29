@@ -1,1 +1,0 @@
-SELECT t.* FROM title AS t JOIN name AS n ON t.primaryTitle = n.title WHERE t.category='action' AND t.job IN ('director','writer') ORDER BY t.rating DESC LIMIT 1

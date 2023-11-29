@@ -1,1 +1,0 @@
-SELECT * FROM title_ratings INNER JOIN title_basic ON title_rating.title_id = title_basic.title_id WHERE title_basic.isAdult = 'false' AND title_basic.startyear >= 1970 ORDER BY title_rating.averageRATING DESC LIMIT 6

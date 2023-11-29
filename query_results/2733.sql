@@ -1,1 +1,0 @@
-SELECT * FROM `title_rating` WHERE (`movieID` IN ('87882','24923','5599') AND `userID`='1')

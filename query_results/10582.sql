@@ -1,1 +1,0 @@
-SELECT t1.* FROM (title_basics AS t1 JOIN (title_rating as tr ON tr.primaryTitle = t1.primaryTitle AND t1.isAdult <> "yes" ) WHERE ((tr.averageRating > 7 OR tr.numVotes >= 10)) AND (((tr.averageRating < 8 OR tr.numVotes <= 6))) AND (tr.numVotes!= null))

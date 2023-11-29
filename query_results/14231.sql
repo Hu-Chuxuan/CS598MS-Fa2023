@@ -1,0 +1,1 @@
+SELECT * FROM title_ratings WHERE averageRating >= 8 AND avgvotes > 1000 GROUP BY titleid ORDER BY avgvotes DESC LIMIT 5 OFFSET 20

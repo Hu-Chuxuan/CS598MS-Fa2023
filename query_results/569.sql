@@ -1,1 +1,2 @@
-SELECT * FROM title_basics WHERE (titleType = "Action" OR titleType = "Comedy") AND ((startYear > :yearStart OR startYear < :yearEnd)) AND (endYear >= :yearStart || endYear <= :yearEnd)
+SELECT * FROM 
+    `imdb`. `title_basics`, `imdb`. `title_rated`, imdb.`name_basics`, `imdb`.`title_crew`, `imdb`.`title_principals` WHERE (`imdb`.`title_basicstitleType`) = ('Movie') AND ((`imdb`.`title_basicstitleType`) LIKE '%sci%fi%' OR (`imdb`.`title_bastitleType`) IN('TV EPISODE','VIDEO')) ORDER BY RAND() LIMIT 5

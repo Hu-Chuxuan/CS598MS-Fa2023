@@ -1,1 +1,0 @@
-SELECT title_id AS tID, rating AS rATING FROM `title` WHERE type = "romance" AND average RATING >.7

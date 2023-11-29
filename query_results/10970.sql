@@ -1,2 +1,0 @@
-SELECT * FROM
-(select t.* from title_basic as t join cast(name_basics.birthYear + '-' + name_basics.deathYear AS STRING) as age) where (age BETWEEN "1976-1980") AND ((titleType = "Drama" OR titleType = "Comedy"))

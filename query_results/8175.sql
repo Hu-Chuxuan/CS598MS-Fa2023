@@ -1,1 +1,0 @@
-SELECT DISTINCT m.* FROM titles AS t JOIN casts as c ON t.titleID = c.titleID AND c.castID IN (SELECT distinct casting_id from casting WHERE casting_id NOT LIKE '%(unknown actor)%' OR casting_id not like '%(stunt double)%') ORDER BY rating DESC LIMIT 3

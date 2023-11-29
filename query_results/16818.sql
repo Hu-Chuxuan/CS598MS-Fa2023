@@ -1,1 +1,1 @@
-SELECT * FROM movies WHERE rating >= <insert your threshold here> AND age <=<insert your user's age here>
+SELECT * FROM title_basic WHERE titleType ='movie' AND startYear >= 1980 OR startYear <= 1980 ORDER BY AVG(rating)

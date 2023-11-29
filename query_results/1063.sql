@@ -1,1 +1,1 @@
-SELECT * FROM imdb.title WHERE genre = 'Horror' AND rating >.8
+SELECT * from title where ttype = 'Movie' order by avgrat desc limit 2

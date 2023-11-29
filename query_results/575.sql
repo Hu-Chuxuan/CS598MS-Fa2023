@@ -1,1 +1,1 @@
-SELECT * FROM title WHERE rating > 7 AND runningTime < 2h
+SELECT t.* FROM title AS t WHERE t.primaryTitle LIKE '%Jumanji%' OR t.originalTitle LIKE '%Jumanji%'

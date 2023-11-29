@@ -1,1 +1,0 @@
-SELECT t.* FROM titles AS t JOIN rating_titles r ON t.titleID = r.movieID WHERE r.rating >= 6 AND year > 1970 GROUP BY genre ORDER BY avg(r.rating), numvotes DESC LIMIT 10

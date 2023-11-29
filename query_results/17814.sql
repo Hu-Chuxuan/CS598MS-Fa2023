@@ -1,1 +1,0 @@
-SELECT * FROM `title` WHERE `genre` IN ('Comedy') AND (`startYear >= $yearFrom - 2`) AND (`endYear <= $yearTo + 2`) ORDER BY RAND() LIMIT 6

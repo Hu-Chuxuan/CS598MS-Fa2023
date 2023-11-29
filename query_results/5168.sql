@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE tconst = 'T' AND startYEAR >=? ORDER BY avgrating DESC LIMIT 5

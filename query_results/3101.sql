@@ -1,1 +1,0 @@
-SELECT * FROM `title` WHERE `genre` = 'Animation' AND `startyear` <= "2020" ORDER BY rating DESC LIMIT 1

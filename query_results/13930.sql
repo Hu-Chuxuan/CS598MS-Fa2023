@@ -1,1 +1,1 @@
-SELECT t1.* FROM title_basic AS tb JOIN title_rating AS tr ON tr.title_id = tb.title_id
+SELECT * FROM (SELECT * FROM `title` WHERE (`startyear` =? AND `endyear` <=?)) AS t INNER JOIN (`title_rating` WHERE (`average_rating` >=? AND `numvotes` >?))

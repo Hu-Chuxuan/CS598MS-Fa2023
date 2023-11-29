@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE rating > 6 AND rating < 7 OR rating = 7

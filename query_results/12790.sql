@@ -1,1 +1,0 @@
-SELECT * FROM `title_ratings` WHERE 'genre' LIKE '%Fantasy%' ORDER BY rating DESC LIMIT 6

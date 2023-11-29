@@ -1,1 +1,0 @@
-SELECT tb.* FROM title_basics AS tb JOIN title_ratings as tr ON tb.titleId = tr.titleID WHERE tb.titleType IN ('comedy') AND NOT EXISTS( SELECT * from title_principals where job = "actor" and character in ("Brad Pitt", "Ben Stiller") ) GROUP BY tb.titleID HAVING COUNT(*) > 0 ORDER BY tb.startYear ASC LIMIT 6

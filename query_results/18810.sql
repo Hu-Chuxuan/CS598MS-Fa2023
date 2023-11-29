@@ -1,1 +1,4 @@
-SELECT * FROM ( SELECT DISTINCT title AS tname, rating AS rrating, avg(ratting) as rrating FROM ratings GROUP BY tname, ratting ) A WHERE tname LIKE '%Murder%' AND rrating >= 5
+SELECT * FROM
+    ( SELECT *, ROW_NUMBER() OVER(PARTITION BY tconst ORDER BY averageRating DESC ) AS rnk FROM titleratings WHERE tconst IN ('tt0000001','tt0000002') AND numvotes > 1000 GROUP BY tconst)
+WHERE rnk <= 1 OR rnk >= 5
+ORDER BY avgrating DESC LIMIT 10

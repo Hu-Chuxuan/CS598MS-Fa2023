@@ -1,1 +1,0 @@
-SELECT DISTINCT(title_id), title_name FROM imdb.title_principals WHERE nconst = "Characters" AND category IN ('Male') ORDER BY title_ordering ASC

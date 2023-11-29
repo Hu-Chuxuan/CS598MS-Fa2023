@@ -1,1 +1,0 @@
-SELECT * FROM TITLE_BASICS WHERE titleType = "movie" AND titleType LIKE '%face%' OR titleType LIKE %'john%'

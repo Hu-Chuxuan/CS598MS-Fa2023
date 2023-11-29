@@ -1,0 +1,1 @@
+SELECT * FROM title_ratings WHERE tconst = \'tt0000001\' AND avgRat >= 4 ORDER BY avgRATING DESC LIMIT 5 OFFSET 0 

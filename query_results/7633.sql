@@ -1,1 +1,0 @@
-SELECT DISTINCT t.titleID FROM title_ratings r JOIN title_basic b ON r.movieID = b.id WHERE r.averageRating > 8 AND b.startYear >= 2000

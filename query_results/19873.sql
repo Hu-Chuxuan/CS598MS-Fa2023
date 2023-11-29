@@ -1,1 +1,0 @@
-SELECT DISTINCT t.title_basics.* FROM imdb.title AS t INNER JOIN imdb.name_basics ON(imdb.title.primaryName = imdb.name_basic's.primaryName AND imdb.title.birthYear BETWEEN imdb.name_basics.birthYear AND imdb.name_basics.deathYear)

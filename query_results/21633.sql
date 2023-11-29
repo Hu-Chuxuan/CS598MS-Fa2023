@@ -1,1 +1,0 @@
-SELECT DISTINCT t.titleId AS idMovie FROM title_basics t JOIN genre g ON g.genreId = t.genres WHERE t.startYear BETWEEN? AND? ORDER BY ABS(AVG(g.averageRating)) DESC

@@ -1,1 +1,1 @@
-SELECT * FROM title WHERE tconst = "movie" AND (titleType="comedy", titleType="drama") AND ((startYear <= 1970 OR startYear > 2020)) AND ((endYear >= 1970 OR endYear < 2020))
+SELECT * FROM title_principals WHERE nconst = 'nm0000001' AND ((category='director' OR category='cinematographer') AND (job='director')) ORDER BY ordering ASC LIMIT 3

@@ -1,1 +1,0 @@
-SELECT * FROM title_basics WHERE tconst = 'action' AND titleType <> '' ORDER BY rating DESC LIMIT 5

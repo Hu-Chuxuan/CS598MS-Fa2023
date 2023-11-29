@@ -1,1 +1,0 @@
-SELECT DISTINCT tc.* FROM title_crew AS tc JOIN title_basics AS tb ON tc.director = tb.title_id WHERE (tb.isAdult=TRUE OR tb.startYear BETWEEN 1970 AND 1979)

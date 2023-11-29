@@ -1,1 +1,0 @@
-SELECT * FROM (title_principals t JOIN actors a ON a.job = 'character') WHERE (((a.category = "Lead" OR a.category IS NULL) AND ((t.primaryCharacter IS NOT NULL))) AND ((t.primaryJob IN ('Actor', 'Actress')))) ORDER BY rating DESC LIMIT 6

@@ -1,1 +1,0 @@
-SELECT DISTINCT t.* FROM titles AS t INNER JOIN cast AS c ON t.titleID = c.titleID WHERE t.primaryTitle LIKE "action" AND t.isAdult=false ORDER BY rating DESC LIMIT 2

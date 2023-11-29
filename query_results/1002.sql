@@ -1,1 +1,3 @@
-SELECT * FROM title WHERE rating >= 7 AND genre = "Science Fiction" ORDER BY RANDOM() LIMIT 6
+SELECT * FROM ( SELECT DISTINCT TOP (20) t.*, tc.averageRating AS avg_rating, tc.numVotes AS vote_count
+FROM title_basic AS tb JOIN ( SELECT titleID from title_ratting where genre ='sci fi') r ON tb.titleid=r.titleID
+JOIN (SELECT titleID, cast(averageRating*100 AS decimal(10,2)) as averageRating FROM title_ratting GROUP BY titleID ) tr WHERE tb.isAdult <> '1' AND tb.startyear <= '1960' AND tb.endyear >= '1990')

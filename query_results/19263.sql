@@ -1,0 +1,1 @@
+SELECT DISTINCT t.* FROM title AS t JOIN title_rating AS tr ON t.primaryTitle = tr.tconst WHERE ((tr.numVotes >= 5 AND tr.averageRating > 7)) OR (tr.numVotes < 5)

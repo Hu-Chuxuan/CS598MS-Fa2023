@@ -1,1 +1,3 @@
-SELECT t.* FROM imdb.title AS t WHERE t.genre = 'Disaster' AND t.primaryTitle IN ('The Perfect Storm','Armageddon') OR t.name_basics.birthYear BETWEEN 1960 AND 2000
+SELECT * FROM `title` WHERE `primaryTitle` LIKE '%Sea%' OR `originalTitle` LIKE '%Sea%'`
+OR (`genre` LIKE '%Disaster%' AND `startYear >= 1990')
+AND NOT EXISTS(`genre` LIKE '%Science Fiction%' AND `endYear <= 2000')

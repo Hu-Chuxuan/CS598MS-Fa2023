@@ -1,1 +1,0 @@
-SELECT t.* FROM title_basics AS t JOIN name_basics ON t.title_id = name_basics.primaryMovie WHERE genre = 'Horror' AND startyear > "2000" ORDER BY rating DESC LIMIT 10

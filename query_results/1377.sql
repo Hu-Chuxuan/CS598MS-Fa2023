@@ -1,1 +1,1 @@
-SELECT * FROM `title_basics` WHERE (title_type = "comedy") AND (`primaryTitle` LIKE '%comed%') ORDER BY `startYear`
+SELECT * FROM title_basic WHERE (primaryTitle = 'Bridget Jones\'s Diary') AND ((startYear >= 2000)) ORDER BY averageRating DESC LIMIT 3

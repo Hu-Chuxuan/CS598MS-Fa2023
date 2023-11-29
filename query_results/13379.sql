@@ -1,1 +1,0 @@
-SELECT t.* FROM title_basics AS t JOIN name_basics AS n ON t.titleType = "movie" AND t.isAdult=true AND t.startYear BETWEEN 1986 AND 2000 WHERE n.primaryName LIKE '%XXX%' OR n.primaryName LIKE '%Xxx%'

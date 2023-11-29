@@ -1,1 +1,0 @@
-SELECT t.* FROM titles AS t JOIN ratings r ON t.titleID = r.titleID WHERE ((r.averageRating >=? AND r.numVotes >?)) OR (t.primaryProfession IN ('director', 'writer')) ORDER BY t.startYear DESC LIMIT 10

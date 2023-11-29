@@ -1,1 +1,0 @@
-SELECT tb.* FROM title_basics AS tb JOIN title_ratings as tr ON tb.titleType = tr.titleType WHERE tr.numvotes > 1 AND ((tr.averagerating >= 6/10 OR tr.averagerating <= 9/10)) AND EXISTS( SELECT * FROM title_crew WHERE tr.directorID IN ('Joe Johnston') ) AND EXISTS( SELECT * FROM title_principals WHERE tr.actressID in('Meryl Streep')) GROUP BY tb.titleType

@@ -1,1 +1,0 @@
-SELECT * FROM tconst WHERE titleType = 'Movie' AND (genre = 'Science Fiction') OR (job IN ('Director', 'Writer')) ORDER BY rating DESC LIMIT 3

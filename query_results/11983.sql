@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE tconst = "title" AND rating >= 7

@@ -1,1 +1,0 @@
-SELECT DISTINCT(title_rating.primaryTitle), genre FROM title_basic, title_rating WHERE title_basic.tconst = title_rating.tconst AND title_basic.isAdult=0

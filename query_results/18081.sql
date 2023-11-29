@@ -1,1 +1,0 @@
-SELECT DISTINCT t.titleId FROM title AS t INNER JOIN name ON t.nameID = n.id WHERE n.primaryName LIKE '%' ||? || '%'

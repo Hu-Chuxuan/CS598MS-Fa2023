@@ -1,1 +1,0 @@
-SELECT tc.* FROM titles AS tc INNER JOIN title_ratings as tr ON tc.titleId = tr.titleId AND tr.user_id=? WHERE tc.titleType='comedy'

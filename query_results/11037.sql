@@ -1,1 +1,0 @@
-SELECT TOP(3) * FROM Title WHERE type = "Drama" AND genre IN ("Comedy") ORDER BY rating DESC

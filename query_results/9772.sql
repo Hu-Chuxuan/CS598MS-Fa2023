@@ -1,1 +1,0 @@
-SELECT DISTINCT t.* FROM title_ratings AS r INNER JOIN movies as m ON (r.title = m.title AND r.year >= 2000)

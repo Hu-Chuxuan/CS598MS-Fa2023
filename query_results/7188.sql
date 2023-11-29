@@ -1,1 +1,0 @@
-SELECT * FROM movieRecommendation WHERE rating >.7 AND genre LIKE '%comedy%' ORDER BY rating DESC LIMIT 1

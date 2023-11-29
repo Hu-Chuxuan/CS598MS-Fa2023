@@ -1,1 +1,0 @@
-SELECT movies.* FROM movies JOIN user_preferences ON movies.title_id = user_preferences.movieID WHERE user_preferences.userID='1'

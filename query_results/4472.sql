@@ -1,1 +1,1 @@
-SELECT DISTINCT t.title AS Movie FROM title_basics t INNER JOIN title_rating r ON t.primaryTitle = r.primaryTitle WHERE t.isAdult = 'true' AND t.startYear >= '1980-01-01'
+SELECT * FROM title WHERE titleType ='movie' AND title LIKE '%Juman%i%' ORDER BY avgRatings DESC LIMIT 1

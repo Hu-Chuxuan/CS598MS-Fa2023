@@ -1,1 +1,1 @@
-SELECT * FROM tconst WHERE nconst='Family'
+SELECT * FROM title_basic WHERE ((startyear = \'1894\' OR endyear = \'1894\') AND isAdult=0)

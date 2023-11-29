@@ -1,0 +1,1 @@
+SELECT * FROM (SELECT DISTINCT t.*, r.* FROM title AS t INNER JOIN title_ratings RAT ON t.tconst = rat.tconst ORDER BY avg(r.averageRating), numvotes DESC LIMIT 2)

@@ -1,1 +1,1 @@
-SELECT * FROM title_ratings WHERE rating >= 8 AND rating <= 9 ORDER BY rating DESC LIMIT 5
+SELECT * FROM title WHERE genre IN ('Horror','Thriller') AND actors='James McAvoy' ORDER BY avgrat DESC LIMIT 10

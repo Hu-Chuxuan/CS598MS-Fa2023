@@ -1,1 +1,0 @@
-SELECT t.* FROM title_basics AS t WHERE CONCAT(CONVERT(titleType USING utf8),'', PRIMARY TITLE) LIKE '%Kill%'

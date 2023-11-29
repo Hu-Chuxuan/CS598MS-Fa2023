@@ -1,1 +1,1 @@
-SELECT t.titleID AS MovieID FROM Title t WHERE t.genre = "Drama" AND t.rating >= 6
+SELECT * FROM ( SELECT DISTINCT t.title_id AS TID, d.primary_name AS NAME FROM title t JOIN title_principal p ON t.title_id = p.title_id AND p.category='actress' JOIN actor_by_role r ON p.job=r.actor_by_role_id WHERE p.ordering > 2 AND p.ordering < 4 ORDER BY p.ordering ) AS R GROUP BY t.title_id HAVING COUNT(*) >= 2 OR COUNT(*)=2

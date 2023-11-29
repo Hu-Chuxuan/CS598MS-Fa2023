@@ -1,1 +1,1 @@
-SELECT t.* FROM title_basics AS t JOIN name_basics AS n ON t.primaryTitle = n.primaryName WHERE n.birthYear >= 1976 AND n.deathYear < 2018
+SELECT * FROM `title` WHERE `startyear` > '1970' AND (`endyear` < '2000') ORDER BY `averagerating`

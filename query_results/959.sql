@@ -1,0 +1,1 @@
+SELECT * FROM ((SELECT DISTINCT `tconst`, `primaryTitle`, `startYear`, `endYear` from `titles`) JOIN (`genre` ON `genre`.`genreId` = `titles`.`genreId`) WHERE `startYear` BETWEEN 1995 AND 1998 AND `endYear` > 1995 ORDER BY `startYear` ASC) AS `table_name`

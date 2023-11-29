@@ -1,1 +1,0 @@
-SELECT TOP(2) DISTINCT tc.* FROM Title_Basics AS tb JOIN Name_BasicNs As NB WHERE tb.primaryTitle = NB.PrimaryName AND tb.titleType = NB.Category

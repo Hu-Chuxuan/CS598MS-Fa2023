@@ -1,1 +1,0 @@
-SELECT * FROM title_rating WHERE user_id = "user" AND genre LIKE "%Animation%" OR genre LIKE "%Fantasy%"

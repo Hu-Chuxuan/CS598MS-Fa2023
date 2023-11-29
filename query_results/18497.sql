@@ -1,1 +1,1 @@
-SELECT DISTINCT * FROM title_ratings WHERE (titleType = "movie" OR genre IS NULL)
+SELECT DISTINCT title_id FROM `title_principals` WHERE category = 'actor' AND job LIKE '%[\"%Assas%' AND order <= 2 ORDER BY score DESC LIMIT 5 OFFSET 0 

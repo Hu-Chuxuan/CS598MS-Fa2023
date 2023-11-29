@@ -1,1 +1,0 @@
-SELECT * FROM movies WHERE userPreferedMovies IN ('Ground Hog Day') AND NOT(userPreferredMovies IN('Blazing Saddles','Anchorman'))

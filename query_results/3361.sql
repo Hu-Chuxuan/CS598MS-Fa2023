@@ -1,1 +1,1 @@
-SELECT * FROM movies WHERE user_preferences LIKE '%Jurassic%' OR user_preferences LIKE '%Edge%'
+SELECT * FROM `movielens` WHERE rating > 4 AND RATING < 9 ORDER BY avgrating DESC LIMIT 5

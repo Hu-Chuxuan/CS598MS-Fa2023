@@ -1,1 +1,0 @@
-SELECT DISTINCT t.* FROM (title_basics AS t JOIN genre_list ON t.genre = g.id) WHERE t.isAdult=0 AND t.startYear<2020

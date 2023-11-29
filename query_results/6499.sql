@@ -1,1 +1,0 @@
-SELECT * FROM (title_recommendation INNER JOIN user_preferences ON (user_preferences.id = title_recommendation.movieId)) WHERE ((title_recommendation.genres LIKE '%comedy%') OR (title_recommendation.genres NOT LIKE 'grossout')) AND (user_preferences.id <> NULL) ORDER BY RAND() LIMIT 7

@@ -1,1 +1,0 @@
-SELECT * FROM (title_basics tb) JOIN (name_basics nb) ON (tb.tconst = nb.nconst)

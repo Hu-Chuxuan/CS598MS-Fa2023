@@ -1,1 +1,1 @@
-SELECT * FROM movie_recommendation(userInput,'Zootopia', 'Captain America') WHERE userPreference='Black panther'
+SELECT * from title_ratings where averageRating > 7 AND numVotes >= 50 order by avgRat desc limit 5

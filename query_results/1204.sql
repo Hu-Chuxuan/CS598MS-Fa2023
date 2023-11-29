@@ -1,1 +1,0 @@
-SELECT * FROM title_basics WHERE (titleType = "Movie" OR titleType IS NULL)

@@ -1,1 +1,1 @@
-SELECT * FROM titles WHERE title_type = "movie" AND year >= 2016
+SELECT * FROM title_basic WHERE titleType = “movie” AND startyear <= 2017 ORDER BY averagerating DESC LIMIT 3

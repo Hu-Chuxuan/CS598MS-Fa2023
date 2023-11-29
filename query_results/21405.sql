@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE (titleType = "movie" AND isAdult > false OR titleType <> "movie") ORDER BY rating DESC LIMIT 5

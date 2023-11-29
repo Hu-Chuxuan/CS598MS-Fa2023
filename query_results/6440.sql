@@ -1,1 +1,0 @@
-SELECT DISTINCT(titleType)... FROM title_ratings WHERE rating >? AND genre = "psychological thriller" LIMIT 3

@@ -1,1 +1,0 @@
-SELECT * FROM name_basics WHERE (genre = "Comedy" OR genre = "Drama") AND (startyear >= 1960)

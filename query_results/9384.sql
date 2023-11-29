@@ -1,1 +1,0 @@
-SELECT DISTINCT tb.* FROM title_basic AS tb INNER JOIN title_rating as tr ON tb.titleId =tr.titleId AND tr.averageRating >.8 WHERE tb.startYear < 2016

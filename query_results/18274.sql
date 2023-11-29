@@ -1,1 +1,0 @@
-SELECT t.* FROM imdb_title AS t WHERE (directors LIKE 'John Woo' OR writers LIKE '%John Woo%') AND (genre IN ('Action', 'Crime')) ORDER BY rating DESC LIMIT 6

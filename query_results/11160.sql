@@ -1,1 +1,0 @@
-SELECT DISTINCT TITLE_BASICS.* FROM (TITLE_CREW INNER JOIN TITLE_PRINCIPALS ON(title_crews.tconst = title_principal.tconst) AND (title_crews.category = 'Director' OR title_crews.category='Writer')) INNER JOIN TITLE_RATINGS ON ((title_rating.tconst=title_basic.tconst)) INNER JOIN TITLE_BASICS ON((title_basic.tconst=title_rating.tconst))

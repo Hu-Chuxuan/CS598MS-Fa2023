@@ -1,1 +1,0 @@
-SELECT * FROM `title_basic` WHERE `genre` LIKE '%comedy%' OR `genre` LIKE '%action%' AND (`startyear <=? && endyear >=?`) GROUP BY `primaryTitle`

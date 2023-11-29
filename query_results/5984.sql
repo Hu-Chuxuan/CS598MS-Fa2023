@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE (titleType = "movie" OR titleType="TV show") AND (primaryTitle LIKE '%thriller%' OR primaryTitle LIKE '%horror%') ORDER BY rating DESC LIMIT 8

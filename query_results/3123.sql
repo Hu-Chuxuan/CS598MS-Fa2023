@@ -1,1 +1,1 @@
-SELECT * FROM title_principals WHERE job = "actor" AND categories LIKE "%comedy%" OR categories LIKE "%thrillers%"
+SELECT * FROM `titles` WHERE (`isAdult` = '1') AND ((`startYear` > CAST(`year` AS INTEGER))) ORDER BY (`averageRating`) DESC LIMIT 15

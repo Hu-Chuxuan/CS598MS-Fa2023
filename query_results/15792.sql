@@ -1,1 +1,0 @@
-SELECT * FROM title_basics WHERE titleType = “drama” AND startYear < 2000

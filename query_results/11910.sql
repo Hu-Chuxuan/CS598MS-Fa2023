@@ -1,1 +1,0 @@
-SELECT tb.* FROM title_basics AS tb WHERE tb.titleType = "movie" AND ((tb.primaryTitle LIKE '%war%') OR (tb.originalTitle LIKE '%war%'))

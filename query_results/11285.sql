@@ -1,1 +1,1 @@
-SELECT * FROM titles WHERE ((title_type = "Comedy" AND (startyear >= 1990 OR startyear <= 2000)))
+SELECT * FROM `title` WHERE ((startYear BETWEEN 1990 AND 1999)) OR ((endYear < 1990)) ORDER BY averageRating DESC LIMIT 3 OFFSET? 

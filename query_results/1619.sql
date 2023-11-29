@@ -1,1 +1,1 @@
-SELECT t.* FROM title_basics AS t INNER JOIN title_ratings AS r ON r.titleID = t.id WHERE r.numvotes >= 1 AND t.isadult <> "true" AND t.startyear <= 2000
+SELECT * FROM `titles` WHERE (`primaryTitle` LIKE '%Kiss%') AND ((`startYear` BETWEEN? AND?)) LIMIT? OFFSET?

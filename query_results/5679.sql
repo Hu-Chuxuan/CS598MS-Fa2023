@@ -1,1 +1,3 @@
-SELECT t.* FROM movielens ml JOIN title_ratings tr ON tr.titleId = ml.tmID WHERE tr.rating >= 6 AND ml.userID IN ('1','2') GROUP BY tmID
+SELECT * from title_ratings where averageRating > 5 limit 10 offset 10 order by avgRat desc
+union SELECT * from title_rating where averageRating < 4 limit 10 offset 10 order by avgRat asc
+order by numVotes desc limit 5

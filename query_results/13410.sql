@@ -1,1 +1,0 @@
-SELECT DISTINCT title_id AS id FROM rating WHERE title = "Jack Reacher" OR title LIKE "%Reacher%" ORDER BY avgrating DESC LIMIT 3

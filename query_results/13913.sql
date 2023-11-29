@@ -1,1 +1,0 @@
-SELECT * FROM `title_basic` WHERE ((((startyear <= $userPreferedStartYear AND endyear >= $userPreferredEndYear)) OR ($userPreferedStartYear = null AND $userPreferredEndYear = null))) ORDER BY rating DESC

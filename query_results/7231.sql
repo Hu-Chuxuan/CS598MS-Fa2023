@@ -1,1 +1,0 @@
-SELECT * FROM title_basics WHERE titleType = "movie" AND tconst IN ("The Exorcist", "Halloween", "Nightmare") ORDER BY rating DESC LIMIT 1

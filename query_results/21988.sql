@@ -1,1 +1,0 @@
-SELECT t1.* FROM title_rating AS t1 INNER JOIN user_preferences as u ON u.user_id = t1.title_id WHERE genre LIKE '%comedy%' OR genre LIKE '%horror%'

@@ -1,1 +1,0 @@
-SELECT DISTINCT t.* FROM title_basics AS t INNER JOIN name_basics ON t.titleID = n.titleID WHERE n.primaryProfession LIKE "actor" AND n.category="character"

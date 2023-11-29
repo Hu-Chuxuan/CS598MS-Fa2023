@@ -1,1 +1,0 @@
-SELECT * FROM `title` WHERE `genre` LIKE '%kids%' OR (`job`='director') AND ((`startYear`>1970)) ORDER BY `averageRating`

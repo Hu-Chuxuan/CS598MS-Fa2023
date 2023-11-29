@@ -1,1 +1,0 @@
-SELECT t.titleID as TitleID, t.primaryTitle as PrimaryTitle, mr.* FROM title AS t INNER JOIN rating AS r ON t.titleID = r.titleID AND r.userID =? UNION ALL SELECT t.titleID as TitleID, t.primaryTitle as PrimaryTitle, tc.* from crew AS c INNER JOIN title AS t ON t.titleID=c.titleID WHERE c.job in ('Director','Writer') AND t.genre in('Comedy','Horror')

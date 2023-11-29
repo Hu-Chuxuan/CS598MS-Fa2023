@@ -1,1 +1,0 @@
-SELECT * FROM movies WHERE rating > 7 AND genre = "noir" ORDER BY rating DESC

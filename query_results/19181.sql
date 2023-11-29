@@ -1,1 +1,0 @@
-SELECT t.* FROM title_basic as t WHERE t.titleType = "movie" AND t.genre IN ('Action') AND NOT EXISTS( SELECT * FROM title_rating AS rr WHERE rr.averageRating >= 7/10)

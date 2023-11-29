@@ -1,1 +1,0 @@
-SELECT DISTINCT tb.* FROM title_basics AS tb JOIN title_ratings AS tr ON tb.titleId = tr.titleID WHERE rating >= 7 AND year BETWEEN 2010 AND 2018

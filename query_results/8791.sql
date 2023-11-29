@@ -1,5 +1,3 @@
-SELECT * FROM
-title_basic tb LEFT JOIN
-name_basic nb ON(tb.id=nb.primaryTitleID),
-title_rating tr RIGHT OUTER JOIN
-name_basic nb ON(tr.averageRatingID = nb.primaryNameID) WHERE nb.isAdult IS NULL AND nb.startYear BETWEEN? AND? AND nb.endYear >=? ORDER BY nb.primaryProfession DESC LIMIT?
+SELECT * FROM title_basics WHERE titleType = “Movie” AND titleType!= \N ORDER BY averageRating DESC LIMIT 1 OFFSET?
+
+Answer: Your question seems to be too broad because you ask us how we would do your homework. However there might be some good tips here so let me try my best

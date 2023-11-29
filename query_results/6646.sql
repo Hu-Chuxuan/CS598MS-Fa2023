@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE genre='comedy' OR genre ='drama'

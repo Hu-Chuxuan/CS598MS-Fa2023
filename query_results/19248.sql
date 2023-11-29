@@ -1,1 +1,1 @@
-SELECT DISTINCT * FROM title_ratings WHERE avgRating >= 8 AND numVotes > 6
+SELECT * FROM title_ratings WHERE averageRating > 5 AND numVotes >= 10 ORDER BY avgRating DESC LIMIT 5 OFFSET 10

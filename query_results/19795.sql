@@ -1,1 +1,1 @@
-SELECT * FROM movie_recommendation WHERE user_input LIKE '%Drew%'
+SELECT * from title where title_type = 'Movie' AND ((startyear <= $inputYear AND startyear >= ($inputYear + 2)) OR (endyear > $inputYear))

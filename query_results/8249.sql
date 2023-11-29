@@ -1,1 +1,0 @@
-SELECT * FROM title_recommendation WHERE rating > 6 AND title_type = "movie" ORDER BY avg(rating)

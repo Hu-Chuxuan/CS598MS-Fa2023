@@ -1,2 +1,0 @@
-SELECT tb1.* FROM title_basic as tb1 INNER JOIN ( SELECT DISTINCT primaryTitle AS 'title' FROM title_rating WHERE rating >? AND voteCount >=? ) AS ratings ON (tb1.primaryTitle=titleratings.title)" +
-        "INNER JOIN ( SELECT DISTINCT primaryName AS 'actor' FROM title_principal WHERE actorCategory='Super Hero')AS actorsON (tb1.director=actors.actor)

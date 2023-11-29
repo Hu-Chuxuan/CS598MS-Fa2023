@@ -1,1 +1,1 @@
-SELECT * FROM users WHERE userID ='1'
+SELECT DISTINCT t.* FROM title AS t JOIN title_ratings r ON r.tconst = t.tconst WHERE t.isAdult = 1 AND ((r.numVotes > 1 OR r.averageRating IS NULL)) GROUP BY t.primaryTitle ORDER BY r.averageRating DESC LIMIT 2 OFFSET?

@@ -1,1 +1,0 @@
-SELECT * FROM imdb_movies WHERE genre = "Horror" AND rating >= 6

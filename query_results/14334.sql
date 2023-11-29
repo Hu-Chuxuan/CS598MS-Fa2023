@@ -1,1 +1,0 @@
-SELECT * FROM title_ratings t INNER JOIN title_crew c ON t.tconst = c.tconst WHERE t.primaryTitle IN ('Halloween  (1978)','The Exorcist  (1973)') AND t.isAdult <> TRUE

@@ -1,1 +1,1 @@
-SELECT * FROM movieRecommendationSystem(title_ratings,name_basics,title_crew ) WHERE rating>6 AND genre IN ('Action','Drama') ORDER BY AverageRATING DESC LIMIT 3
+SELECT * FROM `title` WHERE (`title`.`primaryTitle`) LIKE '%adventure%' AND ('title`.`startYear'` BETWEEN '2000' AND '2010')

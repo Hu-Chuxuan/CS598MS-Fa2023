@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE genre LIKE '%action%' AND rating >=.7 OR rating <=.6

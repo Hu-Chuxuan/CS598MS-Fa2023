@@ -1,1 +1,0 @@
-SELECT tb.* FROM title_basics AS tb JOIN (title_ratings AS tr INNER JOIN name_basics as n ON tr.primaryName = n.primaryName WHERE n.primaryName LIKE %'%Notebook%' AND n.primaryName NOT LIKE '%LaLand%' OR n.primaryName NOT LIKE '%Actually%') AS tb1

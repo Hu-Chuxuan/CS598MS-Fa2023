@@ -1,1 +1,0 @@
-SELECT * FROM table WHERE rating >= 6 AND director='Steven Spielberg' ORDER BY rating DESC LIMIT 1

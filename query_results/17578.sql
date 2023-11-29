@@ -1,1 +1,1 @@
-SELECT tc.* FROM title_basic AS tb JOIN title_rating as tr ON tb.title_id = tr.title_id WHERE tr.average_rating >= 7 AND tr.numvoters > 1
+SELECT * FROM ( SELECT DISTINCT movie_id AS id FROM `title` WHERE title_type ='movie') AS x LEFT JOIN (SELECT DISTINCT rating_count AS count, title_id AS id FROM `title_rating`) AS y ON x.id=y.id AND y.title_id IN ('tt0000001','tt0000002')

@@ -1,1 +1,0 @@
-SELECT * FROM TITLE_BASICS WHERE titleType = "movie" AND (startYear <=? AND endYear >=?) AND (runtimeMinutes >? OR runtimeMinutes <?)

@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE rating >= 8 AND director='James Cameron' OR actor IN ('Kate Winslet','Leonardo DiCaprio') ORDER BY avg(rating)

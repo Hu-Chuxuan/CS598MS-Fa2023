@@ -1,1 +1,1 @@
-SELECT * FROM title_rating WHERE rating >= 8 AND (title_type = "movie" OR title_type="episode") ORDER BY avg(rating)
+SELECT * FROM title WHERE genre IN ('Action') AND NOT category = 'Self'

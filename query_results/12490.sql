@@ -1,1 +1,1 @@
-SELECT t1.* FROM `title` AS t1 INNER JOIN `name_basics` AS t2 ON t1.`primaryTitle` = t2.`primaryName` WHERE t2.`category` IN ('Actress','Director') AND t1.`isAdult` IS NULL
+SELECT * FROM title_principals WHERE title_type='movie' AND ((category = 'director') OR (job = 'assistant')) ORDER BY ordering DESC LIMIT 3 OFFSET 0

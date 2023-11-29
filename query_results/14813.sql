@@ -1,1 +1,0 @@
-SELECT titleId FROM imdb.title WHERE userInput = "That's a good movie, but I haven't seen the new one" AND userPreferenceHistory LIKE "%Red%"

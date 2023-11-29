@@ -1,1 +1,0 @@
-SELECT DISTINCT tc.* FROM title_ratings tr JOIN title_principals p ON p.job = "Actor" AND p.category IN ("A", "S") WHERE tr.numVotes >= 1

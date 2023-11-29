@@ -1,1 +1,0 @@
-SELECT * FROM movies WHERE genre LIKE "romance" OR genre LIKE "comedy"

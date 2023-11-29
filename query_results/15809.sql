@@ -1,1 +1,1 @@
-SELECT * FROM title WHERE rating >= 7 AND genre = 'Comedy' LIMIT 5
+SELECT * FROM `title` WHERE (`genre` LIKE '%Action%' OR `genre` LIKE '%Drama%') AND (`startyear` >= '1990')

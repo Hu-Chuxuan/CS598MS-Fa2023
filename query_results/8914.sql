@@ -1,1 +1,0 @@
-SELECT * FROM title_ratings WHERE (((titleType = "Movie") AND ((primaryTitle LIKE '%' || :movieInput || '%'))))

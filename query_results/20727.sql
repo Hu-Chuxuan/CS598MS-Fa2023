@@ -1,1 +1,0 @@
-SELECT * FROM title_principals WHERE genre = "action" AND user_id=<userID> ORDER BY rating DESC LIMIT <limit>

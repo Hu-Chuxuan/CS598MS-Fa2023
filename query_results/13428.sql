@@ -1,1 +1,0 @@
-SELECT * FROM rating_history WHERE userid =? AND genre IN ('mystery') ORDER BY averageRATING DESC LIMIT 6

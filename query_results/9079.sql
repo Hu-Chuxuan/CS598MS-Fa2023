@@ -1,1 +1,0 @@
-SELECT t.* FROM title_ratings r INNER JOIN title_principals p ON r.title = p.primaryTitle AND r.averageRating > 7 WHERE r.numVotes >= 1

@@ -1,3 +1,1 @@
-SELECT * FROM title WHERE
-titleType = "movie" AND
-(startYear BETWEEN 2000 AND 2019 OR startYear IS NULL)
+SELECT * FROM `title` WHERE `startyear >= ${input}` AND (`endyear <= ${input}`) ORDER BY `runtimeMinutes` ASC LIMIT 3

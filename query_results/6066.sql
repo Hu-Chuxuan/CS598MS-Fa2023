@@ -1,1 +1,1 @@
-SELECT * FROM title_recommendation WHERE rating >=? AND genre = 'Horror' ORDER BY RAND() LIMIT 3
+SELECT * FROM movie_recommendation WHERE titleType = “Movie” AND genre IN ("Horror") ORDER BY avgRatings DESC LIMIT 10 OFFSET 10

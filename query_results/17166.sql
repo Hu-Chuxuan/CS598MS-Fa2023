@@ -1,1 +1,0 @@
-SELECT * FROM rating WHERE user LIKE 'Keanu Reeves'

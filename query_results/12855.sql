@@ -1,2 +1,0 @@
-SELECT * FROM ( SELECT DISTINCT tconst AS titleID, tconst.titleType, CONCAT(primaryTitle,' - ',originalTitle) as Title, CONCAT('',startYear,'-',endYear,' - ',runtimeMinutes/60) as Runtime, genre AS Genre FROM title_basics WHERE tconst ='movies' )
-INNER JOIN ( SELECT avg(averageRating), COUNT(*) AS NumOfReviews FROM title_ratings GROUP BY avg(averageRating)) AS Ratings ON (Title LIKE '%'+'%') AND (NumOfReviews > 1)

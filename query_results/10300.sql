@@ -1,1 +1,0 @@
-SELECT DISTINCT title.titleId AS 'Movie Id', rating.ratingValue as 'Average Rating', cast(genre.genreName as varchar(8)) as genre FROM title LEFT JOIN rating ON title.titleId = rating.movieId AND userInput LIKE '%Sandlot%' OR userInput LIKE '%Peculiars%' LEFT JOIN genre ON title.titleId = genre.movieId

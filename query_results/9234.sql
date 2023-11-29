@@ -1,1 +1,0 @@
-SELECT t.* FROM title_ratings AS r JOIN title_crew AS c ON r.titleId = c.titleId WHERE ((c.primaryName LIKE '%Liam Neeson%') OR (r.averageRating > 7)) AND (genre IN ('Suspense')) ORDER BY rating DESC LIMIT 5

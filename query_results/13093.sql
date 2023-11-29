@@ -1,1 +1,1 @@
-SELECT * FROM title WHERE titleType ='movie' AND genres LIKE '%action%' ORDER BY rating DESC LIMIT 5
+SELECT DISTINCT * FROM `title_basic` WHERE (`startyear`) = \'2017\' AND (`endyear`) <> \'\' ORDER BY (`genre`), (`rating`) DESC LIMIT 2 OFFSET 0

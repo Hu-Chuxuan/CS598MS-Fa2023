@@ -1,1 +1,1 @@
-SELECT * FROM title_ratings WHERE rating >.7
+SELECT DISTINCT t.* FROM ((title_basic AS t INNER JOIN title_rating AS r ON t.primaryTitle = r.tconst)) WHERE t.startYear >= @year AND r.numvotes > 50 ORDER BY AVG(r.averageRating), t.runtimeMinutes DESC LIMIT @limit

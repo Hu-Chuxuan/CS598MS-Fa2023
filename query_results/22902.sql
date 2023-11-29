@@ -1,1 +1,2 @@
-SELECT t.* FROM titles AS t INNER JOIN name_basics ON (t.primaryName = nb.nconst)
+SELECT * FROM
+    `titles` AS T WHERE (`isAdult` = 1 AND `startYear` >=? AND `endYear` <=?) OR (`genre` LIKE '%%') ORDER BY avg(`rating`) DESC LIMIT 3

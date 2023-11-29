@@ -1,1 +1,0 @@
-SELECT DISTINCT t.title_id AS "movieId", t.primaryTitle AS "name", t.startYear as "year", g.* FROM titles t LEFT JOIN genre g ON t.genre = g.id WHERE (((g.name LIKE '%romantic%') OR (g.name LIKE '%drama%'))) AND ((t.isAdult IS NULL)) ORDER BY RAND() LIMIT 10

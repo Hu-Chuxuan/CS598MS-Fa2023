@@ -1,1 +1,0 @@
-SELECT tb.* FROM title_basics AS tb JOIN (title_ratings as tr ON (tb.primaryTitle = tr.title)) WHERE (tr.averageRating >.6 AND tr.numVotes >= 5)

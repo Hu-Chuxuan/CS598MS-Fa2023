@@ -1,1 +1,0 @@
-SELECT * FROM title_basic WHERE titleType = "movie" AND genre IN ('Comedy','Musical') ORDER BY avg(rating) DESC LIMIT 8

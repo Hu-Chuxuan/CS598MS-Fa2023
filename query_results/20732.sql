@@ -1,1 +1,0 @@
-SELECT * FROM (title_rating INNER JOIN title_recommendation ON rating.primaryTitle = recommendation.title) WHERE recommendation.userInput = "hello im awesome" AND recommendation.preferences LIKE "%The%Incredible%" ORDER BY rating.averageRATING DESC LIMIT 3

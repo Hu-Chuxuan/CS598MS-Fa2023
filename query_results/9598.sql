@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE rating >.8 AND genre = "Drama" AND startYEAR < 1990

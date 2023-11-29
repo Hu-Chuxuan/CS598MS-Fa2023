@@ -1,1 +1,0 @@
-SELECT t.* FROM title_recommendation AS t INNER JOIN title_basics ON t.titleID = tb.titleID WHERE (tb.primaryTitle LIKE 'the sixth sense' OR tb.originalTitle LIKE '%the sixth sense') AND (tb.startYear BETWEEN '1970-01-01' AND '1989-12-31')

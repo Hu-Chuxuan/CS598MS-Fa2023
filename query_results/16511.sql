@@ -1,1 +1,0 @@
-SELECT * FROM (title_principals tp JOIN title_rating tr ON tp.category = 'Actress' OR tp.job='Actor') WHERE ((tp.primaryName LIKE '%userInput%' AND tr.numVotes >= 7) OR (tr.averageRating > 6)) ORDER BY tr.averageRating DESC LIMIT 10

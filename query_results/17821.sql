@@ -1,1 +1,1 @@
-SELECT * FROM `title` WHERE (((`genre` = "Drama") AND (`startyear` <= @input)) OR ((`endyear` >= @input))) ORDER BY `rating` DESC LIMIT $LIMIT
+SELECT * FROM title WHERE genre = 'documentary'

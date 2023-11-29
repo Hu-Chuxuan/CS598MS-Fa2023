@@ -1,1 +1,0 @@
-SELECT * FROM (title_principals WHERE job = "actress" OR job="actor") AS movies JOIN (title_principals WHERE job IN ("director", "writer")) as crew ON movies.category = crew.job AND movies.job <> crew.job ORDER BY rating DESC LIMIT 3

@@ -1,1 +1,1 @@
-SELECT TOP(5) * FROM title_basic WHERE title_type = "comedy" AND numvoters > 100
+SELECT * from title where ((titleType='Movie') AND ((startYear>1980))AND((endYear<2010)))and (averageRatings>3.5)

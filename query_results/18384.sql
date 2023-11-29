@@ -1,2 +1,4 @@
-SELECT DISTINCT t.* FROM
-    imdb.title_basic AS tb JOIN imdb.name_basic AS n ON n.primaryName = tb.title_basics.titleType AND n.primaryName=tb.title_basics.isAdult
+SELECT * FROM (
+    SELECT titleID AS MovieID, titleType AS Movietype, titleBasics.*, titleCreatws.*, titlePrincipal.*, AVG(rating) AS avgrating, count(*) AS voteCount
+FROM title_basic LEFT JOIN title_creats ON titleBasic.titleID = titleCrateS.titleID AND titleCrateS.category='Director' OR titleCrateS.category='Writer' GROUP BY titleBasic.titleID, titleBasic.titleType HAVING COUNT(*) > 0
+LEFT JOIN title_princial ON titleBasic.titleID=titlePrinceal.titleID AND titlePrinceal.category IN ('Actor','Self') WHERE titlePrincail.job IS NOT NULL AND titlePrinceal.character IS NOT NULL GROUP BY titleBasic.titleID, titleBasic.titleType HAVING COUNT(*)>0 ORDER BY avgrating DESC LIMIT 10 OFFSET 0

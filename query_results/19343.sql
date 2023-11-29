@@ -1,1 +1,0 @@
-SELECT * FROM movies WHERE rating > 7 AND (title LIKE '%romance%' OR genre = 'Romance') ORDER BY avgrating DESC

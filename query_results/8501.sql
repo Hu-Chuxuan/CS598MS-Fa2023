@@ -1,0 +1,1 @@
+SELECT DISTINCT t.* FROM imdb.titles AS t WHERE ((t.genre = 'Action') AND (t.startyear >= '1970')) ORDER BY RAND() LIMIT 5

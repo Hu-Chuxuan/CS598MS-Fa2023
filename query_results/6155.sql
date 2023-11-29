@@ -1,1 +1,0 @@
-SELECT DISTINCT(title_name).title_id AS tID FROM title WHERE title_type = "movie" AND title_genre LIKE "%Action%" AND title_year >= 1970 ORDER BY rating DESC LIMIT 10

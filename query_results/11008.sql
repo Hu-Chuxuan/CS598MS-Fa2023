@@ -1,1 +1,0 @@
-SELECT DISTINCT t.titleID as id, t.primaryTitle AS Title, t.startYear as StartYear, t.endYear as Endyear FROM title_basic t INNER JOIN name_basic m ON t.titleID = m.titleID WHERE m.birthYear > 1986 AND t.isAdult <> "True" AND t.genre IN ("Comedy", "Drama") ORDER BY RANDOM() LIMIT 1

@@ -1,1 +1,0 @@
-SELECT * FROM `title_basics` WHERE `primaryTitle` = "The Godfather" OR (`isAdult`=TRUE AND `startYear`>=1970)

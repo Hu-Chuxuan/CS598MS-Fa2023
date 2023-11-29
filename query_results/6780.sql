@@ -1,1 +1,0 @@
-SELECT * FROM movie WHERE titleType = "Horror" AND director IN ('Andy Muschietti','Mike Flanagan') OR writer IN('Stephen King')

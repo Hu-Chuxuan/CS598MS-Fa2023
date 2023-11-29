@@ -1,1 +1,6 @@
-SELECT t1.* FROM title_ratings AS r JOIN title_basics AS b ON r.titleID = b.titleID AND b.primaryTitle='Ghostbusters' WHERE r.averageRating > 7
+SELECT * FROM (
+    SELECT DISTINCT r.*, tc.* FROM ((
+        SELECT tconst AS titleId, titleType AS titleType, primaryTitle AS titleTitle, originalTitle AS origTitle, avg(averageRating) AS avgAvgRate, COUNT(*) AS totalCount FROM title_rating GROUP BY tconst ORDER BY avg(averageRating)) RIGHT JOIN (((
+        SELECT tconst AS titleId, titleType AS titleType, primaryTitle AS titleTitle, originalTitle AS origTitle, avg(averageRating), COUNT(*) AS totalCount FROM title_rating WHERE isAdult = 1 AND numVotes >= 50 GROUP BY tconst ORDER BY avg(averageRating))) SMALLER THAN (
+            SELECT tconst AS titleId, titleType AS titleType, primaryTitle AS titleTitle, originalTitle AS origTitle, avg(averageRating), COUNT(*) AS totalCount FROM title_rating WHERE isAdult = 1 AND numVotes <= 50 GROUP BY tconst ORDER BY avg(averageRating))) LARGER THAN ) LEFT JOIN (
+                SELECT tconst AS titleId, titleType AS titleType, primaryTitle AS titleTitle, originalTitle AS origTitle, avg(averageRating) AS avgAvgRate, COUNT(*) AS totalCount FROM title_rating GROUP BY tconst ORDER BY avg(averageRating)) TC ON R.titleID = TC.titleID OR R.titleID IS NULL UNION ALL SELECT tconst AS titleId, titleType AS titleType, primaryTitle AS titleTitle, originalTitle AS origTitle, avg(averageRating) AS avgAvgRate, COUNT(*) AS totalCount FROM title_rating GROUP BY tconst ORDER BY avg(averageRating))

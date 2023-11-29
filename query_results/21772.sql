@@ -1,1 +1,0 @@
-SELECT * FROM title_basics WHERE tconst IN ('The Notebook','Big Sick','Fault') AND isadult = FALSE ORDER BY avgrating DESC LIMIT 6

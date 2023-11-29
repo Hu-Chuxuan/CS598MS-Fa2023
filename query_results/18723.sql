@@ -1,1 +1,1 @@
-SELECT * FROM title_basics WHERE tconst = "KIDS" AND rating >= 8
+SELECT * FROM `titles` WHERE `rating`.`numVotes > 1 AND` `genre = 'comedy'` ORDER BY `startYear ASC`, `endYear DESC`, `avgRate DESC`

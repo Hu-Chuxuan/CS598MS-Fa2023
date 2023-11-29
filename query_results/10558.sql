@@ -1,1 +1,0 @@
-SELECT DISTINCT tb.* FROM title_basics AS tb INNER JOIN title_ratings as tr ON tb.titleId = tr.titleID WHERE tb.primaryTitle LIKE '%A Beautiful Mind%' AND tr.averageRating > 8

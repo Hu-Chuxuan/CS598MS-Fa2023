@@ -1,1 +1,0 @@
-SELECT DISTINCT movietitle.* FROM movietitle LEFT JOIN cast ON cast.movietitle = movietitle INNER JOIN director ON director.cast = cast WHERE movietitle.genre LIKE '%comedy%' AND movietitle.category LIKE '%romance%'

@@ -1,1 +1,0 @@
-SELECT movies.* FROM titles AS t JOIN title_ratings AS r ON(r.titleID = t.id AND r.averageRATING > 6) JOIN names as n ON (n.nameID = t.primaryName) WHERE t.isAdult <> "TRUE" OR n.birthYear >= 1990

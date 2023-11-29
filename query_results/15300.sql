@@ -1,1 +1,0 @@
-SELECT DISTINCT title_principals.* FROM title_principals WHERE title_principals.job = "actress" AND title_principals.characters LIKE "%Amy%"

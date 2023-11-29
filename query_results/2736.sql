@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE genre = "Comedy" AND (title_type LIKE "%Water%") OR (title_genre LIKE "%First%")

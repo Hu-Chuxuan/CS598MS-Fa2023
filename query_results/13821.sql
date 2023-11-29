@@ -1,1 +1,1 @@
-SELECT movies.* FROM title_reviews r JOIN title_movies m ON r.movieId = m.id WHERE r.user_rating > 6
+SELECT * FROM title WHERE titleType ='movie' AND averageRating > 7.5 ORDER BY avgRatings DESC LIMIT 5

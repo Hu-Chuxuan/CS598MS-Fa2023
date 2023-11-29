@@ -1,1 +1,0 @@
-SELECT * FROM (title_basics tb INNER JOIN cast c ON tb.id = c.movieID) WHERE c.category LIKE 'comedy' AND tb.isAdult=0

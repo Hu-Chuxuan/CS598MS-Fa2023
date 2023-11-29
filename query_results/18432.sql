@@ -1,1 +1,0 @@
-SELECT * FROM imdb WHERE category =? AND genre =? ORDER BY rating DESC

@@ -1,1 +1,1 @@
-SELECT t.* FROM title AS t JOIN title_ratings AS tr ON t.titleID = tr.movieID AND tr.rating > 8
+SELECT * FROM tconst WHERE titleType='movie' AND (startYear BETWEEN? AND?) ORDER BY avgRating DESC LIMIT 1 OFFSET?

@@ -1,0 +1,1 @@
+SELECT * FROM title_ratings WHERE averageRating < 6 OR averageRating > 5 AND numVotes >= 2 ORDER BY avgRat DESC LIMIT 3 OFFSET 0

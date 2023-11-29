@@ -1,0 +1,3 @@
+SELECT titleID, titleType, primaryTitle, originalTitle, isAdult, startYear, endYear, runtimeMinutes, genres FROM title_basics WHERE titleType ='movie' AND ((primaryTitle LIKE '%Meet%') OR (originalTitle LIKE '%Meet%')) ORDER BY startYear DESC LIMIT 1 OFFSET 0
+UNION ALL
+SELECT titleID, titleType, primaryTitle, originalTitle, isAdult, startYear, endYear, runtimeMinutes, genres FROM title_basics WHERE titleType ='movie' AND ((primaryTitle LIKE '%American%' )OR (originalTitle LIKE '%American%'))

@@ -1,1 +1,0 @@
-SELECT DISTINCT tc.* FROM title_basics AS tb INNER JOIN genre ON g.genreID = tb.primaryGenre WHERE tb.titleType!= 'tv' AND tb.isAdult <> true

@@ -1,1 +1,1 @@
-SELECT DISTINCT tc.* FROM TITLE_CREW AS tc WHERE tc.job = "Actor" AND tc.category <> "" ORDER BY tc.ordering ASC LIMIT 4
+SELECT t.* FROM title AS t JOIN cast AS c ON t.id = c.casting_film_id WHERE t.startyear >= 1970 AND t.endyear <= 2018 GROUP BY t.isadult ORDER BY t.averagerating DESC LIMIT 1 OFFSET 0

@@ -1,1 +1,0 @@
-SELECT t.* FROM title AS t INNER JOIN rating AS r ON r.title = t.titleID WHERE r.userID IN(28990)

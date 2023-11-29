@@ -1,2 +1,1 @@
-SELECT * FROM ( SELECT t.*, r.rating AS rating, c.* FROM title_ratings r INNER JOIN titles t ON t.titleID = r.titleID LEFT OUTER JOIN categories c ON c.categoryID=r.categoryID WHERE r.averageRating >= 7 AND r.numVotes > 2 )
-WHERE t.titleType='movie' OR t.titleType IN ('tv','documentary') ORDER BY rating DESC LIMIT 10
+SELECT * from title where titleType ='movie' order by avgrating desc limit 10

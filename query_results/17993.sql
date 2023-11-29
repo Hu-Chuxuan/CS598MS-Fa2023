@@ -1,1 +1,0 @@
-SELECT DISTINCT title_name.* FROM title_names WHERE title_genre LIKE 'drama'

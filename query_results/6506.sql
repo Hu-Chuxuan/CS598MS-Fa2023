@@ -1,1 +1,0 @@
-SELECT... FROM movies WHERE genre = "Action" AND rating > 6

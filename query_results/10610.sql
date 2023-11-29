@@ -1,1 +1,0 @@
-SELECT * FROM title_recommendation WHERE title_type = "Action" AND rating >= 7

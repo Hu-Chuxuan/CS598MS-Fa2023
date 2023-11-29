@@ -1,1 +1,1 @@
-SELECT DISTINCT r.title AS Recommended Movie FROM title_ratings r JOIN name_basics b ON r.primaryTitle = b.primaryName AND r.startYear >= b.birthYear
+SELECT * FROM ( SELECT tconst, avg(rating), count(*) AS voteCount FROM title_ratings GROUP BY tconst ORDER BY voteCount DESC LIMIT 5 ) as q WHERE (avg > 5 AND count >= 1 OR avg < 5 AND count <= 2)

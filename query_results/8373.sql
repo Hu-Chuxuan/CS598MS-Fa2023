@@ -1,1 +1,0 @@
-SELECT t.* FROM title AS t JOIN rating AS r ON t.titleId = r.titleId WHERE userInput LIKE '%children%' AND userHistory LIKE '%home%'

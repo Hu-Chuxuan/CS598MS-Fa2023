@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE rating >.8 AND ttype = "movie" AND title IN ("Remember the Titans", "Angels in the Outfield", "The Mighty Ducks")

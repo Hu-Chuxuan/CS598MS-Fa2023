@@ -1,1 +1,1 @@
-SELECT * FROM title_basics WHERE tconst IN ('Norbit','Coming To America')
+SELECT * FROM title WHERE ((titleType = 'Movie') AND ((averageRating > 7)) AND ((numVotes >= 5))) ORDER BY (startYear ASC)

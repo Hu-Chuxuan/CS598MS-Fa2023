@@ -1,1 +1,0 @@
-SELECT t.* FROM title_basic AS t JOIN title_rating AS r ON t.titleID = r.titleID WHERE ((r.numvotessmallest <= 7 OR r.averageRatingsmallest >.8)) AND NOT EXISTS( SELECT * from title_crew as c where c.titleID=t.titleID ) GROUP BY t.titleID ORDER by avgRATING DESC LIMIT 5

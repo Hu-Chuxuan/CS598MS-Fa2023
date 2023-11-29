@@ -1,1 +1,0 @@
-SELECT t.* FROM title_basic as t JOIN name_basic as n ON t.titleId = n.primaryMovieId AND ((t.isAdult=false OR n.birthYear<=2008)) WHERE n.primaryName='Emma Stone'

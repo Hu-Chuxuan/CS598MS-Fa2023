@@ -1,1 +1,1 @@
-SELECT t.* FROM (title_ratings r INNER JOIN title_crew c ON c.id = r.directorID) AS t WHERE t.primaryTitle IN ('Frozen','Lion King') AND r.averageRating > 8
+SELECT * FROM `movielens` WHERE (`startYear >= 2010 AND endYear <= 2020`) ORDER BY `rating`

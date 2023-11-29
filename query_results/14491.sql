@@ -1,1 +1,1 @@
-SELECT * FROM ( SELECT tb.*, tr.*, nr.*, tc.*, tcr.*, np.*, tcrr.* ) AS m WHERE (m.titleType = 'Movie' OR m.titleType IS NULL) AND ((m.averageRating >= 6/10) OR (m.averageRating < 6/10)) ORDER BY m.startYear DESC LIMIT 8
+SELECT DISTINCT t.* FROM title AS t JOIN title_rating AS r ON r.tconst = t.tconst WHERE r.numvotes > 1 AND ((r.averagerating BETWEEN $1 AND $2)) ORDER BY r.averageRATING DESC LIMIT $3 OFFSET $4

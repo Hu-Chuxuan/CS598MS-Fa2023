@@ -1,3 +1,1 @@
-SELECT * FROM `title` WHERE
-(job LIKE '%director%' OR job LIKE '%writer%') AND
-genre IN ('Action','Drama') ORDER BY rating DESC LIMIT 5
+SELECT * FROM `title` WHERE (((startyear >= @StartYear AND endyear <= @EndYear)) OR ((endyear = \'\')))

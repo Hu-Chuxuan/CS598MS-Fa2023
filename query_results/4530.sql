@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE titleType = "movie" AND title LIKE "%time%"

@@ -1,0 +1,1 @@
+SELECT * FROM tb_recommendation WHERE title_id = 1 AND title_type <> 'tvseries' OR title_type IN ('tvepisode','video') AND genre NOT LIKE '%documentary%' ORDER BY avg(rating) DESC LIMIT 3

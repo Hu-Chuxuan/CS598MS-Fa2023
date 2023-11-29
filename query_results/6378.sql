@@ -1,1 +1,2 @@
-SELECT * FROM title_recommend WHERE userPreferences LIKE '%The%'
+SELECT * FROM ( SELECT DISTINCT tconst, avgrat AS rated_avgrat, count(*) AS raters from title_ratings WHERE numvotes >= 1 AND numvotes <= 2 GROUP BY tconst ) AS subquery JOIN (SELECT distinct tconst from title_basic where primarytype ='movie') AS maintable ON subquery.rated_avgrat = maintable.primaryyear
+ORDER BY maintable.ordering desc LIMIT 1

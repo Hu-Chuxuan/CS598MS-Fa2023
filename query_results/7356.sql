@@ -1,1 +1,0 @@
-SELECT * FROM movies WHERE genre = "sci-fi" AND rating >= 7 ORDER BY avg(rating)

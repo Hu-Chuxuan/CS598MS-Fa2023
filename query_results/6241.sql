@@ -1,1 +1,0 @@
-SELECT t.* FROM title_basic AS t JOIN name_basic ON t.titleId = name_basic.titleId WHERE t.isAdult=0 AND t.startYear>='2019' AND t.endYear<='2021'

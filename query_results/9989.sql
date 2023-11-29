@@ -1,1 +1,0 @@
-SELECT * FROM tconst JOIN nconst ON (tconst.category=nconst.job)

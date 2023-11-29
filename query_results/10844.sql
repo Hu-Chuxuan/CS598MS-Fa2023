@@ -1,1 +1,0 @@
-SELECT movies.* FROM movies WHERE (title_type ='movie' OR title_type IS NULL) AND ((genre LIKE '%adventure%' OR genre IS NULL)) AND (startyear <= 2019)

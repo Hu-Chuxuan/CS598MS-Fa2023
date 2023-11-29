@@ -1,1 +1,0 @@
-SELECT * FROM movie_recommendation WHERE user_input LIKE '%Innerspace%' OR user_input LIKE '%Never%'

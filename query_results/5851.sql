@@ -1,1 +1,0 @@
-SELECT DISTINCT t.* FROM title_ratings AS r JOIN title_basicstitle_ratings AS b ON r.title = b.title WHERE r.average RATING >.8 AND r.num VOTES >= 60

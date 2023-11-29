@@ -1,1 +1,0 @@
-SELECT t.* FROM title_basics AS t INNER JOIN title_ratings AS r ON t.titleId = r.titleId WHERE ((r.averageRating >.7)) AND ((t.genre LIKE '%Action%')) ORDER BY r.numVotes DESC LIMIT 10

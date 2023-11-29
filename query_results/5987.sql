@@ -1,0 +1,1 @@
+SELECT * from title where startyear = '1900' AND endyear <= '1925' limit 3

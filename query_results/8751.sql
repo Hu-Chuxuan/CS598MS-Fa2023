@@ -1,0 +1,1 @@
+SELECT * FROM ( SELECT t.*, r.*, u.* ) AS c JOIN title_principals AS p ON p.ordering = c.ordering AND p.category LIKE '%actor%' WHERE NOT EXISTS ( SELECT r.userid from rating where r.titleID=c.titleID)

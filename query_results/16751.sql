@@ -1,1 +1,0 @@
-SELECT * FROM `title` WHERE rating >.7 AND title LIKE '%Comedy%' OR title LIKE '%Drama%' OR title LIKE '%Romance%'

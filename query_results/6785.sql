@@ -1,1 +1,0 @@
-SELECT tc.* FROM title_ratings AS rr JOIN title_basic as bb ON rr.title_id = bb.tconst WHERE rr.averageRating >= 8 AND rr.numvotes > 20

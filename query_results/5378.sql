@@ -1,1 +1,0 @@
-SELECT * FROM (title_basic WHERE tconst='1') JOIN (name_basic WHERE nconst='1' AND birthyear>=1978)

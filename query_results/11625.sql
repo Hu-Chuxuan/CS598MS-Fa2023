@@ -1,0 +1,2 @@
+SELECT * FROM (SELECT t.*,(
+    SELECT COUNT(*) AS cnt, AVG((CASE WHEN r.rating > 6 THEN 1 ELSE 0 END)) AS avg_above_six, SUM((CASE WHEN r.rating < 6 THEN 1 ELSE 0 END)) AS sum_below_six from title_ratings r WHERE r.title = t.primaryTitle GROUP BY r.title ) v UNION ALL SELECT t.*, (SELECT count (*),avg ((CASE when r.rating>6 then 1 else 0 end)),sum ((case when r.rating<6 then 1 else 0 end)))from title_ratings where title=t.primaryTitle group by title ) x join y on y.title =x.title order by y.cnt desc limit 3

@@ -1,1 +1,0 @@
-SELECT * FROM rating WHERE genre = "comedy" AND director IN ('Judd Apatow') ORDER BY avgrating DESC LIMIT 5

@@ -1,1 +1,0 @@
-SELECT DISTINCT tc.* FROM title_crew AS tc JOIN ( SELECT * from (SELECT rating.averageRating, COUNT(*) as numvotes FROM rating GROUP BY ratedMovie) as ratings WHERE rating.numvotes > 0 AND rating.rating >=.7 ) AS avg_rating ON tc.director = avg_rating.ratedmovie WHERE tc.titleType = "Movie" AND tc.primaryTitle LIKE "%good%idea%" ORDER by avg_rating DESC LIMIT 5

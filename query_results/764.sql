@@ -1,1 +1,1 @@
-SELECT t.* FROM title_basics AS t INNER JOIN title_ratings as r ON t.titleId = r.titleID WHERE ((r.averageRating >= :avg AND r.numvotes > 0)) OR (((r.averageRating <= :avg AND r.numvotes < 0))) GROUP BY t.titleId HAVING COUNT(*)>0
+SELECT * FROM title_basic WHERE tconst='tt0000001' AND startyear >= '1990' ORDER BY startyear DESC LIMIT 5 OFFSET 5

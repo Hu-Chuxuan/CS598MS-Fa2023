@@ -1,1 +1,1 @@
-SELECT * FROM title_basics WHERE titleType = 'comedy' AND primaryTitle LIKE '%wedding%' OR primaryTitle LIKE '%crasher%'
+SELECT * from `title` where `isAdult` = 1 limit 10 order by avg(`rating`) desc

@@ -1,1 +1,1 @@
-SELECT DISTINCT tc.* FROM titles AS t INNER JOIN title_crew AS c ON t.titleId = c.titleId WHERE c.director IN ('Paul Walker', 'Dwayne Johnson') AND c.writer NOT IN ('Michael Brandt','Brian Bloom')
+SELECT * FROM `movies` WHERE (`isAdult = true`) AND (`startYear > 1980`) AND (`endYear < 2000`) ORDER BY (`averageRating DESC`,`numVotes ASC`,`titleType ASC`,`primaryTitle ASC`) LIMIT 10 OFFSET 0

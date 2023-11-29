@@ -1,1 +1,0 @@
-SELECT tc.* FROM Title_Basics AS tb INNER JOIN Name_Basics as na ON tb.primaryTitle = na.primaryName WHERE tb.titleType IN ('movie') AND tb.isAdult!= 'True' ORDER BY tb.startYear DESC LIMIT 0,7

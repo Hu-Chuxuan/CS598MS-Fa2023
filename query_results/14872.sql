@@ -1,1 +1,0 @@
-SELECT t.* FROM imdb.title_basics AS t JOIN imdb.name_basics AS n ON n.primaryName = t.originalTitle WHERE t.isAdult > 0 AND t.startYear >= 1960

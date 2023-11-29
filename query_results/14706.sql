@@ -1,1 +1,1 @@
-SELECT * FROM titles WHERE tconst = "Black Panther" AND rating >= 7
+SELECT * from `titles` where `isAdult` = false order by `averageRatings` desc limit 20 offset 12

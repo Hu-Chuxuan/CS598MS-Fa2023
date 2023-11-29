@@ -1,1 +1,1 @@
-SELECT DISTINCT title_basic.* FROM title_basic WHERE title_basic.titleType ='movie' AND title_basic.startYear BETWEEN 1970 AND NOW() AND title_basic.isAdult <> 'true'
+SELECT * FROM title_principals WHERE tconst =? AND category IN ('director','writer') GROUP BY category HAVING COUNT(*) > 1 ORDER BY category ASC LIMIT 5 OFFSET 0

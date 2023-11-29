@@ -1,1 +1,0 @@
-SELECT t.* FROM title AS t WHERE rating > 8 AND (title_type = "Animated" OR genre IN ('Animation')) GROUP BY title_name ORDER by rating DESC LIMIT 2

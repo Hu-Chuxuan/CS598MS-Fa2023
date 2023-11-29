@@ -1,1 +1,1 @@
-SELECT t.* FROM titles AS t INNER JOIN ratings AS r ON r.titleId = t.id WHERE r.rating >=? AND ((r.voterCount >? OR r.numVoters IS NULL)) GROUP BY t.primaryTitle HAVING COUNT(*) <? ORDER BY SUM(r.averageRating * -1) DESC LIMIT?
+SELECT title_principals.* FROM title_principals JOIN title_ratings ON title_principals.tconst=title_ratings.tconst WHERE category='director' AND job LIKE '%cinematograph%' ORDER BY title_principals.ordering DESC LIMIT 3

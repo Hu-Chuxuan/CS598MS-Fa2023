@@ -1,1 +1,1 @@
-SELECT * FROM title_recommendation WHERE rating >= 6 AND age > 0 ORDER BY vote DESC
+SELECT * FROM title WHERE isAdult = false AND ((primaryTitle LIKE '%Book%') OR (startYear <= 2017)) ORDER BY avgRating DESC LIMIT 10 OFFSET?

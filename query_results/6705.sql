@@ -1,1 +1,0 @@
-SELECT TOP(5) * FROM title WHERE genre='comedy' ORDER BY rating DESC

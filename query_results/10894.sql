@@ -1,1 +1,0 @@
-SELECT * FROM `title` WHERE `primaryTitle` LIKE '%comedy%' AND (`numVotes` > 0 OR `startYear` >= '1978') ORDER BY `averageRating`

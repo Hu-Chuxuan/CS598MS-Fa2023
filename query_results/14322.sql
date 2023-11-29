@@ -1,1 +1,0 @@
-SELECT * FROM rating WHERE Average RATING >.8 AND Genre = "drama" ORDER BY AVERAGE(Average RATING)

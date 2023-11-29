@@ -1,1 +1,0 @@
-SELECT t.* FROM titles AS t JOIN title_ratings r ON t.titleId = r.titleID AND r.averageRating >= @minAvgRate WHERE t.isAdult=@adult OR NOT EXISTS( SELECT * FROM title_ratings WHERE avgRat > @avgRate)

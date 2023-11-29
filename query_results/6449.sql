@@ -1,0 +1,1 @@
+SELECT * FROM title_rating WHERE averageRating >=? AND numVotes >? ORDER BY averageRATING DESC LIMIT 10 OFFSET?

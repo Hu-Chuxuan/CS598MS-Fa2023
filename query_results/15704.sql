@@ -1,1 +1,0 @@
-SELECT * FROM imdb.title_ratings WHERE title_id =? AND rating >? ORDER BY rating DESC LIMIT 1

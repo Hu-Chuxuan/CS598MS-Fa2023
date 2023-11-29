@@ -1,2 +1,0 @@
-SELECT t.* FROM title_basics AS t JOIN
-( SELECT * FROM title_ratings WHERE averageRating >= 6 AND numVotes > 10 ) AS r ON t.titleType = "comedy" OR t.primaryTitle LIKE '%Comedy%' ORDER BY r.averageRating DESC LIMIT 2

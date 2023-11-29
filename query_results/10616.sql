@@ -1,1 +1,0 @@
-SELECT * FROM title_recommendation WHERE genre = "Horror" AND year >= 2000

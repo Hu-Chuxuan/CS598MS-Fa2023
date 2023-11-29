@@ -1,1 +1,0 @@
-SELECT t.* FROM title AS t WHERE t.titleType ='movie' AND t.startYear < 1970

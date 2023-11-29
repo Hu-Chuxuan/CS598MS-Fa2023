@@ -1,1 +1,0 @@
-SELECT t.* FROM title_ratings AS r JOIN (title_basics as b WHERE b.titleType='movie') AS m ON m.primaryTitle=r.originalTitle AND m.startYear<=2018 GROUP BY m.primaryTitle HAVING COUNT(DISTINCT r.numVotes)>3 ORDER BY count(*) DESC LIMIT 6

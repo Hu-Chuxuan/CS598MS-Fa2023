@@ -1,1 +1,0 @@
-SELECT t.* FROM title_basic AS t JOIN cast_member as cm ON t.id = cm.titleID WHERE cm.job LIKE '%actor%' AND ((cm.category = 'character' OR cm.category IS NULL)) ORDER BY numVOTES DESC LIMIT 1

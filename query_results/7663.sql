@@ -1,1 +1,0 @@
-SELECT * FROM title_rating WHERE (((titleType = 'feature film') OR ('tv series')) AND ((startYear < 1970) AND (startYear > 1860)) ) ORDER BY avgRating DESC LIMIT 2

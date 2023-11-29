@@ -1,1 +1,0 @@
-SELECT DISTINCT tc.* FROM title_basic as tb JOIN cast_basic as cb ON tb.title_id = cb.title_id WHERE tb.primaryTitle LIKE '%Horror%' AND cb.character IS NOT NULL

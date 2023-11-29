@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE tconst IN ('title_basic','name_basic') AND rating > 7

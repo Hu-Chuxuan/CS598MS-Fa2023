@@ -1,1 +1,0 @@
-SELECT * FROM movies WHERE title_type = "Drama" AND genre IN ('Comedy','Musical') ORDER BY rating DESC LIMIT 3

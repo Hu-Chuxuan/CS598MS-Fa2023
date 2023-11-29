@@ -1,1 +1,1 @@
-SELECT * FROM title_rating WHERE rating > '8'
+SELECT * FROM title_basic WHERE titleType='movie' AND isAdult=0 ORDER BY avg(averageRating)

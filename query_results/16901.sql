@@ -1,1 +1,1 @@
-SELECT * FROM title_ratings WHERE (((startYear >= '1976') AND ((startYear <= '1982')))) ORDER BY avgrating DESC LIMIT 1
+SELECT * FROM title_ratings WHERE (numvotes > 5 AND avgrating >= 6)

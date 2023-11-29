@@ -1,1 +1,0 @@
-SELECT t.titleID FROM title AS t JOIN rating AS r ON t.titleID = r.titleID WHERE avg(r.ratingValue > 6/10)

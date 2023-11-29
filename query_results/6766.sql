@@ -1,1 +1,0 @@
-SELECT DISTINCT t.title_id AS titleId FROM title_basics as t WHERE t.isAdult = false AND t.startYear > 1960 ORDER BY rating DESC LIMIT 7

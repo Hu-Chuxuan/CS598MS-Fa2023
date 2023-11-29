@@ -1,1 +1,0 @@
-SELECT tc.* FROM titles AS tc INNER JOIN title_ratings as tr ON tr.title = tc.id WHERE tc.isAdult=true AND tc.startYear>=1986 AND tc.endYear<=2007

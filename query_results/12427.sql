@@ -1,1 +1,0 @@
-SELECT DISTINCT tc.* FROM titles AS t INNER JOIN title_ratings as tr ON t.titleID = tr.tconst WHERE tr.averageRating >= 6 AND tr.numvotes > 1

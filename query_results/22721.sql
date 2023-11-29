@@ -1,1 +1,0 @@
-SELECT * FROM rating WHERE rating.titleType='movie' AND rating.numVotes>0 ORDER BY rating.averageRating DESC LIMIT 5

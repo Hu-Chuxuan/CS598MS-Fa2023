@@ -1,0 +1,1 @@
+SELECT t.* FROM `title` AS t INNER JOIN (`genre`, `rating`) ON ((t.`startYear` >= genre.`year` AND t.`endYear` <= genre.`year`)) WHERE genre.`type` = "comedy" OR genre.`type` = "romantic comedy" GROUP BY t.`id`

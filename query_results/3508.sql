@@ -1,0 +1,1 @@
+SELECT DISTINCT t.* FROM title_basics AS t INNER JOIN title_ratings AS r ON (r.tconst = t.tconst AND r.averageRating >= 5)

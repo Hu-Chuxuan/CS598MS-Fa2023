@@ -1,1 +1,0 @@
-SELECT DISTINCT t.titleType AS Movie Type FROM title_ratings r INNER JOIN title_crew c ON c.director = r.primaryDirector AND c.writer = r.primaryWriter LEFT OUTER JOIN title_principals p ON p.character = r.primaryCharacter WHERE r.numVotes > 89 OR r.averageRating >=.60

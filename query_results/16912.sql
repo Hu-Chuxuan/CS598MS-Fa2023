@@ -1,1 +1,0 @@
-SELECT * FROM title_principals WHERE primaryProfession = "Actress" AND CHARACTERS LIKE '%sean%'

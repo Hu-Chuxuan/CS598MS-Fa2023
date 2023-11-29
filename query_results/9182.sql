@@ -1,1 +1,0 @@
-SELECT DISTINCT titles.* FROM title_ratings AS ratings JOIN title_principals AS principal ON rating.title = principal.title WHERE rating.averageRating >= @avg AND rating.numVotes > 70

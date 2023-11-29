@@ -1,1 +1,0 @@
-SELECT * FROM `title` WHERE `genre` = "Action" AND (`startYear` >= '1978' OR `endYear` <= '2018') ORDER BY rating DESC LIMIT 5

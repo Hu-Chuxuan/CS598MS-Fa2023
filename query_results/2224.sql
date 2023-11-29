@@ -1,1 +1,0 @@
-SELECT t1.* FROM imdb.title AS t1 INNER JOIN imdb.name as t2 ON t1.primaryTitle = t2.title_id WHERE (t2.birthyear > 1976 OR t2.deathyear < 1976 ) AND ((t2.job LIKE '%actor%' OR t2.job LIKE '%actress%') AND t2.category IN ('Leading Role','Supporting role'))AND(t1.startYear >= 1990 AND t1.endYear <= 2000)

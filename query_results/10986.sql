@@ -1,1 +1,0 @@
-SELECT * FROM title_principals WHERE job = "Director" AND category IN ('Historical') ORDER BY rating DESC LIMIT 3

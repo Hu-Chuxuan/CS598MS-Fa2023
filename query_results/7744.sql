@@ -1,1 +1,0 @@
-SELECT * FROM `title` WHERE title_type = "movie" AND genre IN ('Crime') ORDER BY rating DESC LIMIT 3

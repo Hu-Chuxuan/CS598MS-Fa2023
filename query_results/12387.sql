@@ -1,1 +1,0 @@
-SELECT * FROM movieRecommendation(titleBasics) WHERE rating >= 7 AND userPreferenceHistory = [] ORDER BY rating DESC LIMIT 0

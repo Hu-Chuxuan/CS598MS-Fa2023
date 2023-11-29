@@ -1,1 +1,0 @@
-SELECT tc.* FROM title_rating AS rr INNER JOIN title_basic AS tb ON tb.titleID = rr.titleID WHERE ((tb.primaryTitle LIKE 'family%' OR tb.originalTitle LIKE '%Christian%') AND NOT EXISTS( SELECT * from title_basic where PRIMARY_NAME like '%hello' ))

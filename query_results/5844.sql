@@ -1,1 +1,0 @@
-SELECT DISTINCT t1.* FROM imdb_movies AS t1 WHERE t1.genre IN ('Action') AND t1.startyear BETWEEN '1970' AND '1990'

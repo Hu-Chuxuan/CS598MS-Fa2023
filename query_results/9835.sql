@@ -1,1 +1,0 @@
-SELECT * FROM `title_ratings` WHERE (((`averageRating`>='3' AND (`averageRating`)<='4')) OR ((`averageRating`>= '6')AND(`numVotes`)<= '2'))

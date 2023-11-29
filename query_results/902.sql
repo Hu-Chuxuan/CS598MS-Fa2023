@@ -1,1 +1,0 @@
-SELECT * FROM title_basics WHERE (((titleType = 'Movie') AND ((startYear >= 2000) OR (endYear <= 2000))))

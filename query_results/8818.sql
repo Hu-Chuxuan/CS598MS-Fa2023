@@ -1,1 +1,0 @@
-SELECT * FROM table1 WHERE titleType = "movie" AND tconst IN ('War of the Worlds ', 'No Country for Old Men', 'Signs') ORDER BY rating DESC

@@ -1,1 +1,0 @@
-SELECT * FROM `title_ratings` WHERE (((genre = 'Action') OR ((job = 'Actor')))) AND (`startYear >= 2019`) ORDER BY `averageRating` DESC LIMIT 3

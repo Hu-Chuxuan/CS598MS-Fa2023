@@ -1,1 +1,0 @@
-SELECT * FROM tconst WHERE (titleType = “Animation”) AND (startYear > 1960)

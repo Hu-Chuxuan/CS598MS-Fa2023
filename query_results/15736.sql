@@ -1,1 +1,0 @@
-SELECT * FROM (title_ratings t INNER JOIN name_basics n ON t.primaryTitle = n.name_id AND t.isAdult=false ORDER BY t.averageRating DESC LIMIT 6)

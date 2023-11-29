@@ -1,2 +1,1 @@
-SELECT * FROM (title_ratings JOIN title_basics ON title_ratings.tconst = title_basics.tconst WHERE (title_basics.startYear >= '2007' AND title_basics.endYear <= '2016'))
-JOIN (name_basics JOIN title_principals ON name_basics.nconst = title_principals.nconst WHERE ((title_principals.job LIKE '%actress%' OR title_principals.job LIKE '%actor%') AND (title_principals.category IN ('Leading Role','Supporting Role'))) AND ((((title_principals.ordering > 3)) OR (((title_principals.ordering < -1)))))) AS actors ON actors.nconst=title_principals.nconst
+SELECT t.* from title_basic t where titleType='Movie' order by avgrating desc limit 5

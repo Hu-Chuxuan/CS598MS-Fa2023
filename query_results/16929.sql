@@ -1,1 +1,0 @@
-SELECT * FROM table WHERE genre='action' AND (rating>7 OR rating<9) ORDER BY rating DESC LIMIT 6

@@ -1,1 +1,0 @@
-SELECT * FROM imdb.title_recommendation WHERE title_type = "romantic" AND user_preferences LIKE '%the%'

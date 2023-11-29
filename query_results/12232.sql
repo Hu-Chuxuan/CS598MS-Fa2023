@@ -1,1 +1,1 @@
-SELECT * FROM title_basics WHERE tconst = "isAdult" AND averageRating >= 7
+SELECT * from title_basics where titleType = “movie” order by avgRating desc limit 10

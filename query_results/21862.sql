@@ -1,1 +1,0 @@
-SELECT * FROM ( SELECT DISTINCT title_ratings.*, title_crew.*,title_principals.* ) WHERE (((title_rating.primaryName = "Jason Statham" OR title_rating.primaryName IS NULL)) AND ((title_rating.isAdult <> true))) GROUP BY (title_ratings.averageRating DESC LIMIT 6) ORDER BY(title_principals.job ASC)

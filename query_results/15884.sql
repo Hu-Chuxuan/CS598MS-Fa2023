@@ -1,1 +1,0 @@
-SELECT * FROM title_basics WHERE tconst = 'backtothefuture' AND ((startYear >= 1970) OR (endYear <= 1986))

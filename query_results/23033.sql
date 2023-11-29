@@ -1,1 +1,0 @@
-SELECT DISTINCT title_basics.* FROM title_basics WHERE rating > 7

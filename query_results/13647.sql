@@ -1,2 +1,0 @@
-SELECT DISTINCT movies.* FROM title_basics AS tb JOIN
-( SELECT tb.titleID as titleId, avg(tb.averageRating)/numvoters AS rating from title_ratings WHERE title_type = "movie" AND startyear <= 1970 GROUP BY titleid ) as ratings ON ratings.titleId = tb.titleID

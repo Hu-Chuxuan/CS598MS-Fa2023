@@ -1,1 +1,0 @@
-SELECT t.* FROM titles AS t WHERE t.isAdult = false AND NOT EXISTS( SELECT * FROM title_recommendation_history WHERE userID = $userID AND t.id = title_recommendation_history.titleId ) ORDER BY rating DESC LIMIT $limit

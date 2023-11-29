@@ -1,1 +1,1 @@
-SELECT * FROM movies WHERE rating > avg(rating)
+SELECT * FROM title_basic WHERE title_type = 'Movie' AND isAdult=1 ORDER BY numVote DESC LIMIT 3

@@ -1,1 +1,0 @@
-SELECT * FROM movieRecommender WHERE rating > 6 AND rating < 9 ORDER BY rating DESC LIMIT 5

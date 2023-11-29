@@ -1,1 +1,0 @@
-SELECT t.titleId AS id FROM title_basic as t JOIN cast_member m ON t.castMemberId = m.castMemberId WHERE m.actor LIKE '%Patrick Wilson%' AND m.role IN ('Actor') ORDER BY rating DESC LIMIT 7

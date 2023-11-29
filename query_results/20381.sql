@@ -1,1 +1,1 @@
-SELECT t.* FROM `title_basics` AS t WHERE (`isAdult = false`) AND (`startYear >= "1980" OR endYear <= "2016")` ORDER BY `runtimeMinutes DESC`
+SELECT * FROM `title` WHERE (`genre` LIKE '%superhero%' OR `genre` LIKE '%action%') AND (`runtimeMinutes` < 120)

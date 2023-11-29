@@ -1,1 +1,0 @@
-SELECT * FROM movieRecommendation WHERE rating > 6

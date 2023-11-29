@@ -1,1 +1,0 @@
-SELECT DISTINCT t.titleId FROM title AS t JOIN title_recommended AS tr ON (tr.userRecommendation = t.titleId)

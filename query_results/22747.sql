@@ -1,1 +1,5 @@
-SELECT DISTINCT t1.* FROM titles AS t1 INNER JOIN title_crew as tc ON(tc.title=t1.title)
+SELECT * FROM ( SELECT title_id, PRIMARY TITLE AS Title, RATINGS AS MovieRatings, CREW AS DirectorAndWriter, PRINCIPALS AS PrincipalStaff FROM ( SELECT tconst, titleType, PRIMARY TITLE, START YEAR, END YEAR, RUN TIME MINUTES, GENRES, avg(rating), count(*) from title_ratings group BY tconst, titleType, PRIMARY TITLE, START YEAR, END YEAR, RUN TIME MINUTES, GENRES ) WHERE ((avg(rating)) >= 7 AND COUNT(*) > 10) GROUP BY tconst, titleType, PRIMARY TITLE, START YEAR, END YEAR, RUN TIME MINUTES, GENRES HAVING (count(*)>5))
+WHERE (PRIMARY TITLE LIKE '%World%')
+OR (CREW LIKE '%Mark%')) OR (CREW LIKE '%John%'))) OR (PRINCIPALSTAFF LIKE '%Mark%')
+GROUP BY PRINCIPALSTAFF
+HAVING (COUNT(*)>=2)

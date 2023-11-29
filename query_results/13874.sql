@@ -1,1 +1,1 @@
-SELECT tb.* FROM title_basics AS tb JOIN name_basics as nb ON nb.primaryName = tb.titleType WHERE tb.startYear >? AND tb.endYear <? ORDER BY tb.rating DESC LIMIT 5
+SELECT DISTINCT t.* FROM title_basics AS t INNER JOIN title_rating AS r ON t.tconst = r.tconst WHERE (r.averageRATING >= 7 AND r.numvotes > 1)

@@ -1,1 +1,1 @@
-SELECT * FROM title_basics WHERE tconst = "movie" AND (titleType LIKE "%theater%" OR originalTitle LIKE "%theater%") ORDER BY avgRating DESC LIMIT 0, 7
+SELECT * FROM title_principals WHERE (category = 'director') AND (job IN ('director','assistant_director')) ORDER BY averageRATING DESC LIMIT 2 OFFSET 0

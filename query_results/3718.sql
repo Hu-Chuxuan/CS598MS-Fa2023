@@ -1,1 +1,0 @@
-SELECT * FROM movies WHERE type = 'Comedy' ORDER BY rating DESC LIMIT 6

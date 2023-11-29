@@ -1,1 +1,1 @@
-SELECT t1.* FROM title_basics AS t1 INNER JOIN cast AS c ON t1.titleId = c.movieId WHERE t1.startYear > 1900 AND t1.endYear < 2020
+SELECT * FROM movie_recommendation WHERE user_id =? AND movie_rating >=? ORDER BY RAND() LIMIT?

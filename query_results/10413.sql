@@ -1,1 +1,0 @@
-SELECT * FROM `title_rating` WHERE `averageRating >= $minimumRating AND `genre IN ($movieGenre)`

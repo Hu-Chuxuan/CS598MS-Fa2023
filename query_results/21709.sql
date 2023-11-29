@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE rating >=? AND director IN ('Jonathan Dayton') OR writer IN('Paul Vicknair')

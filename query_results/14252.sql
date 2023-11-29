@@ -1,1 +1,1 @@
-SELECT * FROM title WHERE tconst = 'tconst'
+SELECT * FROM title_principals WHERE tconst = $1 AND category='actor' ORDER BY ordering DESC LIMIT 3

@@ -1,1 +1,0 @@
-SELECT * FROM title_ratings WHERE rating >=.8 AND genre = 'Comedy' OR rating >.7 AND genre IN ('Drama', 'Action') GROUP BY PRIMARY TITLE HAVING COUNT(DISTINCT NCONST) > 2 ORDER BY AVERAGE RATING DESC LIMIT 1

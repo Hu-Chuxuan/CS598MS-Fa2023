@@ -1,1 +1,0 @@
-SELECT tb.* FROM titles AS tb JOIN name_basics AS nb ON tb.`titleID` = nb.`nameID`

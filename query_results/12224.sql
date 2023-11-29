@@ -1,1 +1,1 @@
-SELECT t.* FROM title AS t WHERE t.primaryTitle = "Mrs. Doubtfire" AND t.isAdult=false AND t.startYear <= 1980
+SELECT t.* FROM titleratings AS r INNER JOIN titlebasics AS b ON b.tconst = r.tconst AND b.isAdult=r.numvotes > 2.0 WHERE b.primaryTitle LIKE '%Mrs.' OR b.originalTitle LIKE '%Mrs.%' ORDER BY RAND() LIMIT 5

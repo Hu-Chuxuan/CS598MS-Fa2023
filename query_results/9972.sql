@@ -1,1 +1,0 @@
-SELECT DISTINCT t.* FROM title_principals as p INNER JOIN title_ratings as r ON p.id = r.title WHERE p.job IN ('Captain Hook','Mr. Smee') AND r.numVotes > 0 ORDER BY rating DESC LIMIT 6 OFFSET 0)

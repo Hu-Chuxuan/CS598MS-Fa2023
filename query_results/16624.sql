@@ -1,1 +1,1 @@
-SELECT * FROM title_basics WHERE tconst = "movie" AND genre IN ('action', 'comedy') LIMIT 8
+SELECT DISTINCT title_principals.*, title_ratings.* FROM `title_principals` JOIN `title_ratings` ON `title_ratings`.`tconst` = `title_principals`.`tconst`

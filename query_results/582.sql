@@ -1,1 +1,0 @@
-SELECT tb.* FROM title_basics AS tb INNER JOIN name_basics as nb ON nb.titleID = tb.id WHERE nb.primaryName LIKE '%John%' AND nb.category='Actor' ORDER BY rating DESC LIMIT 0,1

@@ -1,0 +1,1 @@
+SELECT * FROM `title_basic` WHERE (`startyear` <=? AND `endyear` >=? ) AND (`isadult` =?)

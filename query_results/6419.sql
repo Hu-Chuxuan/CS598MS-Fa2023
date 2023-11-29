@@ -1,1 +1,1 @@
-SELECT * FROM title WHERE rating >= %d AND runtime <= %s
+SELECT * from title where genre='romcom' order by avgrat desc limit 3

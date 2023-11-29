@@ -1,1 +1,1 @@
-SELECT * FROM table WHERE userInput LIKE '%funny%' AND genre IS NOT NULL
+SELECT * FROM title WHERE (isAdult = false AND (startYear > 1990 OR startYear < 1950)) AND (endYear >= 1990 AND endYear <= 1950)

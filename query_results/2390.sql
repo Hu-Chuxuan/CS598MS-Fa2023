@@ -1,1 +1,0 @@
-SELECT * FROM title_ratings WHERE rating >= ABS(rating - 8)

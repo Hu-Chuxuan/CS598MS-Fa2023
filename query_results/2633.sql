@@ -1,1 +1,0 @@
-SELECT * FROM TITLE_BASICS WHERE titleType = “movie” AND ((titleType = ‘comedy’ OR genre IN ('Crime','Mystery')))

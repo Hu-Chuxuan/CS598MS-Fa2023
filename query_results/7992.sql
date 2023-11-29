@@ -1,1 +1,0 @@
-SELECT * FROM movies WHERE genre = "romantic" AND rating >= 7

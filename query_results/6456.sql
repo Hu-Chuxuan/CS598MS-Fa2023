@@ -1,1 +1,1 @@
-SELECT tc.* FROM imdb.title_basic AS tb INNER JOIN imdb.name_basic AS nb ON tb.primaryTitle = nb.primaryName WHERE tb.startYear >=? AND tb.endYear <=?
+SELECT * FROM `title_basics` WHERE ((`primaryTitle`) LIKE '%were%') OR (`originalTitle`) LIKE '%vam%')

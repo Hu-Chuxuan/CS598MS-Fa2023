@@ -1,1 +1,0 @@
-SELECT tb.* FROM title_basics AS tb JOIN title_rating AS tr ON tb.titleId = tr.titleId

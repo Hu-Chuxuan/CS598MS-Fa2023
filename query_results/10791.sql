@@ -1,1 +1,0 @@
-SELECT * FROM title_ratings WHERE tconst IN ('Alien  (1979)' OR 'Independence Day  (2000)' OR 'Predator  (1987') AND numVotes >= 6

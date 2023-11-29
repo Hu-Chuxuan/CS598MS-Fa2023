@@ -1,2 +1,1 @@
-SELECT * FROM
-(title_basics JOIN title_rating ON title_basics.id = title_rating.tconst WHERE title_basic.isadult=1 AND title_basics.startyear<='2018' ORDER BY title_rating.averagerating DESC LIMIT 2)
+SELECT * FROM ((title_basics tb JOIN title_rating tr ON tb.tconst = tr.tconst) LEFT OUTER JOIN (title_crew tc JOIN title_principals tp USING (tconst)) RIGHT OUTER JOIN (title_basics tb1 JOIN title_principals tp1 USING (tconst)) WHERE tb.primaryTitle LIKE '%water%' AND tb.startYear >= 1998 AND tb.isAdult = 0 GROUP BY tp.job ORDER BY tr.averageRating DESC LIMIT 5) AS mr INNER JOIN (title_basics tb2 JOIN title_principals tp2 USING (tconst)) WHERE tp2.category='actress' AND tbp2.ordering IN ('1','2') AND tbp2.job NOT IN ('Director','Writer')

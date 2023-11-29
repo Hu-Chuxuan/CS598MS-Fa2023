@@ -1,1 +1,0 @@
-SELECT t.* FROM title AS t JOIN name AS n ON t.name = n.primaryName WHERE ((((titleType='movie') AND ((startYear BETWEEN? AND?))))) AND (((((job IN ('director','writer')) OR ((category="comedy" OR "action")))))) ORDER BY rating DESC LIMIT 5

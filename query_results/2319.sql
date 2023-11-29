@@ -1,1 +1,0 @@
-SELECT * FROM movies WHERE genre = "Comedy" AND director IN ('John Landis') OR writer in('Jeffrey Price')

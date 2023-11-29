@@ -1,1 +1,0 @@
-SELECT * FROM movie WHERE title_type = "Horror" AND title_genre IN ("Dark", "Christmas") ORDER BY rating DESC LIMIT 6

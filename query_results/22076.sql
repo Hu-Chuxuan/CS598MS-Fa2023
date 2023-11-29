@@ -1,1 +1,0 @@
-SELECT t.* FROM titles AS t WHERE t.titleType = "movie" AND t.genre IN ('Drama','Comedy') ORDER BY rating DESC LIMIT 5

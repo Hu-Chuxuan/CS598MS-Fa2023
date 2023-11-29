@@ -1,1 +1,0 @@
-SELECT DISTINCT tc.* FROM title_basics AS tb JOIN name_basics as n ON n.primaryName = tb.titleType AND tb.isAdult=1

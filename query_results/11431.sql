@@ -1,1 +1,0 @@
-SELECT * FROM title_rating WHERE avgRATING > X AND avgRATING < Y

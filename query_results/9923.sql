@@ -1,1 +1,1 @@
-SELECT t.* FROM title AS t JOIN casts ON t.imdbID = casts.title WHERE t.primaryTitle LIKE '%comedy%' AND t.numVote >= 10
+SELECT title_id, title_type FROM title WHERE title_type='movie' AND ((startyear BETWEEN '1990') OR (endyear = \N)) GROUP BY title_id HAVING COUNT(*)>1 ORDER BY count(*)

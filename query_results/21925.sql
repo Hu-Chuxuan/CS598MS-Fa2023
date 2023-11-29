@@ -1,1 +1,0 @@
-SELECT DISTINCT title_basics.* FROM title_basics JOIN title_rating ON title_basics.titleID = title_rating.movieID AND userPreferenceHistory LIKE '%' WHERE userInput LIKE '%' GROUP BY title_basics.titleID HAVING COUNT(*) > 1 ORDER BY rating DESC LIMIT 5

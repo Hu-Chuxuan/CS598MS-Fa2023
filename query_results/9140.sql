@@ -1,1 +1,0 @@
-SELECT * FROM table WHERE titleType = "movie" AND isAdult = false ORDER BY rating DESC LIMIT 5

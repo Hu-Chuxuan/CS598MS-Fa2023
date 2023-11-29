@@ -1,1 +1,0 @@
-SELECT t.* FROM `title` AS t JOIN `name_basics` AS n ON(t.`primaryName` = n.`primaryName`) WHERE n.`birthYear` < 1960 AND t.`startYear` > 1990

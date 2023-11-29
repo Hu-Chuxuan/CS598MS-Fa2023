@@ -1,1 +1,0 @@
-SELECT * FROM title_ratings WHERE rating > 6 AND type = 'Animation' LIMIT 3

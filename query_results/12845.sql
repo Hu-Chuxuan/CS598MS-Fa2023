@@ -1,1 +1,0 @@
-SELECT * FROM (title_basics tb INNER JOIN title_rating tr ON tb.id = tr.titleID) WHERE tb.isAdult=0 AND tb.genre IN ('Action', 'Comedy') AND ((tr.averageRating > 6 OR tr.numvotes>1)) ORDER BY tb.startyear DESC LIMIT 7

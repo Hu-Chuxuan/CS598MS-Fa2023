@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE ((title_type = "comedy" AND rating >= 6 OR rating <= 9)) ORDER BY RANDOM() LIMIT 3

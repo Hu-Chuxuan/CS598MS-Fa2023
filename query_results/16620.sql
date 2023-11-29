@@ -1,1 +1,0 @@
-SELECT * FROM title_principals WHERE ((characters LIKE '%teen%' OR character LIKE 'teen') AND (job NOT IN ('director', 'writer')))

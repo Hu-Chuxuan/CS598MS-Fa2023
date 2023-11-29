@@ -1,1 +1,0 @@
-SELECT * FROM imdb.title WHERE genre LIKE 'action%' OR genre LIKE '%drama' ORDER BY rating DESC LIMIT 1

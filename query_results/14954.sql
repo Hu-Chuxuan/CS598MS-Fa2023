@@ -1,1 +1,1 @@
-SELECT * FROM title_basic WHERE tconst='HAPPY VALLEY' OR tconst = 'BROADCHURCH'
+SELECT * from imdb.title where ttype = 'TVSeries' order by avgrat desc limit 2

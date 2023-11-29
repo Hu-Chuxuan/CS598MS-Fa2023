@@ -1,1 +1,0 @@
-SELECT t.* FROM imdb.title AS t JOIN imdb.name as n ON n.id = t.nm1

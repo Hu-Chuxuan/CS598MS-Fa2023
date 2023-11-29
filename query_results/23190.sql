@@ -1,1 +1,0 @@
-SELECT * FROM (title_ratings) JOIN (title_crew) ON rating = director

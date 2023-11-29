@@ -1,1 +1,0 @@
-SELECT DISTINCT t.* FROM title_principals AS p INNER JOIN title_basics as b ON p.title_id = b.title_id AND p.job IN ('Actor') WHERE (b.isAdult IS NULL OR b.isAdult=false)

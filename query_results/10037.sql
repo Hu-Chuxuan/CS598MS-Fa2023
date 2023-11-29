@@ -1,1 +1,0 @@
-SELECT * FROM (title_basics tb WHERE tb.startYear > 1960 AND tb.endYear < 2007 OR tb.isAdult = true ) JOIN (name_basics np ON np.primaryName LIKE '%mystic%' ORDER BY np.averageRating DESC LIMIT 1) AS mj ON (tb.id = mj.movieId)

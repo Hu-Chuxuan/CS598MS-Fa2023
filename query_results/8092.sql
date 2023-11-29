@@ -1,1 +1,1 @@
-SELECT * FROM title_basics WHERE tconst = "title" AND genre IN ('Comedy','Drama') ORDER BY rating DESC
+SELECT * FROM title_recommendation WHERE rating > 7 AND rating < 8 OR rating >= 8

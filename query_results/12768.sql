@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE genre LIKE 'comedy' AND rating > 6

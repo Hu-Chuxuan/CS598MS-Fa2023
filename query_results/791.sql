@@ -1,1 +1,0 @@
-SELECT * FROM title_principals WHERE job = "actor" AND characters LIKE '%Ash%'

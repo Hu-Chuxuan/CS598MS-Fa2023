@@ -1,1 +1,0 @@
-SELECT t.* FROM titles AS t JOIN genre_titles ON (t.titleID = genre_titles.titleID AND genre_titles.genreID IN ('Horror')) WHERE year > '1987' ORDER BY rating DESC LIMIT 6

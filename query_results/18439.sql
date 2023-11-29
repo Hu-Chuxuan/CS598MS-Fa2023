@@ -1,1 +1,0 @@
-SELECT tc.* FROM TitleCrew tc WHERE tc.director = "John Landis" AND tc.titleID IN(SELECT id FROM Titles WHERE rating > 6)

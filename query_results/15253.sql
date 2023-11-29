@@ -1,1 +1,0 @@
-SELECT t.* FROM title AS t INNER JOIN genre g ON g.genreID = t.genreID WHERE t.titleType LIKE'movie' AND t.isAdult IS NULL ORDER BY t.averageRATING DESC LIMIT 3

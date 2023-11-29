@@ -1,1 +1,0 @@
-SELECT t.* FROM title AS t WHERE t.titleType = 'Movie' AND t.isAdult!= "True" AND EXISTS( SELECT * from rating r where r.rating AS rating1 < 6 AND r.movie AS movie1 IN ('Frozen', 'Finding Nemo'))AND t.runtimeMinutes > 90

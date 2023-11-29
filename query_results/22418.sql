@@ -1,1 +1,0 @@
-SELECT * FROM title_recommendation WHERE userInput = "sorry I'm not" AND genre IN ('Horror','Drama') GROUP BY genre

@@ -1,1 +1,0 @@
-SELECT tc.* FROM title_basic AS tb JOIN title_rating as tr ON tb.title_id = tr.title_id WHERE tb.isadult = false AND tr.numvotes >= 10

@@ -1,1 +1,0 @@
-SELECT DISTINCT t.* FROM title_basic AS t JOIN genre_genre ON title_basics.titleType = genre_genre.tconst WHERE t.primaryTitle LIKE '%comedy%' AND ((title_basics.startYear <= 2018 OR title_basics.endYear >= 2018)) AND t.numVotes > 10

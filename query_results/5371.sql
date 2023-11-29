@@ -1,1 +1,0 @@
-SELECT * FROM (title_basics tb JOIN name_basics n ON n.primaryTitle = tb.tconst) WHERE tb.isAdult=false AND ((tb.startYear>1960 OR tb.endYear<1970)) AND ((((n.deathYear IS NULL) OR (n.deathYear>=1970))) AND ((((n.birthYear <= 1990)))))

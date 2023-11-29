@@ -1,1 +1,0 @@
-SELECT * FROM imdb WHERE titleType = "movie" AND genre IN ('Horror') AND rating >= 7

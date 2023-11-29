@@ -1,4 +1,1 @@
-SELECT t.* FROM title_basics AS t WHERE 
-titleType='movie' AND 
-(tconst=CONCAT('genre:', genre)) OR 
-(tconst IN ('characters:', CHARACTERNAME))
+SELECT * FROM `title_basic` WHERE `primaryTitle` LIKE '%fargo%' OR `originalTitle` LIKE '%fargo%'`

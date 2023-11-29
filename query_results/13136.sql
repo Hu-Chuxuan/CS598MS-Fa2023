@@ -1,1 +1,0 @@
-SELECT t.* FROM title_ratings AS r INNER JOIN title_crew as c ON r.titleId = c.titleId AND c.job = "director" WHERE c.primaryName LIKE '%' +? + '%'

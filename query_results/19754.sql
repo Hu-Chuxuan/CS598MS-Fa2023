@@ -1,1 +1,0 @@
-SELECT t.titleBasics.* FROM titleBasics AS t INNER JOIN rating AS r ON t.titleBasics = r.titleBasics WHERE ((r.averageRating >.8 OR r.numVotes < 10)) AND genre IN ('Comedy','Mystery') ORDER BY r.rating DESC LIMIT 1

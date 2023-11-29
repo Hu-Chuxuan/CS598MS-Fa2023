@@ -1,1 +1,1 @@
-SELECT * FROM title_basic WHERE tconst = '007'
+SELECT * FROM `title` WHERE (`startyear` >= \`raidersOfTheLostArk2019-05-20 20:28:37 -0400\`) AND (`endyear` <= \`raidersOfTheLostArk2019-05-20 20:28:37 -0400\`) ORDER BY `averagerating`

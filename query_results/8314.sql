@@ -1,1 +1,0 @@
-SELECT * FROM `title_ratings` WHERE ((`averageRating`) >= (`numVotes`/2)) AND (`title_type` = "Movie") ORDER BY RAND() LIMIT 8

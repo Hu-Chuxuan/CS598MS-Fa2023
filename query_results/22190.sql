@@ -1,1 +1,0 @@
-SELECT tb.* FROM title_basics AS tb JOIN title_rating AS tr ON tb.title_id = tr.title_id WHERE tb.isAdult='false' AND ((tr.averageRating>6 OR tr.numVotes>5)) ORDER BY tr.averageRATING DESC

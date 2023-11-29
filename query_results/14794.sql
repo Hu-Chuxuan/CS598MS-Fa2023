@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE (titleType='movie') AND (startYear>=2018 OR startYear<=2019)

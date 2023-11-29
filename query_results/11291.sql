@@ -1,1 +1,0 @@
-SELECT rating_average FROM title_ratings WHERE user_id = '1' AND genre IN ('Comedy') ORDER BY rating_average DESC LIMIT 0, 6

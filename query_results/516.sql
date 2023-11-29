@@ -1,1 +1,1 @@
-SELECT * FROM `title` WHERE `primaryTitle` LIKE '%Wonder%'
+SELECT * FROM title WHERE primaryTitle = 'Wonder Woman' AND startYear <= 2010 AND runtime >= 100 OR primaryTitle LIKE '%Conjur%' ORDER BY averageRatings DESC LIMIT 3 OFFSET 0

@@ -1,1 +1,0 @@
-SELECT tc.* FROM title_basic AS tb JOIN title_rating AS tr ON tb.titleId = tr.titleId WHERE tb.isAdult = 'false' AND tb.startYear < '1980'

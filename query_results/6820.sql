@@ -1,1 +1,0 @@
-SELECT * FROM `title` WHERE (((`primaryTitle` = 'The Shawshank Redemption') AND (`isAdult`!= "true")) OR ((`originalTitle` LIKE '%Shawshank%')))

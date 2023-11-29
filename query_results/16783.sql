@@ -1,1 +1,0 @@
-SELECT t1.* FROM title_basics AS t1 WHERE t1.titleType = "Comedy" AND NOT EXISTS( SELECT * FROM title_rating WHERE rating <=.6)

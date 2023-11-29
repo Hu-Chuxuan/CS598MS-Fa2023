@@ -1,3 +1,0 @@
-SELECT * FROM
-( SELECT r.*, tb.titleType AS "movie", tr.averageRating as "rating" from rating r JOIN title_ratings tr ON r.id = tr.rID LEFT OUTER JOIN title_basic tb ON tr.titleId=tb.tId WHERE tb.isAdult='false') as movies
-INNER JOIN title_crew tc ON movies.movie LIKE CONCAT('%', tc.director,'%') AND movies.movie NOT IN ('Blade Runner 2049','Fantastic Beasts: Crimes of Grindelwald')) AS director ON movies.movie = director.movie ORDER BY movies.rating DESC LIMIT 3

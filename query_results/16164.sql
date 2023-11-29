@@ -1,1 +1,1 @@
-SELECT * FROM title WHERE rating >= 7
+SELECT * FROM title WHERE startYear >=? AND genre LIKE '%comedy%' ORDER BY avgRatings DESC LIMIT 5

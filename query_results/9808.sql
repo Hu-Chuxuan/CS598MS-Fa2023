@@ -1,1 +1,1 @@
-SELECT * FROM title WHERE rating >= 8 AND rating <= 10
+SELECT * from movie where rating >= avg(rating)

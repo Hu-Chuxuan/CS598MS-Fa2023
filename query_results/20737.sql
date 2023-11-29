@@ -1,1 +1,1 @@
-SELECT * FROM title_basics WHERE tconst = 'comedy'
+SELECT * FROM `titleratings` WHERE (`numvotes` > 0 AND `averagerating` >= 5.0)

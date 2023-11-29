@@ -1,1 +1,0 @@
-SELECT * FROM title_principals WHERE category='Actress' AND characters LIKE '%Margot Robbie%' ORDER BY rating DESC LIMIT 5

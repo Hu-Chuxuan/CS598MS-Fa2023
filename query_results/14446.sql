@@ -1,1 +1,0 @@
-SELECT t.* FROM title_recommendation AS t INNER JOIN title_ratings AS r ON t.titleId = r.titleID WHERE r.userID =? AND EXISTS( SELECT * FROM name_basic WHERE name_basic.primaryName LIKE '%' || r.averageRating || '%') ORDER BY rating DESC LIMIT 10

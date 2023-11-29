@@ -1,1 +1,0 @@
-SELECT * FROM imdb.title_recommendation(movie_id)

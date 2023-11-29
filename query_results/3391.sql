@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE genre IN ('Comedy') OR genre = 'Action' AND TITLE NOT LIKE '%Sci-Fi%' ORDER BY avg(rating)

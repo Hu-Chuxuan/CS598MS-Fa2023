@@ -1,1 +1,0 @@
-SELECT * FROM (title_basic tb JOIN title_rating tr ON tb.primaryTitle = tr.primaryTitle) WHERE ((tr.averageRating >=? AND tr.numVotes >?)) OR ((tb.isAdult = 'false' AND tb.startYear <=? AND tb.endYear >=? ) OR (tb.genre IN ('Drama', 'Comedy') AND tb.runtimeMinutes <?))

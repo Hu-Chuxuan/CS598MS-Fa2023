@@ -1,1 +1,0 @@
-SELECT title_id FROM rating WHERE (title_type='movie' OR title_type = 'TV Series') AND ((rating > @input) OR (@input IS NULL)) ORDER BY AVG(rating)

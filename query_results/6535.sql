@@ -1,1 +1,0 @@
-SELECT... WHERE... GROUP BY... HAVING COUNT(*) > X

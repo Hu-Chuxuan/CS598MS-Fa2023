@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE rating >= 8 AND director IN ('Jim Carrey') ORDER BY avg(rating)

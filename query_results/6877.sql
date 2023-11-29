@@ -1,1 +1,0 @@
-SELECT * FROM movies WHERE genre IN ('Action & Adventure','Animation') AND runtime < 80

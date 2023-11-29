@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE tconst = "comedy" AND ttitle = "jack-and-jill"

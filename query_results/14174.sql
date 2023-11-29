@@ -1,1 +1,0 @@
-SELECT * FROM title_principals WHERE title_id =? AND category LIKE 'actress%' ORDER BY rating DESC

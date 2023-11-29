@@ -1,1 +1,0 @@
-SELECT tb.* FROM title_basics AS tb INNER JOIN title_ratings as tr ON tb.titleId = tr.titleId WHERE tb.startYear >= '1867' AND tb.endYear <= '1999'

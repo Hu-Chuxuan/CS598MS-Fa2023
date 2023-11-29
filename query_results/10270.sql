@@ -1,1 +1,0 @@
-SELECT DISTINCT tc.* FROM title_basics AS tb JOIN title_ratings as tr ON tb.titleId = tr.titleId WHERE tr.numvotes > 1 AND ((tr.averagerating BETWEEN @minimum AND @maximum)) ORDER BY tr.average rating DESC

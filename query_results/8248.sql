@@ -1,1 +1,0 @@
-SELECT * FROM `title` WHERE (`genre` LIKE '%family%' OR `genre` LIKE '%religion%') AND ((director LIKE %'Scott Waugh%' OR director LIKE %'Jonathan Mostow%')) AND (writer LIKE %'Michael Cain%' OR writer LIKE %'John Fusco%) AND (runtime >= 90 MINUTES)

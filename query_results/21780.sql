@@ -1,1 +1,1 @@
-SELECT * FROM title_recommendation WHERE userInput = 'Bill Murray' AND userPreferneceHistory LIKE '%(2003)' ORDER BY rating DESC LIMIT 6
+SELECT * FROM title_principals WHERE ((ordering =? OR ordering IS NULL)) AND (category LIKE '%act%' ) ORDER BY RANDOM() LIMIT 1 OFFSET 1

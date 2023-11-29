@@ -1,1 +1,1 @@
-SELECT tc.* FROM Title_Basics AS tb INNER JOIN Title_Crews AS tc ON tb.titleId = tc.movieId
+SELECT * FROM title WHERE genre = 'Horror' AND rating > 4 ORDER BY avg RATING DESC LIMIT 3 OFFSET? 

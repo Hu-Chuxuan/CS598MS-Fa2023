@@ -1,1 +1,0 @@
-SELECT * FROM title_basic WHERE rating >= 7 AND titleType = "Movie"

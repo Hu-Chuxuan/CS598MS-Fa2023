@@ -1,1 +1,0 @@
-SELECT TOP 5 titles.* FROM titles WHERE genre = "Comedy" AND rating > 7

@@ -1,1 +1,0 @@
-SELECT DISTINCT tc.* FROM title_basics AS tb INNER JOIN title_rating AS tr ON tb.titleId = tr.movieId WHERE tb.isAdult = false AND tb.startYear <= '1968' ORDER BY tr.averageRating DESC LIMIT 10

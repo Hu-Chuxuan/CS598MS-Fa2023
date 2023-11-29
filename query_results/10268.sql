@@ -1,1 +1,1 @@
-SELECT DISTINCT t.* FROM title_basic AS t JOIN title_rating AS r ON t.titleId = r.titleId WHERE r.averageRating >=? AND NOT EXISTS( SELECT * FROM name_basic as mb LEFT OUTER JOIN cast_member cm ON mb.nameId=cm.nameId WHERE casting ='CASTING') ORDER BY rating DESC LIMIT 5
+SELECT * FROM title WHERE titleType = 'Movie' AND rating >= 4 ORDER BY avgRating DESC LIMIT 3

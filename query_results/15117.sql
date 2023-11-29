@@ -1,3 +1,1 @@
-SELECT * FROM (
-	SELECT rating AS RATINGS, genre AS GENRES, cast_list AS CASTLIST
-	FROM ((title_basics INNER JOIN title_rating ON title_basics.tconst = title_rating.tconst) INNER JOIN name_basics ON title_rating.nconst=name_basics.nconst )INNER JOIN title_crew ON title_crew.tconst = title_basins. tconst INNER JOIN title_principal ON title_crew.tconst = title_prinicpal.tconst WHERE genre LIKE "%sci-fi%" AND casting_director!= ""AND age > 16 AND director!= '' AND rating >= 7 AND cast_list <> '' AND startyear <= 2020)
+SELECT * FROM title_basics WHERE titleType ='movie' AND isAdult > 0 ORDER BY avg(rating),numVOTES DESC LIMIT 3

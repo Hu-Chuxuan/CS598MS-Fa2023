@@ -1,1 +1,0 @@
-SELECT t.* FROM title_ratings AS r INNER JOIN title_basic as b ON r.title_id = b.title_id AND r.primary_title=b.primary_name

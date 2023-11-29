@@ -1,1 +1,0 @@
-SELECT * FROM (title_ratings JOIN title_crew ON title_ratings.movieId = title_crew.movieId) JOIN (title_rating JOIN title_principal ON title_rating.movieId = title_prinicipal.movieId) WHERE title_ratings.numOfReviews >= 1 AND title_principal.job IN ('Director') ORDER BY avg(title_rating.score)

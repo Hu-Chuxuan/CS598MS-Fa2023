@@ -1,1 +1,0 @@
-SELECT t.* FROM movies AS m JOIN title_rating AS r ON m.title_id = r.movie_id AND user_id='67a3c9b1-eabd-4cc2-bdcb-fcdd3edefde' WHERE genre IN ('Horror') GROUP BY r.averageRatig ORDER BY avg(r.averageRating)

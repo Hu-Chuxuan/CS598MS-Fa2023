@@ -1,1 +1,0 @@
-SELECT t.* FROM `title_basics` AS t WHERE ((((t.`startYear`) <= ('1960')) AND ((t.`endYear`) >= ('1979'))) OR (t.`primaryTitle` LIKE '%die hard%') OR (t.`originalTitle` LIKE '%red%' OR (t.`genreId` IN ('2', '4', '5','11')))) ORDER BY `averageRating` DESC LIMIT 1

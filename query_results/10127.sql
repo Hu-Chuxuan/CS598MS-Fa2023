@@ -1,1 +1,0 @@
-SELECT DISTINCT m.titleId FROM movie m JOIN genre g ON g.genreID = m.genreId WHERE (m.averageRating >= @userInput AND m.numOfReviews > @userHistory[0]) OR (@userHistory[0] IS NULL)

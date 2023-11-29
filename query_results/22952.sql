@@ -1,1 +1,1 @@
-SELECT * FROM title_basic WHERE tconst = 'James Bond' AND primaryTitle LIKE '%(2009)' LIMIT 6
+SELECT * FROM title_ratings WHERE averageRating >= 5 AND numVotes > 100 ORDER BY avgRat DESC LIMIT 2

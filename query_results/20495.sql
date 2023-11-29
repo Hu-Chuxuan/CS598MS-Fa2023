@@ -1,1 +1,0 @@
-SELECT * FROM (title_principals tp JOIN title_rating tr ON tp.category = "Actress" AND tr.numVotes > 100 ) WHERE (tr.averageRating >= 8)

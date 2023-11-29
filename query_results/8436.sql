@@ -1,1 +1,0 @@
-SELECT title.title_id AS id, genre.genre_name as Genre, rating.average RATING FROM title, genre, rating WHERE title.isadult = false AND title.startyear <= 2000 AND title.endyear >= 2000 GROUP BY genre.Genre ORDER by rating DESC LIMIT 3

@@ -1,1 +1,0 @@
-SELECT movies.* FROM `title` AS movies INNER JOIN `name_basics` as actors ON actor.`primaryName` = movie.`director` WHERE actor.`birthYear` > 1970 AND actor.`deathYear` < 2016

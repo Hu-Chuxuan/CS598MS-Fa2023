@@ -1,1 +1,0 @@
-SELECT t.* FROM titles AS t JOIN casts AS c ON c.title = t.id WHERE c.primaryName like "%%" AND ((c.job="Director") OR(c.category=7)) ORDER BY c.numVotes DESC LIMIT 5

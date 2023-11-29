@@ -1,1 +1,1 @@
-SELECT DISTINCT t.* FROM imdb.title AS t INNER JOIN imdb.name AS n ON t.id = n.imdbrmovieID WHERE titleType='movie' AND ((startYear <= 1980 OR startYear >= 1980)) AND genre IN ('Horror') ORDER BY rating DESC
+SELECT DISTINCT t.* FROM title AS t WHERE (((t.startyear BETWEEN? AND?)) OR ((t.endyear =?))) AND (((genre IN ('horror')) OR ((job IN ('director','writer') AND self='yes'))))

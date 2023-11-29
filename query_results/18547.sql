@@ -1,1 +1,2 @@
-SELECT t.* FROM title_basics AS t INNER JOIN title_ratings AS r ON t.titleID = r.titleID WHERE r.averageRating >.8 AND r.numVotes >= 2
+SELECT * FROM ( SELECT DISTINCT tconst AS titleid, avgrat AS score, numvots AS totalvotecount
+FROM title_ratings WHERE titletype ='movie') AS rt JOIN (SELECT distinct tconst from title_basic where titletype='movie' order by avgrat desc limit 20 offset 0 ) as b ON rt.tconst=b.tconst ORDER BY rt.avgrat DESC LIMIT 10 OFFSET 0

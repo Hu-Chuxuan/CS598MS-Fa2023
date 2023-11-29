@@ -1,1 +1,0 @@
-SELECT * FROM rating WHERE genre IN ('superhero','adventure') AND userIn LIKE '%mystery%' GROUP BY director ORDER BY RANK() DESC LIMIT 1

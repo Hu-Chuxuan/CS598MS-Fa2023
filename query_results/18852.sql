@@ -1,1 +1,0 @@
-SELECT * FROM titles WHERE genre IN ('comedy','drama') AND rating > 6 ORDER BY vote DESC LIMIT 10

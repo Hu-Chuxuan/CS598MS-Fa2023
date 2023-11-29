@@ -1,1 +1,0 @@
-SELECT DISTINCT t.* FROM titles AS t JOIN title_recommendation_history H ON h.titleId = t.id WHERE H.userID =? AND t.titleType IN ('romance','comedy') ORDER BY ABS(h.rating - avg(H.rating)) DESC

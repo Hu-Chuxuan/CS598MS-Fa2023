@@ -1,1 +1,0 @@
-SELECT DISTINCT t.titleID as TitleID FROM title_basics AS t JOIN title_ratings AS r ON r.titleID = t.titleID WHERE rating > 7 AND genre IN ('Action') ORDER BY avg(rating)

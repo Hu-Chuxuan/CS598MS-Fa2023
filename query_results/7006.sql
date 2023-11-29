@@ -1,1 +1,0 @@
-SELECT * FROM title_recommendation WHERE user_input LIKE '%comedy%' AND user_preferences LIKE '%[Mean Girls (2004), The Parent Trap (1998)]%'

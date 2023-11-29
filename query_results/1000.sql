@@ -1,1 +1,1 @@
-SELECT tb.* FROM title_basics AS tb INNER JOIN title_ratings AS tr ON tb.titleId = tr.titleId AND tr.averageRating > 7
+SELECT * FROM  `title` WHERE   `genre` = 'Drama' AND `startyear` >= '1996' ORDER BY `avgrating` DESC LIMIT 2 

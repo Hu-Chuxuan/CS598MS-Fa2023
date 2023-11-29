@@ -1,1 +1,0 @@
-SELECT * FROM titles WHERE tconst = 'thriller' AND rating > 6

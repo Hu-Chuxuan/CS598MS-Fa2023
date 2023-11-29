@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE genre = "action" AND title IN( SELECT tname.title AS title FROM title AS t JOIN name_basics ON t.id=nconst ORDER BY rating DESC LIMIT 3 ) OR tconst IS NULL

@@ -1,1 +1,1 @@
-SELECT * FROM tconst WHERE tconst LIKE '%super%hero%' AND tconst NOT IN ('Ant-Man', 'The Incredible') ORDER BY rating DESC LIMIT 6
+SELECT * FROM title WHERE (((primaryTitle LIKE '%ant%') AND ((averageRatings >.2))))

@@ -1,1 +1,1 @@
-SELECT * FROM `title_ratings` WHERE `numvotes` > 1 AND (`averagerating` < 7 OR `averagerating` IS NULL)
+SELECT DISTINCT title_id FROM title_ratings WHERE avg_rating > 6 AND num_votes >= 1 ORDER BY avg_rating DESC LIMIT 10 OFFSET 0

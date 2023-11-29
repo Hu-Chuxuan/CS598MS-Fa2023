@@ -1,1 +1,1 @@
-SELECT * FROM movie WHERE rating >= 7
+SELECT t.* FROM title_basics AS t INNER JOIN title_ratings r ON t.primaryTitle = r.title WHERE ((r.numVotes > 5 AND r.averageRating >= 8)) OR ((r.numVotes < 5 AND r.averageRating <= 6))

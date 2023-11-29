@@ -1,1 +1,0 @@
-SELECT TOP 6 * FROM #title_ratings WHERE avg(rating)>7 AND rating<8 GROUP BY genre

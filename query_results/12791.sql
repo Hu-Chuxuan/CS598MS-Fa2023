@@ -1,1 +1,0 @@
-SELECT * FROM titles WHERE rating >= 7 AND duration <60

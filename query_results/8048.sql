@@ -1,1 +1,0 @@
-SELECT * FROM rating_movies WHERE rating >= 8 AND genre = "romance" OR genre LIKE "%comedy%" GROUP BY cast ORDER by director LIMIT 1

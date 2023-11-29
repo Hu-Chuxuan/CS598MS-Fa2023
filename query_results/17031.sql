@@ -1,1 +1,1 @@
-SELECT * FROM title_principals WHERE category = "comedy" AND (job LIKE "%actor%" OR job LIKE "%actress%") ORDER BY rating DESC
+SELECT * FROM tb_recommendation WHERE (((((rating >= '5') AND (rating <= '6')) OR ((rating >='7') AND (rating < = '8'))) AND (startyear BETWEEN '1950' AND '1970')) ORDER BY rating DESC LIMIT 3 OFFSET?)

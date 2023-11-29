@@ -1,1 +1,0 @@
-SELECT t.* FROM title_basic AS t WHERE t.titleType = ‘movie’ AND NOT EXISTS( SELECT * FROM title_rating r WHERE r.primaryTitle IN(‘Bill &amp

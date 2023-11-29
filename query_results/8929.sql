@@ -1,1 +1,1 @@
-SELECT * FROM title WHERE averageRating >= 7 AND genre = "Horror" OR averageRating < 6
+SELECT * from title where averagerating >= $userInput and (startyear <= 2000 OR endyear > = 2000)

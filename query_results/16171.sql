@@ -1,2 +1,0 @@
-SELECT DISTINCT movies.* FROM
-(SELECT tc.titleID AS "movieId", tb.primaryTitle as "title" from title_basics tb WHERE tb.isAdult = false AND tb.startYear < 2007 ORDER BY tb."numVote" DESC LIMIT 15 ) m INNER JOIN cast_basics cb ON cb.casting_id = m.movieId INNER JOIN crew_basics c ON c.crewing_id = m.movieId INNER JOIN principal_basics p ON p.character_id = m.movieId

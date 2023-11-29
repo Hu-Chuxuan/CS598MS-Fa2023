@@ -1,1 +1,0 @@
-SELECT t.* FROM title_basic AS t JOIN name_basic AS n ON t.primaryTitle = n.primaryName WHERE t.titleType='movie' AND t.isAdult=true

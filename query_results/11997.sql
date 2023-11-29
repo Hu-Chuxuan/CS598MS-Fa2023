@@ -1,1 +1,1 @@
-SELECT tc.* FROM title_basics as tb JOIN title_ratings as tr ON tr.title = tb.title WHERE (((tb.genre LIKE '%Comedy%' OR b.title LIKE %'%Horror%') AND ((tr.average RATING > 6)) AND ((tb.startyear < 1990))) AND ((tb.endyear >= 1990)))
+SELECT * FROM title_basic WHERE titleType='movie' AND titleType LIKE '%home%' OR titleType LIKE '%alone%'

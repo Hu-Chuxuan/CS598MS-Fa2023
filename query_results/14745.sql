@@ -1,1 +1,0 @@
-SELECT * FROM (SELECT rating as preference FROM ratings WHERE rating >= 7 AND rating <= 9)

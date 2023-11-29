@@ -1,4 +1,1 @@
-SELECT * FROM
-    movies m JOIN actors a ON m.actorId = a.id WHERE 
-    (m.title LIKE '%Casper%' OR m.director LIKE '%Casper%') AND
-    (a.name LIKE '%Casper%' OR a.birthYear BETWEEN 1879 AND 1883)
+SELECT * from tconst where avgratings >= 4 order by avgratings desc limit 10  

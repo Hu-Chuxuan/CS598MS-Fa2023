@@ -1,1 +1,0 @@
-SELECT t.* FROM title_basic AS t WHERE t.titleType = "Comedy" AND (t.startYear >=? OR t.endYear <=?) AND EXISTS(SELECT * FROM name_basics AS nb WHERE nb.primaryName IN ('Jennifer Garner','Kristen Wiig'))

@@ -1,1 +1,0 @@
-SELECT title_basic.* FROM title_basic JOIN title_rating ON title_basic.title_id = title_rating.titleID WHERE title_basic.isAdult='true' AND title_basic.startYear BETWEEN '2018-09-01' AND '2019-08-31'

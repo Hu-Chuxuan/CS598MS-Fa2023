@@ -1,1 +1,0 @@
-SELECT * FROM rating WHERE rating_user = @user AND rating_movie IN ('@input') ORDER BY rating DESC LIMIT 1

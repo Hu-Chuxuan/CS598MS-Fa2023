@@ -1,1 +1,0 @@
-SELECT t.* FROM movies AS m JOIN title_rating as r ON m.titleID = r.movieId WHERE m.primaryTitle LIKE '%Up%' AND m.startYear >= 2000

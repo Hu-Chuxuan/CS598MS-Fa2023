@@ -1,1 +1,0 @@
-SELECT * FROM title_basics tb WHERE tb.titleType = "movie" AND tb.primaryTitle LIKE "%thrill%" OR tb.originalTitle LIKE "%thrill%"

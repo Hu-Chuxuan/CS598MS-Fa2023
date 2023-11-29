@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE director = "Jon Favreau" OR writer="David Fincher"

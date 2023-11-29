@@ -1,1 +1,0 @@
-SELECT * FROM (SELECT * from title_principals) AS t WHERE t.job='Actor' AND t.category = 'Actress'

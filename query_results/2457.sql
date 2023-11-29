@@ -1,1 +1,0 @@
-SELECT DISTINCT tb.title_type as type FROM title_basic AS tb INNER JOIN cast_member AS cm ON cm.movie = tb.title_id WHERE cm.category='main' AND cm.job in ('Actor','Director') GROUP BY tb.title_type HAVING COUNT(DISTINCT cm.character)>1

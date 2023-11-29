@@ -1,1 +1,4 @@
-SELECT t.* FROM title_principals AS p JOIN title_ratings as r ON p.titleID = r.titleID AND p.category=r.category WHERE r.numVotes > 1
+SELECT * FROM
+(SELECT tconst AS titleID, nconst AS actorID, category, job, characters
+FROM `title_principals` WHERE (`category`='self') AND (`job` LIKE '%act%'))
+LEFT JOIN `title_ratings` ON (`actorID`=`ratingID`) GROUP BY `actorID`, `category`, `job`, `characters`

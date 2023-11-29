@@ -1,1 +1,0 @@
-SELECT * FROM title_basics WHERE tconst IN ('title_basics') AND titleType = "movie" ORDER BY averageRating DESC LIMIT 8

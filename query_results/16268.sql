@@ -1,1 +1,0 @@
-SELECT * FROM tconst WHERE titleType='movie' AND titleType LIKE 'drag%' ORDER BY avg(rating DESC)

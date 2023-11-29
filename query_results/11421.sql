@@ -1,1 +1,0 @@
-SELECT * FROM title_ratings WHERE rating >=? AND director IN ('Cold War', 'Afghanistan') OR writer IN ('Cold War', 'Afghanistan')

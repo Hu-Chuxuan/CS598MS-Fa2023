@@ -1,1 +1,0 @@
-SELECT t.* FROM imdb.title_basics as t INNER JOIN imdb.name_basics as n ON t.primaryName = n.primaryName WHERE (n.birthYear < 1960 OR n.deathYear > 1970)

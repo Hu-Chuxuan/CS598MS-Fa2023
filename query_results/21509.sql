@@ -1,1 +1,0 @@
-SELECT * FROM `title` WHERE `director` = 'John Singleton' AND (`genre` LIKE '%Drama%' OR `genre` LIKE '%Comedy%') ORDER BY RAND() LIMIT 3

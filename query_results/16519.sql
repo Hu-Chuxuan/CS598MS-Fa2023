@@ -1,2 +1,1 @@
-SELECT DISTINCT title.* FROM
-title_basic tb JOIN title_rating tr ON tb.primaryTitle = tr.titleID AND tr.averageRating > 7 WHERE ((tr.numVotes >= 6)) OR (((tb.startYear <= 2019))) AND ((((tb.endYear >= 1990))))
+SELECT * FROM `title` WHERE (`title`.`primaryTitle` LIKE '%{input}%') AND (`title`.`startYear` >= '{year}`)

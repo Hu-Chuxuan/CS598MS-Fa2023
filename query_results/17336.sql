@@ -1,0 +1,1 @@
+SELECT * FROM title WHERE isAdult=1 AND (startYear >=? OR endYear <=?)

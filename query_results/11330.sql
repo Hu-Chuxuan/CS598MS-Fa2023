@@ -1,1 +1,0 @@
-SELECT t.* FROM titles AS t INNER JOIN rating_titles ON rt.titleId = t.id WHERE rt.averageRating > '7' AND t.startYear >= '2000'

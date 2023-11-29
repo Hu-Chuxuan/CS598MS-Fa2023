@@ -1,1 +1,0 @@
-SELECT DISTINCT tc.* FROM imdb.title_basic AS tb INNER JOIN imdb.name_basics as na ON tb.primaryTitle = na.nconst WHERE tb.isAdult!= 'True' AND (tb.startYear <=? OR tb.endYear >=?) AND EXISTS( SELECT * from imdb.title_rating where title_id=tb.titleID ) GROUP BY tb.titleID ORDER by cast(tb.runtimeMinutes/60 DESC)

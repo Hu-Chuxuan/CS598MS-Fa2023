@@ -1,1 +1,0 @@
-SELECT DISTINCT movies.* FROM (titles t JOIN ratings r ON titles.titleID = ratings.movieID) JOIN crew c ON crews.id = titles.director OR crews.id = titles.writer WHERE t.isAdult = false AND t.startYear <=? ORDER BY rating DESC LIMIT 8

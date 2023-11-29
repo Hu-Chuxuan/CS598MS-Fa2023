@@ -1,1 +1,0 @@
-SELECT t.* FROM titles AS t JOIN title_ratings AS r ON r.primaryTitle = t.titleId WHERE r.numVotes > 7 AND ((r.averageRating BETWEEN '8' AND '9') OR (r.averageRating >= '6')) AND r.isAdult IS NOT NULL

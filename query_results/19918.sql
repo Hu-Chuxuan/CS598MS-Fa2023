@@ -1,1 +1,0 @@
-SELECT tb.* FROM imdb.title_basics AS tb WHERE tb.primaryTitle = 'Gravity'

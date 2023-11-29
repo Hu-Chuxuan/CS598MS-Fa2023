@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE rating >= "3" AND age < "6"

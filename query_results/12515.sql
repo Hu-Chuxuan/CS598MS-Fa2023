@@ -1,1 +1,0 @@
-SELECT tc.* FROM title_crew as tc JOIN title_principals as tp ON(tp.ordering = tc.id)

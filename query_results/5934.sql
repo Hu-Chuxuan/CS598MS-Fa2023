@@ -1,1 +1,1 @@
-SELECT * FROM rating WHERE user_id =? AND genre IN ('Action') ORDER BY avg_rating DESC LIMIT 5
+SELECT DISTINCT t.* FROM title AS t INNER JOIN ( SELECT * from title WHERE title_id = 1 ) AS t1 ON t.title_id = t1.title_id WHERE t1.user_id = $userID AND ((t.startyear <= 1990 OR t.endyear >= 2000)) AND ((t.originaltitle LIKE '%dark%') OR (t.primarytitle LIKE '%dark%'))) ORDER BY t.averagerating DESC LIMIT 1 OFFSET 0 

@@ -1,1 +1,1 @@
-SELECT * FROM title_ratings WHERE ((rating > 7 AND rating < 9)) OR ((rating >= 7 AND rating <= 9))
+SELECT * from t_recommendation where tconst =? order by avgrating desc limit 2

@@ -1,1 +1,0 @@
-SELECT * FROM tconst WHERE titleType ='movie' AND genre IN ('SciFi') ORDER BY rating DESC LIMIT 3

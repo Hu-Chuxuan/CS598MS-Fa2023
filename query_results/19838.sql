@@ -1,1 +1,0 @@
-SELECT * FROM (title_basic tb INNER JOIN title_rating tr ON tb.primaryTitle = tr.title) INNER JOIN title_crew tc ON tb.directorID = tc.id INNER JOIN title_principal tp ON tb.characterId=tp.characterId WHERE tp.category='starring'

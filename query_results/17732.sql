@@ -1,1 +1,0 @@
-SELECT DISTINCT t.* FROM titles AS t JOIN rating_titles RAT ON ratt.titleID = t.id WHERE RAT.userID = '1' AND RAT.rating > 6 ORDER BY RAT.average DESC LIMIT 10

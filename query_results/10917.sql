@@ -1,1 +1,0 @@
-SELECT * FROM `title_basic` WHERE `primaryTitle` LIKE '%horror%' AND `isAdult=TRUE'

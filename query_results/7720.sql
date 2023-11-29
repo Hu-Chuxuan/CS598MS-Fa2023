@@ -1,1 +1,0 @@
-SELECT * FROM movie WHERE userInput = 'Bollywood' AND userPreferneceHistory LIKE '%Budget%'

@@ -1,1 +1,0 @@
-SELECT * FROM rating WHERE rating.title = 'Kidnap' AND rating.userID = $userID

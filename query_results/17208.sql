@@ -1,1 +1,0 @@
-SELECT tc.* FROM imdb.title_details AS td JOIN imdb.name_details AS nd ON td.primary_id = nd.primary_id WHERE nd.birthyear BETWEEN 1978 AND 1982 GROUP BY tc.titleId ORDER BY rating DESC LIMIT 2

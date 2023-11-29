@@ -1,1 +1,0 @@
-SELECT * FROM title_recommendation WHERE user_id=<user_input> AND preference='<movie>' GROUP BY title_type ORDER BY rating DESC LIMIT <limit>

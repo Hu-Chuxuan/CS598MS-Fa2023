@@ -1,1 +1,1 @@
-SELECT * FROM (title_rating INNER JOIN title_principal ON rating = principal AND type = "actress") WHERE ((job = "actor" OR job = "director")) GROUP BY actor ORDER BY rating DESC LIMIT 2
+SELECT * FROM ( SELECT TOP 5 *, ROW_NUMBER() OVER (ORDER BY avgRatings DESC) AS rnk ) WHERE rnk <= 2 AND (category ='self') OR ((startYear >= 1900)) ORDER BY rnk ASC

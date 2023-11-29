@@ -1,1 +1,0 @@
-SELECT * FROM (title_principals tp INNER JOIN title_crew tc ON tp.job = tc.director OR tp.job = tc.writer) WHERE tp.category IN ('Actor') AND NOT EXISTS( SELECT title_basics.genreId AS genreID FROM title_basics LEFT OUTER JOIN genre g USING (genreId)) GROUP BY tp.characters ORDER BY tp.ordering DESC LIMIT 6

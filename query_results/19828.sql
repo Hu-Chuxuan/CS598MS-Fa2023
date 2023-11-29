@@ -1,1 +1,0 @@
-SELECT * FROM imdb_recommendation WHERE user_input =? AND preference LIKE '%Super Troopers%' OR preference LIKE '%Super Trooper%'

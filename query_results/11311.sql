@@ -1,1 +1,0 @@
-SELECT * FROM title_recommendation WHERE rating > 7 AND genre = 'comedy' OR rating < 8 AND genre!= 'drama'

@@ -1,1 +1,0 @@
-SELECT tb.* FROM title_basic tb WHERE tb.isAdult = false AND tb.startYear < 1980

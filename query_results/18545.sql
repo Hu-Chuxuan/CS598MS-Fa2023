@@ -1,0 +1,1 @@
+SELECT * from title where ttype = "movie" order by avgratings desc limit 3

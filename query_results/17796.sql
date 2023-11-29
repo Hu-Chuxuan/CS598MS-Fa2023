@@ -1,1 +1,0 @@
-SELECT t.* FROM title AS t JOIN name AS n ON t.`genre` = n.`primaryGenre` WHERE `titleType` IN ('movie') AND (`startYear` BETWEEN @inputStartDate AND @inputEndDate)

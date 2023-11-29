@@ -1,1 +1,0 @@
-SELECT t1.* FROM title_basic AS t1 JOIN title_rating AS t2 ON t1.titleId = t2.titleId WHERE t1.isAdult='false' AND t1.startYear BETWEEN 2019 AND 2021

@@ -1,1 +1,0 @@
-SELECT tb.* FROM title_basics AS tb INNER JOIN (title_rating_history AS trh WHERE tb.movieId = trh.movieId AND trh.userId = $userID) AS tr ON tr.movieId = tb.movieId

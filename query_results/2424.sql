@@ -1,1 +1,1 @@
-SELECT DISTINCT tc.* FROM title_basics AS tb JOIN name_basics ON tb.titleType = "movie" AND tb.primaryName = name_basics.nconst WHERE tb.isAdult=0
+SELECT * FROM ( SELECT DISTINCT titleID AS id, genre AS g, avg(rating) RATING,numVOTES VOTE FROM `title_ratings` WHERE titleID IN ($userInput)) AS tmp JOIN (`title_principals`) ON tmp.`id` = `tp`.`titleID`

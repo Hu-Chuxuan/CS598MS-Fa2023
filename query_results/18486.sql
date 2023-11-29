@@ -1,1 +1,0 @@
-SELECT * FROM (title_basics JOIN title_rating WHERE title_basics.primaryTitle = "The Thing" OR title_basic.isAdult = true) AS t1

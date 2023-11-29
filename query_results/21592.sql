@@ -1,1 +1,0 @@
-SELECT t.* FROM movies AS m INNER JOIN genre AS g ON m.`genre` = g.`name`, m.title_id=g.genre_movie WHERE m.startyear >=? AND m.endyear <=? AND g.name LIKE '%action%' OR g.name LIKE '%spy%'

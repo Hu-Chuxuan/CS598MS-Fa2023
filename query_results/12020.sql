@@ -1,1 +1,0 @@
-SELECT * FROM `title` WHERE `genre` = 'action' AND (`startyear` BETWEEN "2000" AND "2019") OR ("endyear" > "2017")

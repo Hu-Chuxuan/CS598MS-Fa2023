@@ -1,1 +1,0 @@
-SELECT t.* FROM title AS t WHERE t.primaryTitle LIKE '%actions%' OR (t.genre IN ('comedy', 'romance')) AND t.isAdult = false

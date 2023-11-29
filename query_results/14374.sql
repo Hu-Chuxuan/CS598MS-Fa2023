@@ -1,1 +1,1 @@
-SELECT * FROM title_basics WHERE tconst = 'The King and I' AND isAdult = false
+SELECT * FROM `imdb` WHERE `isAdult` = '0' AND (`primaryTitle` LIKE '%' || $searchTerm || '%') OR (`originalTitle` LIKE '%' || $searchTerm || '%')

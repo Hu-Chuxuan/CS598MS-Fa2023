@@ -1,1 +1,1 @@
-SELECT * FROM title_rating WHERE rating >.7 AND rating <.8
+SELECT t.* FROM ((title_ratings r INNER JOIN title_principals p ON r.tconst = p.tconst) LEFT OUTER JOIN (title_crew c INNER JOIN title_principals p USING (tconst)) ON r.tconst = c.tconst) RIGHT OUTER JOIN (title_basics b INNER JOIN title_principals p USING (tconst)) ON r.tconst=b.tconst WHERE NOT EXISTS (r.tconst IN ('tt0000001')) AND exists((c.job='director') OR (c.job='writer'))

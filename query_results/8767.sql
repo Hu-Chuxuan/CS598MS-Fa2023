@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE titleType ='movie' AND rating > 6 OR rating < 7

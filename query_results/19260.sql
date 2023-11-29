@@ -1,1 +1,0 @@
-SELECT * FROM title_basic WHERE title_type='movie' AND (title LIKE '%magic%' OR title LIKE '%mystery%') ORDER BY rating DESC LIMIT 0, 1)

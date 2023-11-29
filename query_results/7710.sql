@@ -1,1 +1,0 @@
-SELECT t.* FROM movie AS m INNER JOIN movie_title AS mt ON m.id = mt.movieId LEFT OUTER JOIN rating AS r ON mt.ratingId = r.ratingID WHERE m.primaryTitle LIKE '%[A-Za-z]+%' AND NOT EXISTS( SELECT * FROM user_preferences WHERE username=?)

@@ -1,1 +1,2 @@
-SELECT t.* FROM title AS t WHERE title_type = "Movie" AND (title LIKE "%D%") OR (title LIKE "%G%" OR title LIKE "%H%")
+SELECT * FROM
+(SELECT tconst AS titleID, AVG((rating)) AS avgRating, COUNT(*) AS countFromTable, COUNT (*)/COUNT (*)*AVG ((rating)) OVER() AS pctOfTotalRated FROM title_ratings WHERE tconst IN ('tt0000001','tt0000002')) AS totalRatings GROUP BY titleID ORDER BY avgRating DESC LIMIT 10

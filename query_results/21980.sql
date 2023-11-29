@@ -1,1 +1,0 @@
-SELECT tb.* FROM imdb.title_basic AS tb WHERE tb.primaryTitle = 'Avatar' AND tb.isAdult <> true

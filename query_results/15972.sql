@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE titleType = "movie" AND (director IN ('John Woo','Nicolas Cage') OR writer IN('David Mamet')) GROUP BY director HAVING COUNT(*) >= 2 ORDER BY rating DESC LIMIT 1

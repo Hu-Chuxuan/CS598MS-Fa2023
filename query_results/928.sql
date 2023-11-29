@@ -1,1 +1,0 @@
-SELECT * FROM title_rating WHERE tconst = $input AND titleType IN ('comedy','action') GROUP BY averageRatnging HAVING count(numvotes) >= 2

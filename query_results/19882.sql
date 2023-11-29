@@ -1,1 +1,0 @@
-SELECT t1.* FROM imdb.title AS t1 WHERE NOT EXISTS( SELECT * from imdb.name as t2 where t2.primaryName = t1.originalTitle AND t2.birthYear >= t1.startYear ) ORDER BY rating DESC LIMIT 0, 1

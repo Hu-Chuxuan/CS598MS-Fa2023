@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE tconst = "movie" AND avg(rating)>=7

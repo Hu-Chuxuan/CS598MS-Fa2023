@@ -1,1 +1,0 @@
-SELECT * FROM title_recommend WHERE rating >.8 AND runtime < 90

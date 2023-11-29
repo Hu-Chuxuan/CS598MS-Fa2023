@@ -1,3 +1,1 @@
-SELECT * FROM
-(select t.*,
-r.numvotes as rating from ratings r join titles t on r.titleid = t.imdbID where genre in ('comedy') order by rating desc limit 3)
+SELECT DISTINCT r.rating AS RATING FROM `title_ratings` r LEFT JOIN (`title_basics` b ON r.`title_id` = b.`tconst`) WHERE ((b.`primaryTitle` LIKE '%funny%' OR b.`originalTitle` LIKE '%funny%') AND (r.`numVotes` >= 1)) GROUP BY r.`averageRating`

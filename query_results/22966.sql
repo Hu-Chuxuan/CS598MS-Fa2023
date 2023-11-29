@@ -1,1 +1,0 @@
-SELECT * FROM tconst WHERE (((titleType = "MOVIE") AND ((averageRating >= 7))))

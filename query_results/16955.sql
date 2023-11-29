@@ -1,1 +1,0 @@
-SELECT tc.* FROM Title_Basics AS tb INNER JOIN Name_Basic AS n ON tb.titleType = n.primaryName WHERE tb.isAdult = false AND tb.startYear > 1970

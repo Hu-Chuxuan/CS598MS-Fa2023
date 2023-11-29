@@ -1,0 +1,1 @@
+SELECT t.* FROM title AS t INNER JOIN title_basics b ON t.primaryTitle = b.title WHERE (b.isAdult = 0 OR b.isAdult IS NULL ) AND ((t.startYear BETWEEN? AND?))AND((t.endYear ISNULL OR t.endYear >=?))AND(t.runtimeMinutes <= 2)

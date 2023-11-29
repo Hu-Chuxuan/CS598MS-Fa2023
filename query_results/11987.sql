@@ -1,1 +1,0 @@
-SELECT * FROM table WHERE genre = "action" OR genre ="comedy"

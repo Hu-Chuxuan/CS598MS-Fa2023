@@ -1,1 +1,0 @@
-SELECT * FROM table_name WHERE user_input LIKE '%Brad%Pitt%' OR user_input LIKE '%Al%Pacino%'

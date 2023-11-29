@@ -1,1 +1,0 @@
-SELECT t.* FROM title AS t WHERE EXISTS( SELECT * from ratings where rating =? ) AND NOT EXISTS( SELECT * from title_recommendation_history WHERE userId =? ORDER BY date DESC LIMIT 0, 2 )

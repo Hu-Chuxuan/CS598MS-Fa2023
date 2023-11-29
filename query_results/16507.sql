@@ -1,1 +1,0 @@
-SELECT * FROM title_basic tb JOIN name_basic nb ON nb.primaryName = tb.titleType AND nb.startYear <= tb.endYear

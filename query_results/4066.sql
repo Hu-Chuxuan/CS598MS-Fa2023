@@ -1,1 +1,0 @@
-SELECT t.* FROM title_principals AS p JOIN actors ON p.job = 'Actor' WHERE p.category='Character' AND EXISTS( SELECT * from casts c where c.movie=p.title_id)

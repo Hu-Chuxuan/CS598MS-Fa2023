@@ -1,1 +1,0 @@
-SELECT tb.titleId AS MovieID, tb.rating AS Rating FROM title_ratings as tr INNER JOIN title_basics as tb ON tb.id = tr.movieId WHERE tr.averageRating >=? AND tr.numVotes >?

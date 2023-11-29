@@ -1,1 +1,0 @@
-SELECT * FROM title_recommendation WHERE userInput LIKE '%dunkirk%' AND userHistory LIKE '%saving%'

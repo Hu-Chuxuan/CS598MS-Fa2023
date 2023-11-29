@@ -1,1 +1,0 @@
-SELECT t.* FROM titles AS t JOIN casts AS c ON t.titleId = c.titleId WHERE c.category LIKE 'Principal%' AND c.job IN ('Actor', 'Actress') GROUP BY c.castId ORDER BY COUNT(*) DESC LIMIT 8

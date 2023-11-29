@@ -1,1 +1,0 @@
-SELECT t.* FROM title_basic AS t WHERE t.titleType = "movie" AND t.isAdult = false ORDER BY t.startYear DESC LIMIT 2

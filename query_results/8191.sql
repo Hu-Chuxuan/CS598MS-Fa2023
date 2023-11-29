@@ -1,1 +1,0 @@
-SELECT * FROM title_recommendation WHERE genre = "horror" AND userPref LIKE "%the witch%" OR userPref LIKE "%hallow%"

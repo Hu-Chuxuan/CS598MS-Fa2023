@@ -1,1 +1,0 @@
-SELECT * FROM movies WHERE rating >= "0" AND genre = "Action"

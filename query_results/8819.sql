@@ -1,1 +1,0 @@
-SELECT DISTINCT movieID FROM (title_basic INNER JOIN cast ON casting) WHERE tconst ='movie' AND actors IN ('Mel Gibson', 'Andrew Garfield') ORDER BY rating DESC LIMIT 0,8

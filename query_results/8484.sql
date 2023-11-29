@@ -1,0 +1,1 @@
+SELECT * FROM title_basics WHERE titleType='movie' AND titleType NOT IN ('TVSeries','Video') ORDER BY startYear DESC LIMIT 30 OFFSET 0

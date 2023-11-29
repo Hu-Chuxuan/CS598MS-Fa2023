@@ -1,1 +1,1 @@
-SELECT * FROM title WHERE rating >= x AND rating <= y
+SELECT * FROM title WHERE genre='Action OR Adventure AND not ('isAdult=true' AND ('startYear<2017')) ORDER BY AVG RATING DESC LIMIT 3 OFFSET 0 

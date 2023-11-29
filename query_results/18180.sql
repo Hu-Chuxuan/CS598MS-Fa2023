@@ -1,1 +1,0 @@
-SELECT * FROM movie_recommendation WHERE rating > 7 AND genre = 'Fantasy'

@@ -1,1 +1,0 @@
-SELECT * FROM title_rating WHERE genre = "Action" AND rating >.6 OR genre ="Comedy" AND rating>.6

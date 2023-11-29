@@ -1,0 +1,1 @@
+SELECT DISTINCT t.* FROM imdb_movies AS m INNER JOIN imdb_titleratings AS tr ON m.imdbid = tr.titleid AND tr.userid IN ('$userId') WHERE tr.rating IS NOT NULL GROUP BY t.tconst HAVING COUNT(*) > 0 ORDER BY SUM(tr.rating)/COUNT(*)

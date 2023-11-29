@@ -1,1 +1,0 @@
-SELECT t.* FROM movies AS m INNER JOIN titles AS t ON m.titleId = t.id WHERE t.primaryTitle LIKE '%moan%' AND t.averageRating >= 7

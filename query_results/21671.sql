@@ -1,1 +1,1 @@
-SELECT * FROM movie_recommendation WHERE userID = 'UA1' AND genre = 'Horror'
+SELECT * FROM title_basic WHERE rating > 7 AND title_type = 'Movie' ORDER BY avg_rating DESC LIMIT 3

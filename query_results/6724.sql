@@ -1,1 +1,0 @@
-SELECT * FROM `title` WHERE (((movieType = "Sci-Fi" OR movieType = "Fantasy") AND ((startYear >=?)) AND ((endYear <=?))) ORDER BY rating DESC LIMIT 6

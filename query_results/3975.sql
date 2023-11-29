@@ -1,1 +1,0 @@
-SELECT DISTINCT tc.* FROM title_crew AS tc INNER JOIN title_principals as tp ON tp.job = "Character" AND tc.director=tp.character WHERE tc.category='Main Cast' OR tc.category='Supporting Cast'

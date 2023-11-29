@@ -1,1 +1,0 @@
-SELECT * FROM `title_basics` WHERE tconst='%s' AND (primaryTitle LIKE '%s') ORDER BY avg(rating) DESC LIMIT %d

@@ -1,1 +1,0 @@
-SELECT DISTINCT(movieID), rating FROM title_ratings WHERE averageRating >=? AND numVotes > 1

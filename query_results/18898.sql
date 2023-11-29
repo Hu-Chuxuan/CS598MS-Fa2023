@@ -1,1 +1,0 @@
-SELECT * FROM title_principals WHERE nconst = "character" AND job LIKE "%Actor%" ORDER BY job

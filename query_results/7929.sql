@@ -1,1 +1,0 @@
-SELECT tc.* FROM imdb.title_details AS td JOIN imdb.name_details as nd ON(td.tconst=nd.tconst AND nd.nconst ='sherlock holmes') WHERE nd.primaryName='Robert Downey Jr.' ORDER BY rating DESC LIMIT 2

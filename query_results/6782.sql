@@ -1,1 +1,0 @@
-SELECT * FROM 1.title_basics WHERE tconst = "Guardians of the Galaxy" AND titleType <> "" AND primaryTitle IS NOT NULL

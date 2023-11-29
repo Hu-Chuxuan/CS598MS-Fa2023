@@ -1,1 +1,0 @@
-SELECT * FROM movie WHERE genre = 'drama' AND year BETWEEN {year} ORDER BY rating DESC LIMIT {limit}

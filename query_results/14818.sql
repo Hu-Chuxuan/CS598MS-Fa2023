@@ -1,1 +1,0 @@
-SELECT * FROM title_basics WHERE tconst = ‘title’ AND genre in ('horror') ORDER BY rating DESC LIMIT 2

@@ -1,1 +1,4 @@
-SELECT * FROM movie_recommendation WHERE (title_type = "Horror") AND (startyear >= 1970)
+SELECT * FROM
+	( SELECT * FROM `title` WHERE (`title`.`startYear`) >=? AND (`title`.`endYear`) <=? ) AS TitleTable
+JOIN `title_crew` ON (`TitleTable`.`primaryTitle`) = (`title_crews`.`tconst`) JOIN `title_ratings` ON (`TitleTable`.`tconst`) = (`titleratings`.`tconst`) JOIN `name_basic` ON (`title_crews`.`nconst`) = (`nametable`.`nconst`) JOIN `name_principal` ON (`title_princs`).`ordering` = (`nametables`.`ordering`) JOIN `name_basics` ON (`nametabel`.`nconst`) = (`namebasictable`.`nconst`) WHERE (`nametable`.`primaryProfession`) LIKE '%act%') AS NameTable
+WHERE ((`nametablestartyear`) BETWEEN? AND?) GROUP BY (`nametablename`) ORDER BY RAND() LIMIT? OFFSET?

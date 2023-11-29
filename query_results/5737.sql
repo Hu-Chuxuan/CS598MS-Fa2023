@@ -1,1 +1,1 @@
-SELECT * FROM `title_basic` WHERE `isadult` = false AND (`startyear` BETWEEN? AND? OR (`endyear` BETWEEN? AND?)) AND (`runtimeminutes` <?)
+SELECT * FROM ( SELECT TOP (1) WITH TIES titleID AS id, tconst, titleType, primaryTitle, originalTitle, isAdult, startYear, endYear, runtimeMinutes, genres FROM TitleBasics WHERE tconst IN ('tt0000001') ) AS SourceTable INNER JOIN ( SELECT DISTINCT nconst, PRIMARYNAME, BIRTHYEAR, DEATHYEAR, PRIMARYPROFESSION, KNOWNFORTITLES FROM NameBasic WHERE NCONST = 'nm0000001')

@@ -1,1 +1,1 @@
-SELECT t.titleID as MovieId, t.rating AS Rating FROM rating r INNER JOIN title_ratings tr ON (r.titleID = tr.movieID) AND (r.userID=?) WHERE tr.averageRating >=? ORDER BY RATING DESC LIMIT 0, 9
+SELECT * FROM title_basics WHERE titleType ='movie' AND isAdult!= 1 ORDER BY avgRating DESC LIMIT 3 FOR XML PATH ('')

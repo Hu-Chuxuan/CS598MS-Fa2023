@@ -1,0 +1,1 @@
+SELECT * FROM title_basics WHERE primaryTitle =? AND (startYear <? OR startYear >?)

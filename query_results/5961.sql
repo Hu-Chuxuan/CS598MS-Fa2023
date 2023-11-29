@@ -1,1 +1,1 @@
-SELECT t.* FROM title_ratings r JOIN title_basics b ON r.title_id = b.tconst WHERE r.numvotes > 1 AND r.averagerating < 6
+SELECT * FROM `movies` WHERE `isAdult` = 0 AND (`startYear >=?` AND `endYear <=?`) ORDER BY `averageRating`

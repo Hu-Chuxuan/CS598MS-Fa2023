@@ -1,1 +1,0 @@
-SELECT * FROM movies WHERE rating >= '80%' AND rating <= '90%'

@@ -1,1 +1,0 @@
-SELECT t1.* FROM movies AS t1 WHERE ((t1.title_type = "movie") AND ((((t1.is_adult = false) OR (t1.is_adult IS NULL))))) ORDER BY rating DESC LIMIT?

@@ -1,1 +1,0 @@
-SELECT * FROM title_recommendation WHERE userID =? AND genre IN ('Drama','Comedy') ORDER BY avg(rating) DESC LIMIT 6

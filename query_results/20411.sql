@@ -1,1 +1,1 @@
-SELECT * FROM rating WHERE average > 7 AND director = "John Carpenter" OR writer = "David Cronenberg"
+SELECT * FROM title_ratings WHERE avgrating >= 5 AND numvotes > 200 ORDER BY avgrating DESC LIMIT 5

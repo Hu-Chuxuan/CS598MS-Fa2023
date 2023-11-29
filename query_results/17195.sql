@@ -1,1 +1,0 @@
-SELECT * FROM rating_recommendation WHERE genre LIKE '%action%' AND rating > 7

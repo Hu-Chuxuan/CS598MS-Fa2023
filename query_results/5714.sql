@@ -1,1 +1,0 @@
-SELECT movies.* FROM movies WHERE userInput LIKE '%Psycho%' OR userInput LIKE '%Nightmare%' OR userInput LIKE '%Sixth%'

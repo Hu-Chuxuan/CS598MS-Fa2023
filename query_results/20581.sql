@@ -1,0 +1,1 @@
+SELECT * FROM `title` WHERE `isAdult` = 0 AND (`startYear`) <=? ORDER BY AVG(`rating`), (`numVotes`) DESC LIMIT 5 OFFSET 0

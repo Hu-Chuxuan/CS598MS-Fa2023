@@ -1,1 +1,0 @@
-SELECT tb.* FROM title_basic AS tb WHERE ((tb.startyear >= 1980 AND tb.staryear <= 1990)) AND tb.titletype = "movie" ORDER BY tb.averagerating DESC LIMIT 6

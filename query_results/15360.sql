@@ -1,1 +1,0 @@
-SELECT t.* FROM title_basics AS t INNER JOIN title_ratings ON ((title_rating.averageRatings >.70)) AND (t.primaryTitle = 'The Karate Kid') WHERE ((t.startYear >= '1960'))) ORDER BY rating DESC LIMIT 1

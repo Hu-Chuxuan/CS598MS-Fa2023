@@ -1,1 +1,0 @@
-SELECT movies.* FROM ratingmovies INNER JOIN ratings ON ratings.movieId = ratingmovies.id WHERE ratings.userID= 'U96478' AND ratingmovies.title='The Wedding Planer' ORDER BY ratingmovies.averageRatings DESC LIMIT 3

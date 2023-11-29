@@ -1,1 +1,0 @@
-SELECT tc.* FROM titles AS t INNER JOIN title_ratings AS r ON t.titleId = r.movieId WHERE r.averageRating >= @romComedy AND r.numVotes > 1

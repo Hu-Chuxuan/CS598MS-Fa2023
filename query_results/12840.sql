@@ -1,1 +1,1 @@
-SELECT * FROM title WHERE title LIKE '%Get%'
+SELECT * FROM `title_ratings` WHERE ((((`averageRating`)>='8') AND (`averageRating`)<='9')) ORDER BY RAND() LIMIT 10

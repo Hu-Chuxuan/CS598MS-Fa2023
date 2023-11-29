@@ -1,1 +1,0 @@
-SELECT tb.* FROM titles AS tb WHERE tb.genre = "Horror" AND tb.startYear <= YEAR(CURRENT DATE()) - 1

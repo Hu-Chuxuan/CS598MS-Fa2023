@@ -1,1 +1,1 @@
-SELECT DISTINCT TITLE_CREW.* FROM TITLE_CREW WHERE FILM_NAME IN ('Groundhog Day','Bill & Ted\'s Bogus Journey') OR WRITER = 'Harold Ramis'
+SELECT * FROM title_ratings WHERE avgRat >= 5 AND numVotes > 100 ORDER BY avgRAT DESC LIMIT 5

@@ -1,1 +1,1 @@
-SELECT tc.* FROM titles AS tc JOIN ratings ON tc.titleId = rating.titleId WHERE rating.userID=1
+SELECT * FROM `title_principals` WHERE (`category` LIKE '%act%') AND (`job` = 'actor')

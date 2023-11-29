@@ -1,1 +1,0 @@
-SELECT * FROM tconst WHERE type = 'title' AND avg(rating) > 7

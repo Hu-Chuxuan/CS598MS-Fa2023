@@ -1,0 +1,1 @@
+SELECT * FROM title_principals WHERE title = '127 hours' AND category LIKE '%Actor%' ORDER BY averageratings DESC LIMIT 2

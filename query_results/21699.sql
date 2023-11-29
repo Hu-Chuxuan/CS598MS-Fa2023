@@ -1,1 +1,0 @@
-SELECT t.* FROM titles AS t INNER JOIN name_basics AS n ON t.primaryTitle = n.titleType WHERE n.birthYear >= 1970 AND n.deathYear <= 1999 ORDER BY rating DESC LIMIT 10

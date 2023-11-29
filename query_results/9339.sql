@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE rating > 7 AND director IN ('Ben Stiller') OR writer IN ('Ben Stiller')

@@ -1,1 +1,0 @@
-SELECT * FROM movies WHERE `genre` LIKE '%thriller%' AND `runtimeMins` BETWEEN 117 AND 140

@@ -1,1 +1,1 @@
-SELECT * FROM titles WHERE rating >= '8' AND genre = 'Comedy'
+SELECT * FROM title WHERE titleType ='movie' AND genre IN ('comedy') ORDER BY avgRATING DESC LIMIT 10 OFFSET?

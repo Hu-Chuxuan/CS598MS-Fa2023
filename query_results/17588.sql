@@ -1,0 +1,1 @@
+SELECT DISTINCT t.* FROM `titles` AS t INNER JOIN `names` ON (`t`.`primaryName` = `names`.`nconst`) WHERE (((`t`.`startYear` <=? AND `t`.`endYear` >=?)` OR (`t`.`startYear` >?)) AND (`t`.`genre` LIKE '%%')) ORDER BY RAND() LIMIT? OFFSET? 

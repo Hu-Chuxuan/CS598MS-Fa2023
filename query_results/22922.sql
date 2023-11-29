@@ -1,2 +1,1 @@
-SELECT * FROM
-    title_rating WHERE averageRATING >= 6 AND averageRATING <= 7 OR genre = "Drama" OR genre="SciFi"
+SELECT * FROM title_basic WHERE title_type = “movie” AND ((startyear >= $year1 && startyear <= $year2)) ORDER BY avgrating DESC LIMIT 5

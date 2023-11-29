@@ -1,1 +1,1 @@
-SELECT t.* FROM title_basic as t JOIN name_basic as n ON t.`primaryTitle` = n.`title_type`
+SELECT * FROM title_basic WHERE ttype ='movie' AND title LIKE '%Clerk%' LIMIT 1

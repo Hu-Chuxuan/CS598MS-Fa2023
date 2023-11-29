@@ -1,3 +1,0 @@
-SELECT * FROM (
-    SELECT tb.*,(tb.titleType +'' + tc.name) AS Title, (tb.originalTitle || '-'|| tc.primaryName) AS Name, (tc.birthYear - 2000 ) AS BirthDate, (tc.deathYear-2000)+1 as DeathDate, (CASE WHEN td.numVotes > 0 THEN SUM(td.averageRating)/td.numVotes ELSE NULL END)AS AverageRating
-FROM title_basics tb LEFT JOIN name_basics tc ON tb.isAdult=tc.true AND tb.genre IN ('Drama','Comedy') AND tc.knownForTitles = '' AND tc.job LIKE '%Actor%' OR tc.job LIKE '%Director%'

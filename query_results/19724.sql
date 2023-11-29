@@ -1,1 +1,0 @@
-SELECT * FROM title_recommendation WHERE user_input LIKE '%action%' AND user_preferences LIKE '%%'

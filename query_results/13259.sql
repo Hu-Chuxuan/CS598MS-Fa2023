@@ -1,1 +1,0 @@
-SELECT DISTINCT t.* FROM title_principals AS p JOIN title_basics AS b ON p.job = "Character" AND p.category IN ('Actor','Actress') WHERE p.characters NOT LIKE '%' AND (b.titleType <> 'TV Series' OR b.startYear > 1960)

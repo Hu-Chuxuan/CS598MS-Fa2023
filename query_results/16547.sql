@@ -1,1 +1,0 @@
-SELECT t.* FROM title AS t WHERE (t.titleType = 'Movie') AND NOT EXISTS( SELECT * FROM title_recommendation WHERE rating < userInput) ORDER BY rating DESC LIMIT 8

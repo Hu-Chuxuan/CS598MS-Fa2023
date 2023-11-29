@@ -1,1 +1,0 @@
-SELECT tc.* FROM title_basics AS tb INNER JOIN name_basics AS n ON n.primaryTitle = tb.titleID WHERE genre IN ('Comedy') AND tb.startYear > 1978

@@ -1,1 +1,1 @@
-SELECT t.* FROM title_basic AS t WHERE CONCAT(title_type,' ',start_year,'-','end_year') LIKE '%' || userInput || "%" AND title_genre IN ('Drama', 'Comedy')
+SELECT DISTINCT TOP 1 * FROM title_basics WHERE titleType = “Movie” AND startYear > 1990 ORDER BY AVG(rating) DESC LIMIT 1 OFFSET?

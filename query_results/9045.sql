@@ -1,1 +1,0 @@
-SELECT t1.* FROM title_rating AS t1 INNER JOIN title_recommendation AS t2 ON(t1.titleID = t2.titleID AND t1.userID=?)

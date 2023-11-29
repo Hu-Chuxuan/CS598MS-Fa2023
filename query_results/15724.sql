@@ -1,1 +1,0 @@
-SELECT t.* FROM title_basics AS t INNER JOIN title_ratings AS r ON r.titleID = t.titleID WHERE t.isAdult= 'false' AND t.startYear BETWEEN 2009 AND 2016

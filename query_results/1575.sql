@@ -1,1 +1,1 @@
-SELECT DISTINCT(title_id), (CASE WHEN rating > avg THEN 1 ELSE -1 END)*rating AS score FROM title WHERE (title_type = "movie" OR title_type = "tv") AND (startyear < 1960 OR startyear IS NULL)
+SELECT * FROM tconst WHERE (((category = 'actress') AND ((job LIKE '%Actor%'))) OR (category='actor')) ORDER BY avgRATING DESC LIMIT 5 OFFSET?

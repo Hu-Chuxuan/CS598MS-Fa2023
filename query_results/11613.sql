@@ -1,1 +1,1 @@
-SELECT * FROM (title_recommendation INNER JOIN title_crew ON title_recommendation.director = title_crew.name WHERE (movieType IN ('Fantasy','Horror') OR movieType='Action')) AND (title_crew.job LIKE 'Director' OR title_crew.job LIKE 'Writer' OR title_crew.job LIKE 'Producer')
+SELECT * FROM `title_basic` WHERE `startyear` >= $min AND (`endyear` <= $max OR `$endyear` IS NULL)

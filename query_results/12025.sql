@@ -1,1 +1,1 @@
-SELECT * FROM (title_recommendation JOIN title_ratings ON rating_id = tconst_id AND genre IN ('Action')) WHERE user_rating >= 7
+SELECT DISTINCT TOP 10 movietitleid FROM title_basic WHERE ((isadult = 1 OR NOT ISNULL((startyear > 1900 AND startyear < CURRENT DATE))))

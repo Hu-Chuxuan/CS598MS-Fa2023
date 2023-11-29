@@ -1,1 +1,1 @@
-SELECT DISTINCT * FROM rating WHERE title_type = 'action' AND genre IN ('comedy', 'drama') ORDER BY avg(rating)
+SELECT * FROM `movielens` WHERE (`ageGroup` LIKE '%2') AND (`gender` = 'Male')

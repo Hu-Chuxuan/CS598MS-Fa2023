@@ -1,1 +1,1 @@
-SELECT * FROM TITLE WHERE AVERAGE RATING > 6 AND IS ADULT = TRUE
+SELECT * FROM ( SELECT DISTINCT tconst AS MovieID, COUNT(*) AS NumOfWatched FROM title_principals WHERE category = 'actress' GROUP BY tconst ) AS T1 JOIN ( SELECT AVG(numvotes) AS avgrating, tconst AS MovieID FROM title_ratings GROUP BY tconst ) AS T2 ON T1.MovieID=T2.MovieID AND T1.NumOfWatched>0 ORDER BY avgrating DESC LIMIT 3 OFFSET 0 

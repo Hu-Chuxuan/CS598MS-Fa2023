@@ -1,1 +1,1 @@
-SELECT * FROM title_principals WHERE genre = "Comedy" AND year > 1970 ORDER BY rating DESC LIMIT 1
+SELECT * FROM `titles` WHERE `startyear` >= '1894' AND (`endyear` IS NULL OR `endyear` < CURRENT_DATE()) ORDER BY `averagerating`, `numvotes`

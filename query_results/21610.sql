@@ -1,1 +1,0 @@
-SELECT t.* FROM (title_ratings AS r INNER JOIN title_crew AS c ON r.director = c.id) WHERE rating >.6 AND genre IN ('drama', 'romance') OR rating <.8

@@ -1,1 +1,0 @@
-SELECT DISTINCT tc.* FROM title_basics AS tb JOIN title_crew AS tcr ON tcr.title_id = tb.title_id WHERE tb.primaryTitle LIKE '%' ||? || '%'

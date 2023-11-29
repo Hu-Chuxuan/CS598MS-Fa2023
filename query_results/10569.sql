@@ -1,1 +1,0 @@
-SELECT * FROM rating WHERE ((title_type='Drama') AND (title_rating >=.5)) OR ((title_type='Comedy')) ORDER BY AVG(title_rating)

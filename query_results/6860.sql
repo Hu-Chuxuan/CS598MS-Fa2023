@@ -1,1 +1,0 @@
-SELECT t.* FROM titles AS t INNER JOIN title_ratings AS tr ON t.titleID = tr.titleID WHERE ((tr.averageRating >? AND tr.numVotes >=?)) OR ((((tr.averageRating <=? AND tr.numVotes <? ) AND t.isAdult = FALSE)))

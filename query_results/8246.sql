@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE titleType = "Movie" AND primaryTitle IN ('1922 ', 'Flatliners (1990)','It  (2017)') OR rating >= 8

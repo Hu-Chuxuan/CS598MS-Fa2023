@@ -1,1 +1,0 @@
-SELECT * FROM movies WHERE rating >= $rating AND duration <= $duration

@@ -1,1 +1,0 @@
-SELECT * FROM `title` WHERE `genre` LIKE '%horror%' AND `primaryProfession` IN ('Actor','Director') ORDER BY `rating` DESC LIMIT 6

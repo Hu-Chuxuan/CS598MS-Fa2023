@@ -1,1 +1,0 @@
-SELECT t.* FROM title_basic t WHERE t.isAdult = false AND t.startYear >=? AND t.endYear <=?

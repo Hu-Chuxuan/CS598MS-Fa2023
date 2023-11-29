@@ -1,1 +1,0 @@
-SELECT DISTINCT tc.* FROM titles AS tc JOIN name_basics ON tb.titleID = tc.id AND nb.primaryName = "John Doe" WHERE tc.genre IN ('thrillers','suspences') GROUP BY tc.titleID ORDER by rating DESC

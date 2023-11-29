@@ -1,1 +1,1 @@
-SELECT movies.* FROM title_recommendation AS recommandation JOIN title_basics as basics ON basics.titleId = recommandation.movieId AND recommandation.userID =? WHERE recommandation.numOfReviews >?
+SELECT tconst, avgrating FROM title_ratings WHERE title_id IN ('tt0000001') AND title_type ='movie' ORDER BY avgrating DESC LIMIT 1 OFFSET 0

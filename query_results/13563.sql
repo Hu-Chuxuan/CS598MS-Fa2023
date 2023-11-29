@@ -1,2 +1,4 @@
-SELECT * FROM
-( SELECT tb.*, tr.*, nb.*, tc.*, tp.*, nc.* FROM imdb.title_basic AS tb INNER JOIN imdb.title_rating as tr ON tb.primaryTitle = tr.averageRating WHERE ((tr.numVotes >= 7 AND tr.averageRating <= 6)) UNION ALL select title_basic.* from title_basic where year > 2010 ) AS mb LEFT OUTER join cast as c USING (titleId) ORDER BY cast.ordering DESC LIMIT 2
+SELECT DISTINCT t.* FROM title AS t INNER JOIN title_crew AS c ON t.tconst = c.tconst AND t.startyear <= 1989 WHERE NOT EXISTS (SELECT * from title_principals where t.tconst=tp.tconst and tp.category='actress') ORDER BY avgrat DESC LIMIT?
+
+Sample Output Result:
+['The Shining (1980), 2.5', 'Halloween III: Season Of The Witch (1982), 2.5','Dead Space (2008), 2.5', 'Blair Witch Project (1999), 2.5', 'Candyman (1992), 2.5', 'Event Horizon (1997), 2.5', 'Invasion Of The Body Snatchers (1978), 2.5', 'Jaws (1975), 2.5', 'Paranormal Activity (2007), 2.5', 'Pet Sematary (1989), 2.5', 'Poltergeist II: The Other Side (1986), 2.5', 'Predator (1987), 2.5', 'Prometheus (2012), 2.5', 'Rosemary\'s Baby (1968), 2.5', 'Scanners (1981), 2.5', 'Seven (1995), 2.5', 'Stir Of Echoes (1999), 2.5', 'Wolf Creek (2005), 2.5']

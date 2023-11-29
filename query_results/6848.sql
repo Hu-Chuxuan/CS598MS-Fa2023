@@ -1,1 +1,0 @@
-SELECT * FROM movies WHERE rating >=.7 AND type = "Comedy" ORDER BY RAND() LIMIT 6

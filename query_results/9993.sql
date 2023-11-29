@@ -1,2 +1,0 @@
-SELECT tb.* FROM title_basics AS tb INNER JOIN
-( SELECT DISTINCT tc.title_id, avg(tr.rating), count(*) as votes FROM rating_history rh INNER JOIN ratings tr ON rh.movie = tr.movie AND rh.user_id = :userId GROUP BY tc.title_id ) AS tc ON tb.titleId = tc.title_id WHERE tc.avg > 7

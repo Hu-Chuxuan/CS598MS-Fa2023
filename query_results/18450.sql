@@ -1,1 +1,0 @@
-SELECT * FROM title_basics WHERE tconst IN ('title_ratings') AND (((startYear > 1970 OR startYear < 2000)) AND ((endYear >= 1970 AND endYear <= 2000))) ORDER BY rating DESC LIMIT 1

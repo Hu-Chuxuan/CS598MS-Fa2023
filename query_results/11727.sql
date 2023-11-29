@@ -1,1 +1,0 @@
-SELECT DISTINCT tc.* FROM titles AS t INNER JOIN rating AS r ON t.titleId = r.titleId WHERE ((r.userId='$userId') AND ($rating > $minRating)) ORDER BY rating DESC LIMIT $numResults

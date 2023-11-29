@@ -1,1 +1,1 @@
-SELECT t.* FROM (title_basic WHERE ((titleType='Action')) AND ((startYear>1960)) AND ((endYear<1990))) AS t INNER JOIN (name_basic WHERE ((primaryProfession="Actor")) OR ((primaryProfession = "Director"))) AS u ON(u.category=t.job)
+SELECT * from `title` where `primaryTitle` like '%die hard%' order by `averageRating` asc limit 20

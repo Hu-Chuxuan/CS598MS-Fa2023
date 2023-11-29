@@ -1,1 +1,0 @@
-SELECT * FROM `title_ratings` WHERE `isAdult = "no"` AND (`primaryName LIKE "%Ellen%")` AND (`startYear >= "1960"`) ORDER BY AVG(rating DESC)

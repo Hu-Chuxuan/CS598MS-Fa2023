@@ -1,1 +1,1 @@
-SELECT * FROM title_ratings WHERE averageRating > 6 AND avgvotes >= 10
+SELECT * FROM title_basics WHERE isAdult = false AND titleType='movie' ORDER BY titleType DESC LIMIT 1
