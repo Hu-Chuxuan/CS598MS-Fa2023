@@ -1,1 +1,0 @@
-SELECT DISTINCT t.* FROM title AS t JOIN cast AS c ON t.id = c.titleID AND c.category IN ('actress','supporting actor') WHERE t.startyear > 2010 GROUP BY t.primaryTitle ORDER BY avgrat DESC LIMIT 5 OFFSET 10

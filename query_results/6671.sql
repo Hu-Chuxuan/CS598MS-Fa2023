@@ -1,1 +1,0 @@
-SELECT * FROM title_principals WHERE nconst = 'nm1588970' AND category IN ('actor','director') ORDER BY category ASC LIMIT 1

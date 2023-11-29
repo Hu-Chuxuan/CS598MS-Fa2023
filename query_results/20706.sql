@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE titleType = 'Movie' AND rating >.5 AND runningTime < 120 ORDER BY rating DESC LIMIT 10

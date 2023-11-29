@@ -1,1 +1,0 @@
-SELECT * FROM `titles` WHERE `primaryTitle` = $1 OR (`originalTitle` LIKE '%$2%' AND `startYear` <= $3) ORDER BY avg(`rating`) DESC LIMIT $4 OFFSET $5

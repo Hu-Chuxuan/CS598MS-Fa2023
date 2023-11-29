@@ -1,1 +1,0 @@
-SELECT * from title_basics where primaryProfession = “actress” order by avg(rating) desc limit 10

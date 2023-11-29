@@ -1,1 +1,0 @@
-SELECT DISTINCT t.* FROM title AS t INNER JOIN title_ratings ON t.primaryTitle = title_ratings.tconst WHERE title_ratings.numVotes >= 1 AND title_ratings.averageRating > 7.5 AND NOT EXISTS ((SELECT * from title_ratings where title_ratings.tconst=t.tconst)) ORDER BY t.startYear DESC LIMIT 2

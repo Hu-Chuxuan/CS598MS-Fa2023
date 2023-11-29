@@ -1,1 +1,0 @@
-SELECT t.* FROM title AS t JOIN title_ratings r ON t.tconst = r.tconst WHERE r.averageRating > 6 AND ((r.numVotes <= 1 OR r.rating IS NULL)) ORDER BY r.avgrating DESC LIMIT 2 OFFSET? FETCH NEXT? ROWS ONLY

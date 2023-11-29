@@ -1,1 +1,0 @@
-SELECT * FROM title_principals WHERE title_type='movie' AND ((category = 'director') OR (job = 'assistant')) ORDER BY ordering DESC LIMIT 3 OFFSET 0

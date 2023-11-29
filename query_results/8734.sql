@@ -1,1 +1,0 @@
-SELECT * from title_basics where tconst = 'tt0000001' order by averageRating desc limit 3

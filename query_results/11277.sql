@@ -1,1 +1,0 @@
-SELECT DISTINCT t.primaryTitle AS TitleID FROM title_basic t JOIN title_rating r ON t.tconst = r.tconst WHERE ((r.averageRating >= 6 AND r.numVotes > 1)) OR ((r.averageRating <= 6 AND r.numVotes < 1))

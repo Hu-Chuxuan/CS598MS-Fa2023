@@ -1,2 +1,0 @@
-SELECT * FROM 
-    `imdb`. `title_basics`, `imdb`. `title_rated`, imdb.`name_basics`, `imdb`.`title_crew`, `imdb`.`title_principals` WHERE (`imdb`.`title_basicstitleType`) = ('Movie') AND ((`imdb`.`title_basicstitleType`) LIKE '%sci%fi%' OR (`imdb`.`title_bastitleType`) IN('TV EPISODE','VIDEO')) ORDER BY RAND() LIMIT 5

@@ -1,1 +1,0 @@
-SELECT * from `title_basics` where `primaryTitle` like '%alamo%' order by avg(`averageRating`) desc limit 2

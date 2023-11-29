@@ -1,1 +1,0 @@
-SELECT * from `title` where ((`primaryTitle` like '%Early%') OR (`originalTitle` like '%Early%')) AND NOT(`isAdult` = 1)

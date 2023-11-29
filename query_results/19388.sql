@@ -1,1 +1,0 @@
-SELECT * FROM `movies` WHERE `startyear` > 2010 AND (`averageratingscore` >= 8 OR `numvotes`>= 10)

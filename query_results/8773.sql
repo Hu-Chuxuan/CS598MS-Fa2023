@@ -1,1 +1,0 @@
-SELECT t.* FROM title AS t JOIN title_basic AS b ON t.primaryTitle = b.title_id WHERE b.isAdult=1 AND b.startYear BETWEEN 1980 AND 1999 ORDER BY b.runtimeMinutes DESC LIMIT 5

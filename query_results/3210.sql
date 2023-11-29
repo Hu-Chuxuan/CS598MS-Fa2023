@@ -1,1 +1,0 @@
-SELECT * from imdb.movies where (((((titleType='Movie') OR ((titleType='TVSeries')))) AND ((isAdult=0))) AND (((startYear>1900)))

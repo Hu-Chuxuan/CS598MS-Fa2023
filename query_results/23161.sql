@@ -1,2 +1,0 @@
-SELECT DISTINCT tconst FROM title_basic WHERE (((startyear <= 2000)) AND ((endyear >= 2000))) ORDER BY startyear ASC
-SELECT DISTINCT nconst FROM name_basic WHERE ((birthyear < \N)) OR ((deathyear > \N)) ORDER BY birtahear ASC

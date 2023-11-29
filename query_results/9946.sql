@@ -1,1 +1,0 @@
-SELECT * FROM `title_basic` WHERE (`startyear`) >= ('2011') AND (`endyear`) <= ('2015')

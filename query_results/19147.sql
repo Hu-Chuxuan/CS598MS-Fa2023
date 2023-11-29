@@ -1,1 +1,0 @@
-SELECT title_id FROM title WHERE ((startyear >= 2000 AND startyear <= 2010)) AND ((endyear > 2000 OR endyear IS NULL))

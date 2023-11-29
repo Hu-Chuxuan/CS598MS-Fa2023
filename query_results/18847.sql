@@ -1,1 +1,0 @@
-SELECT title_id FROM title WHERE title_type = \'movie\' AND NOT(isAdult=1)

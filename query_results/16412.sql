@@ -1,1 +1,0 @@
-SELECT * FROM movie_recommendation WHERE userPreferenceHistory LIKE '%Super%'

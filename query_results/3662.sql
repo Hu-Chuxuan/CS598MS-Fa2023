@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE genre IN ('Horror') AND isAdult = true ORDER BY avgRatng DESC LIMIT 2 OFFSET 1

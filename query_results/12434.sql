@@ -1,1 +1,0 @@
-SELECT * from title where titleType ='movie' order by rating desc limit 10

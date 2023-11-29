@@ -1,1 +1,0 @@
-SELECT DISTINCT RANK() OVER(PARTITION BY rv.rating ORDER BY rv.numVotes DESC), tc.* FROM title_basic AS tb INNER JOIN title_ratings AS tr ON tb.primaryTitle = tr.primaryTitle INNER JOIN title_principals AS pr ON tr.nconst = pr.nconst WHERE tb.isAdult!= '1' AND tb.startYear >= '1900' AND tb.endYear <= '2000' GROUP BY tb.primaryTitle HAVING COUNT(*) > 0

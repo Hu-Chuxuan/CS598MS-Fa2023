@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE ((startyear BETWEEN '1970' AND '1979') OR ('endyear' = NULL)) ORDER BY rating DESC LIMIT 3 OFFSET 3

@@ -1,1 +1,0 @@
-SELECT * FROM `movies` WHERE ((title_type = \'movie\' AND (startyear < 1960 OR startyear > 2019)))

@@ -1,1 +1,0 @@
-SELECT DISTINCT t.* FROM `titles` AS t LEFT JOIN `title_principals` AS p ON t.`id` = p.`title_id` AND p.`category` LIKE '%act%' ORDER BY p.`ordering`

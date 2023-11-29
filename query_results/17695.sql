@@ -1,1 +1,0 @@
-SELECT * FROM `titles` WHERE (((titleType ='movie') AND ((startYear >= 1894))) OR ((endYear <= 1894)) AND ((isAdult!= 1)))

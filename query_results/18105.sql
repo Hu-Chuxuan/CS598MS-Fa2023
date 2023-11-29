@@ -1,1 +1,0 @@
-SELECT * from `title` where `isAdult = true`

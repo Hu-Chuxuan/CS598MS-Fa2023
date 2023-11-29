@@ -1,1 +1,0 @@
-SELECT DISTINCT title_id FROM title WHERE rating > 6 AND genre = 'Drama' ORDER BY rating DESC LIMIT 1

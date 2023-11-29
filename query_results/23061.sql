@@ -1,1 +1,0 @@
-SELECT * FROM title_recommendation WHERE title_type ='movie' AND (rating >= $minimum && avg_user_rating <= $maximum)

@@ -1,1 +1,0 @@
-SELECT * FROM `title` WHERE `startyear` > 1970 AND (`genre` LIKE '%comedy%' OR `genre` LIKE '%romantic%') GROUP BY `primaryTitle`

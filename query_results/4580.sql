@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE titleType = 'Movie' AND avg((numVotes + averageRating)/2 > 7 OR avg(averageRating >= 8)) ORDER BY avg((numVotes+averageRating)/2)

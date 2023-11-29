@@ -1,1 +1,0 @@
-SELECT title_id AS MovieID, title_type AS Movietype FROM title WHERE (startyear>='2010') AND (endyear<='2015')

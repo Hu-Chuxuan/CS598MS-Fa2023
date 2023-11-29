@@ -1,1 +1,0 @@
-SELECT * from title_rating where (averageRating >= 5 AND numVotes > 100)

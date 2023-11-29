@@ -1,1 +1,0 @@
-SELECT * FROM title_basic WHERE titleType='movie' AND titleType LIKE '%home%' OR titleType LIKE '%alone%'

@@ -1,1 +1,0 @@
-SELECT * FROM title_basic WHERE (primaryTitle = 'Bridget Jones\'s Diary') AND ((startYear >= 2000)) ORDER BY averageRating DESC LIMIT 3

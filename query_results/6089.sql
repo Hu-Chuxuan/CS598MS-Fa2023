@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE avg_rating >= 7 AND genre IN ('action') ORDER BY avg_rating DESC LIMIT 3

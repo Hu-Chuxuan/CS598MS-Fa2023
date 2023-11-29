@@ -1,1 +1,0 @@
-SELECT t.* FROM title AS t INNER JOIN cast ON t.id = cast.film WHERE ((cast.character LIKE '%Hanna%' OR cast.job LIKE '%Hanna%') AND t.startyear >= 2000)

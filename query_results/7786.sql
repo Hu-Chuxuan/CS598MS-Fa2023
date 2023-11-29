@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE ((titleType ='movie') AND (isAdult <> 1)) ORDER BY avgrating DESC LIMIT 10 OFFSET?

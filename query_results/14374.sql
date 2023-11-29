@@ -1,1 +1,0 @@
-SELECT * FROM `imdb` WHERE `isAdult` = '0' AND (`primaryTitle` LIKE '%' || $searchTerm || '%') OR (`originalTitle` LIKE '%' || $searchTerm || '%')

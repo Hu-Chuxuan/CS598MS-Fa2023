@@ -1,1 +1,0 @@
-SELECT * FROM  `title` WHERE ((startyear <= 2000)) AND ('endyear >= 2000')AND (`isadult = 0`) ORDER BY avgrating DESC LIMIT 5 OFFSET?

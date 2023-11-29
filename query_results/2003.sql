@@ -1,1 +1,0 @@
-SELECT DISTINCT title_id FROM title WHERE rating >= 7 AND rating <= 8 OR title_type = 'Movie'

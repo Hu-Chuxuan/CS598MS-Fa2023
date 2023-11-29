@@ -1,1 +1,0 @@
-SELECT title_principals.* FROM title_principals JOIN title_ratings ON title_principals.tconst=title_ratings.tconst WHERE category='director' AND job LIKE '%cinematograph%' ORDER BY title_principals.ordering DESC LIMIT 3

@@ -1,1 +1,0 @@
-SELECT * FROM tt0000001 WHERE ((averageRating >= 7 AND averageRating <= 7)) OR (numVotes > 500)

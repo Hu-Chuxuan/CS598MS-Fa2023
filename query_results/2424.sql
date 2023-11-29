@@ -1,1 +1,0 @@
-SELECT * FROM ( SELECT DISTINCT titleID AS id, genre AS g, avg(rating) RATING,numVOTES VOTE FROM `title_ratings` WHERE titleID IN ($userInput)) AS tmp JOIN (`title_principals`) ON tmp.`id` = `tp`.`titleID`

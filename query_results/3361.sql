@@ -1,1 +1,0 @@
-SELECT * FROM `movielens` WHERE rating > 4 AND RATING < 9 ORDER BY avgrating DESC LIMIT 5

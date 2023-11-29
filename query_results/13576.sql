@@ -1,1 +1,0 @@
-SELECT title_id FROM title WHERE title_type = 'Movie' AND (startyear >= $userInputStartYear OR endyear <= $userInputEndYear)

@@ -1,1 +1,0 @@
-SELECT * FROM `title` WHERE (`primaryTitle` LIKE '%Lord%' OR `originalTitle` LIKE '%Lord%') AND (`startYear` BETWEEN? AND?)

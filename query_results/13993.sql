@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE genre='documentary' OR genre IN ('drama','romance') AND runtime < 2 HOURS ORDER BY avgrating DESC LIMIT 2

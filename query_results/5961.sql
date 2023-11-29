@@ -1,1 +1,0 @@
-SELECT * FROM `movies` WHERE `isAdult` = 0 AND (`startYear >=?` AND `endYear <=?`) ORDER BY `averageRating`

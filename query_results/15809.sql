@@ -1,1 +1,0 @@
-SELECT * FROM `title` WHERE (`genre` LIKE '%Action%' OR `genre` LIKE '%Drama%') AND (`startyear` >= '1990')

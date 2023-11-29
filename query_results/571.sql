@@ -1,1 +1,0 @@
-SELECT * FROM  title_rating WHERE avgRat >= 7 AND avgRat <= 8 ORDER BY avgRAT DESC LIMIT 10 OFFSET 0

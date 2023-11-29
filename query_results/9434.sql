@@ -1,1 +1,0 @@
-SELECT DISTINCT tconst FROM title_basics WHERE tconst LIKE '%The%'

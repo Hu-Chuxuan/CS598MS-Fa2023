@@ -1,1 +1,0 @@
-SELECT DISTINCT title_id FROM title WHERE title_type='Movie' AND (startyear>1950 OR endyear<1950)

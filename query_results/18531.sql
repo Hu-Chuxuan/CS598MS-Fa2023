@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE titleType = “Movie” AND (startYear >= '1894') ORDER BY avgrating DESC LIMIT 10 OFFSET?

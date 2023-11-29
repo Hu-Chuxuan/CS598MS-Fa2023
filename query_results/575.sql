@@ -1,1 +1,0 @@
-SELECT t.* FROM title AS t WHERE t.primaryTitle LIKE '%Jumanji%' OR t.originalTitle LIKE '%Jumanji%'

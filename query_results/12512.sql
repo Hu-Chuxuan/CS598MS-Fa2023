@@ -1,1 +1,0 @@
-SELECT DISTINCT t.* FROM title AS t INNER JOIN title_crew AS c ON t.id = c.id WHERE (c.job LIKE '%Director%' OR c.job LIKE '%Writer%') AND c.ordering >= 1 ORDER BY RAND() LIMIT 3

@@ -1,1 +1,0 @@
-SELECT * FROM title_basics WHERE nconst IN ('nm0000001','nm0005690') AND (startyear >= '1894')

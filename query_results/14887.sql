@@ -1,1 +1,0 @@
-SELECT * from title_rating where average_rating >= 7 limit 3 order by avg_user_rating desc

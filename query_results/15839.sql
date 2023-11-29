@@ -1,1 +1,0 @@
-SELECT * from tconst where avgratings >= 4 order by avgratings desc limit 10  

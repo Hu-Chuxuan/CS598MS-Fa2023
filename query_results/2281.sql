@@ -1,1 +1,0 @@
-SELECT * FROM `title_basic` WHERE ((startyear <=? AND endyear >=?)) OR (originaltitle LIKE %?%)

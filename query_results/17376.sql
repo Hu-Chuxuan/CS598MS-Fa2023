@@ -1,1 +1,0 @@
-SELECT * FROM title_principals WHERE tconst =? AND category IN ('director','writer') GROUP BY category HAVING COUNT(*) > 1 ORDER BY category ASC LIMIT 5 OFFSET 0

@@ -1,1 +1,0 @@
-SELECT DISTINCT TOP 1 tconst FROM dbo.title_basic WHERE titleType ='movie' AND ((isAdult!= 1 OR isAdult IS NULL)) ORDER BY avgRATING DESC LIMIT 1

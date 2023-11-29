@@ -1,1 +1,0 @@
-SELECT DISTINCT tconst FROM title_basic WHERE (startyear = '1894') AND ((isadult <> 1))

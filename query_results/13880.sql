@@ -1,1 +1,0 @@
-SELECT * FROM ttitles WHERE ((primaryTitle LIKE '%Mrs%') OR (originalTitle LIKE %Mrs%)) AND NOT ((startYear >=?) OR (endYear <=?))

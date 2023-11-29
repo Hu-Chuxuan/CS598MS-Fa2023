@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE isAdult = true AND averageRating > 7 AND runtime < 120 ORDER BY avgRat DESC LIMIT 3 OFFSET?

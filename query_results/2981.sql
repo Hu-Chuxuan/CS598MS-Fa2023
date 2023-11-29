@@ -1,1 +1,0 @@
-SELECT * FROM `moviedb`.`title` WHERE (`startyear >=? AND `endyear <=?)` ORDER BY `averagerating DESC`

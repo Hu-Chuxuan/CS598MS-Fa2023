@@ -1,1 +1,0 @@
-SELECT * FROM title_basic WHERE startyear >=? AND startyear <=? ORDER BY avgrating DESC LIMIT 5

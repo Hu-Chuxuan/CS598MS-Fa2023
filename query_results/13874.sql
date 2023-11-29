@@ -1,1 +1,0 @@
-SELECT DISTINCT t.* FROM title_basics AS t INNER JOIN title_rating AS r ON t.tconst = r.tconst WHERE (r.averageRATING >= 7 AND r.numvotes > 1)

@@ -1,1 +1,0 @@
-SELECT * FROM title_basic WHERE titleType='movie' AND isAdult=0 ORDER BY avg(averageRating)

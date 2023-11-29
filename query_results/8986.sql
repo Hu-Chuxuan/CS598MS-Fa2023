@@ -1,1 +1,0 @@
-SELECT * FROM title_basic WHERE titleType ='movie' AND ((startYear >= '1970') OR (startYear <= '1980')) ORDER BY avgRating DESC LIMIT 3

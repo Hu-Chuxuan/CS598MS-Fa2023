@@ -1,1 +1,0 @@
-SELECT * FROM title_basics WHERE ((startyear=2000 OR startyear='2000') AND (endyear=2000)) ORDER BY startyear DESC LIMIT 1

@@ -1,1 +1,0 @@
-SELECT * FROM title_ratings WHERE (((averageRating >= 7)) AND ((numVotes > 1))) ORDER BY avgRat DESC LIMIT 10 OFFSET 0

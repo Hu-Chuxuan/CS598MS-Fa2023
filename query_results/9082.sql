@@ -1,1 +1,0 @@
-SELECT * FROM `titles` WHERE `titleType` =? AND (`startYear >=? OR startYear <=?`) AND (`endYear >=? OR endYear <?`) AND (`isAdult` IN (?)) ORDER BY `averageRating`, `numVotes`

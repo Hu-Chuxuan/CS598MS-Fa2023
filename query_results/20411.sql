@@ -1,1 +1,0 @@
-SELECT * FROM title_ratings WHERE avgrating >= 5 AND numvotes > 200 ORDER BY avgrating DESC LIMIT 5

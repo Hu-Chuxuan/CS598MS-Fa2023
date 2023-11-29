@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE startYear BETWEEN? AND? ORDER BY avgrating DESC LIMIT? OFFSET?

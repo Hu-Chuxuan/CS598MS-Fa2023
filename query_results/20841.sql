@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE titleType = “movie” AND ((startYear > {input}) OR ({input} IS NULL)) ORDER BY avgRating DESC LIMIT {limit}

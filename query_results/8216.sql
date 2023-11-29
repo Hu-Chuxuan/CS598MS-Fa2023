@@ -1,1 +1,0 @@
-SELECT * FROM title_basics WHERE primaryTitle =? AND averageRating >=? ORDER BY averageRating DESC LIMIT 1 OFFSET 0

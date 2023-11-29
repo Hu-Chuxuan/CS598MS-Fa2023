@@ -1,1 +1,0 @@
-SELECT * FROM tt WHERE ((startyear >= '1900') AND (endyear <= '2000')) GROUP BY startyear ORDER BY avgrating DESC LIMIT 1 OFFSET 0

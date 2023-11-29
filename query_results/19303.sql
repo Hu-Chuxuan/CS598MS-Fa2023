@@ -1,1 +1,0 @@
-SELECT * from title_basic where titleType = “Movie” order by avgrating desc limit 100000000

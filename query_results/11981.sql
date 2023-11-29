@@ -1,1 +1,0 @@
-SELECT t.* FROM title AS t WHERE t.isAdult = 1 AND t.startYear > $year FROM (SELECT DISTINCT t.primaryTitle FROM title AS t ORDER BY RAND() LIMIT 1)

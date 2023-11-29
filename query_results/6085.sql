@@ -1,1 +1,0 @@
-SELECT * FROM `titles` WHERE `startyear` > DATE('now') AND (`genre`) LIKE '%romantic%' OR (`genre`) LIKE '%comedy%' ORDER BY `averagerating` DESC LIMIT 5 OFFSET 0

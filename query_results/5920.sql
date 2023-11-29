@@ -1,1 +1,0 @@
-SELECT * FROM title_basic WHERE tconst IN ('tt0000001','tt0000002')

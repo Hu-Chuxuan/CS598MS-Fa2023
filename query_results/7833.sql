@@ -1,1 +1,0 @@
-SELECT * FROM ( SELECT TOP 5 t.*, COUNT(*) AS cnt   from title_basic WHERE t.startyear >= @minStartYear AND t.endyear <= @maxEndYear GROUP BY t.isAdult ) AS t INNER JOIN cast ON t.tconst = cast.tconst GROUP BY t.tconst HAVING count > 2 ORDER BY avgrat DESC LIMIT 5

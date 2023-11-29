@@ -1,1 +1,0 @@
-SELECT t.primaryTitle AS MovieTitle, r.averageRating AS Rating FROM titleratings r INNER JOIN title_basic b ON b.tconst = r.tconst AND b.isAdult <> 1 ORDER BY r.numVotes DESC LIMIT 5 OFFSET 0

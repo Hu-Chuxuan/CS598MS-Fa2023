@@ -1,1 +1,0 @@
-SELECT * FROM `title_principals` WHERE (`category = "actor"` OR `job LIKE "%act%"`) AND (`ordering > 2`) ORDER BY `ordering`

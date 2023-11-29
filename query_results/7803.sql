@@ -1,1 +1,0 @@
-SELECT * FROM title_basic WHERE isAdult = 0 AND rating > 6 ORDER BY rating DESC LIMIT 1 OFFSET 0

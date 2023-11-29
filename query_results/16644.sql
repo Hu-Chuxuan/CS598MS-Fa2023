@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE titleType ='movie' AND primaryTitle LIKE '%Michael%Fassb%der%' ORDER BY avgRating DESC LIMIT 5

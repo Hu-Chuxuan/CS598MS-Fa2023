@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE (((primaryTitle LIKE '%The%') AND ((startYear BETWEEN 2000 AND 2010))) OR (genre LIKE '%Drama%')) LIMIT 5 OFFSET 0

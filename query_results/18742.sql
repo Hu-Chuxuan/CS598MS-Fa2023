@@ -1,1 +1,0 @@
-SELECT * from title_basic where (isAdult = 1 AND titleType='movie') OR (titleType not IN ('movie','documentary')) ORDER BY numVote DESC LIMIT 10 OFFSET 0

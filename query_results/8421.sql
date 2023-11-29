@@ -1,1 +1,0 @@
-SELECT * FROM `movies` WHERE (`startyear >= 1890`) AND (`endyear <= 1999`) ORDER BY `averageratingscore` DESC LIMIT 5

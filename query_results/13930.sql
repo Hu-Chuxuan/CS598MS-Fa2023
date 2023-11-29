@@ -1,1 +1,0 @@
-SELECT * FROM (SELECT * FROM `title` WHERE (`startyear` =? AND `endyear` <=?)) AS t INNER JOIN (`title_rating` WHERE (`average_rating` >=? AND `numvotes` >?))

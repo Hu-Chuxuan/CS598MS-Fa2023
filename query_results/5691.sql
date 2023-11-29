@@ -1,1 +1,0 @@
-SELECT * FROM title_principals WHERE tconst =? AND job LIKE '%Actor%' ORDER BY nconst ASC LIMIT 1 OFFSET 0 

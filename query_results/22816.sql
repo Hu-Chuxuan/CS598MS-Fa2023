@@ -1,1 +1,0 @@
-SELECT * FROM `title` WHERE (`rating`.`averageRating` >= 5 AND `genre`.`type` = 'Action') ORDER BY `title`.`startYear`, `title`.`endYear`

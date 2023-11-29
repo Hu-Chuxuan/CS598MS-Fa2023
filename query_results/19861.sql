@@ -1,1 +1,0 @@
-SELECT * from title_basic where averageRating > 7 order by averageRating desc limit 10

@@ -1,1 +1,0 @@
-SELECT DISTINCT tconst FROM title_principals WHERE nconst IN ('nm0000001','nm0000002') AND tconst NOT LIKE '%tt%'

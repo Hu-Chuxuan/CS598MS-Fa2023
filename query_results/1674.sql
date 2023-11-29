@@ -1,1 +1,0 @@
-SELECT * FROM (SELECT t.* from title_basics AS t INNER JOIN title_crew ON t.tconst=title_crews.tconst WHERE t.startyear>='1894') WHERE (((title_crews.primaryTitle="Gladiator") AND ((title_crews.isAdult="true")))) OR ((title_crews.primaryTitle!="Gladiator") AND ((title_crews.isAdult="false")))

@@ -1,1 +1,0 @@
-SELECT * FROM `titles` WHERE (`primaryTitle` LIKE '%Kiss%') AND ((`startYear` BETWEEN? AND?)) LIMIT? OFFSET?

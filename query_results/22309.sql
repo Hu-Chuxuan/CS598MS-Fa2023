@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE titleType = 'Movie' AND ((startYear >= 1990 OR endYear <= 2018)) AND (isAdult <> 1)

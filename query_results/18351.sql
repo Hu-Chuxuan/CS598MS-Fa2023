@@ -1,1 +1,0 @@
-SELECT title_id FROM title WHERE title_type ='movie' AND title_genre NOT LIKE '%documentary%' ORDER BY avg_rating DESC LIMIT 3

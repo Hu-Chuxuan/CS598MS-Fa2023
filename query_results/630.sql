@@ -1,1 +1,0 @@
-SELECT * FROM movieRecommendationSystem WHERE genre IN ('superhero') AND numVote > 100 OR numVote < 100 AND numVote >= 5 ORDER BY avgRate DESC LIMIT 3 OFFSET 0

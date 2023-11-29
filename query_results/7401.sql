@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE ((((startyear <= @userinputdate AND endyear >= @userinputdate)) OR (@userpreferencedate BETWEEN startyear AND endyear))) ORDER BY averagerating DESC LIMIT 10

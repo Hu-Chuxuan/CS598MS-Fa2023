@@ -1,1 +1,0 @@
-SELECT DISTINCT t.primaryTitle AS TitleID FROM title_basics AS t INNER JOIN title_ratings AS r ON t.tconst = r.tconst WHERE t.startYear BETWEEN '1950' AND '2000' OR t.endYear BETWEEN '1950' AND '2000' OR t.originalTitle LIKE '%Misery%' GROUP BY r.averageRating DESC LIMIT 5 ORDER BY r.numVOTES DESC OFFSET 0 ROWS FETCH NEXT 5 ROWSONLY 

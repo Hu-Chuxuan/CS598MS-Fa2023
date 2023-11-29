@@ -1,1 +1,0 @@
-SELECT * FROM title_basics WHERE titleType='movie' AND startYear >= 1970 ORDER BY avg(averageRating)

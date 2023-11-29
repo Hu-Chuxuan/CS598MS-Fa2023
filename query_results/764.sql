@@ -1,1 +1,0 @@
-SELECT * FROM title_basic WHERE tconst='tt0000001' AND startyear >= '1990' ORDER BY startyear DESC LIMIT 5 OFFSET 5

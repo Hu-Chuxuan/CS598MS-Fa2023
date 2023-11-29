@@ -1,1 +1,0 @@
-SELECT * FROM title_basic WHERE title_type = \'movie\' AND isAdult=0 ORDER BY avgRATING DESC LIMIT 3

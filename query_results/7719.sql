@@ -1,1 +1,0 @@
-SELECT DISTINCT RANK() OVER (PARTITION BY uid ORDER BY avgrat DESC) AS rank, tconst FROM title_ratings WHERE tconst IN ('tt0000001','tt0000002') AND (avgrat BETWEEN 4.0 AND 4.9)

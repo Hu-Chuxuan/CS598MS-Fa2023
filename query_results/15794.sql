@@ -1,1 +1,0 @@
-SELECT * from title where titleType = “movie” order by avgRate desc limit 3

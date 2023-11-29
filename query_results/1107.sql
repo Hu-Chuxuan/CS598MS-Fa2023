@@ -1,1 +1,0 @@
-SELECT * FROM `title` WHERE `title`.`isAdult` = true AND (`startyear` BETWEEN? AND?)

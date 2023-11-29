@@ -1,1 +1,0 @@
-SELECT * FROM `titles` WHERE `startyear` >= '1894' AND (`endyear` IS NULL OR `endyear` < CURRENT_DATE()) ORDER BY `averagerating`, `numvotes`

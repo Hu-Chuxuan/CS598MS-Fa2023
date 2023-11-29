@@ -1,1 +1,0 @@
-SELECT * FROM title_ratings WHERE title_id = \N AND numVotes >= 10 ORDER BY avgRate DESC LIMIT 10

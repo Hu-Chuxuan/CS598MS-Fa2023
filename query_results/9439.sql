@@ -1,1 +1,0 @@
-SELECT DISTINCT title_id FROM title_basics WHERE title_type ='movie' AND ((startyear > $1 OR startyear < $2)) ORDER BY avgrating DESC LIMIT 1 OFFSET $3

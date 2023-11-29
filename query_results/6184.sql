@@ -1,1 +1,0 @@
-SELECT * FROM `title` WHERE (`isAdult` = false AND `startYear >= 1980`) ORDER BY `genre`, `runtimeMinutes` DESC LIMIT 10 OFFSET 10

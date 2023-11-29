@@ -1,1 +1,0 @@
-SELECT DISTINCT * FROM `titles` WHERE `isAdult` = 1 AND (`startYear <=? OR `endYear >=?)` AND (`titleType IN ('movie','short')`)

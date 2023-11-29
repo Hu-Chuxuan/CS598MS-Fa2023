@@ -1,1 +1,0 @@
-SELECT * from title where genre = 'Action' AND startyear > 1980 AND startyear < 2010 AND runtime >= 90 AND runtime <= 150 order by rating desc limit 3 offset 0

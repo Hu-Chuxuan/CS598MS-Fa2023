@@ -1,1 +1,0 @@
-SELECT * FROM titleratings WHERE avgrating <=.5 AND averagevotes > 2 ORDER BY avgreview DESC LIMIT 15

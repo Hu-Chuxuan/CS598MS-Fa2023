@@ -1,1 +1,0 @@
-SELECT * from title where titleType = “movie” AND ((primaryTitle like '%a space odyssey%' OR originalTitle like '%space odyssey%'))

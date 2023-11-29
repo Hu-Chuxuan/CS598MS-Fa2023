@@ -1,1 +1,0 @@
-SELECT * from ((SELECT * from title_basic where titleType ='movie') inner join (SELECT * from name_basic where nconst like '%n%')) as b where ((b.primaryName like %?%)) order by b.startyear desc limit?

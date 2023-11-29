@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE ttype='movie' AND isadult=1 ORDER BY rating DESC LIMIT 2 OFFSET 0

@@ -1,1 +1,0 @@
-SELECT DISTINCT title_basic.* FROM title_basic WHERE title_type = “Movie” AND (startyear > 1999 OR startyear < 1900)

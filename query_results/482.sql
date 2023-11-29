@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE (((titleType ='movie') AND ((startYear <= @year OR @year IS NULL)) AND (@genre LIKE '%action%'))) ORDER BY (rating DESC)

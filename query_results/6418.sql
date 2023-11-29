@@ -1,1 +1,0 @@
-SELECT DISTINCT t.* FROM `titles` AS t WHERE EXISTS ( SELECT * FROM `titles_recommendation` WHERE `user_id` =? AND (`title_rating`.`numvotes`) > 0 ) ORDER BY RAND() LIMIT 3

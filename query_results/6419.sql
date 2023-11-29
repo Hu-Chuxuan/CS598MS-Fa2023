@@ -1,1 +1,0 @@
-SELECT * from title where genre='romcom' order by avgrat desc limit 3

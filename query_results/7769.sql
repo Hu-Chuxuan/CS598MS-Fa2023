@@ -1,1 +1,0 @@
-SELECT DISTINCT titleID FROM title_basic WHERE startyear BETWEEN? AND? OR endyear BETWEEN? AND? ORDER BY avgrating DESC LIMIT 10 OFFSET 0

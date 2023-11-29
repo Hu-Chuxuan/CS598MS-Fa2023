@@ -1,2 +1,0 @@
-SELECT t.* FROM (((title_basic b LEFT JOIN name_basic m ON b.primaryName = m.primaryName AND b.startYear >= m.birthYear))
-LEFT JOIN title_rating r ON b.tconst=r.tconst) AS t WHERE ((b.isAdult='1') OR (b.originalTitle IN ('The Good Doctor','Love Affair')))

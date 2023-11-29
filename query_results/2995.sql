@@ -1,1 +1,0 @@
-SELECT * FROM (SELECT * from `title` where (((startyear>1980))) AND ((endyear<1990)) ) AS tbl WHERE (((category='actress')))

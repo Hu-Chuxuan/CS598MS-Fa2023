@@ -1,1 +1,0 @@
-SELECT * FROM title_basic WHERE titleType ='movie' AND titleType IN ('documentary','short') GROUP BY tconst ORDER BY avg(averageRating)

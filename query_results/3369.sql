@@ -1,1 +1,0 @@
-SELECT DISTINCT t.primaryTitle AS Movie Title FROM title_basic t INNER JOIN title_rating tr ON tr.tconst = t.tconst AND tr.numvotes > 1 WHERE ((tr.averageRating >= 6 OR tr.averageRating IS NULL)) ORDER BY tr.averageRating DESC LIMIT 1

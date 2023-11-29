@@ -1,1 +1,0 @@
-SELECT * from `title` where `primaryTitle` like '%die hard%' order by `averageRating` asc limit 20

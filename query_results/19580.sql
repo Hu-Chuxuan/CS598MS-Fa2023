@@ -1,1 +1,0 @@
-SELECT tconst FROM title_basic WHERE tconst = 'tt0000001' AND ((startyear <= \'\') OR (\'' + str(userinput[0])+ '' >= startyear)) AND (endyear > \'\')

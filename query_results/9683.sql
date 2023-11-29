@@ -1,1 +1,0 @@
-SELECT * FROM `title` WHERE `primaryTitle` LIKE '%fast five%' AND (`startYear <=? OR `endYear >=?)` ORDER BY `averageRating`

@@ -1,1 +1,0 @@
-SELECT * FROM `title` WHERE (`genres`) LIKE '%Horror%' AND (`startYear`) <= 2000 ORDER BY (`runtimeMinutes`) DESC LIMIT 10 OFFSET?

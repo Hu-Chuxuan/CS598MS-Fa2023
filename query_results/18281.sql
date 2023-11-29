@@ -1,2 +1,0 @@
-SELECT * FROM
-    ( SELECT * FROM `title` WHERE `isAdult` = false AND (`startYear` >= 2015 OR `endYear` <= 2015)) AS subquery WHERE ((subquery.`originalTitle`) LIKE '%something%') ORDER BY RAND() LIMIT 1

@@ -1,1 +1,0 @@
-SELECT * FROM `movielens` WHERE `release_year` = 2016 AND (`primary_title` LIKE '%arrival%' OR `primary_title` LIKE '%moonlight%') ORDER BY RAND() LIMIT 10 OFFSET 15

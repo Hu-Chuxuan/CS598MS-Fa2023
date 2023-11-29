@@ -1,1 +1,0 @@
-SELECT * FROM (SELECT tconst, avg(rating)/numvotes AS rated_avg from title_ratings where tconst IN ('tt0000001','tt0000002') group by tconst order by rated_avg desc limit 10)

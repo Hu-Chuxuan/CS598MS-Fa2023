@@ -1,1 +1,0 @@
-SELECT DISTINCT titleID FROM title_basic WHERE primaryTitle = 'Breakfast at Tiffanys' AND isAdult='0'

@@ -1,1 +1,0 @@
-SELECT * FROM `titles` WHERE (`isAdult = 1`) AND ((`startYear >= '${userPreferenceHistory[0]}') OR (`endYear <= '${userPreferenceHistory[0]}')) ORDER BY RAND() LIMIT ${userPreferenceHistory.length}

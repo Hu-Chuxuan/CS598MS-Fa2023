@@ -1,1 +1,0 @@
-SELECT * FROM title_ratings WHERE avgRat >= 5 AND numVotes > 100 ORDER BY avgRAT DESC LIMIT 5

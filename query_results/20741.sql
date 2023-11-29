@@ -1,1 +1,0 @@
-SELECT * FROM `title` WHERE (`rating`.`averageRating` >=? AND `rating`.`numVotes` >?) ORDER BY `avgRat` DESC LIMIT 3 OFFSET 0

@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE titleType = “Movie” AND titleID IN ('tt0000001') ORDER BY AVG(rating), numvotes DESC LIMIT 2 OFFSET 0

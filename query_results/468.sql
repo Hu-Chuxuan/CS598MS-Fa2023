@@ -1,1 +1,0 @@
-SELECT * from title_principals where title= 'Yes Men' AND category='actress' order by ording limit 20

@@ -1,1 +1,0 @@
-SELECT * FROM `title` WHERE (`primaryTitle`) LIKE '%%' AND (`startYear`) <= '2000' ORDER BY RAND() LIMIT 5 OFFSET?

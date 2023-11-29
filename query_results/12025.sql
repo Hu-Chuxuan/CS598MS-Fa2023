@@ -1,1 +1,0 @@
-SELECT DISTINCT TOP 10 movietitleid FROM title_basic WHERE ((isadult = 1 OR NOT ISNULL((startyear > 1900 AND startyear < CURRENT DATE))))

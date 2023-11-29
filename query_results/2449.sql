@@ -1,1 +1,0 @@
-SELECT * FROM title_basics WHERE titleType='movie' AND ((isAdult=0 OR isAdult IS NULL)) ORDER BY rating DESC LIMIT 5 OFFSET?

@@ -1,1 +1,0 @@
-SELECT DISTINCT 'tt0000001' AS `title`, 'tt0000001' AS `category` FROM (`title_basic`) WHERE (`startyear` >= '1999') AND (`endyear` <= '2019')

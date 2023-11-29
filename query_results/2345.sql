@@ -1,1 +1,0 @@
-SELECT DISTINCT title.* FROM title_principals AS p LEFT JOIN title ON p.ordering = title.id WHERE p.category='self AND ((title.startyear BETWEEN? AND? OR title.endyear >=?)) AND (((title.genre IN ('[\"comedy\", \"drama\"]')) OR (title.genre NOT LIKE '%horror%'))) ORDER BY (CASE WHEN genre IS NULL THEN 1 ELSE 0 END), (CASE WHEN title.rating > avg_rating THEN 1 ELSE 0 END)

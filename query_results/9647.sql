@@ -1,1 +1,0 @@
-SELECT * from title_principals where category = 'actress' order by averageRating desc limit 10 offset 0

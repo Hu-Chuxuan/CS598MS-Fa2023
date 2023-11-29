@@ -1,1 +1,0 @@
-SELECT * FROM (SELECT title_id, title_type from title_basic where title_rating >=? AND title_rating <=? limit 10)

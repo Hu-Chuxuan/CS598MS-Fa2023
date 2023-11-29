@@ -1,1 +1,0 @@
-SELECT * from title where (((primaryTitle='Sense and Sensibility') AND ((startYear BETWEEN 1980 AND 1999))) OR ((primaryTitle='A Wrinkle in Time ')AND ((endYear>=1980))))

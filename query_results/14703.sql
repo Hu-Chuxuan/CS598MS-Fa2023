@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE titleType = “movie” AND startYear >= $yearFrom AND startYear <= $yearTo AND rating > 7 AND rating < 9 ORDER BY avgRating DESC LIMIT 10 OFFSET $offset

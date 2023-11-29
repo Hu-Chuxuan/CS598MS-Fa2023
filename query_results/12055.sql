@@ -1,1 +1,0 @@
-SELECT * FROM title_principals WHERE ((category='actress') AND (job!="")) ORDER BY nconst ASC LIMIT 3 OFFSET?

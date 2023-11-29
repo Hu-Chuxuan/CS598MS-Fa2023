@@ -1,1 +1,0 @@
-SELECT * FROM `movies` WHERE ((titleType ='movie') AND (averageRating > 4)) ORDER BY (numVotes DESC)

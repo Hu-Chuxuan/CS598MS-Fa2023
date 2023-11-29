@@ -1,2 +1,0 @@
-SELECT * FROM (SELECT t.*, COUNT(*) AS cnt
-FROM title_principals tp JOIN title_rating tr ON tp.tconst = tr.tconst AND tr.numvotes > 0 GROUP BY tp.tconst ORDER BY SUM((tr.averageRating*2)) DESC LIMIT 5 OFFSET 5 ) WHERE cnt < 5 order by SUM((tr.averageRating*2))

@@ -1,1 +1,0 @@
-SELECT DISTINCT t.* FROM titleratings AS tr JOIN title_principals AS pr ON pr.tconst = tr.tconst WHERE pr.category IN ('actress','actor') AND (tr.averageRating > 7 OR tr.numvotes >= 10)

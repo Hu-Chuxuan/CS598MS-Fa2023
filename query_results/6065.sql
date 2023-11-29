@@ -1,1 +1,0 @@
-SELECT * FROM  title_principals WHERE title =? AND genre IN ('romantic comedy') OR genre LIKE '%rom%' ORDER BY numvotes DESC LIMIT 5 OFFSET 0

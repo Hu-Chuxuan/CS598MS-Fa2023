@@ -1,1 +1,0 @@
-SELECT * FROM title_principals WHERE tconst = 'tt0000001' AND category IN ('director') ORDER BY ordering DESC LIMIT 2

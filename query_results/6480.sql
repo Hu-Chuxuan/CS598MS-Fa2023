@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE titleType = 'Movie' AND numVote > 10 ORDER BY avgRate DESC LIMIT 3

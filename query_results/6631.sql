@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE rating >= 8 AND averageRating > 5 ORDER BY rating DESC LIMIT 10 OFFSET?

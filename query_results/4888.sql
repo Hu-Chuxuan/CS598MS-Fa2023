@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE (startyear > \N AND endyear < \N AND duration >= \N ) AND ((originaltitle LIKE '%The%') OR (originaltitle LIKE '%Avenger%')) ORDER BY avgrat DESC LIMIT \N OFFSET \N

@@ -1,1 +1,0 @@
-SELECT * from title_principals where title_id='tt0000001' order by desc limit 100

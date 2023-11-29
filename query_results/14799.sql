@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE tconst = 'tt0000001' AND (((job LIKE '%Director%' OR job LIKE '%Writer%') OR ((category='Self' AND job NOT IN ('Production Manager','Stunt Performer')))) OR (job LIKE '%Actor%'))

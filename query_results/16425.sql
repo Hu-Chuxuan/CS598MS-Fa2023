@@ -1,1 +1,0 @@
-SELECT * FROM title_basic WHERE title_type = "Movie" AND (((startyear >= 2000 OR startyear IS NULL))AND ((endyear <= 2010 OR endyear IS NULL))) GROUP BY genre HAVING COUNT(*) > 1 ORDER BY AVG(rating DESC)

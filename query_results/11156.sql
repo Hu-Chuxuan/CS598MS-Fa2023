@@ -1,1 +1,0 @@
-SELECT t.* from title_basics t where t.isAdult = false limit 3 order by avg(averageRating)

@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE titleType = “Movie” AND NOT (originalTitle LIKE '%Bio%' OR originalTitle LIKE '%This%') ORDER BY avgrating DESC LIMIT 2

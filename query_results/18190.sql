@@ -1,1 +1,0 @@
-SELECT t.* FROM title_basic t JOIN title_crew c ON t.tconst = c.tconst WHERE ((c.directors LIKE '%Bill Murray%' OR c.writers LIKE '%Bill Murray%') AND c.startyear > 1980)

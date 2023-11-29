@@ -1,2 +1,0 @@
-SELECT * FROM (SELECT * from title_basic where titleType = "Movie")
-INNER JOIN (SELECT * from title_principal WHERE nconst="nm0000001") ON ((title_basic).tconst=((title_principal)).tconst) AND ((title_basic).ordering=(title_principal).ordering)

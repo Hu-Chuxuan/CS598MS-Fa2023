@@ -1,1 +1,0 @@
-SELECT * FROM `title` WHERE (`title`.`primaryTitle` LIKE '%{input}%') AND (`title`.`startYear` >= '{year}`)

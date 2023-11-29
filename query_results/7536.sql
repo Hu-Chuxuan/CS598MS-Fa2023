@@ -1,1 +1,0 @@
-SELECT * from t_recommendation where tconst =? order by avgrating desc limit 2

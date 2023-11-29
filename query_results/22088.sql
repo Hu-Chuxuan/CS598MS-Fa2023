@@ -1,1 +1,0 @@
-SELECT * FROM title_basic WHERE titleType = “Movie” AND genre LIKE '%Horror%' ORDER BY avgRATING DESC LIMIT 3 OFFSET 0 

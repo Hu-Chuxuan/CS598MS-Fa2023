@@ -1,1 +1,0 @@
-SELECT DISTINCT * FROM `title_basic` WHERE `isAdult = 0`

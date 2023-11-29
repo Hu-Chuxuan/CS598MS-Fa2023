@@ -1,1 +1,0 @@
-SELECT DISTINCT t.* FROM title AS t INNER JOIN cast ON t.id = cast.titleID WHERE t.startyear >= '1980' AND t.endyear <= '2000' AND t.isadult <> '1' ORDER BY t.averagerating DESC LIMIT 5

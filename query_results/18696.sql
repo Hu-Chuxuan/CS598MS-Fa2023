@@ -1,1 +1,0 @@
-SELECT * FROM `movies` WHERE (`genre` LIKE '%comedy%' OR `genre` LIKE '%romance%') AND (`startyear` <=? ) ORDER BY `runtime` DESC LIMIT 1 OFFSET 0

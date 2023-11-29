@@ -1,1 +1,0 @@
-SELECT * FROM movie_recommendation WHERE title_id IN ('t1') AND title_type ='movie' OR title_type='tvseries' ORDER BY avg_rating DESC LIMIT 10

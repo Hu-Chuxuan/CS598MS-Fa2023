@@ -1,1 +1,0 @@
-SELECT * FROM `moviedb` WHERE (`genre`) LIKE '%romantic%' AND (`isAdult`) = false ORDER BY `averageRating` DESC LIMIT 10 OFFSET 0

@@ -1,1 +1,0 @@
-SELECT t.* FROM title AS t WHERE (((t.startYear <= @year AND t.endYear >= @year)) OR (@year IS NULL))

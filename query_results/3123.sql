@@ -1,1 +1,0 @@
-SELECT * FROM `titles` WHERE (`isAdult` = '1') AND ((`startYear` > CAST(`year` AS INTEGER))) ORDER BY (`averageRating`) DESC LIMIT 15

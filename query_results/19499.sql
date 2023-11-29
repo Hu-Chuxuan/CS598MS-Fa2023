@@ -1,1 +1,0 @@
-SELECT DISTINCT titleId FROM title_basic WHERE ((startYear >= @yearStart AND startYear <= @yearStop)) OR (@yearStop IS NULL)

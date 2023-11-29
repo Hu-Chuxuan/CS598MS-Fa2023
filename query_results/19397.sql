@@ -1,1 +1,0 @@
-SELECT title_principals.* FROM title_principals WHERE title_id IN ('tt0000001','tt0000002') AND job LIKE '%Direct%' OR job LIKE '%Writer%'

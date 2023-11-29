@@ -1,1 +1,0 @@
-SELECT * FROM title_basic WHERE titleType ='movie' AND startYear > 1970 ORDER BY runtime DESC LIMIT 5 OFFSET? 

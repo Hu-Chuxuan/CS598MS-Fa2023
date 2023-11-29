@@ -1,1 +1,0 @@
-SELECT DISTINCT r.rating AS RATING FROM `title_ratings` r LEFT JOIN (`title_basics` b ON r.`title_id` = b.`tconst`) WHERE ((b.`primaryTitle` LIKE '%funny%' OR b.`originalTitle` LIKE '%funny%') AND (r.`numVotes` >= 1)) GROUP BY r.`averageRating`

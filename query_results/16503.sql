@@ -1,1 +1,0 @@
-SELECT * FROM title_basic WHERE ((isAdult=false AND genre='comedy') OR (isAdult=true)) ORDER BY avgrating DESC LIMIT 1

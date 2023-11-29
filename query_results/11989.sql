@@ -1,1 +1,0 @@
-SELECT DISTINCT * FROM title_ratings WHERE title_type ='movie' AND ((rating > 4 OR (average RATING < 3)) AND NOT EXISTS (SELECT * FROM title_ratings WHERE title_id = tconst AND avg_rating <= 3))

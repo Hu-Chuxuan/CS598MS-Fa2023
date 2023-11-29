@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE averageRating > 7 AND genre IN ('Action','Adventure') ORDER BY rating DESC LIMIT 5 OFFSET? FETCH NEXT 5 ROWS ONLY

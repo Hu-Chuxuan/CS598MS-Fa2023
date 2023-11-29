@@ -1,1 +1,0 @@
-SELECT * FROM (SELECT DISTINCT t.tconst AS TitleID, r.averageRating, COUNT(*) AS NumOfReviews FROM title_ratings R JOIN title T ON r.tconst = t.tconst WHERE r.numvotes > 1 AND ((r.averagerating BETWEEN 7 OR 8) AND (r.averagerating < 8)) GROUP BY r.avgerting) JOIN title T ON T.tconst = TitleID ORDER BY r.NumOfReview DESC LIMIT 10

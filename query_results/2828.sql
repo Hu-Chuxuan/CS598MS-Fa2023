@@ -1,1 +1,0 @@
-SELECT * FROM (SELECT rating, count(*) AS cnt, avg(rating)/cnt AS averageRatings FROM title_ratings WHERE AVG(rating)>=4 GROUP BY titleID ORDER BY COUNT DESC LIMIT 3)

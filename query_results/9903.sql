@@ -1,1 +1,0 @@
-SELECT * FROM title_basics WHERE titleType ='movie' AND averageRating > 6.5 ORDER BY averageRating DESC LIMIT 10 OFFSET 0

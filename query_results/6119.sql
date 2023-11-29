@@ -1,1 +1,0 @@
-SELECT * FROM TITLE_BASICS WHERE ((startyear >= 1970 AND startyear <= 2020)) ORDER BY AVG(averagerating) DESC LIMIT 10 OFFSET?

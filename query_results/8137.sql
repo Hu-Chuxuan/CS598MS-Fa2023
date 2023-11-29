@@ -1,5 +1,0 @@
-SELECT * FROM (( SELECT titleID, avg(rating) AS RATING, COUNT(*) OVER() AS VOTES ) WHERE (((averageRating >= 5 AND averageRating <= 5)) OR (((startyear BETWEEN? AND?))) OR (((endyear >?))) OR (((isAdult = true)))) ORDER BY RANDOM())
-UNION ALL
-SELECT * FROM (( SELECT titleID, avg(rating) AS RATING, COUNT(*) OVER() AS VOTES ) WHERE (((averageRating >= 4 AND averageRating <= 4)) OR (((startyear <?)) OR (((endyear >=?))) OR (((genre IN ('[\\\"Mystery\\\", \\\"Horror\\\"]'))))) OR (((primaryTitle LIKE '%[\\\"Science Fiction\\\"]%') OR (((primaryTitle LIKE %\\\'[\\\"Western\\\]%\\\']))))) GROUP BY titleID HAVING MIN(votes)>=?)) UNION ALL
-SELECT * FROM (( SELECT titleID, avg(rating) AS RATING, COUNT(*) OVER() AS VOTES ) WHERE (((averageRating >= 3 AND averageRating <= 3)) OR (((startyear <=?)) OR (((endyear >=?))) OR (((genre IN ([\\\"Action\\\",\\\"Adventure\\\"]))))) OR (((primaryTitle NOT IN ['[\\\"Drama\\\"]']) OR (((primaryTitle LIKE "%[\\\"Crime\\\"]%"))) OR (((primaryTitle LIKE %\\\'[\\\"War\\\]%\\\']))))) GROUP BY titleID HAVING MIN(votes)>=?)
-ORDER BY RAND() LIMIT 3`

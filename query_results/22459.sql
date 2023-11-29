@@ -1,1 +1,0 @@
-SELECT * FROM title_basics WHERE isAdult = false AND titleType='movie' ORDER BY titleType DESC LIMIT 1

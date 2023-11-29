@@ -1,1 +1,0 @@
-SELECT DISTINCT title_basic.* FROM title_basic JOIN title_crew ON title_basic.primaryTitle = title_crew.titles WHERE title_crew.titles IN ('Mother! (2017), Get Out (2017)) AND title_rating.averageRatings > 7 ORDER BY title_basic.startYear DESC LIMIT 3

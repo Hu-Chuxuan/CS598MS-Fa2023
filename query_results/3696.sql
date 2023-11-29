@@ -1,1 +1,0 @@
-SELECT * FROM `movielens` WHERE ((userID = 1 OR userID IS NULL)) AND ((title_type LIKE '%film%' OR title_type NOT IN ('documentary','music video')))

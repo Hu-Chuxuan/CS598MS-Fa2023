@@ -1,1 +1,0 @@
-SELECT * FROM title_basics WHERE ((startYear <? AND endYear >?) OR (startYear >=? AND endYear <=?)) ORDER BY RAND() LIMIT 5

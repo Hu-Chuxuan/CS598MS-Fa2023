@@ -1,1 +1,0 @@
-SELECT * FROM title_ratings WHERE numVotes > 1 AND numVotes < 1000 ORDER BY avgRatings DESC LIMIT 3 OFFSET?

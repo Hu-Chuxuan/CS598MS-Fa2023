@@ -1,1 +1,0 @@
-SELECT t.* FROM title_ratings r JOIN title_basic b ON r.tconst = b.tconst WHERE genre IN ('drama','thriller') AND r.averageRating > 8 ORDER BY r.numVOTES DESC LIMIT 10

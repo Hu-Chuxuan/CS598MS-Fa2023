@@ -1,1 +1,0 @@
-SELECT * FROM title_basic WHERE title_type = “movie” AND ((startyear >= $year1 && startyear <= $year2)) ORDER BY avgrating DESC LIMIT 5

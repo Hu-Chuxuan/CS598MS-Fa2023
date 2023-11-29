@@ -1,1 +1,0 @@
-SELECT DISTINCT r.* FROM title_basic b INNER JOIN title_rating r ON b.titleID = r.titleID WHERE r.numvotes > 1 AND r.avgrating >= 6 ORDER BY avgrating DESC LIMIT 5 OFFSET 0

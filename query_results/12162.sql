@@ -1,1 +1,0 @@
-SELECT * FROM `movielens` WHERE avgrating >=? AND avgrating <=? GROUP BY titleid HAVING COUNT(*) > 0 ORDER BY avgrating DESC LIMIT 1 OFFSET?

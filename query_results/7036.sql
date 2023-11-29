@@ -1,1 +1,0 @@
-SELECT t.* FROM title_basic AS t JOIN title_principal AS p ON p.tconst = t.tconst WHERE p.category LIKE '%act%' AND p.job NOT IN ('assistant') GROUP BY t.tconst ORDER BY AVG(p.rating) DESC LIMIT 10 OFFSET 0

@@ -1,1 +1,0 @@
-SELECT * FROM `title` WHERE `startyear >= ${input}` AND (`endyear <= ${input}`) ORDER BY `runtimeMinutes` ASC LIMIT 3

@@ -1,1 +1,0 @@
-SELECT title_id AS id, title_type AS type, primary_title AS title FROM title WHERE ((startyear BETWEEN? AND?)) ORDER BY rating DESC LIMIT 5 OFFSET?

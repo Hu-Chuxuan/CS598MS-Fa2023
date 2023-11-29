@@ -1,1 +1,0 @@
-SELECT DISTINCT t.* FROM `titles` AS t INNER JOIN (`titles_ratings` AS tr ON t.`id` = tr.`tconst`) WHERE ((tr.`averageRating` >= 8 AND tr.`numVotes` > 10)) OR EXISTS((SELECT * FROM `users` USERS WHERE (USERS.username='user') AND (USAGES.titleId=t.`id`))) GROUP BY t.`id`

@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE category = 'character' AND titleType IN ('movie','tvseries') ORDER BY avgRATING DESC LIMIT 1 OFFSET?

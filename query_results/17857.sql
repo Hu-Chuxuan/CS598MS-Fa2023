@@ -1,1 +1,0 @@
-SELECT t.primaryTitle AS Title, avg(rating) AS Rating FROM title AS t INNER JOIN title_ratings AS r ON t.tconst = r.tconst WHERE t.startYear >= 1970 AND t.endYear <= 2019 GROUP BY t.primaryTitle ORDER BY Rating DESC LIMIT 3 OFFSET 0

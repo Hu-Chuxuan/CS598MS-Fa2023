@@ -1,1 +1,0 @@
-SELECT * FROM `title` WHERE `startyear` >=? AND (`isadult` = 0 OR `genre` LIKE '%comedy%') ORDER BY `rating` DESC LIMIT?

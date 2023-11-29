@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE genre IN ('Horror','Thriller') AND actors='James McAvoy' ORDER BY avgrat DESC LIMIT 10

@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE tconst =? AND (genre LIKE '%western%' OR genre LIKE '%spaghetti%' OR genre LIKE '%cowboy%') ORDER BY averageRATING DESC LIMIT 5

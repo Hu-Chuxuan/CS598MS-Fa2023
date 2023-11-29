@@ -1,6 +1,0 @@
-SELECT tb.primaryTitle
-FROM title_basics tb
-WHERE FIND_IN_SET('Comedy', tb.genres) > 0
-AND FIND_IN_SET('Animated', tb.genres) > 0
-AND startYear > 2010
-AND startYear < 2020

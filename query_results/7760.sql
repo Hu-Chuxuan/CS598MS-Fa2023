@@ -1,1 +1,0 @@
-SELECT * from title_principals where job = 'actor' order by nconst asc limit?

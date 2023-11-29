@@ -1,1 +1,0 @@
-SELECT * FROM title_principals WHERE tconst='tt0000001' AND nconst = 'nm0005690' ORDER BY ording DESC LIMIT 30 OFFSET 0

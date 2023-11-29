@@ -1,1 +1,0 @@
-SELECT * FROM `movies` WHERE `isAdult` = false AND (`startYear >= '${input}' OR `${input}` IS NULL)` ORDER BY `averageRating` DESC LIMIT ${limit} OFFSET ${offset}

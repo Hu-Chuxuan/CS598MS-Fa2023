@@ -1,1 +1,0 @@
-SELECT * FROM title_principals WHERE nconst = 'nm0000001' AND ((category='director' OR category='cinematographer') AND (job='director')) ORDER BY ordering ASC LIMIT 3

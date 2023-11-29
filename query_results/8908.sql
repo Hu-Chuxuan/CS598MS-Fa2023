@@ -1,1 +1,0 @@
-SELECT * FROM `movies` WHERE (`genre` = 'action') AND (`runtime < 100`) ORDER BY `averageRating` DESC LIMIT 10 OFFSET 0

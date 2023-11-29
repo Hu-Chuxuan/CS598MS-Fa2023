@@ -1,1 +1,0 @@
-SELECT title_id FROM title WHERE title_type ='movie' AND (startyear > 1990 OR startyear < 1920)

@@ -1,1 +1,0 @@
-SELECT * FROM title_basic WHERE title_type ='movie' AND ((startyear <= 2010 OR startyear >= 2017)) ORDER BY avgrating DESC LIMIT 1 OFFSET 0

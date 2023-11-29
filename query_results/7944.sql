@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE titleType ='movie' AND ((startYear >= 1990 OR startYear IS NULL)) AND (endYear <= CURRENT_TIMESTAMP()) AND ((primaryTitle LIKE '%die hard%' OR primaryTitle LIKE '%terminator%') AND (genre IN ('action','thriller')))

@@ -1,1 +1,0 @@
-SELECT * FROM `title` WHERE (`startyear >= 2017`) AND ((`genre LIKE %drama%`) OR (`genre LIKE %action%`)) ORDER BY RAND() LIMIT 1

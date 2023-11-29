@@ -1,1 +1,0 @@
-SELECT * from imdb.title where ttype = 'TVSeries' order by avgrat desc limit 2

@@ -1,1 +1,0 @@
-SELECT * FROM title_basics WHERE ttype='movie' AND ((primaryTitle LIKE '%Little%') OR (originalTitle LIKE '%Little%')) ORDER BY avgrating DESC LIMIT 10 OFFSET 0

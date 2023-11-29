@@ -1,1 +1,0 @@
-SELECT * FROM tb_user_history WHERE genre = 'Drama' AND title LIKE '%The%King''Spee%' ORDER BY rating DESC LIMIT 2 OFFSET?

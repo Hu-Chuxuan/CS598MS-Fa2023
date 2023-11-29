@@ -1,1 +1,0 @@
-SELECT DISTINCT t.* FROM `title` AS t JOIN `title_basic` AS b ON b.`titleID` = t.`titleID` WHERE ((b.isAdult=0 AND b.startYear>=2010)) OR (b.endYear<=2015)

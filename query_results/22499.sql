@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE rating > 7 AND director = 'Jon Favreau' OR rating >= 7 AND titleType IN ('TVSeries') ORDER BY rating DESC LIMIT 2 OFFSET 0

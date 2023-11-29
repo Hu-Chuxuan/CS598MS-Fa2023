@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE avg_rating >= 7 AND titleType = 'Movie' OR (avg_rating <= 7 AND titleType IN ('TVSeries','Video')) ORDER BY avg_rating DESC LIMIT 15

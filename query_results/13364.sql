@@ -1,1 +1,0 @@
-SELECT * FROM title_principals WHERE titleId = 'tt0000001' AND category LIKE '%actor%' ORDER BY ordering ASC LIMIT 1

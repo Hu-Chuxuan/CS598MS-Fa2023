@@ -1,1 +1,0 @@
-SELECT DISTINCT title_id FROM title WHERE average_rating < 6 AND numvotes > 1 ORDER BY numvotes DESC LIMIT 3 OFFSET 2 

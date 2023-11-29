@@ -1,1 +1,0 @@
-SELECT title_basics.* FROM title_basics WHERE titleType = “movie” AND ((startYear >= $userInput[0]) OR ($userPreferHistory[0])) ORDER BY titleType DESC LIMIT 1 OFFSET 0

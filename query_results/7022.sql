@@ -1,1 +1,0 @@
-SELECT * FROM title_principals WHERE tconst =? AND category =? ORDER BY numVOTES DESC LIMIT 5

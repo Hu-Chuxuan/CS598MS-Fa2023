@@ -1,1 +1,0 @@
-SELECT * FROM title_basic WHERE titleType = “Movie” AND isAdult=‘0′ ORDER BY avgRate DESC LIMIT 5

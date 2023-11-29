@@ -1,1 +1,0 @@
-SELECT * FROM title_principals WHERE title_id =? AND category IN ('director','producer') GROUP BY title_id ORDER BY numVotes DESC LIMIT 2 OFFSET 0

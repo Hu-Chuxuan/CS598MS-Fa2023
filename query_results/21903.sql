@@ -1,2 +1,0 @@
-SELECT * FROM `titles` WHERE `isAdult` = false AND (`startYear >=?`) ORDER BY `runtimeMinutes` ASC LIMIT? OFFSET?
-where? will be replaced with the years you SELECT from your preference list above, and? indicates how many items per page you want returned back.  For example, limiting to just one item would mean limiting to the first row where the condition matches.  So, using?=1 would return just Zombieland (2009)

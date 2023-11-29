@@ -1,1 +1,0 @@
-SELECT * FROM title_principals WHERE job = 'Director' AND ((startyear <= '2000') OR ('2000' < startyear)) ORDER BY ordering ASC LIMIT 1 OFFSET 0 

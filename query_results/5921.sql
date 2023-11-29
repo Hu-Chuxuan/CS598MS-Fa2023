@@ -1,1 +1,0 @@
-SELECT * from (SELECT tconst, titleType, primaryTitle, originalTitle, isAdult, startYear, endYear, runtimeMinutes, genres FROM title_basics WHERE titleType ='movie') AS tb JOIN (SELECT nconst, primaryName, birthYear, deathYear, primaryProfession, knownForTitles FROM name_basics WHERE nconst IN ('nm0000001','nm0374658')) AS n ON tb.primaryTitle LIKE CONCAT('%', n.primaryName,'%')

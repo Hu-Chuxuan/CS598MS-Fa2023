@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE titleType ='movie' AND startYear >= \N AND startYear <= \N ORDER BY numVote DESC LIMIT \N OFFSET \N

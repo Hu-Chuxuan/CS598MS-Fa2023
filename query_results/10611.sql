@@ -1,1 +1,0 @@
-SELECT DISTINCT titles.* FROM title_basic AS b JOIN title_rating AS r ON r.tconst = b.tconst WHERE ((r.numvotes >= 1)) AND (b.primaryTitle LIKE '%Bridge%') ORDER BY b.startyear DESC LIMIT 10 OFFSET 0

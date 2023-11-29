@@ -1,1 +1,0 @@
-SELECT * FROM `movielens` WHERE (`ageGroup` LIKE '%2') AND (`gender` = 'Male')

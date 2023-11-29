@@ -1,1 +1,0 @@
-SELECT * FROM title_basics WHERE startYear >= 1960 AND genre IN ('drama','thriller') ORDER BY numVote DESC LIMIT 3

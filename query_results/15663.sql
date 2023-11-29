@@ -1,1 +1,0 @@
-SELECT DISTINCT tconst FROM title_basic WHERE isAdult = true AND ttype = “Movie” ORDER BY avgrat DESC LIMIT 3 OFFSET 0

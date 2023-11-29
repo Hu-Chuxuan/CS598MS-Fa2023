@@ -1,1 +1,0 @@
-SELECT * FROM tb_movies WHERE genre = “Drama” AND runtime < 120 ORDER BY avgrat DESC LIMIT 5 OFFSET?

@@ -1,1 +1,0 @@
-SELECT * FROM title_basics WHERE titleType = “movie” AND (primaryTitle LIKE '%Superbad%' OR originalTitle LIKE '%Superbad%') GROUP BY titleType HAVING COUNT(*) > 0 ORDER BY avgRating DESC LIMIT 10 OFFSET 0

@@ -1,1 +1,0 @@
-SELECT * FROM `movies` WHERE (`rating` >= 5 OR `genre` IN ('Drama')) AND (`startyear` <=?)

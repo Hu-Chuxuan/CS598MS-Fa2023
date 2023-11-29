@@ -1,1 +1,0 @@
-SELECT DISTINCT t.* FROM title_basics AS tb JOIN title_principals AS tp ON tb.tconst = tp.ordering WHERE tp.category IN ('director') AND ((tp.job LIKE '%act%')) ORDER BY avg(tb.runtimeMinutes), avg(tb.startYear)

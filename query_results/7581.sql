@@ -1,1 +1,0 @@
-SELECT * FROM title_principals WHERE titleId = $input AND category LIKE '%actor%' ORDER BY descending

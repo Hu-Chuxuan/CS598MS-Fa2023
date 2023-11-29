@@ -1,1 +1,0 @@
-SELECT t.* FROM title AS t WHERE ((t.startyear>='1990') AND (t.endyear<='1999')) AND EXISTS((SELECT r.tconst from title_ratings r where t.id=r.tconst))

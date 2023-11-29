@@ -1,1 +1,0 @@
-SELECT * FROM title_basic WHERE titleType ='movie' AND originalTitle LIKE '%Carmencita%' ORDER BY numVote DESC LIMIT 5 OFFSET 0

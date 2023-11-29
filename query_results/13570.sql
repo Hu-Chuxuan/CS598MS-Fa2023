@@ -1,1 +1,0 @@
-SELECT * FROM `title` WHERE `startyear` > '1970' AND (`endyear` < '2000') ORDER BY `averagerating`

@@ -1,1 +1,0 @@
-SELECT * FROM title_basic WHERE titleType='movie' AND NOT ('startYear >= 1980 OR startYear <= 1985') AND titleType!= 'video' ORDER BY avg(averageRating DESC)

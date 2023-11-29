@@ -1,1 +1,0 @@
-SELECT distinct title.primaryTitle from title join cast where  title.startYear between 1980 and 1999 order by avgrating desc limit 5

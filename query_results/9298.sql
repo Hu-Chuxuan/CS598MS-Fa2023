@@ -1,1 +1,0 @@
-SELECT * FROM title_rating WHERE averageRATING >=? AND numvotes >? ORDER BY averageRATING DESC LIMIT 3

@@ -1,1 +1,0 @@
-SELECT * from title where averagerating >= 7 AND avgvote > 2 order by avgvote desc limit 5

@@ -1,1 +1,0 @@
-SELECT * FROM `movies` WHERE (`primaryTitle` = 'Major league') OR (`originalTitle` like '%Major%')

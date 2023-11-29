@@ -1,1 +1,0 @@
-SELECT DISTINCT t.* FROM title AS t WHERE EXISTS ( SELECT * FROM title_ratings tr INNER JOIN name ON tr.primaryTitle = name.primaryName AND tr.numVotes > 100 ) AND NOT EXISTS ( SELECT * FROM title_ratings tr INNER JOIN name ON tr.averageRating < 5 OR tr.numVotes <= 100 )

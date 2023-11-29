@@ -1,1 +1,0 @@
-SELECT * FROM title_basics WHERE ((isAdult = 0 AND startYear <= \'2019\' ) OR (\'1999\' < startYear && startYear <= \'2019\'))

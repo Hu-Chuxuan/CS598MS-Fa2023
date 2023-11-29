@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE genre='Drama' AND isAdult=FALSE ORDER BY averageRating DESC LIMIT 3

@@ -1,1 +1,0 @@
-SELECT * FROM title_basics WHERE titleType ='movie' AND isAdult!= 1 ORDER BY avgRating DESC LIMIT 3 FOR XML PATH ('')

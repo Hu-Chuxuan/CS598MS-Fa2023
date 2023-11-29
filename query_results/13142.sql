@@ -1,1 +1,0 @@
-SELECT * FROM `movies` WHERE (startyear >= 1900 AND endyear <= 2020)

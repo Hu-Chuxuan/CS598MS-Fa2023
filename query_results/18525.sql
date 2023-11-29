@@ -1,1 +1,0 @@
-SELECT * FROM (SELECT t.*,(SELECT avg(v.rating) AS rating FROM v WHERE t.id = v.tconst AND v.userID IS NULL) AS recommendRatings FROM t WHERE (startYear >=? OR startYear <=?)) AS sorted ORDER BY recommendRatings DESC LIMIT 10

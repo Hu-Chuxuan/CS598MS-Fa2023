@@ -1,1 +1,0 @@
-SELECT titleID AS MovieID, titleType AS Movietype FROM title_basic WHERE titleType = “Movie” AND startyear >= '1990' ORDER BY runtimeMinutes DESC LIMIT 2 OFFSET 0 

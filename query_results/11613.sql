@@ -1,1 +1,0 @@
-SELECT * FROM `title_basic` WHERE `startyear` >= $min AND (`endyear` <= $max OR `$endyear` IS NULL)

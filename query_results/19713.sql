@@ -1,1 +1,0 @@
-SELECT DISTINCT * FROM title_basic WHERE titleType ='movie' AND startYear > 1980 ORDER BY avgRating DESC LIMIT 10 OFFSET 0

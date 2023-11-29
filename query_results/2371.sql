@@ -1,1 +1,0 @@
-SELECT * FROM title_ratings WHERE averageRating >= 4 AND averageRating <= 8 OR (averageRating = 4 AND numVotes > 100)

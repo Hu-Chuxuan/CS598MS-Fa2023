@@ -1,1 +1,0 @@
-SELECT * from title_principals where category='actress' order by ordering limit 3

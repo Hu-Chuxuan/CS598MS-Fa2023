@@ -1,1 +1,0 @@
-SELECT * FROM `movies` WHERE (`genre`) IN ('Drama','Action') AND (`startyear`) > (SELECT max(`startyear`) from `movies` where (`primarytitle`) = 'The Godfather')

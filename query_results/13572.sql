@@ -1,1 +1,0 @@
-SELECT * FROM title_basics WHERE nconst = 'nm0000001' AND genre IN ('Action','Drama') ORDER BY rating DESC LIMIT 2 OFFSET?

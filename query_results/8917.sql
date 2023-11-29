@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE rating > 7 AND genre = “Drama” OR genre = “Science Fiction” OR genre = “Horror Film” ORDER BY IMDB_RATING DESC LIMIT 5 OFFSET 0

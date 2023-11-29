@@ -1,1 +1,0 @@
-SELECT * FROM `titleratings` WHERE ((`averageRating` >= @minAverageRating) AND (`numVotes` > @minNumOfReviews)) ORDER BY (`averageRating`) ASC LIMIT 2 OFFSET 0

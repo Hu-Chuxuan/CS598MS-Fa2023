@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE (((primaryTitle LIKE '%ant%') AND ((averageRatings >.2))))

@@ -1,1 +1,0 @@
-SELECT * FROM ( SELECT DISTINCT movie_id AS id FROM `title` WHERE title_type ='movie') AS x LEFT JOIN (SELECT DISTINCT rating_count AS count, title_id AS id FROM `title_rating`) AS y ON x.id=y.id AND y.title_id IN ('tt0000001','tt0000002')

@@ -1,1 +1,0 @@
-SELECT * FROM `title_principals` WHERE `ordering` = 1 AND (`category`, `job`) IN ('actress','character') ORDER BY RAND() LIMIT 10

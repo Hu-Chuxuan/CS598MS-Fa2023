@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE titleType ='movie' AND ((startYear >= '1990') OR (endYear <= '2000')) ORDER BY rating DESC LIMIT 5 OFFSET?

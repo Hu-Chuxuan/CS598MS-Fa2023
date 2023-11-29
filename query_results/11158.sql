@@ -1,1 +1,0 @@
-SELECT * FROM title_basic WHERE ttype='movie' AND tstartyear>1990 ORDER BY avgrat DESC LIMIT 5 OFFSET 0

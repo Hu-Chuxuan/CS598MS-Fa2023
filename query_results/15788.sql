@@ -1,1 +1,0 @@
-SELECT * FROM title_principals WHERE nconst = 'nm0005690' AND category LIKE '%act%'

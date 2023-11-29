@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE genre='Science Fiction' AND (startYear >= 1970 OR startYear <= 1979)

@@ -1,1 +1,0 @@
-SELECT * FROM `title` WHERE (`startyear` >= '1980') AND (`startyear` <= '2000')

@@ -1,1 +1,0 @@
-SELECT * FROM title_basic WHERE ((startYear = 2010 OR startYear IS NULL)) AND ((endYear <= 2015))

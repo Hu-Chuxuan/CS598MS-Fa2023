@@ -1,1 +1,0 @@
-SELECT * FROM ( SELECT TOP 5 *, ROW_NUMBER() OVER (ORDER BY avgRatings DESC) AS rnk ) WHERE rnk <= 2 AND (category ='self') OR ((startYear >= 1900)) ORDER BY rnk ASC

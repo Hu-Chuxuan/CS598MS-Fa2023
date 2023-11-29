@@ -1,1 +1,0 @@
-SELECT * FROM title_basic WHERE titleType = "movie" AND isAdult = true ORDER BY avg_rating DESC LIMIT 10 OFFSET? 

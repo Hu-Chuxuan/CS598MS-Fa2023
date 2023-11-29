@@ -1,1 +1,0 @@
-SELECT * from `titles` where `isAdult` = false order by `averageRatings` desc limit 20 offset 12

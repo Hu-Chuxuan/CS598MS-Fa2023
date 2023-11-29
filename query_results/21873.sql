@@ -1,1 +1,0 @@
-SELECT title_id from title where titleType ='movie' order by avg(averageRating)

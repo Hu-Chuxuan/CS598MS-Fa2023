@@ -1,1 +1,0 @@
-SELECT * FROM title_basics WHERE nconst =? ORDER BY avg_rating DESC LIMIT 5 OFFSET 10

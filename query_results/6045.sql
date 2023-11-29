@@ -1,1 +1,0 @@
-SELECT * FROM `movietable` WHERE (`primaryTitle`) LIKE '%Holiday%' OR (`originalTitle`) LIKE '%Holiday%') AND (`isAdult`) = 0 ORDER BY (`averageRating`) DESC LIMIT 2 OFFSET 0

@@ -1,1 +1,0 @@
-SELECT t.* FROM (SELECT * from title_basic WHERE (isAdult = true AND averageRating > 5)) AS t INNER JOIN (SELECT * from title_crew where tconst = t.tconst ) AS c ON (c.directors LIKE '%Johnnie To%' OR c.writers LIKE '%Johnnie To%') GROUP BY t.primaryTitle HAVING COUNT(*) >= 2 ORDER BY count(*) DESC LIMIT 2 OFFSET 0 

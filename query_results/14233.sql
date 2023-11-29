@@ -1,1 +1,0 @@
-SELECT * FROM movie_recommendation WHERE user_id =? AND movie_rating >=? ORDER BY RAND() LIMIT?

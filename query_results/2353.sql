@@ -1,1 +1,0 @@
-SELECT * from title_principals where category = \'Actor\' order by descending job ascending

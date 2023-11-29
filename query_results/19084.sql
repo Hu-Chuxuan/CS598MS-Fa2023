@@ -1,1 +1,0 @@
-SELECT DISTINCT t.* FROM title AS t JOIN title_rating AS tr ON tr.tconst = t.tconst WHERE ((tr.averageRATING >= 4 AND tr.numvotes > 5)) OR ((tr.averageRATING <= 3 AND tr.numvotes < 2))

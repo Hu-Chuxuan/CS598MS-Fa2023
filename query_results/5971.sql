@@ -1,1 +1,0 @@
-SELECT DISTINCT movieID FROM title_principals WHERE (category = 'actress') AND (job LIKE '%actress%')

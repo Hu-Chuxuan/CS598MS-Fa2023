@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE rating > 5 OR rating < 2 AND director = 'Christopher Nolan' AND actor IN ('Leonardo DiCaprio') ORDER BY rating DESC LIMIT 1 OFFSET 2 

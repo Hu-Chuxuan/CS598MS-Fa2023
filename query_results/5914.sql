@@ -1,1 +1,0 @@
-SELECT * FROM title_basic WHERE ((startyear > 1970 AND genre = 'comedy') OR (endyear < 1970)) ORDER BY rating DESC LIMIT 5 OFFSET 10

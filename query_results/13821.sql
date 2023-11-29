@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE titleType ='movie' AND averageRating > 7.5 ORDER BY avgRatings DESC LIMIT 5

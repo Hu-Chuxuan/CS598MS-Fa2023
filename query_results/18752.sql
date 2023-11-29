@@ -1,1 +1,0 @@
-SELECT * from title where genre like '%comedy%' order by avgrating desc limit 3

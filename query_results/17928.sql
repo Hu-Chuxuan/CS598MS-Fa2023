@@ -1,1 +1,0 @@
-SELECT * FROM title_basics WHERE ((startYear >= 1980 AND startYear <= 1989)) OR ((startYear = \N) AND (endYear > 1989))

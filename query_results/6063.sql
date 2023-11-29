@@ -1,2 +1,0 @@
-SELECT t.*, 
-	CASE WHEN avg(r.averageRating) > r.numVotes THEN AVG(r.averageRating)/AVG(r.numVotes)*r.avarageRating ELSE AVG(r.averageRating) END AS rating FROM title_ratings r JOIN title_basic b ON b.primaryTitle = r.title_id AND b.isAdult=r.isAdult JOIN name_basic c ON c.birthYear <= CAST((SELECT MAX(d.startYear)-CAST(MAX(d.deathYear)AS INTEGER)) AS DATE) AND c.birthYear >= MIN(d.startYear)+CAST(MIN(d.deathYear)AS INT) WHERE b.tconst = r.title_id AND c.nconst = r.primaryName GROUP BY r.title_id ORDER BY rating DESC LIMIT 3

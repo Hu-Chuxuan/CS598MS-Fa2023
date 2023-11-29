@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE averageRating >= 8 AND runningTime < 90 ORDER BY avgRat DESC LIMIT 10 OFFSET 0

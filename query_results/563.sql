@@ -1,1 +1,0 @@
-SELECT * from title_basic WHERE tconst =? ORDER BY tconst ASC LIMIT 10

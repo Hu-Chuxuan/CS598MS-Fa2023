@@ -1,1 +1,0 @@
-SELECT t.primaryTitle AS Title, r.averageRating AS Rating FROM title_basics t JOIN title_ratings r ON t.tconst = r.tconst WHERE (r.numVotes > 2 AND r.avgRating >= 7)

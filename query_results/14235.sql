@@ -1,1 +1,0 @@
-SELECT * FROM title_ratings WHERE numvotes > 1 AND numvotes <= 100 GROUP BY tconst ORDER BY avgrating DESC LIMIT 1 OFFSET 0

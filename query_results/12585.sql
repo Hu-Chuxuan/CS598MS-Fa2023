@@ -1,1 +1,0 @@
-SELECT * FROM title_basic WHERE startYear >= 1970 AND endYear <= 2018 ORDER BY averageRatings DESC LIMIT 10 OFFSET 0

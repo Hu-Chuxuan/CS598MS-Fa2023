@@ -1,1 +1,0 @@
-SELECT * FROM title_basic WHERE (((startyear>1990 AND endyear<2020)) OR ((endyear>1990 AND startyear<=2020))) ORDER BY rating DESC LIMIT 5 OFFSET 0

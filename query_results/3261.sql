@@ -1,1 +1,0 @@
-SELECT * from Title_Basics where primaryTitle = 'Fantasia' AND isAdult=0 ORDER BY RuntimeMinutes DESC LIMIT 1 OFFSET 0

@@ -1,1 +1,0 @@
-SELECT DISTINCT t.* FROM ((title_ratings r INNER JOIN title_basics b ON r.tconst = b.tconst AND r.averageRating >= b.startYear)) LEFT OUTER JOIN title_principals p ON (r.tconst = p.tconst OR r.avoid=1) WHERE r.numvotes > 25 ORDER BY avg_rating DESC LIMIT 20 OFFSET 0

@@ -1,1 +1,0 @@
-SELECT * FROM title_principals WHERE tconst =? AND category LIKE '%actor%' ORDER BY averageRATING DESC LIMIT 10 OFFSET?

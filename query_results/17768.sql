@@ -1,1 +1,0 @@
-SELECT * FROM title_basics WHERE primaryTitle = 'Weird Science  (1985)' AND titleType='Movie' ORDER BY numVotes DESC LIMIT 3 OFFSET 0 

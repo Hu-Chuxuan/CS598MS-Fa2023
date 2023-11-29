@@ -1,1 +1,0 @@
-SELECT DISTINCT title.* FROM title WHERE (((title.primaryTitle = @input)) OR ((title.originalTitle LIKE '%@input%'))) AND (@userPreferenceHistory IN TITLE_PRINCIPALS.category)

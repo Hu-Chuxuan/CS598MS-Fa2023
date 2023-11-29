@@ -1,1 +1,0 @@
-SELECT * from title where averagerating >= $userInput and (startyear <= 2000 OR endyear > = 2000)

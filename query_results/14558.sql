@@ -1,1 +1,0 @@
-SELECT DISTINCT t.* FROM `titles` AS t INNER JOIN (`user_preferences` USING(`id`) AND (`type`)='Movie') WHERE ((startyear > 1900)) ORDER BY `averagerating`, `numvotes`

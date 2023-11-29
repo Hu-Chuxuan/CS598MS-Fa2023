@@ -1,1 +1,0 @@
-SELECT * FROM `movielens` WHERE (`startYear >= 2010 AND endYear <= 2020`) ORDER BY `rating`

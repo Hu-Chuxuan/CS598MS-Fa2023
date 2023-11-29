@@ -1,1 +1,0 @@
-SELECT * FROM `title` WHERE (`title`.`startYear` >=? AND `title`.`endYear` <=?)

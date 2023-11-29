@@ -1,1 +1,0 @@
-SELECT * from imdb.movietitle where avgrating >= 7.0 AND avgrating <= 8.0 AND numvotes > 5000 GROUP BY movieid ORDER BY avgrating DESC LIMIT 10 OFFSET 0

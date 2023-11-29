@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE isAdult = 1 AND startyear >= $startDate AND endyear <= $endDate ORDER BY avgRatings DESC LIMIT 5

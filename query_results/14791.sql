@@ -1,1 +1,0 @@
-SELECT * from `title` where `isAdult` = 1 limit 10 order by avg(`rating`) desc

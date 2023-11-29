@@ -1,1 +1,0 @@
-SELECT * FROM title_basic WHERE ((title_type = 'Movie') AND (startyear < 1960)) OR ((title_type!= 'TVSeries')) ORDER BY avgrating DESC LIMIT 20 OFFSET 0

@@ -1,1 +1,0 @@
-SELECT * FROM title_principals WHERE title_id = 'tt0000001' AND category IN ('cast','actress') ORDER BY ordering ASC LIMIT 5 OFFSET 0 

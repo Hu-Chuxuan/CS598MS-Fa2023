@@ -1,1 +1,0 @@
-SELECT * FROM title_ratings WHERE tconst = "tt0000001" AND numVotes > 50 ORDER BY avgrating DESC LIMIT 3 OFFSET 0 FETCH NEXT 3 ROW ONLY

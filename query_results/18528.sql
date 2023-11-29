@@ -1,1 +1,0 @@
-SELECT DISTINCT r.* FROM recommends AS r INNER JOIN users AS u ON r.userID = u.id WHERE u.preferences LIKE '%Caddy%'

@@ -1,1 +1,0 @@
-SELECT * from tb_recommendation where rating >= 5 order by avgrating desc limit 5

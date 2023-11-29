@@ -1,1 +1,0 @@
-SELECT * from title where ttype = 'Movie' order by avgrat desc limit 2

@@ -1,1 +1,0 @@
-SELECT * FROM title_principals WHERE tconst = 'tt0000001' AND nconst IN ('nm0000001','nm0000002') ORDER BY category ASC LIMIT 2 OFFSET 0 ROWS FETCH NEXT 2 ROW ONLY

@@ -1,1 +1,0 @@
-SELECT * FROM title_principals WHERE tconst = $1 AND category IN ('actor','actress') GROUP BY category ORDER BY averageRATING DESC LIMIT 1 OFFSET $2 ROW FETCH NEXT 1 ROWS ONLY 

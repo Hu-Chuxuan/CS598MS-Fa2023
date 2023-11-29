@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE rating > 4 AND castMemberID LIKE '%princess%' ORDER BY rating DESC LIMIT 1 OFFSET? FILTER (WHERE userPreferenceHistory = ANY ('%Cinderella %'))

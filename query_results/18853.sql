@@ -1,1 +1,0 @@
-SELECT * FROM `title` WHERE ((`startYear` >=? AND (`endYear` <=?)) OR (`startYear` <? AND (`endYear` >?))) ORDER BY `averageRating`, `numVotes`

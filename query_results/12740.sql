@@ -1,1 +1,0 @@
-SELECT * FROM title_basics WHERE ((primaryTitle='The Godfather Part III') AND (startYear<>'1990')) OR ('Robocop' IN (genre)) ORDER BY startYear DESC LIMIT 2 OFFSET 0

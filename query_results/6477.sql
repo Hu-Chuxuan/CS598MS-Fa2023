@@ -1,1 +1,0 @@
-SELECT * from tconst where ttype='movie' order by avgratings desc limit 1

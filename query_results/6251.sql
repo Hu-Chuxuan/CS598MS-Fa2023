@@ -1,1 +1,0 @@
-SELECT * FROM `titles` WHERE (`isAdult = true`) AND (`startYear >= 2000`) ORDER BY `runtimeMinutes`

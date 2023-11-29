@@ -1,1 +1,0 @@
-SELECT * FROM tconst WHERE titleType='movie' AND (startYear BETWEEN? AND?) ORDER BY avgRating DESC LIMIT 1 OFFSET?

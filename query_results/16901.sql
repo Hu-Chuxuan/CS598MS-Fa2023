@@ -1,1 +1,0 @@
-SELECT * FROM title_ratings WHERE (numvotes > 5 AND avgrating >= 6)

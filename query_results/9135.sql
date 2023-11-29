@@ -1,1 +1,0 @@
-SELECT * FROM `movielens` WHERE `rating` >= $input AND (`year` < $preferedYear OR $preferedYear = \'\') ORDER BY RAND() LIMIT 10

@@ -1,1 +1,0 @@
-SELECT * FROM `title` WHERE (`startyear`) BETWEEN ('1941') AND ('1980')

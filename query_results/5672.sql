@@ -1,1 +1,0 @@
-SELECT * FROM `titles` WHERE ((startyear > 1970 AND startyear < 2000)) AND (`primaryTitle LIKE "%Shopaholic%" OR `primaryTitle LIKE "%Prada%")` ORDER BY `averageRating`

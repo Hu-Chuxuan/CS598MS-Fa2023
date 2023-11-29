@@ -1,1 +1,0 @@
-SELECT title_id AS tID FROM title WHERE title_type = 'Movie' AND startyear > 1960 ORDER BY avgrating DESC LIMIT 1 OFFSET?

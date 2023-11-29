@@ -1,1 +1,0 @@
-SELECT * FROM title_principals WHERE titleId = <titleId> AND (category LIKE '%act%' OR category LIKE '%writer%')

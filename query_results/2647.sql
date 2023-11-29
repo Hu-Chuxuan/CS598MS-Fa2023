@@ -1,1 +1,0 @@
-SELECT * FROM movie_recommendation WHERE rating >= x AND genre LIKE '%thrill%' OR genre LIKE '%mystery%'

@@ -1,1 +1,0 @@
-SELECT * FROM ((title_basic JOIN title_crew USING ('tconst')) JOIN title_rating using('tconst') WHERE ((title_basic.startyear>='2019' AND title_basic.endyear<>'2020') OR (title_basic.startyear<'2019' AND title_basic.endyear>='2020')) AND ((title_crew.category='writer'))) GROUP BY title_basic.tconst ORDER BY RAND() LIMIT 5

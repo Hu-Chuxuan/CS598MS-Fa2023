@@ -1,1 +1,0 @@
-SELECT * FROM title_basics WHERE startYear = 1994 OR startYear > 1994 AND endYear < 1997 ORDER BY avgRatings DESC LIMIT 3

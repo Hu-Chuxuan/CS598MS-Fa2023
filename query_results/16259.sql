@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE startyear =? AND endyear >=? ORDER BY runtime DESC LIMIT 10

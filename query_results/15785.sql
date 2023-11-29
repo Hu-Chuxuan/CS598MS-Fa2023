@@ -1,1 +1,0 @@
-SELECT * from title_principals where ((category='director') AND ((job like '%Direct%'))) order by ordering asc limit 3

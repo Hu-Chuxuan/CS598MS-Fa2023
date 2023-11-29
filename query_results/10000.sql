@@ -1,1 +1,0 @@
-SELECT * FROM title_ratings WHERE ((titleType = 'Movie') AND (numVotes > 1)) ORDER BY avgRating DESC LIMIT 3

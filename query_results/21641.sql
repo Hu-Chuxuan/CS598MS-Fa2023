@@ -1,1 +1,0 @@
-SELECT * FROM `title_principals` WHERE (`category` LIKE '%act%') AND (`job` = 'actor')

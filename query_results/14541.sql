@@ -1,1 +1,0 @@
-SELECT * from movie where tconst = $1 and titleType='Movie' order by averageRating desc limit 1

@@ -1,1 +1,0 @@
-SELECT DISTINCT t.* FROM title AS t JOIN title_rating AS r ON r.tconst = t.tconst WHERE r.numvotes > 1 AND ((r.averagerating BETWEEN $1 AND $2)) ORDER BY r.averageRATING DESC LIMIT $3 OFFSET $4

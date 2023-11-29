@@ -1,1 +1,0 @@
-SELECT DISTINCT title_id FROM title_basic WHERE title_type = “movie” AND primary_title LIKE '%hostel%' OR original_title LIKE '%hostel%')

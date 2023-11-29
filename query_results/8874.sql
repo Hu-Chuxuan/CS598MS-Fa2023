@@ -1,1 +1,0 @@
-SELECT t.* FROM title AS t INNER JOIN title_principals AS p ON t.id = p.tconst WHERE p.category LIKE '%director%' AND t.startyear >= \`userInputDate\' ORDER BY t.`averageRatings` DESC LIMIT 10

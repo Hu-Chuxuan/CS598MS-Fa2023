@@ -1,1 +1,0 @@
-SELECT * FROM ((title_basic INNER JOIN title_rating ON title_basic.tconst = title_rating.tconst AND title_basic.isAdult=0) INNER JOIN title_crew ON title_basic.tconst = title_crew.tconst) WHERE title_basic.primaryTitle='pretty woman' OR title_basic.originalTitle LIKE '%pretty%' OR title_basic.startYear BETWEEN '1990' AND '1995' ORDER BY title_basic.runtimeMinutes DESC LIMIT 1

@@ -1,1 +1,0 @@
-SELECT * FROM tb_recommendation WHERE titleType='movie' AND (((startYear<=2000 OR startYear>=1900)) AND ((endYear>2000 OR endYear<1900))) AND (((runtimeMinutes<=200 OR runtimeMinutes>=100)))

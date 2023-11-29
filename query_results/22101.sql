@@ -1,1 +1,0 @@
-SELECT DISTINCT title.* FROM title WHERE (((title.startyear =?)) AND ((title.endyear IS NULL))) ORDER BY title.runtime DESC LIMIT 1 OFFSET 0

@@ -1,1 +1,0 @@
-SELECT * FROM `title` WHERE ((startYear BETWEEN 1990 AND 1999)) OR ((endYear < 1990)) ORDER BY averageRating DESC LIMIT 3 OFFSET? 

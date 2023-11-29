@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE titleType = “Movie” AND primaryTitle LIKE '%Rambo%' OR primaryTitle LIKE "%300%" ORDER BY avgRatings DESC LIMIT 5

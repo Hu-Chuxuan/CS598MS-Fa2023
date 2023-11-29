@@ -1,1 +1,0 @@
-SELECT DISTINCT t.* FROM titlestats AS t WHERE ((((t.title_type ='movie') AND ((t.primaryTitle LIKE '%Memento%'))) OR (t.genre IN ('Crime','Drama')))) ORDER BY AVG(rating) DESC LIMIT 1

@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE ((rating > 6 OR rating < 4)) AND (genre IN ('[comedy],[romance]')) ORDER BY rating DESC LIMIT 5 OFFSET 0

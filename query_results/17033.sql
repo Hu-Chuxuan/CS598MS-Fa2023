@@ -1,1 +1,0 @@
-SELECT * from imdb_movies where title_type='Movie' AND title_id IN ('tt0000001','tt0000002') AND genre LIKE '%comedy%' OR genre LIKE '%romance%'

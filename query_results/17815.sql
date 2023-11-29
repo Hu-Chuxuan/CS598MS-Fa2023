@@ -1,1 +1,0 @@
-SELECT * FROM title_basic WHERE ttype ='movie' AND title LIKE '%Clerk%' LIMIT 1

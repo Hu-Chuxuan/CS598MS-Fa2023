@@ -1,1 +1,0 @@
-SELECT DISTINCT TOP 20 t.* FROM dbo.[IMDB].[title_basics], dbo.[IMDB].[title_ratings], dbo.[IMDB].[name_basics] WHERE ((dbo.[IMDB].[title_ratings].averageRating > 6)) AND ((dbo.[IMDB].[rating_user].userId = @userId)) ORDER BY (dbo.[IMDB].[title_ratings].numVotes DESC), (dbo.[IMDB].[title_basic].startYear ASC)

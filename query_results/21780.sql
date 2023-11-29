@@ -1,1 +1,0 @@
-SELECT * FROM title_principals WHERE ((ordering =? OR ordering IS NULL)) AND (category LIKE '%act%' ) ORDER BY RANDOM() LIMIT 1 OFFSET 1

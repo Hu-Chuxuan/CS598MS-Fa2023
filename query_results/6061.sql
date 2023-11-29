@@ -1,1 +1,0 @@
-SELECT * FROM `titles` WHERE `titleTypes` LIKE '%romcom%' AND (`startYear` BETWEEN \N AND \N)

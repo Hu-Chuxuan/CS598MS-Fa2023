@@ -1,1 +1,0 @@
-SELECT DISTINCT title_principals.* FROM title_ratings INNER JOIN title_principals ON title_ratings.title_id = title_principals.title_id WHERE title_ratings.averageRATING > 7 AND title_principals.category='actress' ORDER BY title_ratings.numvotes DESC LIMIT 2

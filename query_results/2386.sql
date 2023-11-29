@@ -1,1 +1,0 @@
-SELECT * FROM title_basic WHERE rating >= 5 AND runtime < 1 HOUR

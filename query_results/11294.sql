@@ -1,1 +1,0 @@
-SELECT * FROM title_basics WHERE titleType = 'Movie' AND isAdult!= 1 ORDER BY avg(averageRating),numVOTES DESC LIMIT 3 OFFSET 0

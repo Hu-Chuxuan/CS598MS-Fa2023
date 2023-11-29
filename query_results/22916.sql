@@ -1,1 +1,0 @@
-SELECT * FROM (SELECT DISTINCT * FROM (SELECT DISTINCT * FROM ('Westworld') LEFT JOIN ('Doctor Strange') ON ('Inglorious Bastard')) JOIN ('Cinderella Man') ON ('Hellboy II: The Golden Army') JOIN ('Lord Of The Rings: Return Of The King') WHERE ('Doctor Strange' = 'Inglorious Bastard'))

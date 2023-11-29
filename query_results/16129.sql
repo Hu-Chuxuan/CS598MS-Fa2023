@@ -1,1 +1,0 @@
-SELECT * FROM movie WHERE title_type='movie' AND (genre LIKE '%action%' OR genre LIKE '%crime%') ORDER BY avgrating DESC LIMIT 5 OFFSET 0

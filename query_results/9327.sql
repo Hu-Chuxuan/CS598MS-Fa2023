@@ -1,1 +1,0 @@
-SELECT * FROM title_principals WHERE category = 'actor' AND job IN ('actor') ORDER BY title_id DESC LIMIT 1 OFFSET 1

@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE isAdult = true AND titleType LIKE '%mov%' ORDER BY numVotes DESC LIMIT 10 OFFSET 0

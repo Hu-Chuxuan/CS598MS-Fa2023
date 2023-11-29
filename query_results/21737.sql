@@ -1,1 +1,0 @@
-SELECT * FROM title_basic WHERE ((startyear < 1960 OR startyear > 2000)) AND NOT EXISTS (SELECT * from Title_Crew where (directors = 'nm0005690')) ORDER BY startyear DESC LIMIT 5

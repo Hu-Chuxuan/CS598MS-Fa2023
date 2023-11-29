@@ -1,1 +1,0 @@
-SELECT * FROM title_ratings WHERE tconst = 'tt0000001' AND averageRating > 5.5 ORDER BY numVOTES DESC LIMIT 1 OFFSET 0 

@@ -1,1 +1,0 @@
-SELECT * FROM ( SELECT t.*, avg(rating), count(*) over() from title_ratings r JOIN title_basics b ON r.tconst = b.tconst WHERE r.averageRating > 5 AND r.numvotes >= 1 GROUP BY r.tconst ) AS t ORDER BY AVG(r.avgratng)

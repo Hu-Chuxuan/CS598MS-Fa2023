@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE rating >= 6 AND length > 1 HAVING numVOTES > 50 ORDER BY avgrating DESC LIMIT 5 OFFSET 10

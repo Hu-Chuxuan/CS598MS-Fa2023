@@ -1,1 +1,0 @@
-SELECT * FROM title_ratings WHERE numvotes > 1 AND avgrating >= 7 ORDER BY avgrating DESC LIMIT 3 OFFSET 2

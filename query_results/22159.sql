@@ -1,1 +1,0 @@
-SELECT * FROM title_basics WHERE title_type ='movie' AND genre IN ('comedy') ORDER BY avg(rating) DESC LIMIT 10 OFFSET 0

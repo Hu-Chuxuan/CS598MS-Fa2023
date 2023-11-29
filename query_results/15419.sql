@@ -1,1 +1,0 @@
-SELECT * FROM title_principals WHERE nconst = 'nm1588970' AND category IN ('actress','director') GROUP BY nconst ORDER BY numVOTES DESC LIMIT 10 OFFSET 0

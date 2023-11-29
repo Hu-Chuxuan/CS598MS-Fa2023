@@ -1,1 +1,0 @@
-SELECT * FROM title_principals WHERE nconst = 'nm1588970' AND category='actress' ORDER BY RAND() LIMIT 1 OFFSET 0

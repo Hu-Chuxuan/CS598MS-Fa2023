@@ -1,1 +1,0 @@
-SELECT * FROM title_principals WHERE (category = 'director') AND (job IN ('director','assistant_director')) ORDER BY averageRATING DESC LIMIT 2 OFFSET 0

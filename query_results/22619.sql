@@ -1,1 +1,0 @@
-SELECT * FROM title_ratings WHERE tconst IN ('tt0000001','tt0000002') AND averageRATING >= 7 ORDER BY numvotes DESC LIMIT 3

@@ -1,1 +1,0 @@
-SELECT * FROM `title` WHERE (`rating` > 5 AND `startyear` < 2000)

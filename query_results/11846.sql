@@ -1,1 +1,0 @@
-SELECT * from title_basics where primaryTitle =? order by avgRating desc limit 5

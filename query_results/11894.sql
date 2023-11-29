@@ -1,1 +1,0 @@
-SELECT * FROM tconst WHERE ttype ='movie' AND genre IN ('comedy') ORDER BY avgrating DESC LIMIT 10

@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE rating >.5 AND titleType = "movie" GROUP BY title_id HAVING COUNT(*) >= 2 ORDER BY avgrating DESC LIMIT 5

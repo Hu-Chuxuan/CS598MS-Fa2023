@@ -1,1 +1,0 @@
-SELECT DISTINCT tconst FROM title_ratings WHERE (((averageRating > 7)) AND ((numVotes >= 2))) ORDER BY numVotes DESC LIMIT 5 OFFSET?

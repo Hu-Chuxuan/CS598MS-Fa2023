@@ -1,1 +1,0 @@
-SELECT * FROM tt_rating WHERE tconst = 'tt0000001' AND avgrating >= 5 ORDER BY numvotes DESC LIMIT 5 OFFSET 1 

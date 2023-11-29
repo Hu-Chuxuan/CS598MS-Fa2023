@@ -1,1 +1,0 @@
-SELECT * FROM `titleratings` WHERE `rating` > 7 AND (`averageRating` < 8 OR `numvotes` >= 200)

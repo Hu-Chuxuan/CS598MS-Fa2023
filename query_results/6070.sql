@@ -1,1 +1,0 @@
-SELECT * FROM tconst WHERE primaryTitle LIKE '%Maid%' AND primaryTitle NOT IN ('Maid in Manhattan') ORDER BY avgrating DESC LIMIT 10 OFFSET 0

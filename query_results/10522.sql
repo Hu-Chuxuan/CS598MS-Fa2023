@@ -1,1 +1,0 @@
-SELECT * FROM title_principals WHERE category = 'actress' AND title_type IN ('movie','tvseries') ORDER BY nconst ASC LIMIT 2

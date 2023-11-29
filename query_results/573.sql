@@ -1,1 +1,0 @@
-SELECT DISTINCT title_id FROM title_basic WHERE title_type ='movie' AND title_rating > 7 AND num_votes >= 50 ORDER BY title_average DESC LIMIT 2 OFFSET 0

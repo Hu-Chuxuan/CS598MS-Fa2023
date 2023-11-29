@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE primaryTitle LIKE '%ant%' OR primaryTitle LIKE '%man%'' AND genre='comic_book_adaptation'

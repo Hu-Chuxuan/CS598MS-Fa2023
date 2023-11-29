@@ -1,1 +1,0 @@
-SELECT * FROM `titleratings` WHERE (`averagerating` BETWEEN? AND?)

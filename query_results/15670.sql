@@ -1,1 +1,0 @@
-SELECT t.* FROM (((title_basic AS t INNER JOIN title_crew AS c ON t.id = c.titleID)) LEFT OUTER JOIN (title_rating AS r INNER JOIN name_basic AS uv ON r.titleID = uv.primaryName) WHERE ((c.director IN ('nm0005690','nm0374658') OR c.writers IN ('nm0085156')) AND uv.isAdult=1 AND r.numVotes>0))) AS t GROUP BY t.titleID ORDER BY avg(r.averageRating DESC)

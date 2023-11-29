@@ -1,1 +1,0 @@
-SELECT * FROM title_ratings WHERE averageRATING > 5 AND numvotes >= 10 ORDER BY avgrating DESC LIMIT 10

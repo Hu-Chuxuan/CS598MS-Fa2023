@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE titleType ='movie' AND (((startYear <=? OR \N)) AND ((endYear >=? OR \N))) ORDER BY averageRating DESC LIMIT 10 OFFSET 0

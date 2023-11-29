@@ -1,1 +1,0 @@
-SELECT t.* FROM title AS t JOIN cast AS c ON t.id = c.casting_film_id WHERE t.startyear >= 1970 AND t.endyear <= 2018 GROUP BY t.isadult ORDER BY t.averagerating DESC LIMIT 1 OFFSET 0

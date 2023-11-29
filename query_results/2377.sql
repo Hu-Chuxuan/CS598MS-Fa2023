@@ -1,1 +1,0 @@
-SELECT * from title_basics where titleType = 'book' order by avgrating desc limit 1  

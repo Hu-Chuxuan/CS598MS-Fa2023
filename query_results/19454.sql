@@ -1,1 +1,0 @@
-SELECT DISTINCT titles.* FROM titles WHERE titles.startyear >=? AND titles.endyear <=? ORDER BY AVG(titles.rating) DESC LIMIT 10

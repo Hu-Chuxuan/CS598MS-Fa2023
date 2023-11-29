@@ -1,1 +1,0 @@
-SELECT * FROM title_ratings WHERE title_id = ? AND average RATING >? AND average RATING <? ORDER BY avarage RATING DESC LIMIT 10

@@ -1,2 +1,0 @@
-SELECT * FROM title_basic WHERE title_type='movie' AND startYear <= \`userInputDate\` ORDER BY avgRating DESC LIMIT 2 OFFSET 1
-UNION ALL SELECT * FROM title_basic WHERE title_type!='movie' OR startYear > \`userInputDate\`

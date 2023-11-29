@@ -1,1 +1,0 @@
-SELECT DISTINCT t.id AS idMovieID FROM title_basics AS t JOIN title_rating AS r ON r.tconst = t.tconst WHERE ((r.averageRating > 4 AND r.numvotes >= 2)) OR ('Thor: Ragnarok (2017)' IN UNNEST((SELECT distinct title_principals.category, title_principals.job FROM title_principals WHERE title_principals.ordering=1))) GROUP BY t.id ORDER BY COUNT(*) DESC LIMIT 2 OFFSET 0

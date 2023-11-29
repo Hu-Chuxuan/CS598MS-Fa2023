@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE ((titleType = 'Movie') AND ((averageRating > 7)) AND ((numVotes >= 5))) ORDER BY (startYear ASC)

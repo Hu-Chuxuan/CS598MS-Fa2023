@@ -1,1 +1,0 @@
-SELECT DISTINCT titles.* FROM title_basic AS titl, title_crews AS crew, title_rating AS rat, title_principal AS princip WHERE title_type = 'Movie' AND (titl.primaryTitle = 'The Mummy') AND (crew.job LIKE '%Director%' OR crew.job LIKE '%Writer%') AND (rat.averageRATING > 5.5)

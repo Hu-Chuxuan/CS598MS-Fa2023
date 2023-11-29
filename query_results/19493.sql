@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE isAdult = false AND ((primaryTitle LIKE '%Book%') OR (startYear <= 2017)) ORDER BY avgRating DESC LIMIT 10 OFFSET?

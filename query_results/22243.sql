@@ -1,1 +1,0 @@
-SELECT * FROM title_basics WHERE titleType='movie' AND titleType LIKE '%Orient%' ORDER BY averageRating DESC LIMIT 1

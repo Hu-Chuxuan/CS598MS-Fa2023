@@ -1,1 +1,0 @@
-SELECT DISTINCT t.titleId AS MovieID, t.primaryTitle AS Title, tb.avgRat AS AvgRating FROM title_basic AS t JOIN ( SELECT titleId, avg(rating) AS avgRat FROM title_ratings WHERE genre = \'\' GROUP BY titleId ) AS tb ON t.titleId=tb.titleId AND t.genre = '' ORDER BY t.startYear DESC LIMIT 3 OFFSET 0

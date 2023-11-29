@@ -1,1 +1,0 @@
-SELECT * from (SELECT t.*, avgrating.avgrating from title t join ( SELECT r.*, avg(r.averageRatings) over (partition by r.title_id order by r.userID asc ) as avgrating from title_ratings r where r.userID =? group by r.title_id ) as avgrating ON t.title_id=avgrating.title_id WHERE t.startyear>? AND t.endyear<? ORDER BY avgrating.avgrating DESC LIMIT? OFFSET?)

@@ -1,1 +1,0 @@
-SELECT * FROM title_ratings WHERE averageRating > 5 AND averageRating < 10 ORDER BY avgrating DESC LIMIT 5 OFFSET 0

@@ -1,1 +1,0 @@
-SELECT tconst, avgrating FROM title_ratings WHERE title_id IN ('tt0000001') AND title_type ='movie' ORDER BY avgrating DESC LIMIT 1 OFFSET 0

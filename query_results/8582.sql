@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE rating >= 5 AND startyear <= 1990 GROUP BY genre HAVING COUNT(*) > 1 ORDER BY avgrating DESC LIMIT 3 OFFSET 0

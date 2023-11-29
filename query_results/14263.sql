@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE ttype ='movie' AND numVote > 10 OR titleID IN ('tt0000001','tt0000002')

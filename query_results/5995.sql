@@ -1,1 +1,0 @@
-SELECT * FROM title_basics WHERE primaryTitle='Scream' AND isAdult=1 ORDER BY avgRate DESC LIMIT 10 OFFSET 0 

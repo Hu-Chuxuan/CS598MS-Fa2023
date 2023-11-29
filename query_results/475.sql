@@ -1,1 +1,0 @@
-SELECT * FROM `title_basic` WHERE `primaryTitle` LIKE '%fargo%' OR `originalTitle` LIKE '%fargo%'`

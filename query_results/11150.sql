@@ -1,1 +1,0 @@
-SELECT * FROM `title` WHERE ((((category = 'actor') AND (job IN ('actress','actor')))) OR ((category = 'director'))) ORDER BY averageRatings DESC LIMIT 10 OFFSET 0

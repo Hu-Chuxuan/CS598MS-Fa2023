@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE isAdult = true AND (startYear BETWEEN 1960 TO 1970 OR endYear < 1970)

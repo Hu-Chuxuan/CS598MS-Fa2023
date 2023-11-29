@@ -1,1 +1,0 @@
-SELECT * FROM `title` WHERE (`title`.`primaryTitle` = "Jin-Roh: The Wolf Brigade") AND (`title`.`isAdult`!= 1)

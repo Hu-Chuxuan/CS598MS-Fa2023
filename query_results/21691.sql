@@ -1,1 +1,0 @@
-SELECT * from title_ratings where averageRating>3 limit 10 order by numVotes desc

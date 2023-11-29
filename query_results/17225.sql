@@ -1,1 +1,0 @@
-SELECT * from `movies` where (`startyear` between \`1900\' and \`2019\' AND `isadult` = 0 OR `endyear` > \`2019\`) ORDER BY `averagerating`,`numvotes`

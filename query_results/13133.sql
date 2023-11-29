@@ -1,1 +1,0 @@
-SELECT t.* FROM title AS t JOIN cast AS c ON t.primaryTitle = c.tconst WHERE c.category='actress' AND c.job LIKE '%Mira%' ORDER BY avgrating DESC LIMIT 1 OFFSET?

@@ -1,1 +1,0 @@
-SELECT DISTINCT tconst FROM `title_ratings` WHERE tconst IN ('tt0000001') AND (averageRating BETWEEN $min AND $max)

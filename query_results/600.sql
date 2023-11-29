@@ -1,1 +1,0 @@
-SELECT * FROM title_basic WHERE titleType = “movie” AND ((startYear <= ’1970′ ) OR (endYear >= ”1970″)) AND (isAdult=0)

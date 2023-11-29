@@ -1,1 +1,0 @@
-SELECT DISTINCT title_id FROM title_ratings WHERE averageRATING >= 4 AND averageRATING < 5 OR averageRATING > 8

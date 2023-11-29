@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE genre IN ('Science Fiction') AND primaryTitle LIKE '%Star%' ORDER BY AVG(rating) DESC LIMIT 1 OFFSET 0

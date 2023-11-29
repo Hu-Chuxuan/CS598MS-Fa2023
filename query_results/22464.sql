@@ -1,1 +1,0 @@
-SELECT t.* FROM title_basic AS t INNER JOIN title_rating AS tr ON t.primaryTitle = tr.title WHERE ((tr.averageRating > 7)) AND EXISTS((SELECT * FROM title_principal WHERE tr.titleID=t.titleID))

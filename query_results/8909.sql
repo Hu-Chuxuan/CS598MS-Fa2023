@@ -1,1 +1,0 @@
-SELECT DISTINCT t.primaryTitle AS MovieTitle FROM `title` t JOIN `title_rating` tr ON tr.`tconst` = t.`tconst` WHERE t.`startYear` <=? AND t.`endYear` >=? ORDER BY tr.`averageRating` DESC LIMIT 2 OFFSET?

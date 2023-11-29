@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE ((((startYear > 1970 AND (endYear < 1980 OR endYear IS NULL)) OR (startYear <= 1980 AND (endYear >= 1980))) AND titleType ='movie') AND isAdult = FALSE)

@@ -1,1 +1,0 @@
-SELECT * FROM title_basic WHERE titleType='movie' AND (((startYear>1890 OR startYear<2000))AND ((endYear>1890 OR endYear<2000))) AND ((runtimeMinutes>=30 OR runtimeMinutes<=200))

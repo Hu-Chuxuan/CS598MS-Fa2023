@@ -1,1 +1,0 @@
-SELECT * FROM `title` WHERE `primaryTitle` = 'Moonlight' AND (`isAdult`=1 OR `startYear` <= 2000)

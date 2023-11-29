@@ -1,1 +1,0 @@
-SELECT * from title_principals where title = 'tt0000001' order by nconst asc limit 1

@@ -1,1 +1,0 @@
-SELECT * FROM `title` WHERE ((titleType = 'Movie') AND (isAdult!= \N)) ORDER BY (startYear DESC)

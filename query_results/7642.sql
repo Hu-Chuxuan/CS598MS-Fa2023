@@ -1,1 +1,0 @@
-SELECT DISTINCT tconst FROM title_basic WHERE titleType ='movie' AND genre IN ('comedy') ORDER BY avgrating DESC LIMIT 3

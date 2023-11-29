@@ -1,1 +1,0 @@
-SELECT * FROM tconst WHERE (((category = 'actress') AND ((job LIKE '%Actor%'))) OR (category='actor')) ORDER BY avgRATING DESC LIMIT 5 OFFSET?

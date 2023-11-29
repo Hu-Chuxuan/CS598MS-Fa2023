@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE titleType = “movie” AND averageRating >= 8.0 OR averageRating < 4.0 ORDER BY averageRating DESC LIMIT 10 OFFSET 0

@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE titleType='movie' AND (startYear>=1970 OR startYear<=1999)

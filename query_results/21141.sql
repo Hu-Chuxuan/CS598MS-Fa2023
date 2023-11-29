@@ -1,1 +1,0 @@
-SELECT * FROM title_principals WHERE category='director' AND tconst IN ('tt0000001','tt0000002') ORDER BY avgRating DESC LIMIT 1 OFFSET 1

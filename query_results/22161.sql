@@ -1,1 +1,0 @@
-SELECT * FROM title_basics WHERE primaryProfession = 'actress' AND titleType IN ('movie') ORDER BY avgRating DESC LIMIT 10 OFFSET 0

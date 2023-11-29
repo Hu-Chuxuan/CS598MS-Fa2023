@@ -1,1 +1,0 @@
-SELECT * FROM  `title` WHERE   `genre` = 'Drama' AND `startyear` >= '1996' ORDER BY `avgrating` DESC LIMIT 2 

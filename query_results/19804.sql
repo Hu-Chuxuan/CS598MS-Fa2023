@@ -1,1 +1,0 @@
-SELECT * from title where title_type = “movie” order by avg(rating), numvotes desc limit 10

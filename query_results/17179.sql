@@ -1,1 +1,0 @@
-SELECT * FROM title_basics WHERE primaryTitle = "whatever happened to baby jane?" AND ttype!= "TVSeries" LIMIT 0, 10

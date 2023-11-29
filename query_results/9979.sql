@@ -1,1 +1,0 @@
-SELECT * from `title` where `primaryTitle` like '%Mamma%' order by `averageRatings` desc limit 1

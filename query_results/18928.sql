@@ -1,1 +1,0 @@
-SELECT DISTINCT t.* FROM title AS t WHERE (((t.startyear BETWEEN? AND?)) OR ((t.endyear =?))) AND (((genre IN ('horror')) OR ((job IN ('director','writer') AND self='yes'))))

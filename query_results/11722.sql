@@ -1,1 +1,0 @@
-SELECT * FROM title_ratings WHERE tconst IN ('tt0000001','tt0000002') AND averageRATING > 5 ORDER BY AVG RANK() OVER (PARTITION BY tconst ORDER BY avgrating DESC)

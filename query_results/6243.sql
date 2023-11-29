@@ -1,1 +1,0 @@
-SELECT * FROM `movielens` WHERE (`primaryTitle LIKE "%Animated%"` AND (`numVotes >= 1000`))

@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE ttype ='movie' AND rating > 7 OR rating < 3 LIMIT 1 OFFSET 0

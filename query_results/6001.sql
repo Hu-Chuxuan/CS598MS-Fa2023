@@ -1,1 +1,0 @@
-SELECT DISTINCT TOP 1 * FROM title_basics WHERE titleType = “Movie” AND startYear > 1990 ORDER BY AVG(rating) DESC LIMIT 1 OFFSET?

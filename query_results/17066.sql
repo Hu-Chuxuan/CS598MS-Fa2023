@@ -1,1 +1,0 @@
-SELECT DISTINCT t.* FROM title_basics AS t WHERE t.startyear <=? AND t.endyear >=? AND EXISTS ( SELECT * FROM title_ratings AS rr JOIN actors ON t.primaryprofession = actor.nconst WHERE rr.tconst=? AND rr.numvotes >? ) ORDER BY t.averagerating DESC LIMIT 10 OFFSET 0

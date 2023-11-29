@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE primaryTitle LIKE '%serial%' AND NOT genre = 'documentary' OR genre LIKE '%romantic%'

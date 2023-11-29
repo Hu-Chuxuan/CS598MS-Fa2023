@@ -1,1 +1,0 @@
-SELECT t.* FROM title AS t JOIN title_rating AS tr ON tr.tconst = t.tconst WHERE tr.numvotes > 1 AND ((tr.averageRating >=? OR tr.averageRating IS NULL)) GROUP BY t.tconst ORDER BY tr.averageRating DESC LIMIT 5 OFFSET?

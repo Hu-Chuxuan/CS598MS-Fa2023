@@ -1,1 +1,0 @@
-SELECT * FROM title_rating WHERE title_id =? AND title_type!= 'episode' ORDER BY avg_rating DESC LIMIT?

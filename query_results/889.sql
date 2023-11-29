@@ -1,1 +1,0 @@
-SELECT * FROM ( SELECT r.*, i.id AS id_i, i.rating AS avg_r, i.num_votes AS total_votes FROM title_ratings r JOIN user_history uh ON r.tconst = uh.title WHERE uh.user_id IN ('1') AND uh.date >= DATE('now'-INTERVAL 1 DAY)) AS p JOIN user_history uh ON p.id_i=uh.title ORDER BY p.avg_r DESC LIMIT 3 OFFSET 0 

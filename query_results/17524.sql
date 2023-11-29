@@ -1,1 +1,0 @@
-SELECT * from (SELECT t.*, nc.*, avg(rating), count(*) cnt from imdb_movies t inner join imdb_names nc where t.primaryTitle = nc.primaryName group by t.id order by avg(rating desc)) q where cnt > 2 and not exists (from imdb_users u where u.title_id=q.id)

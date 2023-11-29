@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE titleType = “movie” AND titleType NOT IN ('documentary','short') OR ((startyear <= 2010))AND((endyear >= 2010))

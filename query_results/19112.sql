@@ -1,1 +1,0 @@
-SELECT * FROM `title` WHERE (((startyear >= @StartYear AND endyear <= @EndYear)) OR ((endyear = \'\')))

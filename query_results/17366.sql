@@ -1,1 +1,0 @@
-SELECT * from title_ratings where averageRating >= xxx AND numvotes > yyy WHERE title_type = zzz ORDER BY averageRATING DESC LIMIT 10

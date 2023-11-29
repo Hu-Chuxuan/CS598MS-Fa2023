@@ -1,1 +1,0 @@
-SELECT * FROM `title` WHERE `isAdult` = true AND (`startYear >= 1950`) ORDER BY `averageRating` DESC LIMIT 10 OFFSET 0

@@ -1,1 +1,0 @@
-SELECT * FROM `titleratings` WHERE (`numvotes` > 0 AND `averagerating` >= 5.0)

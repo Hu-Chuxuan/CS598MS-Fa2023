@@ -1,1 +1,0 @@
-SELECT DISTINCT title_id FROM `title` WHERE ((((startYear BETWEEN '1950-01-01' AND '1990-12-31') OR (startYear IS NULL)) AND (endYear < CURRENT_DATE()))

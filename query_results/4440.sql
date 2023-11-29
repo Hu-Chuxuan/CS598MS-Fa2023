@@ -1,1 +1,0 @@
-SELECT * FROM title_principals WHERE tconst = 'tt0000001' AND category LIKE '%actor%' ORDER BY nconst ASC LIMIT 5

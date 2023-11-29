@@ -1,1 +1,0 @@
-SELECT * FROM `title` WHERE `startyear` >= '1894' AND (`endyear` <= '1899') ORDER BY RAND() LIMIT 10 OFFSET 0

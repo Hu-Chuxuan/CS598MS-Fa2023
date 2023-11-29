@@ -1,1 +1,0 @@
-SELECT t.* from title_basic t where titleType='Movie' order by avgrating desc limit 5

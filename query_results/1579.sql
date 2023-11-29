@@ -1,1 +1,0 @@
-SELECT DISTINCT t.* FROM title AS t JOIN ( SELECT * from title WHERE genre = 'Comedy') s ON (t.genre=s.genre AND s.startyear > 1950 AND t.startyear < 2000)

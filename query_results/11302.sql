@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE primaryTitle LIKE '%Goodfellas%' OR primaryTitle LIKE '%Seven%' AND genre IN ('Crime') ORDER BY averageRating DESC LIMIT 10 OFFSET 0

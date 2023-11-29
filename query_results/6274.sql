@@ -1,1 +1,0 @@
-SELECT * from title where ((titleType='Movie') AND ((startYear>1980))AND((endYear<2010)))and (averageRatings>3.5)

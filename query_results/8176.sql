@@ -1,1 +1,0 @@
-SELECT DISTINCT * FROM `titles` WHERE `primaryTitle` = "True Memories Of An International Assasin" AND (`startYear` BETWEEN? AND? OR `endYear` IS NOT NULL)

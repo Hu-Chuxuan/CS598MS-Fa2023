@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE (((startyear BETWEEN 2010 AND 2017)) OR ((endyear = 2010))) AND (((averagerating > 6.0)))

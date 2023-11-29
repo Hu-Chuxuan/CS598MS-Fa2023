@@ -1,4 +1,0 @@
-SELECT * FROM (
-    SELECT t.*, r.rating
-   , ROW_NUMBER() OVER (PARTITION BY p.userID ORDER BY avg(r.rating)) AS rank
-FROM ((titles t JOIN title_ratings r ON t.primaryTitle = r.tconst AND t.startYear <= 2015) LEFT OUTER JOIN (users u JOIN profile_preferences pp ON u.id = pp.userId) USING (pp.userId) WHERE t.isAdult!= 1 OR UPPER(u.profileText) LIKE '%DISNEY%' OR UPPER(u.profileText) LIKE '%PETER%') PARTITION BY t.nconst, r.averageRating, pp.userId GROUP BY t.nconst, t.titleType, t.originalTitle, t.startYear, t.endYear, t.runtimeMinutes, t.genre, t.primaryTitle, t.primaryProfession, t.knownForTitles, r.avgRating, r.numvotes, pp.userId)

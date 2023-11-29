@@ -1,1 +1,0 @@
-SELECT DISTINCT title.primaryTitle AS Title FROM title LEFT JOIN title_principals ON title.tconst = title_principals.tconst WHERE title_principals.category='actors' AND title_principals.job LIKE '%Actor%' ORDER BY title.startYear DESC LIMIT 1 OFFSET?

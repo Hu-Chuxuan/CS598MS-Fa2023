@@ -1,1 +1,0 @@
-SELECT title.* FROM title WHERE (((startyear <=? AND endyear >=?)) OR ((startyear > =? AND endyear <?))) ORDER BY numvotes DESC LIMIT 1 OFFSET 0

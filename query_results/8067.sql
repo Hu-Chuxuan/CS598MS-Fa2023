@@ -1,1 +1,0 @@
-SELECT * FROM `title` WHERE (`startyear` >= $inputyear AND (`endyear` <= $inputyear OR `endyear` IS NULL)) AND (`genre` LIKE '%%') ORDER BY `averagerating`, `numvotes`

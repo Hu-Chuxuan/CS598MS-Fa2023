@@ -1,1 +1,0 @@
-SELECT * FROM movie_recommendation WHERE tconst IN ('tt0000001','tt0000002') AND titleType ='movie' ORDER BY averageRating DESC LIMIT 3

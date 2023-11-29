@@ -1,1 +1,0 @@
-SELECT * FROM `title` WHERE `startyear` >=? AND (`endyear` <=? OR `isadult` =?)

@@ -1,1 +1,0 @@
-SELECT t.* FROM title AS t INNER JOIN title_ratings AS r ON r.tconst = t.tconst WHERE r.averageRATING >=? AND r.numvotes >? ORDER BY t.startyear ASC LIMIT?,?

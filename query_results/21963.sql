@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE isAdult = true AND ((primaryTitle LIKE '%Prestige%' OR primaryTitle LIKE '%Showman%') AND (startYear >= 2000)) ORDER BY avgrat DESC LIMIT 10 OFFSET 0 

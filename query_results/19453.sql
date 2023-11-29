@@ -1,1 +1,0 @@
-SELECT * FROM movie WHERE rating >.8 AND length < 120 OR rating >.9 AND length <= 140 OR rating >=.8 AND length = 120 AND rating <=.9 AND length == 120 ORDER BY rating DESC LIMIT 3 OFFSET 0

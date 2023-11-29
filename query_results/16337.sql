@@ -1,1 +1,0 @@
-SELECT DISTINCT tconst FROM title_principals WHERE nconst = 'nm0000001' AND category = 'character' ORDER BY job ASC LIMIT 1 OFFSET?

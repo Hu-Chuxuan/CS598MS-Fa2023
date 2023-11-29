@@ -1,1 +1,0 @@
-SELECT * FROM `title_basic` WHERE (`startyear` >= '1900') AND (`endyear` <= '2000')

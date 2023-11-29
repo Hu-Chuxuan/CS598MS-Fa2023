@@ -1,1 +1,0 @@
-SELECT title_principals.* FROM `title_principals` WHERE ((category = \"actress\" AND job LIKE "%Bonnie%") OR (job IN ('Actress','Production Manager')))

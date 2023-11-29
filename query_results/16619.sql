@@ -1,1 +1,0 @@
-SELECT * FROM title_rating WHERE tconst = 'tt0000001' AND averageRATING > 6 ORDER BY avgRATING DESC LIMIT 20

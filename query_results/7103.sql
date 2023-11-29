@@ -1,1 +1,0 @@
-SELECT * FROM title_basic WHERE ((primaryTitle = 'The Breakfast Club') OR ('The Breakfast Club' IN ("'The Breakfast Club'"))) AND ((startYear > 1985)) ORDER BY startYear DESC LIMIT 10 OFFSET 0

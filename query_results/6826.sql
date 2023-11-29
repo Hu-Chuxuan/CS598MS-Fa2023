@@ -1,1 +1,0 @@
-SELECT DISTINCT TOP 10 titleID FROM Title_Basics WHERE titleType = “Movie” AND isAdult = 0 ORDER BY avgRating DESC LIMIT 10 OFFSET 0

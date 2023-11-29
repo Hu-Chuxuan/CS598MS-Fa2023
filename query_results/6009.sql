@@ -1,1 +1,0 @@
-SELECT * FROM title_ratings WHERE titleType = 'Movie' AND ((rating >= 7 OR rating <= 9)) ORDER BY avgRating DESC LIMIT 2 OFFSET 0

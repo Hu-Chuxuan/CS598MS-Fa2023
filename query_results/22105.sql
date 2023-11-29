@@ -1,1 +1,0 @@
-SELECT * FROM title_ratings WHERE numVotes >= @numOfReviews AND avgRating > = @ratingThreshold ORDER BY avgRating DESC LIMIT (@pageSize)

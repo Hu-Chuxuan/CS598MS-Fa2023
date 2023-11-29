@@ -1,1 +1,0 @@
-SELECT * FROM `title` WHERE `startyear` > 1990 AND (`endyear` < 2005 OR `endyear` IS NULL)

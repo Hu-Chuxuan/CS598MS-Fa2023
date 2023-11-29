@@ -1,1 +1,0 @@
-SELECT * FROM ( SELECT tconst, avg(rating), count(*) AS cnt FROM title_ratings WHERE tconst IN ('tt0000001') GROUP BY tconst ) AS x JOIN ( SELECT tconst, COUNT(*) AS cnt FROM title_ratings GROUP BY tconst ) AS y ON x.cnt = y.cnt AND x.avg > y.avg ORDER BY AVG DESC LIMIT 1 OFFSET 0

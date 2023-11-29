@@ -1,1 +1,0 @@
-SELECT * FROM title_ratings WHERE averageRating >= 5 AND numVotes > 10 ORDER BY numVotes DESC LIMIT 10 OFFSET?

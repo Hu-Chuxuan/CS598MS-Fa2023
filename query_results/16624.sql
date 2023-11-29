@@ -1,1 +1,0 @@
-SELECT DISTINCT title_principals.*, title_ratings.* FROM `title_principals` JOIN `title_ratings` ON `title_ratings`.`tconst` = `title_principals`.`tconst`

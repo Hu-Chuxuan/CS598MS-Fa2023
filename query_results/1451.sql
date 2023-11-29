@@ -1,1 +1,0 @@
-SELECT * FROM title_ratings WHERE tconst =? AND avg_rating >=? ORDER BY avg_rating DESC LIMIT?

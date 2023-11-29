@@ -1,1 +1,0 @@
-SELECT * FROM ( SELECT DISTINCT T.*, COUNT(*) AS cnt FROM ( SELECT * from imdb WHERE isAdult = 1 AND genre IN ('Drama','Horror') GROUP BY titleType ) AS T ) where cnt > 2 

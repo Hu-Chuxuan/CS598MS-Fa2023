@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE titleType = “Movie” AND ((startYear BETWEEN 2000 AND 2020 OR endYear BETWEEN 2000 AND 2020)) AND (genre IN ('Biographical','Drama')) ORDER BY runtime DESC LIMIT 1

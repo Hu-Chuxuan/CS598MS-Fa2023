@@ -1,1 +1,0 @@
-SELECT * FROM title_ratings WHERE averageRating = '5.6' AND numVotes > 100 ORDER BY avgRating DESC LIMIT 1 OFFSET 0

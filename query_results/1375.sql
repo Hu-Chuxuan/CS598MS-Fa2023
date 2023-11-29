@@ -1,1 +1,0 @@
-SELECT DISTINCT t.* FROM title AS t JOIN title_principals AS p ON t.tconst = p.tconst AND t.ordering >= 1 WHERE p.job LIKE '%Director%' OR p.category LIKE '%Writer%') ORDER BY avgrating DESC LIMIT 5

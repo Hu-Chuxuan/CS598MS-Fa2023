@@ -1,1 +1,0 @@
-SELECT * FROM movie WHERE genre = 'action' AND NOT EXISTS ('comic book') ORDER BY avg_rating DESC LIMIT 3

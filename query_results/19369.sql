@@ -1,1 +1,0 @@
-SELECT * FROM `movies` WHERE ((titleType ='movie') AND (averageRating >= 7)) ORDER BY numVOTES DESC LIMIT 5

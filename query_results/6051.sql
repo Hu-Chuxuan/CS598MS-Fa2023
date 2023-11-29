@@ -1,1 +1,0 @@
-SELECT * FROM title_principals WHERE titleID = $input AND category IN ('actress')

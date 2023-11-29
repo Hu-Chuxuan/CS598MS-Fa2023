@@ -1,1 +1,0 @@
-SELECT * FROM title_basic WHERE titleType ='movie' AND (startyear > 1990 OR endYear < 2020)

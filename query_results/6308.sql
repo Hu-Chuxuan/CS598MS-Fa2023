@@ -1,1 +1,0 @@
-SELECT * FROM `titles` WHERE (`genre` = 'comedy') AND (`startyear` >= '1980')

@@ -1,1 +1,0 @@
-SELECT t.* FROM title AS t INNER JOIN title_rating AS tr ON tr.tconst = t.tconst WHERE avgrat >= 7 AND ratedby='user' GROUP BY t.primaryTitle ORDER BY avgreview DESC LIMIT 5 OFFSET?

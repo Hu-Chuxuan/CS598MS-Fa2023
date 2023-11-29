@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE titleType = “movie” AND startYear >= 2010 ORDER BY numVOTES DESC LIMIT 3 OFFSET 1

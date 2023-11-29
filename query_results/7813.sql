@@ -1,1 +1,0 @@
-SELECT * FROM title WHERE genre = 'Horror' AND rating > 4 ORDER BY avg RATING DESC LIMIT 3 OFFSET? 

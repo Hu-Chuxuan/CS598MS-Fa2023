@@ -1,1 +1,0 @@
-SELECT DISTINCT r.ratingID FROM RATING AS r WHERE r.userID =? AND r.titleID IN (?)

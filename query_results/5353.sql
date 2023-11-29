@@ -1,1 +1,0 @@
-SELECT DISTINCT tconst FROM imdb_movies WHERE tconst NOT IN ('tt0000001')

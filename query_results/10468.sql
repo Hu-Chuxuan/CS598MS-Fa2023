@@ -1,1 +1,0 @@
-SELECT t.primaryTitle AS Movie Title FROM title_basics t WHERE t.isAdult = true AND t.startYear >= 1950 AND t.endYear <= 2020 ORDER BY t.averageRating DESC LIMIT 2 OFFSET 0

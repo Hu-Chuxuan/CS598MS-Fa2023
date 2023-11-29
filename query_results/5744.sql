@@ -1,1 +1,0 @@
-SELECT DISTINCT t.* FROM title AS t WHERE t.primaryTitle =? AND NOT EXISTS (SELECT * FROM cast WHERE cast.ordering IN (?)) ORDER BY avg_rating DESC LIMIT 1 OFFSET 0 

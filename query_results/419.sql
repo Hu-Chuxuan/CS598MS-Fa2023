@@ -1,1 +1,0 @@
-SELECT title_id from tconst where ttype = 'Movie' order by avgrating desc limit 10

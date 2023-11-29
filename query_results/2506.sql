@@ -1,1 +1,0 @@
-SELECT * from title_basic where isAdult = true order by runtime desc limit 1
