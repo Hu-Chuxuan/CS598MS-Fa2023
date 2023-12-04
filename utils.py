@@ -7,7 +7,7 @@ Generate a SQL query for a movie recommendation system that operates on the IMDb
 4. title_crew [tconst, directors, writers]
 5. title_principals [tconst, ordering, nconst, category, job, characters]
 
-Here is a detailed desciption of the tables and columns:
+Here is a detailed description of the tables and columns:
 the 'name_basics' table holds basic information for all the people within the dataset. The columns are as follows:
 - nconst (string) : alphanumeric unique identifier of the name/person, e.g., 'nm0000001'; 
 - primaryName (string) : name by which the person is most often credited, e.g., 'Fred Astaire';
@@ -83,7 +83,7 @@ Generate a SQL query for a movie recommendation system that operates on the IMDb
 4. title_crew [tconst, directors, writers]
 5. title_principals [tconst, ordering, nconst, category, job, characters]
 
-Here is a detailed desciption of the tables and columns:
+Here is a detailed description of the tables and columns:
 the 'name_basics' table holds basic information for all the people within the dataset. The columns are as follows:
 - nconst (string) : alphanumeric unique identifier of the name/person, e.g., 'nm0000001'; 
 - primaryName (string) : name by which the person is most often credited, e.g., 'Fred Astaire';
